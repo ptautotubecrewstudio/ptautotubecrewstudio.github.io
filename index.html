@@ -49,6 +49,8 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 border-bottom:1px solid rgba(255,255,255,.1);
+position:relative;
+z-index:10;
 }
 
 .logo img{
@@ -75,6 +77,8 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
+position:relative;
+z-index:5;
 }
 
 .hero h1{
@@ -110,11 +114,40 @@ background:#fff;
 color:#000;
 }
 
+section{
+position:relative;
+z-index:5;
+}
+
+#about{
+padding:100px 8%;
+background:#111;
+}
+
+#about h2{
+font-size:42px;
+text-align:center;
+margin-bottom:30px;
+color:#ff1e1e;
+}
+
+#about p{
+max-width:1000px;
+margin:auto;
+font-size:19px;
+line-height:1.9;
+color:#ddd;
+text-align:center;
+}
+
 footer{
 padding:30px;
 text-align:center;
 border-top:1px solid rgba(255,255,255,.1);
 color:#aaa;
+background:#111;
+position:relative;
+z-index:5;
 }
 
 </style>
@@ -130,15 +163,15 @@ color:#aaa;
 <header>
 
 <div class="logo">
-<img src="logo.png.png" alt="PT Autotube Crew Studio">
+<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
 </div>
 
 <nav>
 <a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Portfolio</a>
-<a href="#">Contact</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
@@ -148,13 +181,26 @@ color:#aaa;
 <h1>PT <span>Autotube Crew Studio</span></h1>
 
 <p>
-Creating world-class CGI, 3D Animation, VFX, Product Visualization,
-Medical Animation, Commercials and Cinematic Content for clients worldwide.
+Creating world-class CGI, 3D Animation, VFX, Product Visualization, Medical Animation, Commercials and Cinematic Content for clients worldwide.
 </p>
 
 <a class="btn" href="https://youtu.be/wrGsDI06Cdo" target="_blank">
 View Showreel
 </a>
+
+</section>
+
+<section id="about">
+
+<h2>About PT Autotube Crew Studio</h2>
+
+<p>
+
+PT Autotube Crew Studio is a creative production company based in Jakarta, Indonesia, specializing in premium CGI, 3D Animation, VFX, Motion Graphics, Product Visualization, Medical Animation, Commercial Production, and Cinematic Content.
+
+Our mission is to transform ideas into visually stunning experiences through creativity, advanced technology, and world-class production quality. We collaborate with brands, agencies, filmmakers, and businesses worldwide to create compelling visual stories that leave a lasting impact.
+
+</p>
 
 </section>
 
@@ -165,4 +211,5 @@ View Showreel
 </footer>
 
 </body>
+
 </html>
