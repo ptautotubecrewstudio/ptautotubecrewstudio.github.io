@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>PT Autotube Crew Studio</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -14,8 +17,30 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#0b0b0b;
+background:#000;
 color:#fff;
+overflow-x:hidden;
+}
+
+#bg-video{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+z-index:-1;
 }
 
 header{
@@ -23,12 +48,11 @@ padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-border-bottom:1px solid #222;
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .logo img{
 height:60px;
-width:auto;
 }
 
 nav a{
@@ -65,8 +89,8 @@ color:#ff1e1e;
 .hero p{
 max-width:850px;
 font-size:20px;
-color:#ccc;
 line-height:1.7;
+color:#ddd;
 margin-bottom:40px;
 }
 
@@ -89,19 +113,24 @@ color:#000;
 footer{
 padding:30px;
 text-align:center;
-border-top:1px solid #222;
-color:#888;
+border-top:1px solid rgba(255,255,255,.1);
+color:#aaa;
 }
+
 </style>
 
 </head>
 
 <body>
 
+<video autoplay muted loop playsinline id="bg-video">
+<source src="showreel.mp4 (1).mp4" type="video/mp4">
+</video>
+
 <header>
 
 <div class="logo">
-<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+<img src="logo.png.png" alt="PT Autotube Crew Studio">
 </div>
 
 <nav>
@@ -123,12 +152,16 @@ Creating world-class CGI, 3D Animation, VFX, Product Visualization,
 Medical Animation, Commercials and Cinematic Content for clients worldwide.
 </p>
 
-<a class="btn" href="#">View Showreel</a>
+<a class="btn" href="https://youtu.be/wrGsDI06Cdo" target="_blank">
+View Showreel
+</a>
 
 </section>
 
 <footer>
+
 © 2026 PT Autotube Crew Studio. All Rights Reserved.
+
 </footer>
 
 </body>
