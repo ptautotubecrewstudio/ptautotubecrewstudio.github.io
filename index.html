@@ -438,7 +438,50 @@ font-size:18px;
 
 
 }
+.menu-btn{
+display:none;
+cursor:pointer;
+}
 
+.menu-btn span{
+display:block;
+width:30px;
+height:3px;
+background:white;
+margin:6px;
+}
+
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+
+nav{
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#111;
+display:none;
+text-align:center;
+padding:20px;
+}
+
+
+nav.active{
+display:block;
+}
+
+
+nav a{
+display:block;
+margin:15px;
+}
+
+}
 </style>
 
 </head>
@@ -458,16 +501,19 @@ font-size:18px;
 
 <header>
 
-
 <div class="logo">
-
 <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-
 </div>
 
 
+<div class="menu-btn" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
 
-<nav>
+
+<nav id="nav-menu">
 
 <a href="#">Home</a>
 <a href="#about">About</a>
@@ -482,9 +528,7 @@ font-size:18px;
 
 </nav>
 
-
 </header>
-
 
 
 
@@ -1292,7 +1336,13 @@ Indonesia
 <script>
 
 const images = document.querySelectorAll(".portfolio-grid img");
+function toggleMenu(){
 
+let menu = document.getElementById("nav-menu");
+
+menu.classList.toggle("active");
+
+}
 images.forEach(img => {
 
 img.onclick = function(){
