@@ -292,7 +292,49 @@ transform:scale(1.05);
 box-shadow:0 0 25px rgba(255,255,255,.3);
 
 }
+.portfolio-item{
+position:relative;
+overflow:hidden;
+border-radius:12px;
+}
 
+
+.portfolio-overlay{
+
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+padding:20px;
+background:rgba(0,0,0,0.75);
+transform:translateY(100%);
+transition:.4s;
+
+}
+
+
+.portfolio-item:hover .portfolio-overlay{
+
+transform:translateY(0);
+
+}
+
+
+.portfolio-overlay h3{
+
+color:white;
+font-size:22px;
+margin-bottom:8px;
+
+}
+
+
+.portfolio-overlay p{
+
+color:#ddd;
+font-size:15px;
+
+}
 
 #stats{
 
@@ -422,7 +464,6 @@ font-size:18px;
 }
 
 
-}
 .menu-btn{
 display:none;
 cursor:pointer;
