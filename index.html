@@ -269,27 +269,76 @@ color:#bbb;
 .portfolio-grid{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 
 }
 
 
-.portfolio-grid img{
+.portfolio-item{
 
-width:100%;
-display:block;
-border-radius:12px;
-transition:.4s;
+position:relative;
+overflow:hidden;
+border-radius:18px;
+background:#181818;
 cursor:pointer;
 
 }
 
 
-.portfolio-grid img:hover{
+.portfolio-item img{
 
-transform:scale(1.05);
-box-shadow:0 0 25px rgba(255,255,255,.3);
+width:100%;
+height:300px;
+object-fit:cover;
+display:block;
+transition:.5s;
+
+}
+
+
+.portfolio-item:hover img{
+
+transform:scale(1.12);
+
+}
+
+
+.portfolio-overlay{
+
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+padding:25px;
+background:linear-gradient(transparent,rgba(0,0,0,.95));
+transform:translateY(100%);
+transition:.5s;
+
+}
+
+
+.portfolio-item:hover .portfolio-overlay{
+
+transform:translateY(0);
+
+}
+
+
+.portfolio-overlay h3{
+
+font-size:24px;
+margin-bottom:10px;
+color:white;
+
+}
+
+
+.portfolio-overlay p{
+
+color:#ddd;
+font-size:16px;
+line-height:1.6;
 
 }
 .portfolio-item{
@@ -809,147 +858,197 @@ Developing digital experiences, 3D visuals and promotional content.
 
 
 <div class="portfolio-item">
+
 <img src="portfolio01.png.png">
+
+
 <div class="portfolio-overlay">
-<h3>CGI Production</h3>
-<p>3D Animation Visual Experience</p>
-</div>
-</div>
+
+<h3>Luxury Product CGI</h3>
+
+<p>
+Category: Product Visualization<br>
+Software: Blender | Unreal Engine 5<br>
+High-end cinematic product rendering for premium brands.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio02.png.png">
 <div class="portfolio-overlay">
-<h3>Product Visualization</h3>
-<p>Premium 3D Product Rendering</p>
-</div>
-</div>
+<h3>Automotive CGI</h3>
+
+<p>
+Category: Vehicle Visualization<br>
+Software: Blender | VFX<br>
+Realistic automotive animation and cinematic presentation.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio03.png.png">
 <div class="portfolio-overlay">
-<h3>Visual Effects</h3>
-<p>Cinematic VFX Production</p>
-</div>
-</div>
+<h3>Cinematic Environment</h3>
 
+<p>
+Category: CG Environment Design<br>
+Software: Unreal Engine 5<br>
+Immersive virtual environments for film and digital content.
+</p>
 
 <div class="portfolio-item">
 <img src="portfolio04.png.png">
 <div class="portfolio-overlay">
-<h3>3D Animation</h3>
-<p>Creative Animation Project</p>
-</div>
-</div>
+<h3>Character Animation</h3>
 
+<p>
+Category: 3D Character Production<br>
+Software: Blender | iClone<br>
+Professional character animation and storytelling.
+</p>
 
 <div class="portfolio-item">
 <img src="portfolio05.png.png">
 <div class="portfolio-overlay">
-<h3>Commercial CGI</h3>
-<p>Brand Visual Content</p>
-</div>
-</div>
+<h3>Commercial CGI Advertisement</h3>
+
+<p>
+Category: Brand Commercial Production<br>
+Software: Blender | After Effects<br>
+Creative CGI advertising content for marketing campaigns.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio06.png.png">
 <div class="portfolio-overlay">
-<h3>Motion Graphics</h3>
-<p>Digital Visual Design</p>
-</div>
-</div>
+<h3>Motion Graphics Project</h3>
+
+<p>
+Category: Motion Design<br>
+Software: After Effects | Premiere Pro<br>
+Dynamic visual graphics for digital media.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio07.png.png">
 <div class="portfolio-overlay">
-<h3>Character Animation</h3>
-<p>3D Character Development</p>
-</div>
-</div>
+<h3>3D Character Design</h3>
+
+<p>
+Category: Character Development<br>
+Software: Blender | iClone<br>
+Detailed 3D characters with animation-ready workflow.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio08.png.png">
 <div class="portfolio-overlay">
-<h3>Cinematic Scene</h3>
-<p>CG Environment Design</p>
-</div>
-</div>
+<h3>Virtual World Creation</h3>
+
+<p>
+Category: Environment Production<br>
+Software: Unreal Engine 5<br>
+Realistic digital worlds and cinematic scenes.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio09.png.png">
 <div class="portfolio-overlay">
 <h3>Product Animation</h3>
-<p>High Quality 3D Rendering</p>
-</div>
-</div>
+
+<p>
+Category: Product Marketing Visuals<br>
+Software: Blender<br>
+Premium product animation for brand promotion.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio10.png.png">
 <div class="portfolio-overlay">
 <h3>CGI Artwork</h3>
-<p>Creative 3D Visualization</p>
-</div>
-</div>
+
+<p>
+Category: Digital Art Production<br>
+Software: Blender | Photoshop<br>
+Creative 3D artwork and visual exploration.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio11.png.png">
 <div class="portfolio-overlay">
-<h3>VFX Project</h3>
-<p>Advanced Visual Effects</p>
-</div>
-</div>
+<h3>Visual Effects Production</h3>
+
+<p>
+Category: VFX & Compositing<br>
+Software: After Effects | Blender<br>
+Cinematic visual effects and post-production.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio12.png.png">
 <div class="portfolio-overlay">
-<h3>Animation Project</h3>
-<p>Professional 3D Animation</p>
-</div>
-</div>
+<h3>Animation Production</h3>
+
+<p>
+Category: 3D Animation<br>
+Software: Blender | iClone<br>
+Professional animation for entertainment and media.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio13.png.png">
 <div class="portfolio-overlay">
-<h3>Digital Production</h3>
-<p>Creative Media Solution</p>
-</div>
-</div>
+<h3>Digital Content Creation</h3>
+
+<p>
+Category: Creative Media Production<br>
+Software: Adobe Creative Suite<br>
+Complete digital visuals for online platforms.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio14.png.png">
 <div class="portfolio-overlay">
-<h3>CG Visualization</h3>
-<p>Realistic 3D Presentation</p>
-</div>
-</div>
+<h3>Architectural Visualization</h3>
+
+<p>
+Category: 3D Visualization<br>
+Software: Blender | Unreal Engine 5<br>
+Realistic architectural environments and presentations.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio15.png.png">
 <div class="portfolio-overlay">
-<h3>Animation Design</h3>
-<p>Creative Storytelling</p>
-</div>
-</div>
+<h3>Creative Storytelling</h3>
+
+<p>
+Category: Cinematic Animation<br>
+Software: Blender | Premiere Pro<br>
+Visual storytelling through animation and design.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio16.png.png">
 <div class="portfolio-overlay">
-<h3>3D Environment</h3>
-<p>Virtual World Creation</p>
-</div>
-</div>
+<h3>3D Environment Design</h3>
+
+<p>
+Category: Virtual Production<br>
+Software: Unreal Engine 5<br>
+High-quality environments for cinematic experiences.
+</p>
 
 
 <div class="portfolio-item">
@@ -964,28 +1063,37 @@ Developing digital experiences, 3D visuals and promotional content.
 <div class="portfolio-item">
 <img src="portfolio18.png.png">
 <div class="portfolio-overlay">
-<h3>Creative Project</h3>
-<p>Premium Visual Content</p>
-</div>
-</div>
+<h3>Brand CGI Campaign</h3>
+
+<p>
+Category: Advertising Content<br>
+Software: Blender | After Effects<br>
+Premium CGI visuals for brand campaigns.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio19.png.png">
 <div class="portfolio-overlay">
-<h3>3D Design</h3>
-<p>Professional CGI Artwork</p>
-</div>
-</div>
+<h3>Creative Visual Project</h3>
+
+<p>
+Category: CGI Production<br>
+Software: Blender | VFX Tools<br>
+Custom visual solutions for creative projects.
+</p>
 
 
 <div class="portfolio-item">
 <img src="portfolio20.png.png">
 <div class="portfolio-overlay">
-<h3>Final Production</h3>
-<p>Complete Visual Experience</p>
-</div>
-</div>
+<h3>Final Cinematic Production</h3>
+
+<p>
+Category: Complete Visual Production<br>
+Software: Blender | Unreal Engine 5<br>
+Full CGI workflow from concept to final delivery.
+</p>
 
 
 </div>
