@@ -266,7 +266,32 @@ margin-bottom:15px;
 color:#bbb;
 
 }
+.portfolio-grid{
 
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
+}
+
+
+.portfolio-grid img{
+
+width:100%;
+display:block;
+border-radius:12px;
+transition:.4s;
+cursor:pointer;
+
+}
+
+
+.portfolio-grid img:hover{
+
+transform:scale(1.05);
+box-shadow:0 0 25px rgba(255,255,255,.3);
+
+}
 
 
 #stats{
@@ -1109,7 +1134,55 @@ Indonesia
 </footer>
 
 
+<script>
+
+const images = document.querySelectorAll(".portfolio-grid img");
+
+images.forEach(img => {
+
+img.onclick = function(){
+
+let popup = document.createElement("div");
+
+popup.style.position="fixed";
+popup.style.top="0";
+popup.style.left="0";
+popup.style.width="100%";
+popup.style.height="100%";
+popup.style.background="rgba(0,0,0,.9)";
+popup.style.display="flex";
+popup.style.alignItems="center";
+popup.style.justifyContent="center";
+popup.style.zIndex="9999";
+popup.style.cursor="pointer";
+
+
+let bigImg=document.createElement("img");
+
+bigImg.src=this.src;
+bigImg.style.maxWidth="90%";
+bigImg.style.maxHeight="90%";
+bigImg.style.borderRadius="15px";
+
+
+popup.appendChild(bigImg);
+
+document.body.appendChild(popup);
+
+
+popup.onclick=function(){
+
+popup.remove();
+
+}
+
+}
+
+});
+
+
+</script>
+
 
 </body>
-
 </html>
