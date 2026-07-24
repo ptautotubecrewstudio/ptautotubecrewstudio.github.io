@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PT Autotube Crew Studio</title>
+<title>PT Autotube Crew Studio | CGI 3D Animation VFX Studio</title>
+
+<meta name="description" content="PT Autotube Crew Studio creates professional CGI, 3D Animation, VFX, Product Visualization, Medical Animation and Commercial Content worldwide.">
 
 <style>
 
@@ -26,7 +29,9 @@ color:#fff;
 overflow-x:hidden;
 }
 
+
 #bg-video{
+
 position:fixed;
 top:0;
 left:0;
@@ -34,9 +39,12 @@ width:100%;
 height:100%;
 object-fit:cover;
 z-index:-2;
+
 }
 
+
 body::before{
+
 content:"";
 position:fixed;
 top:0;
@@ -45,9 +53,13 @@ width:100%;
 height:100%;
 background:rgba(0,0,0,.65);
 z-index:-1;
+
 }
 
+
+
 header{
+
 position:fixed;
 top:0;
 left:0;
@@ -56,28 +68,42 @@ padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,.5);
-backdrop-filter:blur(8px);
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(10px);
 z-index:1000;
+
 }
+
 
 .logo img{
+
 height:60px;
+
 }
+
+
 
 nav a{
-color:#fff;
+
+color:white;
 text-decoration:none;
-margin-left:30px;
-transition:.3s;
+margin-left:25px;
 font-weight:bold;
+transition:.3s;
+
 }
+
 
 nav a:hover{
+
 color:#ff1e1e;
+
 }
 
+
+
 .hero{
+
 height:100vh;
 display:flex;
 flex-direction:column;
@@ -85,163 +111,309 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
+
 }
+
+
 
 .hero h1{
+
 font-size:60px;
 margin-bottom:20px;
+
 }
+
 
 .hero span{
+
 color:#ff1e1e;
+
 }
 
+
 .hero p{
+
 max-width:900px;
 font-size:20px;
 line-height:1.8;
 color:#ddd;
 margin-bottom:35px;
+
 }
 
+
+
 .btn{
-display:inline-block;
+
 padding:15px 40px;
 background:#ff1e1e;
-color:#fff;
+color:white;
 text-decoration:none;
 border-radius:40px;
 font-weight:bold;
 transition:.3s;
+
 }
+
 
 .btn:hover{
-background:#fff;
-color:#000;
+
+background:white;
+color:black;
+
 }
+
+
 
 section{
+
 padding:100px 8%;
-position:relative;
-z-index:2;
+
 }
 
+
+
 h2{
+
 font-size:42px;
 text-align:center;
 color:#ff1e1e;
 margin-bottom:50px;
+
 }
+
 
 #about,
 #portfolio,
 #contact{
+
 background:#111;
+
 }
 
+
+
 .services-grid{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
+
 }
 
+
+
 .service{
+
 background:#181818;
 padding:30px;
 border-radius:15px;
 text-align:center;
 transition:.3s;
+
 }
+
+
 
 .service:hover{
+
 transform:translateY(-8px);
+
 }
+
+
 
 .service h3{
+
 margin-bottom:15px;
-color:#fff;
+
 }
+
+
 
 .service p{
+
 color:#bbb;
+
 }
 
-.portfolio-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
 
-.portfolio-grid img{
-width:100%;
-display:block;
-border-radius:12px;
-transition:.3s;
-}
-
-.portfolio-grid img:hover{
-transform:scale(1.03);
-}
 
 #stats{
+
 background:#0d0d0d;
+
 }
 
+
+
 .stats-grid{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
+
 }
 
+
+
 .stat-box{
+
 background:#181818;
 padding:35px;
 border-radius:15px;
 text-align:center;
+
 }
+
 
 .stat-box h3{
+
 font-size:45px;
 color:#ff1e1e;
+
 }
 
-.contact-box{
-max-width:900px;
-margin:auto;
+.contact-card{
+
+background:#181818;
+padding:35px;
+border-radius:15px;
 text-align:center;
-line-height:2;
-font-size:18px;
-color:#ddd;
+transition:.3s;
+
 }
 
-.contact-box strong{
-color:#ff1e1e;
+
+.contact-card:hover{
+
+transform:translateY(-8px);
+
 }
+
+
+.contact-card h3{
+
+font-size:22px;
+margin-bottom:20px;
+
+}
+
+
+.contact-card p{
+
+color:#bbb;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+
+.contact-btn{
+
+display:inline-block;
+padding:12px 30px;
+background:#ff1e1e;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+
+}
+
+
+.contact-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+
 
 footer{
+
 background:#111;
 padding:30px;
 text-align:center;
 color:#aaa;
+border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+@media(max-width:768px){
+
+
+header{
+
+flex-direction:column;
+
+}
+
+
+nav{
+
+margin-top:15px;
+
+}
+
+
+nav a{
+
+margin:8px;
+display:inline-block;
+
+}
+
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+
+.hero p{
+
+font-size:18px;
+
+}
+
+
 }
 
 </style>
 
 </head>
 
+
 <body>
 
+
+
 <video autoplay muted loop playsinline id="bg-video">
+
 <source src="showreel.mp4 (1).mp4" type="video/mp4">
+
 </video>
+
+
 
 <header>
 
+
 <div class="logo">
-<img src="logo.png.png" alt="Logo">
+
+<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+
 </div>
 
+
+
 <nav>
+
 <a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
@@ -249,87 +421,158 @@ color:#aaa;
 <a href="#software">Software</a>
 <a href="#stats">Why Us</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
+
 </header>
+
+
+
+
 <section class="hero">
 
-<h1>PT <span>Autotube Crew Studio</span></h1>
+
+<h1>
+
+PT <span>Autotube Crew Studio</span>
+
+</h1>
+
 
 <p>
+
 Creating world-class CGI, 3D Animation, VFX, Product Visualization, Medical Animation, Commercials and Cinematic Content for clients worldwide.
+
 </p>
 
+
 <a class="btn" href="https://youtu.be/wrGsDI06Cdo" target="_blank">
+
 View Showreel
+
 </a>
 
+
 </section>
+
+
+
 
 
 <section id="about">
 
+
 <h2>About Us</h2>
+
 
 <p style="max-width:1000px;margin:auto;text-align:center;font-size:19px;line-height:1.9;color:#ddd;">
 
+
 PT Autotube Crew Studio is a creative production company based in Jakarta, Indonesia, specializing in premium CGI, 3D Animation, VFX, Motion Graphics, Product Visualization, Medical Animation, Commercial Production, and Cinematic Content.
+
 
 <br><br>
 
-Our mission is to transform ideas into visually stunning experiences through creativity, advanced technology, and world-class production quality.
+
+Our mission is to transform ideas into visually stunning experiences through creativity, advanced technology, and world-class production quality. We collaborate with brands, agencies, filmmakers, and businesses worldwide to create powerful visual stories.
+
 
 </p>
 
+
 </section>
+
+
+
 
 
 <section id="services">
 
+
 <h2>Our Services</h2>
+
 
 <div class="services-grid">
 
+
+
 <div class="service">
+
 <h3>3D Animation</h3>
+
 <p>High-quality character and product animation.</p>
+
 </div>
 
+
+
 <div class="service">
+
 <h3>CGI Production</h3>
+
 <p>Photorealistic CGI for advertising and film.</p>
+
 </div>
 
+
+
 <div class="service">
+
 <h3>Visual Effects</h3>
+
 <p>Professional cinematic VFX production.</p>
+
 </div>
 
+
+
 <div class="service">
+
 <h3>Product Visualization</h3>
+
 <p>Premium product rendering and animation.</p>
+
 </div>
 
+
+
 <div class="service">
+
 <h3>Medical Animation</h3>
+
 <p>Scientific and medical visualization.</p>
+
 </div>
+
+
 
 <div class="service">
+
 <h3>Commercial Production</h3>
-<p>Creative TV commercials and advertisements.</p>
-</div>
+
+<p>Creative advertisements and promotional videos.</p>
 
 </div>
+
+
+</div>
+
 
 </section>
 
 
+
+
+
 <section id="portfolio">
+
 
 <h2>Our Portfolio</h2>
 
+
 <div class="portfolio-grid">
+
 
 <img src="portfolio01.png.png">
 <img src="portfolio02.png.png">
@@ -352,143 +595,227 @@ Our mission is to transform ideas into visually stunning experiences through cre
 <img src="portfolio19.png.png">
 <img src="portfolio20.png.png">
 
+
 </div>
 
+
 </section>
-
-
 <section id="software">
 
 <h2>Software We Use</h2>
 
 <div class="services-grid">
 
+
 <div class="service">
 <h3>Blender</h3>
 <p>3D Modeling Animation Rendering</p>
 </div>
+
 
 <div class="service">
 <h3>Unreal Engine 5</h3>
 <p>Real Time Rendering Virtual Production</p>
 </div>
 
+
 <div class="service">
 <h3>Adobe After Effects</h3>
 <p>Motion Graphics Visual Effects</p>
 </div>
+
 
 <div class="service">
 <h3>Adobe Premiere Pro</h3>
 <p>Professional Video Editing</p>
 </div>
 
+
 <div class="service">
 <h3>DaVinci Resolve</h3>
 <p>Color Grading Video Finishing</p>
 </div>
+
 
 <div class="service">
 <h3>iClone</h3>
 <p>Character Animation Facial Animation</p>
 </div>
 
+
 <div class="service">
 <h3>Photoshop</h3>
 <p>Texture Design Image Editing</p>
 </div>
+
 
 <div class="service">
 <h3>Substance 3D Painter</h3>
 <p>Professional Texture Painting</p>
 </div>
 
+
 </div>
 
 </section>
 
 
+
+
+
 <section id="stats">
+
 
 <h2>Why Choose Us</h2>
 
+
 <div class="stats-grid">
+
 
 <div class="stat-box">
 <h3>20+</h3>
 <p>Professional Artists</p>
 </div>
 
+
 <div class="stat-box">
 <h3>Worldwide</h3>
 <p>Countries Served</p>
 </div>
+
 
 <div class="stat-box">
 <h3>10+</h3>
 <p>Completed Projects</p>
 </div>
 
+
 <div class="stat-box">
 <h3>9+</h3>
 <p>Years of Experience</p>
 </div>
 
+
 </div>
+
 
 </section>
 
 
+
+
+
+
 <section id="contact">
+
 
 <h2>Contact Us</h2>
 
-<div class="contact-box">
+
+<div class="services-grid">
+
+
+<div class="contact-card">
+
+<h3>Email</h3>
 
 <p>
-<strong>Email</strong><br>
 autotubecrewstudio@gmail.com
 </p>
 
+<a class="contact-btn" href="mailto:autotubecrewstudio@gmail.com">
+Send Email
+</a>
+
+</div>
+
+
+
+
+
+<div class="contact-card">
+
+<h3>WhatsApp</h3>
 
 <p>
-<strong>WhatsApp</strong><br>
-Hasnain Ali Shah<br>
 +62 813-9953-162
 </p>
 
+<a class="contact-btn" href="https://wa.me/628139953162" target="_blank">
+Chat WhatsApp
+</a>
+
+</div>
+
+
+
+
+
+<div class="contact-card">
+
+<h3>LinkedIn</h3>
 
 <p>
-<strong>Production Manager</strong><br>
-Shahmeer Sarfraz<br>
-+62 813-9953-164
-</p>
-
-
-<p>
-<strong>LinkedIn</strong><br>
-https://www.linkedin.com/in/hasnain-ali-shah-78900a402
-</p>
-
-
-<p>
-<strong>Instagram</strong><br>
+Hasnain Ali Shah<br>
 PT Autotube Crew Studio
 </p>
 
+<a class="contact-btn" href="https://www.linkedin.com/in/hasnain-ali-shah-78900a402" target="_blank">
+Visit LinkedIn
+</a>
+
+</div>
+
+
+
+
+
+<div class="contact-card">
+
+<h3>Instagram</h3>
 
 <p>
-<strong>Office</strong><br>
+PT Autotube Crew Studio
+</p>
+
+<a class="contact-btn" href="#" >
+Instagram
+</a>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="contact-card" style="margin-top:40px;">
+
+
+<h3>Production Office</h3>
+
+
+<p>
+
 Pacific Century Place Level 39<br>
 SCBD Jalan Jenderal Sudirman Kav.52-53<br>
 Senayan Kebayoran Baru<br>
 Jakarta Selatan 12190<br>
 Indonesia
+
 </p>
+
 
 </div>
 
+
+
 </section>
+
+
+
+
 
 
 <footer>
@@ -498,5 +825,7 @@ Indonesia
 </footer>
 
 
+
 </body>
+
 </html>
