@@ -133,17 +133,10 @@ color:#ff1e1e;
 margin-bottom:50px;
 }
 
-#about{
+#about,
+#portfolio,
+#contact{
 background:#111;
-}
-
-#about p{
-max-width:1000px;
-margin:auto;
-font-size:19px;
-line-height:1.9;
-text-align:center;
-color:#ddd;
 }
 
 .services-grid{
@@ -173,10 +166,6 @@ color:#fff;
 color:#bbb;
 }
 
-#portfolio{
-background:#111;
-}
-
 .portfolio-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -193,6 +182,7 @@ transition:.3s;
 .portfolio-grid img:hover{
 transform:scale(1.03);
 }
+
 #stats{
 background:#0d0d0d;
 }
@@ -201,7 +191,6 @@ background:#0d0d0d;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
-margin-top:40px;
 }
 
 .stat-box{
@@ -214,15 +203,6 @@ text-align:center;
 .stat-box h3{
 font-size:45px;
 color:#ff1e1e;
-margin-bottom:10px;
-}
-
-.stat-box p{
-color:#ddd;
-}
-
-#contact{
-background:#111;
 }
 
 .contact-box{
@@ -237,37 +217,12 @@ color:#ddd;
 .contact-box strong{
 color:#ff1e1e;
 }
+
 footer{
 background:#111;
 padding:30px;
 text-align:center;
-border-top:1px solid rgba(255,255,255,.1);
 color:#aaa;
-}
-
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-margin:10px;
-display:inline-block;
-}
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
 }
 
 </style>
@@ -291,12 +246,12 @@ font-size:18px;
 <a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#portfolio">Portfolio</a>
+<a href="#software">Software</a>
 <a href="#stats">Why Us</a>
 <a href="#contact">Contact</a>
 </nav>
 
 </header>
-
 <section class="hero">
 
 <h1>PT <span>Autotube Crew Studio</span></h1>
@@ -311,19 +266,23 @@ View Showreel
 
 </section>
 
+
 <section id="about">
 
 <h2>About Us</h2>
 
-<p>
+<p style="max-width:1000px;margin:auto;text-align:center;font-size:19px;line-height:1.9;color:#ddd;">
 
 PT Autotube Crew Studio is a creative production company based in Jakarta, Indonesia, specializing in premium CGI, 3D Animation, VFX, Motion Graphics, Product Visualization, Medical Animation, Commercial Production, and Cinematic Content.
+
+<br><br>
 
 Our mission is to transform ideas into visually stunning experiences through creativity, advanced technology, and world-class production quality.
 
 </p>
 
 </section>
+
 
 <section id="services">
 
@@ -365,101 +324,39 @@ Our mission is to transform ideas into visually stunning experiences through cre
 
 </section>
 
+
 <section id="portfolio">
 
 <h2>Our Portfolio</h2>
 
 <div class="portfolio-grid">
 
-<img src="portfolio01.png.png" alt="Portfolio 01">
-<img src="portfolio02.png.png" alt="Portfolio 02">
-<img src="portfolio03.png.png" alt="Portfolio 03">
-<img src="portfolio04.png.png" alt="Portfolio 04">
-<img src="portfolio05.png.png" alt="Portfolio 05">
-<img src="portfolio06.png.png" alt="Portfolio 06">
-<img src="portfolio07.png.png" alt="Portfolio 07">
-<img src="portfolio08.png.png" alt="Portfolio 08">
-<img src="portfolio09.png.png" alt="Portfolio 09">
-<img src="portfolio10.png.png" alt="Portfolio 10">
-<img src="portfolio11.png.png" alt="Portfolio 11">
-<img src="portfolio12.png.png" alt="Portfolio 12">
-<img src="portfolio13.png.png" alt="Portfolio 13">
-<img src="portfolio14.png.png" alt="Portfolio 14">
-<img src="portfolio15.png.png" alt="Portfolio 15">
-<img src="portfolio16.png.png" alt="Portfolio 16">
-<img src="portfolio17.png.png" alt="Portfolio 17">
-<img src="portfolio18.png.png" alt="Portfolio 18">
-<img src="portfolio19.png.png" alt="Portfolio 19">
-<img src="portfolio20.png.png" alt="Portfolio 20">
+<img src="portfolio01.png.png">
+<img src="portfolio02.png.png">
+<img src="portfolio03.png.png">
+<img src="portfolio04.png.png">
+<img src="portfolio05.png.png">
+<img src="portfolio06.png.png">
+<img src="portfolio07.png.png">
+<img src="portfolio08.png.png">
+<img src="portfolio09.png.png">
+<img src="portfolio10.png.png">
+<img src="portfolio11.png.png">
+<img src="portfolio12.png.png">
+<img src="portfolio13.png.png">
+<img src="portfolio14.png.png">
+<img src="portfolio15.png.png">
+<img src="portfolio16.png.png">
+<img src="portfolio17.png.png">
+<img src="portfolio18.png.png">
+<img src="portfolio19.png.png">
+<img src="portfolio20.png.png">
 
 </div>
 
 </section>
 
 
-<section id="stats">
-
-<h2>Why Choose Us</h2>
-
-<div class="stats-grid">
-
-<div class="stat-box">
-<h3>20+</h3>
-<p>Professional Artists</p>
-</div>
-
-<div class="stat-box">
-<h3>Worldwide</h3>
-<p>Countries Served</p>
-</div>
-
-<div class="stat-box">
-<h3>10+</h3>
-<p>Completed Projects</p>
-</div>
-
-<div class="stat-box">
-<h3>9+</h3>
-<p>Years of Experience</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact Us</h2>
-
-<div class="contact-box">
-
-<p><strong>Email</strong><br>
-autotubecrewstudio@gmail.com</p>
-
-<p><strong>WhatsApp</strong><br>
-Hasnain Ali Shah<br>
-+62 813-9953-162</p>
-
-<p><strong>Production Manager</strong><br>
-Shahmeer Sarfraz<br>
-+62 813-9953-164</p>
-
-<p><strong>LinkedIn</strong><br>
-https://www.linkedin.com/in/hasnain-ali-shah-78900a402</p>
-
-<p><strong>Instagram</strong><br>
-PT Autotube Crew Studio</p>
-
-<p><strong>Office</strong><br>
-Pacific Century Place Level 39<br>
-SCBD Jalan Jenderal Sudirman Kav.52-53<br>
-Senayan Kebayoran Baru<br>
-Jakarta Selatan 12190<br>
-Indonesia</p>
-
-</div>
-
-</section>
 <section id="software">
 
 <h2>Software We Use</h2>
@@ -508,60 +405,98 @@ Indonesia</p>
 
 </div>
 
-</section> <section id="software">
+</section>
 
-<h2>Software We Use</h2>
 
-<div class="services-grid">
+<section id="stats">
 
-<div class="service">
-<h3>Blender</h3>
-<p>3D Modeling Animation Rendering</p>
+<h2>Why Choose Us</h2>
+
+<div class="stats-grid">
+
+<div class="stat-box">
+<h3>20+</h3>
+<p>Professional Artists</p>
 </div>
 
-<div class="service">
-<h3>Unreal Engine 5</h3>
-<p>Real Time Rendering Virtual Production</p>
+<div class="stat-box">
+<h3>Worldwide</h3>
+<p>Countries Served</p>
 </div>
 
-<div class="service">
-<h3>Adobe After Effects</h3>
-<p>Motion Graphics Visual Effects</p>
+<div class="stat-box">
+<h3>10+</h3>
+<p>Completed Projects</p>
 </div>
 
-<div class="service">
-<h3>Adobe Premiere Pro</h3>
-<p>Professional Video Editing</p>
-</div>
-
-<div class="service">
-<h3>DaVinci Resolve</h3>
-<p>Color Grading Video Finishing</p>
-</div>
-
-<div class="service">
-<h3>iClone</h3>
-<p>Character Animation Facial Animation</p>
-</div>
-
-<div class="service">
-<h3>Photoshop</h3>
-<p>Texture Design Image Editing</p>
-</div>
-
-<div class="service">
-<h3>Substance 3D Painter</h3>
-<p>Professional Texture Painting</p>
+<div class="stat-box">
+<h3>9+</h3>
+<p>Years of Experience</p>
 </div>
 
 </div>
 
 </section>
+
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+
+<p>
+<strong>Email</strong><br>
+autotubecrewstudio@gmail.com
+</p>
+
+
+<p>
+<strong>WhatsApp</strong><br>
+Hasnain Ali Shah<br>
++62 813-9953-162
+</p>
+
+
+<p>
+<strong>Production Manager</strong><br>
+Shahmeer Sarfraz<br>
++62 813-9953-164
+</p>
+
+
+<p>
+<strong>LinkedIn</strong><br>
+https://www.linkedin.com/in/hasnain-ali-shah-78900a402
+</p>
+
+
+<p>
+<strong>Instagram</strong><br>
+PT Autotube Crew Studio
+</p>
+
+
+<p>
+<strong>Office</strong><br>
+Pacific Century Place Level 39<br>
+SCBD Jalan Jenderal Sudirman Kav.52-53<br>
+Senayan Kebayoran Baru<br>
+Jakarta Selatan 12190<br>
+Indonesia
+</p>
+
+</div>
+
+</section>
+
+
 <footer>
 
 © 2026 PT Autotube Crew Studio. All Rights Reserved.
 
 </footer>
+
 
 </body>
 </html>
