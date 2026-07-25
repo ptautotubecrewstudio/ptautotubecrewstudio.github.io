@@ -435,16 +435,7 @@ transform:scale(1.1);
 }
 /* Scroll Reveal Animation */
 
-.reveal{
-opacity:0;
-transform:translateY(60px);
-transition:all .8s ease;
-}
 
-.reveal.active{
-opacity:1;
-transform:translateY(0);
-}
 @media(max-width:768px){
 header{
 flex-direction:column;
@@ -506,7 +497,7 @@ height:240px;
 
 </div>
 <video autoplay muted loop playsinline id="bg-video">
-<source src="showreel.mp4 (1).mp4" type="video/mp4">
+<source src="showreel.mp4" type="video/mp4">
 </video>
 
 <header>
@@ -1089,6 +1080,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 counters.forEach(counter => observer.observe(counter));
+</script>
 
 
 </body>
