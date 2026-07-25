@@ -1089,35 +1089,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 counters.forEach(counter => observer.observe(counter));
-const reveals = document.querySelectorAll(".reveal");
 
-function revealSections(){
-
-reveals.forEach(section=>{
-
-const windowHeight = window.innerHeight;
-const top = section.getBoundingClientRect().top;
-
-if(top < windowHeight - 120){
-section.classList.add("active");
-}
-
-});
-
-}
-
-window.addEventListener("scroll", revealSections);
-window.addEventListener("load", revealSections);
-...
-popup.onclick=function(){
-
-popup.remove();
-
-};
-
-});
-
-</script>
 
 </body>
 </html>
