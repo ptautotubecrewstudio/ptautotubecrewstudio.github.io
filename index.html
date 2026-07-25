@@ -28,6 +28,10 @@ color:#fff;
 overflow-x:hidden;
 }
 
+a{
+text-decoration:none;
+}
+
 #bg-video{
 position:fixed;
 top:0;
@@ -49,25 +53,6 @@ background:rgba(0,0,0,.72);
 z-index:-1;
 }
 
-a{
-text-decoration:none;
-}
-
-section{
-padding:100px 8%;
-position:relative;
-z-index:2;
-}
-
-h2{
-font-size:42px;
-text-align:center;
-color:#ff1e1e;
-margin-bottom:50px;
-letter-spacing:.5px;
-}
-
-/* HEADER */
 header{
 position:fixed;
 top:0;
@@ -120,7 +105,6 @@ background:#fff;
 border-radius:2px;
 }
 
-/* HERO */
 .hero{
 min-height:100vh;
 display:flex;
@@ -164,7 +148,20 @@ background:#fff;
 color:#000;
 }
 
-/* ABOUT */
+section{
+padding:100px 8%;
+position:relative;
+z-index:2;
+}
+
+h2{
+font-size:42px;
+text-align:center;
+color:#ff1e1e;
+margin-bottom:50px;
+letter-spacing:.5px;
+}
+
 #about{
 background:#111;
 }
@@ -178,7 +175,6 @@ text-align:center;
 color:#ddd;
 }
 
-/* GRID CARDS */
 .services-grid,
 .stats-grid,
 .contact-grid{
@@ -217,7 +213,6 @@ color:#bbb;
 line-height:1.7;
 }
 
-/* PROCESS / SERVICES / BRANDS / INDUSTRIES / FAQ / TESTIMONIALS */
 #process{ background:#0d0d0d; }
 #services{ background:#111; }
 #brands{ background:#0d0d0d; }
@@ -227,11 +222,6 @@ line-height:1.7;
 #faq{ background:#0d0d0d; }
 #stats{ background:#111; }
 #contact{ background:#0d0d0d; }
-
-/* PORTFOLIO */
-#portfolio{
-background:#111;
-}
 
 .portfolio-grid{
 display:grid;
@@ -287,7 +277,6 @@ color:#ddd;
 line-height:1.6;
 }
 
-/* STATS */
 .stat-box h3{
 font-size:46px;
 color:#ff1e1e;
@@ -299,7 +288,6 @@ color:#ddd;
 line-height:1.6;
 }
 
-/* CONTACT */
 .contact-card a{
 color:#fff;
 transition:.3s;
@@ -333,7 +321,6 @@ border:1px solid rgba(255,255,255,.08);
 box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
-/* FOOTER */
 footer{
 background:#111;
 padding:30px;
@@ -342,7 +329,6 @@ color:#aaa;
 border-top:1px solid rgba(255,255,255,.08);
 }
 
-/* LIGHTBOX */
 #lightbox{
 display:none;
 position:fixed;
@@ -365,7 +351,6 @@ border-radius:12px;
 box-shadow:0 0 30px rgba(255,255,255,.15);
 }
 
-/* FLOATING WHATSAPP */
 .whatsapp-float{
 position:fixed;
 right:22px;
@@ -388,7 +373,6 @@ transition:.3s;
 transform:scale(1.08);
 }
 
-/* MOBILE */
 @media(max-width:768px){
 header{
 flex-direction:column;
@@ -892,22 +876,55 @@ We transform ideas into powerful visual experiences through creativity, advanced
 <h2>Contact Us</h2>
 <div class="contact-grid">
 <div class="contact-card">
-<h3>Email</h3>
-<p><a href="mailto:autotubecrewstudio@gmail.com">autotubecrewstudio@gmail.com</a></p>
-<a class="contact-btn" href="mailto:autotubecrewstudio@gmail.com">Send Email</a>
-</div>
-
-<div class="contact-card">
 <h3>Director</h3>
-<p>Hasnain Ali Shah<br>
-<a href="https://wa.me/628139953162" target="_blank">+62 813-9953-162</a></p>
+<p>
+Hasnain Ali Shah<br>
+Director<br>
+<a href="https://wa.me/628139953162" target="_blank">+62 813-9953-162</a>
+</p>
 <a class="contact-btn" href="https://wa.me/628139953162" target="_blank">WhatsApp</a>
 </div>
 
 <div class="contact-card">
+<h3>Production Manager</h3>
+<p>
+Shameer Sarfraz<br>
+Direktur Utama<br>
+<a href="https://wa.me/628139953164" target="_blank">+62 813-9953-164</a>
+</p>
+<a class="contact-btn" href="https://wa.me/628139953164" target="_blank">WhatsApp</a>
+</div>
+
+<div class="contact-card">
+<h3>Email</h3>
+<p>
+<a href="mailto:autotubecrewstudio@gmail.com">autotubecrewstudio@gmail.com</a>
+</p>
+<a class="contact-btn" href="mailto:autotubecrewstudio@gmail.com">Send Email</a>
+</div>
+
+<div class="contact-card">
+<h3>Company Phone</h3>
+<p>
+08139953164
+</p>
+<a class="contact-btn" href="tel:08139953164">Call Now</a>
+</div>
+
+<div class="contact-card">
+<h3>Instagram</h3>
+<p>
+PT Autotube Crew Studio
+</p>
+<a class="contact-btn" href="https://www.instagram.com/autotubecrewstudio/" target="_blank">Visit Instagram</a>
+</div>
+
+<div class="contact-card">
 <h3>LinkedIn</h3>
-<p>Hasnain Ali Shah<br>
-PT Autotube Crew Studio</p>
+<p>
+Hasnain Ali Shah<br>
+PT Autotube Crew Studio
+</p>
 <a class="contact-btn" href="https://www.linkedin.com/in/hasnain-ali-shah-78900a402" target="_blank">Visit LinkedIn</a>
 </div>
 </div>
