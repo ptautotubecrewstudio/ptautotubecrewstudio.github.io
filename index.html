@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>PT Autotube Crew Studio | CGI 3D Animation VFX Studio</title>
-
+<meta name="description" content="PT Autotube Crew Studio creates premium CGI, 3D Animation, VFX, Product Visualization, Medical Animation and Cinematic Content worldwide.">
+<meta name="keywords" content="PT Autotube Crew Studio, 3D Animation Studio, CGI Production Company, VFX Studio, Blender Animation, Unreal Engine 5, Product Visualization">
+<meta name="author" content="PT Autotube Crew Studio">
 <link rel="icon" type="image/png" href="logo.png.png">
 
-<meta name="description" content="PT Autotube Crew Studio creates premium CGI, 3D Animation, VFX, Product Visualization, Medical Animation and Cinematic Content worldwide.">
-
-<meta name="keywords" content="
-PT Autotube Crew Studio,
-3D Animation Studio,
-CGI Production Company,
-VFX Studio,
-Blender Animation,
-Unreal Engine 5,
-Product Visualization
-">
-
-<meta name="author" content="PT Autotube Crew Studio">
-
-
 <style>
-
-
 *{
 margin:0;
 padding:0;
@@ -35,11 +18,9 @@ box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
 }
 
-
 html{
 scroll-behavior:smooth;
 }
-
 
 body{
 background:#000;
@@ -47,12 +28,7 @@ color:#fff;
 overflow-x:hidden;
 }
 
-
-
-/* BACKGROUND VIDEO */
-
 #bg-video{
-
 position:fixed;
 top:0;
 left:0;
@@ -60,541 +36,433 @@ width:100%;
 height:100%;
 object-fit:cover;
 z-index:-2;
-
 }
 
-
 body::before{
-
 content:"";
 position:fixed;
 top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,.70);
+background:rgba(0,0,0,.72);
 z-index:-1;
-
 }
 
+a{
+text-decoration:none;
+}
 
+section{
+padding:100px 8%;
+position:relative;
+z-index:2;
+}
+
+h2{
+font-size:42px;
+text-align:center;
+color:#ff1e1e;
+margin-bottom:50px;
+letter-spacing:.5px;
+}
 
 /* HEADER */
-
-
 header{
-
 position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 8%;
+padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 background:rgba(0,0,0,.65);
 backdrop-filter:blur(10px);
 z-index:1000;
-
+border-bottom:1px solid rgba(255,255,255,.08);
 }
-
 
 .logo img{
-
-height:60px;
-
+height:58px;
+display:block;
 }
 
-
+nav{
+display:flex;
+align-items:center;
+gap:20px;
+}
 
 nav a{
-
-color:white;
-text-decoration:none;
-margin-left:20px;
+color:#fff;
 font-weight:bold;
 transition:.3s;
-
+font-size:15px;
 }
-
 
 nav a:hover{
-
 color:#ff1e1e;
-
 }
 
+.menu-btn{
+display:none;
+cursor:pointer;
+flex-direction:column;
+gap:6px;
+}
 
+.menu-btn span{
+display:block;
+width:30px;
+height:3px;
+background:#fff;
+border-radius:2px;
+}
 
 /* HERO */
-
-
 .hero{
-
-height:100vh;
+min-height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
-
+padding:130px 20px 40px;
 }
-
 
 .hero h1{
-
-font-size:60px;
-margin-bottom:20px;
-
+font-size:64px;
+margin-bottom:18px;
+line-height:1.1;
 }
-
 
 .hero span{
-
 color:#ff1e1e;
-
 }
 
-
 .hero p{
-
-max-width:900px;
+max-width:980px;
 font-size:20px;
 line-height:1.8;
 color:#ddd;
 margin-bottom:35px;
-
 }
 
-
-
 .btn{
-
+display:inline-block;
 padding:15px 40px;
 background:#ff1e1e;
 color:#fff;
 border-radius:40px;
-text-decoration:none;
 font-weight:bold;
 transition:.3s;
-
 }
-
 
 .btn:hover{
-
 background:#fff;
 color:#000;
-
 }
 
-
-
-/* GENERAL */
-
-
-section{
-
-padding:100px 8%;
-
+/* ABOUT */
+#about{
+background:#111;
 }
 
-
-h2{
-
-font-size:42px;
+#about p{
+max-width:1000px;
+margin:auto;
+font-size:19px;
+line-height:1.9;
 text-align:center;
-color:#ff1e1e;
-margin-bottom:50px;
-
+color:#ddd;
 }
 
-
-
-
-/* SERVICES */
-
-
-.services-grid{
-
+/* GRID CARDS */
+.services-grid,
+.stats-grid,
+.contact-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-
 }
 
-
-
-.service{
-
+.service,
+.stat-box,
+.contact-card{
 background:#181818;
 padding:30px;
-border-radius:15px;
+border-radius:16px;
 text-align:center;
 transition:.3s;
-
+border:1px solid rgba(255,255,255,.06);
 }
 
-
-
-.service:hover{
-
+.service:hover,
+.stat-box:hover,
+.contact-card:hover{
 transform:translateY(-8px);
-
 }
 
-
-
-.service h3{
-
-margin-bottom:15px;
-
+.service h3,
+.contact-card h3{
+margin-bottom:14px;
+font-size:22px;
+color:#fff;
 }
 
-
-
-.service p{
-
+.service p,
+.contact-card p{
 color:#bbb;
-line-height:1.6;
-
+line-height:1.7;
 }
 
+/* PROCESS / SERVICES / BRANDS / INDUSTRIES / FAQ / TESTIMONIALS */
+#process{ background:#0d0d0d; }
+#services{ background:#111; }
+#brands{ background:#0d0d0d; }
+#software{ background:#111; }
+#industries{ background:#0d0d0d; }
+#testimonials{ background:#111; }
+#faq{ background:#0d0d0d; }
+#stats{ background:#111; }
+#contact{ background:#0d0d0d; }
 
-
-/* PORTFOLIO FIXED */
-
-
+/* PORTFOLIO */
 #portfolio{
-
 background:#111;
-
 }
-
-
 
 .portfolio-grid{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
-
 }
 
-
-
 .portfolio-item{
-
 position:relative;
 overflow:hidden;
 border-radius:18px;
 background:#181818;
 cursor:pointer;
-
+box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
-
-
 .portfolio-item img{
-
 width:100%;
 height:300px;
 object-fit:cover;
 display:block;
 transition:.5s;
-
 }
-
-
 
 .portfolio-item:hover img{
-
 transform:scale(1.12);
-
 }
 
-
-
 .portfolio-overlay{
-
 position:absolute;
 bottom:0;
 left:0;
 width:100%;
 padding:25px;
-background:linear-gradient(
-transparent,
-rgba(0,0,0,.95)
-);
-
+background:linear-gradient(transparent, rgba(0,0,0,.95));
 transform:translateY(100%);
 transition:.5s;
-
 }
-
-
 
 .portfolio-item:hover .portfolio-overlay{
-
 transform:translateY(0);
-
 }
 
-
-
 .portfolio-overlay h3{
-
 font-size:22px;
 margin-bottom:10px;
 color:#fff;
-
 }
 
-
-
 .portfolio-overlay p{
-
 font-size:15px;
 color:#ddd;
 line-height:1.6;
-
 }
-
-
-
 
 /* STATS */
-
-
-#stats{
-
-background:#0d0d0d;
-
-}
-
-
-
-.stats-grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-
-}
-
-
-
-.stat-box{
-
-background:#181818;
-padding:35px;
-border-radius:15px;
-text-align:center;
-
-}
-
-
-
 .stat-box h3{
-
-font-size:45px;
+font-size:46px;
 color:#ff1e1e;
-
+margin-bottom:8px;
 }
 
-
+.stat-box p{
+color:#ddd;
+line-height:1.6;
+}
 
 /* CONTACT */
-
-
-.contact-card{
-
-background:#181818;
-padding:35px;
-border-radius:15px;
-text-align:center;
+.contact-card a{
+color:#fff;
 transition:.3s;
-
 }
 
-
-.contact-card:hover{
-
-transform:translateY(-8px);
-
+.contact-card a:hover{
+color:#ff1e1e;
 }
-
-
-
-.contact-card p{
-
-color:#bbb;
-line-height:1.8;
-margin-bottom:20px;
-
-}
-
-
 
 .contact-btn{
-
 display:inline-block;
 padding:12px 30px;
 background:#ff1e1e;
-color:white;
+color:#fff !important;
 border-radius:30px;
-text-decoration:none;
 font-weight:bold;
-
+transition:.3s;
+margin-top:8px;
 }
-
-
 
 .contact-btn:hover{
-
 background:#fff;
-color:#000;
-
+color:#000 !important;
 }
 
-
+.map-wrap{
+margin-top:35px;
+border-radius:16px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
 
 /* FOOTER */
-
-
 footer{
-
 background:#111;
 padding:30px;
 text-align:center;
 color:#aaa;
-
+border-top:1px solid rgba(255,255,255,.08);
 }
 
-
-
-
-/* MOBILE MENU */
-
-
-.menu-btn{
-
+/* LIGHTBOX */
+#lightbox{
 display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
 cursor:pointer;
-
+padding:20px;
 }
 
-
-.menu-btn span{
-
-display:block;
-width:30px;
-height:3px;
-background:white;
-margin:6px;
-
+#lightbox img{
+max-width:92%;
+max-height:92%;
+border-radius:12px;
+box-shadow:0 0 30px rgba(255,255,255,.15);
 }
 
+/* FLOATING WHATSAPP */
+.whatsapp-float{
+position:fixed;
+right:22px;
+bottom:22px;
+z-index:9998;
+width:58px;
+height:58px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:30px;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+transition:.3s;
+}
 
+.whatsapp-float:hover{
+transform:scale(1.08);
+}
 
+/* MOBILE */
 @media(max-width:768px){
-
+header{
+flex-direction:column;
+gap:14px;
+padding:16px 6%;
+}
 
 .menu-btn{
-
-display:block;
-
+display:flex;
+position:absolute;
+right:6%;
+top:24px;
 }
-
 
 nav{
-
-position:absolute;
-top:80px;
-left:0;
-width:100%;
-background:#111;
 display:none;
-text-align:center;
-padding:20px;
-
+flex-direction:column;
+width:100%;
+padding:10px 0 0;
 }
-
 
 nav.active{
-
-display:block;
-
+display:flex;
 }
-
-
 
 nav a{
-
-display:block;
-margin:15px;
-
+margin:8px 0;
 }
-
 
 .hero h1{
-
 font-size:40px;
-
 }
-
 
 .hero p{
-
 font-size:17px;
-
 }
 
-
+section{
+padding:80px 6%;
 }
 
+h2{
+font-size:32px;
+}
 
+.portfolio-item img{
+height:240px;
+}
+}
 </style>
 </head>
 
 <body>
 
-
 <video autoplay muted loop playsinline id="bg-video">
-
 <source src="showreel.mp4 (1).mp4" type="video/mp4">
-
 </video>
 
-
-
 <header>
-
 <div class="logo">
-
 <img src="logo.png.png" alt="PT Autotube Crew Studio">
-
 </div>
-
-
 
 <div class="menu-btn" onclick="toggleMenu()">
-
 <span></span>
 <span></span>
 <span></span>
-
 </div>
 
-
-
 <nav id="nav-menu">
-
 <a href="#">Home</a>
 <a href="#about">About</a>
-<a href="#services">Services</a>
 <a href="#process">Process</a>
+<a href="#services">Services</a>
 <a href="#brands">Brands</a>
 <a href="#portfolio">Portfolio</a>
 <a href="#software">Software</a>
@@ -603,1128 +471,492 @@ font-size:17px;
 <a href="#faq">FAQ</a>
 <a href="#stats">Why Us</a>
 <a href="#contact">Contact</a>
-
 </nav>
-
 </header>
 
-
-
-
 <section class="hero">
-
-
-<h1>
-
-PT <span>Autotube Crew Studio</span>
-
-</h1>
-
-
+<h1>PT <span>Autotube Crew Studio</span></h1>
 <p>
-
 Creating world-class CGI, 3D Animation, VFX, Product Visualization, Medical Animation, Commercials and Cinematic Content for brands worldwide.
-
 </p>
-
-
-<a class="btn" href="#" >
-
-View Showreel
-
-</a>
-
-
+<a class="btn" href="https://youtu.be/wrGsDI06Cdo" target="_blank">View Showreel</a>
 </section>
-
-
-
-
 
 <section id="about">
-
-
 <h2>About Us</h2>
-
-
-<p style="max-width:1000px;margin:auto;text-align:center;font-size:19px;line-height:1.9;color:#ddd;">
-
-
+<p>
 PT Autotube Crew Studio is a creative production company based in Jakarta, Indonesia, specializing in premium CGI, 3D Animation, VFX, Motion Graphics, Product Visualization, Medical Animation, Commercial Production and Cinematic Content.
-
-
 <br><br>
-
-
 We transform ideas into powerful visual experiences through creativity, advanced technology and professional production workflows. We collaborate with brands, agencies and businesses worldwide.
-
-
 </p>
-
-
 </section>
-
-
-
-
 
 <section id="process">
-
-
 <h2>Our Production Process</h2>
-
-
 <div class="services-grid">
-
-
 <div class="service">
-
 <h3>01 Concept & Planning</h3>
-
-<p>
-Creative strategy, project planning and visual direction.
-</p>
-
+<p>Creative strategy, project planning and visual direction.</p>
 </div>
 
-
-
 <div class="service">
-
 <h3>02 3D Production</h3>
-
-<p>
-3D modeling, environments, materials and realistic rendering.
-</p>
-
+<p>3D modeling, environments, materials and realistic rendering.</p>
 </div>
 
-
-
 <div class="service">
-
 <h3>03 Animation & VFX</h3>
-
-<p>
-Cinematic animation, effects and motion graphics production.
-</p>
-
+<p>Cinematic animation, effects and motion graphics production.</p>
 </div>
-
-
 
 <div class="service">
-
 <h3>04 Final Delivery</h3>
-
-<p>
-Editing, color grading and professional final output.
-</p>
-
+<p>Editing, color grading and professional final output.</p>
 </div>
-
-
 </div>
-
-
 </section>
-
-
-
-
-
 
 <section id="services">
-
-
 <h2>Our Services</h2>
-
-
 <div class="services-grid">
-
-
 <div class="service">
-
 <h3>3D Animation</h3>
-
-<p>
-Character and product animation production.
-</p>
-
+<p>Character and product animation production.</p>
 </div>
 
-
-
 <div class="service">
-
 <h3>CGI Production</h3>
-
-<p>
-Photorealistic CGI visuals for brands.
-</p>
-
+<p>Photorealistic CGI visuals for brands.</p>
 </div>
 
-
-
 <div class="service">
-
 <h3>Visual Effects</h3>
-
-<p>
-Professional cinematic VFX solutions.
-</p>
-
+<p>Professional cinematic VFX solutions.</p>
 </div>
 
-
-
 <div class="service">
-
 <h3>Product Visualization</h3>
-
-<p>
-Premium product rendering and animation.
-</p>
-
+<p>Premium product rendering and animation.</p>
 </div>
 
-
-
 <div class="service">
-
 <h3>Medical Animation</h3>
-
-<p>
-Scientific and healthcare visualization.
-</p>
-
+<p>Scientific and healthcare visualization.</p>
 </div>
 
-
-
 <div class="service">
-
 <h3>Commercial Production</h3>
-
-<p>
-Advertising and promotional videos.
-</p>
-
+<p>Advertising and promotional videos.</p>
 </div>
-
-
 </div>
-
-
 </section>
 
-
-
-
-
-
-
-<section id="brands" style="background:#0d0d0d;">
-
-
+<section id="brands">
 <h2>Brands We Work With</h2>
-
-
 <div class="services-grid">
-
-
 <div class="service">
-
 <h3>Advertising Agencies</h3>
-
-<p>
-CGI production support and creative visuals.
-</p>
-
+<p>CGI production support and creative visuals.</p>
 </div>
 
-
 <div class="service">
-
 <h3>Product Companies</h3>
-
-<p>
-Product animation and marketing content.
-</p>
-
+<p>Product animation and marketing content.</p>
 </div>
 
-
 <div class="service">
-
 <h3>Entertainment Studios</h3>
-
-<p>
-Film CGI, VFX and animation support.
-</p>
-
+<p>Film CGI, VFX and animation support.</p>
 </div>
-
 
 <div class="service">
-
 <h3>Technology Companies</h3>
-
-<p>
-Digital experiences and 3D solutions.
-</p>
-
+<p>Digital experiences and 3D solutions.</p>
 </div>
-
-
 </div>
-
-
 </section>
-
-
-
-
-
 
 <section id="portfolio">
-
-
 <h2>Our Portfolio</h2>
-
-
 <div class="portfolio-grid">
 
-
-
 <div class="portfolio-item">
-
-<img src="portfolio01.png.png">
-
+<img src="portfolio01.png.png" alt="Portfolio 01">
 <div class="portfolio-overlay">
-
 <h3>Luxury Product CGI</h3>
-
-<p>
-Product Visualization<br>
-Blender | Unreal Engine 5<br>
-Premium cinematic rendering
-</p>
-
+<p>Product Visualization<br>Blender | Unreal Engine 5<br>Premium cinematic rendering</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio02.png.png">
-
+<img src="portfolio02.png.png" alt="Portfolio 02">
 <div class="portfolio-overlay">
-
 <h3>Automotive CGI</h3>
-
-<p>
-Vehicle Visualization<br>
-Blender | VFX<br>
-Realistic automotive animation
-</p>
-
+<p>Vehicle Visualization<br>Blender | VFX<br>Realistic automotive animation</p>
 </div>
-
 </div>
-
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio03.png.png">
-
+<img src="portfolio03.png.png" alt="Portfolio 03">
 <div class="portfolio-overlay">
-
 <h3>Cinematic Environment</h3>
-
-<p>
-CG Environment Design<br>
-Unreal Engine 5<br>
-Virtual world creation
-</p>
-
+<p>CG Environment Design<br>Unreal Engine 5<br>Virtual world creation</p>
 </div>
-
 </div>
-
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio04.png.png">
-
+<img src="portfolio04.png.png" alt="Portfolio 04">
 <div class="portfolio-overlay">
-
 <h3>Character Animation</h3>
-
-<p>
-3D Character Production<br>
-Blender | iClone<br>
-Cinematic storytelling
-</p>
-
+<p>3D Character Production<br>Blender | iClone<br>Cinematic storytelling</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio05.png.png">
-
+<img src="portfolio05.png.png" alt="Portfolio 05">
 <div class="portfolio-overlay">
-
 <h3>Commercial CGI</h3>
-
-<p>
-Brand Advertisement<br>
-Blender | After Effects<br>
-Premium marketing visuals
-</p>
-
+<p>Brand Advertisement<br>Blender | After Effects<br>Premium marketing visuals</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio06.png.png">
-
+<img src="portfolio06.png.png" alt="Portfolio 06">
 <div class="portfolio-overlay">
-
 <h3>Motion Graphics</h3>
-
-<p>
-Motion Design<br>
-After Effects<br>
-Digital content
-</p>
-
+<p>Motion Design<br>After Effects<br>Digital content</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio07.png.png">
-
+<img src="portfolio07.png.png" alt="Portfolio 07">
 <div class="portfolio-overlay">
-
 <h3>3D Character Design</h3>
-
-<p>
-Character Development<br>
-Blender<br>
-Animation ready assets
-</p>
-
+<p>Character Development<br>Blender<br>Animation ready assets</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio08.png.png">
-
+<img src="portfolio08.png.png" alt="Portfolio 08">
 <div class="portfolio-overlay">
-
 <h3>Virtual Production</h3>
-
-<p>
-Environment Design<br>
-Unreal Engine 5<br>
-Immersive scenes
-</p>
-
+<p>Environment Design<br>Unreal Engine 5<br>Immersive scenes</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio09.png.png">
-
+<img src="portfolio09.png.png" alt="Portfolio 09">
 <div class="portfolio-overlay">
-
 <h3>Product Animation</h3>
-
-<p>
-Product Marketing<br>
-Blender<br>
-High quality animation
-</p>
-
+<p>Product Marketing<br>Blender<br>High quality animation</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio10.png.png">
-
+<img src="portfolio10.png.png" alt="Portfolio 10">
 <div class="portfolio-overlay">
-
 <h3>CGI Artwork</h3>
-
-<p>
-Digital Art<br>
-Blender | Photoshop<br>
-Creative visualization
-</p>
-
+<p>Digital Art<br>Blender | Photoshop<br>Creative visualization</p>
 </div>
-
 </div>
-
-
-
-<!-- PORTFOLIO 11-20 -->
-
 
 <div class="portfolio-item">
-
-<img src="portfolio11.png.png">
-
+<img src="portfolio11.png.png" alt="Portfolio 11">
 <div class="portfolio-overlay">
-
 <h3>VFX Production</h3>
-
-<p>
-Visual Effects<br>
-After Effects | Blender<br>
-Cinematic compositing
-</p>
-
+<p>Visual Effects<br>After Effects | Blender<br>Cinematic compositing</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio12.png.png">
-
+<img src="portfolio12.png.png" alt="Portfolio 12">
 <div class="portfolio-overlay">
-
 <h3>Animation Project</h3>
-
-<p>
-3D Animation<br>
-Blender | iClone<br>
-Professional production
-</p>
-
+<p>3D Animation<br>Blender | iClone<br>Professional production</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio13.png.png">
-
+<img src="portfolio13.png.png" alt="Portfolio 13">
 <div class="portfolio-overlay">
-
 <h3>Digital Content Creation</h3>
-
-<p>
-Creative Media Production<br>
-Adobe Creative Tools<br>
-Digital solutions
-</p>
-
+<p>Creative Media Production<br>Adobe Creative Tools<br>Digital solutions</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio14.png.png">
-
+<img src="portfolio14.png.png" alt="Portfolio 14">
 <div class="portfolio-overlay">
-
 <h3>Architectural Visualization</h3>
-
-<p>
-3D Visualization<br>
-Blender | Unreal Engine 5<br>
-Realistic environments
-</p>
-
+<p>3D Visualization<br>Blender | Unreal Engine 5<br>Realistic environments</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio15.png.png">
-
+<img src="portfolio15.png.png" alt="Portfolio 15">
 <div class="portfolio-overlay">
-
 <h3>Cinematic Storytelling</h3>
-
-<p>
-Animation Design<br>
-Blender | Premiere Pro<br>
-Creative visual stories
-</p>
-
+<p>Animation Design<br>Blender | Premiere Pro<br>Creative visual stories</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio16.png.png">
-
+<img src="portfolio16.png.png" alt="Portfolio 16">
 <div class="portfolio-overlay">
-
 <h3>3D Environment Design</h3>
-
-<p>
-Virtual Production<br>
-Unreal Engine 5<br>
-Cinematic worlds
-</p>
-
+<p>Virtual Production<br>Unreal Engine 5<br>Cinematic worlds</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio17.png.png">
-
+<img src="portfolio17.png.png" alt="Portfolio 17">
 <div class="portfolio-overlay">
-
 <h3>CGI Advertisement</h3>
-
-<p>
-Commercial Production<br>
-Blender | VFX<br>
-Brand campaigns
-</p>
-
+<p>Commercial Production<br>Blender | VFX<br>Brand campaigns</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio18.png.png">
-
+<img src="portfolio18.png.png" alt="Portfolio 18">
 <div class="portfolio-overlay">
-
 <h3>Brand CGI Campaign</h3>
-
-<p>
-Advertising Visuals<br>
-Blender | After Effects<br>
-Premium content
-</p>
-
+<p>Advertising Visuals<br>Blender | After Effects<br>Premium content</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio19.png.png">
-
+<img src="portfolio19.png.png" alt="Portfolio 19">
 <div class="portfolio-overlay">
-
 <h3>Creative Visual Project</h3>
-
-<p>
-CGI Production<br>
-VFX Tools<br>
-Custom solutions
-</p>
-
+<p>CGI Production<br>VFX Tools<br>Custom solutions</p>
 </div>
-
 </div>
-
-
-
 
 <div class="portfolio-item">
-
-<img src="portfolio20.png.png">
-
+<img src="portfolio20.png.png" alt="Portfolio 20">
 <div class="portfolio-overlay">
-
 <h3>Final Cinematic Production</h3>
-
-<p>
-Complete CGI Workflow<br>
-Blender | Unreal Engine 5<br>
-Concept to final delivery
-</p>
-
+<p>Complete CGI Workflow<br>Blender | Unreal Engine 5<br>Concept to final delivery</p>
+</div>
 </div>
 
 </div>
-
-
-</div>
-
 </section>
 
-
-
-
-
 <section id="software">
-
-
 <h2>Software We Use</h2>
-
-
 <div class="services-grid">
-
-
 <div class="service">
 <h3>Blender</h3>
 <p>3D Modeling Animation Rendering</p>
 </div>
-
 
 <div class="service">
 <h3>Unreal Engine 5</h3>
 <p>Real Time Rendering Virtual Production</p>
 </div>
 
-
 <div class="service">
 <h3>Adobe After Effects</h3>
 <p>Motion Graphics Visual Effects</p>
 </div>
-
 
 <div class="service">
 <h3>Adobe Premiere Pro</h3>
 <p>Professional Video Editing</p>
 </div>
 
-
 <div class="service">
 <h3>DaVinci Resolve</h3>
 <p>Color Grading Video Finishing</p>
 </div>
-
 
 <div class="service">
 <h3>iClone</h3>
 <p>Character Animation Facial Animation</p>
 </div>
 
-
 <div class="service">
 <h3>Photoshop</h3>
 <p>Texture Design Image Editing</p>
 </div>
 
-
 <div class="service">
 <h3>Substance 3D Painter</h3>
 <p>Professional Texture Painting</p>
 </div>
-
-
 </div>
-
 </section>
 
-
-
-
-
-
 <section id="industries">
-
-
 <h2>Industries We Serve</h2>
-
-
 <div class="services-grid">
-
-
 <div class="service">
 <h3>Film & Entertainment</h3>
 <p>Cinematic CGI, VFX and animation production.</p>
 </div>
-
 
 <div class="service">
 <h3>Advertising</h3>
 <p>Commercial videos and brand campaigns.</p>
 </div>
 
-
 <div class="service">
 <h3>Gaming</h3>
 <p>Game assets, cinematics and environments.</p>
 </div>
-
 
 <div class="service">
 <h3>Medical</h3>
 <p>Medical visualization and scientific animation.</p>
 </div>
 
-
 <div class="service">
 <h3>Automotive</h3>
 <p>Vehicle CGI and product visualization.</p>
 </div>
 
-
 <div class="service">
 <h3>Product Brands</h3>
 <p>Premium product renders and animation.</p>
 </div>
-
-
 </div>
-
 </section>
 
-
-
-
-
-
 <section id="testimonials">
-
-
 <h2>Client Testimonials</h2>
-
-
 <div class="services-grid">
-
-
 <div class="service">
 <h3>Creative Excellence</h3>
-<p>
-Outstanding visual quality with creativity and attention to detail.
-</p>
+<p>Outstanding visual quality with creativity and attention to detail.</p>
 </div>
-
 
 <div class="service">
 <h3>Professional Production</h3>
-<p>
-Reliable CGI, animation and visual production partner.
-</p>
+<p>Reliable CGI, animation and visual production partner.</p>
 </div>
-
 
 <div class="service">
 <h3>Global Collaboration</h3>
-<p>
-Remote production support for worldwide projects.
-</p>
+<p>Remote production support for worldwide projects.</p>
 </div>
-
-
 </div>
-
-
 </section>
 
-
-
-
-
-
 <section id="faq">
-
-
 <h2>Frequently Asked Questions</h2>
-
-
 <div class="services-grid">
-
-
 <div class="service">
 <h3>What services do you provide?</h3>
-<p>
-CGI, 3D Animation, VFX, Product Visualization and Commercial Production.
-</p>
+<p>CGI, 3D Animation, VFX, Product Visualization and Commercial Production.</p>
 </div>
-
 
 <div class="service">
 <h3>Do you work worldwide?</h3>
-<p>
-Yes, we collaborate with brands and companies globally.
-</p>
+<p>Yes, we collaborate with brands and companies globally.</p>
 </div>
-
 
 <div class="service">
 <h3>Which software do you use?</h3>
-<p>
-Blender, Unreal Engine 5, Adobe Suite, DaVinci Resolve and iClone.
-</p>
+<p>Blender, Unreal Engine 5, Adobe Suite, DaVinci Resolve and iClone.</p>
 </div>
-
-
 </div>
-
-
 </section>
 
-
-
-
-
-
 <section id="stats">
-
-
 <h2>Why Choose Us</h2>
-
-
 <div class="stats-grid">
-
-
 <div class="stat-box">
 <h3>20+</h3>
 <p>Professional Artists</p>
 </div>
-
 
 <div class="stat-box">
 <h3>Worldwide</h3>
 <p>Countries Served</p>
 </div>
 
-
 <div class="stat-box">
 <h3>10+</h3>
 <p>Completed Projects</p>
 </div>
 
-
 <div class="stat-box">
 <h3>9+</h3>
 <p>Years Experience</p>
 </div>
-
-
 </div>
-
-
 </section>
-
-
-
-
-
 
 <section id="contact">
-
-
 <h2>Contact Us</h2>
-
-
-<div class="services-grid">
-
-
+<div class="contact-grid">
 <div class="contact-card">
-
 <h3>Email</h3>
-
-<p>
-autotubecrewstudio@gmail.com
-</p>
-
-<a class="contact-btn" href="mailto:autotubecrewstudio@gmail.com">
-Send Email
-</a>
-
+<p><a href="mailto:autotubecrewstudio@gmail.com">autotubecrewstudio@gmail.com</a></p>
+<a class="contact-btn" href="mailto:autotubecrewstudio@gmail.com">Send Email</a>
 </div>
 
-
-
-
 <div class="contact-card">
-
 <h3>Director</h3>
-
-<p>
-Hasnain Ali Shah<br>
-+62 813-9953-162
-</p>
-
-<a class="contact-btn" href="https://wa.me/628139953162">
-WhatsApp
-</a>
-
+<p>Hasnain Ali Shah<br>
+<a href="https://wa.me/628139953162" target="_blank">+62 813-9953-162</a></p>
+<a class="contact-btn" href="https://wa.me/628139953162" target="_blank">WhatsApp</a>
 </div>
-
-
-
 
 <div class="contact-card">
-
 <h3>LinkedIn</h3>
-
-<p>
-Hasnain Ali Shah<br>
-PT Autotube Crew Studio
-</p>
-
-<a class="contact-btn" href="https://www.linkedin.com/in/hasnain-ali-shah-78900a402">
-Visit LinkedIn
-</a>
-
+<p>Hasnain Ali Shah<br>
+PT Autotube Crew Studio</p>
+<a class="contact-btn" href="https://www.linkedin.com/in/hasnain-ali-shah-78900a402" target="_blank">Visit LinkedIn</a>
+</div>
 </div>
 
-
+<div class="map-wrap">
+<iframe
+src="https://www.google.com/maps?q=Pacific%20Century%20Place%20Level%2039%20SCBD%20Jalan%20Jenderal%20Sudirman%20Kav.%2052-53%20Senayan%20Kebayoran%20Baru%20Jakarta%20Selatan%2012190%20Indonesia&output=embed"
+width="100%"
+height="320"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
 </div>
-
-
 </section>
 
-
-
-
-
-
 <footer>
-
 © 2026 PT Autotube Crew Studio. All Rights Reserved.
-
 </footer>
 
+<div id="lightbox">
+<img id="lightbox-img" src="" alt="Portfolio Preview">
+</div>
 
-
-
+<a class="whatsapp-float" href="https://wa.me/628139953162" target="_blank" aria-label="WhatsApp">
+&#128241;
+</a>
 
 <script>
-
-
 function toggleMenu(){
-
-let menu=document.getElementById("nav-menu");
-
+const menu=document.getElementById("nav-menu");
 menu.classList.toggle("active");
-
 }
 
+const lightbox=document.getElementById("lightbox");
+const lightboxImg=document.getElementById("lightbox-img");
 
-
-
-const images=document.querySelectorAll(".portfolio-grid img");
-
-
-images.forEach(img=>{
-
-
-img.onclick=function(){
-
-
-let popup=document.createElement("div");
-
-
-popup.style.position="fixed";
-popup.style.top="0";
-popup.style.left="0";
-popup.style.width="100%";
-popup.style.height="100%";
-popup.style.background="rgba(0,0,0,.9)";
-popup.style.display="flex";
-popup.style.alignItems="center";
-popup.style.justifyContent="center";
-popup.style.zIndex="9999";
-
-
-let big=document.createElement("img");
-
-
-big.src=this.src;
-big.style.maxWidth="90%";
-big.style.maxHeight="90%";
-
-
-popup.appendChild(big);
-
-
-document.body.appendChild(popup);
-
-
-popup.onclick=function(){
-
-popup.remove();
-
-};
-
-
-};
-
-
+document.querySelectorAll(".portfolio-item img").forEach(img=>{
+img.addEventListener("click",function(){
+lightbox.style.display="flex";
+lightboxImg.src=this.src;
+});
 });
 
-
+lightbox.addEventListener("click",function(){
+lightbox.style.display="none";
+});
 </script>
 
-
 </body>
-
 </html>
