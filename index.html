@@ -225,21 +225,32 @@ padding:130px 20px 40px;
 }
 
 .hero h1{
-font-size:64px;
-line-height:1.1;
-margin-bottom:20px;
+font-size:72px;
+line-height:1.05;
+margin-bottom:25px;
+font-weight:700;
+letter-spacing:-1px;
+text-shadow:
+0 0 15px rgba(255,30,30,.25),
+0 0 35px rgba(255,30,30,.15);
+animation:heroFadeUp 1.2s ease-out;
 }
 
 .hero span{
-color:#ff1e1e;
+color:#ff3b3b;
+text-shadow:
+0 0 12px rgba(255,59,59,.45),
+0 0 28px rgba(255,59,59,.25);
 }
 
 .hero p{
-max-width:980px;
-font-size:20px;
-line-height:1.8;
-color:#ddd;
-margin-bottom:35px;
+max-width:900px;
+font-size:21px;
+line-height:1.9;
+color:#d8d8d8;
+margin:0 auto 40px;
+font-weight:400;
+animation:heroFadeUp 1.5s ease-out;
 }
 
 .btn{
@@ -541,6 +552,19 @@ p{
 font-weight:400;
 line-height:1.8;
 color:#bbb;
+}
+@keyframes heroFadeUp{
+
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
 }
 @media(max-width:768px){
 
