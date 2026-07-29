@@ -160,9 +160,16 @@ z-index:1000;
 }
 
 .logo img{
-height:58px;
+height:64px;
+transition:transform .4s ease, filter .4s ease;
+filter:drop-shadow(0 0 12px rgba(255,30,30,.25));
 }
-
+.logo img:hover{
+transform:scale(1.08);
+filter:
+drop-shadow(0 0 18px rgba(255,30,30,.45))
+drop-shadow(0 0 35px rgba(255,30,30,.25));
+}
 nav{
 display:flex;
 align-items:center;
