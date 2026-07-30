@@ -1704,6 +1704,23 @@ glow.style.left=e.clientX+"px";
 glow.style.top=e.clientY+"px";
 });
 </script>
+<script>
+const lightbox=document.getElementById("lightbox");
+const lightboxImg=document.getElementById("lightbox-img");
+const portfolioImages=document.querySelectorAll(".portfolio-grid img");
+
+portfolioImages.forEach(img=>{
+img.addEventListener("click",()=>{
+lightbox.style.display="flex";
+lightboxImg.src=img.src;
+lightboxImg.alt=img.alt;
+});
+});
+
+lightbox.addEventListener("click",()=>{
+lightbox.style.display="none";
+});
+</script>
 </body>
 </html>
     
