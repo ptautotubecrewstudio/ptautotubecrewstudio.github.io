@@ -101,12 +101,12 @@ font-family:'Space Grotesk',sans-serif;
 html{
 scroll-behavior:smooth;
 }
-
 body{
 background:#000;
 color:#fff;
 overflow-x:hidden;
 line-height:1.6;
+position:relative;
 }
 
 a{
@@ -1695,6 +1695,14 @@ section.classList.add("active");
 
 window.addEventListener("scroll",revealSections);
 window.addEventListener("load",revealSections);
+</script>
+<script>
+const glow=document.querySelector(".mouse-glow");
+
+document.addEventListener("mousemove",e=>{
+glow.style.left=e.clientX+"px";
+glow.style.top=e.clientY+"px";
+});
 </script>
 </body>
 </html>
