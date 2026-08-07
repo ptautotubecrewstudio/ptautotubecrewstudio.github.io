@@ -4,247 +4,3961 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Careers | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Explore career opportunities at PT Autotube Crew Studio. Join our creative team of CGI artists, 3D animators, VFX artists and motion designers.">
+<meta
+name="description"
+content="Explore career opportunities at PT Autotube Crew Studio and join a growing creative team working across CGI, 3D Animation, VFX, Motion Graphics and Digital Production."
+>
 
-<link rel="icon" href="logo.png.png">
+<meta
+name="keywords"
+content="PT Autotube Crew Studio Careers, CGI Jobs, 3D Artist Jobs, Animation Jobs, VFX Jobs, Motion Graphics Jobs, Indonesia Animation Studio"
+>
+
+<meta name="author" content="PT Autotube Crew Studio">
+
+<meta name="robots" content="index, follow">
+
+<meta
+property="og:title"
+content="Careers | PT Autotube Crew Studio"
+>
+
+<meta
+property="og:description"
+content="Join the creative journey at PT Autotube Crew Studio."
+>
+
+<meta
+property="og:type"
+content="website"
+>
+
+<link
+rel="icon"
+href="logo.png.png"
+>
+
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com"
+>
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin
+>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet"
+>
+
 
 <style>
 
+/* =====================================================
+ROOT
+===================================================== */
+
+:root{
+
+--bg:#050505;
+--bg2:#090909;
+--bg3:#101010;
+
+--red:#e50914;
+--red2:#ff2936;
+
+--white:#ffffff;
+--text:#d2d2d2;
+--muted:#999999;
+
+--border:rgba(255,255,255,.10);
+
+--glass:rgba(255,255,255,.055);
+
+--shadow:0 25px 70px rgba(0,0,0,.55);
+
+}
+
+
+/* =====================================================
+RESET
+===================================================== */
+
 *{
+
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+
 }
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
 
 body{
-background:#050505;
-color:#ffffff;
+
+font-family:'Poppins',Arial,Helvetica,sans-serif;
+
+background:var(--bg);
+
+color:var(--white);
+
 line-height:1.8;
+
+overflow-x:hidden;
+
 }
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
-background:#0b0b0b;
-border-bottom:1px solid #222;
+
+body::-webkit-scrollbar{
+
+width:8px;
+
 }
 
-.logo{
-font-size:22px;
-font-weight:bold;
+
+body::-webkit-scrollbar-track{
+
+background:#050505;
+
 }
 
-nav a{
-color:#ffffff;
+
+body::-webkit-scrollbar-thumb{
+
+background:#333;
+
+border-radius:20px;
+
+}
+
+
+body::-webkit-scrollbar-thumb:hover{
+
+background:var(--red);
+
+}
+
+
+a{
+
+color:inherit;
+
 text-decoration:none;
-margin-left:20px;
+
+transition:.3s ease;
+
 }
 
-nav a:hover{
-color:#e50914;
+
+img{
+
+display:block;
+
+max-width:100%;
+
 }
 
-.hero{
-padding:90px 10%;
-text-align:center;
-}
 
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
-}
+.container{
 
-.hero p{
-max-width:900px;
+width:90%;
+
+max-width:1400px;
+
 margin:auto;
-color:#cccccc;
+
 }
+
 
 section{
-padding:70px 10%;
+
+padding:110px 0;
+
 }
+
+
+/* =====================================================
+TYPOGRAPHY
+===================================================== */
+
+h1{
+
+font-size:68px;
+
+font-weight:800;
+
+line-height:1.08;
+
+letter-spacing:-2px;
+
+}
+
+
+h2{
+
+font-size:46px;
+
+font-weight:700;
+
+line-height:1.2;
+
+margin-bottom:22px;
+
+}
+
+
+h3{
+
+font-size:24px;
+
+font-weight:600;
+
+line-height:1.35;
+
+}
+
+
+p{
+
+font-size:17px;
+
+color:var(--text);
+
+}
+
+
+.hero-label{
+
+display:inline-block;
+
+margin-bottom:20px;
+
+color:var(--red);
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+}
+
 
 .section-title{
+
+max-width:850px;
+
+margin:0 auto 60px;
+
 text-align:center;
-font-size:36px;
-margin-bottom:50px;
+
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+
+.section-title p{
+
+max-width:760px;
+
+margin:auto;
+
 }
 
-.card{
-background:#111;
-padding:30px;
-border-radius:15px;
-border:1px solid #222;
-transition:.3s;
-}
 
-.card:hover{
-transform:translateY(-6px);
-border-color:#e50914;
-}
-
-.card h3{
-margin-bottom:15px;
-}
-
-.card p{
-color:#cccccc;
-}
-
-.cta{
-text-align:center;
-padding:80px 10%;
-}
+/* =====================================================
+BUTTONS
+===================================================== */
 
 .btn{
+
 display:inline-block;
-padding:15px 35px;
-background:#e50914;
-color:#ffffff;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-margin-top:25px;
+
+padding:15px 38px;
+
+background:var(--red);
+
+border:1px solid var(--red);
+
+border-radius:50px;
+
+font-weight:600;
+
 }
+
 
 .btn:hover{
-background:#ff2d2d;
+
+background:var(--red2);
+
+border-color:var(--red2);
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 15px 35px rgba(229,9,20,.25);
+
 }
 
-footer{
-padding:30px;
-text-align:center;
-border-top:1px solid #222;
-color:#999999;
+
+.btn-outline{
+
+display:inline-block;
+
+padding:14px 38px;
+
+border:1px solid rgba(255,255,255,.7);
+
+border-radius:50px;
+
+font-weight:600;
+
 }
+
+
+.btn-outline:hover{
+
+background:#fff;
+
+color:#000;
+
+transform:translateY(-4px);
+
+}
+
+
+/* =====================================================
+HEADER
+===================================================== */
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:9999;
+
+background:rgba(5,5,5,.45);
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+transition:.35s ease;
+
+}
+
+
+header.scrolled{
+
+background:rgba(3,3,3,.96);
+
+box-shadow:
+
+0 15px 50px rgba(0,0,0,.45);
+
+}
+
+
+header .container{
+
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:13px;
+
+font-size:21px;
+
+font-weight:700;
+
+white-space:nowrap;
+
+}
+
+
+.logo img{
+
+width:54px;
+
+height:54px;
+
+object-fit:contain;
+
+}
+
+
+/* =====================================================
+NAVIGATION
+===================================================== */
+
+nav ul{
+
+display:flex;
+
+align-items:center;
+
+gap:28px;
+
+list-style:none;
+
+}
+
+
+nav ul li{
+
+position:relative;
+
+}
+
+
+nav ul li > a{
+
+font-size:15px;
+
+font-weight:500;
+
+}
+
+
+nav ul li > a:hover{
+
+color:var(--red);
+
+}
+
+
+/* =====================================================
+DROPDOWN
+===================================================== */
+
+.dropdown{
+
+position:absolute;
+
+top:125%;
+
+left:0;
+
+width:230px;
+
+padding:8px;
+
+background:rgba(12,12,12,.98);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:18px;
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.65);
+
+opacity:0;
+
+visibility:hidden;
+
+transform:translateY(12px);
+
+transition:.3s ease;
+
+}
+
+
+.dropdown a{
+
+display:block;
+
+padding:12px 16px;
+
+border-radius:12px;
+
+font-size:14px;
+
+color:#d5d5d5;
+
+}
+
+
+.dropdown a:hover{
+
+background:rgba(229,9,20,.12);
+
+color:#fff;
+
+padding-left:22px;
+
+}
+
+
+nav ul li:hover .dropdown{
+
+opacity:1;
+
+visibility:visible;
+
+transform:translateY(0);
+
+}
+
+
+/* =====================================================
+CAREERS HERO
+===================================================== */
+
+.careers-hero{
+
+position:relative;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+overflow:hidden;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+rgba(0,0,0,.97),
+
+rgba(0,0,0,.72),
+
+rgba(0,0,0,.92)
+
+),
+
+url("portfolio05.png.png")
+
+center/cover no-repeat;
+
+}
+
+
+.careers-hero::before{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+right:-280px;
+
+top:5%;
+
+background:rgba(229,9,20,.15);
+
+filter:blur(130px);
+
+border-radius:50%;
+
+pointer-events:none;
+
+}
+
+
+.careers-hero::after{
+
+content:"";
+
+position:absolute;
+
+width:600px;
+
+height:600px;
+
+left:-300px;
+
+bottom:-300px;
+
+background:rgba(255,255,255,.035);
+
+filter:blur(120px);
+
+border-radius:50%;
+
+pointer-events:none;
+
+}
+
+
+.careers-hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+padding-top:90px;
+
+}
+
+
+.careers-hero-content p{
+
+max-width:780px;
+
+font-size:19px;
+
+margin-top:22px;
+
+}
+
+
+.hero-buttons{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:38px;
+
+}
+
+
+/* =====================================================
+CAREERS INTRO
+===================================================== */
+
+.careers-intro{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+
+.careers-intro-image{
+
+height:560px;
+
+border-radius:25px;
+
+overflow:hidden;
+
+border:1px solid var(--border);
+
+box-shadow:var(--shadow);
+
+}
+
+
+.careers-intro-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.6s ease;
+
+}
+
+
+.careers-intro-image:hover img{
+
+transform:scale(1.06);
+
+}
+
+
+.careers-intro-content{
+
+max-width:650px;
+
+}
+
+
+.careers-intro-content p{
+
+margin-bottom:20px;
+
+}
+
+
+/* =====================================================
+CAREER CARDS
+===================================================== */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+
+.card{
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:22px;
+
+overflow:hidden;
+
+transition:.45s ease;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-9px);
+
+border-color:rgba(229,9,20,.7);
+
+box-shadow:var(--shadow);
+
+}
+
+
+.career-card{
+
+min-height:300px;
+
+padding:38px;
+
+position:relative;
+
+}
+
+
+.career-number{
+
+font-size:48px;
+
+font-weight:800;
+
+color:rgba(255,255,255,.06);
+
+line-height:1;
+
+margin-bottom:24px;
+
+}
+
+
+.career-card h3{
+
+margin-bottom:15px;
+
+}
+
+
+.career-card p{
+
+color:#bdbdbd;
+
+}
+
+/* =====================================================
+WHY JOIN US
+===================================================== */
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(3,1fr);
+
+gap:25px;
+
+}
+
+
+.why-card{
+
+padding:35px;
+
+background:rgba(255,255,255,.045);
+
+border:1px solid var(--border);
+
+border-radius:20px;
+
+transition:.4s ease;
+
+}
+
+
+.why-card:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--red);
+
+box-shadow:
+
+0 20px 55px rgba(0,0,0,.4);
+
+}
+
+
+.why-icon{
+
+width:58px;
+
+height:58px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:16px;
+
+background:rgba(229,9,20,.10);
+
+border:1px solid rgba(229,9,20,.25);
+
+color:var(--red);
+
+font-size:20px;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+}
+
+
+.why-card h3{
+
+margin-bottom:12px;
+
+}
+
+
+.why-card p{
+
+font-size:15px;
+
+color:#aaa;
+
+}
+
+
+/* =====================================================
+CAREER AREAS
+===================================================== */
+
+.career-area-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(2,1fr);
+
+gap:22px;
+
+}
+
+
+.career-area{
+
+position:relative;
+
+padding:32px;
+
+background:
+
+linear-gradient(
+
+145deg,
+
+rgba(255,255,255,.065),
+
+rgba(255,255,255,.025)
+
+);
+
+border:1px solid var(--border);
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.4s ease;
+
+}
+
+
+.career-area::before{
+
+content:"";
+
+position:absolute;
+
+width:160px;
+
+height:160px;
+
+right:-80px;
+
+top:-80px;
+
+background:rgba(229,9,20,.12);
+
+filter:blur(45px);
+
+border-radius:50%;
+
+transition:.4s ease;
+
+}
+
+
+.career-area:hover{
+
+transform:translateY(-7px);
+
+border-color:rgba(229,9,20,.65);
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.4);
+
+}
+
+
+.career-area:hover::before{
+
+transform:scale(1.4);
+
+}
+
+
+.career-area-number{
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:var(--red);
+
+margin-bottom:15px;
+
+}
+
+
+.career-area h3{
+
+position:relative;
+
+z-index:2;
+
+margin-bottom:12px;
+
+}
+
+
+.career-area p{
+
+position:relative;
+
+z-index:2;
+
+font-size:15px;
+
+color:#aaa;
+
+}
+
+
+/* =====================================================
+WHAT WE LOOK FOR
+===================================================== */
+
+.look-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+
+.look-content{
+
+max-width:650px;
+
+}
+
+
+.look-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+margin-top:30px;
+
+}
+
+
+.look-item{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:18px;
+
+padding:20px;
+
+background:rgba(255,255,255,.035);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:16px;
+
+transition:.35s ease;
+
+}
+
+
+.look-item:hover{
+
+transform:translateX(7px);
+
+border-color:rgba(229,9,20,.55);
+
+}
+
+
+.look-check{
+
+flex-shrink:0;
+
+width:30px;
+
+height:30px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:var(--red);
+
+font-size:13px;
+
+font-weight:700;
+
+}
+
+
+.look-item h3{
+
+font-size:17px;
+
+margin-bottom:4px;
+
+}
+
+
+.look-item p{
+
+font-size:14px;
+
+color:#999;
+
+}
+
+
+.look-image{
+
+height:580px;
+
+border-radius:25px;
+
+overflow:hidden;
+
+border:1px solid var(--border);
+
+box-shadow:var(--shadow);
+
+}
+
+
+.look-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.6s ease;
+
+}
+
+
+.look-image:hover img{
+
+transform:scale(1.06);
+
+}
+
+
+/* =====================================================
+WORK ENVIRONMENT
+===================================================== */
+
+.environment{
+
+position:relative;
+
+overflow:hidden;
+
+background:
+
+radial-gradient(
+
+circle at 50% 0%,
+
+rgba(229,9,20,.10),
+
+transparent 50%
+
+),
+
+#080808;
+
+}
+
+
+.environment-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(4,1fr);
+
+gap:20px;
+
+}
+
+
+.environment-card{
+
+padding:30px;
+
+min-height:250px;
+
+background:rgba(255,255,255,.035);
+
+border:1px solid var(--border);
+
+border-radius:20px;
+
+transition:.4s ease;
+
+}
+
+
+.environment-card:hover{
+
+transform:translateY(-8px);
+
+background:rgba(255,255,255,.055);
+
+border-color:rgba(229,9,20,.55);
+
+}
+
+
+.environment-number{
+
+font-size:42px;
+
+font-weight:800;
+
+color:rgba(255,255,255,.07);
+
+margin-bottom:20px;
+
+}
+
+
+.environment-card h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+
+.environment-card p{
+
+font-size:14px;
+
+color:#999;
+
+}
+
+
+/* =====================================================
+APPLICATION PROCESS
+===================================================== */
+
+.process-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(4,1fr);
+
+gap:22px;
+
+}
+
+
+.process-card{
+
+position:relative;
+
+padding:35px 28px;
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:20px;
+
+transition:.4s ease;
+
+}
+
+
+.process-card:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--red);
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+.process-number{
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:var(--red);
+
+margin-bottom:18px;
+
+}
+
+
+.process-card h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+
+.process-card p{
+
+font-size:14px;
+
+color:#999;
+
+}
+
+
+/* =====================================================
+APPLICATION PANEL
+===================================================== */
+
+.application-panel{
+
+position:relative;
+
+padding:70px;
+
+border-radius:30px;
+
+overflow:hidden;
+
+border:1px solid rgba(255,255,255,.10);
+
+background:
+
+linear-gradient(
+
+135deg,
+
+rgba(229,9,20,.12),
+
+rgba(255,255,255,.035)
+
+);
+
+box-shadow:
+
+0 25px 70px rgba(0,0,0,.4);
+
+}
+
+
+.application-panel::before{
+
+content:"";
+
+position:absolute;
+
+width:400px;
+
+height:400px;
+
+right:-180px;
+
+top:-180px;
+
+background:rgba(229,9,20,.15);
+
+filter:blur(100px);
+
+border-radius:50%;
+
+pointer-events:none;
+
+}
+
+
+.application-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:850px;
+
+}
+
+
+.application-content p{
+
+max-width:760px;
+
+margin-bottom:25px;
+
+}
+
+
+.application-details{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+margin:30px 0;
+
+}
+
+
+.application-detail{
+
+padding:12px 18px;
+
+background:rgba(0,0,0,.25);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:12px;
+
+font-size:14px;
+
+color:#bbb;
+
+}
+
+
+.application-detail strong{
+
+color:#fff;
+
+}
+
+
+/* =====================================================
+OPEN OPPORTUNITIES
+===================================================== */
+
+.opportunity-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+.opportunity{
+
+display:grid;
+
+grid-template-columns:
+
+1.5fr 1fr 1fr auto;
+
+align-items:center;
+
+gap:20px;
+
+padding:24px 28px;
+
+background:rgba(255,255,255,.035);
+
+border:1px solid var(--border);
+
+border-radius:16px;
+
+transition:.35s ease;
+
+}
+
+
+.opportunity:hover{
+
+transform:translateX(6px);
+
+border-color:rgba(229,9,20,.55);
+
+background:rgba(255,255,255,.05);
+
+}
+
+
+.opportunity-title{
+
+font-size:18px;
+
+font-weight:600;
+
+}
+
+
+.opportunity-meta{
+
+font-size:13px;
+
+color:#999;
+
+}
+
+
+.opportunity-status{
+
+font-size:12px;
+
+font-weight:600;
+
+color:#aaa;
+
+}
+
+
+.opportunity .btn{
+
+padding:10px 22px;
+
+font-size:13px;
+
+}
+
+
+/* =====================================================
+FREELANCE / COLLABORATION
+===================================================== */
+
+.collaboration-box{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+padding:65px;
+
+border-radius:28px;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+rgba(255,255,255,.055),
+
+rgba(255,255,255,.025)
+
+);
+
+border:1px solid var(--border);
+
+}
+
+
+.collaboration-content p{
+
+margin-bottom:20px;
+
+}
+
+
+.collaboration-points{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+}
+
+
+.collaboration-point{
+
+padding:18px;
+
+border-radius:14px;
+
+background:rgba(0,0,0,.25);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+.collaboration-point strong{
+
+display:block;
+
+font-size:15px;
+
+margin-bottom:5px;
+
+}
+
+
+.collaboration-point span{
+
+font-size:13px;
+
+color:#888;
+
+}
+
+
+/* =====================================================
+CAREER CTA
+===================================================== */
+
+.career-cta{
+
+position:relative;
+
+text-align:center;
+
+overflow:hidden;
+
+background:
+
+radial-gradient(
+
+circle at center,
+
+rgba(229,9,20,.16),
+
+transparent 60%
+
+),
+
+#070707;
+
+}
+
+
+.career-cta-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+
+.career-cta-content p{
+
+max-width:760px;
+
+margin:0 auto;
+
+}
+
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+footer{
+
+background:#030303;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:2fr 1fr 1fr 1fr;
+
+gap:55px;
+
+padding:80px 0 50px;
+
+}
+
+
+.footer-brand{
+
+max-width:480px;
+
+}
+
+
+.footer-brand p{
+
+margin-top:20px;
+
+color:#929292;
+
+font-size:15px;
+
+}
+
+
+.footer-column{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+
+.footer-column h3{
+
+font-size:17px;
+
+margin-bottom:8px;
+
+}
+
+
+.footer-column a{
+
+color:#929292;
+
+font-size:14px;
+
+}
+
+
+.footer-column a:hover{
+
+color:#fff;
+
+transform:translateX(5px);
+
+}
+
+
+.social-links{
+
+display:flex;
+
+gap:10px;
+
+margin-top:25px;
+
+}
+
+
+.social-links a{
+
+width:42px;
+
+height:42px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:50%;
+
+font-size:12px;
+
+font-weight:700;
+
+color:#aaa;
+
+}
+
+
+.social-links a:hover{
+
+background:var(--red);
+
+border-color:var(--red);
+
+color:#fff;
+
+transform:translateY(-4px);
+
+}
+
+
+.footer-bottom{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:20px;
+
+padding:25px 0;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+color:#666;
+
+font-size:13px;
+
+}
+
+
+/* =====================================================
+BACK TO TOP
+===================================================== */
+
+#topBtn{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:52px;
+
+height:52px;
+
+border:1px solid rgba(255,255,255,.12);
+
+border-radius:50%;
+
+background:rgba(20,20,20,.88);
+
+backdrop-filter:blur(12px);
+
+color:#fff;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+align-items:center;
+
+justify-content:center;
+
+z-index:9998;
+
+transition:.35s ease;
+
+}
+
+
+#topBtn:hover{
+
+background:var(--red);
+
+border-color:var(--red);
+
+transform:translateY(-6px);
+
+}
+
+
+/* =====================================================
+SCROLL REVEAL
+===================================================== */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(35px);
+
+transition:
+
+opacity .8s ease,
+
+transform .8s ease;
+
+}
+
+
+.reveal.visible{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media(max-width:1100px){
+
+nav{
+
+display:none;
+
+}
+
+
+.careers-intro{
+
+grid-template-columns:1fr;
+
+}
+
+
+.look-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.environment-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.process-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.footer-grid{
+
+grid-template-columns:2fr 1fr 1fr;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+section{
+
+padding:80px 0;
+
+}
+
+
+.container{
+
+width:92%;
+
+}
+
+
+.careers-hero{
+
+min-height:850px;
+
+}
+
+
+.careers-hero-content{
+
+padding-top:100px;
+
+text-align:center;
+
+margin:auto;
+
+}
+
+
+.careers-hero-content p{
+
+font-size:17px;
+
+}
+
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+
+h1{
+
+font-size:44px;
+
+letter-spacing:-1px;
+
+}
+
+
+h2{
+
+font-size:35px;
+
+}
+
+
+.btn,
+.btn-outline{
+
+width:100%;
+
+text-align:center;
+
+margin:5px 0;
+
+}
+
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.career-area-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.environment-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.process-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.opportunity{
+
+grid-template-columns:1fr;
+
+gap:10px;
+
+}
+
+
+.collaboration-box{
+
+grid-template-columns:1fr;
+
+padding:40px 25px;
+
+}
+
+
+.collaboration-points{
+
+grid-template-columns:1fr;
+
+}
+
+
+.application-panel{
+
+padding:45px 25px;
+
+}
+
+
+.footer-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+
+
+@media(max-width:600px){
+
+.logo{
+
+font-size:17px;
+
+}
+
+
+.logo img{
+
+width:47px;
+
+height:47px;
+
+}
+
+
+.careers-intro-image{
+
+height:380px;
+
+}
+
+
+.look-image{
+
+height:380px;
+
+}
+
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+#topBtn{
+
+right:18px;
+
+bottom:18px;
+
+width:46px;
+
+height:46px;
+
+}
+
+}
+
+
+/* =====================================================
+END OF PART 1B
+===================================================== */
 
 </style>
 
 </head>
 
+
 <body>
+
+
+<!-- =====================================================
+HEADER
+===================================================== -->
 
 <header>
 
-<div class="logo">
+<div class="container">
 
+
+<a href="index.html" class="logo">
+
+<img
+src="logo.png.png"
+alt="PT Autotube Crew Studio Logo"
+>
+
+<span>
 PT Autotube Crew Studio
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="careers.html">Careers</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h1>Careers</h1>
-
-<p>
-
-Join PT Autotube Crew Studio and become part of a creative team producing world-class CGI, 3D Animation, Visual Effects and Digital Content.
-
-</p>
-
-</section>
-
-<section>
-
-<h2 class="section-title">
-
-Opportunities
-
-</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>3D Environment Artist</h3>
-<p>Create realistic environments, landscapes and production-ready assets for animation and cinematic projects.</p>
-</div>
-
-<div class="card">
-<h3>3D Generalist</h3>
-<p>Work across modeling, texturing, lighting, animation and rendering using Blender and Unreal Engine.</p>
-</div>
-
-<div class="card">
-<h3>CGI Artist</h3>
-<p>Produce high-quality product visualization, commercials and cinematic CGI content.</p>
-</div>
-
-<div class="card">
-<h3>VFX Artist</h3>
-<p>Create compositing, simulations and visual effects for commercial and film productions.</p>
-</div>
-
-<div class="card">
-<h3>Motion Graphics Designer</h3>
-<p>Design engaging motion graphics for advertising, corporate videos and social media.</p>
-</div>
-
-<div class="card">
-<h3>Video Editor</h3>
-<p>Edit and deliver professional videos using Premiere Pro and DaVinci Resolve.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="cta">
-
-<h2>
-
-Work With Our Team
-
-</h2>
-
-<p>
-
-Send your portfolio, showreel and CV to <strong>autotubecrewstudio@gmail.com</strong>. We are always interested in connecting with talented creative professionals.
-
-</p>
-
-<a href="mailto:autotubecrewstudio@gmail.com" class="btn">
-
-Apply Now
+</span>
 
 </a>
 
+
+<nav>
+
+<ul>
+
+
+<li>
+
+<a href="index.html">
+Home
+</a>
+
+</li>
+
+
+<li>
+
+<a href="about.html">
+Studio
+</a>
+
+<div class="dropdown">
+
+<a href="about.html">
+About Us
+</a>
+
+<a href="team.html">
+Our Team
+</a>
+
+<a href="partners.html">
+Partners
+</a>
+
+<a href="careers.html">
+Careers
+</a>
+
+</div>
+
+</li>
+
+
+<li>
+
+<a href="services.html">
+Services
+</a>
+
+<div class="dropdown">
+
+<a href="services.html">
+All Services
+</a>
+
+<a href="technology.html">
+Technology
+</a>
+
+<a href="industries.html">
+Industries
+</a>
+
+</div>
+
+</li>
+
+
+<li>
+
+<a href="portfolio.html">
+Portfolio
+</a>
+
+<div class="dropdown">
+
+<a href="portfolio.html">
+Portfolio
+</a>
+
+<a href="showreel.html">
+Showreel
+</a>
+
+<a href="case-studies.html">
+Case Studies
+</a>
+
+<a href="clients.html">
+Clients
+</a>
+
+</div>
+
+</li>
+
+
+<li>
+
+<a href="#">
+Resources
+</a>
+
+<div class="dropdown">
+
+<a href="downloads.html">
+Downloads
+</a>
+
+<a href="blog.html">
+Blog
+</a>
+
+<a href="news.html">
+News
+</a>
+
+<a href="press-kit.html">
+Press Kit
+</a>
+
+</div>
+
+</li>
+
+
+<li>
+
+<a href="contact.html">
+Contact
+</a>
+
+</li>
+
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+CAREERS HERO
+===================================================== -->
+
+<section class="careers-hero">
+
+<div class="container">
+
+<div class="careers-hero-content">
+
+<div class="hero-label">
+Careers
+</div>
+
+<h1>
+Build Your Future With A Creative Studio
+</h1>
+
+<p>
+PT Autotube Crew Studio is building a long-term creative team for CGI, 3D Animation, Visual Effects, Motion Graphics, Digital Production and future animation projects.
+</p>
+
+<p>
+We are looking for talented people who want to create, learn, collaborate and grow with an ambitious production studio.
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="#opportunities"
+class="btn"
+>
+Explore Opportunities
+</a>
+
+<a
+href="contact.html"
+class="btn-outline"
+>
+Contact Studio
+</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- =====================================================
+CAREERS INTRO
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="careers-intro">
+
+
+<div class="careers-intro-image">
+
+<img
+src="portfolio01.png.png"
+alt="Creative Team at PT Autotube Crew Studio"
+>
+
+</div>
+
+
+<div class="careers-intro-content">
+
+<div class="hero-label">
+Join The Journey
+</div>
+
+<h2>
+We Are Building More Than A Team
+</h2>
+
+<p>
+A strong creative studio is built by people who bring different skills, perspectives and experiences to the production process.
+</p>
+
+<p>
+Our long-term vision is to develop a team capable of supporting high-quality CGI, animation, VFX, commercial and digital productions.
+</p>
+
+<p>
+Whether your strength is art, animation, technology, design or production, there may be a place for your skills as our studio grows.
+</p>
+
+<a
+href="#how-to-apply"
+class="btn"
+>
+How To Apply
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+WHY JOIN US
+===================================================== -->
+
+<section class="dark">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<div class="hero-label">
+Why Join Us
+</div>
+
+<h2>
+A Place To Create, Learn And Grow
+</h2>
+
+<p>
+We want to develop an environment where creative professionals can contribute to meaningful projects while continuing to improve their skills.
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<div class="why-icon">
+01
+</div>
+
+<h3>
+Creative Projects
+</h3>
+
+<p>
+Work toward CGI, animation, visual effects, commercial and digital production projects with real creative objectives.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+02
+</div>
+
+<h3>
+Long-Term Growth
+</h3>
+
+<p>
+Join a studio that is being developed with a long-term vision for larger production capabilities and creative opportunities.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+03
+</div>
+
+<h3>
+Team Collaboration
+</h3>
+
+<p>
+Work alongside people from different creative and technical disciplines and learn from collaborative production.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+04
+</div>
+
+<h3>
+Skill Development
+</h3>
+
+<p>
+Continue developing your creative and technical skills through practical production work and shared knowledge.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+05
+</div>
+
+<h3>
+Modern Workflow
+</h3>
+
+<p>
+Explore contemporary digital production tools and workflows across 3D, animation, VFX, motion and post-production.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+06
+</div>
+
+<h3>
+Global Ambition
+</h3>
+
+<p>
+Be part of a studio based in Jakarta with ambitions to collaborate with creative professionals and organizations internationally.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+CAREER AREAS
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+
+<div class="section-title">
+
+<div class="hero-label">
+Career Areas
+</div>
+
+<h2>
+Where Your Skills Can Make An Impact
+</h2>
+
+<p>
+Our production needs can grow across several creative and technical disciplines.
+</p>
+
+</div>
+
+
+<div class="career-area-grid">
+
+
+<div class="career-area">
+
+<div class="career-area-number">
+01 / CGI
+</div>
+
+<h3>
+3D Artists
+</h3>
+
+<p>
+Modeling, sculpting, texturing, look development, lighting, rendering and digital asset creation.
+</p>
+
+</div>
+
+
+<div class="career-area">
+
+<div class="career-area-number">
+02 / ANIMATION
+</div>
+
+<h3>
+3D Animators
+</h3>
+
+<p>
+Character, object, camera and cinematic animation for films, commercials and digital productions.
+</p>
+
+</div>
+
+
+<div class="career-area">
+
+<div class="career-area-number">
+03 / ENVIRONMENTS
+</div>
+
+<h3>
+Environment Artists
+</h3>
+
+<p>
+Creation of detailed environments, locations, assets and visual worlds for digital productions.
+</p>
+
+</div>
+
+
+<div class="career-area">
+
+<div class="career-area-number">
+04 / VFX
+</div>
+
+<h3>
+VFX Artists
+</h3>
+
+<p>
+Digital effects, compositing, simulations and visual integration for cinematic and commercial content.
+</p>
+
+</div>
+
+
+<div class="career-area">
+
+<div class="career-area-number">
+05 / MOTION
+</div>
+
+<h3>
+Motion Designers
+</h3>
+
+<p>
+Animated graphics, titles, branding elements and motion-based visual communication.
+</p>
+
+</div>
+
+
+<div class="career-area">
+
+<div class="career-area-number">
+06 / POST
+</div>
+
+<h3>
+Post-Production
+</h3>
+
+<p>
+Editing, compositing, color, finishing and final delivery for digital and broadcast-ready content.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =====================================================
+WHAT WE LOOK FOR
+===================================================== -->
+
+<section class="dark">
+
+<div class="container">
+
+<div class="look-grid">
+
+
+<div class="look-content">
+
+<div class="hero-label">
+What We Look For
+</div>
+
+<h2>
+Talent, Curiosity And A Passion For Visual Storytelling
+</h2>
+
+<p>
+We are interested in people who care about the quality of their work and want to continue developing their creative and technical abilities.
+</p>
+
+
+<div class="look-list">
+
+
+<div class="look-item">
+
+<div class="look-check">
+01
+</div>
+
+<div>
+
+<h3>
+Strong Creative Thinking
+</h3>
+
+<p>
+You enjoy developing ideas and finding visual solutions to creative challenges.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="look-item">
+
+<div class="look-check">
+02
+</div>
+
+<div>
+
+<h3>
+Technical Curiosity
+</h3>
+
+<p>
+You are interested in learning new software, workflows and production technologies.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="look-item">
+
+<div class="look-check">
+03
+</div>
+
+<div>
+
+<h3>
+Attention To Detail
+</h3>
+
+<p>
+You understand that small visual and technical details can make a major difference in the final result.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="look-item">
+
+<div class="look-check">
+04
+</div>
+
+<div>
+
+<h3>
+Team Collaboration
+</h3>
+
+<p>
+You can communicate clearly and work constructively with other artists and production professionals.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="look-item">
+
+<div class="look-check">
+05
+</div>
+
+<div>
+
+<h3>
+Professional Responsibility
+</h3>
+
+<p>
+You take ownership of your work and respect project requirements, deadlines and production standards.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="look-image">
+
+<img
+src="portfolio02.png.png"
+alt="Creative Collaboration at PT Autotube Crew Studio"
+>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+WORK ENVIRONMENT
+===================================================== -->
+
+<section class="environment">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<div class="hero-label">
+Our Environment
+</div>
+
+<h2>
+A Studio Culture Built Around Creative Collaboration
+</h2>
+
+<p>
+We want our production environment to support creativity, communication, learning and professional development.
+</p>
+
+</div>
+
+
+<div class="environment-grid">
+
+
+<div class="environment-card">
+
+<div class="environment-number">
+01
+</div>
+
+<h3>
+Creative Freedom
+</h3>
+
+<p>
+Bring your ideas to the table and contribute to the visual direction of projects.
+</p>
+
+</div>
+
+
+<div class="environment-card">
+
+<div class="environment-number">
+02
+</div>
+
+<h3>
+Open Communication
+</h3>
+
+<p>
+Clear communication helps everyone understand project objectives and production priorities.
+</p>
+
+</div>
+
+
+<div class="environment-card">
+
+<div class="environment-number">
+03
+</div>
+
+<h3>
+Continuous Learning
+</h3>
+
+<p>
+Develop your skills by exploring new creative techniques, technologies and production methods.
+</p>
+
+</div>
+
+
+<div class="environment-card">
+
+<div class="environment-number">
+04
+</div>
+
+<h3>
+Professional Growth
+</h3>
+
+<p>
+Build practical experience while contributing to the development of a growing creative studio.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+HOW WE WORK
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+
+<div class="section-title">
+
+<div class="hero-label">
+How We Work
+</div>
+
+<h2>
+From Creative Ideas To Finished Production
+</h2>
+
+<p>
+Our teams can work across different stages of a production depending on the requirements of each project.
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="process-card">
+
+<div class="process-number">
+01 / DISCOVER
+</div>
+
+<h3>
+Understand
+</h3>
+
+<p>
+Review the creative brief, references, objectives and technical requirements.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+02 / CREATE
+</div>
+
+<h3>
+Develop
+</h3>
+
+<p>
+Artists and specialists begin developing the visual assets and creative elements required for the project.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+03 / REVIEW
+</div>
+
+<h3>
+Refine
+</h3>
+
+<p>
+Production is reviewed and adjusted to keep the work aligned with the creative direction.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+04 / DELIVER
+</div>
+
+<h3>
+Complete
+</h3>
+
+<p>
+Final assets and content are prepared according to the project's delivery requirements.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+OPEN OPPORTUNITIES
+===================================================== -->
+
+<section
+class="dark"
+id="opportunities"
+>
+
+<div class="container">
+
+
+<div class="section-title">
+
+<div class="hero-label">
+Opportunities
+</div>
+
+<h2>
+Creative Roles We Are Interested In
+</h2>
+
+<p>
+As our studio develops, opportunities may become available across different areas of CGI, animation, VFX and digital production.
+</p>
+
+</div>
+
+
+<div class="opportunity-list">
+
+
+<div class="opportunity">
+
+<div class="opportunity-title">
+3D Generalist
+</div>
+
+<div class="opportunity-meta">
+CGI / 3D Production
+</div>
+
+<div class="opportunity-status">
+Future Opportunity
+</div>
+
+<a
+href="#how-to-apply"
+class="btn"
+>
+Apply
+</a>
+
+</div>
+
+
+<div class="opportunity">
+
+<div class="opportunity-title">
+3D Environment Artist
+</div>
+
+<div class="opportunity-meta">
+Environment / CGI
+</div>
+
+<div class="opportunity-status">
+Future Opportunity
+</div>
+
+<a
+href="#how-to-apply"
+class="btn"
+>
+Apply
+</a>
+
+</div>
+
+
+<div class="opportunity">
+
+<div class="opportunity-title">
+3D Animator
+</div>
+
+<div class="opportunity-meta">
+Animation / Cinematics
+</div>
+
+<div class="opportunity-status">
+Future Opportunity
+</div>
+
+<a
+href="#how-to-apply"
+class="btn"
+>
+Apply
+</a>
+
+</div>
+
+
+<div class="opportunity">
+
+<div class="opportunity-title">
+VFX Artist
+</div>
+
+<div class="opportunity-meta">
+VFX / Compositing
+</div>
+
+<div class="opportunity-status">
+Future Opportunity
+</div>
+
+<a
+href="#how-to-apply"
+class="btn"
+>
+Apply
+</a>
+
+</div>
+
+
+<div class="opportunity">
+
+<div class="opportunity-title">
+Motion Graphics Designer
+</div>
+
+<div class="opportunity-meta">
+Motion / Design
+</div>
+
+<div class="opportunity-status">
+Future Opportunity
+</div>
+
+<a
+href="#how-to-apply"
+class="btn"
+>
+Apply
+</a>
+
+</div>
+
+
+<div class="opportunity">
+
+<div class="opportunity-title">
+Post-Production Artist
+</div>
+
+<div class="opportunity-meta">
+Editing / Finishing
+</div>
+
+<div class="opportunity-status">
+Future Opportunity
+</div>
+
+<a
+href="#how-to-apply"
+class="btn"
+>
+Apply
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+FREELANCE AND COLLABORATION
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="collaboration-box">
+
+
+<div class="collaboration-content">
+
+<div class="hero-label">
+Creative Collaboration
+</div>
+
+<h2>
+Not Ready For A Full-Time Role?
+</h2>
+
+<p>
+We also recognize that talented creative professionals may prefer freelance, project-based or collaborative opportunities.
+</p>
+
+<p>
+If your skills are relevant to our production capabilities, we encourage you to introduce yourself and share your portfolio or showreel with the studio.
+</p>
+
+<a
+href="contact.html"
+class="btn"
+>
+Contact The Studio
+</a>
+
+</div>
+
+
+<div class="collaboration-points">
+
+
+<div class="collaboration-point">
+
+<strong>
+Freelance Artists
+</strong>
+
+<span>
+Project-based creative support
+</span>
+
+</div>
+
+
+<div class="collaboration-point">
+
+<strong>
+Remote Collaboration
+</strong>
+
+<span>
+Digital production partnerships
+</span>
+
+</div>
+
+
+<div class="collaboration-point">
+
+<strong>
+Specialist Support
+</strong>
+
+<span>
+Specific production expertise
+</span>
+
+</div>
+
+
+<div class="collaboration-point">
+
+<strong>
+Creative Partners
+</strong>
+
+<span>
+Long-term collaboration opportunities
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+APPLICATION PROCESS
+===================================================== -->
+
+<section class="dark">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<div class="hero-label">
+Application Process
+</div>
+
+<h2>
+A Simple Way To Introduce Yourself
+</h2>
+
+<p>
+We want to make it easy for talented professionals to present their work and explain how they could contribute to the studio.
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="process-card">
+
+<div class="process-number">
+01 / SEND
+</div>
+
+<h3>
+Portfolio
+</h3>
+
+<p>
+Share your strongest creative work through a portfolio, website or relevant project links.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+02 / SHOW
+</div>
+
+<h3>
+Showreel
+</h3>
+
+<p>
+If available, provide a showreel demonstrating your strongest animation, CGI, VFX or motion work.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+03 / REVIEW
+</div>
+
+<h3>
+Studio Review
+</h3>
+
+<p>
+Our team can review your work and evaluate how your skills may fit future production requirements.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+04 / DISCUSS
+</div>
+
+<h3>
+Online Meeting
+</h3>
+
+<p>
+Potential candidates may be invited for an online discussion about experience, skills and future collaboration.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =====================================================
+APPLICATION
+===================================================== -->
+
+<section id="how-to-apply">
+
+<div class="container">
+
+<div class="application-panel">
+
+<div class="application-content">
+
+<div class="hero-label">
+How To Apply
+</div>
+
+<h2>
+Ready To Create With Us?
+</h2>
+
+<p>
+If you are interested in joining PT Autotube Crew Studio, send us your portfolio, showreel and CV. Tell us about your experience, your strongest skills and the type of work you would like to contribute to.
+</p>
+
+<div class="application-details">
+
+<div class="application-detail">
+<strong>Portfolio:</strong> Website or project links
+</div>
+
+<div class="application-detail">
+<strong>Showreel:</strong> CGI, Animation or VFX work
+</div>
+
+<div class="application-detail">
+<strong>CV:</strong> Your professional background
+</div>
+
+<div class="application-detail">
+<strong>Location:</strong> Jakarta, Indonesia
+</div>
+
+</div>
+
+<a
+href="contact.html"
+class="btn"
+>
+Submit Your Application
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+CAREER CTA
+===================================================== -->
+
+<section class="career-cta">
+
+<div class="container">
+
+<div class="career-cta-content">
+
+<div class="hero-label">
+Build The Future
+</div>
+
+<h2>
+Your Next Creative Chapter Starts Here
+</h2>
+
+<p>
+Bring your talent, ideas and passion for visual storytelling. We are building a creative studio for ambitious projects and long-term opportunities.
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="contact.html"
+class="btn"
+>
+Contact Us
+</a>
+
+<a
+href="portfolio.html"
+class="btn-outline"
+>
+View Our Portfolio
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+FOOTER
+===================================================== -->
 
 <footer>
 
-© PT Autotube Crew Studio
+<div class="container">
 
-<br>
+<div class="footer-grid">
 
+
+<div class="footer-brand">
+
+<a
+href="index.html"
+class="logo"
+>
+
+<img
+src="logo.png.png"
+alt="PT Autotube Crew Studio Logo"
+>
+
+<span>
+PT Autotube Crew Studio
+</span>
+
+</a>
+
+<p>
+PT Autotube Crew Studio is a creative production studio based in Jakarta, Indonesia, focused on CGI, 3D Animation, Visual Effects, Motion Graphics and digital production.
+</p>
+
+
+<div class="social-links">
+
+<a
+href="https://www.youtube.com/@ptautotubecrewstudio"
+target="_blank"
+rel="noopener"
+aria-label="YouTube"
+>
+YT
+</a>
+
+
+<a
+href="#"
+aria-label="Instagram"
+>
+IG
+</a>
+
+
+<a
+href="#"
+aria-label="LinkedIn"
+>
+IN
+</a>
+
+
+<a
+href="#"
+aria-label="Facebook"
+>
+FB
+</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>
+Studio
+</h3>
+
+<a href="about.html">
+About Us
+</a>
+
+<a href="team.html">
+Our Team
+</a>
+
+<a href="careers.html">
+Careers
+</a>
+
+<a href="partners.html">
+Partners
+</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>
+Production
+</h3>
+
+<a href="services.html">
+Services
+</a>
+
+<a href="portfolio.html">
+Portfolio
+</a>
+
+<a href="showreel.html">
+Showreel
+</a>
+
+<a href="case-studies.html">
+Case Studies
+</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>
+Contact
+</h3>
+
+<a href="contact.html">
+Contact Studio
+</a>
+
+<a href="mailto:info@autotubecrew.com">
+Email
+</a>
+
+<a
+href="https://www.youtube.com/@ptautotubecrewstudio"
+target="_blank"
+rel="noopener"
+>
+YouTube
+</a>
+
+<a href="contact.html">
 Jakarta, Indonesia
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<div>
+© 2026 PT Autotube Crew Studio. All Rights Reserved.
+</div>
+
+<div>
+Jakarta, Indonesia
+</div>
+
+</div>
+
+</div>
 
 </footer>
+
+
+<!-- =====================================================
+BACK TO TOP
+===================================================== -->
+
+<button
+id="topBtn"
+aria-label="Back to top"
+>
+↑
+</button>
+
+
+<!-- =====================================================
+JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =====================================================
+HEADER SCROLL EFFECT
+===================================================== */
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 60){
+
+header.classList.add("scrolled");
+
+}else{
+
+header.classList.remove("scrolled");
+
+}
+
+});
+
+
+/* =====================================================
+BACK TO TOP
+===================================================== */
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 500){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+});
+
+
+topBtn.addEventListener("click", function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+
+/* =====================================================
+SCROLL REVEAL
+===================================================== */
+
+const revealElements = document.querySelectorAll(
+".career-card, .why-card, .career-area, .environment-card, .process-card, .opportunity, .look-item, .collaboration-point, .application-panel"
+);
+
+
+const revealObserver = new IntersectionObserver(
+
+function(entries, observer){
+
+entries.forEach(function(entry){
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("visible");
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+},
+
+{
+
+threshold:0.12
+
+}
+
+);
+
+
+revealElements.forEach(function(element){
+
+element.classList.add("reveal");
+
+revealObserver.observe(element);
+
+});
+
+
+/* =====================================================
+SMOOTH ANCHOR LINKS
+===================================================== */
+
+document.querySelectorAll('a[href^="#"]').forEach(function(link){
+
+link.addEventListener("click", function(event){
+
+const targetId = this.getAttribute("href");
+
+if(targetId === "#"){
+
+return;
+
+}
+
+const target = document.querySelector(targetId);
+
+if(target){
+
+event.preventDefault();
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* =====================================================
+IMAGE FALLBACK
+===================================================== */
+
+document.querySelectorAll("img").forEach(function(image){
+
+image.addEventListener("error", function(){
+
+this.style.background =
+
+"linear-gradient(135deg,#151515,#050505)";
+
+});
+
+});
+
+
+</script>
+
 
 </body>
 
