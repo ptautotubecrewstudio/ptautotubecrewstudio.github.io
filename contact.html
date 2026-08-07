@@ -4,198 +4,2979 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contact | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Contact PT Autotube Crew Studio for CGI, 3D Animation, VFX, Commercial Production and Digital Content Creation.">
+<meta
+name="description"
+content="Contact PT Autotube Crew Studio for CGI, 3D Animation, VFX, Commercial Production and Digital Content Creation."
+>
 
-<link rel="icon" href="logo.png.png">
+<meta
+name="keywords"
+content="PT Autotube Crew Studio Contact, CGI Studio Jakarta, 3D Animation, VFX, Commercial Production"
+>
+
+<meta name="author" content="PT Autotube Crew Studio">
+
+<meta name="robots" content="index, follow">
+
+<meta
+property="og:title"
+content="Contact | PT Autotube Crew Studio"
+>
+
+<meta
+property="og:description"
+content="Connect with PT Autotube Crew Studio for CGI, 3D Animation, VFX and digital production."
+>
+
+<meta
+property="og:type"
+content="website"
+>
+
+<link
+rel="icon"
+href="logo.png.png"
+>
+
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com"
+>
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin
+>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet"
+>
+
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+/* =====================================================
+ROOT
+===================================================== */
+
+:root{
+
+--bg:#050505;
+
+--bg2:#090909;
+
+--bg3:#101010;
+
+--red:#e50914;
+
+--red2:#ff2936;
+
+--white:#ffffff;
+
+--text:#d2d2d2;
+
+--muted:#999999;
+
+--border:rgba(255,255,255,.10);
+
+--glass:rgba(255,255,255,.055);
+
+--shadow:0 25px 70px rgba(0,0,0,.55);
+
 }
+
+
+/* =====================================================
+RESET
+===================================================== */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
 
 body{
-background:#050505;
-color:#fff;
-line-height:1.7;
+
+font-family:'Poppins',Arial,Helvetica,sans-serif;
+
+background:var(--bg);
+
+color:var(--white);
+
+line-height:1.8;
+
+overflow-x:hidden;
+
 }
+
+
+body::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+
+body::-webkit-scrollbar-track{
+
+background:#050505;
+
+}
+
+
+body::-webkit-scrollbar-thumb{
+
+background:#333;
+
+border-radius:20px;
+
+}
+
+
+body::-webkit-scrollbar-thumb:hover{
+
+background:var(--red);
+
+}
+
+
+a{
+
+color:inherit;
+
+text-decoration:none;
+
+transition:.3s ease;
+
+}
+
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+
+.container{
+
+width:90%;
+
+max-width:1400px;
+
+margin:auto;
+
+}
+
+
+section{
+
+padding:110px 0;
+
+}
+
+
+/* =====================================================
+TYPOGRAPHY
+===================================================== */
+
+h1{
+
+font-size:68px;
+
+font-weight:800;
+
+line-height:1.08;
+
+letter-spacing:-2px;
+
+}
+
+
+h2{
+
+font-size:46px;
+
+font-weight:700;
+
+line-height:1.2;
+
+margin-bottom:22px;
+
+}
+
+
+h3{
+
+font-size:24px;
+
+font-weight:600;
+
+line-height:1.35;
+
+}
+
+
+p{
+
+font-size:17px;
+
+color:var(--text);
+
+}
+
+
+.hero-label{
+
+display:inline-block;
+
+margin-bottom:20px;
+
+color:var(--red);
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+}
+
+
+.section-title{
+
+max-width:850px;
+
+margin:0 auto 60px;
+
+text-align:center;
+
+}
+
+
+.section-title p{
+
+max-width:760px;
+
+margin:auto;
+
+}
+
+
+/* =====================================================
+BUTTONS
+===================================================== */
+
+.btn{
+
+display:inline-block;
+
+padding:15px 38px;
+
+background:var(--red);
+
+border:1px solid var(--red);
+
+border-radius:50px;
+
+font-weight:600;
+
+}
+
+
+.btn:hover{
+
+background:var(--red2);
+
+border-color:var(--red2);
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 35px rgba(229,9,20,.25);
+
+}
+
+
+.btn-outline{
+
+display:inline-block;
+
+padding:14px 38px;
+
+border:1px solid rgba(255,255,255,.7);
+
+border-radius:50px;
+
+font-weight:600;
+
+}
+
+
+.btn-outline:hover{
+
+background:#fff;
+
+color:#000;
+
+transform:translateY(-4px);
+
+}
+
+
+/* =====================================================
+HEADER
+===================================================== */
 
 header{
-padding:25px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #222;
-background:#0b0b0b;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:9999;
+
+background:rgba(5,5,5,.45);
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+transition:.35s ease;
+
 }
+
+
+header.scrolled{
+
+background:rgba(3,3,3,.96);
+
+box-shadow:0 15px 50px rgba(0,0,0,.45);
+
+}
+
+
+header .container{
+
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
 
 .logo{
-font-size:22px;
-font-weight:bold;
+
+display:flex;
+
+align-items:center;
+
+gap:13px;
+
+font-size:21px;
+
+font-weight:700;
+
+white-space:nowrap;
+
 }
 
-nav a{
+
+.logo img{
+
+width:54px;
+
+height:54px;
+
+object-fit:contain;
+
+}
+
+
+/* =====================================================
+NAVIGATION
+===================================================== */
+
+nav ul{
+
+display:flex;
+
+align-items:center;
+
+gap:28px;
+
+list-style:none;
+
+}
+
+
+nav ul li{
+
+position:relative;
+
+}
+
+
+nav ul li > a{
+
+font-size:15px;
+
+font-weight:500;
+
+}
+
+
+nav ul li > a:hover{
+
+color:var(--red);
+
+}
+
+
+/* =====================================================
+DROPDOWN
+===================================================== */
+
+.dropdown{
+
+position:absolute;
+
+top:125%;
+
+left:0;
+
+width:230px;
+
+padding:8px;
+
+background:rgba(12,12,12,.98);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:18px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.65);
+
+opacity:0;
+
+visibility:hidden;
+
+transform:translateY(12px);
+
+transition:.3s ease;
+
+}
+
+
+.dropdown a{
+
+display:block;
+
+padding:12px 16px;
+
+border-radius:12px;
+
+font-size:14px;
+
+color:#d5d5d5;
+
+}
+
+
+.dropdown a:hover{
+
+background:rgba(229,9,20,.12);
+
 color:#fff;
-text-decoration:none;
-margin-left:20px;
+
+padding-left:22px;
+
 }
 
-nav a:hover{
-color:#ff2d2d;
+
+nav ul li:hover .dropdown{
+
+opacity:1;
+
+visibility:visible;
+
+transform:translateY(0);
+
 }
 
-.hero{
-padding:90px 10%;
-text-align:center;
+
+/* =====================================================
+CONTACT HERO
+===================================================== */
+
+.contact-hero{
+
+position:relative;
+
+min-height:82vh;
+
+display:flex;
+
+align-items:center;
+
+overflow:hidden;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+rgba(0,0,0,.96),
+
+rgba(0,0,0,.72),
+
+rgba(0,0,0,.92)
+
+),
+
+url("portfolio05.png.png")
+
+center/cover no-repeat;
+
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
+
+.contact-hero::before{
+
+content:"";
+
+position:absolute;
+
+width:650px;
+
+height:650px;
+
+right:-250px;
+
+top:-100px;
+
+background:rgba(229,9,20,.15);
+
+filter:blur(130px);
+
+border-radius:50%;
+
+pointer-events:none;
+
 }
 
-.hero p{
-max-width:850px;
-margin:auto;
-color:#cfcfcf;
+
+.contact-hero::after{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+
+height:500px;
+
+left:-250px;
+
+bottom:-300px;
+
+background:rgba(255,255,255,.035);
+
+filter:blur(120px);
+
+border-radius:50%;
+
+pointer-events:none;
+
 }
 
-.contact{
+
+.contact-hero-content{
+
+position:relative;
+
+z-index:2;
+
 max-width:900px;
-margin:60px auto;
-padding:40px;
-background:#111;
-border:1px solid #222;
-border-radius:15px;
+
+padding-top:90px;
+
 }
 
-.contact h2{
-margin-bottom:30px;
-text-align:center;
+
+.contact-hero-content p{
+
+max-width:800px;
+
+font-size:19px;
+
+margin-top:22px;
+
 }
 
-.info{
-margin:20px 0;
-font-size:18px;
+
+.hero-buttons{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:38px;
+
 }
 
-.info strong{
-color:#fff;
+
+/* =====================================================
+CONTACT INTRO
+===================================================== */
+
+.contact-intro{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
 }
 
-.button{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#e50914;
-color:#fff;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
+
+.contact-intro-content{
+
+max-width:650px;
+
 }
 
-footer{
-padding:30px;
-text-align:center;
-border-top:1px solid #222;
+
+.contact-intro-content p{
+
+margin-bottom:20px;
+
+}
+
+
+.contact-intro-image{
+
+height:540px;
+
+border-radius:26px;
+
+overflow:hidden;
+
+border:1px solid var(--border);
+
+box-shadow:var(--shadow);
+
+}
+
+
+.contact-intro-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.6s ease;
+
+}
+
+
+.contact-intro-image:hover img{
+
+transform:scale(1.06);
+
+}
+
+
+/* =====================================================
+CONTACT INFORMATION
+===================================================== */
+
+.contact-info-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(3,1fr);
+
+gap:22px;
+
+}
+
+
+.contact-info-card{
+
+padding:32px;
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:20px;
+
+transition:.4s ease;
+
+}
+
+
+.contact-info-card:hover{
+
+transform:translateY(-8px);
+
+border-color:rgba(229,9,20,.65);
+
+box-shadow:var(--shadow);
+
+}
+
+
+.contact-info-label{
+
+font-size:12px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:var(--red);
+
+text-transform:uppercase;
+
+margin-bottom:12px;
+
+}
+
+
+.contact-info-card h3{
+
+font-size:21px;
+
+margin-bottom:8px;
+
+}
+
+
+.contact-info-card p{
+
+font-size:14px;
+
 color:#999;
-margin-top:80px;
+
 }
 
-</style>
+/* =====================================================
+LEADERSHIP SECTION
+===================================================== */
 
-</head>
+.leadership-section{
 
-<body>
+background:
 
-<header>
+radial-gradient(
 
-<div class="logo">
-PT Autotube Crew Studio
+circle at 50% 0%,
+
+rgba(229,9,20,.10),
+
+transparent 55%
+
+),
+
+#070707;
+
+}
+
+
+.leadership-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(3,1fr);
+
+gap:28px;
+
+}
+
+
+/* =====================================================
+LEADER CARD
+===================================================== */
+
+.leader-card{
+
+position:relative;
+
+background:rgba(255,255,255,.045);
+
+border:1px solid var(--border);
+
+border-radius:25px;
+
+overflow:hidden;
+
+transition:.45s ease;
+
+}
+
+
+.leader-card:hover{
+
+transform:translateY(-10px);
+
+border-color:rgba(229,9,20,.65);
+
+box-shadow:
+
+0 30px 70px rgba(0,0,0,.55);
+
+}
+
+
+/* =====================================================
+LEADER IMAGE
+===================================================== */
+
+.leader-image{
+
+position:relative;
+
+height:430px;
+
+overflow:hidden;
+
+background:#111;
+
+}
+
+
+.leader-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.7s ease;
+
+}
+
+
+.leader-card:hover .leader-image img{
+
+transform:scale(1.06);
+
+}
+
+
+/* =====================================================
+IMAGE OVERLAY
+===================================================== */
+
+.leader-image::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+height:45%;
+
+background:
+
+linear-gradient(
+
+transparent,
+
+rgba(0,0,0,.85)
+
+);
+
+pointer-events:none;
+
+}
+
+
+/* =====================================================
+LEADER CONTENT
+===================================================== */
+
+.leader-content{
+
+padding:30px;
+
+}
+
+
+.leader-position{
+
+display:inline-block;
+
+margin-bottom:10px;
+
+color:var(--red);
+
+font-size:12px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+cursor:pointer;
+
+}
+
+
+.leader-name{
+
+font-size:27px;
+
+font-weight:700;
+
+margin-bottom:16px;
+
+cursor:pointer;
+
+transition:.3s ease;
+
+}
+
+
+.leader-name:hover{
+
+color:var(--red);
+
+}
+
+
+/* =====================================================
+LEADER DETAILS
+===================================================== */
+
+.leader-details{
+
+max-height:0;
+
+overflow:hidden;
+
+opacity:0;
+
+transform:translateY(-8px);
+
+transition:
+
+max-height .5s ease,
+
+opacity .4s ease,
+
+transform .4s ease;
+
+}
+
+
+.leader-card.active .leader-details{
+
+max-height:150px;
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+.leader-details p{
+
+font-size:14px;
+
+line-height:1.7;
+
+color:#a9a9a9;
+
+margin-bottom:22px;
+
+}
+
+
+/* =====================================================
+LEADER ACTIONS
+===================================================== */
+
+.leader-actions{
+
+display:flex;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+}
+
+
+.leader-action{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:10px 19px;
+
+border-radius:30px;
+
+border:1px solid rgba(255,255,255,.14);
+
+background:rgba(255,255,255,.045);
+
+font-size:13px;
+
+font-weight:600;
+
+transition:.3s ease;
+
+}
+
+
+.leader-action:hover{
+
+background:var(--red);
+
+border-color:var(--red);
+
+transform:translateY(-3px);
+
+}
+
+
+.leader-action.call{
+
+background:var(--red);
+
+border-color:var(--red);
+
+}
+
+
+.leader-action.call:hover{
+
+background:var(--red2);
+
+border-color:var(--red2);
+
+}
+
+
+/* =====================================================
+DIRECT CONTACT
+===================================================== */
+
+.direct-contact{
+
+display:grid;
+
+grid-template-columns:1.2fr .8fr;
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+
+.direct-contact-card{
+
+padding:38px;
+
+background:rgba(255,255,255,.045);
+
+border:1px solid var(--border);
+
+border-radius:22px;
+
+transition:.4s ease;
+
+}
+
+
+.direct-contact-card:hover{
+
+border-color:rgba(229,9,20,.5);
+
+transform:translateY(-5px);
+
+}
+
+
+.direct-contact-card h3{
+
+margin-bottom:12px;
+
+}
+
+
+.direct-contact-card p{
+
+font-size:15px;
+
+color:#999;
+
+margin-bottom:20px;
+
+}
+
+
+.contact-link{
+
+display:inline-block;
+
+font-size:15px;
+
+font-weight:600;
+
+color:#fff;
+
+word-break:break-word;
+
+}
+
+
+.contact-link:hover{
+
+color:var(--red);
+
+}
+
+
+/* =====================================================
+CONTACT FORM
+===================================================== */
+
+.contact-form-section{
+
+display:grid;
+
+grid-template-columns:.85fr 1.15fr;
+
+gap:70px;
+
+align-items:start;
+
+}
+
+
+.contact-form-info{
+
+max-width:520px;
+
+}
+
+
+.contact-form-info p{
+
+margin-bottom:20px;
+
+}
+
+
+.form-points{
+
+display:flex;
+
+flex-direction:column;
+
+gap:14px;
+
+margin-top:30px;
+
+}
+
+
+.form-point{
+
+padding:17px 20px;
+
+background:rgba(255,255,255,.035);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:14px;
+
+font-size:14px;
+
+color:#aaa;
+
+transition:.3s ease;
+
+}
+
+
+.form-point:hover{
+
+border-color:rgba(229,9,20,.5);
+
+transform:translateX(5px);
+
+}
+
+
+.form-point strong{
+
+display:block;
+
+color:#fff;
+
+margin-bottom:3px;
+
+}
+
+
+.form-box{
+
+padding:38px;
+
+background:rgba(255,255,255,.045);
+
+border:1px solid var(--border);
+
+border-radius:24px;
+
+box-shadow:var(--shadow);
+
+}
+
+
+.form-group{
+
+margin-bottom:20px;
+
+}
+
+
+.form-group label{
+
+display:block;
+
+margin-bottom:8px;
+
+font-size:13px;
+
+font-weight:600;
+
+color:#ddd;
+
+}
+
+
+.form-group input,
+
+.form-group textarea,
+
+.form-group select{
+
+width:100%;
+
+padding:15px 17px;
+
+background:#090909;
+
+border:1px solid rgba(255,255,255,.12);
+
+border-radius:12px;
+
+outline:none;
+
+color:#fff;
+
+font-family:inherit;
+
+font-size:14px;
+
+transition:.3s ease;
+
+}
+
+
+.form-group input:focus,
+
+.form-group textarea:focus,
+
+.form-group select:focus{
+
+border-color:var(--red);
+
+box-shadow:
+
+0 0 0 3px rgba(229,9,20,.10);
+
+}
+
+
+.form-group textarea{
+
+min-height:150px;
+
+resize:vertical;
+
+}
+
+
+.form-group select{
+
+appearance:none;
+
+cursor:pointer;
+
+}
+
+
+.form-row{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:18px;
+
+}
+
+
+.form-submit{
+
+width:100%;
+
+border:none;
+
+cursor:pointer;
+
+font-family:inherit;
+
+font-size:15px;
+
+}
+
+
+/* =====================================================
+STUDIO LOCATION
+===================================================== */
+
+.location-section{
+
+background:#080808;
+
+}
+
+
+.location-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:30px;
+
+}
+
+
+.location-card{
+
+min-height:330px;
+
+padding:40px;
+
+border-radius:24px;
+
+border:1px solid var(--border);
+
+background:
+
+linear-gradient(
+
+145deg,
+
+rgba(255,255,255,.055),
+
+rgba(255,255,255,.02)
+
+);
+
+}
+
+
+.location-card h3{
+
+margin-bottom:15px;
+
+}
+
+
+.location-card p{
+
+font-size:15px;
+
+color:#999;
+
+}
+
+
+.location-details{
+
+margin-top:28px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:13px;
+
+}
+
+
+.location-detail{
+
+display:flex;
+
+gap:12px;
+
+align-items:flex-start;
+
+}
+
+
+.location-detail strong{
+
+min-width:85px;
+
+font-size:13px;
+
+color:#fff;
+
+}
+
+
+.location-detail span{
+
+font-size:14px;
+
+color:#999;
+
+}
+
+
+.location-map{
+
+min-height:330px;
+
+border-radius:24px;
+
+overflow:hidden;
+
+border:1px solid var(--border);
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#111,
+
+#070707
+
+);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:40px;
+
+position:relative;
+
+}
+
+
+.location-map::before{
+
+content:"";
+
+position:absolute;
+
+width:260px;
+
+height:260px;
+
+background:rgba(229,9,20,.12);
+
+filter:blur(90px);
+
+border-radius:50%;
+
+}
+
+
+.location-map-content{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+.location-map-content h3{
+
+margin-bottom:10px;
+
+}
+
+
+.location-map-content p{
+
+font-size:14px;
+
+color:#888;
+
+margin-bottom:20px;
+
+}
+
+
+/* =====================================================
+SOCIAL CONTACT
+===================================================== */
+
+.social-contact{
+
+display:flex;
+
+gap:12px;
+
+flex-wrap:wrap;
+
+margin-top:25px;
+
+}
+
+
+.social-contact a{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:11px 20px;
+
+border:1px solid rgba(255,255,255,.12);
+
+border-radius:30px;
+
+font-size:13px;
+
+font-weight:600;
+
+}
+
+
+.social-contact a:hover{
+
+background:var(--red);
+
+border-color:var(--red);
+
+transform:translateY(-3px);
+
+}
+
+<!-- =====================================================
+CONTACT HERO
+===================================================== -->
+
+<section class="contact-hero">
+
+<div class="container">
+
+<div class="contact-hero-content">
+
+<div class="hero-label">
+Contact Studio
 </div>
 
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank">Showreel</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h1>Contact Us</h1>
+<h1>
+Let's Create Something Exceptional
+</h1>
 
 <p>
-
-Let's discuss your next creative project. We are ready to collaborate with businesses, agencies and production companies worldwide.
-
+Whether you are planning a film commercial animation VFX project or digital production we would be happy to hear about your creative requirements and explore how PT Autotube Crew Studio can support your vision.
 </p>
 
-</section>
+<div class="hero-buttons">
 
-<div class="contact">
+<a
+href="#leadership"
+class="btn"
+>
+Meet Our Leadership
+</a>
 
-<h2>Get In Touch</h2>
-
-<div class="info">
-<strong>Company</strong><br>
-PT Autotube Crew Studio
-</div>
-
-<div class="info">
-<strong>Location</strong><br>
-Jakarta, Indonesia
-</div>
-
-<div class="info">
-<strong>Email</strong><br>
-autotubecrewstudio@gmail.com
-</div>
-
-<div class="info">
-<strong>Website</strong><br>
-https://ptautotubecrewstudio.github.io
-</div>
-
-<div class="info">
-<strong>YouTube</strong><br>
-https://www.youtube.com/@ptautotubecrewstudio
-</div>
-
-<div style="text-align:center;">
-
-<a class="button"
-href="mailto:autotubecrewstudio@gmail.com">
-
-Send Email
-
+<a
+href="#inquiry"
+class="btn-outline"
+>
+Start A Conversation
 </a>
 
 </div>
 
 </div>
 
+</div>
+
+</section>
+
+
+<!-- =====================================================
+CONTACT INTRO
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="contact-intro">
+
+
+<div class="contact-intro-content">
+
+<div class="hero-label">
+Get In Touch
+</div>
+
+<h2>
+Connect With Our Studio
+</h2>
+
+<p>
+PT Autotube Crew Studio is based in Jakarta Indonesia and works across CGI 3D Animation Visual Effects Motion Graphics Commercial Production and Digital Content Creation.
+</p>
+
+<p>
+For project discussions creative collaborations partnerships or general studio enquiries you can contact our team directly or send us your project requirements through the inquiry form.
+</p>
+
+<a
+href="#inquiry"
+class="btn"
+>
+Send An Inquiry
+</a>
+
+</div>
+
+
+<div class="contact-intro-image">
+
+<img
+src="portfolio03.png.png"
+alt="PT Autotube Crew Studio Creative Production"
+>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+CONTACT INFORMATION
+===================================================== -->
+
+<section class="location-section">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<div class="hero-label">
+Studio Information
+</div>
+
+<h2>
+Find The Right Way To Reach Us
+</h2>
+
+<p>
+Choose the contact option that best matches your requirement.
+</p>
+
+</div>
+
+
+<div class="contact-info-grid">
+
+
+<div class="contact-info-card">
+
+<div class="contact-info-label">
+Company
+</div>
+
+<h3>
+PT Autotube Crew Studio
+</h3>
+
+<p>
+Creative production studio based in Jakarta Indonesia.
+</p>
+
+</div>
+
+
+<div class="contact-info-card">
+
+<div class="contact-info-label">
+Email
+</div>
+
+<h3>
+Business Enquiries
+</h3>
+
+<p>
+autotubecrewstudio@gmail.com
+</p>
+
+</div>
+
+
+<div class="contact-info-card">
+
+<div class="contact-info-label">
+Location
+</div>
+
+<h3>
+Jakarta Indonesia
+</h3>
+
+<p>
+Available for creative projects collaborations and production discussions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+LEADERSHIP
+===================================================== -->
+
+<section
+class="leadership-section"
+id="leadership"
+>
+
+<div class="container">
+
+
+<div class="section-title">
+
+<div class="hero-label">
+Leadership
+</div>
+
+<h2>
+Meet The People Behind The Studio
+</h2>
+
+<p>
+Connect directly with the leadership team of PT Autotube Crew Studio for business creative and production discussions.
+</p>
+
+</div>
+
+
+<div class="leadership-grid">
+
+
+<!-- =====================================================
+FOUNDER
+===================================================== -->
+
+<div class="leader-card">
+
+
+<div class="leader-image">
+
+<img
+src="founder-shameer-sarfraz.jpg"
+alt="Shameer Sarfraz Founder PT Autotube Crew Studio"
+>
+
+</div>
+
+
+<div class="leader-content">
+
+<div
+class="leader-position"
+onclick="toggleLeader(this)"
+>
+Founder
+</div>
+
+<div
+class="leader-name"
+onclick="toggleLeader(this)"
+>
+Shameer Sarfraz
+</div>
+
+
+<div class="leader-details">
+
+<p>
+Founder of PT Autotube Crew Studio driving the studio's creative vision and long term growth. Focused on building a strong production team and developing high quality digital content.
+</p>
+
+
+<div class="leader-actions">
+
+
+<a
+class="leader-action"
+href="https://wa.me/628139953164"
+target="_blank"
+rel="noopener"
+>
+WhatsApp
+</a>
+
+
+<a
+class="leader-action call"
+href="tel:+628139953164"
+>
+Call
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+CEO
+===================================================== -->
+
+<div class="leader-card">
+
+
+<div class="leader-image">
+
+<img
+src="ceo-abdul-sattar.jpg"
+alt="Abdul Sattar CEO PT Autotube Crew Studio"
+>
+
+</div>
+
+
+<div class="leader-content">
+
+<div
+class="leader-position"
+onclick="toggleLeader(this)"
+>
+CEO
+</div>
+
+<div
+class="leader-name"
+onclick="toggleLeader(this)"
+>
+Abdul Sattar
+</div>
+
+
+<div class="leader-details">
+
+<p>
+CEO of PT Autotube Crew Studio focused on business direction strategic development and sustainable growth. Supporting the studio's expansion across creative production and future opportunities.
+</p>
+
+
+<div class="leader-actions">
+
+
+<a
+class="leader-action"
+href="https://wa.me/628139953161"
+target="_blank"
+rel="noopener"
+>
+WhatsApp
+</a>
+
+
+<a
+class="leader-action call"
+href="tel:+628139953161"
+>
+Call
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+DIRECTOR
+===================================================== -->
+
+<div class="leader-card">
+
+
+<div class="leader-image">
+
+<img
+src="director-hasnain-ali-shah.jpg"
+alt="Hasnain Ali Shah Director PT Autotube Crew Studio"
+>
+
+</div>
+
+
+<div class="leader-content">
+
+<div
+class="leader-position"
+onclick="toggleLeader(this)"
+>
+Director
+</div>
+
+<div
+class="leader-name"
+onclick="toggleLeader(this)"
+>
+Hasnain Ali Shah
+</div>
+
+
+<div class="leader-details">
+
+<p>
+Director of PT Autotube Crew Studio leading creative production development and studio operations. Focused on CGI 3D Animation VFX commercial production and long term creative collaborations.
+</p>
+
+
+<div class="leader-actions">
+
+
+<a
+class="leader-action"
+href="https://wa.me/62813995162"
+target="_blank"
+rel="noopener"
+>
+WhatsApp
+</a>
+
+
+<a
+class="leader-action call"
+href="tel:+62813995162"
+>
+Call
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+DIRECT CONTACT
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="direct-contact">
+
+
+<div class="direct-contact-card">
+
+<div class="hero-label">
+Email
+</div>
+
+<h3>
+Business And Project Enquiries
+</h3>
+
+<p>
+For project briefs proposals partnerships and general business enquiries contact the studio by email.
+</p>
+
+<a
+class="contact-link"
+href="mailto:autotubecrewstudio@gmail.com"
+>
+autotubecrewstudio@gmail.com
+</a>
+
+</div>
+
+
+<div class="direct-contact-card">
+
+<div class="hero-label">
+Online
+</div>
+
+<h3>
+Follow Our Work
+</h3>
+
+<p>
+Explore our latest creative work and production content through our official online channels.
+</p>
+
+
+<div class="social-contact">
+
+<a
+href="https://www.youtube.com/@ptautotubecrewstudio"
+target="_blank"
+rel="noopener"
+>
+YouTube
+</a>
+
+
+<a
+href="https://ptautotubecrewstudio.github.io"
+target="_blank"
+rel="noopener"
+>
+Website
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+PROJECT INQUIRY
+===================================================== -->
+
+<section
+class="dark"
+id="inquiry"
+>
+
+<div class="container">
+
+<div class="contact-form-section">
+
+
+<div class="contact-form-info">
+
+<div class="hero-label">
+Project Inquiry
+</div>
+
+<h2>
+Tell Us About Your Project
+</h2>
+
+<p>
+Share a few details about your project and production requirements. This helps us understand your needs before we begin a conversation.
+</p>
+
+
+<div class="form-points">
+
+
+<div class="form-point">
+
+<strong>
+Project Type
+</strong>
+
+CGI Animation VFX Commercial or Digital Production
+
+</div>
+
+
+<div class="form-point">
+
+<strong>
+Project Scope
+</strong>
+
+Tell us about your creative requirements timeline and expected deliverables
+
+</div>
+
+
+<div class="form-point">
+
+<strong>
+Reference Material
+</strong>
+
+You can include portfolio links references or additional project information in your message
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="form-box">
+
+<form
+action="mailto:autotubecrewstudio@gmail.com"
+method="post"
+enctype="text/plain"
+>
+
+
+<div class="form-row">
+
+
+<div class="form-group">
+
+<label for="name">
+Your Name
+</label>
+
+<input
+type="text"
+id="name"
+name="Name"
+placeholder="Your name"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="company">
+Company
+</label>
+
+<input
+type="text"
+id="company"
+name="Company"
+placeholder="Company name"
+>
+
+</div>
+
+
+</div>
+
+
+<div class="form-row">
+
+
+<div class="form-group">
+
+<label for="email">
+Email
+</label>
+
+<input
+type="email"
+id="email"
+name="Email"
+placeholder="Your email"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="project">
+Project Type
+</label>
+
+<select
+id="project"
+name="Project Type"
+>
+
+<option value="">
+Select project type
+</option>
+
+<option value="CGI">
+CGI
+</option>
+
+<option value="3D Animation">
+3D Animation
+</option>
+
+<option value="VFX">
+VFX
+</option>
+
+<option value="Commercial Production">
+Commercial Production
+</option>
+
+<option value="Motion Graphics">
+Motion Graphics
+</option>
+
+<option value="Digital Content">
+Digital Content
+</option>
+
+<option value="Other">
+Other
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="message">
+Project Details
+</label>
+
+<textarea
+id="message"
+name="Message"
+placeholder="Tell us about your project"
+required
+></textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="btn form-submit"
+>
+Send Project Inquiry
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =====================================================
+LOCATION
+===================================================== -->
+
+<section class="location-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="hero-label">
+Our Location
+</div>
+
+<h2>
+PT Autotube Crew Studio
+</h2>
+
+<p>
+Based in Jakarta Indonesia and available for creative production discussions and collaborations.
+</p>
+
+</div>
+
+
+<div class="location-grid">
+
+
+<div class="location-card">
+
+<div class="hero-label">
+Studio Address
+</div>
+
+<h3>
+Jakarta Indonesia
+</h3>
+
+<p>
+PT Autotube Crew Studio operates from Jakarta Indonesia with a focus on CGI 3D Animation VFX Commercial Production and Digital Content Creation.
+</p>
+
+
+<div class="location-details">
+
+
+<div class="location-detail">
+
+<strong>
+Company
+</strong>
+
+<span>
+PT Autotube Crew Studio
+</span>
+
+</div>
+
+
+<div class="location-detail">
+
+<strong>
+Location
+</strong>
+
+<span>
+Jakarta Indonesia
+</span>
+
+</div>
+
+
+<div class="location-detail">
+
+<strong>
+Email
+</strong>
+
+<span>
+autotubecrewstudio@gmail.com
+</span>
+
+</div>
+
+
+<div class="location-detail">
+
+<strong>
+Website
+</strong>
+
+<span>
+ptautotubecrewstudio.github.io
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="location-map">
+
+<div class="location-map-content">
+
+<div class="hero-label">
+Jakarta
+</div>
+
+<h3>
+Indonesia
+</h3>
+
+<p>
+Creative production and digital content development from Jakarta.
+</p>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=Jakarta%2C%20Indonesia"
+target="_blank"
+rel="noopener"
+class="btn"
+>
+View Location
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+FINAL CTA
+===================================================== -->
+
+<section class="contact-hero">
+
+<div class="container">
+
+<div class="contact-hero-content">
+
+<div class="hero-label">
+Let's Work Together
+</div>
+
+<h2>
+Have A Creative Project In Mind?
+</h2>
+
+<p>
+Tell us what you are building and let us explore the creative possibilities together.
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#inquiry"
+class="btn"
+>
+Start Your Project
+</a>
+
+<a
+href="portfolio.html"
+class="btn-outline"
+>
+View Portfolio
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+FOOTER
+===================================================== -->
+
 <footer>
 
-© PT Autotube Crew Studio<br>
+<div class="container">
 
-Jakarta, Indonesia
+<div class="footer-grid">
+
+
+<div class="footer-brand">
+
+<a
+href="index.html"
+class="logo"
+>
+
+<img
+src="logo.png.png"
+alt="PT Autotube Crew Studio Logo"
+>
+
+<span>
+PT Autotube Crew Studio
+</span>
+
+</a>
+
+
+<p>
+PT Autotube Crew Studio is a creative production studio based in Jakarta Indonesia focused on CGI 3D Animation Visual Effects Motion Graphics Commercial Production and Digital Content Creation.
+</p>
+
+
+<div class="social-links">
+
+<a
+href="https://www.youtube.com/@ptautotubecrewstudio"
+target="_blank"
+rel="noopener"
+aria-label="YouTube"
+>
+YT
+</a>
+
+
+<a
+href="#"
+aria-label="Instagram"
+>
+IG
+</a>
+
+
+<a
+href="#"
+aria-label="LinkedIn"
+>
+IN
+</a>
+
+
+<a
+href="#"
+aria-label="Facebook"
+>
+FB
+</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>
+Studio
+</h3>
+
+<a href="about.html">
+About Us
+</a>
+
+<a href="team.html">
+Our Team
+</a>
+
+<a href="careers.html">
+Careers
+</a>
+
+<a href="partners.html">
+Partners
+</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>
+Production
+</h3>
+
+<a href="services.html">
+Services
+</a>
+
+<a href="portfolio.html">
+Portfolio
+</a>
+
+<a href="showreel.html">
+Showreel
+</a>
+
+<a href="case-studies.html">
+Case Studies
+</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>
+Contact
+</h3>
+
+<a href="contact.html">
+Contact Studio
+</a>
+
+<a href="mailto:autotubecrewstudio@gmail.com">
+Email
+</a>
+
+<a
+href="https://www.youtube.com/@ptautotubecrewstudio"
+target="_blank"
+rel="noopener"
+>
+YouTube
+</a>
+
+<a href="contact.html">
+Jakarta Indonesia
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<div>
+© 2026 PT Autotube Crew Studio All Rights Reserved
+</div>
+
+<div>
+Jakarta Indonesia
+</div>
+
+</div>
+
+</div>
 
 </footer>
+
+
+<!-- =====================================================
+BACK TO TOP
+===================================================== -->
+
+<button
+id="topBtn"
+aria-label="Back to top"
+>
+↑
+</button>
+
+
+<!-- =====================================================
+JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =====================================================
+HEADER SCROLL
+===================================================== */
+
+const header = document.querySelector("header");
+
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 60){
+
+header.classList.add("scrolled");
+
+}else{
+
+header.classList.remove("scrolled");
+
+}
+
+});
+
+
+/* =====================================================
+LEADERSHIP DETAILS
+===================================================== */
+
+function toggleLeader(element){
+
+const card = element.closest(".leader-card");
+
+document.querySelectorAll(".leader-card").forEach(function(item){
+
+if(item !== card){
+
+item.classList.remove("active");
+
+}
+
+});
+
+
+card.classList.toggle("active");
+
+}
+
+
+/* =====================================================
+BACK TO TOP
+===================================================== */
+
+const topBtn = document.getElementById("topBtn");
+
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 500){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+});
+
+
+topBtn.addEventListener("click", function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+
+/* =====================================================
+SCROLL REVEAL
+===================================================== */
+
+const revealElements = document.querySelectorAll(
+
+".contact-info-card, .leader-card, .direct-contact-card, .form-box, .form-point, .location-card, .location-map"
+
+);
+
+
+const revealObserver = new IntersectionObserver(
+
+function(entries, observer){
+
+entries.forEach(function(entry){
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("visible");
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+},
+
+{
+
+threshold:0.12
+
+}
+
+);
+
+
+revealElements.forEach(function(element){
+
+element.classList.add("reveal");
+
+revealObserver.observe(element);
+
+});
+
+
+/* =====================================================
+SMOOTH ANCHOR LINKS
+===================================================== */
+
+document.querySelectorAll('a[href^="#"]').forEach(function(link){
+
+link.addEventListener("click", function(event){
+
+const targetId = this.getAttribute("href");
+
+
+if(targetId === "#"){
+
+return;
+
+}
+
+
+const target = document.querySelector(targetId);
+
+
+if(target){
+
+event.preventDefault();
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* =====================================================
+FORM FEEDBACK
+===================================================== */
+
+const inquiryForm = document.querySelector("#inquiry form");
+
+
+if(inquiryForm){
+
+inquiryForm.addEventListener("submit", function(){
+
+const submitButton = inquiryForm.querySelector(".form-submit");
+
+submitButton.textContent = "Opening Email";
+
+});
+
+}
+
+
+/* =====================================================
+IMAGE FALLBACK
+===================================================== */
+
+document.querySelectorAll("img").forEach(function(image){
+
+image.addEventListener("error", function(){
+
+this.style.background =
+
+"linear-gradient(135deg,#151515,#050505)";
+
+});
+
+});
+
+
+</script>
+
 
 </body>
 
 </html>
+
+  
