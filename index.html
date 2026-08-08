@@ -640,7 +640,63 @@ text-align:center;
 }
 
 }
+.mobile-menu-btn{
+display:none;
+background:none;
+border:none;
+color:#ffffff;
+font-size:30px;
+cursor:pointer;
+padding:5px;
+}
 
+.mobile-menu{
+display:none;
+}
+
+@media(max-width:768px){
+
+.mobile-menu-btn{
+display:block;
+}
+
+header .container{
+position:relative;
+}
+
+.mobile-menu{
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+background:#0b0b0b;
+border-top:1px solid #222;
+border-bottom:1px solid #222;
+padding:20px;
+z-index:1000;
+}
+
+.mobile-menu.active{
+display:block;
+}
+
+.mobile-menu a{
+display:block;
+padding:14px 10px;
+font-size:16px;
+border-bottom:1px solid #222;
+color:#ffffff;
+}
+
+.mobile-menu a:last-child{
+border-bottom:none;
+}
+
+.mobile-menu a:hover{
+color:#e50914;
+}
+
+}
 </style>
 
 </head>
@@ -657,7 +713,9 @@ text-align:center;
 <span>PT Autotube Crew Studio</span>
 
 </a>
-
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+☰
+</button>
 <nav>
 
 <ul>
@@ -753,7 +811,49 @@ text-align:center;
 </nav>
 
 </div>
+<div class="mobile-menu" id="mobileMenu">
 
+<a href="index.html">Home</a>
+
+<a href="about.html">About Us</a>
+
+<a href="team.html">Our Team</a>
+
+<a href="careers.html">Careers</a>
+
+<a href="services.html">Services</a>
+
+<a href="technology.html">Technology</a>
+
+<a href="industries.html">Industries</a>
+
+<a href="pricing.html">Pricing</a>
+
+<a href="portfolio.html">Portfolio</a>
+
+<a href="showreel.html">Showreel</a>
+
+<a href="case-studies.html">Case Studies</a>
+
+<a href="clients.html">Clients</a>
+
+<a href="testimonials.html">Testimonials</a>
+
+<a href="downloads.html">Downloads</a>
+
+<a href="blog.html">Blog</a>
+
+<a href="news.html">News</a>
+
+<a href="events.html">Events</a>
+
+<a href="press-kit.html">Press Kit</a>
+
+<a href="media-kit.html">Media Kit</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
 </header>
 
 <section class="hero">
@@ -1471,7 +1571,14 @@ color:#ffffff;
 </style>
 
 <script>
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
 
+mobileMenuBtn.onclick = function(){
+
+mobileMenu.classList.toggle("active");
+
+};
 const topBtn=document.getElementById("topBtn");
 
 window.onscroll=function(){
