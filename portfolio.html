@@ -6,7 +6,7 @@
 
 <title>Portfolio | PT Autotube Crew Studio | CGI 3D Animation VFX</title>
 
-<meta name="description" content="Explore the portfolio of PT Autotube Crew Studio featuring CGI, 3D Animation, Visual Effects, Product Visualization, Motion Graphics and Digital Production.">
+<meta name="description" content="Explore the portfolio of PT Autotube Crew Studio featuring CGI, 3D animation, visual effects, product visualization, motion graphics and digital production work.">
 
 <meta name="keywords" content="PT Autotube Crew Studio Portfolio, CGI Portfolio, 3D Animation Portfolio, VFX Portfolio, Product Visualization, Motion Graphics, 3D Environment, Animation Studio Indonesia">
 
@@ -15,14 +15,20 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Portfolio | PT Autotube Crew Studio">
-<meta property="og:description" content="Explore our CGI, 3D Animation, VFX, Product Visualization and digital production portfolio.">
+<meta property="og:description" content="Explore CGI, 3D animation, VFX, product visualization and creative production work by PT Autotube Crew Studio.">
 <meta property="og:image" content="portfolio01.png.png">
 <meta property="og:url" content="https://www.autotubecrewstudio.com/portfolio.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Portfolio | PT Autotube Crew Studio">
+<meta name="twitter:description" content="Explore our CGI, 3D animation, VFX and digital production portfolio.">
+<meta name="twitter:image" content="portfolio01.png.png">
 
 <link rel="icon" href="logo.png.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -40,7 +46,7 @@ html{
 body{
     font-family:'Poppins',sans-serif;
     background:#050505;
-    color:#fff;
+    color:#ffffff;
     line-height:1.7;
     overflow-x:hidden;
 }
@@ -69,48 +75,44 @@ header{
     background:rgba(0,0,0,.92);
     backdrop-filter:blur(15px);
     border-bottom:1px solid rgba(255,255,255,.08);
-    z-index:999;
+    z-index:1000;
 }
 
 header .container{
-    min-height:80px;
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
 }
 
 .logo{
     display:flex;
     align-items:center;
     gap:12px;
-    font-size:22px;
+    font-size:23px;
     font-weight:700;
 }
 
 .logo img{
-    width:48px;
-    height:48px;
+    width:50px;
+    height:50px;
     object-fit:contain;
 }
 
 nav ul{
     display:flex;
     align-items:center;
-    gap:28px;
     list-style:none;
+    gap:28px;
 }
 
-nav ul li{
-    position:relative;
-}
-
-nav ul li a{
+nav a{
     font-size:15px;
     font-weight:500;
     transition:.3s;
 }
 
-nav ul li a:hover{
+nav a:hover{
     color:#e50914;
 }
 
@@ -119,11 +121,19 @@ nav ul li a:hover{
     top:100%;
     left:0;
     min-width:230px;
+    padding:12px 0;
     background:#111;
     border:1px solid #252525;
     border-radius:12px;
-    padding:12px 0;
     display:none;
+}
+
+nav li{
+    position:relative;
+}
+
+nav li:hover .dropdown{
+    display:block;
 }
 
 .dropdown a{
@@ -132,70 +142,81 @@ nav ul li a:hover{
 }
 
 .dropdown a:hover{
-    background:#1a1a1a;
-}
-
-nav ul li:hover .dropdown{
-    display:block;
+    background:#1b1b1b;
 }
 
 .mobile-menu-btn{
     display:none;
+    border:none;
     background:none;
-    border:0;
     color:#fff;
-    font-size:30px;
+    font-size:29px;
     cursor:pointer;
 }
 
 .mobile-menu{
     display:none;
+    background:#0b0b0b;
+    border-top:1px solid #222;
+    padding:15px 20px;
 }
 
-.hero{
-    padding:180px 0 100px;
-    background:
-    radial-gradient(circle at 80% 20%,rgba(229,9,20,.14),transparent 35%),
-    #050505;
+.mobile-menu.active{
+    display:block;
+}
+
+.mobile-menu a{
+    display:block;
+    padding:13px 5px;
+    border-bottom:1px solid #222;
+    font-size:15px;
+}
+
+.mobile-menu a:hover{
+    color:#e50914;
+}
+
+.page-hero{
+    padding:180px 0 110px;
     text-align:center;
+    background:
+        radial-gradient(circle at center,rgba(229,9,20,.14),transparent 55%),
+        #050505;
 }
 
-.hero h1{
+.page-hero h1{
     font-size:64px;
-    line-height:1.12;
+    line-height:1.15;
     font-weight:800;
-    margin-bottom:25px;
+    margin-bottom:22px;
 }
 
-.hero p{
+.page-hero p{
     max-width:850px;
     margin:auto;
     color:#cfcfcf;
     font-size:18px;
 }
 
-.section{
+.portfolio-section{
     padding:100px 0;
+    background:#090909;
 }
 
-.section.dark{
-    background:#0a0a0a;
-}
-
-.section-title{
+.portfolio-intro{
     text-align:center;
-    margin-bottom:55px;
+    max-width:850px;
+    margin:0 auto 60px;
 }
 
-.section-title h2{
+.portfolio-intro h2{
     font-size:44px;
     margin-bottom:18px;
 }
 
-.section-title p{
-    max-width:800px;
-    margin:auto;
-    color:#aaa;
+.portfolio-intro p{
+    color:#cfcfcf;
+    font-size:16px;
 }
 
 .portfolio-grid{
@@ -204,127 +225,185 @@ nav ul li:hover .dropdown{
     gap:28px;
 }
 
-.project{
-    background:#101010;
-    border:1px solid #222;
+.portfolio-card{
+    background:#111;
+    border:1px solid #252525;
     border-radius:18px;
     overflow:hidden;
     transition:.35s;
 }
 
-.project:hover{
+.portfolio-card:hover{
     transform:translateY(-8px);
     border-color:#e50914;
 }
 
-.project-image{
-    overflow:hidden;
+.portfolio-image{
     aspect-ratio:16/10;
-    background:#111;
+    overflow:hidden;
+    background:#151515;
 }
 
-.project-image img{
+.portfolio-image img{
     width:100%;
     height:100%;
     object-fit:cover;
     transition:.5s;
 }
 
-.project:hover .project-image img{
+.portfolio-card:hover .portfolio-image img{
     transform:scale(1.05);
 }
 
-.project-content{
+.portfolio-content{
     padding:25px;
 }
 
-.project-content h3{
+.portfolio-content h3{
     font-size:23px;
     margin-bottom:10px;
 }
 
-.project-content p{
-    color:#aaa;
+.portfolio-content p{
+    color:#bdbdbd;
     font-size:15px;
 }
 
-.project-category{
+.category{
     display:inline-block;
     margin-bottom:12px;
-    color:#e50914;
-    font-size:13px;
+    padding:5px 12px;
+    border-radius:30px;
+    background:#e50914;
+    color:#fff;
+    font-size:11px;
     font-weight:600;
     text-transform:uppercase;
-    letter-spacing:1px;
+    letter-spacing:.5px;
+}
+
+.process-section{
+    padding:100px 0;
+    background:#101010;
+}
+
+.process-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.process-title h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.process-title p{
+    color:#cfcfcf;
+    max-width:800px;
+    margin:auto;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.process-card{
+    padding:30px;
+    background:#151515;
+    border:1px solid #252525;
+    border-radius:16px;
+}
+
+.process-number{
+    font-size:35px;
+    font-weight:800;
+    color:#e50914;
+    margin-bottom:15px;
+}
+
+.process-card h3{
+    font-size:21px;
+    margin-bottom:10px;
+}
+
+.process-card p{
+    color:#bdbdbd;
+    font-size:14px;
 }
 
 .cta{
     padding:100px 0;
     text-align:center;
+    background:
+        radial-gradient(circle at center,rgba(229,9,20,.12),transparent 60%),
+        #050505;
 }
 
 .cta h2{
     font-size:44px;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .cta p{
-    max-width:750px;
+    max-width:800px;
     margin:auto;
-    color:#aaa;
+    color:#cfcfcf;
 }
 
 .btn{
     display:inline-block;
-    margin-top:35px;
+    margin-top:32px;
     padding:15px 35px;
-    background:#e50914;
     border-radius:50px;
+    background:#e50914;
+    color:#fff;
     font-weight:600;
     transition:.3s;
 }
 
 .btn:hover{
-    background:#ff2835;
+    background:#ff2935;
     transform:translateY(-3px);
 }
 
 footer{
     background:#090909;
-    border-top:1px solid #222;
     padding:65px 0 30px;
+    border-top:1px solid #222;
 }
 
 .footer-grid{
     display:grid;
-    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    grid-template-columns:1.5fr 1fr 1fr 1.2fr;
     gap:40px;
 }
 
 footer h3{
+    font-size:20px;
     margin-bottom:18px;
-    font-size:21px;
 }
 
-footer p,
-footer a{
+footer p{
     color:#999;
     font-size:14px;
+    margin-bottom:9px;
+}
+
+footer a{
+    color:#aaa;
+    transition:.3s;
 }
 
 footer a:hover{
     color:#fff;
 }
 
-.footer-links a{
-    display:block;
-    margin-bottom:8px;
-}
-
 .footer-bottom{
-    border-top:1px solid #222;
     margin-top:50px;
     padding-top:25px;
+    border-top:1px solid #222;
     text-align:center;
     color:#777;
     font-size:13px;
@@ -332,21 +411,41 @@ footer a:hover{
 
 #topBtn{
     position:fixed;
-    right:25px;
-    bottom:25px;
+    right:22px;
+    bottom:22px;
     width:52px;
     height:52px;
-    border:0;
+    border:none;
     border-radius:50%;
     background:#e50914;
     color:#fff;
-    font-size:21px;
+    font-size:22px;
     cursor:pointer;
     display:none;
     z-index:900;
 }
 
-@media(max-width:1000px){
+#topBtn:hover{
+    transform:translateY(-4px);
+}
+
+@media(max-width:1100px){
+
+    .portfolio-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:900px){
 
     nav{
         display:none;
@@ -356,62 +455,51 @@ footer a:hover{
         display:block;
     }
 
-    .mobile-menu{
-        position:absolute;
-        top:80px;
-        left:0;
-        width:100%;
-        background:#0b0b0b;
-        border-top:1px solid #222;
-        padding:15px 5%;
+    .page-hero{
+        padding-top:145px;
     }
 
-    .mobile-menu.active{
-        display:block;
-    }
-
-    .mobile-menu a{
-        display:block;
-        padding:13px 5px;
-        border-bottom:1px solid #222;
-    }
-
-    .portfolio-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .hero h1{
+    .page-hero h1{
         font-size:48px;
     }
+
 }
 
-@media(max-width:650px){
+@media(max-width:700px){
 
     .container{
         width:92%;
     }
 
-    .hero{
-        padding:145px 0 75px;
+    .logo{
+        font-size:17px;
     }
 
-    .hero h1{
+    .logo img{
+        width:40px;
+        height:40px;
+    }
+
+    .page-hero{
+        padding:130px 0 75px;
+    }
+
+    .page-hero h1{
         font-size:36px;
     }
 
-    .hero p{
+    .page-hero p{
         font-size:15px;
     }
 
-    .section{
+    .portfolio-section,
+    .process-section,
+    .cta{
         padding:70px 0;
     }
 
-    .section-title h2,
+    .portfolio-intro h2,
+    .process-title h2,
     .cta h2{
         font-size:31px;
     }
@@ -420,19 +508,26 @@ footer a:hover{
         grid-template-columns:1fr;
     }
 
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
     .footer-grid{
         grid-template-columns:1fr;
-        gap:30px;
     }
 
-    .logo{
-        font-size:16px;
+}
+
+@media(max-width:480px){
+
+    .page-hero h1{
+        font-size:32px;
     }
 
-    .logo img{
-        width:40px;
-        height:40px;
+    .portfolio-content{
+        padding:21px;
     }
+
 }
 
 </style>
@@ -449,14 +544,16 @@ footer a:hover{
 <span>PT Autotube Crew Studio</span>
 </a>
 
-<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation">
 ☰
 </button>
 
 <nav>
 <ul>
 
-<li><a href="index.html">Home</a></li>
+<li>
+<a href="index.html">Home</a>
+</li>
 
 <li>
 <a href="#">About ▼</a>
@@ -501,7 +598,9 @@ footer a:hover{
 </div>
 </li>
 
-<li><a href="contact.html">Contact</a></li>
+<li>
+<a href="contact.html">Contact</a>
+</li>
 
 </ul>
 </nav>
@@ -515,25 +614,21 @@ footer a:hover{
 <a href="team.html">Our Team</a>
 <a href="careers.html">Careers</a>
 <a href="partners.html">Partners</a>
-
 <a href="services.html">Services</a>
 <a href="technology.html">Technology</a>
 <a href="industries.html">Industries</a>
 <a href="pricing.html">Pricing</a>
-
 <a href="portfolio.html">Portfolio</a>
 <a href="showreel.html">Showreel</a>
 <a href="case-studies.html">Case Studies</a>
 <a href="clients.html">Clients</a>
 <a href="testimonials.html">Testimonials</a>
-
 <a href="downloads.html">Downloads</a>
 <a href="blog.html">Blog</a>
 <a href="news.html">News</a>
 <a href="events.html">Events</a>
 <a href="press-kit.html">Press Kit</a>
 <a href="media-kit.html">Media Kit</a>
-
 <a href="contact.html">Contact</a>
 
 </div>
@@ -541,16 +636,14 @@ footer a:hover{
 </header>
 
 
-<section class="hero">
+<section class="page-hero">
 
 <div class="container">
 
-<h1>Our Creative Portfolio</h1>
+<h1>Our Portfolio</h1>
 
 <p>
-Explore selected work from PT Autotube Crew Studio across CGI,
-3D Animation, Visual Effects, Product Visualization, Motion Graphics
-and digital production.
+Explore selected creative work from PT Autotube Crew Studio across CGI production, 3D animation, visual effects, product visualization, motion graphics and digital content production.
 </p>
 
 </div>
@@ -558,17 +651,16 @@ and digital production.
 </section>
 
 
-<section class="section">
+<section class="portfolio-section">
 
 <div class="container">
 
-<div class="section-title">
+<div class="portfolio-intro">
 
-<h2>Featured Work</h2>
+<h2>Featured Creative Work</h2>
 
 <p>
-A selection of visual production work demonstrating our creative,
-technical and production capabilities.
+Our portfolio demonstrates our approach to visual storytelling, technical production and high-quality digital content. Each project is developed with attention to composition, detail, lighting, animation and presentation.
 </p>
 
 </div>
@@ -577,21 +669,20 @@ technical and production capabilities.
 <div class="portfolio-grid">
 
 
-<div class="project">
+<div class="portfolio-card">
 
-<div class="project-image">
+<div class="portfolio-image">
 <img src="portfolio01.png.png" alt="Commercial CGI Portfolio">
 </div>
 
-<div class="project-content">
+<div class="portfolio-content">
 
-<span class="project-category">CGI Production</span>
+<span class="category">CGI</span>
 
 <h3>Commercial CGI</h3>
 
 <p>
-Photorealistic CGI created for advertising, product marketing
-and digital campaigns.
+Photorealistic CGI imagery created for advertising, promotional content and commercial visual communication.
 </p>
 
 </div>
@@ -599,21 +690,20 @@ and digital campaigns.
 </div>
 
 
-<div class="project">
+<div class="portfolio-card">
 
-<div class="project-image">
+<div class="portfolio-image">
 <img src="portfolio02.png.png" alt="3D Environment Portfolio">
 </div>
 
-<div class="project-content">
+<div class="portfolio-content">
 
-<span class="project-category">3D Environment</span>
+<span class="category">3D Environment</span>
 
 <h3>3D Environment</h3>
 
 <p>
-Detailed digital environments created for animation,
-games and cinematic productions.
+Detailed 3D environment creation designed for animation, games, cinematic productions and digital experiences.
 </p>
 
 </div>
@@ -621,21 +711,20 @@ games and cinematic productions.
 </div>
 
 
-<div class="project">
+<div class="portfolio-card">
 
-<div class="project-image">
+<div class="portfolio-image">
 <img src="portfolio03.png.png" alt="Product Visualization Portfolio">
 </div>
 
-<div class="project-content">
+<div class="portfolio-content">
 
-<span class="project-category">Product Visualization</span>
+<span class="category">Product Visualization</span>
 
 <h3>Product Visualization</h3>
 
 <p>
-High-quality product visualization and rendering
-for marketing and presentation.
+High-quality product visualization designed to present products with realistic materials, lighting and presentation.
 </p>
 
 </div>
@@ -643,21 +732,20 @@ for marketing and presentation.
 </div>
 
 
-<div class="project">
+<div class="portfolio-card">
 
-<div class="project-image">
+<div class="portfolio-image">
 <img src="portfolio04.png.png" alt="Motion Graphics Portfolio">
 </div>
 
-<div class="project-content">
+<div class="portfolio-content">
 
-<span class="project-category">Motion Graphics</span>
+<span class="category">Motion Graphics</span>
 
 <h3>Motion Graphics</h3>
 
 <p>
-Creative animated graphics and promotional visuals
-for digital media and campaigns.
+Creative motion graphics and animated visual content for promotional campaigns, digital media and presentations.
 </p>
 
 </div>
@@ -665,21 +753,20 @@ for digital media and campaigns.
 </div>
 
 
-<div class="project">
+<div class="portfolio-card">
 
-<div class="project-image">
+<div class="portfolio-image">
 <img src="portfolio05.png.png" alt="Visual Effects Portfolio">
 </div>
 
-<div class="project-content">
+<div class="portfolio-content">
 
-<span class="project-category">Visual Effects</span>
+<span class="category">VFX</span>
 
 <h3>Visual Effects</h3>
 
 <p>
-Digital visual effects and cinematic imagery for
-commercial and entertainment productions.
+Visual effects and digital compositing designed to enhance cinematic productions, commercials and creative content.
 </p>
 
 </div>
@@ -687,21 +774,20 @@ commercial and entertainment productions.
 </div>
 
 
-<div class="project">
+<div class="portfolio-card">
 
-<div class="project-image">
+<div class="portfolio-image">
 <img src="portfolio06.png.png" alt="3D Animation Portfolio">
 </div>
 
-<div class="project-content">
+<div class="portfolio-content">
 
-<span class="project-category">3D Animation</span>
+<span class="category">Animation</span>
 
-<h3>Animation Production</h3>
+<h3>3D Animation</h3>
 
 <p>
-3D animation content developed for films,
-television, advertising and digital platforms.
+Professional 3D animation created for storytelling, product communication, entertainment and digital platforms.
 </p>
 
 </div>
@@ -709,65 +795,293 @@ television, advertising and digital platforms.
 </div>
 
 
-<div class="project">
+<div class="portfolio-card">
 
-<div class="project-image">
-<img src="portfolio07.png.png" alt="Digital Production Portfolio">
+<div class="portfolio-image">
+<img src="portfolio07.png.png" alt="Creative 3D Portfolio">
 </div>
 
-<div class="project-content">
+<div class="portfolio-content">
 
-<span class="project-category">Digital Production</span>
-
-<h3>Digital Content</h3>
-
-<p>
-Creative digital content designed for modern
-brands, campaigns and online platforms.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="project">
-
-<div class="project-image">
-<img src="portfolio08.png.png" alt="CGI Visualization Portfolio">
-</div>
-
-<div class="project-content">
-
-<span class="project-category">CGI Visualization</span>
-
-<h3>CGI Visualization</h3>
-
-<p>
-Detailed CGI imagery combining technical accuracy
-with cinematic visual presentation.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="project">
-
-<div class="project-image">
-<img src="portfolio09.png.png" alt="Creative 3D Portfolio">
-</div>
-
-<div class="project-content">
-
-<span class="project-category">Creative 3D</span>
+<span class="category">Creative 3D</span>
 
 <h3>Creative 3D Production</h3>
 
 <p>
-Creative 3D artwork developed for visual storytelling
-and digital experiences.
+Creative 3D artwork combining modeling, materials, lighting and rendering for visual communication.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio08.png.png" alt="Digital Production Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">Digital Production</span>
+
+<h3>Digital Production</h3>
+
+<p>
+Digital visual content developed for modern media, advertising, presentation and online communication.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio09.png.png" alt="Cinematic Production Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">Cinematic</span>
+
+<h3>Cinematic Visuals</h3>
+
+<p>
+Cinematic visual development focused on atmosphere, composition, lighting and storytelling.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio10.png.png" alt="3D Design Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">3D Design</span>
+
+<h3>3D Design</h3>
+
+<p>
+Custom 3D design and visual development for creative concepts, campaigns and digital production.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio11.png.png" alt="Animation Design Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">Animation Design</span>
+
+<h3>Animation Design</h3>
+
+<p>
+Animation-focused visual design created for engaging digital storytelling and communication.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio12.png.png" alt="CGI Visual Development Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">Visual Development</span>
+
+<h3>CGI Visual Development</h3>
+
+<p>
+Concept-driven CGI development combining visual design, 3D production and cinematic presentation.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio13.png.png" alt="3D Rendering Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">Rendering</span>
+
+<h3>3D Rendering</h3>
+
+<p>
+High-quality rendering with detailed materials, lighting and environments for professional visual presentation.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio14.png.png" alt="Digital Art Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">Digital Art</span>
+
+<h3>Digital Art Production</h3>
+
+<p>
+Digital artwork developed for visual storytelling, creative campaigns and multimedia applications.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio15.png.png" alt="Creative Visualization Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">Visualization</span>
+
+<h3>Creative Visualization</h3>
+
+<p>
+Creative visualization solutions designed to communicate ideas through compelling digital imagery.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio16.png.png" alt="3D Production Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">3D Production</span>
+
+<h3>3D Production</h3>
+
+<p>
+End-to-end 3D production combining modeling, texturing, lighting, rendering and visual development.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio17.png.png" alt="CGI Art Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">CGI Art</span>
+
+<h3>CGI Artwork</h3>
+
+<p>
+Detailed CGI artwork created for creative presentation, digital campaigns and visual communication.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio18.png.png" alt="3D Scene Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">3D Scene</span>
+
+<h3>3D Scene Production</h3>
+
+<p>
+Complete 3D scene development with focus on environment, composition, lighting and visual quality.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio19.png.png" alt="Visual Production Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">Visual Production</span>
+
+<h3>Visual Production</h3>
+
+<p>
+Professional digital visual production for commercial, entertainment and online media applications.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<div class="portfolio-image">
+<img src="portfolio20.png.png" alt="Studio Portfolio">
+</div>
+
+<div class="portfolio-content">
+
+<span class="category">Studio Work</span>
+
+<h3>Studio Creative Work</h3>
+
+<p>
+A selection of studio work demonstrating our creative, technical and production capabilities.
 </p>
 
 </div>
@@ -782,126 +1096,73 @@ and digital experiences.
 </section>
 
 
-<section class="section dark">
+<section class="process-section">
 
 <div class="container">
 
-<div class="section-title">
+<div class="process-title">
 
-<h2>More Studio Work</h2>
+<h2>Our Creative Production Approach</h2>
 
 <p>
-Our portfolio continues to grow across different creative
-disciplines and production requirements.
+We combine creative direction and technical production to develop professional visual content from initial concept through final delivery.
 </p>
 
 </div>
 
 
-<div class="portfolio-grid">
+<div class="process-grid">
 
+<div class="process-card">
 
-<div class="project">
+<div class="process-number">01</div>
 
-<div class="project-image">
-<img src="portfolio10.png.png" alt="3D Production Work">
-</div>
+<h3>Concept</h3>
 
-<div class="project-content">
-<span class="project-category">3D Production</span>
-<h3>3D Visual Development</h3>
 <p>
-Visual development and 3D production for creative projects.
+Understanding the project objective, visual direction, audience and production requirements.
 </p>
-</div>
 
 </div>
 
 
-<div class="project">
+<div class="process-card">
 
-<div class="project-image">
-<img src="portfolio11.png.png" alt="CGI Artwork">
-</div>
+<div class="process-number">02</div>
 
-<div class="project-content">
-<span class="project-category">CGI Artwork</span>
-<h3>CGI Artwork</h3>
+<h3>Production</h3>
+
 <p>
-Digital imagery created through professional CGI workflows.
+Developing the required 3D assets, animation, visual effects and digital content.
 </p>
-</div>
 
 </div>
 
 
-<div class="project">
+<div class="process-card">
 
-<div class="project-image">
-<img src="portfolio12.png.png" alt="3D Creative Work">
-</div>
+<div class="process-number">03</div>
 
-<div class="project-content">
-<span class="project-category">3D Creative</span>
-<h3>Creative Visualization</h3>
+<h3>Refinement</h3>
+
 <p>
-Visual concepts combining artistic direction and 3D technology.
+Reviewing visual quality, composition, lighting, animation and technical requirements.
 </p>
-</div>
 
 </div>
 
 
-<div class="project">
+<div class="process-card">
 
-<div class="project-image">
-<img src="portfolio13.png.png" alt="Animation Artwork">
-</div>
+<div class="process-number">04</div>
 
-<div class="project-content">
-<span class="project-category">Animation</span>
-<h3>Animation Artwork</h3>
+<h3>Final Delivery</h3>
+
 <p>
-Creative animation artwork for visual storytelling.
+Preparing optimized final content according to the required format and delivery specifications.
 </p>
-</div>
 
 </div>
-
-
-<div class="project">
-
-<div class="project-image">
-<img src="portfolio14.png.png" alt="Digital Visualization">
-</div>
-
-<div class="project-content">
-<span class="project-category">Visualization</span>
-<h3>Digital Visualization</h3>
-<p>
-High-quality visual content created for digital presentation.
-</p>
-</div>
-
-</div>
-
-
-<div class="project">
-
-<div class="project-image">
-<img src="portfolio15.png.png" alt="Creative CGI Production">
-</div>
-
-<div class="project-content">
-<span class="project-category">Creative CGI</span>
-<h3>Creative CGI Production</h3>
-<p>
-CGI production combining technical execution and creative design.
-</p>
-</div>
-
-</div>
-
 
 </div>
 
@@ -914,11 +1175,10 @@ CGI production combining technical execution and creative design.
 
 <div class="container">
 
-<h2>Have a Project in Mind?</h2>
+<h2>Have a Creative Project in Mind?</h2>
 
 <p>
-Let's discuss your next CGI, 3D Animation, VFX or digital
-production project and explore how our studio can support you.
+Tell us about your project and let our studio help turn your creative idea into professional digital content.
 </p>
 
 <a href="contact.html" class="btn">
@@ -941,34 +1201,32 @@ Start Your Project
 <h3>PT Autotube Crew Studio</h3>
 
 <p>
-Professional CGI, 3D Animation, Visual Effects,
-Product Visualization and digital production studio
-based in Jakarta, Indonesia.
+Professional CGI, 3D animation, visual effects, product visualization and digital production studio based in Jakarta, Indonesia.
 </p>
 
 </div>
 
 
-<div class="footer-links">
+<div>
 
 <h3>Company</h3>
 
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
+<p><a href="about.html">About Us</a></p>
+<p><a href="team.html">Our Team</a></p>
+<p><a href="careers.html">Careers</a></p>
+<p><a href="partners.html">Partners</a></p>
 
 </div>
 
 
-<div class="footer-links">
+<div>
 
 <h3>Creative</h3>
 
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
+<p><a href="services.html">Services</a></p>
+<p><a href="portfolio.html">Portfolio</a></p>
+<p><a href="showreel.html">Showreel</a></p>
+<p><a href="case-studies.html">Case Studies</a></p>
 
 </div>
 
@@ -978,7 +1236,12 @@ based in Jakarta, Indonesia.
 <h3>Contact</h3>
 
 <p>Jakarta, Indonesia</p>
-<p>autotubecrewstudio@gmail.com</p>
+
+<p>
+<a href="mailto:autotubecrewstudio@gmail.com">
+autotubecrewstudio@gmail.com
+</a>
+</p>
 
 <p>
 <a href="https://www.autotubecrewstudio.com">
@@ -1028,23 +1291,30 @@ mobileMenuBtn.addEventListener("click", function(){
     mobileMenu.classList.toggle("active");
 });
 
-mobileMenu.querySelectorAll("a").forEach(function(link){
+const mobileLinks = mobileMenu.querySelectorAll("a");
+
+mobileLinks.forEach(function(link){
     link.addEventListener("click", function(){
         mobileMenu.classList.remove("active");
     });
 });
 
+
 const topBtn = document.getElementById("topBtn");
 
 window.addEventListener("scroll", function(){
 
-    if(window.scrollY > 350){
+    if(
+        document.documentElement.scrollTop > 350 ||
+        document.body.scrollTop > 350
+    ){
         topBtn.style.display = "block";
     }else{
         topBtn.style.display = "none";
     }
 
 });
+
 
 topBtn.addEventListener("click", function(){
 
