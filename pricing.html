@@ -1,296 +1,878 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Pricing | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Learn about the pricing approach at PT Autotube Crew Studio for CGI, 3D Animation, Visual Effects, Motion Graphics and Digital Production services.">
+<meta name="description" content="Explore flexible CGI, 3D animation, VFX, product visualization and creative production pricing options from PT Autotube Crew Studio. Request a customized project quote.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="PT Autotube Crew Studio">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pricing | PT Autotube Crew Studio">
+<meta property="og:description" content="Flexible creative production solutions for CGI, 3D animation, VFX, product visualization and digital content.">
+<meta property="og:image" content="logo.png.png">
+<meta property="og:url" content="https://www.autotubecrewstudio.com/pricing.html">
 
 <link rel="icon" href="logo.png.png">
 
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#050505;
-color:#ffffff;
-line-height:1.8;
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1250px;
+    margin:auto;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
-background:#0b0b0b;
-border-bottom:1px solid #222;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:1000;
+}
+
+.header-inner{
+    min-height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
 }
 
 .logo{
-font-size:22px;
-font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:21px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.logo img{
+    width:46px;
+    height:46px;
+    object-fit:contain;
+}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    list-style:none;
 }
 
 nav a{
-color:#ffffff;
-text-decoration:none;
-margin-left:20px;
-transition:.3s;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s;
 }
 
 nav a:hover{
-color:#e50914;
+    color:#e50914;
+}
+
+.mobile-button{
+    display:none;
+    border:0;
+    background:none;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.mobile-navigation{
+    display:none;
+    background:#0b0b0b;
+    border-top:1px solid #222;
+    padding:15px 5%;
+}
+
+.mobile-navigation.active{
+    display:block;
+}
+
+.mobile-navigation a{
+    display:block;
+    padding:12px 0;
+    border-bottom:1px solid #222;
+    font-size:15px;
 }
 
 .hero{
-padding:90px 10%;
-text-align:center;
+    padding:170px 0 90px;
+    text-align:center;
+    background:
+        radial-gradient(circle at center,rgba(229,9,20,.12),transparent 45%);
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:20px;
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:22px;
+    font-weight:800;
 }
 
 .hero p{
-max-width:900px;
-margin:auto;
-color:#cccccc;
+    max-width:780px;
+    margin:auto;
+    color:#cfcfcf;
+    font-size:17px;
 }
 
-section{
-padding:70px 10%;
+.intro{
+    padding:70px 0 40px;
 }
 
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
+.intro-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+.intro-box h2{
+    font-size:36px;
+    margin-bottom:18px;
 }
 
-.card{
-background:#111;
-border:1px solid #222;
-border-radius:15px;
-padding:30px;
-transition:.3s;
+.intro-box p{
+    color:#c5c5c5;
+    font-size:16px;
 }
 
-.card:hover{
-transform:translateY(-6px);
-border-color:#e50914;
+.pricing-section{
+    padding:50px 0 100px;
 }
 
-.card h3{
-margin-bottom:15px;
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
-.card p{
-color:#cccccc;
+.price-card{
+    position:relative;
+    background:#101010;
+    border:1px solid #252525;
+    border-radius:20px;
+    padding:38px 30px;
+    transition:.35s;
+}
+
+.price-card:hover{
+    transform:translateY(-8px);
+    border-color:#e50914;
+}
+
+.price-card.featured{
+    border-color:#e50914;
+}
+
+.featured-label{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#e50914;
+    padding:6px 18px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.price-card h3{
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.price-description{
+    color:#aaa;
+    font-size:14px;
+    min-height:70px;
+}
+
+.price{
+    margin:25px 0;
+    font-size:28px;
+    font-weight:700;
+}
+
+.price span{
+    color:#999;
+    font-size:13px;
+    font-weight:400;
+}
+
+.feature-list{
+    list-style:none;
+    margin:25px 0 30px;
+}
+
+.feature-list li{
+    padding:9px 0;
+    color:#d2d2d2;
+    font-size:14px;
+    border-bottom:1px solid #202020;
+}
+
+.feature-list li:last-child{
+    border-bottom:0;
+}
+
+.feature-list li::before{
+    content:"✓";
+    margin-right:9px;
+    color:#e50914;
+    font-weight:700;
+}
+
+.quote-button{
+    display:block;
+    width:100%;
+    padding:13px 20px;
+    border-radius:30px;
+    text-align:center;
+    background:#e50914;
+    font-weight:600;
+    transition:.3s;
+}
+
+.quote-button:hover{
+    background:#ff2935;
+    transform:translateY(-2px);
+}
+
+.custom-section{
+    background:#0b0b0b;
+    padding:100px 0;
+}
+
+.custom-content{
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+}
+
+.custom-content h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.custom-content p{
+    color:#c7c7c7;
+    margin-bottom:35px;
+}
+
+.custom-button{
+    display:inline-block;
+    padding:15px 35px;
+    border:2px solid #fff;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.custom-button:hover{
+    background:#fff;
+    color:#000;
+}
+
+.pricing-notes{
+    padding:90px 0;
+}
+
+.pricing-notes h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:45px;
+}
+
+.notes-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
 .note{
-max-width:1000px;
-margin:60px auto;
-background:#111;
-padding:35px;
-border-radius:15px;
-border:1px solid #222;
+    background:#101010;
+    border:1px solid #222;
+    border-radius:18px;
+    padding:30px;
 }
 
-.note ul{
-padding-left:20px;
+.note h3{
+    font-size:20px;
+    margin-bottom:12px;
 }
 
-.note li{
-margin-bottom:12px;
-color:#cccccc;
-}
-
-.cta{
-text-align:center;
-padding:80px 10%;
-}
-
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:#e50914;
-color:#ffffff;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-margin-top:25px;
-}
-
-.btn:hover{
-background:#ff2f2f;
+.note p{
+    color:#aaa;
+    font-size:14px;
 }
 
 footer{
-padding:30px;
-text-align:center;
-border-top:1px solid #222;
-color:#999999;
+    background:#090909;
+    border-top:1px solid #222;
+    padding:60px 0 25px;
 }
 
-</style>
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    gap:40px;
+}
 
+footer h3{
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+footer p,
+footer a{
+    color:#999;
+    font-size:14px;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+.footer-bottom{
+    border-top:1px solid #222;
+    margin-top:40px;
+    padding-top:22px;
+    text-align:center;
+    color:#777;
+    font-size:13px;
+}
+
+#top-button{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:50px;
+    height:50px;
+    border:0;
+    border-radius:50%;
+    background:#e50914;
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+}
+
+@media(max-width:1000px){
+
+    nav{
+        display:none;
+    }
+
+    .mobile-button{
+        display:block;
+    }
+
+    .pricing-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .notes-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:700px){
+
+    .container{
+        width:92%;
+    }
+
+    .header-inner{
+        min-height:70px;
+    }
+
+    .logo{
+        font-size:16px;
+    }
+
+    .logo img{
+        width:38px;
+        height:38px;
+    }
+
+    .hero{
+        padding:125px 0 65px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .intro{
+        padding:60px 0 20px;
+    }
+
+    .intro-box h2{
+        font-size:30px;
+    }
+
+    .pricing-section{
+        padding:40px 0 70px;
+    }
+
+    .pricing-grid{
+        grid-template-columns:1fr;
+    }
+
+    .notes-grid{
+        grid-template-columns:1fr;
+    }
+
+    .custom-section{
+        padding:75px 0;
+    }
+
+    .custom-content h2{
+        font-size:31px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+}
+
+@media(max-width:430px){
+
+    .logo{
+        font-size:14px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .price-card{
+        padding:30px 22px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
+    <div class="container header-inner">
 
-<div class="logo">
+        <a href="index.html" class="logo">
+            <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+            <span>PT Autotube Crew Studio</span>
+        </a>
 
-PT Autotube Crew Studio
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="showreel.html">Showreel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-</div>
+        <button class="mobile-button" id="mobileButton" aria-label="Open navigation">
+            ☰
+        </button>
 
-<nav>
+    </div>
 
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="pricing.html">Pricing</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
+    <div class="mobile-navigation" id="mobileNavigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="partners.html">Partners</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="showreel.html">Showreel</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="clients.html">Clients</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </header>
+
 
 <section class="hero">
 
-<h1>Pricing</h1>
+    <div class="container">
 
-<p>
+        <h1>Creative Production Pricing</h1>
 
-Every project is unique. Our pricing is tailored to your creative requirements, production scope and delivery schedule.
+        <p>
+            Flexible production solutions for CGI, 3D Animation, Visual Effects,
+            Product Visualization, Motion Graphics and digital content.
+        </p>
 
-</p>
-
-</section>
-
-<section>
-
-<h2 class="section-title">
-
-What Determines Project Pricing?
-
-</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Project Complexity</h3>
-<p>The scope, technical requirements and creative complexity influence the overall production cost.</p>
-</div>
-
-<div class="card">
-<h3>Production Time</h3>
-<p>Project duration, deadlines and production schedule are considered when preparing quotations.</p>
-</div>
-
-<div class="card">
-<h3>Animation & Visual Effects</h3>
-<p>Advanced animation, simulations, visual effects and rendering requirements affect pricing.</p>
-</div>
-
-<div class="card">
-<h3>Deliverables</h3>
-<p>Resolution, output formats, platform requirements and final assets are included in the quotation.</p>
-</div>
-
-<div class="card">
-<h3>Revisions</h3>
-<p>Project proposals include a defined revision process to ensure smooth collaboration.</p>
-</div>
-
-<div class="card">
-<h3>Long-Term Partnerships</h3>
-<p>We welcome ongoing collaborations and provide customized solutions for recurring projects.</p>
-</div>
-
-</div>
-
-<div class="note">
-
-<h2 style="text-align:center;margin-bottom:20px;">
-
-Request a Custom Quote
-
-</h2>
-
-<ul>
-
-<li>Free initial consultation.</li>
-
-<li>Transparent project proposals.</li>
-
-<li>No hidden costs.</li>
-
-<li>Flexible production solutions.</li>
-
-<li>Professional communication.</li>
-
-<li>Worldwide remote collaboration.</li>
-
-</ul>
-
-</div>
+    </div>
 
 </section>
 
-<section class="cta">
 
-<h2>
+<section class="intro">
 
-Ready to Discuss Your Project?
+    <div class="container">
 
-</h2>
+        <div class="intro-box">
 
-<p>
+            <h2>Built Around Your Project</h2>
 
-Contact PT Autotube Crew Studio to receive a customized quotation based on your project requirements.
+            <p>
+                Every creative production has different requirements, timelines,
+                visual complexity and delivery specifications. Instead of forcing
+                every project into one fixed package, we provide flexible solutions
+                based on the actual scope of work.
+            </p>
 
-</p>
+        </div>
 
-<a href="contact.html" class="btn">
-
-Request a Quote
-
-</a>
+    </div>
 
 </section>
+
+
+<section class="pricing-section">
+
+    <div class="container">
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+
+                <h3>Starter Production</h3>
+
+                <p class="price-description">
+                    Suitable for smaller creative requirements, individual assets
+                    and short-form digital content.
+                </p>
+
+                <div class="price">
+                    Custom Quote
+                    <span>/ project</span>
+                </div>
+
+                <ul class="feature-list">
+                    <li>Project consultation</li>
+                    <li>Basic 3D production</li>
+                    <li>Single or limited assets</li>
+                    <li>Standard rendering</li>
+                    <li>Digital delivery</li>
+                </ul>
+
+                <a href="contact.html" class="quote-button">
+                    Request a Quote
+                </a>
+
+            </div>
+
+
+            <div class="price-card featured">
+
+                <div class="featured-label">
+                    MOST REQUESTED
+                </div>
+
+                <h3>Professional Production</h3>
+
+                <p class="price-description">
+                    Designed for commercial campaigns, product visualization,
+                    animation and professional digital production.
+                </p>
+
+                <div class="price">
+                    Custom Quote
+                    <span>/ project</span>
+                </div>
+
+                <ul class="feature-list">
+                    <li>Production planning</li>
+                    <li>Advanced 3D production</li>
+                    <li>Animation and motion design</li>
+                    <li>High-quality rendering</li>
+                    <li>Post-production</li>
+                    <li>Project revisions</li>
+                </ul>
+
+                <a href="contact.html" class="quote-button">
+                    Request a Quote
+                </a>
+
+            </div>
+
+
+            <div class="price-card">
+
+                <h3>Studio Production</h3>
+
+                <p class="price-description">
+                    Complete production support for larger campaigns, films,
+                    animation projects and ongoing creative requirements.
+                </p>
+
+                <div class="price">
+                    Custom Quote
+                    <span>/ project</span>
+                </div>
+
+                <ul class="feature-list">
+                    <li>Full production planning</li>
+                    <li>Complex CGI and animation</li>
+                    <li>VFX and simulations</li>
+                    <li>Advanced rendering</li>
+                    <li>Compositing and post-production</li>
+                    <li>Dedicated production support</li>
+                </ul>
+
+                <a href="contact.html" class="quote-button">
+                    Discuss Your Project
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="custom-section">
+
+    <div class="container">
+
+        <div class="custom-content">
+
+            <h2>Need a Custom Production Solution?</h2>
+
+            <p>
+                Tell us about your project, required deliverables, timeline and
+                production goals. Our team can review the requirements and prepare
+                a tailored production proposal.
+            </p>
+
+            <a href="contact.html" class="custom-button">
+                Talk to Our Studio
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="pricing-notes">
+
+    <div class="container">
+
+        <h2>What Can Affect Project Pricing?</h2>
+
+        <div class="notes-grid">
+
+            <div class="note">
+                <h3>Project Scope</h3>
+                <p>
+                    The number of assets, scenes, shots, animations and final
+                    deliverables can affect the overall production requirement.
+                </p>
+            </div>
+
+            <div class="note">
+                <h3>Visual Complexity</h3>
+                <p>
+                    Detailed modeling, simulations, environments, materials,
+                    lighting and VFX may require additional production time.
+                </p>
+            </div>
+
+            <div class="note">
+                <h3>Timeline</h3>
+                <p>
+                    Production schedules and required delivery dates can influence
+                    planning, staffing and production resources.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <footer>
 
-© PT Autotube Crew Studio
+    <div class="container">
 
-<br>
+        <div class="footer-grid">
 
-Jakarta, Indonesia
+            <div>
+                <h3>PT Autotube Crew Studio</h3>
+
+                <p>
+                    Professional CGI, 3D Animation, Visual Effects,
+                    Product Visualization and creative production studio
+                    based in Jakarta, Indonesia.
+                </p>
+            </div>
+
+            <div>
+                <h3>Studio</h3>
+
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="team.html">Our Team</a></p>
+                <p><a href="careers.html">Careers</a></p>
+                <p><a href="partners.html">Partners</a></p>
+            </div>
+
+            <div>
+                <h3>Production</h3>
+
+                <p><a href="services.html">Services</a></p>
+                <p><a href="pricing.html">Pricing</a></p>
+                <p><a href="portfolio.html">Portfolio</a></p>
+                <p><a href="showreel.html">Showreel</a></p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>Jakarta, Indonesia</p>
+
+                <p>
+                    <a href="mailto:autotubecrewstudio@gmail.com">
+                        autotubecrewstudio@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://www.autotubecrewstudio.com">
+                        www.autotubecrewstudio.com
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank">
+                        YouTube
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://www.linkedin.com/company/ptautotubecrewstudio/" target="_blank">
+                        LinkedIn
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 PT Autotube Crew Studio. All Rights Reserved.
+        </div>
+
+    </div>
 
 </footer>
 
-</body>
 
+<button id="top-button" aria-label="Back to top">↑</button>
+
+
+<script>
+
+const mobileButton = document.getElementById("mobileButton");
+const mobileNavigation = document.getElementById("mobileNavigation");
+
+mobileButton.addEventListener("click", function(){
+    mobileNavigation.classList.toggle("active");
+});
+
+const navigationLinks = mobileNavigation.querySelectorAll("a");
+
+navigationLinks.forEach(function(link){
+    link.addEventListener("click", function(){
+        mobileNavigation.classList.remove("active");
+    });
+});
+
+
+const topButton = document.getElementById("top-button");
+
+window.addEventListener("scroll", function(){
+
+    if(window.scrollY > 400){
+        topButton.style.display = "block";
+    }else{
+        topButton.style.display = "none";
+    }
+
+});
+
+topButton.addEventListener("click", function(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+});
+
+</script>
+
+</body>
 </html>
