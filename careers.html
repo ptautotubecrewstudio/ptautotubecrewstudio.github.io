@@ -2,28 +2,25 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Careers | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Join PT Autotube Crew Studio and explore career opportunities in CGI, 3D Animation, VFX, Motion Graphics, Environment Art, Product Visualization and digital production.">
+<meta name="description" content="Explore career opportunities at PT Autotube Crew Studio. Join our creative team working in CGI, 3D Animation, VFX, Motion Graphics, Product Visualization and digital production.">
 
-<meta name="keywords" content="PT Autotube Crew Studio Careers, CGI Jobs, 3D Animation Jobs, VFX Jobs, Environment Artist Jobs, 3D Artist Jobs, Animation Careers, Indonesia Animation Studio">
+<meta name="keywords" content="PT Autotube Crew Studio Careers, CGI Jobs, 3D Artist Jobs, Animation Jobs, VFX Jobs, Environment Artist, 3D Generalist, Blender Jobs, Unreal Engine Jobs, Indonesia Animation Studio">
 
 <meta name="author" content="PT Autotube Crew Studio">
+
 <meta name="robots" content="index, follow">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Careers | PT Autotube Crew Studio">
-<meta property="og:description" content="Explore career opportunities and collaborate with PT Autotube Crew Studio on CGI, 3D Animation, VFX and digital production projects.">
+<meta property="og:description" content="Join PT Autotube Crew Studio and build your career in CGI, 3D Animation, VFX and digital production.">
 <meta property="og:image" content="logo.png.png">
 <meta property="og:url" content="https://www.autotubecrewstudio.com/careers.html">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Careers | PT Autotube Crew Studio">
-<meta name="twitter:description" content="Explore career opportunities at PT Autotube Crew Studio.">
-<meta name="twitter:image" content="logo.png.png">
 
 <link rel="icon" href="logo.png.png">
 
@@ -83,7 +80,7 @@ header .container{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:16px 0;
+    padding:15px 0;
 }
 
 .logo{
@@ -95,8 +92,8 @@ header .container{
 }
 
 .logo img{
-    width:50px;
-    height:50px;
+    width:48px;
+    height:48px;
     object-fit:contain;
 }
 
@@ -125,13 +122,13 @@ nav ul li a:hover{
     position:absolute;
     top:100%;
     left:0;
-    background:#111111;
-    min-width:240px;
-    border:1px solid #292929;
+    background:#111;
+    min-width:230px;
+    border:1px solid #252525;
     border-radius:12px;
     padding:12px 0;
     display:none;
-    z-index:1000;
+    box-shadow:0 15px 35px rgba(0,0,0,.5);
 }
 
 .dropdown a{
@@ -140,7 +137,8 @@ nav ul li a:hover{
 }
 
 .dropdown a:hover{
-    background:#1c1c1c;
+    background:#1b1b1b;
+    color:#e50914;
 }
 
 nav ul li:hover .dropdown{
@@ -151,7 +149,7 @@ nav ul li:hover .dropdown{
     display:none;
     background:none;
     border:none;
-    color:#ffffff;
+    color:#fff;
     font-size:30px;
     cursor:pointer;
 }
@@ -161,9 +159,9 @@ nav ul li:hover .dropdown{
 }
 
 .hero{
-    padding:180px 0 110px;
+    padding:190px 0 100px;
     background:
-        radial-gradient(circle at 80% 20%,rgba(229,9,20,.15),transparent 35%),
+        radial-gradient(circle at 80% 30%,rgba(229,9,20,.16),transparent 35%),
         #050505;
 }
 
@@ -175,9 +173,13 @@ nav ul li:hover .dropdown{
 
 .hero h1{
     font-size:64px;
-    line-height:1.12;
-    margin-bottom:25px;
+    line-height:1.15;
     font-weight:800;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#e50914;
 }
 
 .hero p{
@@ -197,7 +199,7 @@ section{
 
 .section-title{
     text-align:center;
-    margin-bottom:60px;
+    margin-bottom:55px;
 }
 
 .section-title h2{
@@ -213,8 +215,8 @@ section{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:28px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
 .card{
@@ -231,40 +233,39 @@ section{
 }
 
 .card h3{
-    font-size:25px;
-    margin-bottom:14px;
+    font-size:24px;
+    margin-bottom:12px;
 }
 
 .card p{
-    color:#cfcfcf;
-    font-size:16px;
+    color:#c7c7c7;
 }
 
-.job-card{
+.job{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    min-height:280px;
 }
 
-.job-tag{
+.job .type{
     display:inline-block;
-    padding:6px 13px;
-    border-radius:30px;
-    background:#1b1b1b;
-    border:1px solid #333;
-    color:#ddd;
-    font-size:12px;
+    width:max-content;
     margin-bottom:18px;
+    padding:6px 14px;
+    border-radius:30px;
+    background:#1c1c1c;
+    color:#e50914;
+    font-size:13px;
+    font-weight:600;
 }
 
-.job-card ul{
+.job ul{
+    margin:20px 0;
     padding-left:20px;
-    margin:15px 0 25px;
     color:#cfcfcf;
 }
 
-.job-card li{
+.job li{
     margin-bottom:7px;
 }
 
@@ -272,11 +273,11 @@ section{
     display:inline-block;
     padding:14px 32px;
     background:#e50914;
-    color:#ffffff;
     border-radius:50px;
+    color:#fff;
     font-weight:600;
-    transition:.3s;
-    text-align:center;
+    transition:.35s;
+    margin-top:15px;
 }
 
 .btn:hover{
@@ -284,62 +285,64 @@ section{
     transform:translateY(-3px);
 }
 
-.application{
-    text-align:center;
-    background:
-        linear-gradient(rgba(5,5,5,.9),rgba(5,5,5,.9)),
-        #090909;
-}
-
-.application-box{
+.apply-box{
     max-width:900px;
     margin:auto;
-    padding:55px 35px;
-    border:1px solid #292929;
-    border-radius:22px;
+    text-align:center;
     background:#101010;
+    border:1px solid #282828;
+    border-radius:22px;
+    padding:55px 35px;
 }
 
-.application-box h2{
-    font-size:42px;
+.apply-box h2{
+    font-size:40px;
     margin-bottom:18px;
 }
 
-.application-box p{
+.apply-box p{
     color:#cfcfcf;
-    margin-bottom:28px;
+    margin-bottom:15px;
 }
 
-.application-email{
-    display:inline-block;
-    margin-top:18px;
-    color:#ffffff;
-    font-weight:600;
-}
-
-.application-email:hover{
+.email{
     color:#e50914;
+    font-weight:600;
+    word-break:break-word;
+}
+
+.note{
+    margin-top:20px;
+    font-size:14px;
+    color:#999;
 }
 
 footer{
-    background:#090909;
-    padding:65px 0 35px;
+    background:#080808;
+    padding:65px 0 30px;
     border-top:1px solid #222;
 }
 
-footer .footer-grid{
+.footer-grid{
     display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:50px;
+    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    gap:40px;
 }
 
 footer h3{
-    margin-bottom:15px;
+    margin-bottom:18px;
+    font-size:21px;
 }
 
 footer p{
     color:#999;
-    margin-bottom:8px;
+    font-size:14px;
+    margin-bottom:9px;
+}
+
+footer a{
+    color:#aaa;
+    transition:.3s;
 }
 
 footer a:hover{
@@ -352,29 +355,27 @@ footer a:hover{
     padding-top:25px;
     text-align:center;
     color:#777;
+    font-size:13px;
 }
 
 #topBtn{
     position:fixed;
-    right:25px;
-    bottom:25px;
+    right:22px;
+    bottom:22px;
     width:52px;
     height:52px;
     border:none;
     border-radius:50%;
     background:#e50914;
-    color:#ffffff;
-    font-size:22px;
+    color:#fff;
+    font-size:21px;
     cursor:pointer;
     display:none;
-    z-index:900;
+    z-index:998;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
 }
 
 @media(max-width:992px){
-
-    .container{
-        width:92%;
-    }
 
     nav{
         display:none;
@@ -384,26 +385,6 @@ footer a:hover{
         display:block;
     }
 
-    .hero{
-        padding-top:145px;
-    }
-
-    .hero h1{
-        font-size:48px;
-    }
-
-    section{
-        padding:80px 0;
-    }
-
-    .section-title h2{
-        font-size:36px;
-    }
-
-    footer .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
     .mobile-menu{
         position:absolute;
         top:100%;
@@ -411,7 +392,7 @@ footer a:hover{
         width:100%;
         background:#0b0b0b;
         border-top:1px solid #222;
-        padding:15px 5%;
+        padding:15px 20px;
     }
 
     .mobile-menu.active{
@@ -420,16 +401,33 @@ footer a:hover{
 
     .mobile-menu a{
         display:block;
-        padding:13px 5px;
+        padding:12px 5px;
         border-bottom:1px solid #222;
+        font-size:15px;
     }
 
     .mobile-menu a:hover{
         color:#e50914;
     }
+
+    .hero h1{
+        font-size:50px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
 }
 
 @media(max-width:768px){
+
+    .container{
+        width:92%;
+    }
+
+    header .container{
+        padding:11px 0;
+    }
 
     .logo{
         font-size:17px;
@@ -441,8 +439,7 @@ footer a:hover{
     }
 
     .hero{
-        padding-top:125px;
-        padding-bottom:70px;
+        padding:140px 0 75px;
     }
 
     .hero h1{
@@ -457,12 +454,8 @@ footer a:hover{
         padding:70px 0;
     }
 
-    .section-title{
-        margin-bottom:40px;
-    }
-
     .section-title h2{
-        font-size:31px;
+        font-size:32px;
     }
 
     .section-title p{
@@ -473,36 +466,45 @@ footer a:hover{
         grid-template-columns:1fr;
     }
 
-    .application-box{
+    .apply-box{
         padding:40px 22px;
     }
 
-    .application-box h2{
-        font-size:31px;
+    .apply-box h2{
+        font-size:30px;
     }
 
-    footer .footer-grid{
+    .footer-grid{
         grid-template-columns:1fr;
-        gap:35px;
+        gap:30px;
     }
 }
 
 @media(max-width:480px){
 
-    .container{
-        width:90%;
+    .logo{
+        font-size:15px;
+    }
+
+    .logo img{
+        width:36px;
+        height:36px;
     }
 
     .hero h1{
-        font-size:33px;
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:14px;
     }
 
     .card{
         padding:25px;
     }
 
-    .job-card{
-        min-height:auto;
+    .apply-box h2{
+        font-size:27px;
     }
 }
 
@@ -517,8 +519,11 @@ footer a:hover{
 <div class="container">
 
 <a href="index.html" class="logo">
+
 <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+
 <span>PT Autotube Crew Studio</span>
+
 </a>
 
 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
@@ -526,59 +531,70 @@ footer a:hover{
 </button>
 
 <nav>
+
 <ul>
 
-<li>
-<a href="index.html">Home</a>
-</li>
+<li><a href="index.html">Home</a></li>
 
 <li>
+
 <a href="#">About ▼</a>
 
 <div class="dropdown">
+
 <a href="about.html">About Us</a>
 <a href="team.html">Our Team</a>
 <a href="careers.html">Careers</a>
 <a href="partners.html">Partners</a>
+
 </div>
 
 </li>
 
 <li>
+
 <a href="#">Services ▼</a>
 
 <div class="dropdown">
+
 <a href="services.html">Services</a>
 <a href="technology.html">Technology</a>
 <a href="industries.html">Industries</a>
 <a href="pricing.html">Pricing</a>
+
 </div>
 
 </li>
 
 <li>
+
 <a href="#">Portfolio ▼</a>
 
 <div class="dropdown">
+
 <a href="portfolio.html">Portfolio</a>
 <a href="showreel.html">Showreel</a>
 <a href="case-studies.html">Case Studies</a>
 <a href="clients.html">Clients</a>
 <a href="testimonials.html">Testimonials</a>
+
 </div>
 
 </li>
 
 <li>
+
 <a href="#">Resources ▼</a>
 
 <div class="dropdown">
+
 <a href="downloads.html">Downloads</a>
 <a href="blog.html">Blog</a>
 <a href="news.html">News</a>
 <a href="events.html">Events</a>
 <a href="press-kit.html">Press Kit</a>
 <a href="media-kit.html">Media Kit</a>
+
 </div>
 
 </li>
@@ -588,6 +604,7 @@ footer a:hover{
 </li>
 
 </ul>
+
 </nav>
 
 </div>
@@ -632,11 +649,11 @@ footer a:hover{
 <div class="hero-content">
 
 <h1>
-Build Your Future With PT Autotube Crew Studio
+Build Your Future With <span>PT Autotube Crew Studio</span>
 </h1>
 
 <p>
-We are building a creative production team for CGI, 3D Animation, Visual Effects, Commercial Production and future animation projects. We welcome talented artists and production professionals who want to grow through meaningful creative work.
+We are building a creative production team for CGI, 3D Animation, Visual Effects, Motion Graphics, Product Visualization and future digital productions.
 </p>
 
 </div>
@@ -652,12 +669,10 @@ We are building a creative production team for CGI, 3D Animation, Visual Effects
 
 <div class="section-title">
 
-<h2>
-Work With Us
-</h2>
+<h2>Work With Our Studio</h2>
 
 <p>
-Our studio brings together creative and technical talent across different areas of digital production. We value strong portfolios, creative thinking, reliability, communication and a willingness to keep learning.
+We are interested in connecting with talented artists, designers, technical specialists and production professionals who want to contribute to ambitious creative projects.
 </p>
 
 </div>
@@ -666,36 +681,40 @@ Our studio brings together creative and technical talent across different areas 
 
 <div class="card">
 
-<h3>
-Creative Artists
-</h3>
+<h3>Creative Artists</h3>
 
 <p>
-Opportunities for artists working across 3D environments, modeling, texturing, animation, lighting, rendering and visual development.
+Artists working across 3D modeling, texturing, look development, environment creation, lighting, rendering and visual development.
 </p>
 
 </div>
 
 <div class="card">
 
-<h3>
-Production Professionals
-</h3>
+<h3>Animation Professionals</h3>
 
 <p>
-We also welcome professionals interested in production coordination, project management, client communication and creative operations.
+Animators and animation specialists interested in character animation, product animation, cinematic sequences and storytelling.
 </p>
 
 </div>
 
 <div class="card">
 
-<h3>
-Remote Collaboration
-</h3>
+<h3>VFX Specialists</h3>
 
 <p>
-Depending on project requirements, we can collaborate with creative professionals remotely across different locations and time zones.
+Professionals with experience in compositing, simulations, effects, rendering and digital visual effects production.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Technical Artists</h3>
+
+<p>
+Technical professionals interested in production pipelines, Unreal Engine, Blender, automation, rendering and creative technology.
 </p>
 
 </div>
@@ -713,186 +732,146 @@ Depending on project requirements, we can collaborate with creative professional
 
 <div class="section-title">
 
-<h2>
-Creative Opportunities
-</h2>
+<h2>Areas We Are Building</h2>
 
 <p>
-The following areas represent the types of creative roles that may be relevant to our future production needs.
+Our long-term team development may include opportunities across multiple areas of digital production.
 </p>
 
 </div>
 
 <div class="grid">
 
+<div class="card job">
 
-<div class="card job-card">
+<span class="type">3D PRODUCTION</span>
 
-<div>
-
-<span class="job-tag">
-3D ART
-</span>
-
-<h3>
-3D Environment Artist
-</h3>
+<h3>3D Environment Artist</h3>
 
 <p>
-Create detailed environments for animation, CGI productions, cinematic content and interactive experiences.
+Create detailed environments, assets and visual worlds for animation, CGI, games and cinematic production.
 </p>
 
 <ul>
+
 <li>Environment modeling</li>
+<li>Asset creation</li>
 <li>Texturing and materials</li>
-<li>Lighting and composition</li>
-<li>Strong portfolio required</li>
+<li>Lighting and scene development</li>
+
 </ul>
 
 </div>
 
-</div>
 
+<div class="card job">
 
-<div class="card job-card">
+<span class="type">3D PRODUCTION</span>
 
-<div>
-
-<span class="job-tag">
-3D ART
-</span>
-
-<h3>
-3D Generalist
-</h3>
+<h3>3D Generalist</h3>
 
 <p>
-Work across multiple stages of 3D production and contribute to complete visual content from asset creation to final output.
+Work across multiple stages of the 3D production process and support complete creative projects.
 </p>
 
 <ul>
+
 <li>Modeling</li>
-<li>Materials and texturing</li>
-<li>Lighting and rendering</li>
-<li>General production knowledge</li>
+<li>Texturing</li>
+<li>Lighting</li>
+<li>Rendering</li>
+
 </ul>
 
 </div>
 
-</div>
 
+<div class="card job">
 
-<div class="card job-card">
+<span class="type">ANIMATION</span>
 
-<div>
-
-<span class="job-tag">
-ANIMATION
-</span>
-
-<h3>
-3D Animator
-</h3>
+<h3>3D Animator</h3>
 
 <p>
-Create expressive and technically strong animation for cinematic, commercial and digital productions.
+Develop expressive animation for characters, products, cinematic scenes and digital content.
 </p>
 
 <ul>
+
 <li>Character animation</li>
-<li>Object animation</li>
-<li>Timing and motion</li>
-<li>Animation portfolio</li>
+<li>Product animation</li>
+<li>Cinematic animation</li>
+<li>Animation refinement</li>
+
 </ul>
 
 </div>
 
-</div>
 
+<div class="card job">
 
-<div class="card job-card">
+<span class="type">TECHNICAL</span>
 
-<div>
-
-<span class="job-tag">
-VFX
-</span>
-
-<h3>
-VFX Artist
-</h3>
+<h3>Unreal Engine Artist</h3>
 
 <p>
-Support visual effects production through compositing, simulations, effects creation and integration.
+Help develop real-time environments and experiences using Unreal Engine and modern digital workflows.
 </p>
 
 <ul>
-<li>Compositing</li>
-<li>Visual effects</li>
-<li>Simulation workflows</li>
-<li>Problem solving</li>
-</ul>
 
-</div>
-
-</div>
-
-
-<div class="card job-card">
-
-<div>
-
-<span class="job-tag">
-PRODUCTION
-</span>
-
-<h3>
-Production & Project Support
-</h3>
-
-<p>
-Help coordinate creative projects, production schedules, communication and delivery requirements.
-</p>
-
-<ul>
-<li>Project coordination</li>
-<li>Production tracking</li>
-<li>Team communication</li>
-<li>Client coordination</li>
-</ul>
-
-</div>
-
-</div>
-
-
-<div class="card job-card">
-
-<div>
-
-<span class="job-tag">
-TECHNICAL
-</span>
-
-<h3>
-Technical Artist
-</h3>
-
-<p>
-Help connect artistic requirements with efficient technical workflows for modern 3D production.
-</p>
-
-<ul>
-<li>Pipeline development</li>
+<li>Real-time environments</li>
+<li>Scene development</li>
+<li>Materials and lighting</li>
 <li>Optimization</li>
-<li>Technical problem solving</li>
-<li>Production tools</li>
+
 </ul>
 
 </div>
 
+
+<div class="card job">
+
+<span class="type">VFX</span>
+
+<h3>VFX Artist</h3>
+
+<p>
+Support visual effects production for cinematic content, commercials and digital productions.
+</p>
+
+<ul>
+
+<li>Visual effects</li>
+<li>Simulations</li>
+<li>Compositing</li>
+<li>Rendering</li>
+
+</ul>
+
 </div>
 
+
+<div class="card job">
+
+<span class="type">PRODUCTION</span>
+
+<h3>Production Support</h3>
+
+<p>
+Support project coordination, production organization, communication and delivery across creative projects.
+</p>
+
+<ul>
+
+<li>Production coordination</li>
+<li>Project organization</li>
+<li>Client communication</li>
+<li>Delivery support</li>
+
+</ul>
+
+</div>
 
 </div>
 
@@ -901,29 +880,99 @@ Help connect artistic requirements with efficient technical workflows for modern
 </section>
 
 
-<section class="application">
+<section>
 
 <div class="container">
 
-<div class="application-box">
+<div class="section-title">
 
-<h2>
-Want to Work With Us?
-</h2>
+<h2>What We Look For</h2>
 
 <p>
-If you are interested in joining our growing creative network, send us your CV, portfolio and showreel. Please include the role you are interested in and a short introduction about your experience.
+We value strong creative skills, professional communication and a willingness to grow within a collaborative production environment.
 </p>
 
-<a href="mailto:autotubecrewstudio@gmail.com" class="btn">
-Send Your Portfolio
-</a>
+</div>
 
-<br>
+<div class="grid">
 
-<a href="mailto:autotubecrewstudio@gmail.com" class="application-email">
+<div class="card">
+
+<h3>Portfolio</h3>
+
+<p>
+A strong portfolio or showreel that demonstrates your actual skills and creative work.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Technical Skills</h3>
+
+<p>
+Relevant knowledge of production software and tools appropriate to your area of specialization.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Creativity</h3>
+
+<p>
+A strong visual sense and the ability to develop creative solutions to production challenges.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Professionalism</h3>
+
+<p>
+Clear communication, reliability, attention to detail and commitment to production quality.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="dark">
+
+<div class="container">
+
+<div class="apply-box">
+
+<h2>Interested in Joining Us?</h2>
+
+<p>
+Send us your CV, portfolio and showreel for consideration.
+</p>
+
+<p>
+Please include your area of expertise and a short introduction about your professional experience.
+</p>
+
+<p>
+Email:
+<a class="email" href="mailto:autotubecrewstudio@gmail.com">
 autotubecrewstudio@gmail.com
 </a>
+</p>
+
+<a href="mailto:autotubecrewstudio@gmail.com?subject=Career%20Application%20-%20PT%20Autotube%20Crew%20Studio" class="btn">
+Send Your Application
+</a>
+
+<p class="note">
+Please note that submitting your portfolio does not guarantee employment. Opportunities depend on project requirements and studio needs.
+</p>
 
 </div>
 
@@ -940,12 +989,10 @@ autotubecrewstudio@gmail.com
 
 <div>
 
-<h3>
-PT Autotube Crew Studio
-</h3>
+<h3>PT Autotube Crew Studio</h3>
 
 <p>
-Creative production studio focused on CGI, 3D Animation, Visual Effects and digital content production.
+Professional creative production studio focused on CGI, 3D Animation, VFX and digital content production.
 </p>
 
 </div>
@@ -953,41 +1000,56 @@ Creative production studio focused on CGI, 3D Animation, Visual Effects and digi
 
 <div>
 
-<h3>
-Company
-</h3>
+<h3>Company</h3>
 
-<p>
-<a href="about.html">About Us</a>
-</p>
-
-<p>
-<a href="team.html">Our Team</a>
-</p>
-
-<p>
-<a href="partners.html">Partners</a>
-</p>
-
-<p>
-<a href="contact.html">Contact</a>
-</p>
+<p><a href="about.html">About Us</a></p>
+<p><a href="team.html">Our Team</a></p>
+<p><a href="careers.html">Careers</a></p>
+<p><a href="partners.html">Partners</a></p>
 
 </div>
 
 
 <div>
 
-<h3>
-Careers
-</h3>
+<h3>Explore</h3>
+
+<p><a href="services.html">Services</a></p>
+<p><a href="portfolio.html">Portfolio</a></p>
+<p><a href="showreel.html">Showreel</a></p>
+<p><a href="contact.html">Contact</a></p>
+
+</div>
+
+
+<div>
+
+<h3>Contact</h3>
+
+<p>Jakarta, Indonesia</p>
 
 <p>
-<a href="careers.html">Career Opportunities</a>
+<a href="mailto:autotubecrewstudio@gmail.com">
+autotubecrewstudio@gmail.com
+</a>
 </p>
 
 <p>
-<a href="mailto:autotubecrewstudio@gmail.com">Submit Portfolio</a>
+<a href="https://www.autotubecrewstudio.com" target="_blank">
+www.autotubecrewstudio.com
+</a>
+</p>
+
+<p>
+<a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank">
+YouTube
+</a>
+</p>
+
+<p>
+<a href="https://www.linkedin.com/company/ptautotubecrewstudio/" target="_blank">
+LinkedIn
+</a>
 </p>
 
 </div>
@@ -1059,8 +1121,10 @@ window.addEventListener("scroll", function(){
 topBtn.addEventListener("click", function(){
 
     window.scrollTo({
+
         top:0,
         behavior:"smooth"
+
     });
 
 });
@@ -1068,4 +1132,5 @@ topBtn.addEventListener("click", function(){
 </script>
 
 </body>
+
 </html>
