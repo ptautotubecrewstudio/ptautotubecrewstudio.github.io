@@ -1,1822 +1,666 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Our Team | PT Autotube Crew Studio</title>
 
-<meta
-name="description"
-content="Meet the creative and production team behind PT Autotube Crew Studio, specializing in CGI, 3D Animation, Visual Effects, Motion Graphics and Digital Production."
->
-
-<meta
-name="keywords"
-content="PT Autotube Crew Studio, CGI Team, 3D Animation Team, VFX Artists, Animation Studio Indonesia, CGI Production Jakarta"
->
-
+<meta name="description" content="Meet the creative and production team behind PT Autotube Crew Studio, delivering CGI, 3D animation, VFX and digital production worldwide.">
 <meta name="author" content="PT Autotube Crew Studio">
-
 <meta name="robots" content="index, follow">
-
-<meta property="og:type" content="website">
-
-<meta
-property="og:title"
-content="Our Team | PT Autotube Crew Studio"
->
-
-<meta
-property="og:description"
-content="Meet the creative professionals and production capabilities behind PT Autotube Crew Studio."
->
-
-<meta
-property="og:image"
-content="portfolio04.png.png"
->
 
 <link rel="icon" href="logo.png.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link
-rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin
->
-
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet"
->
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-/* =====================================================
-ROOT
-===================================================== */
-
-:root{
-
---bg:#050505;
---bg2:#090909;
---bg3:#101010;
-
---red:#e50914;
---red2:#ff2835;
-
---white:#ffffff;
---text:#d2d2d2;
---muted:#999999;
-
---border:rgba(255,255,255,.10);
-
---glass:rgba(255,255,255,.055);
-
---shadow:0 25px 70px rgba(0,0,0,.55);
-
-}
-
-
-/* =====================================================
-RESET
-===================================================== */
-
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
 
 html{
-
-scroll-behavior:smooth;
-
+    scroll-behavior:smooth;
 }
-
 
 body{
-
-font-family:'Poppins',Arial,Helvetica,sans-serif;
-
-background:var(--bg);
-
-color:var(--white);
-
-line-height:1.8;
-
-overflow-x:hidden;
-
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.7;
+    overflow-x:hidden;
 }
-
-
-body::-webkit-scrollbar{
-
-width:8px;
-
-}
-
-
-body::-webkit-scrollbar-track{
-
-background:#050505;
-
-}
-
-
-body::-webkit-scrollbar-thumb{
-
-background:#333;
-
-border-radius:20px;
-
-}
-
-
-body::-webkit-scrollbar-thumb:hover{
-
-background:var(--red);
-
-}
-
 
 a{
-
-color:inherit;
-
-text-decoration:none;
-
-transition:.3s ease;
-
+    text-decoration:none;
+    color:inherit;
 }
-
 
 img{
-
-display:block;
-
-max-width:100%;
-
+    max-width:100%;
+    display:block;
 }
-
 
 .container{
-
-width:90%;
-
-max-width:1400px;
-
-margin:auto;
-
+    width:90%;
+    max-width:1400px;
+    margin:auto;
 }
-
-
-section{
-
-padding:110px 0;
-
-}
-
-
-.dark{
-
-background:var(--bg2);
-
-}
-
-
-/* =====================================================
-TYPOGRAPHY
-===================================================== */
-
-h1{
-
-font-size:68px;
-
-font-weight:800;
-
-line-height:1.08;
-
-letter-spacing:-2px;
-
-}
-
-
-h2{
-
-font-size:46px;
-
-font-weight:700;
-
-line-height:1.2;
-
-margin-bottom:22px;
-
-}
-
-
-h3{
-
-font-size:24px;
-
-font-weight:600;
-
-line-height:1.35;
-
-}
-
-
-p{
-
-font-size:17px;
-
-color:var(--text);
-
-}
-
-
-.hero-label{
-
-display:inline-block;
-
-margin-bottom:20px;
-
-color:var(--red);
-
-font-size:13px;
-
-font-weight:700;
-
-letter-spacing:4px;
-
-text-transform:uppercase;
-
-}
-
-
-.section-title{
-
-max-width:900px;
-
-margin:0 auto 65px;
-
-text-align:center;
-
-}
-
-
-.section-title p{
-
-max-width:780px;
-
-margin:auto;
-
-}
-
-
-/* =====================================================
-BUTTONS
-===================================================== */
-
-.btn{
-
-display:inline-block;
-
-padding:15px 38px;
-
-background:var(--red);
-
-border-radius:50px;
-
-font-weight:600;
-
-border:1px solid var(--red);
-
-}
-
-
-.btn:hover{
-
-background:var(--red2);
-
-border-color:var(--red2);
-
-transform:translateY(-4px);
-
-box-shadow:
-
-0 15px 35px rgba(229,9,20,.25);
-
-}
-
-
-.btn-outline{
-
-display:inline-block;
-
-padding:14px 38px;
-
-border:1px solid rgba(255,255,255,.7);
-
-border-radius:50px;
-
-font-weight:600;
-
-}
-
-
-.btn-outline:hover{
-
-background:#fff;
-
-color:#000;
-
-transform:translateY(-4px);
-
-}
-
-
-/* =====================================================
-HEADER
-===================================================== */
 
 header{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-z-index:9999;
-
-background:rgba(5,5,5,.45);
-
-backdrop-filter:blur(18px);
-
--webkit-backdrop-filter:blur(18px);
-
-border-bottom:1px solid rgba(255,255,255,.08);
-
-transition:.35s ease;
-
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:999;
 }
-
-
-header.scrolled{
-
-background:rgba(3,3,3,.95);
-
-box-shadow:
-
-0 15px 50px rgba(0,0,0,.45);
-
-}
-
 
 header .container{
-
-height:90px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 0;
 }
-
 
 .logo{
-
-display:flex;
-
-align-items:center;
-
-gap:13px;
-
-font-size:21px;
-
-font-weight:700;
-
-white-space:nowrap;
-
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:23px;
+    font-weight:700;
 }
-
 
 .logo img{
-
-width:54px;
-
-height:54px;
-
-object-fit:contain;
-
+    width:48px;
+    height:48px;
+    object-fit:contain;
 }
-
-
-/* =====================================================
-NAVIGATION
-===================================================== */
 
 nav ul{
-
-display:flex;
-
-align-items:center;
-
-gap:28px;
-
-list-style:none;
-
+    display:flex;
+    align-items:center;
+    gap:28px;
+    list-style:none;
 }
-
 
 nav ul li{
-
-position:relative;
-
+    position:relative;
 }
 
-
-nav ul li > a{
-
-font-size:15px;
-
-font-weight:500;
-
+nav ul li a{
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
 }
 
-
-nav ul li > a:hover{
-
-color:var(--red);
-
+nav ul li a:hover{
+    color:#e50914;
 }
-
-
-/* =====================================================
-DROPDOWN
-===================================================== */
 
 .dropdown{
-
-position:absolute;
-
-top:125%;
-
-left:0;
-
-width:230px;
-
-padding:8px;
-
-background:rgba(12,12,12,.98);
-
-border:1px solid rgba(255,255,255,.10);
-
-border-radius:18px;
-
-box-shadow:
-
-0 25px 60px rgba(0,0,0,.65);
-
-opacity:0;
-
-visibility:hidden;
-
-transform:translateY(12px);
-
-transition:.3s ease;
-
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:230px;
+    padding:12px 0;
+    margin-top:12px;
+    background:#111;
+    border:1px solid #292929;
+    border-radius:12px;
+    display:none;
 }
-
 
 .dropdown a{
-
-display:block;
-
-padding:12px 16px;
-
-border-radius:12px;
-
-font-size:14px;
-
-color:#d5d5d5;
-
+    display:block;
+    padding:11px 20px;
 }
-
 
 .dropdown a:hover{
-
-background:rgba(229,9,20,.12);
-
-color:#fff;
-
-padding-left:22px;
-
+    background:#1b1b1b;
 }
-
 
 nav ul li:hover .dropdown{
-
-opacity:1;
-
-visibility:visible;
-
-transform:translateY(0);
-
+    display:block;
 }
 
-
-/* =====================================================
-TEAM HERO
-===================================================== */
-
-.team-hero{
-
-position:relative;
-
-min-height:100vh;
-
-display:flex;
-
-align-items:center;
-
-overflow:hidden;
-
-background:
-
-linear-gradient(
-
-90deg,
-
-rgba(0,0,0,.96),
-
-rgba(0,0,0,.72),
-
-rgba(0,0,0,.90)
-
-),
-
-url("portfolio04.png.png")
-
-center/cover no-repeat;
-
+.mobile-menu-btn{
+    display:none;
+    background:none;
+    border:0;
+    color:#fff;
+    font-size:29px;
+    cursor:pointer;
 }
 
-
-.team-hero::before{
-
-content:"";
-
-position:absolute;
-
-width:700px;
-
-height:700px;
-
-right:-300px;
-
-top:5%;
-
-background:rgba(229,9,20,.14);
-
-filter:blur(130px);
-
-border-radius:50%;
-
-pointer-events:none;
-
+.mobile-menu{
+    display:none;
 }
 
-
-.team-hero::after{
-
-content:"";
-
-position:absolute;
-
-width:600px;
-
-height:600px;
-
-left:-250px;
-
-bottom:-300px;
-
-background:rgba(255,255,255,.035);
-
-filter:blur(120px);
-
-border-radius:50%;
-
-pointer-events:none;
-
+.hero{
+    padding:180px 0 100px;
+    background:
+        radial-gradient(circle at 80% 30%,rgba(229,9,20,.16),transparent 35%),
+        #050505;
 }
 
-
-.team-hero-content{
-
-position:relative;
-
-z-index:2;
-
-max-width:900px;
-
-padding-top:90px;
-
+.hero-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
 }
 
-
-.team-hero-content p{
-
-max-width:780px;
-
-font-size:19px;
-
-margin-top:22px;
-
+.hero h1{
+    font-size:64px;
+    line-height:1.15;
+    font-weight:800;
+    margin-bottom:25px;
 }
 
-
-.hero-buttons{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-flex-wrap:wrap;
-
-margin-top:38px;
-
+.hero p{
+    max-width:780px;
+    margin:auto;
+    color:#cfcfcf;
+    font-size:18px;
 }
-
-
-/* =====================================================
-TEAM INTRO
-===================================================== */
-
-.team-intro{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:70px;
-
-align-items:center;
-
-}
-
-
-.team-intro-image{
-
-height:560px;
-
-border-radius:25px;
-
-overflow:hidden;
-
-border:1px solid var(--border);
-
-box-shadow:var(--shadow);
-
-}
-
-
-.team-intro-image img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-transition:.6s ease;
-
-}
-
-
-.team-intro-image:hover img{
-
-transform:scale(1.06);
-
-}
-
-
-.team-intro-content{
-
-max-width:650px;
-
-}
-
-
-.team-intro-content p{
-
-margin-bottom:20px;
-
-}
-
-
-/* =====================================================
-GENERAL GRID
-===================================================== */
-
-.grid{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-}
-
-
-/* =====================================================
-DEPARTMENT CARDS
-===================================================== */
-
-.card{
-
-background:var(--glass);
-
-border:1px solid var(--border);
-
-border-radius:22px;
-
-overflow:hidden;
-
-transition:.45s ease;
-
-}
-
-
-.card:hover{
-
-transform:translateY(-9px);
-
-border-color:rgba(229,9,20,.7);
-
-box-shadow:var(--shadow);
-
-}
-
-
-.department-card{
-
-min-height:320px;
-
-padding:38px;
-
-position:relative;
-
-}
-
-
-.department-number{
-
-font-size:48px;
-
-font-weight:800;
-
-color:rgba(255,255,255,.06);
-
-line-height:1;
-
-margin-bottom:24px;
-
-}
-
-
-.department-card h3{
-
-margin-bottom:15px;
-
-}
-
-
-.department-card p{
-
-color:#bdbdbd;
-
-}
-
-
-/* =====================================================
-EXPERTISE
-===================================================== */
-
-.expertise-grid{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(3,1fr);
-
-gap:25px;
-
-}
-
-
-.expertise-card{
-
-padding:35px;
-
-background:rgba(255,255,255,.045);
-
-border:1px solid var(--border);
-
-border-radius:20px;
-
-transition:.4s ease;
-
-}
-
-
-.expertise-card:hover{
-
-transform:translateY(-7px);
-
-border-color:var(--red);
-
-box-shadow:
-
-0 20px 50px rgba(0,0,0,.35);
-
-}
-
-
-.expertise-card span{
-
-display:block;
-
-font-size:12px;
-
-color:var(--red);
-
-font-weight:700;
-
-letter-spacing:2px;
-
-text-transform:uppercase;
-
-margin-bottom:15px;
-
-}
-
-
-.expertise-card h3{
-
-margin-bottom:12px;
-
-}
-
-
-.expertise-card p{
-
-color:#aaa;
-
-font-size:15px;
-
-}
-
-
-/* =====================================================
-FINAL CTA
-===================================================== */
-
-.final-cta{
-
-position:relative;
-
-overflow:hidden;
-
-text-align:center;
-
-background:
-
-radial-gradient(
-
-circle at center,
-
-rgba(229,9,20,.17),
-
-transparent 60%
-
-),
-
-#080808;
-
-}
-
-
-.final-cta::before{
-
-content:"";
-
-position:absolute;
-
-width:500px;
-
-height:500px;
-
-top:-250px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-background:rgba(229,9,20,.08);
-
-filter:blur(100px);
-
-border-radius:50%;
-
-pointer-events:none;
-
-}
-
-
-.final-cta-content{
-
-position:relative;
-
-z-index:2;
-
-max-width:900px;
-
-margin:auto;
-
-}
-
-
-.final-cta-content p{
-
-max-width:760px;
-
-margin:0 auto;
-
-}
-
-
-/* =====================================================
-FOOTER
-===================================================== */
-
-footer{
-
-background:#030303;
-
-border-top:1px solid rgba(255,255,255,.08);
-
-}
-
-
-.footer-grid{
-
-display:grid;
-
-grid-template-columns:2fr 1fr 1fr 1fr;
-
-gap:55px;
-
-padding:80px 0 50px;
-
-}
-
-
-.footer-brand{
-
-max-width:480px;
-
-}
-
-
-.footer-brand p{
-
-margin-top:20px;
-
-color:#929292;
-
-font-size:15px;
-
-}
-
-
-.footer-column{
-
-display:flex;
-
-flex-direction:column;
-
-gap:12px;
-
-}
-
-
-.footer-column h3{
-
-font-size:17px;
-
-margin-bottom:8px;
-
-}
-
-
-.footer-column a{
-
-color:#929292;
-
-font-size:14px;
-
-}
-
-
-.footer-column a:hover{
-
-color:#fff;
-
-transform:translateX(5px);
-
-}
-
-
-/* =====================================================
-SOCIAL LINKS
-===================================================== */
-
-.social-links{
-
-display:flex;
-
-gap:10px;
-
-margin-top:25px;
-
-}
-
-
-.social-links a{
-
-width:42px;
-
-height:42px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-border:1px solid rgba(255,255,255,.15);
-
-border-radius:50%;
-
-font-size:12px;
-
-font-weight:700;
-
-color:#aaa;
-
-}
-
-
-.social-links a:hover{
-
-background:var(--red);
-
-border-color:var(--red);
-
-color:#fff;
-
-transform:translateY(-4px);
-
-}
-
-
-/* =====================================================
-FOOTER BOTTOM
-===================================================== */
-
-.footer-bottom{
-
-display:flex;
-
-justify-content:space-between;
-
-gap:20px;
-
-padding:25px 0;
-
-border-top:1px solid rgba(255,255,255,.08);
-
-color:#666;
-
-font-size:13px;
-
-}
-
-
-/* =====================================================
-BACK TO TOP
-===================================================== */
-
-#topBtn{
-
-position:fixed;
-
-right:25px;
-
-bottom:25px;
-
-width:52px;
-
-height:52px;
-
-border:1px solid rgba(255,255,255,.12);
-
-border-radius:50%;
-
-background:rgba(20,20,20,.88);
-
-backdrop-filter:blur(12px);
-
-color:#fff;
-
-font-size:20px;
-
-cursor:pointer;
-
-display:none;
-
-align-items:center;
-
-justify-content:center;
-
-z-index:9998;
-
-transition:.35s ease;
-
-}
-
-
-#topBtn:hover{
-
-background:var(--red);
-
-border-color:var(--red);
-
-transform:translateY(-6px);
-
-}
-
-
-/* =====================================================
-SCROLL REVEAL
-===================================================== */
-
-.reveal{
-
-opacity:0;
-
-transform:translateY(35px);
-
-transition:
-
-opacity .8s ease,
-
-transform .8s ease;
-
-}
-
-
-.reveal.visible{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-
-/* =====================================================
-RESPONSIVE
-===================================================== */
-
-@media(max-width:1100px){
-
-nav{
-
-display:none;
-
-}
-
-.team-intro{
-
-grid-template-columns:1fr;
-
-}
-
-.team-intro-image{
-
-height:500px;
-
-}
-
-.expertise-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-.footer-grid{
-
-grid-template-columns:2fr 1fr 1fr;
-
-}
-
-}
-
-
-@media(max-width:768px){
 
 section{
-
-padding:80px 0;
-
+    padding:100px 0;
 }
 
-
-.container{
-
-width:92%;
-
+.dark{
+    background:#090909;
 }
 
-
-.team-hero{
-
-min-height:850px;
-
+.section-heading{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 60px;
 }
 
-
-.team-hero-content{
-
-padding-top:100px;
-
-text-align:center;
-
-margin:auto;
-
+.section-heading h2{
+    font-size:44px;
+    margin-bottom:18px;
 }
 
-
-.team-hero-content p{
-
-font-size:17px;
-
+.section-heading p{
+    color:#bdbdbd;
+    font-size:16px;
 }
 
-
-.hero-buttons{
-
-justify-content:center;
-
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
 }
 
-
-h1{
-
-font-size:44px;
-
-letter-spacing:-1px;
-
+.team-card{
+    background:#101010;
+    border:1px solid #242424;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.35s;
 }
 
-
-h2{
-
-font-size:35px;
-
+.team-card:hover{
+    transform:translateY(-8px);
+    border-color:#e50914;
 }
 
-
-.btn,
-.btn-outline{
-
-width:100%;
-
-text-align:center;
-
-margin:5px 0;
-
+.team-photo{
+    height:360px;
+    background:#151515;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
 }
 
-
-.expertise-grid{
-
-grid-template-columns:1fr;
-
+.team-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
+.team-info{
+    padding:28px;
+}
+
+.team-info h3{
+    font-size:24px;
+    margin-bottom:5px;
+}
+
+.team-role{
+    color:#e50914;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.team-info p{
+    color:#bdbdbd;
+    font-size:15px;
+}
+
+.leadership{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+.leader{
+    background:#101010;
+    border:1px solid #252525;
+    border-radius:20px;
+    padding:35px;
+}
+
+.leader h3{
+    font-size:26px;
+    margin-bottom:5px;
+}
+
+.leader-role{
+    color:#e50914;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.leader p{
+    color:#c5c5c5;
+    font-size:15px;
+}
+
+.capabilities{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.capability{
+    padding:30px 24px;
+    background:#101010;
+    border:1px solid #242424;
+    border-radius:16px;
+    text-align:center;
+    transition:.3s;
+}
+
+.capability:hover{
+    transform:translateY(-5px);
+    border-color:#e50914;
+}
+
+.capability h3{
+    font-size:19px;
+    margin-bottom:10px;
+}
+
+.capability p{
+    color:#aaa;
+    font-size:14px;
+}
+
+.cta{
+    text-align:center;
+    background:#101010;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.cta p{
+    max-width:750px;
+    margin:0 auto 30px;
+    color:#bbb;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 34px;
+    background:#e50914;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff2935;
+    transform:translateY(-3px);
+}
+
+footer{
+    background:#080808;
+    border-top:1px solid #222;
+    padding:60px 0 30px;
+}
 
 .footer-grid{
-
-grid-template-columns:1fr 1fr;
-
-gap:40px;
-
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    gap:35px;
 }
 
+footer h3{
+    margin-bottom:18px;
+    font-size:20px;
+}
+
+footer p{
+    color:#999;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+footer a:hover{
+    color:#e50914;
+}
 
 .footer-bottom{
-
-flex-direction:column;
-
-text-align:center;
-
+    border-top:1px solid #222;
+    margin-top:40px;
+    padding-top:25px;
+    text-align:center;
+    color:#777;
+    font-size:13px;
 }
-
-}
-
-
-@media(max-width:600px){
-
-.logo{
-
-font-size:17px;
-
-}
-
-
-.logo img{
-
-width:47px;
-
-height:47px;
-
-}
-
-
-.team-intro-image{
-
-height:380px;
-
-}
-
-
-.footer-grid{
-
-grid-template-columns:1fr;
-
-}
-
 
 #topBtn{
-
-right:18px;
-
-bottom:18px;
-
-width:46px;
-
-height:46px;
-
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:52px;
+    height:52px;
+    border:0;
+    border-radius:50%;
+    background:#e50914;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    z-index:998;
 }
 
+@media(max-width:1000px){
+
+    nav{
+        display:none;
+    }
+
+    .mobile-menu-btn{
+        display:block;
+    }
+
+    .mobile-menu{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#0b0b0b;
+        border-top:1px solid #222;
+        padding:15px 5%;
+    }
+
+    .mobile-menu.active{
+        display:block;
+    }
+
+    .mobile-menu a{
+        display:block;
+        padding:13px 5px;
+        border-bottom:1px solid #222;
+    }
+
+    .team-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .capabilities{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:700px){
+
+    .container{
+        width:92%;
+    }
+
+    .hero{
+        padding:140px 0 75px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    section{
+        padding:70px 0;
+    }
+
+    .section-heading{
+        margin-bottom:40px;
+    }
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .team-grid,
+    .leadership,
+    .capabilities,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .team-photo{
+        height:330px;
+    }
+
+    .cta h2{
+        font-size:32px;
+    }
+
+    .logo{
+        font-size:17px;
+    }
+
+    .logo img{
+        width:40px;
+        height:40px;
+    }
+}
+
+@media(max-width:400px){
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .team-photo{
+        height:290px;
+    }
 }
 
 </style>
-
 </head>
 
-
 <body>
-
-
-<!-- =====================================================
-HEADER
-===================================================== -->
 
 <header>
 
 <div class="container">
 
-
 <a href="index.html" class="logo">
-
-<img
-src="logo.png.png"
-alt="PT Autotube Crew Studio Logo"
->
-
-<span>
-PT Autotube Crew Studio
-</span>
-
+<img src="logo.png.png" alt="PT Autotube Crew Studio">
+<span>PT Autotube Crew Studio</span>
 </a>
 
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation">
+☰
+</button>
 
 <nav>
-
 <ul>
 
+<li><a href="index.html">Home</a></li>
 
 <li>
-
-<a href="index.html">
-Home
-</a>
-
-</li>
-
-
-<li>
-
-<a href="about.html">
-Studio
-</a>
-
+<a href="#">About ▼</a>
 <div class="dropdown">
-
-<a href="about.html">
-About Us
-</a>
-
-<a href="team.html">
-Our Team
-</a>
-
-<a href="partners.html">
-Partners
-</a>
-
-<a href="careers.html">
-Careers
-</a>
-
+<a href="about.html">About Us</a>
+<a href="team.html">Our Team</a>
+<a href="careers.html">Careers</a>
+<a href="partners.html">Partners</a>
 </div>
-
 </li>
 
-
 <li>
-
-<a href="services.html">
-Services
-</a>
-
+<a href="#">Services ▼</a>
 <div class="dropdown">
-
-<a href="services.html">
-All Services
-</a>
-
-<a href="technology.html">
-Technology
-</a>
-
-<a href="industries.html">
-Industries
-</a>
-
+<a href="services.html">Services</a>
+<a href="technology.html">Technology</a>
+<a href="industries.html">Industries</a>
+<a href="pricing.html">Pricing</a>
 </div>
-
 </li>
 
-
 <li>
-
-<a href="portfolio.html">
-Portfolio
-</a>
-
+<a href="#">Portfolio ▼</a>
 <div class="dropdown">
-
-<a href="portfolio.html">
-Portfolio
-</a>
-
-<a href="showreel.html">
-Showreel
-</a>
-
-<a href="case-studies.html">
-Case Studies
-</a>
-
-<a href="clients.html">
-Clients
-</a>
-
+<a href="portfolio.html">Portfolio</a>
+<a href="showreel.html">Showreel</a>
+<a href="case-studies.html">Case Studies</a>
+<a href="clients.html">Clients</a>
+<a href="testimonials.html">Testimonials</a>
 </div>
-
 </li>
 
-
 <li>
-
-<a href="#">
-Resources
-</a>
-
+<a href="#">Resources ▼</a>
 <div class="dropdown">
-
-<a href="downloads.html">
-Downloads
-</a>
-
-<a href="blog.html">
-Blog
-</a>
-
-<a href="news.html">
-News
-</a>
-
-<a href="press-kit.html">
-Press Kit
-</a>
-
+<a href="downloads.html">Downloads</a>
+<a href="blog.html">Blog</a>
+<a href="news.html">News</a>
+<a href="events.html">Events</a>
+<a href="press-kit.html">Press Kit</a>
+<a href="media-kit.html">Media Kit</a>
 </div>
-
 </li>
 
-
-<li>
-
-<a href="contact.html">
-Contact
-</a>
-
-</li>
-
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
-
 </nav>
+
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="team.html">Our Team</a>
+<a href="careers.html">Careers</a>
+<a href="partners.html">Partners</a>
+<a href="services.html">Services</a>
+<a href="technology.html">Technology</a>
+<a href="industries.html">Industries</a>
+<a href="pricing.html">Pricing</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="showreel.html">Showreel</a>
+<a href="case-studies.html">Case Studies</a>
+<a href="clients.html">Clients</a>
+<a href="testimonials.html">Testimonials</a>
+<a href="downloads.html">Downloads</a>
+<a href="blog.html">Blog</a>
+<a href="news.html">News</a>
+<a href="events.html">Events</a>
+<a href="press-kit.html">Press Kit</a>
+<a href="media-kit.html">Media Kit</a>
+<a href="contact.html">Contact</a>
 
 </div>
 
 </header>
 
-
-<!-- =====================================================
-HERO
-===================================================== -->
-
-<section class="team-hero">
+<section class="hero">
 
 <div class="container">
 
-<div class="team-hero-content">
+<div class="hero-content">
 
-<div class="hero-label">
-Our Team
-</div>
-
-<h1>
-Creative Minds. Technical Skills. One Vision.
-</h1>
+<h1>Meet Our Creative Team</h1>
 
 <p>
-PT Autotube Crew Studio brings together creative and technical capabilities across CGI, 3D Animation, Visual Effects, Motion Graphics and digital production.
+Behind every visual production is a team combining creative direction,
+artistic skill, technical knowledge and production discipline. PT Autotube
+Crew Studio brings together professionals working across CGI, 3D animation,
+VFX, visualization and digital production.
 </p>
-
-<p>
-Our team-oriented production approach allows different creative disciplines to work together toward a common visual goal.
-</p>
-
-
-<div class="hero-buttons">
-
-<a
-href="contact.html"
-class="btn"
->
-Work With Us
-</a>
-
-<a
-href="careers.html"
-class="btn-outline"
->
-Join Our Team
-</a>
-
-</div>
 
 </div>
 
 </div>
 
 </section>
-
-
-<!-- =====================================================
-TEAM INTRODUCTION
-===================================================== -->
-
-<section>
-
-<div class="container">
-
-<div class="team-intro">
-
-
-<div class="team-intro-image">
-
-<img
-src="portfolio01.png.png"
-alt="PT Autotube Crew Studio Creative Production"
->
-
-</div>
-
-
-<div class="team-intro-content">
-
-<div class="hero-label">
-Our People
-</div>
-
-<h2>
-A Multidisciplinary Creative Production Team
-</h2>
-
-<p>
-Visual production requires more than a single skill. It brings together artistic direction, design, 3D production, animation, visual effects and post-production.
-</p>
-
-<p>
-Our studio is being developed around a flexible production structure where different creative disciplines can contribute to a project according to its requirements.
-</p>
-
-<p>
-This approach allows us to support projects ranging from individual creative tasks to broader production collaborations.
-</p>
-
-<a
-href="services.html"
-class="btn"
->
-Explore Our Services
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-CREATIVE DEPARTMENTS
-===================================================== -->
 
 <section class="dark">
 
 <div class="container">
 
+<div class="section-heading">
 
-<div class="section-title">
-
-<div class="hero-label">
-Creative Departments
-</div>
-
-<h2>
-Different Skills. One Production Pipeline.
-</h2>
+<h2>Studio Leadership</h2>
 
 <p>
-Our creative capabilities can be organized across several important production disciplines.
+Our leadership team guides the studio's creative direction, production
+strategy and long-term development.
 </p>
 
 </div>
 
+<div class="leadership">
 
-<div class="grid">
+<div class="leader">
 
+<h3>Hasnain Ali Shah</h3>
 
-<div class="card department-card">
-
-<div class="department-number">
-01
-</div>
-
-<h3>
-Creative Direction
-</h3>
+<div class="leader-role">Director</div>
 
 <p>
-Visual concepts, creative planning and overall direction help establish the artistic goals of a production.
+Responsible for studio direction, business development, international
+collaboration and the overall strategic development of PT Autotube Crew Studio.
 </p>
 
 </div>
 
+<div class="leader">
 
-<div class="card department-card">
+<h3>Shameer Sarfraz</h3>
 
-<div class="department-number">
-02
-</div>
-
-<h3>
-3D Artists
-</h3>
+<div class="leader-role">Founder</div>
 
 <p>
-Modeling, sculpting, texturing, lighting and rendering contribute to the creation of detailed digital assets and environments.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-03
-</div>
-
-<h3>
-Animation
-</h3>
-
-<p>
-Animation artists develop movement, timing and cinematic sequences for characters, products, environments and digital content.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-04
-</div>
-
-<h3>
-VFX & Compositing
-</h3>
-
-<p>
-Visual effects and compositing combine digital elements with footage and other production components.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-05
-</div>
-
-<h3>
-Motion Graphics
-</h3>
-
-<p>
-Motion designers create animated graphics, titles, transitions and visual communication for digital media.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-06
-</div>
-
-<h3>
-Post-Production
-</h3>
-
-<p>
-Editing, color, finishing and final delivery prepare completed content for its intended platform.
+Supporting the studio's creative vision, organizational development and
+long-term growth across digital production and creative services.
 </p>
 
 </div>
@@ -1826,135 +670,84 @@ Editing, color, finishing and final delivery prepare completed content for its i
 </div>
 
 </section>
-
-
-<!-- =====================================================
-TEAM EXPERTISE
-===================================================== -->
 
 <section>
 
 <div class="container">
 
+<div class="section-heading">
 
-<div class="section-title">
-
-<div class="hero-label">
-Team Expertise
-</div>
-
-<h2>
-Capabilities Across The Production Process
-</h2>
+<h2>Our Creative Team</h2>
 
 <p>
-Our production disciplines can work together from the early creative stage through final delivery.
+Our production capabilities are supported by artists and specialists working
+across multiple disciplines of digital content creation.
 </p>
 
 </div>
 
+<div class="team-grid">
 
-<div class="expertise-grid">
+<div class="team-card">
 
+<div class="team-photo">
+<img src="director-hasnain-ali-shah.jpg.PNG" alt="Hasnain Ali Shah Director">
+</div>
 
-<div class="expertise-card">
+<div class="team-info">
 
-<span>
-01 / Design
-</span>
+<h3>Hasnain Ali Shah</h3>
 
-<h3>
-Concept Development
-</h3>
+<div class="team-role">Director</div>
 
 <p>
-Visual references, creative concepts and production planning establish the foundation for a project.
+Creative and business leadership focused on building international
+production partnerships and developing the studio's global presence.
 </p>
 
 </div>
 
+</div>
 
-<div class="expertise-card">
+<div class="team-card">
 
-<span>
-02 / 3D
-</span>
+<div class="team-photo">
+<img src="founder-shameer-sarfraz.jpg.jpeg" alt="Shameer Sarfraz Founder">
+</div>
 
-<h3>
-Digital Asset Creation
-</h3>
+<div class="team-info">
+
+<h3>Shameer Sarfraz</h3>
+
+<div class="team-role">Founder</div>
 
 <p>
-3D models, environments, materials and digital assets are developed according to project requirements.
+Focused on studio development, creative strategy and building a strong
+foundation for future digital production projects.
 </p>
 
 </div>
 
+</div>
 
-<div class="expertise-card">
+<div class="team-card">
 
-<span>
-03 / Animation
-</span>
+<div class="team-photo">
+<img src="logo.png.png" alt="PT Autotube Crew Studio Production Team">
+</div>
 
-<h3>
-Movement & Cinematics
-</h3>
+<div class="team-info">
+
+<h3>Production Artists</h3>
+
+<div class="team-role">CGI & 3D Production</div>
 
 <p>
-Animation and cinematic sequences bring digital assets and environments to life.
+Artists and production specialists contributing to CGI, 3D animation,
+environment creation, visualization, VFX and digital content.
 </p>
 
 </div>
-
-
-<div class="expertise-card">
-
-<span>
-04 / VFX
-</span>
-
-<h3>
-Visual Integration
-</h3>
-
-<p>
-Digital effects and compositing help integrate multiple visual elements into a cohesive result.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-05 / Motion
-</span>
-
-<h3>
-Animated Communication
-</h3>
-
-<p>
-Motion graphics communicate information, branding and creative ideas through movement and design.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-06 / Finish
-</span>
-
-<h3>
-Final Production
-</h3>
-
-<p>
-Editing, color and finishing prepare the final content for presentation, advertising or digital distribution.
-</p>
 
 </div>
 
@@ -1963,136 +756,62 @@ Editing, color and finishing prepare the final content for presentation, adverti
 </div>
 
 </section>
-
-
-<!-- =====================================================
-PRODUCTION WORKFLOW
-===================================================== -->
 
 <section class="dark">
 
 <div class="container">
 
+<div class="section-heading">
 
-<div class="section-title">
-
-<div class="hero-label">
-Our Workflow
-</div>
-
-<h2>
-How Our Creative Teams Work Together
-</h2>
+<h2>Our Core Capabilities</h2>
 
 <p>
-A coordinated production process helps different creative disciplines stay aligned from the first idea to the final delivery.
+Our team can contribute across the complete digital content production
+process, from creative development through final delivery.
 </p>
 
 </div>
 
+<div class="capabilities">
 
-<div class="grid">
-
-
-<div class="card department-card">
-
-<div class="department-number">
-01
+<div class="capability">
+<h3>3D Art</h3>
+<p>Modeling, texturing, environments and asset creation.</p>
 </div>
 
-<h3>
-Discover
-</h3>
-
-<p>
-The team reviews the project objectives, references, audience, creative direction and technical requirements.
-</p>
-
+<div class="capability">
+<h3>Animation</h3>
+<p>Character, product and cinematic animation production.</p>
 </div>
 
-
-<div class="card department-card">
-
-<div class="department-number">
-02
+<div class="capability">
+<h3>VFX</h3>
+<p>Visual effects, compositing and digital production support.</p>
 </div>
 
-<h3>
-Plan
-</h3>
-
-<p>
-Creative and technical requirements are organized into a practical production approach before work begins.
-</p>
-
+<div class="capability">
+<h3>Visualization</h3>
+<p>Product, architectural and cinematic visualization.</p>
 </div>
 
-
-<div class="card department-card">
-
-<div class="department-number">
-03
+<div class="capability">
+<h3>CGI</h3>
+<p>High-quality computer-generated imagery for commercial projects.</p>
 </div>
 
-<h3>
-Create
-</h3>
-
-<p>
-Artists and production specialists develop the required designs, 3D assets, animation, effects and visual elements.
-</p>
-
+<div class="capability">
+<h3>Motion Design</h3>
+<p>Motion graphics and visual communication for digital media.</p>
 </div>
 
-
-<div class="card department-card">
-
-<div class="department-number">
-04
+<div class="capability">
+<h3>Unreal Engine</h3>
+<p>Real-time environments and interactive visual experiences.</p>
 </div>
 
-<h3>
-Review
-</h3>
-
-<p>
-Production is reviewed against the creative direction and project requirements so adjustments can be made when necessary.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-05
-</div>
-
-<h3>
-Refine
-</h3>
-
-<p>
-Visual details, technical elements and finishing are refined to improve the overall quality of the production.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-06
-</div>
-
-<h3>
-Deliver
-</h3>
-
-<p>
-The completed production is prepared according to the required technical specifications and delivery format.
-</p>
-
+<div class="capability">
+<h3>Production Support</h3>
+<p>Flexible remote production support for studios and agencies.</p>
 </div>
 
 </div>
@@ -2101,950 +820,22 @@ The completed production is prepared according to the required technical specifi
 
 </section>
 
-
-<!-- =====================================================
-COLLABORATION MODEL
-===================================================== -->
-
-<section>
+<section class="cta">
 
 <div class="container">
 
-<div class="team-intro">
-
-
-<div class="team-intro-content">
-
-<div class="hero-label">
-Collaboration Model
-</div>
-
-<h2>
-The Right Skills For The Right Project
-</h2>
+<h2>Work With Our Team</h2>
 
 <p>
-Not every project requires the same production structure. A commercial may require a different combination of skills than an animated film, product visualization project or digital campaign.
+If you are looking for a reliable creative production partner for CGI,
+3D animation, VFX or visualization, we would be happy to discuss your project.
 </p>
 
-<p>
-Our flexible approach allows production responsibilities to be organized around the specific needs of each project.
-</p>
-
-<p>
-This can include individual specialist support, a coordinated group of artists or broader creative production collaboration.
-</p>
-
-<a
-href="contact.html"
-class="btn"
->
-Discuss Your Project
-</a>
-
-</div>
-
-
-<div class="team-intro-image">
-
-<img
-src="portfolio02.png.png"
-alt="Creative Collaboration at PT Autotube Crew Studio"
->
-
-</div>
-
-</div>
+<a href="contact.html" class="btn">Start Your Project</a>
 
 </div>
 
 </section>
-
-
-<!-- =====================================================
-PRODUCTION ROLES
-===================================================== -->
-
-<section class="dark">
-
-<div class="container">
-
-
-<div class="section-title">
-
-<div class="hero-label">
-Production Roles
-</div>
-
-<h2>
-Specialists Working Toward One Visual Goal
-</h2>
-
-<p>
-Different roles can contribute throughout the production process depending on the scope and complexity of the project.
-</p>
-
-</div>
-
-
-<div class="grid">
-
-
-<div class="card department-card">
-
-<div class="department-number">
-01
-</div>
-
-<h3>
-Creative Director
-</h3>
-
-<p>
-Helps establish the creative direction, visual objectives and overall artistic approach of a production.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-02
-</div>
-
-<h3>
-3D Artist
-</h3>
-
-<p>
-Develops digital models, environments, materials, lighting and other 3D production elements.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-03
-</div>
-
-<h3>
-3D Animator
-</h3>
-
-<p>
-Creates movement and animation for characters, products, environments and cinematic sequences.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-04
-</div>
-
-<h3>
-VFX Artist
-</h3>
-
-<p>
-Creates and integrates visual effects and digital elements into cinematic and commercial productions.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-05
-</div>
-
-<h3>
-Motion Designer
-</h3>
-
-<p>
-Develops animated graphics, titles, branding elements and visual communication for digital content.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-06
-</div>
-
-<h3>
-Post-Production Artist
-</h3>
-
-<p>
-Supports editing, compositing, color, finishing and final preparation of completed visual content.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-GLOBAL PRODUCTION
-===================================================== -->
-
-<section>
-
-<div class="container">
-
-<div class="team-intro">
-
-
-<div class="team-intro-image">
-
-<img
-src="portfolio03.png.png"
-alt="Global Digital Production Collaboration"
->
-
-</div>
-
-
-<div class="team-intro-content">
-
-<div class="hero-label">
-Global Production
-</div>
-
-<h2>
-Creative Collaboration Without Borders
-</h2>
-
-<p>
-Digital production makes it possible for creative professionals and production teams to collaborate across different locations.
-</p>
-
-<p>
-Our workflow can support remote communication, digital asset exchange, production reviews and organized delivery between clients, artists and creative partners.
-</p>
-
-<p>
-Based in Jakarta, Indonesia, PT Autotube Crew Studio is interested in developing long-term relationships with creative professionals and organizations around the world.
-</p>
-
-<a
-href="partners.html"
-class="btn"
->
-Explore Partnerships
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-TEAM DEVELOPMENT
-===================================================== -->
-
-<section class="dark">
-
-<div class="container">
-
-
-<div class="section-title">
-
-<div class="hero-label">
-Growing Together
-</div>
-
-<h2>
-Building A Long-Term Creative Team
-</h2>
-
-<p>
-We are developing our studio with a long-term vision for larger CGI, animation, film, commercial and digital production projects.
-</p>
-
-</div>
-
-
-<div class="expertise-grid">
-
-
-<div class="expertise-card">
-
-<span>
-01 / Learning
-</span>
-
-<h3>
-Continuous Development
-</h3>
-
-<p>
-Creative technology changes quickly, so continuous learning is an important part of developing production capabilities.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-02 / Collaboration
-</span>
-
-<h3>
-Shared Knowledge
-</h3>
-
-<p>
-Working across different disciplines allows artists and production specialists to exchange ideas, techniques and experience.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-03 / Technology
-</span>
-
-<h3>
-Modern Production
-</h3>
-
-<p>
-We continue exploring professional tools and production technologies that can improve creative possibilities and workflow efficiency.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-04 / Opportunity
-</span>
-
-<h3>
-Future Projects
-</h3>
-
-<p>
-Our long-term goal is to build a capable creative team prepared for increasingly ambitious visual production projects.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-05 / Quality
-</span>
-
-<h3>
-Professional Standards
-</h3>
-
-<p>
-We aim to establish production practices that support consistent quality, clear communication and dependable collaboration.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-06 / Vision
-</span>
-
-<h3>
-Long-Term Growth
-</h3>
-
-<p>
-The studio is being developed with the ambition to grow its creative network and participate in larger international productions.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-TEAM CULTURE
-===================================================== -->
-
-<section>
-
-<div class="container">
-
-
-<div class="section-title">
-
-<div class="hero-label">
-Team Culture
-</div>
-
-<h2>
-A Creative Environment Built Around Collaboration
-</h2>
-
-<p>
-Great visual work develops when creative people can communicate openly, share ideas and focus on the same production objective.
-</p>
-
-</div>
-
-
-<div class="grid">
-
-
-<div class="card department-card">
-
-<div class="department-number">
-01
-</div>
-
-<h3>
-Creative Freedom
-</h3>
-
-<p>
-We encourage creative thinking and exploration while keeping every idea connected to the purpose of the project.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-02
-</div>
-
-<h3>
-Open Communication
-</h3>
-
-<p>
-Clear communication helps teams understand creative expectations, production requirements and project priorities.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-03
-</div>
-
-<h3>
-Respect For Craft
-</h3>
-
-<p>
-Every production discipline contributes something important to the final result, from concept development to final finishing.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-04
-</div>
-
-<h3>
-Professional Growth
-</h3>
-
-<p>
-We aim to create opportunities for artists and creative professionals to develop their skills through real production experience.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-PROFESSIONAL STANDARDS
-===================================================== -->
-
-<section class="dark">
-
-<div class="container">
-
-
-<div class="section-title">
-
-<div class="hero-label">
-Professional Standards
-</div>
-
-<h2>
-Quality Starts With The Process
-</h2>
-
-<p>
-A professional production environment requires more than technical skills. It requires organization, communication and responsibility throughout the workflow.
-</p>
-
-</div>
-
-
-<div class="expertise-grid">
-
-
-<div class="expertise-card">
-
-<span>
-01 / Planning
-</span>
-
-<h3>
-Clear Objectives
-</h3>
-
-<p>
-Production begins with a clear understanding of the creative direction, required deliverables and technical expectations.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-02 / Organization
-</span>
-
-<h3>
-Structured Workflow
-</h3>
-
-<p>
-Organized production stages help keep assets, revisions and deliverables manageable throughout the project.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-03 / Communication
-</span>
-
-<h3>
-Regular Reviews
-</h3>
-
-<p>
-Review points provide opportunities to evaluate progress and keep the production aligned with the agreed direction.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-04 / Quality
-</span>
-
-<h3>
-Attention To Detail
-</h3>
-
-<p>
-Artists and production specialists focus on the visual and technical details that contribute to a polished final result.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-05 / Reliability
-</span>
-
-<h3>
-Responsible Delivery
-</h3>
-
-<p>
-Production responsibilities are handled with attention to agreed requirements, schedules and delivery specifications.
-</p>
-
-</div>
-
-
-<div class="expertise-card">
-
-<span>
-06 / Improvement
-</span>
-
-<h3>
-Continuous Refinement
-</h3>
-
-<p>
-We review our workflows and production methods to identify opportunities for better quality and efficiency.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-TECHNOLOGY & TEAM
-===================================================== -->
-
-<section>
-
-<div class="container">
-
-<div class="team-intro">
-
-
-<div class="team-intro-content">
-
-<div class="hero-label">
-Technology & People
-</div>
-
-<h2>
-The Best Tools Still Need Creative People
-</h2>
-
-<p>
-Professional software provides powerful production capabilities, but the quality of the final result depends on the people using those tools.
-</p>
-
-<p>
-Our team-oriented approach combines artistic judgment, technical knowledge and production experience to make effective use of modern digital technologies.
-</p>
-
-<p>
-Our technology workflow can include 3D modeling, animation, real-time rendering, compositing, editing, color and digital finishing.
-</p>
-
-<a
-href="technology.html"
-class="btn"
->
-Explore Our Technology
-</a>
-
-</div>
-
-
-<div class="team-intro-image">
-
-<img
-src="portfolio04.png.png"
-alt="Technology and Creative Production"
->
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-CAREER OPPORTUNITIES
-===================================================== -->
-
-<section class="dark">
-
-<div class="container">
-
-<div class="team-intro">
-
-
-<div class="team-intro-image">
-
-<img
-src="portfolio05.png.png"
-alt="Creative Career Opportunities"
->
-
-</div>
-
-
-<div class="team-intro-content">
-
-<div class="hero-label">
-Career Opportunities
-</div>
-
-<h2>
-Interested In Joining Our Creative Journey?
-</h2>
-
-<p>
-As PT Autotube Crew Studio continues to develop, we are interested in connecting with talented artists, designers, animators, technical specialists and other creative professionals.
-</p>
-
-<p>
-We are particularly interested in people who are passionate about visual storytelling, digital production and learning new creative technologies.
-</p>
-
-<p>
-Future opportunities may develop across CGI, 3D Animation, VFX, Motion Graphics, Environment Art, Post-Production and related areas.
-</p>
-
-<div class="hero-buttons">
-
-<a
-href="careers.html"
-class="btn"
->
-View Careers
-</a>
-
-<a
-href="contact.html"
-class="btn-outline"
->
-Contact Studio
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-LONG TERM VISION
-===================================================== -->
-
-<section>
-
-<div class="container">
-
-
-<div class="section-title">
-
-<div class="hero-label">
-Long-Term Vision
-</div>
-
-<h2>
-Growing A Studio For Bigger Creative Possibilities
-</h2>
-
-<p>
-Our objective is to continue developing the people, technology and production capabilities required for increasingly ambitious visual projects.
-</p>
-
-</div>
-
-
-<div class="grid">
-
-
-<div class="card department-card">
-
-<div class="department-number">
-01
-</div>
-
-<h3>
-Develop Talent
-</h3>
-
-<p>
-Build a network of talented creative professionals with different skills and areas of expertise.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-02
-</div>
-
-<h3>
-Expand Capabilities
-</h3>
-
-<p>
-Continue developing our CGI, animation, VFX, motion graphics and digital production capabilities.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-03
-</div>
-
-<h3>
-Build Partnerships
-</h3>
-
-<p>
-Create long-term relationships with studios, agencies, brands, production companies and creative professionals.
-</p>
-
-</div>
-
-
-<div class="card department-card">
-
-<div class="department-number">
-04
-</div>
-
-<h3>
-Create Bigger Productions
-</h3>
-
-<p>
-Work toward larger animation, CGI, commercial, film and digital media productions in the future.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-TEAM MESSAGE
-===================================================== -->
-
-<section class="dark">
-
-<div class="container">
-
-<div class="section-title">
-
-<div class="hero-label">
-Our Team
-</div>
-
-<h2>
-Different Talents. One Creative Direction.
-</h2>
-
-<p>
-Every successful visual production is the result of people working together. At PT Autotube Crew Studio, we are building a creative environment where artists and production professionals can contribute their skills toward a shared vision.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-FINAL CTA
-===================================================== -->
-
-<section class="final-cta">
-
-<div class="container">
-
-<div class="final-cta-content">
-
-<div class="hero-label">
-Build Something Great
-</div>
-
-<h2>
-Let's Create The Next Visual Experience Together
-</h2>
-
-<p>
-Have a CGI, animation, VFX, commercial or digital production project in mind? Talk to our studio and let's explore the possibilities.
-</p>
-
-<div class="hero-buttons">
-
-<a
-href="contact.html"
-class="btn"
->
-Start A Conversation
-</a>
-
-<a
-href="portfolio.html"
-class="btn-outline"
->
-View Portfolio
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-FOOTER
-===================================================== -->
 
 <footer>
 
@@ -3052,273 +843,112 @@ FOOTER
 
 <div class="footer-grid">
 
+<div>
 
-<div class="footer-brand">
-
-<a
-href="index.html"
-class="logo"
->
-
-<img
-src="logo.png.png"
-alt="PT Autotube Crew Studio Logo"
->
-
-<span>
-PT Autotube Crew Studio
-</span>
-
-</a>
+<h3>PT Autotube Crew Studio</h3>
 
 <p>
-Creative production studio based in Jakarta, Indonesia, specializing in CGI, 3D Animation, Visual Effects, Motion Graphics and digital production.
+Creative production studio based in Jakarta, Indonesia, delivering CGI,
+3D animation, VFX, visualization and digital production services.
 </p>
 
+</div>
 
-<div class="social-links">
+<div>
 
-<a
-href="https://www.youtube.com/@ptautotubecrewstudio"
-target="_blank"
-rel="noopener noreferrer"
-aria-label="YouTube"
->
-YT
+<h3>Company</h3>
+
+<p><a href="about.html">About Us</a></p>
+<p><a href="team.html">Our Team</a></p>
+<p><a href="careers.html">Careers</a></p>
+<p><a href="partners.html">Partners</a></p>
+
+</div>
+
+<div>
+
+<h3>Production</h3>
+
+<p><a href="services.html">Services</a></p>
+<p><a href="technology.html">Technology</a></p>
+<p><a href="portfolio.html">Portfolio</a></p>
+<p><a href="showreel.html">Showreel</a></p>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>Jakarta, Indonesia</p>
+<p>autotubecrewstudio@gmail.com</p>
+<p>
+<a href="https://www.autotubecrewstudio.com" target="_blank">
+www.autotubecrewstudio.com
 </a>
+</p>
 
-<a
-href="https://www.linkedin.com/company/ptautotubecrewstudio/"
-target="_blank"
-rel="noopener noreferrer"
-aria-label="LinkedIn"
->
-IN
+<p>
+<a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank">
+YouTube
 </a>
+</p>
+
+<p>
+<a href="https://www.linkedin.com/company/ptautotubecrewstudio/" target="_blank">
+LinkedIn
+</a>
+</p>
 
 </div>
 
 </div>
-
-
-<div class="footer-column">
-
-<h3>
-Studio
-</h3>
-
-<a href="about.html">
-About Us
-</a>
-
-<a href="team.html">
-Our Team
-</a>
-
-<a href="partners.html">
-Partners
-</a>
-
-<a href="careers.html">
-Careers
-</a>
-
-</div>
-
-
-<div class="footer-column">
-
-<h3>
-Production
-</h3>
-
-<a href="services.html">
-Services
-</a>
-
-<a href="technology.html">
-Technology
-</a>
-
-<a href="portfolio.html">
-Portfolio
-</a>
-
-<a href="showreel.html">
-Showreel
-</a>
-
-</div>
-
-
-<div class="footer-column">
-
-<h3>
-Resources
-</h3>
-
-<a href="blog.html">
-Blog
-</a>
-
-<a href="news.html">
-News
-</a>
-
-<a href="press-kit.html">
-Press Kit
-</a>
-
-<a href="contact.html">
-Contact
-</a>
-
-</div>
-
-</div>
-
 
 <div class="footer-bottom">
-
-<div>
 © 2026 PT Autotube Crew Studio. All Rights Reserved.
-</div>
-
-<div>
-Jakarta, Indonesia
-</div>
-
 </div>
 
 </div>
 
 </footer>
 
-
-<!-- =====================================================
-BACK TO TOP
-===================================================== -->
-
-<button
-id="topBtn"
-type="button"
-aria-label="Back to top"
->
-↑
-</button>
-
-
-<!-- =====================================================
-JAVASCRIPT
-===================================================== -->
+<button id="topBtn" aria-label="Back to top">↑</button>
 
 <script>
 
-/* =====================================================
-HEADER SCROLL EFFECT
-===================================================== */
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
 
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", function(){
-
-if(window.scrollY > 50){
-
-header.classList.add("scrolled");
-
-}else{
-
-header.classList.remove("scrolled");
-
-}
-
+mobileMenuBtn.addEventListener("click", function(){
+    mobileMenu.classList.toggle("active");
 });
 
-
-/* =====================================================
-SCROLL REVEAL
-===================================================== */
-
-const revealElements = document.querySelectorAll(
-
-".card, .expertise-card, .team-intro, .section-title, .final-cta-content"
-
-);
-
-
-const revealObserver = new IntersectionObserver(
-
-function(entries){
-
-entries.forEach(function(entry){
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("visible");
-
-revealObserver.unobserve(entry.target);
-
-}
-
+mobileMenu.querySelectorAll("a").forEach(function(link){
+    link.addEventListener("click", function(){
+        mobileMenu.classList.remove("active");
+    });
 });
-
-},
-
-{
-
-threshold:.12
-
-}
-
-);
-
-
-revealElements.forEach(function(element){
-
-element.classList.add("reveal");
-
-revealObserver.observe(element);
-
-});
-
-
-/* =====================================================
-BACK TO TOP
-===================================================== */
 
 const topBtn = document.getElementById("topBtn");
 
-
 window.addEventListener("scroll", function(){
 
-if(window.scrollY > 600){
-
-topBtn.style.display = "flex";
-
-}else{
-
-topBtn.style.display = "none";
-
-}
+    if(window.scrollY > 300){
+        topBtn.style.display = "block";
+    }else{
+        topBtn.style.display = "none";
+    }
 
 });
-
 
 topBtn.addEventListener("click", function(){
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
 });
 
 </script>
 
-
 </body>
-
 </html>
