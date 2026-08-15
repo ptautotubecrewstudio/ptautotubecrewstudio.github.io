@@ -1,273 +1,811 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Industries We Serve | PT Autotube Crew Studio</title>
 
-<meta name="description" content="PT Autotube Crew Studio provides CGI, 3D Animation, Visual Effects, Motion Graphics and Video Production services across multiple industries worldwide.">
+<meta name="description" content="PT Autotube Crew Studio provides CGI, 3D animation, VFX, product visualization and digital production services for film, advertising, architecture, technology, automotive, education and other industries worldwide.">
+
+<meta name="author" content="PT Autotube Crew Studio">
+<meta name="robots" content="index, follow">
 
 <link rel="icon" href="logo.png.png">
 
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#050505;
-color:#ffffff;
-line-height:1.8;
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
-background:#0b0b0b;
-border-bottom:1px solid #222;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(0,0,0,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #222;
+}
+
+.header-inner{
+    min-height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
 }
 
 .logo{
-font-size:22px;
-font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:22px;
+    font-weight:700;
+}
+
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+nav li{
+    position:relative;
 }
 
 nav a{
-color:#ffffff;
-text-decoration:none;
-margin-left:20px;
-transition:.3s;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
 }
 
 nav a:hover{
-color:#e50914;
+    color:#e50914;
+}
+
+.dropdown{
+    position:absolute;
+    top:30px;
+    left:0;
+    width:245px;
+    background:#111;
+    border:1px solid #292929;
+    border-radius:12px;
+    padding:12px 0;
+    display:none;
+}
+
+nav li:hover .dropdown{
+    display:block;
+}
+
+.dropdown a{
+    display:block;
+    padding:10px 20px;
+}
+
+.dropdown a:hover{
+    background:#1b1b1b;
+}
+
+.mobile-btn{
+    display:none;
+    border:0;
+    background:none;
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.mobile-menu{
+    display:none;
+    background:#0b0b0b;
+    border-top:1px solid #222;
+}
+
+.mobile-menu.active{
+    display:block;
+}
+
+.mobile-menu a{
+    display:block;
+    padding:13px 5%;
+    border-bottom:1px solid #222;
 }
 
 .hero{
-padding:90px 10%;
-text-align:center;
+    padding:180px 0 110px;
+    background:
+        radial-gradient(circle at 80% 30%,rgba(229,9,20,.18),transparent 35%),
+        #050505;
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
+.hero-content{
+    max-width:950px;
+}
+
+.label{
+    display:inline-block;
+    color:#e50914;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:64px;
+    line-height:1.1;
+    margin-bottom:25px;
 }
 
 .hero p{
-max-width:900px;
-margin:auto;
-color:#cccccc;
+    max-width:850px;
+    color:#cfcfcf;
+    font-size:18px;
 }
 
-section{
-padding:70px 10%;
+.section{
+    padding:100px 0;
 }
 
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
+.section.dark{
+    background:#090909;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+.section-heading{
+    max-width:850px;
+    margin-bottom:55px;
 }
 
-.card{
-background:#111111;
-border:1px solid #222;
-border-radius:15px;
-padding:30px;
-transition:.3s;
+.section-heading h2{
+    font-size:44px;
+    line-height:1.2;
+    margin-bottom:18px;
 }
 
-.card:hover{
-transform:translateY(-6px);
-border-color:#e50914;
+.section-heading p{
+    color:#cfcfcf;
+    font-size:17px;
 }
 
-.card h3{
-margin-bottom:15px;
-color:#ffffff;
+.industry-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
-.card p{
-color:#cccccc;
+.industry-card{
+    background:#101010;
+    border:1px solid #242424;
+    border-radius:18px;
+    padding:32px;
+    min-height:250px;
+    transition:.35s;
+}
+
+.industry-card:hover{
+    transform:translateY(-7px);
+    border-color:#e50914;
+}
+
+.industry-number{
+    color:#e50914;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:18px;
+}
+
+.industry-card h3{
+    font-size:25px;
+    margin-bottom:14px;
+}
+
+.industry-card p{
+    color:#bdbdbd;
+    font-size:15px;
+}
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.process-card{
+    padding:30px;
+    border-left:2px solid #e50914;
+    background:#101010;
+}
+
+.process-card h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.process-card p{
+    color:#bdbdbd;
+    font-size:14px;
 }
 
 .cta{
-text-align:center;
-padding:80px 10%;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:750px;
+    margin:0 auto 30px;
+    color:#cfcfcf;
 }
 
 .btn{
-display:inline-block;
-padding:15px 35px;
-background:#e50914;
-color:#ffffff;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-margin-top:25px;
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:50px;
+    background:#e50914;
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
 }
 
 .btn:hover{
-background:#ff2d2d;
+    background:#ff2935;
+    transform:translateY(-3px);
 }
 
 footer{
-padding:30px;
-text-align:center;
-border-top:1px solid #222;
-color:#999999;
+    background:#090909;
+    border-top:1px solid #222;
+    padding:60px 0 25px;
 }
 
-</style>
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    gap:40px;
+}
 
+footer h3{
+    margin-bottom:18px;
+    font-size:20px;
+}
+
+footer p,
+footer a{
+    color:#999;
+    font-size:14px;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+.footer-links a{
+    display:block;
+    margin-bottom:8px;
+}
+
+.copyright{
+    border-top:1px solid #222;
+    margin-top:45px;
+    padding-top:25px;
+    text-align:center;
+    color:#777;
+    font-size:13px;
+}
+
+#topBtn{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:50px;
+    height:50px;
+    border:0;
+    border-radius:50%;
+    background:#e50914;
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+    z-index:1000;
+}
+
+@media(max-width:1100px){
+    nav{
+        display:none;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .industry-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px){
+    .container{
+        width:92%;
+    }
+
+    .hero{
+        padding:140px 0 80px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    .section{
+        padding:70px 0;
+    }
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .industry-grid,
+    .process,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .industry-card{
+        min-height:auto;
+    }
+
+    .cta h2{
+        font-size:32px;
+    }
+
+    .logo{
+        font-size:16px;
+    }
+
+    .logo img{
+        width:40px;
+        height:40px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
+    <div class="container header-inner">
 
-<div class="logo">
+        <a href="index.html" class="logo">
+            <img src="logo.png.png" alt="PT Autotube Crew Studio">
+            <span>PT Autotube Crew Studio</span>
+        </a>
 
-PT Autotube Crew Studio
+        <button class="mobile-btn" id="mobileBtn" aria-label="Open navigation">
+            ☰
+        </button>
 
-</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
 
-<nav>
+                <li>
+                    <a href="#">About ▾</a>
+                    <div class="dropdown">
+                        <a href="about.html">About Us</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="partners.html">Partners</a>
+                    </div>
+                </li>
 
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="industries-we-serve.html">Industries</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
+                <li>
+                    <a href="#">Services ▾</a>
+                    <div class="dropdown">
+                        <a href="services.html">Services</a>
+                        <a href="technology.html">Technology</a>
+                        <a href="industries.html">Industries</a>
+                        <a href="pricing.html">Pricing</a>
+                    </div>
+                </li>
 
-</nav>
+                <li>
+                    <a href="#">Portfolio ▾</a>
+                    <div class="dropdown">
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="showreel.html">Showreel</a>
+                        <a href="case-studies.html">Case Studies</a>
+                        <a href="clients.html">Clients</a>
+                        <a href="testimonials.html">Testimonials</a>
+                    </div>
+                </li>
 
+                <li>
+                    <a href="#">Resources ▾</a>
+                    <div class="dropdown">
+                        <a href="downloads.html">Downloads</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="news.html">News</a>
+                        <a href="events.html">Events</a>
+                        <a href="press-kit.html">Press Kit</a>
+                        <a href="media-kit.html">Media Kit</a>
+                    </div>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Our Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="partners.html">Partners</a>
+        <a href="services.html">Services</a>
+        <a href="technology.html">Technology</a>
+        <a href="industries.html">Industries</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="showreel.html">Showreel</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="clients.html">Clients</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="blog.html">Blog</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="press-kit.html">Press Kit</a>
+        <a href="media-kit.html">Media Kit</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </header>
 
+<main>
+
 <section class="hero">
+    <div class="container">
+        <div class="hero-content">
 
-<h1>Industries We Serve</h1>
+            <span class="label">Industries We Serve</span>
 
-<p>
+            <h1>
+                Visual Production for Different Industries
+            </h1>
 
-We create professional CGI, 3D Animation, Visual Effects, Motion Graphics and Digital Content for businesses and organizations across a wide range of industries.
+            <p>
+                PT Autotube Crew Studio provides CGI, 3D animation, VFX,
+                visualization and digital production support for businesses,
+                agencies and production teams across multiple industries.
+            </p>
 
-</p>
-
+        </div>
+    </div>
 </section>
 
-<section>
+<section class="section dark">
+    <div class="container">
 
-<h2 class="section-title">
+        <div class="section-heading">
+            <span class="label">Our Industry Experience</span>
 
-Our Industry Expertise
+            <h2>
+                Creative Solutions Built Around Your Industry
+            </h2>
 
-</h2>
+            <p>
+                Every industry has different communication, visualization
+                and production requirements. We adapt our creative and
+                technical workflow to the needs of each project.
+            </p>
+        </div>
 
-<div class="grid">
+        <div class="industry-grid">
 
-<div class="card">
-<h3>Advertising & Marketing</h3>
-<p>Commercials, product campaigns, digital advertising and branded visual content.</p>
-</div>
+            <div class="industry-card">
+                <div class="industry-number">01</div>
+                <h3>Film & Animation</h3>
+                <p>
+                    CGI assets, 3D environments, animation, VFX and cinematic
+                    visual production for films and animated projects.
+                </p>
+            </div>
 
-<div class="card">
-<h3>Automotive</h3>
-<p>Vehicle visualization, product launches, promotional videos and CGI marketing assets.</p>
-</div>
+            <div class="industry-card">
+                <div class="industry-number">02</div>
+                <h3>Advertising & Commercials</h3>
+                <p>
+                    High-quality CGI and motion content designed for
+                    advertising campaigns, branded content and commercials.
+                </p>
+            </div>
 
-<div class="card">
-<h3>Healthcare & Medical</h3>
-<p>Medical animation, healthcare visualization, educational videos and scientific communication.</p>
-</div>
+            <div class="industry-card">
+                <div class="industry-number">03</div>
+                <h3>Product & Consumer Brands</h3>
+                <p>
+                    Photorealistic product visualization, product animation
+                    and marketing visuals for consumer brands.
+                </p>
+            </div>
 
-<div class="card">
-<h3>Manufacturing</h3>
-<p>Industrial animations, product demonstrations and technical visualizations.</p>
-</div>
+            <div class="industry-card">
+                <div class="industry-number">04</div>
+                <h3>Architecture & Real Estate</h3>
+                <p>
+                    Interior, exterior and architectural visualization for
+                    property developers, architects and real estate teams.
+                </p>
+            </div>
 
-<div class="card">
-<h3>Architecture & Real Estate</h3>
-<p>Architectural visualization, interior rendering, virtual walkthroughs and property marketing.</p>
-</div>
+            <div class="industry-card">
+                <div class="industry-number">05</div>
+                <h3>Automotive</h3>
+                <p>
+                    3D vehicle visualization, environments, product imagery
+                    and cinematic automotive content.
+                </p>
+            </div>
 
-<div class="card">
-<h3>Technology</h3>
-<p>Software demonstrations, product launches, explainer animations and promotional media.</p>
-</div>
+            <div class="industry-card">
+                <div class="industry-number">06</div>
+                <h3>Technology & Digital Products</h3>
+                <p>
+                    CGI visualization, product demonstrations, motion
+                    graphics and digital content for technology companies.
+                </p>
+            </div>
 
-<div class="card">
-<h3>Education</h3>
-<p>Educational animation, e-learning content, training videos and visual presentations.</p>
-</div>
+            <div class="industry-card">
+                <div class="industry-number">07</div>
+                <h3>Games & Interactive Media</h3>
+                <p>
+                    3D environments, assets, visualization and production
+                    support for games and interactive experiences.
+                </p>
+            </div>
 
-<div class="card">
-<h3>Entertainment & Film</h3>
-<p>CGI, visual effects, cinematic trailers, animated films and digital storytelling.</p>
-</div>
+            <div class="industry-card">
+                <div class="industry-number">08</div>
+                <h3>Education & Training</h3>
+                <p>
+                    3D visualization, animation and digital content for
+                    educational and training applications.
+                </p>
+            </div>
 
-<div class="card">
-<h3>E-Commerce & Retail</h3>
-<p>Product visualization, online advertising, social media videos and promotional content.</p>
-</div>
+            <div class="industry-card">
+                <div class="industry-number">09</div>
+                <h3>Corporate & Digital Media</h3>
+                <p>
+                    Professional visual content, motion graphics and CGI
+                    production for corporate communication and digital media.
+                </p>
+            </div>
 
-<div class="card">
-<h3>Consumer Products</h3>
-<p>Product animation, packaging visualization and commercial marketing campaigns.</p>
-</div>
+        </div>
 
-</div>
-
+    </div>
 </section>
 
-<section class="cta">
+<section class="section">
+    <div class="container">
 
-<h2>
+        <div class="section-heading">
+            <span class="label">How We Work</span>
 
-Your Industry. Our Creative Expertise.
+            <h2>
+                A Flexible Production Approach
+            </h2>
 
-</h2>
+            <p>
+                We can support projects at different stages, from individual
+                creative tasks to complete digital production workflows.
+            </p>
+        </div>
 
-<p>
+        <div class="process">
 
-Whatever your industry, PT Autotube Crew Studio is ready to transform your ideas into high-quality visual experiences.
+            <div class="process-card">
+                <h3>Understand</h3>
+                <p>
+                    We review the project's objectives, audience, creative
+                    direction and technical requirements.
+                </p>
+            </div>
 
-</p>
+            <div class="process-card">
+                <h3>Plan</h3>
+                <p>
+                    We establish the appropriate production approach,
+                    assets, timeline and delivery requirements.
+                </p>
+            </div>
 
-<a href="contact.html" class="btn">
+            <div class="process-card">
+                <h3>Create</h3>
+                <p>
+                    Our artists and production team develop the required
+                    CGI, animation, visualization or visual effects.
+                </p>
+            </div>
 
-Discuss Your Project
+            <div class="process-card">
+                <h3>Deliver</h3>
+                <p>
+                    Final assets and content are prepared according to the
+                    agreed technical and delivery specifications.
+                </p>
+            </div>
 
-</a>
+        </div>
 
+    </div>
 </section>
+
+<section class="cta dark">
+    <div class="container">
+
+        <h2>Have a Project in Your Industry?</h2>
+
+        <p>
+            Tell us about your project and requirements. We can discuss
+            the creative direction, production scope and possible workflow.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Discuss Your Project
+        </a>
+
+    </div>
+</section>
+
+</main>
 
 <footer>
+    <div class="container">
 
-© PT Autotube Crew Studio
+        <div class="footer-grid">
 
-<br>
+            <div>
+                <h3>PT Autotube Crew Studio</h3>
+                <p>
+                    CGI, 3D Animation, Visual Effects, Product Visualization
+                    and digital production studio based in Jakarta, Indonesia.
+                </p>
+            </div>
 
-Jakarta, Indonesia
+            <div class="footer-links">
+                <h3>Company</h3>
+                <a href="about.html">About Us</a>
+                <a href="team.html">Our Team</a>
+                <a href="careers.html">Careers</a>
+                <a href="partners.html">Partners</a>
+            </div>
 
+            <div class="footer-links">
+                <h3>Production</h3>
+                <a href="services.html">Services</a>
+                <a href="technology.html">Technology</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="showreel.html">Showreel</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Jakarta, Indonesia</p>
+                <p>autotubecrewstudio@gmail.com</p>
+                <p>
+                    <a href="contact.html">Contact Studio</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 PT Autotube Crew Studio. All Rights Reserved.
+        </div>
+
+    </div>
 </footer>
 
-</body>
+<button id="topBtn" aria-label="Back to top">↑</button>
 
+<script>
+const mobileBtn = document.getElementById("mobileBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+mobileBtn.addEventListener("click", function(){
+    mobileMenu.classList.toggle("active");
+});
+
+const mobileLinks = mobileMenu.querySelectorAll("a");
+
+mobileLinks.forEach(function(link){
+    link.addEventListener("click", function(){
+        mobileMenu.classList.remove("active");
+    });
+});
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function(){
+
+    if(
+        document.documentElement.scrollTop > 350 ||
+        document.body.scrollTop > 350
+    ){
+        topBtn.style.display = "block";
+    }else{
+        topBtn.style.display = "none";
+    }
+
+});
+
+topBtn.addEventListener("click", function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+});
+</script>
+
+</body>
 </html>
