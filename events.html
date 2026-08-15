@@ -1,300 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Events | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Discover upcoming events, exhibitions, workshops, webinars and company activities from PT Autotube Crew Studio.">
+<meta name="description" content="Events, exhibitions, industry activities, creative sessions and studio events from PT Autotube Crew Studio.">
 
 <link rel="icon" href="logo.png.png">
 
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#050505;
-color:#ffffff;
-line-height:1.8;
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
-background:#0b0b0b;
-border-bottom:1px solid #222;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #222;
+    z-index:1000;
+}
+
+header .container{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
-font-size:22px;
-font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:22px;
+    font-weight:700;
+}
+
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
 }
 
 nav a{
-color:#ffffff;
-text-decoration:none;
-margin-left:20px;
-transition:.3s;
+    font-size:15px;
+    transition:.3s;
 }
 
 nav a:hover{
-color:#e50914;
+    color:#e50914;
+}
+
+.mobile-btn{
+    display:none;
+    background:none;
+    border:0;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.mobile-nav{
+    display:none;
+    background:#0b0b0b;
+    border-top:1px solid #222;
+}
+
+.mobile-nav.active{
+    display:block;
+}
+
+.mobile-nav a{
+    display:block;
+    padding:14px 5%;
+    border-bottom:1px solid #222;
 }
 
 .hero{
-padding:90px 10%;
-text-align:center;
+    padding:170px 0 90px;
+    text-align:center;
+    background:linear-gradient(180deg,#090909,#050505);
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:20px;
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:20px;
 }
 
 .hero p{
-max-width:850px;
-margin:auto;
-color:#cccccc;
+    max-width:820px;
+    margin:auto;
+    color:#cfcfcf;
+    font-size:17px;
 }
 
 section{
-padding:70px 10%;
+    padding:90px 0;
 }
 
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
+.events-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+.event-card{
+    background:#101010;
+    border:1px solid #222;
+    border-radius:18px;
+    padding:30px;
+    transition:.35s;
 }
 
-.card{
-background:#111;
-padding:30px;
-border-radius:15px;
-border:1px solid #222;
-transition:.3s;
+.event-card:hover{
+    transform:translateY(-7px);
+    border-color:#e50914;
 }
 
-.card:hover{
-transform:translateY(-6px);
-border-color:#e50914;
+.event-type{
+    color:#e50914;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:12px;
 }
 
-.date{
-color:#e50914;
-font-weight:bold;
-margin-bottom:12px;
+.event-card h2{
+    font-size:24px;
+    line-height:1.35;
+    margin-bottom:15px;
 }
 
-.card h3{
-margin-bottom:15px;
+.event-card p{
+    color:#bbb;
+    font-size:15px;
+    margin-bottom:22px;
 }
 
-.card p{
-color:#cccccc;
+.event-status{
+    display:inline-block;
+    padding:7px 15px;
+    border:1px solid #444;
+    border-radius:30px;
+    font-size:12px;
+    color:#ccc;
 }
 
-.notice{
-max-width:900px;
-margin:60px auto;
-background:#111;
-padding:35px;
-border:1px solid #222;
-border-radius:15px;
-text-align:center;
+.info-box{
+    margin-top:65px;
+    padding:45px;
+    background:#0d0d0d;
+    border:1px solid #222;
+    border-radius:20px;
+    text-align:center;
 }
 
-.notice p{
-color:#cccccc;
+.info-box h2{
+    font-size:32px;
+    margin-bottom:15px;
 }
 
-.cta{
-text-align:center;
-padding:80px 10%;
-}
-
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:#e50914;
-color:#ffffff;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-margin-top:25px;
-}
-
-.btn:hover{
-background:#ff3030;
+.info-box p{
+    max-width:750px;
+    margin:auto;
+    color:#bbb;
 }
 
 footer{
-padding:30px;
-text-align:center;
-border-top:1px solid #222;
-color:#999999;
+    padding:55px 0;
+    background:#090909;
+    border-top:1px solid #222;
 }
 
-</style>
+footer .container{
+    text-align:center;
+}
 
+footer p{
+    color:#888;
+    font-size:14px;
+}
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .events-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .container{
+        width:92%;
+    }
+
+    .logo{
+        font-size:16px;
+    }
+
+    .logo img{
+        width:40px;
+        height:40px;
+    }
+
+    .hero{
+        padding:135px 0 70px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .events-grid{
+        grid-template-columns:1fr;
+    }
+
+    .event-card{
+        padding:24px;
+    }
+
+    .info-box{
+        padding:30px 22px;
+    }
+
+    .info-box h2{
+        font-size:27px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
+    <div class="container">
 
-<div class="logo">
+        <a href="index.html" class="logo">
+            <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+            <span>PT Autotube Crew Studio</span>
+        </a>
 
-PT Autotube Crew Studio
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-</div>
+        <button class="mobile-btn" id="eventsMenuButton" aria-label="Open menu">
+            ☰
+        </button>
 
-<nav>
+    </div>
 
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="events.html">Events</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
+    <div class="mobile-nav" id="eventsMobileNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="clients.html">Clients</a>
+        <a href="blog.html">Blog</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </header>
 
+<main>
+
 <section class="hero">
-
-<h1>Events</h1>
-
-<p>
-
-Follow PT Autotube Crew Studio for upcoming exhibitions, conferences, creative workshops, webinars and special studio events.
-
-</p>
-
+    <div class="container">
+        <h1>Events & Industry Activities</h1>
+        <p>
+            Discover upcoming studio activities, industry participation,
+            creative sessions and professional events connected with
+            PT Autotube Crew Studio.
+        </p>
+    </div>
 </section>
 
 <section>
+    <div class="container">
 
-<h2 class="section-title">
+        <div class="events-grid">
 
-Upcoming Events
+            <article class="event-card">
+                <div class="event-type">STUDIO ACTIVITY</div>
+                <h2>Creative Production Sessions</h2>
+                <p>
+                    Internal creative sessions focused on developing ideas,
+                    improving production workflows and exploring new visual
+                    production techniques.
+                </p>
+                <span class="event-status">Studio Activity</span>
+            </article>
 
-</h2>
+            <article class="event-card">
+                <div class="event-type">INDUSTRY</div>
+                <h2>CGI & Animation Industry Events</h2>
+                <p>
+                    We follow and participate in relevant CGI, animation,
+                    visual effects and digital production industry activities.
+                </p>
+                <span class="event-status">Industry</span>
+            </article>
 
-<div class="grid">
+            <article class="event-card">
+                <div class="event-type">NETWORKING</div>
+                <h2>Creative Collaboration Meetings</h2>
+                <p>
+                    Professional meetings with artists, agencies, production
+                    companies and potential creative partners.
+                </p>
+                <span class="event-status">Networking</span>
+            </article>
 
-<div class="card">
+            <article class="event-card">
+                <div class="event-type">LEARNING</div>
+                <h2>Training & Knowledge Sessions</h2>
+                <p>
+                    Knowledge-sharing activities designed to improve artistic,
+                    technical and production capabilities.
+                </p>
+                <span class="event-status">Learning</span>
+            </article>
 
-<div class="date">Coming Soon</div>
+            <article class="event-card">
+                <div class="event-type">SHOWCASE</div>
+                <h2>Portfolio & Showreel Presentations</h2>
+                <p>
+                    Presentations highlighting selected studio work,
+                    production capabilities and creative achievements.
+                </p>
+                <span class="event-status">Showcase</span>
+            </article>
 
-<h3>Studio Showcase</h3>
+            <article class="event-card">
+                <div class="event-type">GLOBAL</div>
+                <h2>International Creative Collaboration</h2>
+                <p>
+                    Opportunities to connect with international creative teams
+                    and explore future production collaborations.
+                </p>
+                <span class="event-status">Global Activity</span>
+            </article>
 
-<p>
+        </div>
 
-We will present our latest CGI, 3D Animation and Visual Effects projects through online and offline showcases.
+        <div class="info-box">
+            <h2>Upcoming Events</h2>
+            <p>
+                Official event dates and announcements will be published here
+                when confirmed by PT Autotube Crew Studio.
+            </p>
+        </div>
 
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="date">Future Event</div>
-
-<h3>Creative Workshops</h3>
-
-<p>
-
-Educational sessions covering Blender, Unreal Engine 5, CGI production and professional animation workflows.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="date">Future Event</div>
-
-<h3>Industry Conferences</h3>
-
-<p>
-
-Meet our team at future animation, VFX and digital production conferences around the world.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="notice">
-
-<h2 style="margin-bottom:20px;">
-
-Stay Connected
-
-</h2>
-
-<p>
-
-New events and announcements will be published here as PT Autotube Crew Studio continues to grow and participate in the global creative industry.
-
-</p>
-
-</div>
-
+    </div>
 </section>
 
-<section class="cta">
-
-<h2>
-
-Don't Miss Our Next Event
-
-</h2>
-
-<p>
-
-Follow our website and YouTube channel for the latest event announcements, showcases and creative presentations.
-
-</p>
-
-<a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank" class="btn">
-
-Visit YouTube
-
-</a>
-
-</section>
+</main>
 
 <footer>
-
-© PT Autotube Crew Studio
-
-<br>
-
-Jakarta, Indonesia
-
+    <div class="container">
+        <p>© 2026 PT Autotube Crew Studio. All Rights Reserved.</p>
+    </div>
 </footer>
 
-</body>
+<script>
+const eventsMenuButton = document.getElementById("eventsMenuButton");
+const eventsMobileNav = document.getElementById("eventsMobileNav");
 
+eventsMenuButton.addEventListener("click", function(){
+    eventsMobileNav.classList.toggle("active");
+});
+
+eventsMobileNav.querySelectorAll("a").forEach(function(link){
+    link.addEventListener("click", function(){
+        eventsMobileNav.classList.remove("active");
+    });
+});
+</script>
+
+</body>
 </html>
