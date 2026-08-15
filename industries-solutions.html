@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Industry Solutions | PT Autotube Crew Studio</title>
 
-<meta name="description" content="PT Autotube Crew Studio provides tailored CGI, 3D animation, VFX, product visualization, architectural visualization and digital production solutions for global businesses and creative teams.">
-
-<meta name="keywords" content="CGI solutions, 3D animation solutions, VFX production solutions, product visualization, architectural visualization, digital production, PT Autotube Crew Studio">
-
+<meta name="description" content="Industry-focused CGI, 3D animation, VFX, product visualization and digital production solutions from PT Autotube Crew Studio.">
 <meta name="author" content="PT Autotube Crew Studio">
 <meta name="robots" content="index, follow">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Industry Solutions | PT Autotube Crew Studio">
-<meta property="og:description" content="Tailored CGI, 3D animation, VFX and digital production solutions for businesses, brands, agencies and production companies.">
-<meta property="og:image" content="logo.png.png">
-<meta property="og:url" content="https://www.autotubecrewstudio.com/industries-solutions.html">
 
 <link rel="icon" href="logo.png.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -64,24 +51,24 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-background:rgba(0,0,0,.92);
+background:rgba(0,0,0,.93);
 backdrop-filter:blur(15px);
-z-index:999;
 border-bottom:1px solid rgba(255,255,255,.08);
+z-index:1000;
 }
 
 header .container{
+min-height:82px;
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:16px 0;
+justify-content:space-between;
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:10px;
-font-size:22px;
+gap:11px;
+font-size:21px;
 font-weight:700;
 }
 
@@ -93,48 +80,19 @@ object-fit:contain;
 
 nav ul{
 display:flex;
-list-style:none;
-gap:25px;
 align-items:center;
+gap:25px;
+list-style:none;
 }
 
-nav li{
-position:relative;
-}
-
-nav li a{
+nav a{
 font-size:15px;
 font-weight:500;
 transition:.3s;
 }
 
-nav li a:hover{
+nav a:hover{
 color:#e50914;
-}
-
-.dropdown{
-position:absolute;
-top:100%;
-left:0;
-min-width:240px;
-background:#111;
-border:1px solid #292929;
-border-radius:12px;
-padding:12px 0;
-display:none;
-}
-
-.dropdown a{
-display:block;
-padding:10px 20px;
-}
-
-.dropdown a:hover{
-background:#1b1b1b;
-}
-
-nav li:hover .dropdown{
-display:block;
 }
 
 .mobile-menu-btn{
@@ -142,7 +100,7 @@ display:none;
 background:none;
 border:none;
 color:#fff;
-font-size:29px;
+font-size:30px;
 cursor:pointer;
 }
 
@@ -151,34 +109,31 @@ display:none;
 }
 
 .hero{
-padding:170px 0 100px;
-background:
-radial-gradient(circle at 75% 25%,rgba(229,9,20,.12),transparent 35%),
-#050505;
-}
-
-.hero-content{
-max-width:950px;
-margin:auto;
+padding:180px 0 110px;
 text-align:center;
+background:linear-gradient(135deg,#050505,#111);
 }
 
 .hero h1{
 font-size:58px;
-line-height:1.15;
 font-weight:800;
+line-height:1.15;
 margin-bottom:25px;
 }
 
+.hero h1 span{
+color:#e50914;
+}
+
 .hero p{
-font-size:18px;
-color:#cfcfcf;
-max-width:820px;
+max-width:850px;
 margin:auto;
+font-size:18px;
+color:#ccc;
 }
 
 section{
-padding:100px 0;
+padding:90px 0;
 }
 
 .dark{
@@ -187,169 +142,77 @@ background:#090909;
 
 .section-title{
 text-align:center;
-max-width:850px;
-margin:0 auto 60px;
+margin-bottom:55px;
 }
 
 .section-title h2{
 font-size:42px;
-margin-bottom:18px;
+margin-bottom:15px;
 }
 
 .section-title p{
-font-size:16px;
-color:#bdbdbd;
+max-width:800px;
+margin:auto;
+color:#aaa;
 }
 
-.solution-grid{
+.grid{
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:28px;
 }
 
-.solution-card{
+.card{
 background:#101010;
 border:1px solid #242424;
 border-radius:18px;
-padding:35px;
+padding:32px;
 transition:.35s;
 }
 
-.solution-card:hover{
+.card:hover{
 transform:translateY(-7px);
 border-color:#e50914;
 }
 
-.solution-label{
-font-size:13px;
-font-weight:700;
-letter-spacing:1px;
+.card h3{
+font-size:24px;
+margin-bottom:13px;
+}
+
+.card p{
+font-size:15px;
+color:#aaa;
+}
+
+.card-number{
 color:#e50914;
+font-weight:700;
+font-size:14px;
 margin-bottom:14px;
+letter-spacing:1px;
 }
 
-.solution-card h3{
-font-size:26px;
-margin-bottom:15px;
-}
-
-.solution-card p{
-font-size:15px;
-color:#bdbdbd;
-}
-
-.solution-card ul{
-margin-top:20px;
-padding-left:20px;
-color:#aaa;
-font-size:14px;
-}
-
-.solution-card li{
-margin-bottom:7px;
-}
-
-.process-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
-
-.process-card{
-background:#101010;
-border:1px solid #242424;
-border-radius:16px;
-padding:28px;
-}
-
-.process-number{
-font-size:30px;
-font-weight:800;
-color:#e50914;
-margin-bottom:15px;
-}
-
-.process-card h3{
-font-size:21px;
-margin-bottom:10px;
-}
-
-.process-card p{
-font-size:14px;
-color:#aaa;
-}
-
-.two-column{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-
-.two-column h2{
-font-size:42px;
-line-height:1.2;
-margin-bottom:20px;
-}
-
-.two-column p{
-color:#bbb;
-margin-bottom:18px;
-}
-
-.check-list{
-list-style:none;
-margin-top:25px;
-}
-
-.check-list li{
-padding:12px 0;
-border-bottom:1px solid #252525;
+.solution{
+margin-top:22px;
+padding-top:20px;
+border-top:1px solid #292929;
 color:#ccc;
+font-size:14px;
 }
 
-.check-list li::before{
-content:"✓";
-color:#e50914;
-font-weight:700;
-margin-right:12px;
-}
-
-.solution-box{
-background:#101010;
-border:1px solid #292929;
-border-radius:20px;
-padding:40px;
-}
-
-.solution-box h3{
-font-size:27px;
-margin-bottom:15px;
-}
-
-.solution-box p{
-color:#aaa;
-font-size:15px;
+.solution strong{
+color:#fff;
 }
 
 .cta{
 text-align:center;
-max-width:850px;
-margin:auto;
-}
-
-.cta h2{
-font-size:42px;
-margin-bottom:20px;
-}
-
-.cta p{
-color:#bbb;
-margin-bottom:30px;
+background:#0d0d0d;
 }
 
 .btn{
 display:inline-block;
+margin-top:30px;
 padding:15px 35px;
 background:#e50914;
 border-radius:50px;
@@ -358,62 +221,44 @@ transition:.3s;
 }
 
 .btn:hover{
-background:#ff2f3d;
+background:#ff303d;
 transform:translateY(-3px);
 }
 
 footer{
-background:#090909;
+background:#080808;
 border-top:1px solid #222;
 padding:60px 0 30px;
 }
 
-.footer-grid{
-display:grid;
+footer .grid{
 grid-template-columns:2fr 1fr 1fr 1.5fr;
-gap:35px;
 }
 
 footer h3{
 margin-bottom:15px;
 }
 
-footer p{
-color:#999;
+footer p,
+footer a{
 font-size:14px;
-margin-bottom:8px;
+color:#999;
 }
 
 footer a:hover{
-color:#e50914;
-}
-
-.footer-bottom{
-border-top:1px solid #222;
-margin-top:40px;
-padding-top:25px;
-text-align:center;
-color:#777;
-font-size:14px;
-}
-
-#topBtn{
-position:fixed;
-right:25px;
-bottom:25px;
-width:52px;
-height:52px;
-border:none;
-border-radius:50%;
-background:#e50914;
 color:#fff;
-font-size:21px;
-cursor:pointer;
-display:none;
-z-index:998;
 }
 
-@media(max-width:1100px){
+.copyright{
+text-align:center;
+margin-top:45px;
+padding-top:25px;
+border-top:1px solid #222;
+color:#777;
+font-size:13px;
+}
+
+@media(max-width:900px){
 
 nav{
 display:none;
@@ -423,45 +268,62 @@ display:none;
 display:block;
 }
 
-.mobile-menu{
+.mobile-menu.active{
+display:block;
 position:absolute;
 top:100%;
 left:0;
 width:100%;
 background:#0b0b0b;
 border-top:1px solid #222;
-padding:15px 25px;
-}
-
-.mobile-menu.active{
-display:block;
+padding:15px 5%;
 }
 
 .mobile-menu a{
 display:block;
-padding:12px 5px;
+padding:13px 5px;
 border-bottom:1px solid #222;
-font-size:15px;
-}
-
-.process-grid{
-grid-template-columns:1fr 1fr;
-}
-
-.two-column{
-grid-template-columns:1fr;
 }
 
 .hero h1{
-font-size:50px;
+font-size:44px;
+}
+
+footer .grid{
+grid-template-columns:1fr 1fr;
 }
 
 }
 
-@media(max-width:650px){
+@media(max-width:600px){
 
 .container{
 width:90%;
+}
+
+.hero{
+padding-top:140px;
+padding-bottom:75px;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.section-title h2{
+font-size:32px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+footer .grid{
+grid-template-columns:1fr;
 }
 
 .logo{
@@ -473,59 +335,8 @@ width:40px;
 height:40px;
 }
 
-.hero{
-padding:135px 0 70px;
 }
-
-.hero h1{
-font-size:36px;
-}
-
-.hero p{
-font-size:15px;
-}
-
-section{
-padding:70px 0;
-}
-
-.section-title h2{
-font-size:31px;
-}
-
-.solution-grid{
-grid-template-columns:1fr;
-}
-
-.process-grid{
-grid-template-columns:1fr;
-}
-
-.two-column h2{
-font-size:31px;
-}
-
-.solution-box{
-padding:28px;
-}
-
-.cta h2{
-font-size:31px;
-}
-
-.btn{
-width:100%;
-text-align:center;
-}
-
-.footer-grid{
-grid-template-columns:1fr;
-}
-
-}
-
 </style>
-
 </head>
 
 <body>
@@ -535,146 +346,57 @@ grid-template-columns:1fr;
 <div class="container">
 
 <a href="index.html" class="logo">
-
 <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-
 <span>PT Autotube Crew Studio</span>
-
 </a>
 
-<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
 ☰
 </button>
 
 <nav>
-
 <ul>
-
-<li>
-<a href="index.html">Home</a>
-</li>
-
-<li>
-
-<a href="#">About ▼</a>
-
-<div class="dropdown">
-
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-
-</div>
-
-</li>
-
-<li>
-
-<a href="#">Services ▼</a>
-
-<div class="dropdown">
-
-<a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-
-</div>
-
-</li>
-
-<li>
-
-<a href="#">Portfolio ▼</a>
-
-<div class="dropdown">
-
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-
-</div>
-
-</li>
-
-<li>
-
-<a href="#">Resources ▼</a>
-
-<div class="dropdown">
-
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-
-</div>
-
-</li>
-
-<li>
-<a href="contact.html">Contact</a>
-</li>
-
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="global-services.html">Global Services</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
-
 </nav>
 
 </div>
 
-
 <div class="mobile-menu" id="mobileMenu">
-
 <a href="index.html">Home</a>
 <a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
 <a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
 <a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
+<a href="global-services.html">Global Services</a>
 <a href="contact.html">Contact</a>
-
 </div>
 
 </header>
 
+<main>
 
 <section class="hero">
 
 <div class="container">
 
-<div class="hero-content">
-
-<h1>Creative Solutions Built Around Your Project</h1>
+<h1>
+Industry <span>Solutions</span>
+</h1>
 
 <p>
-We combine creative direction, 3D production and modern digital workflows to develop visual solutions that match the goals, audience and technical requirements of each project.
+Creative CGI, animation, visualization and digital production solutions
+designed to support different industries, communication goals and
+production requirements.
 </p>
 
 </div>
 
-</div>
-
 </section>
-
 
 <section>
 
@@ -682,270 +404,253 @@ We combine creative direction, 3D production and modern digital workflows to dev
 
 <div class="section-title">
 
-<h2>Our Production Solutions</h2>
+<h2>Solutions by Industry</h2>
 
 <p>
-From individual assets to complete digital productions, our services can be structured around the specific needs of your project.
+We adapt our creative and technical production capabilities to the
+specific needs of each project and industry.
 </p>
 
 </div>
 
+<div class="grid">
 
-<div class="solution-grid">
+<div class="card">
 
+<div class="card-number">01 — ADVERTISING</div>
 
-<div class="solution-card">
-
-<div class="solution-label">VISUAL CONTENT</div>
-
-<h3>CGI & 3D Content</h3>
+<h3>Advertising & Commercials</h3>
 
 <p>
-Create high-quality digital imagery and animation for products, campaigns, presentations and entertainment projects.
+Create visually engaging commercial content using CGI, 3D animation,
+motion graphics, product visualization and VFX.
 </p>
 
-<ul>
-<li>3D modeling and asset creation</li>
-<li>Materials and texturing</li>
-<li>Lighting and rendering</li>
-<li>Animation and cinematic scenes</li>
-</ul>
+<div class="solution">
+<strong>Solutions:</strong>
+Product CGI, commercial animation, VFX, motion design and promotional visuals.
+</div>
 
 </div>
 
+<div class="card">
 
-<div class="solution-card">
+<div class="card-number">02 — ENTERTAINMENT</div>
 
-<div class="solution-label">PRODUCT COMMUNICATION</div>
-
-<h3>Product Visualization</h3>
+<h3>Film & Entertainment</h3>
 
 <p>
-Present products through detailed 3D visuals when photography is limited, unavailable or requires additional creative control.
+Support film and entertainment productions with digital environments,
+animation, visual effects and cinematic assets.
 </p>
 
-<ul>
-<li>Photorealistic product renders</li>
-<li>Product animation</li>
-<li>Launch visuals</li>
-<li>Marketing content</li>
-</ul>
+<div class="solution">
+<strong>Solutions:</strong>
+3D environments, VFX assets, animation, digital sets and cinematic visuals.
+</div>
 
 </div>
 
+<div class="card">
 
-<div class="solution-card">
+<div class="card-number">03 — PRODUCTS</div>
 
-<div class="solution-label">DIGITAL ENVIRONMENTS</div>
-
-<h3>Environment & World Building</h3>
+<h3>Consumer Products</h3>
 
 <p>
-Develop detailed digital environments for animation, games, visualization, cinematic content and interactive experiences.
+Present products through photorealistic visualization and animated
+content for marketing, launches and digital campaigns.
 </p>
 
-<ul>
-<li>Environment modeling</li>
-<li>Set development</li>
-<li>Real-time environments</li>
-<li>Cinematic world building</li>
-</ul>
+<div class="solution">
+<strong>Solutions:</strong>
+Product rendering, product animation, campaign visuals and digital presentations.
+</div>
 
 </div>
 
+<div class="card">
 
-<div class="solution-card">
-
-<div class="solution-label">MOTION & STORYTELLING</div>
-
-<h3>Animation & Motion Design</h3>
-
-<p>
-Transform concepts and information into engaging animated content for digital platforms, campaigns and presentations.
-</p>
-
-<ul>
-<li>3D animation</li>
-<li>Motion graphics</li>
-<li>Explainer content</li>
-<li>Visual storytelling</li>
-</ul>
-
-</div>
-
-
-<div class="solution-card">
-
-<div class="solution-label">VISUAL EFFECTS</div>
-
-<h3>VFX & Compositing</h3>
-
-<p>
-Support film, commercial and digital productions with visual effects, compositing and integration of digital elements.
-</p>
-
-<ul>
-<li>Compositing</li>
-<li>CG integration</li>
-<li>Effects and simulations</li>
-<li>Final visual enhancement</li>
-</ul>
-
-</div>
-
-
-<div class="solution-card">
-
-<div class="solution-label">ARCHITECTURAL VISUALS</div>
+<div class="card-number">04 — ARCHITECTURE</div>
 
 <h3>Architecture & Real Estate</h3>
 
 <p>
-Convert architectural concepts and spaces into compelling visual presentations for developers, designers and property teams.
+Transform architectural concepts and developments into detailed visual
+experiences for presentations and marketing.
 </p>
 
-<ul>
-<li>Interior visualization</li>
-<li>Exterior visualization</li>
-<li>Real estate imagery</li>
-<li>Cinematic walkthroughs</li>
-</ul>
+<div class="solution">
+<strong>Solutions:</strong>
+Exterior visualization, interior visualization, environments and walkthroughs.
+</div>
 
 </div>
 
+<div class="card">
+
+<div class="card-number">05 — AUTOMOTIVE</div>
+
+<h3>Automotive</h3>
+
+<p>
+Develop high-quality digital automotive visuals for campaigns,
+presentations, product launches and promotional content.
+</p>
+
+<div class="solution">
+<strong>Solutions:</strong>
+Vehicle CGI, product animation, environments and commercial visuals.
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-number">06 — TECHNOLOGY</div>
+
+<h3>Technology & Digital Products</h3>
+
+<p>
+Explain complex products, systems and technologies through clear
+3D visualization and animated storytelling.
+</p>
+
+<div class="solution">
+<strong>Solutions:</strong>
+3D visualization, technical animation, product demonstrations and motion graphics.
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-number">07 — EDUCATION</div>
+
+<h3>Education & Training</h3>
+
+<p>
+Create visual learning materials that make complex concepts easier to
+understand through animation and visualization.
+</p>
+
+<div class="solution">
+<strong>Solutions:</strong>
+Educational animation, 3D visualization, explainer content and digital media.
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-number">08 — HEALTHCARE</div>
+
+<h3>Healthcare & Medical</h3>
+
+<p>
+Use 3D visualization and animation to communicate products, processes
+and concepts in a clear visual format.
+</p>
+
+<div class="solution">
+<strong>Solutions:</strong>
+Medical visualization, product animation, educational CGI and explanatory content.
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-number">09 — BRANDS</div>
+
+<h3>Corporate & Brand Communication</h3>
+
+<p>
+Help organizations communicate their products, services and identity
+through professional digital visual content.
+</p>
+
+<div class="solution">
+<strong>Solutions:</strong>
+Corporate animation, presentations, motion graphics and branded CGI.
+</div>
+
+</div>
 
 </div>
 
 </div>
 
 </section>
-
 
 <section class="dark">
-
-<div class="container">
-
-<div class="two-column">
-
-<div>
-
-<h2>Solutions That Can Scale With the Project</h2>
-
-<p>
-Different projects require different levels of production. We can provide focused support for a specific task or contribute to a broader production pipeline.
-</p>
-
-<p>
-The workflow can be adapted according to project scope, deadlines, assets, creative direction and final delivery requirements.
-</p>
-
-<ul class="check-list">
-
-<li>Single asset production</li>
-<li>Multi-asset production</li>
-<li>Animation and visualization packages</li>
-<li>Ongoing production support</li>
-<li>Remote collaboration with production teams</li>
-
-</ul>
-
-</div>
-
-
-<div>
-
-<div class="solution-box">
-
-<h3>Built for Creative Teams</h3>
-
-<p>
-Our approach is designed to work alongside businesses, agencies, filmmakers, designers and other production teams that need dependable digital production support.
-</p>
-
-<p style="margin-top:18px;">
-We can collaborate as a dedicated production partner or support selected stages of an existing workflow.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section>
 
 <div class="container">
 
 <div class="section-title">
 
-<h2>How We Approach a Project</h2>
+<h2>How We Create Industry Solutions</h2>
 
 <p>
-A clear production process helps maintain quality, communication and consistency from the initial brief through final delivery.
+Every project is approached according to its audience, objectives,
+creative direction and technical requirements.
 </p>
 
 </div>
 
+<div class="grid">
 
-<div class="process-grid">
+<div class="card">
 
+<div class="card-number">STEP 01</div>
 
-<div class="process-card">
-
-<div class="process-number">01</div>
-
-<h3>Brief</h3>
+<h3>Understand</h3>
 
 <p>
-We understand the project's goals, audience, references, assets, requirements and expected deliverables.
+We study the project brief, target audience, communication goals and
+required deliverables.
 </p>
 
 </div>
 
+<div class="card">
 
-<div class="process-card">
+<div class="card-number">STEP 02</div>
 
-<div class="process-number">02</div>
-
-<h3>Plan</h3>
+<h3>Develop</h3>
 
 <p>
-We define the appropriate production approach, workflow, assets and stages required for the project.
+Our creative and production team develops the appropriate visual
+direction and production approach.
 </p>
 
 </div>
 
+<div class="card">
 
-<div class="process-card">
-
-<div class="process-number">03</div>
+<div class="card-number">STEP 03</div>
 
 <h3>Produce</h3>
 
 <p>
-The creative and technical production is developed according to the agreed direction and requirements.
+The approved concept moves through the required CGI, animation, VFX,
+visualization or motion production stages.
 </p>
 
 </div>
 
+<div class="card">
 
-<div class="process-card">
-
-<div class="process-number">04</div>
+<div class="card-number">STEP 04</div>
 
 <h3>Deliver</h3>
 
 <p>
-Final content is reviewed, refined and prepared for the required platform, campaign or production pipeline.
+Final content is prepared according to the agreed formats,
+requirements and delivery specifications.
 </p>
 
 </div>
-
 
 </div>
 
@@ -953,21 +658,21 @@ Final content is reviewed, refined and prepared for the required platform, campa
 
 </section>
 
-
-<section class="dark">
+<section class="cta">
 
 <div class="container">
 
-<div class="cta">
+<div class="section-title">
 
-<h2>Let's Find the Right Solution for Your Project</h2>
+<h2>Need a Custom Industry Solution?</h2>
 
 <p>
-Share your project requirements with our team and discuss the creative and technical production approach that best fits your goals.
+Tell us about your project and we can discuss the creative production
+approach that best fits your requirements.
 </p>
 
 <a href="contact.html" class="btn">
-Start a Conversation
+Start Your Project
 </a>
 
 </div>
@@ -976,59 +681,48 @@ Start a Conversation
 
 </section>
 
+</main>
 
 <footer>
 
 <div class="container">
 
-<div class="footer-grid">
+<div class="grid">
 
 <div>
-
 <h3>PT Autotube Crew Studio</h3>
 
 <p>
-Professional CGI, 3D Animation, Visual Effects, Motion Graphics, Product Visualization and Commercial Production Studio based in Jakarta, Indonesia.
+Professional CGI, 3D Animation, Visual Effects, Motion Graphics,
+Product Visualization and digital production studio based in Jakarta,
+Indonesia.
 </p>
-
 </div>
 
-
 <div>
-
 <h3>Company</h3>
 
 <p><a href="about.html">About Us</a></p>
 <p><a href="team.html">Our Team</a></p>
 <p><a href="careers.html">Careers</a></p>
 <p><a href="partners.html">Partners</a></p>
-
 </div>
 
-
 <div>
-
-<h3>Services</h3>
+<h3>Production</h3>
 
 <p><a href="services.html">Services</a></p>
-<p><a href="technology.html">Technology</a></p>
-<p><a href="industries.html">Industries</a></p>
-<p><a href="pricing.html">Pricing</a></p>
-
+<p><a href="portfolio.html">Portfolio</a></p>
+<p><a href="showreel.html">Showreel</a></p>
+<p><a href="global-services.html">Global Services</a></p>
 </div>
 
-
 <div>
-
 <h3>Contact</h3>
 
-<p>Jakarta, Indonesia</p>
+<p>📍 Jakarta, Indonesia</p>
 
-<p>
-<a href="mailto:autotubecrewstudio@gmail.com">
-autotubecrewstudio@gmail.com
-</a>
-</p>
+<p>📧 autotubecrewstudio@gmail.com</p>
 
 <p>
 <a href="https://www.autotubecrewstudio.com" target="_blank">
@@ -1038,7 +732,7 @@ www.autotubecrewstudio.com
 
 <p>
 <a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank">
-YouTube Channel
+YouTube
 </a>
 </p>
 
@@ -1052,80 +746,30 @@ LinkedIn
 
 </div>
 
-
-<div class="footer-bottom">
-
+<div class="copyright">
 © 2026 PT Autotube Crew Studio. All Rights Reserved.
-
 </div>
 
 </div>
 
 </footer>
 
-
-<button id="topBtn" aria-label="Back to top">
-↑
-</button>
-
-
 <script>
 
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-
 const mobileMenu = document.getElementById("mobileMenu");
 
-mobileMenuBtn.addEventListener("click",function(){
-
+mobileMenuBtn.addEventListener("click", function(){
 mobileMenu.classList.toggle("active");
-
 });
 
-
-const mobileLinks = mobileMenu.querySelectorAll("a");
-
-mobileLinks.forEach(function(link){
-
-link.addEventListener("click",function(){
-
+mobileMenu.querySelectorAll("a").forEach(function(link){
+link.addEventListener("click", function(){
 mobileMenu.classList.remove("active");
-
 });
-
-});
-
-
-const topBtn = document.getElementById("topBtn");
-
-window.addEventListener("scroll",function(){
-
-if(window.scrollY > 300){
-
-topBtn.style.display="block";
-
-}else{
-
-topBtn.style.display="none";
-
-}
-
-});
-
-
-topBtn.addEventListener("click",function(){
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
 });
 
 </script>
 
 </body>
-
 </html>
