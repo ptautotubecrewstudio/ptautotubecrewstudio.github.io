@@ -5,14 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Blog | PT Autotube Crew Studio</title>
-
-<meta name="description" content="Read insights, production knowledge, CGI, 3D animation, VFX, visualization and creative industry updates from PT Autotube Crew Studio.">
+<meta name="description" content="Read insights, production tips, CGI, 3D animation, VFX, motion graphics and creative technology articles from PT Autotube Crew Studio.">
 
 <link rel="icon" href="logo.png.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -26,44 +21,34 @@ html{
 }
 
 body{
-    font-family:'Poppins',sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#050505;
     color:#fff;
     line-height:1.7;
 }
 
 a{
-    text-decoration:none;
     color:inherit;
-}
-
-img{
-    max-width:100%;
-    display:block;
+    text-decoration:none;
 }
 
 .container{
     width:90%;
-    max-width:1400px;
+    max-width:1200px;
     margin:auto;
 }
 
 header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:rgba(0,0,0,.92);
-    backdrop-filter:blur(15px);
+    background:#090909;
     border-bottom:1px solid #222;
-    z-index:1000;
+    padding:18px 0;
 }
 
-header .container{
-    min-height:78px;
+.header-inner{
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
+    gap:20px;
 }
 
 .logo{
@@ -80,14 +65,14 @@ header .container{
     object-fit:contain;
 }
 
-nav ul{
+nav{
     display:flex;
-    list-style:none;
-    gap:28px;
+    gap:25px;
+    flex-wrap:wrap;
 }
 
 nav a{
-    font-size:15px;
+    color:#ccc;
     transition:.3s;
 }
 
@@ -95,124 +80,105 @@ nav a:hover{
     color:#e50914;
 }
 
-.mobile-btn{
-    display:none;
-    border:0;
-    background:none;
-    color:#fff;
-    font-size:28px;
-    cursor:pointer;
-}
-
-.mobile-nav{
-    display:none;
-    background:#0b0b0b;
-    border-top:1px solid #222;
-}
-
-.mobile-nav.active{
-    display:block;
-}
-
-.mobile-nav a{
-    display:block;
-    padding:14px 5%;
-    border-bottom:1px solid #222;
-}
-
 .hero{
-    padding:170px 0 90px;
+    padding:110px 0 80px;
     text-align:center;
-    background:linear-gradient(180deg,#090909,#050505);
+    background:#090909;
 }
 
 .hero h1{
     font-size:58px;
-    line-height:1.15;
     margin-bottom:20px;
 }
 
 .hero p{
     max-width:800px;
     margin:auto;
-    color:#cfcfcf;
-    font-size:17px;
+    color:#bbb;
+    font-size:18px;
 }
 
-section{
+.blog{
     padding:90px 0;
 }
 
 .blog-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:28px;
+    gap:30px;
 }
 
 .article{
     background:#101010;
     border:1px solid #222;
     border-radius:18px;
-    overflow:hidden;
-    transition:.35s;
-}
-
-.article:hover{
-    transform:translateY(-7px);
-    border-color:#e50914;
-}
-
-.article-content{
-    padding:28px;
-}
-
-.article h2{
-    font-size:24px;
-    line-height:1.3;
-    margin-bottom:14px;
-}
-
-.article p{
-    color:#bbb;
-    font-size:15px;
-    margin-bottom:22px;
-}
-
-.article-date{
-    color:#e50914;
-    font-size:13px;
-    margin-bottom:10px;
-    font-weight:600;
-}
-
-.read-more{
-    display:inline-block;
-    padding:10px 20px;
-    border:1px solid #444;
-    border-radius:30px;
-    font-size:14px;
+    padding:30px;
     transition:.3s;
 }
 
-.read-more:hover{
-    background:#e50914;
+.article:hover{
+    transform:translateY(-6px);
     border-color:#e50914;
 }
 
-.empty-note{
+.article span{
+    color:#e50914;
+    font-size:14px;
+    font-weight:600;
+}
+
+.article h2{
+    font-size:25px;
+    margin:12px 0 15px;
+}
+
+.article p{
+    color:#aaa;
+    margin-bottom:20px;
+}
+
+.read-more{
+    color:#fff;
+    font-weight:600;
+}
+
+.read-more:hover{
+    color:#e50914;
+}
+
+.cta{
+    padding:90px 0;
+    background:#090909;
     text-align:center;
-    margin-top:55px;
-    color:#999;
-    font-size:15px;
+}
+
+.cta h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    color:#aaa;
+    max-width:700px;
+    margin:0 auto 30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#e50914;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#ff2633;
 }
 
 footer{
-    padding:55px 0;
-    background:#090909;
+    padding:45px 0;
+    background:#050505;
     border-top:1px solid #222;
-}
-
-footer .container{
     text-align:center;
 }
 
@@ -222,41 +188,28 @@ footer p{
 }
 
 @media(max-width:900px){
-
-    nav{
-        display:none;
-    }
-
-    .mobile-btn{
-        display:block;
+    .blog-grid{
+        grid-template-columns:1fr 1fr;
     }
 
     .hero h1{
-        font-size:44px;
-    }
-
-    .blog-grid{
-        grid-template-columns:1fr 1fr;
+        font-size:45px;
     }
 }
 
 @media(max-width:600px){
-
-    .container{
-        width:92%;
+    .header-inner{
+        flex-direction:column;
+        text-align:center;
     }
 
-    .logo{
-        font-size:16px;
-    }
-
-    .logo img{
-        width:40px;
-        height:40px;
+    nav{
+        justify-content:center;
+        gap:15px;
     }
 
     .hero{
-        padding:135px 0 70px;
+        padding:75px 0 60px;
     }
 
     .hero h1{
@@ -264,19 +217,19 @@ footer p{
     }
 
     .hero p{
-        font-size:15px;
+        font-size:16px;
     }
 
-    section{
-        padding:65px 0;
+    .blog{
+        padding:60px 0;
     }
 
     .blog-grid{
         grid-template-columns:1fr;
     }
 
-    .article-content{
-        padding:23px;
+    .cta h2{
+        font-size:30px;
     }
 }
 </style>
@@ -285,165 +238,121 @@ footer p{
 <body>
 
 <header>
-    <div class="container">
+<div class="container header-inner">
 
-        <a href="index.html" class="logo">
-            <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-            <span>PT Autotube Crew Studio</span>
-        </a>
+<a href="index.html" class="logo">
+<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+<span>PT Autotube Crew Studio</span>
+</a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="clients.html">Clients</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="showreel.html">Showreel</a>
+<a href="careers.html">Careers</a>
+<a href="contact.html">Contact</a>
+</nav>
 
-        <button class="mobile-btn" id="blogMenuButton" aria-label="Open menu">
-            ☰
-        </button>
-
-    </div>
-
-    <div class="mobile-nav" id="blogMobileNav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="clients.html">Clients</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </div>
+</div>
 </header>
 
-<main>
-
 <section class="hero">
-    <div class="container">
-        <h1>Studio Insights & Creative Knowledge</h1>
-        <p>
-            Explore insights from PT Autotube Crew Studio covering CGI,
-            3D animation, visual effects, visualization, production workflows
-            and the creative industry.
-        </p>
-    </div>
+<div class="container">
+
+<h1>Studio Blog</h1>
+
+<p>
+Explore insights, creative ideas, production knowledge and technology updates from PT Autotube Crew Studio.
+</p>
+
+</div>
 </section>
 
-<section>
-    <div class="container">
+<section class="blog">
+<div class="container">
 
-        <div class="blog-grid">
+<div class="blog-grid">
 
-            <article class="article">
-                <div class="article-content">
-                    <div class="article-date">CGI & 3D PRODUCTION</div>
-                    <h2>The Role of CGI in Modern Visual Production</h2>
-                    <p>
-                        Discover how CGI helps brands, filmmakers and production
-                        companies create compelling visual experiences.
-                    </p>
-                    <a href="#" class="read-more">Read Article</a>
-                </div>
-            </article>
+<article class="article">
+<span>CGI & 3D</span>
+<h2>The Role of CGI in Modern Visual Communication</h2>
+<p>
+Discover how CGI and 3D visualization help brands communicate products, concepts and ideas through powerful visual storytelling.
+</p>
+<a href="contact.html" class="read-more">Read More →</a>
+</article>
 
-            <article class="article">
-                <div class="article-content">
-                    <div class="article-date">3D ANIMATION</div>
-                    <h2>Building High Quality 3D Animation Projects</h2>
-                    <p>
-                        An overview of the creative and technical considerations
-                        involved in professional 3D animation production.
-                    </p>
-                    <a href="#" class="read-more">Read Article</a>
-                </div>
-            </article>
+<article class="article">
+<span>Animation</span>
+<h2>Building High Quality 3D Animation Projects</h2>
+<p>
+Learn about the key stages involved in planning and producing professional 3D animation from concept to final delivery.
+</p>
+<a href="contact.html" class="read-more">Read More →</a>
+</article>
 
-            <article class="article">
-                <div class="article-content">
-                    <div class="article-date">VFX</div>
-                    <h2>Understanding Visual Effects Production</h2>
-                    <p>
-                        Learn about the role of visual effects and digital
-                        compositing in modern film and commercial production.
-                    </p>
-                    <a href="#" class="read-more">Read Article</a>
-                </div>
-            </article>
+<article class="article">
+<span>VFX</span>
+<h2>How Visual Effects Enhance Cinematic Production</h2>
+<p>
+Explore how visual effects, compositing and digital environments can expand creative possibilities for film and commercial production.
+</p>
+<a href="contact.html" class="read-more">Read More →</a>
+</article>
 
-            <article class="article">
-                <div class="article-content">
-                    <div class="article-date">WORKFLOW</div>
-                    <h2>Why a Professional Production Pipeline Matters</h2>
-                    <p>
-                        A structured workflow can improve communication,
-                        consistency, quality and delivery across creative projects.
-                    </p>
-                    <a href="#" class="read-more">Read Article</a>
-                </div>
-            </article>
+<article class="article">
+<span>Technology</span>
+<h2>Blender and Unreal Engine in Modern Production</h2>
+<p>
+A look at how modern 3D software and real-time technologies support efficient creative production workflows.
+</p>
+<a href="contact.html" class="read-more">Read More →</a>
+</article>
 
-            <article class="article">
-                <div class="article-content">
-                    <div class="article-date">TECHNOLOGY</div>
-                    <h2>Technology Behind Modern 3D Production</h2>
-                    <p>
-                        Explore how modern digital tools support creative teams
-                        throughout the production process.
-                    </p>
-                    <a href="#" class="read-more">Read Article</a>
-                </div>
-            </article>
+<article class="article">
+<span>Product Visualization</span>
+<h2>Why 3D Product Visualization Matters for Brands</h2>
+<p>
+Discover how photorealistic 3D visualization can help businesses present products before physical production or launch.
+</p>
+<a href="contact.html" class="read-more">Read More →</a>
+</article>
 
-            <article class="article">
-                <div class="article-content">
-                    <div class="article-date">CREATIVE INDUSTRY</div>
-                    <h2>Working With Global Creative Production Teams</h2>
-                    <p>
-                        Practical considerations for collaboration between
-                        studios, agencies and clients across different locations.
-                    </p>
-                    <a href="#" class="read-more">Read Article</a>
-                </div>
-            </article>
+<article class="article">
+<span>Production</span>
+<h2>Creating an Efficient Creative Production Workflow</h2>
+<p>
+Learn how structured planning, communication and production management can improve consistency and quality across creative projects.
+</p>
+<a href="contact.html" class="read-more">Read More →</a>
+</article>
 
-        </div>
+</div>
 
-        <div class="empty-note">
-            More articles and studio insights will be published here.
-        </div>
-
-    </div>
+</div>
 </section>
 
-</main>
+<section class="cta">
+<div class="container">
+
+<h2>Have a Creative Project?</h2>
+
+<p>
+Let's discuss your CGI, 3D animation, VFX, product visualization or digital production requirements.
+</p>
+
+<a href="contact.html" class="btn">Start Your Project</a>
+
+</div>
+</section>
 
 <footer>
-    <div class="container">
-        <p>© 2026 PT Autotube Crew Studio. All Rights Reserved.</p>
-    </div>
+<div class="container">
+<p>© 2026 PT Autotube Crew Studio. All Rights Reserved.</p>
+</div>
 </footer>
-
-<script>
-const blogMenuButton = document.getElementById("blogMenuButton");
-const blogMobileNav = document.getElementById("blogMobileNav");
-
-blogMenuButton.addEventListener("click", function(){
-    blogMobileNav.classList.toggle("active");
-});
-
-blogMobileNav.querySelectorAll("a").forEach(function(link){
-    link.addEventListener("click", function(){
-        blogMobileNav.classList.remove("active");
-    });
-});
-</script>
 
 </body>
 </html>
