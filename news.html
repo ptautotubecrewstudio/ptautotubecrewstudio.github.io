@@ -1,294 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>News | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Latest news, announcements, project updates and company developments from PT Autotube Crew Studio.">
+<meta name="description" content="Latest company news, studio updates, announcements, projects and developments from PT Autotube Crew Studio in Jakarta, Indonesia.">
 
 <link rel="icon" href="logo.png.png">
 
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#050505;
-color:#ffffff;
-line-height:1.8;
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
-background:#0b0b0b;
-border-bottom:1px solid #222;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #222;
+    z-index:1000;
+}
+
+header .container{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
-font-size:22px;
-font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:22px;
+    font-weight:700;
+}
+
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
 }
 
 nav a{
-color:#ffffff;
-text-decoration:none;
-margin-left:20px;
-transition:.3s;
+    font-size:15px;
+    transition:.3s;
 }
 
 nav a:hover{
-color:#e50914;
+    color:#e50914;
+}
+
+.mobile-btn{
+    display:none;
+    background:none;
+    border:0;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.mobile-nav{
+    display:none;
+    background:#0b0b0b;
+    border-top:1px solid #222;
+}
+
+.mobile-nav.active{
+    display:block;
+}
+
+.mobile-nav a{
+    display:block;
+    padding:14px 5%;
+    border-bottom:1px solid #222;
 }
 
 .hero{
-padding:90px 10%;
-text-align:center;
+    padding:170px 0 90px;
+    text-align:center;
+    background:linear-gradient(180deg,#090909,#050505);
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:20px;
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:20px;
 }
 
 .hero p{
-max-width:900px;
-margin:auto;
-color:#cccccc;
+    max-width:820px;
+    margin:auto;
+    color:#cfcfcf;
+    font-size:17px;
 }
 
 section{
-padding:70px 10%;
-}
-
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
+    padding:90px 0;
 }
 
 .news-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-gap:30px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
 }
 
 .news-card{
-background:#111;
-border:1px solid #222;
-border-radius:15px;
-padding:30px;
-transition:.3s;
+    background:#101010;
+    border:1px solid #222;
+    border-radius:18px;
+    padding:30px;
+    transition:.35s;
 }
 
 .news-card:hover{
-border-color:#e50914;
-transform:translateY(-6px);
+    transform:translateY(-7px);
+    border-color:#e50914;
 }
 
-.date{
-color:#e50914;
-font-weight:bold;
-margin-bottom:12px;
+.news-date{
+    color:#e50914;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:12px;
 }
 
-.news-card h3{
-margin-bottom:15px;
+.news-card h2{
+    font-size:24px;
+    line-height:1.35;
+    margin-bottom:15px;
 }
 
 .news-card p{
-color:#cccccc;
+    color:#bbb;
+    font-size:15px;
+    margin-bottom:24px;
 }
 
-.cta{
-text-align:center;
-padding:80px 10%;
+.news-link{
+    display:inline-block;
+    padding:10px 20px;
+    border:1px solid #444;
+    border-radius:30px;
+    font-size:14px;
+    transition:.3s;
 }
 
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:#e50914;
-color:#ffffff;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-margin-top:25px;
+.news-link:hover{
+    background:#e50914;
+    border-color:#e50914;
 }
 
-.btn:hover{
-background:#ff3030;
+.updates{
+    margin-top:70px;
+    padding:45px;
+    background:#0d0d0d;
+    border:1px solid #222;
+    border-radius:20px;
+    text-align:center;
+}
+
+.updates h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.updates p{
+    color:#bbb;
+    max-width:750px;
+    margin:auto;
 }
 
 footer{
-padding:30px;
-text-align:center;
-border-top:1px solid #222;
-color:#999999;
+    padding:55px 0;
+    background:#090909;
+    border-top:1px solid #222;
 }
 
-</style>
+footer .container{
+    text-align:center;
+}
 
+footer p{
+    color:#888;
+    font-size:14px;
+}
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .news-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .container{
+        width:92%;
+    }
+
+    .logo{
+        font-size:16px;
+    }
+
+    .logo img{
+        width:40px;
+        height:40px;
+    }
+
+    .hero{
+        padding:135px 0 70px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    .news-card{
+        padding:24px;
+    }
+
+    .updates{
+        padding:30px 22px;
+    }
+
+    .updates h2{
+        font-size:27px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
+    <div class="container">
 
-<div class="logo">
+        <a href="index.html" class="logo">
+            <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+            <span>PT Autotube Crew Studio</span>
+        </a>
 
-PT Autotube Crew Studio
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-</div>
+        <button class="mobile-btn" id="newsMenuButton" aria-label="Open menu">
+            ☰
+        </button>
 
-<nav>
+    </div>
 
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="news.html">News</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
+    <div class="mobile-nav" id="newsMobileNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="clients.html">Clients</a>
+        <a href="blog.html">Blog</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </header>
 
+<main>
+
 <section class="hero">
-
-<h1>Company News</h1>
-
-<p>
-
-Stay updated with the latest announcements, project milestones, partnerships and creative developments from PT Autotube Crew Studio.
-
-</p>
-
+    <div class="container">
+        <h1>Studio News & Updates</h1>
+        <p>
+            Follow the latest announcements, developments, creative projects
+            and updates from PT Autotube Crew Studio.
+        </p>
+    </div>
 </section>
 
 <section>
+    <div class="container">
 
-<h2 class="section-title">
+        <div class="news-grid">
 
-Latest Updates
+            <article class="news-card">
+                <div class="news-date">STUDIO UPDATE</div>
+                <h2>PT Autotube Crew Studio Expands Creative Production Capabilities</h2>
+                <p>
+                    Our studio continues to develop its CGI, 3D animation,
+                    visual effects and digital production capabilities for
+                    local and international clients.
+                </p>
+                <a href="#" class="news-link">Read More</a>
+            </article>
 
-</h2>
+            <article class="news-card">
+                <div class="news-date">PRODUCTION</div>
+                <h2>New CGI and Animation Projects in Development</h2>
+                <p>
+                    We are continuing to develop new creative production
+                    opportunities across animation, CGI, visualization and
+                    commercial content.
+                </p>
+                <a href="#" class="news-link">Read More</a>
+            </article>
 
-<div class="news-grid">
+            <article class="news-card">
+                <div class="news-date">TECHNOLOGY</div>
+                <h2>Developing Modern Digital Production Workflows</h2>
+                <p>
+                    Our production approach combines creative direction with
+                    modern 3D tools and structured digital workflows.
+                </p>
+                <a href="#" class="news-link">Read More</a>
+            </article>
 
-<div class="news-card">
+            <article class="news-card">
+                <div class="news-date">GLOBAL COLLABORATION</div>
+                <h2>Building International Creative Partnerships</h2>
+                <p>
+                    PT Autotube Crew Studio is focused on creating long-term
+                    relationships with agencies, brands and production teams
+                    around the world.
+                </p>
+                <a href="#" class="news-link">Read More</a>
+            </article>
 
-<div class="date">
+            <article class="news-card">
+                <div class="news-date">CREATIVE DEVELOPMENT</div>
+                <h2>Expanding Our Portfolio of Digital Content</h2>
+                <p>
+                    New work across CGI, 3D environments, product visualization,
+                    animation and visual effects will continue to strengthen
+                    our creative portfolio.
+                </p>
+                <a href="#" class="news-link">Read More</a>
+            </article>
 
-Coming Soon
+            <article class="news-card">
+                <div class="news-date">COMPANY NEWS</div>
+                <h2>Growing a Long-Term Creative Production Team</h2>
+                <p>
+                    We are developing a professional creative team capable of
+                    supporting ambitious projects and long-term production
+                    collaborations.
+                </p>
+                <a href="#" class="news-link">Read More</a>
+            </article>
 
-</div>
+        </div>
 
-<h3>
+        <div class="updates">
+            <h2>More Updates Coming Soon</h2>
+            <p>
+                This section will be updated with verified studio announcements,
+                project developments, collaborations, events and company news.
+            </p>
+        </div>
 
-New CGI & Animation Projects
-
-</h3>
-
-<p>
-
-Our team is preparing exciting CGI, animation and visual effects productions. Future project announcements will be published here.
-
-</p>
-
-</div>
-
-<div class="news-card">
-
-<div class="date">
-
-Studio Update
-
-</div>
-
-<h3>
-
-Expanding Creative Services
-
-</h3>
-
-<p>
-
-PT Autotube Crew Studio continues to expand its production capabilities to support businesses, agencies and global brands.
-
-</p>
-
-</div>
-
-<div class="news-card">
-
-<div class="date">
-
-Future Announcement
-
-</div>
-
-<h3>
-
-Strategic Partnerships
-
-</h3>
-
-<p>
-
-We look forward to collaborating with international companies, production studios and creative agencies on innovative projects.
-
-</p>
-
-</div>
-
-</div>
-
+    </div>
 </section>
 
-<section class="cta">
-
-<h2>
-
-Follow Our Journey
-
-</h2>
-
-<p>
-
-Visit our website and YouTube channel to stay informed about our latest work, creative developments and upcoming productions.
-
-</p>
-
-<a href="https://www.youtube.com/@ptautotubecrewstudio" class="btn" target="_blank">
-
-Visit YouTube
-
-</a>
-
-</section>
+</main>
 
 <footer>
-
-© PT Autotube Crew Studio
-
-<br>
-
-Jakarta, Indonesia
-
+    <div class="container">
+        <p>© 2026 PT Autotube Crew Studio. All Rights Reserved.</p>
+    </div>
 </footer>
 
-</body>
+<script>
+const newsMenuButton = document.getElementById("newsMenuButton");
+const newsMobileNav = document.getElementById("newsMobileNav");
 
+newsMenuButton.addEventListener("click", function(){
+    newsMobileNav.classList.toggle("active");
+});
+
+newsMobileNav.querySelectorAll("a").forEach(function(link){
+    link.addEventListener("click", function(){
+        newsMobileNav.classList.remove("active");
+    });
+});
+</script>
+
+</body>
 </html>
