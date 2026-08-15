@@ -1,270 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Press Kit | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Official Press Kit of PT Autotube Crew Studio. Company information, branding, media resources and contact details.">
+<meta name="description" content="Official press kit for PT Autotube Crew Studio including company information, brand assets, studio resources and media materials.">
 
 <link rel="icon" href="logo.png.png">
 
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#050505;
-color:#ffffff;
-line-height:1.8;
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
-background:#0b0b0b;
-border-bottom:1px solid #222;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #222;
+    z-index:1000;
+}
+
+header .container{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
-font-size:22px;
-font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:22px;
+    font-weight:700;
+}
+
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
 nav a{
-color:#ffffff;
-text-decoration:none;
-margin-left:20px;
-transition:.3s;
+    font-size:15px;
+    transition:.3s;
 }
 
 nav a:hover{
-color:#e50914;
+    color:#e50914;
+}
+
+.mobile-btn{
+    display:none;
+    background:none;
+    border:0;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.mobile-nav{
+    display:none;
+    background:#0b0b0b;
+    border-top:1px solid #222;
+}
+
+.mobile-nav.active{
+    display:block;
+}
+
+.mobile-nav a{
+    display:block;
+    padding:14px 5%;
+    border-bottom:1px solid #222;
 }
 
 .hero{
-padding:90px 10%;
-text-align:center;
+    padding:170px 0 90px;
+    text-align:center;
+    background:linear-gradient(180deg,#090909,#050505);
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:20px;
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:20px;
 }
 
 .hero p{
-max-width:900px;
-margin:auto;
-color:#cccccc;
+    max-width:820px;
+    margin:auto;
+    color:#cfcfcf;
+    font-size:17px;
 }
 
 section{
-padding:70px 10%;
+    padding:90px 0;
 }
 
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
+.resource-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:28px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+.resource-card{
+    background:#101010;
+    border:1px solid #222;
+    border-radius:18px;
+    padding:32px;
+    transition:.35s;
 }
 
-.card{
-background:#111;
-border:1px solid #222;
-padding:30px;
-border-radius:15px;
-transition:.3s;
+.resource-card:hover{
+    transform:translateY(-7px);
+    border-color:#e50914;
 }
 
-.card:hover{
-border-color:#e50914;
-transform:translateY(-6px);
+.resource-card h2{
+    font-size:25px;
+    margin-bottom:14px;
 }
 
-.card h3{
-margin-bottom:15px;
+.resource-card p{
+    color:#bbb;
+    font-size:15px;
+    margin-bottom:24px;
 }
 
-.card p{
-color:#cccccc;
+.resource-button{
+    display:inline-block;
+    padding:11px 22px;
+    border:1px solid #444;
+    border-radius:30px;
+    font-size:14px;
+    transition:.3s;
 }
 
-.cta{
-text-align:center;
-padding:80px 10%;
+.resource-button:hover{
+    background:#e50914;
+    border-color:#e50914;
 }
 
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:#e50914;
-color:#fff;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-margin-top:25px;
+.company-profile{
+    margin-top:60px;
+    padding:45px;
+    background:#0d0d0d;
+    border:1px solid #222;
+    border-radius:20px;
 }
 
-.btn:hover{
-background:#ff2f2f;
+.company-profile h2{
+    font-size:32px;
+    margin-bottom:18px;
+}
+
+.company-profile p{
+    color:#bbb;
+    margin-bottom:12px;
+}
+
+.contact-box{
+    margin-top:60px;
+    padding:45px;
+    background:#101010;
+    border:1px solid #222;
+    border-radius:20px;
+    text-align:center;
+}
+
+.contact-box h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    color:#bbb;
+    margin-bottom:25px;
+}
+
+.contact-button{
+    display:inline-block;
+    padding:14px 30px;
+    background:#e50914;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.contact-button:hover{
+    background:#ff2633;
+    transform:translateY(-3px);
 }
 
 footer{
-padding:30px;
-text-align:center;
-border-top:1px solid #222;
-color:#999;
+    padding:55px 0;
+    background:#090909;
+    border-top:1px solid #222;
 }
 
-</style>
+footer .container{
+    text-align:center;
+}
 
+footer p{
+    color:#888;
+    font-size:14px;
+}
+
+@media(max-width:950px){
+
+    nav{
+        display:none;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .resource-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .container{
+        width:92%;
+    }
+
+    .logo{
+        font-size:16px;
+    }
+
+    .logo img{
+        width:40px;
+        height:40px;
+    }
+
+    .hero{
+        padding:135px 0 70px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .resource-card{
+        padding:25px;
+    }
+
+    .company-profile,
+    .contact-box{
+        padding:30px 22px;
+    }
+
+    .company-profile h2,
+    .contact-box h2{
+        font-size:27px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
+    <div class="container">
 
-<div class="logo">
+        <a href="index.html" class="logo">
+            <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+            <span>PT Autotube Crew Studio</span>
+        </a>
 
-PT Autotube Crew Studio
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-</div>
+        <button class="mobile-btn" id="pressMenuButton" aria-label="Open menu">
+            ☰
+        </button>
 
-<nav>
+    </div>
 
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
+    <div class="mobile-nav" id="pressMobileNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="clients.html">Clients</a>
+        <a href="blog.html">Blog</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </header>
 
+<main>
+
 <section class="hero">
-
-<h1>Press Kit</h1>
-
-<p>
-
-Official media resources and company information for journalists, partners, event organizers and business collaborators.
-
-</p>
-
+    <div class="container">
+        <h1>Press Kit</h1>
+        <p>
+            Official information and media resources for journalists,
+            publications, partners and organizations interested in
+            PT Autotube Crew Studio.
+        </p>
+    </div>
 </section>
 
 <section>
+    <div class="container">
 
-<h2 class="section-title">
+        <div class="resource-grid">
 
-Company Information
+            <div class="resource-card">
+                <h2>Company Profile</h2>
+                <p>
+                    Learn more about PT Autotube Crew Studio, our creative
+                    capabilities, services, production approach and company
+                    information.
+                </p>
+                <a href="Company%20Profile.pdf" class="resource-button" target="_blank">
+                    View Company Profile
+                </a>
+            </div>
 
-</h2>
+            <div class="resource-card">
+                <h2>Brand Guidelines</h2>
+                <p>
+                    Official brand information and guidelines for appropriate
+                    use of PT Autotube Crew Studio visual identity.
+                </p>
+                <a href="Brand%20Guidelines.pdf" class="resource-button" target="_blank">
+                    View Brand Guidelines
+                </a>
+            </div>
 
-<div class="grid">
+            <div class="resource-card">
+                <h2>Capability Statement</h2>
+                <p>
+                    A concise overview of our studio capabilities, creative
+                    services and production expertise.
+                </p>
+                <a href="Capability%20Statement.pdf" class="resource-button" target="_blank">
+                    View Capability Statement
+                </a>
+            </div>
 
-<div class="card">
+            <div class="resource-card">
+                <h2>Portfolio</h2>
+                <p>
+                    Selected examples of CGI, 3D animation, visualization,
+                    visual effects and digital production work.
+                </p>
+                <a href="Portfolio.pdf" class="resource-button" target="_blank">
+                    View Portfolio
+                </a>
+            </div>
 
-<h3>Company Name</h3>
+            <div class="resource-card">
+                <h2>Service Brochure</h2>
+                <p>
+                    Overview of creative production services available from
+                    PT Autotube Crew Studio.
+                </p>
+                <a href="Service%20Brochure.pdf" class="resource-button" target="_blank">
+                    View Service Brochure
+                </a>
+            </div>
 
-<p>PT Autotube Crew Studio</p>
+            <div class="resource-card">
+                <h2>Media Kit</h2>
+                <p>
+                    Additional studio information and media resources for
+                    professional publications and creative partners.
+                </p>
+                <a href="media-kit.html" class="resource-button">
+                    Open Media Kit
+                </a>
+            </div>
 
-</div>
+        </div>
 
-<div class="card">
+        <div class="company-profile">
+            <h2>About PT Autotube Crew Studio</h2>
 
-<h3>Head Office</h3>
+            <p>
+                PT Autotube Crew Studio is a creative production studio based
+                in Jakarta, Indonesia.
+            </p>
 
-<p>Jakarta, Indonesia</p>
+            <p>
+                Our work focuses on CGI, 3D Animation, Visual Effects,
+                Motion Graphics, Product Visualization and digital content
+                production.
+            </p>
 
-</div>
+            <p>
+                We collaborate with businesses, agencies, brands and
+                production teams locally and internationally.
+            </p>
+        </div>
 
-<div class="card">
+        <div class="contact-box">
+            <h2>Media & Press Enquiries</h2>
 
-<h3>Industry</h3>
+            <p>
+                For press enquiries, interviews, company information,
+                collaborations or media requests, please contact our studio.
+            </p>
 
-<p>CGI, 3D Animation, Visual Effects (VFX), Motion Graphics, Video Production and Digital Content Creation.</p>
+            <a href="contact.html" class="contact-button">
+                Contact PT Autotube Crew Studio
+            </a>
+        </div>
 
-</div>
-
-<div class="card">
-
-<h3>Services</h3>
-
-<p>Commercial Production, Product Visualization, Medical Animation, Architectural Visualization, Unreal Engine Production and Video Editing.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Media Resources</h3>
-
-<p>Company Profile, Capability Statement, Portfolio, Service Brochure, Brand Guidelines and Showreel are available on our Downloads page.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Media Contact</h3>
-
-<p>Email: autotubecrewstudio@gmail.com</p>
-
-</div>
-
-</div>
-
+    </div>
 </section>
 
-<section class="cta">
-
-<h2>
-
-Need Additional Information?
-
-</h2>
-
-<p>
-
-Please contact our team for interviews, partnership opportunities, media inquiries or additional company information.
-
-</p>
-
-<a href="contact.html" class="btn">
-
-Contact Us
-
-</a>
-
-</section>
+</main>
 
 <footer>
-
-© PT Autotube Crew Studio
-
-<br>
-
-Jakarta, Indonesia
-
+    <div class="container">
+        <p>© 2026 PT Autotube Crew Studio. All Rights Reserved.</p>
+    </div>
 </footer>
 
-</body>
+<script>
+const pressMenuButton = document.getElementById("pressMenuButton");
+const pressMobileNav = document.getElementById("pressMobileNav");
 
+pressMenuButton.addEventListener("click", function(){
+    pressMobileNav.classList.toggle("active");
+});
+
+pressMobileNav.querySelectorAll("a").forEach(function(link){
+    link.addEventListener("click", function(){
+        pressMobileNav.classList.remove("active");
+    });
+});
+</script>
+
+</body>
 </html>
