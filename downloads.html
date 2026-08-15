@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Downloads | PT Autotube Crew Studio</title>
-<meta name="description" content="Download official PT Autotube Crew Studio company profile, capability statement, portfolio, service brochure and brand guidelines.">
+
+<meta name="description" content="Download official company documents, portfolio materials, service information and media resources from PT Autotube Crew Studio.">
+<meta name="robots" content="index, follow">
+
+<link rel="icon" href="logo.png.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -19,15 +27,15 @@ html{
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:'Poppins',sans-serif;
     background:#050505;
     color:#fff;
     line-height:1.7;
 }
 
 a{
-    color:inherit;
     text-decoration:none;
+    color:inherit;
 }
 
 .container{
@@ -37,16 +45,16 @@ a{
 }
 
 header{
+    position:relative;
     background:#090909;
     border-bottom:1px solid #222;
-    padding:22px 0;
 }
 
-.header-inner{
+header .container{
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    gap:20px;
+    justify-content:space-between;
+    padding:18px 0;
 }
 
 .logo{
@@ -58,60 +66,72 @@ header{
 }
 
 .logo img{
-    width:48px;
-    height:48px;
+    width:50px;
+    height:50px;
     object-fit:contain;
 }
 
-.back-link{
-    padding:10px 20px;
-    border:1px solid #333;
-    border-radius:30px;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
+}
+
+nav a{
+    font-size:15px;
     transition:.3s;
 }
 
-.back-link:hover{
-    background:#fff;
-    color:#000;
+nav a:hover{
+    color:#e50914;
+}
+
+.mobile-menu-btn{
+    display:none;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.mobile-menu{
+    display:none;
+    background:#0b0b0b;
+    border-top:1px solid #222;
+}
+
+.mobile-menu.active{
+    display:block;
+}
+
+.mobile-menu a{
+    display:block;
+    padding:14px 5%;
+    border-bottom:1px solid #222;
 }
 
 .hero{
-    padding:110px 0 80px;
+    padding:100px 0 70px;
     text-align:center;
-    background:linear-gradient(180deg,#101010,#050505);
+    background:#090909;
 }
 
 .hero h1{
-    font-size:58px;
-    line-height:1.15;
-    margin-bottom:25px;
+    font-size:54px;
+    line-height:1.2;
+    margin-bottom:20px;
 }
 
 .hero p{
-    max-width:800px;
-    margin:auto;
-    color:#c8c8c8;
-    font-size:18px;
-}
-
-section{
-    padding:90px 0;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:55px;
-}
-
-.section-title h2{
-    font-size:40px;
-    margin-bottom:15px;
-}
-
-.section-title p{
-    color:#aaa;
     max-width:750px;
     margin:auto;
+    color:#cfcfcf;
+    font-size:17px;
+}
+
+.downloads{
+    padding:90px 0;
 }
 
 .download-grid{
@@ -124,64 +144,60 @@ section{
     background:#101010;
     border:1px solid #252525;
     border-radius:18px;
-    padding:35px;
+    padding:32px;
     transition:.3s;
 }
 
 .download-card:hover{
-    transform:translateY(-6px);
-    border-color:#555;
+    transform:translateY(-5px);
+    border-color:#e50914;
 }
 
-.download-card h3{
-    font-size:24px;
+.download-card h2{
+    font-size:25px;
     margin-bottom:12px;
 }
 
 .download-card p{
-    color:#aaa;
+    color:#bbb;
     margin-bottom:25px;
 }
 
 .download-btn{
     display:inline-block;
-    padding:12px 25px;
+    padding:13px 28px;
     background:#e50914;
-    border-radius:28px;
-    font-weight:700;
+    border-radius:30px;
+    font-weight:600;
     transition:.3s;
 }
 
 .download-btn:hover{
-    background:#ff303b;
-    transform:translateY(-3px);
+    background:#ff2f3d;
+    transform:translateY(-2px);
 }
 
 .info{
-    background:#0d0d0d;
-    border-top:1px solid #222;
-    border-bottom:1px solid #222;
-}
-
-.info-box{
-    max-width:850px;
-    margin:auto;
+    padding:70px 0;
+    background:#0b0b0b;
     text-align:center;
 }
 
-.info-box h2{
+.info h2{
     font-size:36px;
-    margin-bottom:18px;
+    margin-bottom:15px;
 }
 
-.info-box p{
-    color:#aaa;
+.info p{
+    max-width:750px;
+    margin:auto;
+    color:#bbb;
 }
 
 footer{
-    padding:45px 0;
-    background:#090909;
+    background:#050505;
     border-top:1px solid #222;
+    padding:50px 0;
     text-align:center;
 }
 
@@ -190,14 +206,14 @@ footer p{
     font-size:14px;
 }
 
-@media(max-width:700px){
+@media(max-width:850px){
 
-    .header-inner{
-        flex-direction:column;
+    nav{
+        display:none;
     }
 
-    .logo{
-        font-size:18px;
+    .mobile-menu-btn{
+        display:block;
     }
 
     .hero{
@@ -208,24 +224,44 @@ footer p{
         font-size:40px;
     }
 
+    .download-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:480px){
+
+    .container{
+        width:92%;
+    }
+
+    .logo{
+        font-size:16px;
+    }
+
+    .logo img{
+        width:40px;
+        height:40px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
     .hero p{
         font-size:15px;
     }
 
-    section{
-        padding:65px 0;
+    .downloads{
+        padding:60px 0;
     }
 
-    .download-grid{
-        grid-template-columns:1fr;
+    .download-card{
+        padding:25px;
     }
 
-    .section-title h2{
-        font-size:32px;
-    }
-
-    .info-box h2{
-        font-size:30px;
+    .download-card h2{
+        font-size:22px;
     }
 }
 </style>
@@ -234,53 +270,58 @@ footer p{
 <body>
 
 <header>
-    <div class="container header-inner">
+    <div class="container">
 
         <a href="index.html" class="logo">
             <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
             <span>PT Autotube Crew Studio</span>
         </a>
 
-        <a href="contact.html" class="back-link">
-            Contact Studio
-        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
+        <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
     </div>
 </header>
 
-<main>
-
 <section class="hero">
     <div class="container">
-
-        <h1>Studio Downloads</h1>
-
+        <h1>Downloads</h1>
         <p>
-            Access official PT Autotube Crew Studio documents,
-            company information, capabilities, services and portfolio materials.
+            Access official PT Autotube Crew Studio documents and presentation materials.
+            Download our company information, capabilities, portfolio and service resources.
         </p>
-
     </div>
 </section>
 
-<section>
+<section class="downloads">
     <div class="container">
-
-        <div class="section-title">
-            <h2>Official Documents</h2>
-            <p>
-                Download our latest studio materials for business,
-                production and creative collaboration.
-            </p>
-        </div>
 
         <div class="download-grid">
 
             <div class="download-card">
-                <h3>Company Profile</h3>
+                <h2>Company Profile</h2>
                 <p>
-                    Learn about PT Autotube Crew Studio, our creative
-                    capabilities, production focus and company background.
+                    Learn about PT Autotube Crew Studio, our capabilities,
+                    creative services and global production approach.
                 </p>
                 <a href="Company Profile.pdf" class="download-btn" download>
                     Download PDF
@@ -288,10 +329,10 @@ footer p{
             </div>
 
             <div class="download-card">
-                <h3>Capability Statement</h3>
+                <h2>Capability Statement</h2>
                 <p>
-                    Review our production capabilities, technical expertise
-                    and creative services.
+                    Review our production capabilities, technical strengths
+                    and creative services for potential clients and partners.
                 </p>
                 <a href="Capability Statement.pdf" class="download-btn" download>
                     Download PDF
@@ -299,10 +340,10 @@ footer p{
             </div>
 
             <div class="download-card">
-                <h3>Portfolio</h3>
+                <h2>Portfolio</h2>
                 <p>
                     Explore selected creative work and visual production
-                    capabilities from our studio.
+                    presented by PT Autotube Crew Studio.
                 </p>
                 <a href="Portfolio.pdf" class="download-btn" download>
                     Download PDF
@@ -310,10 +351,10 @@ footer p{
             </div>
 
             <div class="download-card">
-                <h3>Service Brochure</h3>
+                <h2>Service Brochure</h2>
                 <p>
-                    Discover our CGI, 3D animation, VFX, product visualization
-                    and other production services.
+                    Discover our CGI, 3D animation, VFX, motion graphics,
+                    visualization and production services.
                 </p>
                 <a href="Service Brochure.pdf" class="download-btn" download>
                     Download PDF
@@ -321,7 +362,7 @@ footer p{
             </div>
 
             <div class="download-card">
-                <h3>Brand Guidelines</h3>
+                <h2>Brand Guidelines</h2>
                 <p>
                     Official PT Autotube Crew Studio brand identity and
                     visual communication guidelines.
@@ -338,23 +379,13 @@ footer p{
 
 <section class="info">
     <div class="container">
-
-        <div class="info-box">
-
-            <h2>Need More Information?</h2>
-
-            <p>
-                If you are a client, agency, production company or creative
-                partner and need additional information about our studio,
-                please contact our team directly.
-            </p>
-
-        </div>
-
+        <h2>Need More Information?</h2>
+        <p>
+            If you are interested in working with PT Autotube Crew Studio
+            or need additional company information, please contact our team.
+        </p>
     </div>
 </section>
-
-</main>
 
 <footer>
     <div class="container">
@@ -363,6 +394,21 @@ footer p{
         </p>
     </div>
 </footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", function(){
+    mobileMenu.classList.toggle("active");
+});
+
+mobileMenu.querySelectorAll("a").forEach(function(link){
+    link.addEventListener("click", function(){
+        mobileMenu.classList.remove("active");
+    });
+});
+</script>
 
 </body>
 </html>
