@@ -1,286 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Blog | PT Autotube Crew Studio</title>
-
-<meta name="description" content="Read the latest articles about CGI, 3D Animation, Visual Effects, Motion Graphics, Unreal Engine and Digital Content Creation by PT Autotube Crew Studio.">
-
-<link rel="icon" href="logo.png.png">
+<meta name="description" content="PT Autotube Crew Studio blog covering CGI, 3D animation, VFX, production workflows, visualization and creative technology.">
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#050505;
-color:#fff;
-line-height:1.7;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.7;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
 header{
-padding:25px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#0b0b0b;
-border-bottom:1px solid #222;
+    background:#090909;
+    border-bottom:1px solid #222;
+    padding:22px 0;
+}
+
+.header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
 }
 
 .logo{
-font-size:22px;
-font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:22px;
+    font-weight:700;
 }
 
-nav a{
-color:#fff;
-text-decoration:none;
-margin-left:20px;
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
 }
 
-nav a:hover{
-color:#e50914;
+.back-link{
+    padding:10px 20px;
+    border:1px solid #333;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.back-link:hover{
+    background:#fff;
+    color:#000;
 }
 
 .hero{
-padding:90px 10%;
-text-align:center;
+    padding:110px 0 80px;
+    text-align:center;
+    background:linear-gradient(180deg,#101010,#050505);
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:20px;
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:25px;
 }
 
 .hero p{
-max-width:900px;
-margin:auto;
-color:#ccc;
+    max-width:800px;
+    margin:auto;
+    color:#c8c8c8;
+    font-size:18px;
 }
 
 section{
-padding:70px 10%;
+    padding:90px 0;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
 }
 
-.card{
-background:#111;
-padding:30px;
-border-radius:15px;
-border:1px solid #222;
-transition:.3s;
+.section-title h2{
+    font-size:40px;
+    margin-bottom:15px;
 }
 
-.card:hover{
-transform:translateY(-6px);
-border-color:#e50914;
+.section-title p{
+    color:#aaa;
+    max-width:750px;
+    margin:auto;
 }
 
-.card h3{
-margin-bottom:15px;
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
-.card p{
-color:#ccc;
-margin-bottom:20px;
+.blog-card{
+    background:#101010;
+    border:1px solid #252525;
+    border-radius:18px;
+    padding:32px;
+    transition:.3s;
+}
+
+.blog-card:hover{
+    transform:translateY(-6px);
+    border-color:#555;
+}
+
+.blog-tag{
+    display:inline-block;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#ddd;
+    border:1px solid #333;
+    border-radius:20px;
+    padding:5px 12px;
+    margin-bottom:20px;
+}
+
+.blog-card h3{
+    font-size:23px;
+    line-height:1.35;
+    margin-bottom:15px;
+}
+
+.blog-card p{
+    color:#aaa;
+    font-size:15px;
+    margin-bottom:22px;
+}
+
+.read-more{
+    font-weight:700;
+    transition:.3s;
+}
+
+.read-more:hover{
+    text-decoration:underline;
+}
+
+.note{
+    background:#0d0d0d;
+    border-top:1px solid #222;
+    border-bottom:1px solid #222;
+}
+
+.note-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.note-box h2{
+    font-size:36px;
+    margin-bottom:18px;
+}
+
+.note-box p{
+    color:#aaa;
+}
+
+.cta{
+    text-align:center;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.cta p{
+    color:#aaa;
+    max-width:700px;
+    margin:0 auto 30px;
 }
 
 .btn{
-display:inline-block;
-padding:12px 25px;
-background:#e50914;
-color:#fff;
-text-decoration:none;
-border-radius:30px;
+    display:inline-block;
+    padding:15px 34px;
+    background:#e50914;
+    border-radius:30px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff303b;
+    transform:translateY(-3px);
 }
 
 footer{
-padding:30px;
-text-align:center;
-border-top:1px solid #222;
-color:#999;
+    padding:45px 0;
+    background:#090909;
+    border-top:1px solid #222;
+    text-align:center;
 }
 
-</style>
+footer p{
+    color:#888;
+    font-size:14px;
+}
 
+@media(max-width:850px){
+
+    .hero{
+        padding:80px 0 60px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .blog-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .header-inner{
+        flex-direction:column;
+    }
+
+    .logo{
+        font-size:18px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .blog-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+
+    .note-box h2,
+    .cta h2{
+        font-size:30px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
+    <div class="container header-inner">
 
-<div class="logo">
+        <a href="index.html" class="logo">
+            <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+            <span>PT Autotube Crew Studio</span>
+        </a>
 
-PT Autotube Crew Studio
+        <a href="contact.html" class="back-link">
+            Contact Studio
+        </a>
 
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="blog.html">Blog</a>
-<a href="downloads.html">Downloads</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
+    </div>
 </header>
 
+<main>
+
 <section class="hero">
+    <div class="container">
 
-<h1>Studio Blog</h1>
+        <h1>Studio Blog</h1>
 
-<p>
+        <p>
+            Insights, production knowledge and creative perspectives from
+            PT Autotube Crew Studio across CGI, 3D animation, VFX and digital production.
+        </p>
 
-Discover articles, production insights and industry knowledge from PT Autotube Crew Studio.
-
-</p>
-
+    </div>
 </section>
 
 <section>
+    <div class="container">
 
-<div class="grid">
+        <div class="section-title">
+            <h2>Latest Insights</h2>
+            <p>
+                Explore topics related to visual production, creative workflows,
+                technology and the future of digital content.
+            </p>
+        </div>
 
-<div class="card">
+        <div class="blog-grid">
 
-<h3>Getting Started with CGI Production</h3>
+            <article class="blog-card">
+                <span class="blog-tag">CGI</span>
+                <h3>How CGI Brings Creative Ideas to Life</h3>
+                <p>
+                    An overview of how computer-generated imagery can support
+                    advertising, storytelling, product presentation and digital media.
+                </p>
+                <a href="#" class="read-more">Read Article →</a>
+            </article>
 
-<p>
+            <article class="blog-card">
+                <span class="blog-tag">3D Animation</span>
+                <h3>The Role of 3D Animation in Modern Content</h3>
+                <p>
+                    Discover how 3D animation can communicate ideas,
+                    products and stories through engaging visual experiences.
+                </p>
+                <a href="#" class="read-more">Read Article →</a>
+            </article>
 
-Learn the complete CGI production workflow from concept to final rendering.
+            <article class="blog-card">
+                <span class="blog-tag">VFX</span>
+                <h3>Understanding Visual Effects Production</h3>
+                <p>
+                    A look at the creative and technical stages involved in
+                    producing visual effects for film, commercials and digital media.
+                </p>
+                <a href="#" class="read-more">Read Article →</a>
+            </article>
 
-</p>
+            <article class="blog-card">
+                <span class="blog-tag">Workflow</span>
+                <h3>Building an Efficient Creative Production Pipeline</h3>
+                <p>
+                    Why planning, communication, asset management and
+                    structured workflows are important for successful production.
+                </p>
+                <a href="#" class="read-more">Read Article →</a>
+            </article>
 
-<a href="#" class="btn">
+            <article class="blog-card">
+                <span class="blog-tag">Technology</span>
+                <h3>Modern Tools for 3D and CGI Production</h3>
+                <p>
+                    Explore how modern creative software and real-time technologies
+                    support today's digital production environments.
+                </p>
+                <a href="#" class="read-more">Read Article →</a>
+            </article>
 
-Coming Soon
+            <article class="blog-card">
+                <span class="blog-tag">Production</span>
+                <h3>Why Creative Collaboration Matters</h3>
+                <p>
+                    Strong communication between artists, clients and production
+                    teams can improve quality, efficiency and creative results.
+                </p>
+                <a href="#" class="read-more">Read Article →</a>
+            </article>
 
-</a>
+        </div>
 
-</div>
-
-<div class="card">
-
-<h3>Why Businesses Use 3D Animation</h3>
-
-<p>
-
-Discover how 3D animation improves marketing, advertising and product presentations.
-
-</p>
-
-<a href="#" class="btn">
-
-Coming Soon
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>Unreal Engine 5 for Real-Time Production</h3>
-
-<p>
-
-See how Unreal Engine is transforming virtual production and cinematic visualization.
-
-</p>
-
-<a href="#" class="btn">
-
-Coming Soon
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>Visual Effects in Commercial Advertising</h3>
-
-<p>
-
-Explore how VFX creates engaging commercials and memorable brand campaigns.
-
-</p>
-
-<a href="#" class="btn">
-
-Coming Soon
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>Medical Animation Explained</h3>
-
-<p>
-
-Understand how medical animation simplifies complex healthcare concepts.
-
-</p>
-
-<a href="#" class="btn">
-
-Coming Soon
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>Future of AI and 3D Content Creation</h3>
-
-<p>
-
-A look at how AI tools support creative professionals in modern production pipelines.
-
-</p>
-
-<a href="#" class="btn">
-
-Coming Soon
-
-</a>
-
-</div>
-
-</div>
-
+    </div>
 </section>
 
+<section class="note">
+    <div class="container">
+
+        <div class="note-box">
+
+            <h2>More Studio Content Coming Soon</h2>
+
+            <p>
+                We will continue expanding this section with production insights,
+                project stories, technical knowledge and creative industry updates.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+
+        <h2>Work With Our Studio</h2>
+
+        <p>
+            Have a CGI, 3D animation, VFX or visualization project?
+            Contact PT Autotube Crew Studio to discuss your requirements.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Start Your Project
+        </a>
+
+    </div>
+</section>
+
+</main>
+
 <footer>
-
-© PT Autotube Crew Studio
-
-<br>
-
-Jakarta, Indonesia
-
+    <div class="container">
+        <p>
+            © 2026 PT Autotube Crew Studio. All Rights Reserved.
+        </p>
+    </div>
 </footer>
 
 </body>
-
 </html>
