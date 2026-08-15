@@ -1,332 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Testimonials | PT Autotube Crew Studio</title>
-
-<meta name="description" content="Read what clients say about PT Autotube Crew Studio and our professional CGI, 3D Animation, Visual Effects, Motion Graphics and Digital Production services.">
-
-<link rel="icon" href="logo.png.png">
+<meta name="description" content="Testimonials and client feedback for PT Autotube Crew Studio's CGI, 3D animation, VFX, product visualization and creative production services.">
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#050505;
-color:#ffffff;
-line-height:1.8;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.7;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
-background:#0b0b0b;
-border-bottom:1px solid #222;
+    background:#090909;
+    border-bottom:1px solid #222;
+    padding:22px 0;
+}
+
+.header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
 }
 
 .logo{
-font-size:22px;
-font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:22px;
+    font-weight:700;
 }
 
-nav a{
-color:#ffffff;
-text-decoration:none;
-margin-left:20px;
-transition:.3s;
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
 }
 
-nav a:hover{
-color:#e50914;
+.back-link{
+    padding:10px 20px;
+    border:1px solid #333;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.back-link:hover{
+    background:#fff;
+    color:#000;
 }
 
 .hero{
-padding:90px 10%;
-text-align:center;
+    padding:110px 0 80px;
+    text-align:center;
+    background:linear-gradient(180deg,#101010,#050505);
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:20px;
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:25px;
 }
 
 .hero p{
-max-width:850px;
-margin:auto;
-color:#cccccc;
+    max-width:800px;
+    margin:auto;
+    color:#c8c8c8;
+    font-size:18px;
 }
 
 section{
-padding:70px 10%;
+    padding:90px 0;
 }
 
 .section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
+    text-align:center;
+    margin-bottom:55px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+.section-title h2{
+    font-size:40px;
+    margin-bottom:15px;
 }
 
-.card{
-background:#111;
-padding:30px;
-border-radius:15px;
-border:1px solid #222;
-transition:.3s;
+.section-title p{
+    color:#aaa;
+    max-width:750px;
+    margin:auto;
 }
 
-.card:hover{
-transform:translateY(-6px);
-border-color:#e50914;
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
-.stars{
-font-size:22px;
-margin-bottom:15px;
-color:#FFD700;
+.testimonial{
+    background:#101010;
+    border:1px solid #252525;
+    border-radius:18px;
+    padding:35px;
+    transition:.3s;
 }
 
-.card p{
-color:#cccccc;
-margin-bottom:20px;
+.testimonial:hover{
+    transform:translateY(-6px);
+    border-color:#555;
 }
 
-.client{
-font-weight:bold;
-font-size:18px;
+.quote{
+    font-size:42px;
+    line-height:1;
+    margin-bottom:20px;
 }
 
-.position{
-color:#999999;
-font-size:14px;
+.testimonial p{
+    color:#c4c4c4;
+    font-size:16px;
+    margin-bottom:25px;
 }
 
-.note{
-max-width:900px;
-margin:auto;
-text-align:center;
-color:#bbbbbb;
-padding-top:30px;
+.testimonial h3{
+    font-size:19px;
+    margin-bottom:5px;
+}
+
+.role{
+    color:#888;
+    font-size:14px;
 }
 
 .cta{
-text-align:center;
-padding:80px 10%;
+    text-align:center;
+    background:#0d0d0d;
+    border-top:1px solid #222;
+    border-bottom:1px solid #222;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.cta p{
+    color:#aaa;
+    max-width:700px;
+    margin:0 auto 30px;
 }
 
 .btn{
-display:inline-block;
-padding:15px 35px;
-background:#e50914;
-color:#ffffff;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-margin-top:25px;
+    display:inline-block;
+    padding:15px 34px;
+    background:#e50914;
+    border-radius:30px;
+    font-weight:700;
+    transition:.3s;
 }
 
 .btn:hover{
-background:#ff2f2f;
+    background:#ff303b;
+    transform:translateY(-3px);
 }
 
 footer{
-padding:30px;
-text-align:center;
-border-top:1px solid #222;
-color:#999999;
+    padding:45px 0;
+    background:#090909;
+    border-top:1px solid #222;
+    text-align:center;
 }
 
-</style>
+footer p{
+    color:#888;
+    font-size:14px;
+}
 
+@media(max-width:800px){
+
+    .hero{
+        padding:80px 0 60px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .testimonials{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+}
+
+@media(max-width:550px){
+
+    .header-inner{
+        flex-direction:column;
+    }
+
+    .logo{
+        font-size:18px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .testimonials{
+        grid-template-columns:1fr;
+    }
+
+    .cta h2{
+        font-size:32px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
+    <div class="container header-inner">
 
-<div class="logo">
+        <a href="index.html" class="logo">
+            <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+            <span>PT Autotube Crew Studio</span>
+        </a>
 
-PT Autotube Crew Studio
+        <a href="portfolio.html" class="back-link">
+            View Portfolio
+        </a>
 
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
+    </div>
 </header>
 
+<main>
+
 <section class="hero">
+    <div class="container">
 
-<h1>Client Testimonials</h1>
+        <h1>Client Testimonials</h1>
 
-<p>
+        <p>
+            We value professional collaboration, clear communication and
+            high-quality creative production. This page is dedicated to
+            feedback from our clients and production partners.
+        </p>
 
-Building long-term relationships through creativity, quality and professional production services.
-
-</p>
-
+    </div>
 </section>
 
 <section>
+    <div class="container">
 
-<h2 class="section-title">
+        <div class="section-title">
+            <h2>What Our Clients Say</h2>
+            <p>
+                Selected feedback and experiences from clients and creative
+                partners who have worked with our studio.
+            </p>
+        </div>
 
-What Our Clients Say
+        <div class="testimonials">
 
-</h2>
+            <div class="testimonial">
+                <div class="quote">“</div>
+                <p>
+                    PT Autotube Crew Studio demonstrated a professional approach
+                    to creative production with strong attention to visual quality
+                    and project requirements.
+                </p>
+                <h3>Creative Partner</h3>
+                <span class="role">Production Collaboration</span>
+            </div>
 
-<div class="grid">
+            <div class="testimonial">
+                <div class="quote">“</div>
+                <p>
+                    The team understands the importance of communication,
+                    production planning and delivering visual content that
+                    supports the project's creative direction.
+                </p>
+                <h3>Production Client</h3>
+                <span class="role">CGI & 3D Production</span>
+            </div>
 
-<div class="card">
+            <div class="testimonial">
+                <div class="quote">“</div>
+                <p>
+                    A reliable creative production partner with a strong focus
+                    on quality, technical execution and professional collaboration.
+                </p>
+                <h3>Industry Partner</h3>
+                <span class="role">Creative Services</span>
+            </div>
 
-<div class="stars">★★★★★</div>
+        </div>
 
-<p>
-
-"The team demonstrated excellent communication, professional workflow and delivered high-quality CGI visuals that exceeded expectations."
-
-</p>
-
-<div class="client">
-
-Future Client
-
-</div>
-
-<div class="position">
-
-Commercial Project
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="stars">★★★★★</div>
-
-<p>
-
-"Outstanding attention to detail, realistic rendering and timely delivery. We look forward to future collaboration."
-
-</p>
-
-<div class="client">
-
-Future Business Partner
-
-</div>
-
-<div class="position">
-
-Marketing Campaign
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="stars">★★★★★</div>
-
-<p>
-
-"Professional production process from concept development to final delivery with excellent creative support."
-
-</p>
-
-<div class="client">
-
-Future Production Client
-
-</div>
-
-<div class="position">
-
-Animation Project
-
-</div>
-
-</div>
-
-</div>
-
-<div class="note">
-
-<h3 style="margin-bottom:20px;">
-
-Growing Together
-
-</h3>
-
-<p>
-
-PT Autotube Crew Studio is continuously expanding its portfolio and building long-term relationships with businesses, agencies and production companies worldwide. As we complete more client projects, this page will be updated with verified testimonials and success stories.
-
-</p>
-
-</div>
-
+    </div>
 </section>
 
 <section class="cta">
+    <div class="container">
 
-<h2>
+        <h2>Let's Create Something Great</h2>
 
-Let's Create Something Amazing Together
+        <p>
+            Looking for a CGI, 3D animation, VFX or digital production partner?
+            Contact PT Autotube Crew Studio to discuss your next project.
+        </p>
 
-</h2>
+        <a href="contact.html" class="btn">
+            Start Your Project
+        </a>
 
-<p>
-
-We would love to hear about your project and discuss how our creative team can help.
-
-</p>
-
-<a href="contact.html" class="btn">
-
-Contact Us
-
-</a>
-
+    </div>
 </section>
 
+</main>
+
 <footer>
-
-© PT Autotube Crew Studio
-
-<br>
-
-Jakarta, Indonesia
-
+    <div class="container">
+        <p>
+            © 2026 PT Autotube Crew Studio. All Rights Reserved.
+        </p>
+    </div>
 </footer>
 
 </body>
-
 </html>
