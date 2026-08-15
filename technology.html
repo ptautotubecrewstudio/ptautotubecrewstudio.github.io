@@ -1,24 +1,18 @@
+<!-- technology.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Technology | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Explore the technology, software and production tools used by PT Autotube Crew Studio for CGI, 3D animation, VFX, visualization and digital production.">
+<meta name="description" content="Explore the technology and production infrastructure used by PT Autotube Crew Studio for CGI, 3D animation, VFX, motion graphics, product visualization and digital production.">
 
-<meta name="keywords" content="CGI technology, 3D animation software, Blender, Unreal Engine 5, Adobe Creative Cloud, DaVinci Resolve, PT Autotube Crew Studio">
-
-<meta name="author" content="PT Autotube Crew Studio">
 <meta name="robots" content="index, follow">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Technology | PT Autotube Crew Studio">
-<meta property="og:description" content="Technology and production tools supporting our CGI, 3D animation, VFX and digital production workflows.">
-<meta property="og:image" content="logo.png.png">
-<meta property="og:url" content="https://www.autotubecrewstudio.com/technology.html">
 
 <link rel="icon" href="logo.png.png">
 
@@ -54,32 +48,31 @@ color:inherit;
 
 .container{
 width:90%;
-max-width:1400px;
+max-width:1200px;
 margin:auto;
 }
 
 header{
-position:fixed;
+position:sticky;
 top:0;
-left:0;
-width:100%;
-background:rgba(0,0,0,.92);
-backdrop-filter:blur(15px);
-z-index:999;
-border-bottom:1px solid rgba(255,255,255,.08);
+z-index:1000;
+background:rgba(0,0,0,.94);
+border-bottom:1px solid #222;
+backdrop-filter:blur(12px);
 }
 
-header .container{
+.header-inner{
+min-height:80px;
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:16px 0;
+justify-content:space-between;
+gap:30px;
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:10px;
+gap:12px;
 font-size:22px;
 font-weight:700;
 }
@@ -90,69 +83,52 @@ height:48px;
 object-fit:contain;
 }
 
-nav ul{
+nav{
 display:flex;
-list-style:none;
-gap:25px;
 align-items:center;
+gap:25px;
 }
 
-nav li{
-position:relative;
-}
-
-nav li a{
+nav a{
 font-size:15px;
-font-weight:500;
+color:#ddd;
 transition:.3s;
 }
 
-nav li a:hover{
+nav a:hover{
 color:#e50914;
 }
 
-.dropdown{
-position:absolute;
-top:100%;
-left:0;
-min-width:240px;
-background:#111;
-border:1px solid #292929;
-border-radius:12px;
-padding:12px 0;
-display:none;
-}
-
-.dropdown a{
-display:block;
-padding:10px 20px;
-}
-
-.dropdown a:hover{
-background:#1b1b1b;
-}
-
-nav li:hover .dropdown{
-display:block;
-}
-
-.mobile-menu-btn{
+.menu-button{
 display:none;
 background:none;
-border:none;
+border:0;
 color:#fff;
-font-size:29px;
+font-size:28px;
 cursor:pointer;
 }
 
-.mobile-menu{
+.mobile-nav{
 display:none;
+background:#0b0b0b;
+border-top:1px solid #222;
+}
+
+.mobile-nav a{
+display:block;
+padding:14px 5%;
+border-bottom:1px solid #222;
+color:#ddd;
+}
+
+.mobile-nav.active{
+display:block;
 }
 
 .hero{
-padding:170px 0 100px;
+padding:110px 0 90px;
 background:
-radial-gradient(circle at 80% 30%,rgba(229,9,20,.12),transparent 35%),
+radial-gradient(circle at top right,rgba(229,9,20,.16),transparent 35%),
 #050505;
 }
 
@@ -163,7 +139,7 @@ text-align:center;
 }
 
 .hero h1{
-font-size:62px;
+font-size:58px;
 line-height:1.15;
 font-weight:800;
 margin-bottom:25px;
@@ -172,191 +148,185 @@ margin-bottom:25px;
 .hero p{
 font-size:18px;
 color:#cfcfcf;
-max-width:800px;
+max-width:820px;
 margin:auto;
 }
 
-section{
-padding:100px 0;
+.section{
+padding:90px 0;
 }
 
-.dark{
-background:#090909;
+.section.dark{
+background:#0b0b0b;
 }
 
 .section-title{
 text-align:center;
-max-width:850px;
-margin:0 auto 60px;
+margin-bottom:55px;
 }
 
 .section-title h2{
-font-size:42px;
-margin-bottom:18px;
+font-size:40px;
+margin-bottom:15px;
 }
 
 .section-title p{
-color:#bdbdbd;
-font-size:16px;
+max-width:800px;
+margin:auto;
+color:#aaa;
 }
 
-.grid{
+.tech-grid{
 display:grid;
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:repeat(3,1fr);
 gap:25px;
 }
 
 .tech-card{
-background:#101010;
-border:1px solid #242424;
+background:#111;
+border:1px solid #252525;
 border-radius:18px;
-padding:35px;
-transition:.35s;
+padding:32px;
+transition:.3s;
 }
 
 .tech-card:hover{
-transform:translateY(-7px);
+transform:translateY(-6px);
 border-color:#e50914;
 }
 
-.tech-number{
-font-size:14px;
-font-weight:600;
-color:#e50914;
-margin-bottom:12px;
-letter-spacing:1px;
+.tech-icon{
+width:64px;
+height:64px;
+border-radius:15px;
+background:#e50914;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+font-weight:700;
+margin-bottom:22px;
 }
 
 .tech-card h3{
-font-size:26px;
-margin-bottom:12px;
-}
-
-.tech-card p{
-color:#c5c5c5;
-font-size:15px;
-}
-
-.tech-list{
-margin-top:20px;
-padding-left:20px;
-color:#bdbdbd;
-}
-
-.tech-list li{
-margin-bottom:7px;
-}
-
-.workflow{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
-
-.workflow-item{
-text-align:center;
-padding:30px 20px;
-background:#101010;
-border:1px solid #242424;
-border-radius:16px;
-}
-
-.workflow-item span{
-display:block;
-font-size:30px;
-font-weight:800;
-color:#e50914;
+font-size:22px;
 margin-bottom:10px;
 }
 
-.workflow-item h3{
-font-size:19px;
+.tech-card p{
+font-size:15px;
+color:#aaa;
+}
+
+.feature-list{
+margin-top:18px;
+padding-left:18px;
+color:#bbb;
+font-size:14px;
+}
+
+.feature-list li{
+margin-bottom:6px;
+}
+
+.process{
+max-width:1000px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.process-item{
+background:#111;
+border:1px solid #252525;
+border-radius:15px;
+padding:25px 18px;
+text-align:center;
+}
+
+.process-number{
+display:inline-flex;
+width:42px;
+height:42px;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:#e50914;
+font-size:14px;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.process-item h3{
+font-size:17px;
 margin-bottom:8px;
 }
 
-.workflow-item p{
-font-size:14px;
+.process-item p{
+font-size:13px;
+color:#999;
+}
+
+.info-box{
+max-width:950px;
+margin:auto;
+background:#111;
+border:1px solid #252525;
+border-radius:18px;
+padding:38px;
+text-align:center;
+}
+
+.info-box h2{
+font-size:32px;
+margin-bottom:15px;
+}
+
+.info-box p{
 color:#aaa;
 }
 
 .cta{
+padding:100px 0;
 text-align:center;
 }
 
 .cta h2{
 font-size:42px;
-margin-bottom:20px;
+margin-bottom:18px;
 }
 
 .cta p{
-max-width:750px;
+max-width:760px;
 margin:0 auto 30px;
-color:#bbb;
+color:#aaa;
 }
 
 .btn{
 display:inline-block;
-padding:15px 35px;
+padding:14px 32px;
+border-radius:40px;
 background:#e50914;
-border-radius:50px;
 font-weight:600;
 transition:.3s;
 }
 
 .btn:hover{
-background:#ff2f3d;
+background:#ff2633;
 transform:translateY(-3px);
 }
 
 footer{
 background:#090909;
 border-top:1px solid #222;
-padding:60px 0 30px;
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:2fr 1fr 1fr 1.5fr;
-gap:35px;
-}
-
-footer h3{
-margin-bottom:15px;
+padding:45px 0;
+text-align:center;
 }
 
 footer p{
-color:#999;
+color:#888;
 font-size:14px;
-margin-bottom:8px;
-}
-
-footer a:hover{
-color:#e50914;
-}
-
-.footer-bottom{
-border-top:1px solid #222;
-margin-top:40px;
-padding-top:25px;
-text-align:center;
-color:#777;
-font-size:14px;
-}
-
-#topBtn{
-position:fixed;
-right:25px;
-bottom:25px;
-width:52px;
-height:52px;
-border:none;
-border-radius:50%;
-background:#e50914;
-color:#fff;
-font-size:21px;
-cursor:pointer;
-display:none;
-z-index:998;
 }
 
 @media(max-width:1000px){
@@ -365,53 +335,32 @@ nav{
 display:none;
 }
 
-.mobile-menu-btn{
+.menu-button{
 display:block;
 }
 
-.mobile-menu{
-position:absolute;
-top:100%;
-left:0;
-width:100%;
-background:#0b0b0b;
-border-top:1px solid #222;
-padding:15px 25px;
+.tech-grid{
+grid-template-columns:1fr 1fr;
 }
 
-.mobile-menu.active{
-display:block;
-}
-
-.mobile-menu a{
-display:block;
-padding:12px 5px;
-border-bottom:1px solid #222;
-font-size:15px;
+.process{
+grid-template-columns:1fr 1fr;
 }
 
 .hero h1{
-font-size:48px;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-.workflow{
-grid-template-columns:1fr 1fr;
-}
-
-.footer-grid{
-grid-template-columns:1fr 1fr;
+font-size:46px;
 }
 
 }
 
-@media(max-width:600px){
+@media(max-width:650px){
 
 .container{
-width:90%;
+width:92%;
+}
+
+.header-inner{
+min-height:70px;
 }
 
 .logo{
@@ -424,7 +373,7 @@ height:40px;
 }
 
 .hero{
-padding:135px 0 70px;
+padding:80px 0 65px;
 }
 
 .hero h1{
@@ -435,32 +384,37 @@ font-size:36px;
 font-size:15px;
 }
 
-section{
-padding:70px 0;
+.section{
+padding:65px 0;
 }
 
 .section-title h2{
 font-size:31px;
 }
 
+.tech-grid,
+.process{
+grid-template-columns:1fr;
+}
+
 .tech-card{
-padding:25px;
+padding:27px;
 }
 
-.tech-card h3{
-font-size:23px;
+.info-box{
+padding:27px;
 }
 
-.workflow{
-grid-template-columns:1fr;
+.info-box h2{
+font-size:27px;
 }
 
-.footer-grid{
-grid-template-columns:1fr;
+.cta{
+padding:70px 0;
 }
 
 .cta h2{
-font-size:31px;
+font-size:32px;
 }
 
 .btn{
@@ -478,302 +432,195 @@ text-align:center;
 
 <header>
 
-<div class="container">
+<div class="container header-inner">
 
 <a href="index.html" class="logo">
-<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-<span>PT Autotube Crew Studio</span>
-</a>
 
-<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
-☰
-</button>
+<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+
+<span>PT Autotube Crew Studio</span>
+
+</a>
 
 <nav>
 
-<ul>
-
-<li>
 <a href="index.html">Home</a>
-</li>
-
-<li>
-<a href="#">About ▼</a>
-
-<div class="dropdown">
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-</div>
-
-</li>
-
-<li>
-<a href="#">Services ▼</a>
-
-<div class="dropdown">
+<a href="about.html">About</a>
 <a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-</div>
-
-</li>
-
-<li>
-<a href="#">Portfolio ▼</a>
-
-<div class="dropdown">
 <a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-</div>
-
-</li>
-
-<li>
-<a href="#">Resources ▼</a>
-
-<div class="dropdown">
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-</div>
-
-</li>
-
-<li>
+<a href="workflow.html">Workflow</a>
 <a href="contact.html">Contact</a>
-</li>
-
-</ul>
 
 </nav>
 
+<button class="menu-button" id="menuButton" aria-label="Open navigation">
+☰
+</button>
+
 </div>
 
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-nav" id="mobileNav">
 
 <a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
+<a href="about.html">About</a>
 <a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
 <a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
+<a href="workflow.html">Workflow</a>
 <a href="contact.html">Contact</a>
 
 </div>
 
 </header>
 
+<main>
 
 <section class="hero">
 
-<div class="container">
+<div class="container hero-content">
 
-<div class="hero-content">
-
-<h1>Technology Behind Our Creative Production</h1>
+<h1>Technology & Production Infrastructure</h1>
 
 <p>
-PT Autotube Crew Studio uses professional digital production tools and modern workflows to create high-quality CGI, 3D animation, visual effects, visualization and digital content for clients worldwide.
+We use modern digital production technologies to support high-quality CGI, 3D animation, VFX, motion graphics, product visualization and cinematic content.
 </p>
-
-</div>
 
 </div>
 
 </section>
 
-
-<section class="dark">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Our Production Technology</h2>
-
-<p>
-Our technology choices support different stages of creative production, from 3D development and real-time environments to compositing, editing and final delivery.
-</p>
-
-</div>
-
-
-<div class="grid">
-
-<div class="tech-card">
-
-<div class="tech-number">01</div>
-
-<h3>Blender</h3>
-
-<p>
-Blender supports our 3D production activities including modeling, sculpting, texturing, animation, lighting, rendering and scene development.
-</p>
-
-<ul class="tech-list">
-<li>3D Modeling</li>
-<li>Environment Creation</li>
-<li>Animation</li>
-<li>Lighting and Rendering</li>
-</ul>
-
-</div>
-
-
-<div class="tech-card">
-
-<div class="tech-number">02</div>
-
-<h3>Unreal Engine 5</h3>
-
-<p>
-Unreal Engine 5 provides real-time capabilities for interactive environments, visualization, cinematic scenes and modern digital experiences.
-</p>
-
-<ul class="tech-list">
-<li>Real-Time Visualization</li>
-<li>Virtual Environments</li>
-<li>Cinematic Scenes</li>
-<li>Interactive Experiences</li>
-</ul>
-
-</div>
-
-
-<div class="tech-card">
-
-<div class="tech-number">03</div>
-
-<h3>Adobe Creative Cloud</h3>
-
-<p>
-Adobe Creative Cloud supports graphic design, compositing, motion design, image preparation and other creative production requirements.
-</p>
-
-<ul class="tech-list">
-<li>Graphic Design</li>
-<li>Motion Design</li>
-<li>Compositing</li>
-<li>Creative Asset Preparation</li>
-</ul>
-
-</div>
-
-
-<div class="tech-card">
-
-<div class="tech-number">04</div>
-
-<h3>DaVinci Resolve</h3>
-
-<p>
-DaVinci Resolve supports video editing, color workflows and finishing requirements for professional digital productions.
-</p>
-
-<ul class="tech-list">
-<li>Video Editing</li>
-<li>Color Correction</li>
-<li>Color Grading</li>
-<li>Final Production</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section>
+<section class="section">
 
 <div class="container">
 
 <div class="section-title">
 
-<h2>Technology Across Our Workflow</h2>
+<h2>Our Technology Environment</h2>
 
 <p>
-Different production stages require different tools. Our workflow combines creative development with technical production and final finishing.
+Our technology approach combines 3D production, real-time visualization, rendering, compositing and post-production capabilities.
 </p>
 
 </div>
 
+<div class="tech-grid">
 
-<div class="workflow">
+<div class="tech-card">
 
-<div class="workflow-item">
-
-<span>01</span>
-
-<h3>Development</h3>
-
-<p>
-Concept development, planning and preparation of digital production assets.
-</p>
-
-</div>
-
-
-<div class="workflow-item">
-
-<span>02</span>
+<div class="tech-icon">3D</div>
 
 <h3>3D Production</h3>
 
 <p>
-Modeling, environments, animation, materials, lighting and scene development.
-</p>
+Digital 3D production technologies support the creation of detailed assets, environments, products and cinematic scenes.</p>
+
+<ul class="feature-list">
+
+<li>3D Modeling</li>
+<li>Environment Creation</li>
+<li>Materials & Textures</li>
+<li>Lighting & Rendering</li>
+
+</ul>
 
 </div>
 
+<div class="tech-card">
 
-<div class="workflow-item">
+<div class="tech-icon">RT</div>
 
-<span>03</span>
-
-<h3>Real-Time & Effects</h3>
+<h3>Real-Time Technology</h3>
 
 <p>
-Real-time visualization, cinematic scenes and digital effects production.
-</p>
+Real-time production environments support interactive visualization, cinematic development and rapid visual iteration.</p>
+
+<ul class="feature-list">
+
+<li>Real-Time Rendering</li>
+<li>Interactive Visualization</li>
+<li>Cinematic Environments</li>
+<li>Rapid Iteration</li>
+
+</ul>
 
 </div>
 
+<div class="tech-card">
 
-<div class="workflow-item">
+<div class="tech-icon">FX</div>
 
-<span>04</span>
-
-<h3>Finishing</h3>
+<h3>Visual Effects</h3>
 
 <p>
-Editing, color work, compositing and preparation of final deliverables.
-</p>
+Digital effects technologies support simulations, compositing and visual enhancement for cinematic content.</p>
+
+<ul class="feature-list">
+
+<li>Visual Effects</li>
+<li>Simulations</li>
+<li>Compositing</li>
+<li>Post-Production</li>
+
+</ul>
+
+</div>
+
+<div class="tech-card">
+
+<div class="tech-icon">MG</div>
+
+<h3>Motion Graphics</h3>
+
+<p>
+Motion design technologies allow us to create animated graphics, titles, promotional visuals and digital content.</p>
+
+<ul class="feature-list">
+
+<li>Motion Design</li>
+<li>Animated Titles</li>
+<li>Promotional Content</li>
+<li>Digital Graphics</li>
+
+</ul>
+
+</div>
+
+<div class="tech-card">
+
+<div class="tech-icon">PV</div>
+
+<h3>Product Visualization</h3>
+
+<p>
+Advanced 3D visualization techniques help create detailed and presentation-ready product imagery.</p>
+
+<ul class="feature-list">
+
+<li>Product Modeling</li>
+<li>Photorealistic Rendering</li>
+<li>Material Development</li>
+<li>Marketing Visuals</li>
+
+</ul>
+
+</div>
+
+<div class="tech-card">
+
+<div class="tech-icon">PC</div>
+
+<h3>Post-Production</h3>
+
+<p>
+Post-production technologies support editing, color work, compositing, finishing and final content preparation.</p>
+
+<ul class="feature-list">
+
+<li>Video Editing</li>
+<li>Color Work</li>
+<li>Compositing</li>
+<li>Final Mastering</li>
+
+</ul>
 
 </div>
 
@@ -783,21 +630,98 @@ Editing, color work, compositing and preparation of final deliverables.
 
 </section>
 
-
-<section class="dark">
+<section class="section dark">
 
 <div class="container">
 
-<div class="cta">
+<div class="section-title">
 
-<h2>Technology That Supports Creativity</h2>
+<h2>Technology Across Production</h2>
 
 <p>
-Our production tools are selected according to project requirements, creative goals and delivery needs. We focus on using technology as a practical part of the creative process.
+Different technologies are integrated into the appropriate stages of a project to create an efficient production environment.
 </p>
 
-<a href="contact.html" class="btn">
-Discuss Your Project
+</div>
+
+<div class="process">
+
+<div class="process-item">
+
+<div class="process-number">01</div>
+
+<h3>Concept</h3>
+
+<p>
+Creative planning and visual development.</p>
+
+</div>
+
+<div class="process-item">
+
+<div class="process-number">02</div>
+
+<h3>Development</h3>
+
+<p>
+Assets, environments and visual elements are created.</p>
+
+</div>
+
+<div class="process-item">
+
+<div class="process-number">03</div>
+
+<h3>Production</h3>
+
+<p>
+Animation, rendering and effects are produced.</p>
+
+</div>
+
+<div class="process-item">
+
+<div class="process-number">04</div>
+
+<h3>Finishing</h3>
+
+<p>
+Editing, compositing, color and final delivery.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Professional Software Ecosystem</h2>
+
+<p>
+Our production technology is supported by professional creative software selected according to project requirements.
+</p>
+
+</div>
+
+<div class="info-box">
+
+<h2>Flexible Technology Selection</h2>
+
+<p>
+The technology and software used for a project can vary according to its creative direction, asset requirements, rendering needs, collaboration requirements and final delivery specifications. This flexible approach allows the production pipeline to adapt to different types of work.
+</p>
+
+<br>
+
+<a href="software.html" class="btn">
+Explore Software
 </a>
 
 </div>
@@ -806,141 +730,109 @@ Discuss Your Project
 
 </section>
 
+<section class="section dark">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Technology & Quality</h2>
+
+<p>
+Technology is combined with creative expertise and structured production processes to maintain consistent visual and technical quality.
+</p>
+
+</div>
+
+<div class="tech-grid">
+
+<div class="tech-card">
+
+<div class="tech-icon">01</div>
+
+<h3>Creative Control</h3>
+
+<p>
+Technology supports artistic direction while keeping the intended visual style at the center of production.</p>
+
+</div>
+
+<div class="tech-card">
+
+<div class="tech-icon">02</div>
+
+<h3>Production Efficiency</h3>
+
+<p>
+Modern tools help organize production tasks, improve iteration and support efficient project development.</p>
+
+</div>
+
+<div class="tech-card">
+
+<div class="tech-icon">03</div>
+
+<h3>Technical Quality</h3>
+
+<p>
+Production outputs are prepared with attention to technical specifications and final delivery requirements.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Let's Create With Modern Technology</h2>
+
+<p>
+Tell us about your CGI, 3D animation, VFX, visualization or digital production project and we can discuss the right technical approach.
+</p>
+
+<a href="contact.html" class="btn">
+Start Your Project
+</a>
+
+</div>
+
+</section>
+
+</main>
 
 <footer>
 
 <div class="container">
 
-<div class="footer-grid">
-
-<div>
-
-<h3>PT Autotube Crew Studio</h3>
-
 <p>
-Professional CGI, 3D Animation, Visual Effects, Motion Graphics, Product Visualization and Commercial Production Studio based in Jakarta, Indonesia.
-</p>
-
-</div>
-
-
-<div>
-
-<h3>Company</h3>
-
-<p><a href="about.html">About Us</a></p>
-<p><a href="team.html">Our Team</a></p>
-<p><a href="careers.html">Careers</a></p>
-<p><a href="partners.html">Partners</a></p>
-
-</div>
-
-
-<div>
-
-<h3>Services</h3>
-
-<p><a href="services.html">Services</a></p>
-<p><a href="technology.html">Technology</a></p>
-<p><a href="industries.html">Industries</a></p>
-<p><a href="pricing.html">Pricing</a></p>
-
-</div>
-
-
-<div>
-
-<h3>Contact</h3>
-
-<p>Jakarta, Indonesia</p>
-<p>autotubecrewstudio@gmail.com</p>
-
-<p>
-<a href="https://www.autotubecrewstudio.com" target="_blank">
-www.autotubecrewstudio.com
-</a>
-</p>
-
-<p>
-<a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank">
-YouTube Channel
-</a>
-</p>
-
-<p>
-<a href="https://www.linkedin.com/company/ptautotubecrewstudio/" target="_blank">
-LinkedIn
-</a>
-</p>
-
-</div>
-
-</div>
-
-
-<div class="footer-bottom">
-
 © 2026 PT Autotube Crew Studio. All Rights Reserved.
-
-</div>
+</p>
 
 </div>
 
 </footer>
 
-
-<button id="topBtn" aria-label="Back to top">
-↑
-</button>
-
-
 <script>
 
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
+const menuButton = document.getElementById("menuButton");
+const mobileNav = document.getElementById("mobileNav");
 
-mobileMenuBtn.addEventListener("click", function(){
+menuButton.addEventListener("click", function(){
 
-mobileMenu.classList.toggle("active");
+mobileNav.classList.toggle("active");
 
 });
 
-const mobileLinks = mobileMenu.querySelectorAll("a");
-
-mobileLinks.forEach(function(link){
+mobileNav.querySelectorAll("a").forEach(function(link){
 
 link.addEventListener("click", function(){
 
-mobileMenu.classList.remove("active");
-
-});
-
-});
-
-
-const topBtn = document.getElementById("topBtn");
-
-window.addEventListener("scroll", function(){
-
-if(window.scrollY > 300){
-
-topBtn.style.display = "block";
-
-}else{
-
-topBtn.style.display = "none";
-
-}
-
-});
-
-
-topBtn.addEventListener("click", function(){
-
-window.scrollTo({
-
-top:0,
-behavior:"smooth"
+mobileNav.classList.remove("active");
 
 });
 
@@ -949,4 +841,5 @@ behavior:"smooth"
 </script>
 
 </body>
+
 </html>
