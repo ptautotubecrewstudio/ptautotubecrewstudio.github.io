@@ -1,82 +1,759 @@
+<!-- terms-and-conditions.html -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms & Conditions | PT Autotube Crew Studio</title>
-<meta name="description" content="Terms and Conditions of PT Autotube Crew Studio.">
+
+<title>Terms and Conditions | PT Autotube Crew Studio</title>
+
+<meta name="description" content="Terms and Conditions for PT Autotube Crew Studio covering website use, services, projects, intellectual property, payments, confidentiality and client responsibilities.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="icon" href="logo.png.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
 body{
-font-family:Arial,Helvetica,sans-serif;
-max-width:900px;
-margin:40px auto;
-padding:20px;
+font-family:'Poppins',sans-serif;
+background:#050505;
+color:#fff;
 line-height:1.8;
-color:#333;
+overflow-x:hidden;
 }
-h1,h2{
-color:#111;
-}
+
 a{
-color:#0066cc;
 text-decoration:none;
+color:inherit;
 }
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(0,0,0,.94);
+border-bottom:1px solid #222;
+backdrop-filter:blur(12px);
+}
+
+.header-inner{
+min-height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:22px;
+font-weight:700;
+}
+
+.logo img{
+width:48px;
+height:48px;
+object-fit:contain;
+}
+
+nav{
+display:flex;
+align-items:center;
+gap:25px;
+}
+
+nav a{
+font-size:15px;
+color:#ddd;
+transition:.3s;
+}
+
+nav a:hover{
+color:#e50914;
+}
+
+.menu-button{
+display:none;
+background:none;
+border:0;
+color:#fff;
+font-size:28px;
+cursor:pointer;
+}
+
+.mobile-nav{
+display:none;
+background:#0b0b0b;
+border-top:1px solid #222;
+}
+
+.mobile-nav a{
+display:block;
+padding:14px 5%;
+border-bottom:1px solid #222;
+color:#ddd;
+}
+
+.mobile-nav.active{
+display:block;
+}
+
+.hero{
+padding:100px 0 80px;
+background:
+radial-gradient(circle at top right,rgba(229,9,20,.15),transparent 35%),
+#050505;
+}
+
+.hero-content{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.hero h1{
+font-size:54px;
+line-height:1.15;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:16px;
+color:#aaa;
+}
+
+.policy-section{
+padding:80px 0;
+}
+
+.policy-wrapper{
+max-width:950px;
+margin:auto;
+background:#111;
+border:1px solid #252525;
+border-radius:18px;
+padding:45px;
+}
+
+.policy-section h2{
+font-size:27px;
+margin:38px 0 14px;
+}
+
+.policy-section h2:first-child{
+margin-top:0;
+}
+
+.policy-section h3{
+font-size:19px;
+margin:25px 0 10px;
+}
+
+.policy-section p{
+font-size:14px;
+color:#aaa;
+margin-bottom:15px;
+}
+
+.policy-section ul{
+margin:10px 0 20px 22px;
+color:#aaa;
+}
+
+.policy-section li{
+font-size:14px;
+margin-bottom:8px;
+}
+
+.policy-section a{
+color:#e50914;
+}
+
+.policy-section a:hover{
+text-decoration:underline;
+}
+
+.last-updated{
+display:inline-block;
+padding:7px 14px;
+border:1px solid #333;
+border-radius:30px;
+font-size:12px;
+color:#aaa;
+margin-bottom:30px;
+}
+
+.highlight{
+background:#0a0a0a;
+border-left:3px solid #e50914;
+padding:18px 20px;
+margin:20px 0;
+border-radius:5px;
+}
+
+.highlight p{
+margin:0;
+}
+
+.cta{
+padding:90px 0;
+text-align:center;
+background:#0b0b0b;
+border-top:1px solid #222;
+}
+
+.cta h2{
+font-size:38px;
+margin-bottom:15px;
+}
+
+.cta p{
+max-width:700px;
+margin:0 auto 28px;
+color:#aaa;
+font-size:15px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+border-radius:40px;
+background:#e50914;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff2633;
+transform:translateY(-3px);
+}
+
+footer{
+background:#090909;
+border-top:1px solid #222;
+padding:45px 0;
+text-align:center;
+}
+
+footer p{
+color:#888;
+font-size:14px;
+margin-bottom:10px;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.footer-links a{
+font-size:13px;
+color:#777;
+transition:.3s;
+}
+
+.footer-links a:hover{
+color:#e50914;
+}
+
+@media(max-width:950px){
+
+nav{
+display:none;
+}
+
+.menu-button{
+display:block;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+}
+
+@media(max-width:650px){
+
+.container{
+width:92%;
+}
+
+.header-inner{
+min-height:70px;
+}
+
+.logo{
+font-size:16px;
+}
+
+.logo img{
+width:40px;
+height:40px;
+}
+
+.hero{
+padding:75px 0 60px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.policy-section{
+padding:55px 0;
+}
+
+.policy-wrapper{
+padding:27px 22px;
+}
+
+.policy-section h2{
+font-size:23px;
+margin-top:32px;
+}
+
+.policy-section h3{
+font-size:17px;
+}
+
+.policy-section p,
+.policy-section li{
+font-size:13px;
+}
+
+.cta{
+padding:65px 0;
+}
+
+.cta h2{
+font-size:30px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
-<h1>Terms & Conditions</h1>
+<header>
 
-<p><strong>Effective Date:</strong> July 30, 2026</p>
+<div class="container header-inner">
+
+<a href="index.html" class="logo">
+
+<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+
+<span>PT Autotube Crew Studio</span>
+
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="workflow.html">Workflow</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<button class="menu-button" id="menuButton" aria-label="Open navigation">
+☰
+</button>
+
+</div>
+
+<div class="mobile-nav" id="mobileNav">
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="workflow.html">Workflow</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Terms and Conditions</h1>
 
 <p>
-Welcome to PT Autotube Crew Studio. By accessing and using this website, you agree to these Terms & Conditions.
+Terms governing the use of the PT Autotube Crew Studio website and our general professional services.
 </p>
 
-<h2>Use of Website</h2>
+</div>
+
+</section>
+
+<section class="policy-section">
+
+<div class="container">
+
+<div class="policy-wrapper">
+
+<span class="last-updated">
+Last Updated: August 2026
+</span>
+
+<div class="highlight">
+
 <p>
-You agree to use this website only for lawful purposes and in a manner that does not interfere with its operation or other users.
+These Terms and Conditions provide general website and service guidelines. Specific project agreements, quotations, statements of work and contracts may contain additional terms that apply to individual projects.
 </p>
 
-<h2>Intellectual Property</h2>
-<p>
-All website content, including text, graphics, images, logos, videos, and designs, is the property of PT Autotube Crew Studio unless otherwise stated. Unauthorized copying or distribution is prohibited.
-</p>
+</div>
 
-<h2>Services</h2>
-<p>
-Information about our services is provided for general purposes. Project scope, pricing, and timelines are discussed individually with each customer.
-</p>
-
-<h2>External Links</h2>
-<p>
-This website may contain links to third-party websites. We are not responsible for the content or policies of those websites.
-</p>
-
-<h2>Limitation of Liability</h2>
-<p>
-PT Autotube Crew Studio is not liable for any direct or indirect damages arising from the use of this website.
-</p>
-
-<h2>Changes</h2>
-<p>
-We may update these Terms & Conditions at any time without prior notice.
-</p>
-
-<h2>Contact</h2>
+<h2>1. Acceptance of Terms</h2>
 
 <p>
-<strong>PT Autotube Crew Studio</strong><br>
-Jakarta Selatan, Indonesia<br>
-Email:
-<a href="mailto:autotubecrewstudio@gmail.com">autotubecrewstudio@gmail.com</a>
+By accessing or using the PT Autotube Crew Studio website, you agree to use the website responsibly and in accordance with these Terms and Conditions.
 </p>
 
 <p>
-<a href="index.html">← Return to Homepage</a>
+If you do not agree with these terms, please do not use the website.
 </p>
+
+<h2>2. About PT Autotube Crew Studio</h2>
+
+<p>
+PT Autotube Crew Studio is a creative production studio based in Jakarta, Indonesia, providing digital production and creative services including CGI, 3D animation, VFX, visualization, environment art, motion graphics and related services.
+</p>
+
+<h2>3. Website Use</h2>
+
+<p>
+You may use this website for legitimate personal, professional and business purposes.
+</p>
+
+<p>
+You must not use the website to:
+</p>
+
+<ul>
+
+<li>Violate applicable laws or regulations.</li>
+<li>Attempt to gain unauthorized access to the website or its systems.</li>
+<li>Introduce malicious software, code or harmful content.</li>
+<li>Copy or misuse website content without appropriate permission.</li>
+<li>Interfere with the operation or security of the website.</li>
+<li>Submit false, misleading or fraudulent information.</li>
+
+</ul>
+
+<h2>4. Services and Project Agreements</h2>
+
+<p>
+Information about our services displayed on this website is provided for general information and does not automatically constitute a binding offer to provide services.
+</p>
+
+<p>
+Individual projects may be governed by a separate quotation, proposal, statement of work, purchase order, contract or other written agreement.
+</p>
+
+<p>
+The applicable project agreement will determine the specific scope, deliverables, schedule, fees, revisions, approvals and other project requirements.
+</p>
+
+<h2>5. Project Scope</h2>
+
+<p>
+Project requirements should be clearly agreed upon before production begins. Changes to the agreed scope may affect project costs, deadlines, resources and delivery schedules.
+</p>
+
+<p>
+Additional work or major changes may require a revised quotation or written approval.
+</p>
+
+<h2>6. Client Responsibilities</h2>
+
+<p>
+Clients are responsible for providing accurate project information, references, materials, approvals and feedback necessary for production.
+</p>
+
+<p>
+Clients should ensure that materials supplied to the studio do not infringe the rights of third parties.
+</p>
+
+<h2>7. Payments and Fees</h2>
+
+<p>
+Project fees, payment schedules, deposits, milestones and other financial terms will be agreed upon for each project.
+</p>
+
+<p>
+Unless otherwise agreed in writing, work may be scheduled according to the payment and approval terms specified in the applicable project agreement.
+</p>
+
+<h2>8. Revisions and Approvals</h2>
+
+<p>
+Revision rounds may be included according to the agreed project scope.
+</p>
+
+<p>
+Additional revisions, changes requested after approval or changes outside the agreed scope may require additional fees or schedule adjustments.
+</p>
+
+<h2>9. Intellectual Property</h2>
+
+<p>
+Ownership and licensing of project materials, final deliverables, source files, models, textures, designs, concepts and other creative assets will depend on the applicable project agreement.
+</p>
+
+<p>
+Unless expressly transferred or licensed, pre-existing tools, techniques, templates, know-how and studio resources may remain the property of PT Autotube Crew Studio or their respective owners.
+</p>
+
+<h2>10. Client-Supplied Materials</h2>
+
+<p>
+Clients are responsible for ensuring that they have the necessary rights, permissions and licenses for any materials they provide to the studio.
+</p>
+
+<p>
+This may include images, videos, logos, trademarks, music, 3D assets, designs, documents and other third-party materials.
+</p>
+
+<h2>11. Confidentiality</h2>
+
+<p>
+Confidential project information should be handled according to the applicable project agreement or confidentiality agreement.
+</p>
+
+<p>
+Where an NDA or other confidentiality agreement is signed, its terms will govern the relevant confidential information.
+</p>
+
+<h2>12. Portfolio and Promotional Use</h2>
+
+<p>
+Unless restricted by a written agreement, completed work may be presented as part of the studio's portfolio or professional credentials.
+</p>
+
+<p>
+Where a project is confidential or subject to restrictions, PT Autotube Crew Studio will follow the applicable confidentiality and usage requirements.
+</p>
+
+<h2>13. Third-Party Links</h2>
+
+<p>
+The website may contain links to third-party websites or platforms.
+</p>
+
+<p>
+These links are provided for convenience or additional information. PT Autotube Crew Studio does not control and is not responsible for the content, availability, security or policies of external websites.
+</p>
+
+<h2>14. Website Content</h2>
+
+<p>
+We make reasonable efforts to keep website information accurate and useful. However, website content may change over time and may not always contain complete or current information.
+</p>
+
+<p>
+We reserve the right to update, modify or remove website content without prior notice.
+</p>
+
+<h2>15. Intellectual Property of the Website</h2>
+
+<p>
+Unless otherwise stated, website text, graphics, branding, layout, design elements, photographs, videos and other original content are owned by or licensed to PT Autotube Crew Studio.
+</p>
+
+<p>
+You may not reproduce, distribute, modify or commercially exploit protected website content without appropriate authorization.
+</p>
+
+<h2>16. Disclaimer</h2>
+
+<p>
+The website is provided on an "as available" basis. We do not guarantee that the website will always be available, uninterrupted, error-free or completely secure.
+</p>
+
+<p>
+Information provided on the website should not be interpreted as professional legal, financial or other specialized advice.
+</p>
+
+<h2>17. Limitation of Liability</h2>
+
+<p>
+To the extent permitted by applicable law, PT Autotube Crew Studio will not be responsible for indirect, incidental, consequential or special losses arising from the use of the website or reliance on general website information.
+</p>
+
+<p>
+Specific project liabilities and responsibilities will be governed by the applicable project agreement.
+</p>
+
+<h2>18. Changes to These Terms</h2>
+
+<p>
+We may update these Terms and Conditions from time to time to reflect changes in our website, services, business practices or applicable requirements.
+</p>
+
+<p>
+The updated version will be published on this page with a revised update date.
+</p>
+
+<h2>19. Governing Law</h2>
+
+<p>
+These Terms and Conditions are intended to operate in accordance with applicable laws and regulations. Specific governing law and dispute-resolution provisions for individual projects may be established in the relevant written agreement.
+</p>
+
+<h2>20. Contact Us</h2>
+
+<p>
+If you have questions about these Terms and Conditions or our services, please contact PT Autotube Crew Studio.
+</p>
+
+<ul>
+
+<li>
+<strong>Company:</strong> PT Autotube Crew Studio
+</li>
+
+<li>
+<strong>Location:</strong> Jakarta, Indonesia
+</li>
+
+<li>
+<strong>WhatsApp:</strong>
+<a href="https://wa.me/628139953162" target="_blank" rel="noopener">
++62 813-9953-162
+</a>
+</li>
+
+<li>
+<strong>Email:</strong>
+<a href="mailto:info@autotubecrew.com">
+info@autotubecrew.com
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Need More Information?</h2>
+
+<p>
+For questions about our services, project agreements or collaboration terms, contact our studio directly.
+</p>
+
+<a href="contact.html" class="btn">
+Contact Us
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<p>
+© 2026 PT Autotube Crew Studio. All Rights Reserved.
+</p>
+
+<div class="footer-links">
+
+<a href="privacy-policy.html">Privacy Policy</a>
+
+<a href="terms-and-conditions.html">Terms & Conditions</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</div>
+
+</footer>
+
+<script>
+
+const menuButton = document.getElementById("menuButton");
+const mobileNav = document.getElementById("mobileNav");
+
+menuButton.addEventListener("click", function(){
+
+mobileNav.classList.toggle("active");
+
+});
+
+mobileNav.querySelectorAll("a").forEach(function(link){
+
+link.addEventListener("click", function(){
+
+mobileNav.classList.remove("active");
+
+});
+
+});
+
+</script>
 
 </body>
+
 </html>
