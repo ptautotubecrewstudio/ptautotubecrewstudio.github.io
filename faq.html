@@ -1,3 +1,5 @@
+<!-- faq.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,381 +8,392 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Frequently Asked Questions | PT Autotube Crew Studio</title>
+<title>FAQ | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Find answers to frequently asked questions about PT Autotube Crew Studio, including CGI, 3D Animation, VFX, Motion Graphics, Product Visualization and digital production services.">
-
-<meta name="keywords" content="PT Autotube Crew Studio FAQ, CGI Studio Indonesia, 3D Animation FAQ, VFX Studio Jakarta, Animation Services, Digital Production">
-
-<meta name="author" content="PT Autotube Crew Studio">
+<meta name="description" content="Frequently asked questions about PT Autotube Crew Studio services, CGI, 3D animation, VFX, project workflow, collaboration and production.">
 
 <meta name="robots" content="index, follow">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Frequently Asked Questions | PT Autotube Crew Studio">
-<meta property="og:description" content="Answers to common questions about PT Autotube Crew Studio and our creative production services.">
-<meta property="og:image" content="portfolio04.png.png">
-<meta property="og:url" content="https://www.autotubecrewstudio.com/faq.html">
-
 <link rel="icon" href="logo.png.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-:root{
-    --bg:#050505;
-    --bg2:#0b0b0b;
-    --card:#111111;
-    --red:#e50914;
-    --white:#ffffff;
-    --text:#d5d5d5;
-    --muted:#999999;
-    --border:rgba(255,255,255,.10);
-}
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:var(--bg);
-    color:var(--white);
-    line-height:1.8;
-    overflow-x:hidden;
+font-family:'Poppins',sans-serif;
+background:#050505;
+color:#fff;
+line-height:1.7;
+overflow-x:hidden;
 }
 
 a{
-    color:inherit;
-    text-decoration:none;
+text-decoration:none;
+color:inherit;
 }
 
 .container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
-/* HEADER */
-
 header{
-    position:sticky;
-    top:0;
-    z-index:999;
-    background:rgba(5,5,5,.96);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(255,255,255,.08);
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(0,0,0,.94);
+border-bottom:1px solid #222;
+backdrop-filter:blur(12px);
 }
 
 .header-inner{
-    min-height:82px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:30px;
+min-height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
 }
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:21px;
-    font-weight:bold;
-    white-space:nowrap;
+display:flex;
+align-items:center;
+gap:12px;
+font-size:22px;
+font-weight:700;
 }
 
 .logo img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
+width:48px;
+height:48px;
+object-fit:contain;
 }
 
 nav{
-    display:flex;
-    align-items:center;
-    gap:28px;
+display:flex;
+align-items:center;
+gap:25px;
 }
 
 nav a{
-    color:#ddd;
-    font-size:15px;
-    transition:.3s;
+font-size:15px;
+color:#ddd;
+transition:.3s;
 }
 
-nav a:hover,
-nav a.active{
-    color:var(--red);
+nav a:hover{
+color:#e50914;
 }
 
-/* HERO */
+.menu-button{
+display:none;
+background:none;
+border:0;
+color:#fff;
+font-size:28px;
+cursor:pointer;
+}
+
+.mobile-nav{
+display:none;
+background:#0b0b0b;
+border-top:1px solid #222;
+}
+
+.mobile-nav a{
+display:block;
+padding:14px 5%;
+border-bottom:1px solid #222;
+color:#ddd;
+}
+
+.mobile-nav.active{
+display:block;
+}
 
 .hero{
-    padding:120px 20px 100px;
-    text-align:center;
-    background:
-    radial-gradient(
-        circle at center,
-        rgba(229,9,20,.14),
-        transparent 55%
-    ),
-    #050505;
+padding:110px 0 90px;
+background:
+radial-gradient(circle at top right,rgba(229,9,20,.16),transparent 35%),
+#050505;
 }
 
-.hero-label{
-    display:inline-block;
-    color:var(--red);
-    font-size:13px;
-    font-weight:bold;
-    letter-spacing:4px;
-    text-transform:uppercase;
-    margin-bottom:18px;
+.hero-content{
+max-width:900px;
+margin:auto;
+text-align:center;
 }
 
 .hero h1{
-    font-size:58px;
-    line-height:1.15;
-    margin-bottom:22px;
+font-size:58px;
+line-height:1.15;
+font-weight:800;
+margin-bottom:25px;
 }
 
 .hero p{
-    max-width:800px;
-    margin:auto;
-    color:var(--text);
-    font-size:18px;
+font-size:18px;
+color:#cfcfcf;
+max-width:820px;
+margin:auto;
 }
 
-/* FAQ */
-
-.faq-section{
-    padding:90px 0;
+.section{
+padding:90px 0;
 }
 
-.section-heading{
-    text-align:center;
-    max-width:800px;
-    margin:0 auto 55px;
+.section.dark{
+background:#0b0b0b;
 }
 
-.section-heading h2{
-    font-size:40px;
-    margin-bottom:15px;
+.section-title{
+text-align:center;
+margin-bottom:55px;
 }
 
-.section-heading p{
-    color:var(--muted);
+.section-title h2{
+font-size:40px;
+margin-bottom:15px;
 }
 
-.faq-list{
-    max-width:950px;
-    margin:auto;
+.section-title p{
+max-width:800px;
+margin:auto;
+color:#aaa;
 }
 
-details{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:16px;
-    margin-bottom:16px;
-    overflow:hidden;
-    transition:.3s;
+.faq-container{
+max-width:950px;
+margin:auto;
 }
 
-details:hover{
-    border-color:var(--red);
+.faq-item{
+background:#111;
+border:1px solid #252525;
+border-radius:15px;
+margin-bottom:16px;
+overflow:hidden;
+transition:.3s;
 }
 
-details[open]{
-    border-color:rgba(229,9,20,.55);
+.faq-item:hover{
+border-color:#444;
 }
 
-summary{
-    position:relative;
-    padding:24px 55px 24px 25px;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    list-style:none;
+.faq-question{
+width:100%;
+padding:22px 25px;
+background:none;
+border:0;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+text-align:left;
+font-family:'Poppins',sans-serif;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
 }
 
-summary::-webkit-details-marker{
-    display:none;
+.faq-icon{
+font-size:25px;
+font-weight:300;
+color:#e50914;
+transition:.3s;
+flex-shrink:0;
 }
 
-summary::after{
-    content:"+";
-    position:absolute;
-    right:25px;
-    top:20px;
-    font-size:25px;
-    color:var(--red);
-    font-weight:normal;
+.faq-answer{
+max-height:0;
+overflow:hidden;
+transition:max-height .35s ease;
 }
 
-details[open] summary::after{
-    content:"−";
+.faq-answer p{
+padding:0 25px 22px;
+color:#aaa;
+font-size:14px;
 }
 
-details p{
-    padding:0 25px 25px;
-    color:#c5c5c5;
-    font-size:16px;
+.faq-item.active .faq-answer{
+max-height:300px;
 }
 
-/* CTA */
+.faq-item.active .faq-icon{
+transform:rotate(45deg);
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.category-card{
+background:#111;
+border:1px solid #252525;
+border-radius:18px;
+padding:30px;
+transition:.3s;
+}
+
+.category-card:hover{
+transform:translateY(-5px);
+border-color:#e50914;
+}
+
+.category-card h3{
+font-size:20px;
+margin-bottom:10px;
+}
+
+.category-card p{
+font-size:14px;
+color:#aaa;
+}
 
 .cta{
-    padding:100px 20px;
-    text-align:center;
-    background:
-    radial-gradient(
-        circle at center,
-        rgba(229,9,20,.13),
-        transparent 60%
-    ),
-    #080808;
+padding:100px 0;
+text-align:center;
 }
 
 .cta h2{
-    font-size:42px;
-    margin-bottom:15px;
+font-size:42px;
+margin-bottom:18px;
 }
 
 .cta p{
-    max-width:700px;
-    margin:auto;
-    color:var(--text);
+max-width:760px;
+margin:0 auto 30px;
+color:#aaa;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 38px;
-    background:var(--red);
-    color:#fff;
-    border-radius:30px;
-    font-weight:bold;
-    transition:.3s;
+display:inline-block;
+padding:14px 32px;
+border-radius:40px;
+background:#e50914;
+font-weight:600;
+transition:.3s;
 }
 
 .btn:hover{
-    background:#ff2835;
-    transform:translateY(-3px);
+background:#ff2633;
+transform:translateY(-3px);
 }
-
-/* FOOTER */
 
 footer{
-    background:#030303;
-    border-top:1px solid rgba(255,255,255,.08);
-    padding:45px 20px 25px;
-    text-align:center;
-}
-
-.footer-logo{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    margin-bottom:15px;
-    font-size:18px;
-    font-weight:bold;
-}
-
-.footer-logo img{
-    width:42px;
-    height:42px;
-    object-fit:contain;
+background:#090909;
+border-top:1px solid #222;
+padding:45px 0;
+text-align:center;
 }
 
 footer p{
-    color:#888;
-    font-size:14px;
+color:#888;
+font-size:14px;
 }
 
-.footer-bottom{
-    margin-top:25px;
-    padding-top:20px;
-    border-top:1px solid rgba(255,255,255,.07);
-    color:#666;
-    font-size:13px;
+@media(max-width:950px){
+
+nav{
+display:none;
 }
 
-/* MOBILE */
+.menu-button{
+display:block;
+}
 
-@media(max-width:900px){
+.category-grid{
+grid-template-columns:1fr 1fr;
+}
 
-    .header-inner{
-        flex-direction:column;
-        padding:18px 0;
-    }
-
-    nav{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-
-    .hero{
-        padding:90px 20px 80px;
-    }
-
-    .hero h1{
-        font-size:43px;
-    }
-
-    .section-heading h2{
-        font-size:34px;
-    }
+.hero h1{
+font-size:46px;
+}
 
 }
 
-@media(max-width:600px){
+@media(max-width:650px){
 
-    .container{
-        width:92%;
-    }
+.container{
+width:92%;
+}
 
-    .logo{
-        font-size:17px;
-    }
+.header-inner{
+min-height:70px;
+}
 
-    .logo img{
-        width:44px;
-        height:44px;
-    }
+.logo{
+font-size:16px;
+}
 
-    nav a{
-        font-size:14px;
-    }
+.logo img{
+width:40px;
+height:40px;
+}
 
-    .hero h1{
-        font-size:35px;
-    }
+.hero{
+padding:80px 0 65px;
+}
 
-    .hero p{
-        font-size:16px;
-    }
+.hero h1{
+font-size:36px;
+}
 
-    .faq-section{
-        padding:65px 0;
-    }
+.hero p{
+font-size:15px;
+}
 
-    summary{
-        font-size:16px;
-        padding:20px 50px 20px 20px;
-    }
+.section{
+padding:65px 0;
+}
 
-    details p{
-        padding:0 20px 20px;
-    }
+.section-title h2{
+font-size:31px;
+}
 
-    .cta h2{
-        font-size:32px;
-    }
+.category-grid{
+grid-template-columns:1fr;
+}
+
+.faq-question{
+padding:19px;
+font-size:14px;
+}
+
+.faq-answer p{
+padding:0 19px 19px;
+}
+
+.cta{
+padding:70px 0;
+}
+
+.cta h2{
+font-size:32px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
 
 }
 
@@ -389,8 +402,6 @@ footer p{
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header>
 
@@ -407,189 +418,144 @@ footer p{
 <nav>
 
 <a href="index.html">Home</a>
-
 <a href="about.html">About</a>
-
 <a href="services.html">Services</a>
-
 <a href="portfolio.html">Portfolio</a>
-
-<a href="faq.html" class="active">FAQ</a>
-
+<a href="workflow.html">Workflow</a>
 <a href="contact.html">Contact</a>
 
 </nav>
+
+<button class="menu-button" id="menuButton" aria-label="Open navigation">
+☰
+</button>
+
+</div>
+
+<div class="mobile-nav" id="mobileNav">
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="workflow.html">Workflow</a>
+<a href="contact.html">Contact</a>
 
 </div>
 
 </header>
 
-
-<!-- HERO -->
+<main>
 
 <section class="hero">
 
-<div class="container">
+<div class="container hero-content">
 
-<div class="hero-label">
-Studio FAQ
-</div>
-
-<h1>
-Frequently Asked Questions
-</h1>
+<h1>Frequently Asked Questions</h1>
 
 <p>
-Find answers to common questions about PT Autotube Crew Studio, our creative services, production workflow, technology and collaboration process.
+Find answers to common questions about our services, production process, collaboration, timelines and project requirements.
 </p>
 
 </div>
 
 </section>
 
-
-<!-- FAQ SECTION -->
-
-<section class="faq-section">
+<section class="section">
 
 <div class="container">
 
-<div class="section-heading">
+<div class="section-title">
 
-<div class="hero-label">
-Questions & Answers
-</div>
-
-<h2>
-How Can We Help?
-</h2>
+<h2>General Questions</h2>
 
 <p>
-Here are answers to some of the most common questions about working with our studio.
+Common questions about working with PT Autotube Crew Studio.
 </p>
 
 </div>
 
+<div class="faq-container">
 
-<div class="faq-list">
+<div class="faq-item">
 
+<button class="faq-question">
 
-<details>
+<span>What services does PT Autotube Crew Studio provide?</span>
 
-<summary>
-What services do you provide?
-</summary>
+<span class="faq-icon">+</span>
 
-<p>
-We provide CGI, 3D Animation, Visual Effects (VFX), Motion Graphics, Product Visualization, Architectural Visualization, Medical Animation, Commercial Production and Video Editing.
-</p>
+</button>
 
-</details>
-
-
-<details>
-
-<summary>
-Which industries do you work with?
-</summary>
+<div class="faq-answer">
 
 <p>
-We work with advertising agencies, automotive, healthcare, manufacturing, real estate, education, entertainment, technology and consumer brands.
+We provide CGI production, 3D animation, VFX, environment art, motion graphics, product visualization and other digital production services depending on project requirements.
 </p>
 
-</details>
+</div>
 
+</div>
 
-<details>
+<div class="faq-item">
 
-<summary>
-Which software do you use?
-</summary>
+<button class="faq-question">
+
+<span>Who can work with your studio?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
 
 <p>
-Our production pipeline includes Blender, Unreal Engine 5, Adobe After Effects, Adobe Premiere Pro, DaVinci Resolve, Adobe Photoshop and Substance 3D Painter.
+We can collaborate with businesses, agencies, brands, production companies, creative teams and other organizations requiring professional digital content.
 </p>
 
-</details>
+</div>
 
+</div>
 
-<details>
+<div class="faq-item">
 
-<summary>
-Do you work with international clients?
-</summary>
+<button class="faq-question">
+
+<span>Do you work with international clients?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
 
 <p>
-Yes. PT Autotube Crew Studio works with clients worldwide through online communication and secure digital project delivery.
+Yes. We support remote collaboration and can work with clients and production partners located in different countries.
 </p>
 
-</details>
+</div>
 
+</div>
 
-<details>
+<div class="faq-item">
 
-<summary>
-Can you create custom CGI and animation?
-</summary>
+<button class="faq-question">
+
+<span>Can you work as part of an existing production team?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
 
 <p>
-Yes. Every project is developed according to the client's objectives, branding and production requirements.
+Yes. Depending on the project, we can provide specific production services or collaborate as an extension of an existing creative or production team.
 </p>
 
-</details>
+</div>
 
-
-<details>
-
-<summary>
-Can you work with an existing creative team?
-</summary>
-
-<p>
-Yes. We can collaborate with existing creative teams, agencies, production companies and independent professionals depending on the requirements of the project.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Can you handle only one stage of a project?
-</summary>
-
-<p>
-Yes. Our studio can support individual production stages such as 3D modeling, texturing, environments, animation, rendering, compositing, motion graphics or post-production.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Do you accept international projects?
-</summary>
-
-<p>
-Yes. Our digital production workflow allows us to communicate and collaborate remotely with clients and creative partners in different locations.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-How can I request a quotation?
-</summary>
-
-<p>
-Simply visit our Contact page or send us your project details, references, required deliverables and production requirements. Our team can review the information and discuss the appropriate production approach.
-</p>
-
-</details>
-
+</div>
 
 </div>
 
@@ -597,66 +563,382 @@ Simply visit our Contact page or send us your project details, references, requi
 
 </section>
 
+<section class="section dark">
 
-<!-- CTA -->
+<div class="container">
+
+<div class="section-title">
+
+<h2>Project & Production</h2>
+
+<p>
+Questions about how projects are planned, developed and delivered.
+</p>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>How do I start a project with your studio?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Start by contacting us with your project details, creative requirements, expected deliverables and timeline. We can then discuss the appropriate production approach.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>What information should I provide in a project inquiry?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Useful information includes the project type, creative references, required services, estimated scope, delivery format, timeline and any existing assets or documentation.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Can you work from existing assets?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Yes. Existing models, textures, concept art, footage, references and other production assets can be reviewed to determine how they can be incorporated into the workflow.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>How long does a project usually take?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Project timelines vary according to scope, complexity, number of assets, animation requirements, revisions and final deliverables. A timeline can be discussed after reviewing the project requirements.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Do you provide revisions?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Review and revision stages can be included in the production process. The number and scope of revisions should be agreed upon during project planning.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Technical Questions</h2>
+
+<p>
+Information about production technology, formats and delivery.
+</p>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Which software and technologies do you use?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Our technology and software selection depends on the creative and technical requirements of each project. We use professional tools suitable for modeling, animation, rendering, VFX, compositing and post-production.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>What file formats can you deliver?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Delivery formats depend on the project's requirements. We can discuss appropriate image, video, 3D asset and production formats during project planning.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Can you provide high-resolution or production-ready files?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Yes, production-ready deliverables can be prepared according to the agreed technical specifications, resolution, format and intended use.
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Can you sign an NDA?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Confidentiality requirements can be discussed before project information or sensitive production materials are shared.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section dark">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Quick Overview</h2>
+
+<p>
+Our main areas of production support.
+</p>
+
+</div>
+
+<div class="category-grid">
+
+<div class="category-card">
+
+<h3>3D & CGI</h3>
+
+<p>
+Modeling, environments, materials, lighting, rendering and cinematic CGI production.</p>
+
+</div>
+
+<div class="category-card">
+
+<h3>Animation</h3>
+
+<p>
+3D animation, product animation, cinematic sequences and digital motion content.</p>
+
+</div>
+
+<div class="category-card">
+
+<h3>VFX</h3>
+
+<p>
+Visual effects, compositing, simulations and post-production support.</p>
+
+</div>
+
+<div class="category-card">
+
+<h3>Visualization</h3>
+
+<p>
+Product visualization, architectural visualization and marketing imagery.</p>
+
+</div>
+
+<div class="category-card">
+
+<h3>Motion Graphics</h3>
+
+<p>
+Animated graphics, promotional content, titles and digital presentations.</p>
+
+</div>
+
+<div class="category-card">
+
+<h3>Production Support</h3>
+
+<p>
+Flexible creative and technical support for existing teams and larger productions.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <section class="cta">
 
 <div class="container">
 
-<div class="hero-label">
-Let's Work Together
-</div>
-
-<h2>
-Still Have Questions?
-</h2>
+<h2>Still Have Questions?</h2>
 
 <p>
-Our team is ready to discuss your creative project and explore how PT Autotube Crew Studio can support your production requirements.
+If you cannot find the information you need, contact our studio and tell us about your project.
 </p>
 
 <a href="contact.html" class="btn">
-Contact Our Studio
+Contact Us
 </a>
 
 </div>
 
 </section>
 
-
-<!-- FOOTER -->
+</main>
 
 <footer>
 
 <div class="container">
 
-<div class="footer-logo">
-
-<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-
-<span>PT Autotube Crew Studio</span>
-
-</div>
-
 <p>
-CGI, 3D Animation, Visual Effects, Motion Graphics and Digital Production Studio based in Jakarta, Indonesia.
-</p>
-
-<div class="footer-bottom">
-
 © 2026 PT Autotube Crew Studio. All Rights Reserved.
-
-<br>
-
-Jakarta, Indonesia
-
-</div>
+</p>
 
 </div>
 
 </footer>
 
+<script>
+
+const menuButton = document.getElementById("menuButton");
+const mobileNav = document.getElementById("mobileNav");
+
+menuButton.addEventListener("click", function(){
+
+mobileNav.classList.toggle("active");
+
+});
+
+mobileNav.querySelectorAll("a").forEach(function(link){
+
+link.addEventListener("click", function(){
+
+mobileNav.classList.remove("active");
+
+});
+
+});
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(function(item){
+
+const question = item.querySelector(".faq-question");
+
+question.addEventListener("click", function(){
+
+faqItems.forEach(function(otherItem){
+
+if(otherItem !== item){
+otherItem.classList.remove("active");
+}
+
+});
+
+item.classList.toggle("active");
+
+});
+
+});
+
+</script>
 
 </body>
 
