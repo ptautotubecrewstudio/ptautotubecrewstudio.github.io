@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,6 +52,8 @@ img{
     max-width:1400px;
     margin:auto;
 }
+
+/* HEADER */
 
 header{
     position:fixed;
@@ -144,6 +147,8 @@ nav ul li:hover .dropdown{
     display:none;
 }
 
+/* HERO */
+
 .hero{
     padding:180px 0 100px;
     background:
@@ -171,6 +176,8 @@ nav ul li:hover .dropdown{
     font-size:18px;
 }
 
+/* GENERAL */
+
 section{
     padding:100px 0;
 }
@@ -194,6 +201,45 @@ section{
     color:#bdbdbd;
     font-size:16px;
 }
+
+/* LEADERSHIP */
+
+.leadership{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.leader{
+    background:#101010;
+    border:1px solid #252525;
+    border-radius:20px;
+    padding:35px;
+    transition:.35s;
+}
+
+.leader:hover{
+    transform:translateY(-6px);
+    border-color:#e50914;
+}
+
+.leader h3{
+    font-size:26px;
+    margin-bottom:5px;
+}
+
+.leader-role{
+    color:#e50914;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.leader p{
+    color:#c5c5c5;
+    font-size:15px;
+}
+
+/* TEAM */
 
 .team-grid{
     display:grid;
@@ -250,34 +296,7 @@ section{
     font-size:15px;
 }
 
-.leadership{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:35px;
-}
-
-.leader{
-    background:#101010;
-    border:1px solid #252525;
-    border-radius:20px;
-    padding:35px;
-}
-
-.leader h3{
-    font-size:26px;
-    margin-bottom:5px;
-}
-
-.leader-role{
-    color:#e50914;
-    font-weight:600;
-    margin-bottom:18px;
-}
-
-.leader p{
-    color:#c5c5c5;
-    font-size:15px;
-}
+/* CAPABILITIES */
 
 .capabilities{
     display:grid;
@@ -309,6 +328,8 @@ section{
     font-size:14px;
 }
 
+/* CTA */
+
 .cta{
     text-align:center;
     background:#101010;
@@ -338,6 +359,8 @@ section{
     background:#ff2935;
     transform:translateY(-3px);
 }
+
+/* FOOTER */
 
 footer{
     background:#080808;
@@ -375,6 +398,8 @@ footer a:hover{
     font-size:13px;
 }
 
+/* TOP BUTTON */
+
 #topBtn{
     position:fixed;
     right:22px;
@@ -390,6 +415,8 @@ footer a:hover{
     display:none;
     z-index:998;
 }
+
+/* TABLET */
 
 @media(max-width:1000px){
 
@@ -421,8 +448,9 @@ footer a:hover{
         border-bottom:1px solid #222;
     }
 
+    .leadership,
     .team-grid{
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:repeat(2,1fr);
     }
 
     .capabilities{
@@ -433,6 +461,8 @@ footer a:hover{
         grid-template-columns:1fr 1fr;
     }
 }
+
+/* MOBILE */
 
 @media(max-width:700px){
 
@@ -504,6 +534,8 @@ footer a:hover{
 </head>
 
 <body>
+
+<!-- HEADER -->
 
 <header>
 
@@ -601,6 +633,8 @@ footer a:hover{
 
 </header>
 
+<!-- HERO -->
+
 <section class="hero">
 
 <div class="container">
@@ -621,6 +655,8 @@ VFX, visualization and digital production.
 </div>
 
 </section>
+
+<!-- LEADERSHIP -->
 
 <section class="dark">
 
@@ -665,11 +701,26 @@ long-term growth across digital production and creative services.
 
 </div>
 
+<div class="leader">
+
+<h3>Abdul Sattar</h3>
+
+<div class="leader-role">CEO</div>
+
+<p>
+Leading business operations, organizational development and strategic
+growth while supporting the long-term direction of PT Autotube Crew Studio.
+</p>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
+
+<!-- CREATIVE TEAM -->
 
 <section>
 
@@ -688,10 +739,12 @@ across multiple disciplines of digital content creation.
 
 <div class="team-grid">
 
+<!-- HASNAIN -->
+
 <div class="team-card">
 
 <div class="team-photo">
-<img src="director-hasnain-ali-shah.jpg.PNG" alt="Hasnain Ali Shah Director">
+<img src="director-hasnain-ali-shah.jpg.PNG.png" alt="Hasnain Ali Shah Director">
 </div>
 
 <div class="team-info">
@@ -708,6 +761,8 @@ production partnerships and developing the studio's global presence.
 </div>
 
 </div>
+
+<!-- SHAMEER -->
 
 <div class="team-card">
 
@@ -729,6 +784,31 @@ foundation for future digital production projects.
 </div>
 
 </div>
+
+<!-- ABDUL SATTAR -->
+
+<div class="team-card">
+
+<div class="team-photo">
+<img src="ceo-abdul-sattar.jpg.PNG" alt="Abdul Sattar CEO">
+</div>
+
+<div class="team-info">
+
+<h3>Abdul Sattar</h3>
+
+<div class="team-role">CEO</div>
+
+<p>
+Leading business operations, strategic development and organizational
+growth while supporting the long-term direction of PT Autotube Crew Studio.
+</p>
+
+</div>
+
+</div>
+
+<!-- PRODUCTION ARTISTS -->
 
 <div class="team-card">
 
@@ -756,6 +836,8 @@ environment creation, visualization, VFX and digital content.
 </div>
 
 </section>
+
+<!-- CAPABILITIES -->
 
 <section class="dark">
 
@@ -820,6 +902,8 @@ process, from creative development through final delivery.
 
 </section>
 
+<!-- CTA -->
+
 <section class="cta">
 
 <div class="container">
@@ -836,6 +920,8 @@ If you are looking for a reliable creative production partner for CGI,
 </div>
 
 </section>
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -882,6 +968,7 @@ Creative production studio based in Jakarta, Indonesia, delivering CGI,
 
 <p>Jakarta, Indonesia</p>
 <p>autotubecrewstudio@gmail.com</p>
+
 <p>
 <a href="https://www.autotubecrewstudio.com" target="_blank">
 www.autotubecrewstudio.com
@@ -911,6 +998,8 @@ LinkedIn
 </div>
 
 </footer>
+
+<!-- BACK TO TOP -->
 
 <button id="topBtn" aria-label="Back to top">↑</button>
 
@@ -952,3 +1041,4 @@ topBtn.addEventListener("click", function(){
 
 </body>
 </html>
+```
