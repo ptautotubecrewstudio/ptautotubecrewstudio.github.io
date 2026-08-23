@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Project details and creative case studies by PT Autotube Crew Studio.">
+
+  <title>Project Details | PT Autotube Crew Studio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #111111;
+      border-bottom: 1px solid #333333;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      min-height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #cccccc;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .nav-button {
+      border: 1px solid #ffffff;
+      padding: 10px 16px;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #111111, #1d1d1d);
+      border-bottom: 1px solid #333333;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: #aaaaaa;
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    .project-category {
+      color: #888888;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      max-width: 850px;
+      line-height: 1.15;
+      margin-bottom: 25px;
+    }
+
+    .hero-description {
+      color: #bbbbbb;
+      font-size: 19px;
+      max-width: 750px;
+    }
+
+    /* PROJECT IMAGE */
+
+    .project-visual {
+      padding: 70px 0;
+    }
+
+    .visual-placeholder {
+      height: 500px;
+      background: #151515;
+      border: 1px solid #333333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #777777;
+      padding: 30px;
+    }
+
+    /* PROJECT INFORMATION */
+
+    .project-info {
+      padding: 50px 0 100px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 70px;
+    }
+
+    .content h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+
+    .content h2:first-child {
+      margin-top: 0;
+    }
+
+    .content p {
+      color: #aaaaaa;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .sidebar {
+      background: #111111;
+      border: 1px solid #292929;
+      padding: 30px;
+      height: fit-content;
+    }
+
+    .sidebar h3 {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .detail-item {
+      border-bottom: 1px solid #292929;
+      padding: 15px 0;
+    }
+
+    .detail-item:last-child {
+      border-bottom: none;
+    }
+
+    .detail-label {
+      color: #777777;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+
+    .detail-value {
+      color: #ffffff;
+      font-size: 15px;
+    }
+
+    /* RESULTS */
+
+    .results {
+      padding: 90px 0;
+      background: #111111;
+      border-top: 1px solid #292929;
+      border-bottom: 1px solid #292929;
+    }
+
+    .section-title {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .section-description {
+      color: #999999;
+      max-width: 700px;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .result-card {
+      background: #0a0a0a;
+      border: 1px solid #292929;
+      padding: 35px 25px;
+    }
+
+    .result-number {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .result-card p {
+      color: #888888;
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      text-align: center;
+      padding: 110px 0;
+    }
+
+    .cta h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      color: #aaaaaa;
+      max-width: 650px;
+      margin: auto auto 30px;
+      font-size: 17px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #ffffff;
+      color: #000000;
+      padding: 14px 25px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #080808;
+      border-top: 1px solid #292929;
+      padding: 40px 0;
+      text-align: center;
+      color: #666666;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .logo {
+        font-size: 14px;
+      }
+
+      nav ul {
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .visual-placeholder {
+        height: 280px;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+
+      .cta h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+
+      <a href="index.html" class="logo">
+        PT AUTOTUBE CREW STUDIO
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html" class="nav-button">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+
+      <a href="case-studies.html" class="back-link">
+        ← Back to Case Studies
+      </a>
+
+      <div class="project-category">
+        3D Animation and CGI
+      </div>
+
+      <h1>
+        Statue Launch Reveal Animation
+      </h1>
+
+      <p class="hero-description">
+        A cinematic visual experience designed to transform a statue reveal into a memorable moment through 3D animation lighting CGI and storytelling.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="project-visual">
+    <div class="container">
+
+      <div class="visual-placeholder">
+        PROJECT VIDEO OR MAIN PROJECT IMAGE WILL BE ADDED HERE
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="project-info">
+    <div class="container">
+
+      <div class="info-grid">
+
+        <div class="content">
+
+          <h2>The Challenge</h2>
+
+          <p>
+            The objective was to create a visually powerful reveal that could generate anticipation and present the statue in a cinematic and engaging way.
+          </p>
+
+          <p>
+            The project required a combination of creative direction 3D animation lighting and visual effects to transform the concept into a polished final presentation.
+          </p>
+
+
+          <h2>Our Solution</h2>
+
+          <p>
+            PT Autotube Crew Studio developed a complete visual approach beginning with concept development and visual planning followed by 3D production animation lighting and final rendering.
+          </p>
+
+          <p>
+            Cinematic camera movement dramatic lighting and carefully designed animation were used to create a strong sense of scale anticipation and impact.
+          </p>
+
+
+          <h2>Production Process</h2>
+
+          <p>
+            The production process included creative planning 3D asset preparation animation scene development lighting rendering and final post production.
+          </p>
+
+          <p>
+            Every stage was developed to maintain visual consistency and deliver a final result suitable for presentations campaigns social media or event displays.
+          </p>
+
+
+          <h2>Final Outcome</h2>
+
+          <p>
+            The completed animation delivered a cinematic reveal designed to capture attention and present the subject with a premium visual identity.
+          </p>
+
+        </div>
+
+
+        <aside class="sidebar">
+
+          <h3>Project Information</h3>
+
+          <div class="detail-item">
+            <div class="detail-label">Client</div>
+            <div class="detail-value">Confidential Project</div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-label">Service</div>
+            <div class="detail-value">3D Animation and CGI</div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-label">Industry</div>
+            <div class="detail-value">Entertainment and Events</div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-label">Production</div>
+            <div class="detail-value">Creative Direction Animation Lighting Rendering</div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-label">Studio</div>
+            <div class="detail-value">PT Autotube Crew Studio</div>
+          </div>
+
+        </aside>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="results">
+    <div class="container">
+
+      <h2 class="section-title">Project Highlights</h2>
+
+      <p class="section-description">
+        The project combined multiple visual production disciplines into one cinematic presentation.
+      </p>
+
+
+      <div class="results-grid">
+
+        <div class="result-card">
+          <div class="result-number">01</div>
+          <h3>Creative Direction</h3>
+          <p>
+            A clear visual concept developed to guide the complete production.
+          </p>
+        </div>
+
+        <div class="result-card">
+          <div class="result-number">02</div>
+          <h3>Cinematic Animation</h3>
+          <p>
+            Dynamic camera movement and animation designed for visual impact.
+          </p>
+        </div>
+
+        <div class="result-card">
+          <div class="result-number">03</div>
+          <h3>Final Production</h3>
+          <p>
+            Professional rendering and post production for a polished result.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="cta">
+    <div class="container">
+
+      <h2>Start Your Next Project</h2>
+
+      <p>
+        Have an idea that needs CGI 3D animation VFX or cinematic production? Let us help bring it to life.
+      </p>
+
+      <a href="contact.html" class="cta-button">
+        Contact Our Studio
+      </a>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      © 2026 PT Autotube Crew Studio. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
