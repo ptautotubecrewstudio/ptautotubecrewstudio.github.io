@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Explore case studies and creative projects by PT Autotube Crew Studio including CGI, 3D animation, VFX and cinematic production.">
+
+  <title>Case Studies | PT Autotube Crew Studio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #111111;
+      border-bottom: 1px solid #333333;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      min-height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 22px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: #dddddd;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffffff;
+    }
+
+    .nav-button {
+      border: 1px solid #ffffff;
+      padding: 10px 16px;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #111111, #1b1b1b);
+      border-bottom: 1px solid #333333;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+      padding: 80px 0;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #bbbbbb;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* INTRO */
+
+    .intro {
+      padding: 100px 0 50px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+
+    .section-description {
+      color: #aaaaaa;
+      max-width: 750px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    /* CASE STUDIES */
+
+    .case-studies {
+      padding: 50px 0 100px;
+    }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .case-card {
+      background: #121212;
+      border: 1px solid #292929;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .case-card:hover {
+      transform: translateY(-6px);
+      border-color: #555555;
+    }
+
+    .case-image {
+      height: 280px;
+      background: linear-gradient(135deg, #222222, #0d0d0d);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777777;
+      font-size: 15px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .case-content {
+      padding: 30px;
+    }
+
+    .case-category {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #888888;
+      margin-bottom: 12px;
+    }
+
+    .case-content h2 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .case-content p {
+      color: #aaaaaa;
+      margin-bottom: 22px;
+      font-size: 15px;
+    }
+
+    .case-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .case-details span {
+      border: 1px solid #333333;
+      padding: 7px 12px;
+      font-size: 12px;
+      color: #bbbbbb;
+    }
+
+    .case-button {
+      display: inline-block;
+      border: 1px solid #ffffff;
+      padding: 11px 18px;
+      font-size: 13px;
+      transition: 0.3s;
+    }
+
+    .case-button:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    /* PROCESS */
+
+    .process {
+      padding: 100px 0;
+      background: #101010;
+      border-top: 1px solid #292929;
+      border-bottom: 1px solid #292929;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .process-card {
+      border: 1px solid #292929;
+      padding: 30px;
+      background: #0b0b0b;
+    }
+
+    .process-number {
+      font-size: 14px;
+      color: #777777;
+      margin-bottom: 20px;
+    }
+
+    .process-card h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .process-card p {
+      color: #999999;
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 110px 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      color: #aaaaaa;
+      max-width: 650px;
+      margin: auto auto 30px;
+      font-size: 17px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #ffffff;
+      color: #000000;
+      padding: 14px 25px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #080808;
+      border-top: 1px solid #292929;
+      padding: 50px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-title {
+      font-size: 19px;
+      margin-bottom: 15px;
+    }
+
+    .footer-text {
+      color: #888888;
+      font-size: 14px;
+      max-width: 400px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: #888888;
+      font-size: 14px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #222222;
+      padding-top: 25px;
+      text-align: center;
+      color: #666666;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .case-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      nav ul {
+        gap: 10px;
+      }
+
+      nav ul li a {
+        font-size: 11px;
+      }
+
+      .logo {
+        font-size: 14px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+
+      <a href="index.html" class="logo">
+        PT AUTOTUBE CREW STUDIO
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="contact.html" class="nav-button">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container hero-content">
+
+      <h1>Case Studies</h1>
+
+      <p>
+        Discover how PT Autotube Crew Studio transforms ideas into compelling visual experiences through CGI 3D animation VFX and cinematic production.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="intro">
+    <div class="container">
+
+      <h2 class="section-title">Creative Solutions Built for Impact</h2>
+
+      <p class="section-description">
+        Every project begins with a unique challenge. Our case studies explore the creative process technology and visual solutions behind selected productions.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="case-studies">
+    <div class="container">
+
+      <div class="case-grid">
+
+
+        <article class="case-card">
+
+          <div class="case-image">
+            PROJECT IMAGE OR VIDEO THUMBNAIL
+          </div>
+
+          <div class="case-content">
+
+            <div class="case-category">3D Animation</div>
+
+            <h2>Statue Launch Reveal Animation</h2>
+
+            <p>
+              A cinematic 3D animation created to build anticipation and reveal a statue through dramatic lighting movement and visual storytelling.
+            </p>
+
+            <div class="case-details">
+              <span>3D Animation</span>
+              <span>CGI</span>
+              <span>Cinematic</span>
+            </div>
+
+            <a href="project-details.html" class="case-button">
+              View Case Study
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="case-card">
+
+          <div class="case-image">
+            PROJECT IMAGE OR VIDEO THUMBNAIL
+          </div>
+
+          <div class="case-content">
+
+            <div class="case-category">CGI and VFX</div>
+
+            <h2>Medical Innovation Visualization</h2>
+
+            <p>
+              A CGI visual project designed to communicate medical innovation through detailed 3D visuals motion and cinematic presentation.
+            </p>
+
+            <div class="case-details">
+              <span>CGI</span>
+              <span>VFX</span>
+              <span>Visualization</span>
+            </div>
+
+            <a href="project-details.html" class="case-button">
+              View Case Study
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="case-card">
+
+          <div class="case-image">
+            PROJECT IMAGE OR VIDEO THUMBNAIL
+          </div>
+
+          <div class="case-content">
+
+            <div class="case-category">Product Visualization</div>
+
+            <h2>Product CGI Campaign</h2>
+
+            <p>
+              High quality product visualization created to present design features materials and movement in a visually engaging way.
+            </p>
+
+            <div class="case-details">
+              <span>Product CGI</span>
+              <span>3D Design</span>
+              <span>Animation</span>
+            </div>
+
+            <a href="project-details.html" class="case-button">
+              View Case Study
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="case-card">
+
+          <div class="case-image">
+            PROJECT IMAGE OR VIDEO THUMBNAIL
+          </div>
+
+          <div class="case-content">
+
+            <div class="case-category">Cinematic Production</div>
+
+            <h2>Brand Visual Campaign</h2>
+
+            <p>
+              A cinematic visual campaign developed from concept through final production to create a strong and memorable brand experience.
+            </p>
+
+            <div class="case-details">
+              <span>Creative Direction</span>
+              <span>VFX</span>
+              <span>Editing</span>
+            </div>
+
+            <a href="project-details.html" class="case-button">
+              View Case Study
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="process">
+    <div class="container">
+
+      <h2 class="section-title">How We Develop a Project</h2>
+
+      <p class="section-description">
+        Our production process combines creative strategy technical expertise and cinematic storytelling.
+      </p>
+
+
+      <div class="process-grid">
+
+
+        <div class="process-card">
+
+          <div class="process-number">01</div>
+
+          <h3>Discovery</h3>
+
+          <p>
+            We understand the project goals audience creative requirements and production objectives.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">02</div>
+
+          <h3>Concept</h3>
+
+          <p>
+            We develop the visual direction story concepts references and production plan.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">03</div>
+
+          <h3>Production</h3>
+
+          <p>
+            Our team creates the animation CGI VFX and cinematic elements required for the project.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">04</div>
+
+          <h3>Delivery</h3>
+
+          <p>
+            The final project is refined edited rendered and prepared for the required platform.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="cta">
+    <div class="container">
+
+      <h2>Have a Project in Mind</h2>
+
+      <p>
+        Let us explore how CGI 3D animation VFX and cinematic production can bring your idea to life.
+      </p>
+
+      <a href="contact.html" class="cta-button">
+        Start a Project
+      </a>
+
+    </div>
+  </section>
+
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <h3 class="footer-title">PT Autotube Crew Studio</h3>
+
+          <p class="footer-text">
+            Visual production studio creating CGI 3D animation VFX and cinematic content.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="footer-title">Explore</h3>
+
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="footer-title">Contact</h3>
+
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+          </ul>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        © 2026 PT Autotube Crew Studio. All Rights Reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
