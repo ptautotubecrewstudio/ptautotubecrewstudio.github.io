@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Professional video production services by PT Autotube Crew Studio including commercial films, branded content, corporate videos, documentaries and cinematic productions."
+  >
+
+  <title>Video Production | PT Autotube Crew Studio</title>
+
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #090909;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      background: #111111;
+      border-bottom: 1px solid #303030;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      min-height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #cccccc;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .nav-button {
+      border: 1px solid #ffffff;
+      padding: 10px 16px;
+      color: #ffffff;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #111111, #1d1d1d);
+      border-bottom: 1px solid #303030;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-label {
+      color: #888888;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      line-height: 1.08;
+      margin-bottom: 25px;
+      max-width: 760px;
+    }
+
+    .hero p {
+      color: #aaaaaa;
+      font-size: 18px;
+      max-width: 680px;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border: 1px solid #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .button-primary {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .button-primary:hover {
+      background: transparent;
+      color: #ffffff;
+    }
+
+    .button-secondary {
+      background: transparent;
+      color: #ffffff;
+    }
+
+    .button-secondary:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .hero-visual {
+      min-height: 520px;
+      background: linear-gradient(135deg, #252525, #0b0b0b);
+      border: 1px solid #333333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #666666;
+      padding: 30px;
+    }
+
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro {
+      padding: 100px 0 60px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: #777777;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 42px;
+      margin-bottom: 18px;
+    }
+
+    .section-description {
+      max-width: 780px;
+      margin: auto;
+      color: #999999;
+      font-size: 16px;
+    }
+
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      padding: 50px 0 110px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: #111111;
+      border: 1px solid #292929;
+      padding: 35px;
+      min-height: 290px;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: #555555;
+    }
+
+    .service-number {
+      color: #555555;
+      font-size: 13px;
+      letter-spacing: 2px;
+      margin-bottom: 35px;
+    }
+
+    .service-card h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      color: #999999;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       FEATURE
+    ========================= */
+
+    .feature {
+      padding: 110px 0;
+      background: #111111;
+      border-top: 1px solid #292929;
+      border-bottom: 1px solid #292929;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .feature-visual {
+      min-height: 480px;
+      border: 1px solid #333333;
+      background: linear-gradient(135deg, #202020, #0b0b0b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #666666;
+      padding: 30px;
+    }
+
+    .feature-content h2 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+
+    .feature-content p {
+      color: #999999;
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-top: 30px;
+    }
+
+    .feature-list li {
+      padding: 13px 0;
+      border-top: 1px solid #292929;
+      color: #bbbbbb;
+      font-size: 14px;
+    }
+
+    .feature-list li::before {
+      content: "—";
+      color: #666666;
+      margin-right: 10px;
+    }
+
+
+    /* =========================
+       PRODUCTION TYPES
+    ========================= */
+
+    .production-types {
+      padding: 100px 0;
+    }
+
+    .production-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .production-card {
+      border: 1px solid #292929;
+      background: #111111;
+      padding: 35px;
+      min-height: 250px;
+    }
+
+    .production-card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .production-card p {
+      color: #999999;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .production-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .production-tags span {
+      border: 1px solid #333333;
+      padding: 7px 11px;
+      font-size: 11px;
+      color: #888888;
+    }
+
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .process {
+      padding: 100px 0;
+      background: #111111;
+      border-top: 1px solid #292929;
+      border-bottom: 1px solid #292929;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .process-card {
+      border: 1px solid #292929;
+      padding: 30px;
+      background: #0f0f0f;
+    }
+
+    .process-number {
+      color: #666666;
+      font-size: 13px;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+
+    .process-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .process-card p {
+      color: #888888;
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       CAPABILITIES
+    ========================= */
+
+    .capabilities {
+      padding: 100px 0;
+    }
+
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .capability-card {
+      border: 1px solid #292929;
+      padding: 35px;
+      background: #111111;
+    }
+
+    .capability-card h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .capability-card p {
+      color: #888888;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       DELIVERABLES
+    ========================= */
+
+    .deliverables {
+      padding: 100px 0;
+      background: #111111;
+      border-top: 1px solid #292929;
+    }
+
+    .deliverable-list {
+      max-width: 850px;
+      margin: 50px auto 0;
+    }
+
+    .deliverable-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 20px 0;
+      border-top: 1px solid #292929;
+    }
+
+    .deliverable-item:last-child {
+      border-bottom: 1px solid #292929;
+    }
+
+    .deliverable-item h3 {
+      font-size: 17px;
+    }
+
+    .deliverable-item p {
+      color: #888888;
+      font-size: 13px;
+      max-width: 520px;
+      text-align: right;
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding: 110px 0;
+      text-align: center;
+      border-top: 1px solid #292929;
+    }
+
+    .cta h2 {
+      font-size: 44px;
+      margin-bottom: 18px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: auto auto 30px;
+      color: #999999;
+      font-size: 17px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #080808;
+      padding: 50px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-text {
+      color: #777777;
+      font-size: 14px;
+      max-width: 400px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 9px;
+    }
+
+    .footer-links a {
+      color: #777777;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #222222;
+      padding-top: 22px;
+      text-align: center;
+      color: #555555;
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 1000px) {
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 50px;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .production-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .capability-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+
+    @media (max-width: 650px) {
+
+      .logo {
+        font-size: 13px;
+      }
+
+      nav ul {
+        gap: 8px;
+      }
+
+      nav a {
+        font-size: 10px;
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .hero-visual {
+        min-height: 280px;
+      }
+
+      .service-grid,
+      .process-grid,
+      .capability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 31px;
+      }
+
+      .feature-content h2 {
+        font-size: 32px;
+      }
+
+      .deliverable-item {
+        flex-direction: column;
+      }
+
+      .deliverable-item p {
+        text-align: left;
+      }
+
+      .cta h2 {
+        font-size: 32px;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container navbar">
+
+      <a href="index.html" class="logo">
+        PT AUTOTUBE CREW STUDIO
+      </a>
+
+
+      <nav>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="portfolio.html">
+              Portfolio
+            </a>
+          </li>
+
+          <li>
+            <a href="case-studies.html">
+              Case Studies
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="nav-button">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-grid">
+
+
+        <div>
+
+          <div class="hero-label">
+            Video Production Services
+          </div>
+
+
+          <h1>
+            Stories Designed to Move Audiences
+          </h1>
+
+
+          <p>
+            We produce cinematic video content from concept and pre-production through filming, editing, visual effects, sound and final delivery.
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a
+              href="request-a-quote.html"
+              class="button button-primary"
+            >
+              Request a Quote
+            </a>
+
+
+            <a
+              href="case-studies.html"
+              class="button button-secondary"
+            >
+              View Our Work
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+          VIDEO PRODUCTION HERO IMAGE<br>
+          CINEMATIC FRAME / FILM STILL
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <section class="intro">
+
+    <div class="container">
+
+
+      <div class="section-label">
+        Full-Service Production
+      </div>
+
+
+      <h2 class="section-title">
+        From First Idea to Final Cut
+      </h2>
+
+
+      <p class="section-description">
+        Our video production workflow brings creative direction, cinematography, editing, motion design, VFX and sound together into one cohesive production.
+      </p>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section class="services">
+
+    <div class="container">
+
+
+      <div class="service-grid">
+
+
+        <article class="service-card">
+
+          <div class="service-number">
+            01 / CREATIVE
+          </div>
+
+          <h2>
+            Creative Development
+          </h2>
+
+          <p>
+            Story concepts, treatments, visual references and creative direction built around your communication objectives.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-number">
+            02 / PRE-PRODUCTION
+          </div>
+
+          <h2>
+            Pre-Production
+          </h2>
+
+          <p>
+            Production planning, scripting, storyboarding, shot planning and coordination before cameras roll.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-number">
+            03 / PRODUCTION
+          </div>
+
+          <h2>
+            Film Production
+          </h2>
+
+          <p>
+            Professional filming and cinematography designed around the visual language of the project.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-number">
+            04 / POST
+          </div>
+
+          <h2>
+            Editing
+          </h2>
+
+          <p>
+            Editorial structure, pacing, transitions and finishing that shape the story into its final form.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-number">
+            05 / VFX
+          </div>
+
+          <h2>
+            VFX & CGI
+          </h2>
+
+          <p>
+            Visual effects, CGI integration, compositing and digital enhancements for projects that demand more.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-number">
+            06 / SOUND
+          </div>
+
+          <h2>
+            Sound & Finishing
+          </h2>
+
+          <p>
+            Sound design, music integration, audio finishing, color treatment and final mastering.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURE -->
+
+  <section class="feature">
+
+    <div class="container">
+
+
+      <div class="feature-grid">
+
+
+        <div class="feature-visual">
+
+          CINEMATIC PRODUCTION IMAGE<br>
+          FILM SET / CAMERA / DIRECTOR
+
+        </div>
+
+
+        <div class="feature-content">
+
+
+          <div class="section-label">
+            Cinematic Approach
+          </div>
+
+
+          <h2>
+            Every Frame Has a Purpose
+          </h2>
+
+
+          <p>
+            Strong video production begins with a clear visual intention. We approach each project through story, composition, movement, lighting and rhythm.
+          </p>
+
+
+          <p>
+            Whether the project is a commercial, brand film, documentary or digital campaign, the goal remains the same: create visuals that communicate and stay with the audience.
+          </p>
+
+
+          <ul class="feature-list">
+
+            <li>
+              Cinematic Visual Direction
+            </li>
+
+            <li>
+              Professional Camera & Lighting
+            </li>
+
+            <li>
+              Storyboarding & Shot Planning
+            </li>
+
+            <li>
+              Editorial Storytelling
+            </li>
+
+            <li>
+              CGI & VFX Integration
+            </li>
+
+            <li>
+              Color Grading & Finishing
+            </li>
+
+          </ul>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTION TYPES -->
+
+  <section class="production-types">
+
+    <div class="container">
+
+
+      <div class="section-label">
+        Production Types
+      </div>
+
+
+      <h2 class="section-title">
+        Video Content We Produce
+      </h2>
+
+
+      <p class="section-description">
+        Our production capabilities can be adapted to different industries, audiences, platforms and creative objectives.
+      </p>
+
+
+      <div class="production-grid">
+
+
+        <article class="production-card">
+
+          <h3>
+            Commercial Films
+          </h3>
+
+          <p>
+            Cinematic advertising and product campaigns designed to communicate a strong brand message.
+          </p>
+
+          <div class="production-tags">
+            <span>Advertising</span>
+            <span>Brands</span>
+            <span>Campaigns</span>
+          </div>
+
+        </article>
+
+
+        <article class="production-card">
+
+          <h3>
+            Brand Films
+          </h3>
+
+          <p>
+            Story-driven films that communicate a company's identity, values, products or vision.
+          </p>
+
+          <div class="production-tags">
+            <span>Brand Story</span>
+            <span>Corporate</span>
+            <span>Culture</span>
+          </div>
+
+        </article>
+
+
+        <article class="production-card">
+
+          <h3>
+            Product Videos
+          </h3>
+
+          <p>
+            Product demonstrations, launch videos and cinematic visual presentations.
+          </p>
+
+          <div class="production-tags">
+            <span>Product</span>
+            <span>Launch</span>
+            <span>Demo</span>
+          </div>
+
+        </article>
+
+
+        <article class="production-card">
+
+          <h3>
+            Corporate Videos
+          </h3>
+
+          <p>
+            Professional communication videos for organizations, teams, internal communications and events.
+          </p>
+
+          <div class="production-tags">
+            <span>Corporate</span>
+            <span>Business</span>
+            <span>Events</span>
+          </div>
+
+        </article>
+
+
+        <article class="production-card">
+
+          <h3>
+            Documentary Content
+          </h3>
+
+          <p>
+            Authentic visual storytelling built around people, places, processes and real-world stories.
+          </p>
+
+          <div class="production-tags">
+            <span>Documentary</span>
+            <span>Interviews</span>
+            <span>Storytelling</span>
+          </div>
+
+        </article>
+
+
+        <article class="production-card">
+
+          <h3>
+            Digital & Social Content
+          </h3>
+
+          <p>
+            Short-form and platform-ready video content designed for modern digital audiences.
+          </p>
+
+          <div class="production-tags">
+            <span>Social</span>
+            <span>Digital</span>
+            <span>Short Form</span>
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROCESS -->
+
+  <section class="process">
+
+    <div class="container">
+
+
+      <div class="section-label">
+        Production Workflow
+      </div>
+
+
+      <h2 class="section-title">
+        A Structured Production Process
+      </h2>
+
+
+      <p class="section-description">
+        A clear production workflow keeps creative, technical and commercial requirements aligned from beginning to delivery.
+      </p>
+
+
+      <div class="process-grid">
+
+
+        <div class="process-card">
+
+          <div class="process-number">
+            01 / DISCOVER
+          </div>
+
+          <h3>
+            Brief & Strategy
+          </h3>
+
+          <p>
+            We understand your audience, objectives, message, references and production requirements.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">
+            02 / PREPARE
+          </div>
+
+          <h3>
+            Pre-Production
+          </h3>
+
+          <p>
+            Script, storyboard, locations, casting, shot lists, schedules and production planning are developed.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">
+            03 / CREATE
+          </div>
+
+          <h3>
+            Production
+          </h3>
+
+          <p>
+            The approved creative direction is translated into filmed footage and production assets.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">
+            04 / FINISH
+          </div>
+
+          <h3>
+            Post-Production
+          </h3>
+
+          <p>
+            Editing, VFX, CGI, sound, color grading and mastering bring the final production together.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CAPABILITIES -->
+
+  <section class="capabilities">
+
+    <div class="container">
+
+
+      <div class="section-label">
+        Production Capabilities
+      </div>
+
+
+      <h2 class="section-title">
+        More Than Just Filming
+      </h2>
+
+
+      <p class="section-description">
+        Our production approach combines live-action filmmaking with digital production capabilities when the project requires it.
+      </p>
+
+
+      <div class="capability-grid">
+
+
+        <div class="capability-card">
+
+          <h3>
+            Cinematography
+          </h3>
+
+          <p>
+            Visual composition, camera movement, lighting and lens choices designed around the story.
+          </p>
+
+        </div>
+
+
+        <div class="capability-card">
+
+          <h3>
+            Motion Graphics
+          </h3>
+
+          <p>
+            Titles, graphics, information design and animated visual elements integrated into video.
+          </p>
+
+        </div>
+
+
+        <div class="capability-card">
+
+          <h3>
+            Visual Effects
+          </h3>
+
+          <p>
+            Digital compositing, cleanup, environment enhancement and creative VFX.
+          </p>
+
+        </div>
+
+
+        <div class="capability-card">
+
+          <h3>
+            CGI Integration
+          </h3>
+
+          <p>
+            3D elements and photorealistic CGI integrated into live-action footage.
+          </p>
+
+        </div>
+
+
+        <div class="capability-card">
+
+          <h3>
+            Color Grading
+          </h3>
+
+          <p>
+            Professional color treatment designed to establish the visual mood and consistency of the project.
+          </p>
+
+        </div>
+
+
+        <div class="capability-card">
+
+          <h3>
+            Sound Design
+          </h3>
+
+          <p>
+            Music, sound effects, dialogue treatment and audio finishing for a complete viewing experience.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DELIVERABLES -->
+
+  <section class="deliverables">
+
+    <div class="container">
+
+
+      <div class="section-label">
+        Deliverables
+      </div>
+
+
+      <h2 class="section-title">
+        Production Deliverables
+      </h2>
+
+
+      <p class="section-description">
+        Final deliverables are structured around your distribution channels, campaign requirements and technical specifications.
+      </p>
+
+
+      <div class="deliverable-list">
+
+
+        <div class="deliverable-item">
+
+          <h3>
+            Master Film
+          </h3>
+
+          <p>
+            High-quality final master prepared for the agreed delivery specifications.
+          </p>
+
+        </div>
+
+
+        <div class="deliverable-item">
+
+          <h3>
+            Social Media Versions
+          </h3>
+
+          <p>
+            Platform-specific edits and aspect ratios for digital campaigns and social media.
+          </p>
+
+        </div>
+
+
+        <div class="deliverable-item">
+
+          <h3>
+            Short-Form Cuts
+          </h3>
+
+          <p>
+            Shorter versions designed for promotional, teaser and digital distribution.
+          </p>
+
+        </div>
+
+
+        <div class="deliverable-item">
+
+          <h3>
+            Motion Graphics
+          </h3>
+
+          <p>
+            Titles, animated graphics and visual communication elements integrated into the production.
+          </p>
+
+        </div>
+
+
+        <div class="deliverable-item">
+
+          <h3>
+            Final Audio & Color
+          </h3>
+
+          <p>
+            Color grading, sound design and final mastering for a polished viewing experience.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+
+      <h2>
+        Ready to Produce Your Story?
+      </h2>
+
+
+      <p>
+        Tell us about your project, campaign or production idea and let us develop the right visual approach for it.
+      </p>
+
+
+      <div class="cta-buttons">
+
+
+        <a
+          href="request-a-quote.html"
+          class="button button-primary"
+        >
+          Request a Quote
+        </a>
+
+
+        <a
+          href="contact.html"
+          class="button button-secondary"
+        >
+          Contact Studio
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <h3 class="footer-title">
+            PT Autotube Crew Studio
+          </h3>
+
+
+          <p class="footer-text">
+            Visual production studio creating CGI, 3D animation, VFX and cinematic content.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="footer-title">
+            Explore
+          </h3>
+
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="about.html">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="portfolio.html">
+                Portfolio
+              </a>
+            </li>
+
+            <li>
+              <a href="case-studies.html">
+                Case Studies
+              </a>
+            </li>
+
+            <li>
+              <a href="industries.html">
+                Industries
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="footer-title">
+            Services
+          </h3>
+
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="3d-animation.html">
+                3D Animation
+              </a>
+            </li>
+
+            <li>
+              <a href="vfx.html">
+                VFX
+              </a>
+            </li>
+
+            <li>
+              <a href="cgi.html">
+                CGI
+              </a>
+            </li>
+
+            <li>
+              <a href="video-production.html">
+                Video Production
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        © 2026 PT Autotube Crew Studio. All Rights Reserved.
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
