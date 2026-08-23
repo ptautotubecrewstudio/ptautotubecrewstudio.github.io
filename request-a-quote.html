@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Request a project quotation from PT Autotube Crew Studio for 3D animation, CGI, VFX and video production.">
+
+  <title>Request a Quote | PT Autotube Crew Studio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #090909;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #111111;
+      border-bottom: 1px solid #303030;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      min-height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #cccccc;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffffff;
+    }
+
+    .nav-button {
+      border: 1px solid #ffffff;
+      padding: 10px 16px;
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 90px 0 80px;
+      background: linear-gradient(135deg, #111111, #1b1b1b);
+      border-bottom: 1px solid #303030;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 54px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #aaaaaa;
+      max-width: 720px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    /* MAIN */
+
+    .quote-section {
+      padding: 80px 0 110px;
+    }
+
+    .quote-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.8fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    /* LEFT SIDE */
+
+    .quote-info {
+      background: #111111;
+      border: 1px solid #292929;
+      padding: 35px;
+    }
+
+    .quote-info h2 {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+
+    .quote-info > p {
+      color: #999999;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .benefit {
+      border-top: 1px solid #292929;
+      padding: 20px 0;
+    }
+
+    .benefit h3 {
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .benefit p {
+      color: #888888;
+      font-size: 14px;
+    }
+
+    /* FORM */
+
+    .quote-form-wrapper {
+      background: #111111;
+      border: 1px solid #292929;
+      padding: 40px;
+    }
+
+    .quote-form-wrapper h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .form-intro {
+      color: #888888;
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 22px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 8px;
+      color: #dddddd;
+    }
+
+    .required {
+      color: #888888;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      background: #090909;
+      color: #ffffff;
+      border: 1px solid #333333;
+      padding: 14px 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #777777;
+    }
+
+    select {
+      cursor: pointer;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #666666;
+    }
+
+    /* CHECKBOXES */
+
+    .services-title {
+      font-size: 13px;
+      color: #dddddd;
+      margin-bottom: 12px;
+    }
+
+    .service-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .service-option {
+      border: 1px solid #303030;
+      background: #090909;
+      padding: 13px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .service-option:hover {
+      border-color: #666666;
+    }
+
+    .service-option input {
+      width: auto;
+      margin-right: 8px;
+    }
+
+    .service-option label {
+      display: inline;
+      cursor: pointer;
+      color: #bbbbbb;
+      font-size: 13px;
+    }
+
+    /* BUDGET */
+
+    .budget-options {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .budget-option {
+      border: 1px solid #303030;
+      padding: 12px;
+      background: #090909;
+      text-align: center;
+    }
+
+    .budget-option input {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .budget-option label {
+      display: inline;
+      font-size: 12px;
+      color: #aaaaaa;
+      cursor: pointer;
+    }
+
+    /* BUTTON */
+
+    .submit-button {
+      width: 100%;
+      border: none;
+      background: #ffffff;
+      color: #000000;
+      padding: 16px 25px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .submit-button:hover {
+      background: #dddddd;
+    }
+
+    .privacy-note {
+      color: #666666;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 90px 0;
+      background: #111111;
+      border-top: 1px solid #292929;
+      border-bottom: 1px solid #292929;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #999999;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #080808;
+      padding: 45px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-text {
+      color: #777777;
+      font-size: 14px;
+      max-width: 400px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 9px;
+    }
+
+    .footer-links a {
+      color: #777777;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #222222;
+      padding-top: 22px;
+      text-align: center;
+      color: #555555;
+      font-size: 12px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+
+      .quote-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .navbar {
+        min-height: 70px;
+      }
+
+      .logo {
+        font-size: 13px;
+      }
+
+      nav ul {
+        gap: 8px;
+      }
+
+      nav ul li a {
+        font-size: 10px;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .quote-section {
+        padding: 50px 0 70px;
+      }
+
+      .quote-form-wrapper,
+      .quote-info {
+        padding: 25px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .service-options {
+        grid-template-columns: 1fr;
+      }
+
+      .budget-options {
+        grid-template-columns: 1fr;
+      }
+
+      .cta h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container navbar">
+
+      <a href="index.html" class="logo">
+        PT AUTOTUBE CREW STUDIO
+      </a>
+
+      <nav>
+
+        <ul>
+
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="case-studies.html">Case Studies</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="nav-button">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <h1>
+        Request a Quote
+      </h1>
+
+      <p>
+        Tell us about your project, creative requirements and production goals. Our team will review your brief and get back to you with the next steps.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- QUOTE SECTION -->
+
+  <section class="quote-section">
+
+    <div class="container">
+
+      <div class="quote-layout">
+
+
+        <!-- LEFT INFORMATION -->
+
+        <div class="quote-info">
+
+          <h2>
+            Let's Build Something Great
+          </h2>
+
+          <p>
+            The more information you provide, the better we can understand your project and prepare an accurate production estimate.
+          </p>
+
+
+          <div class="benefit">
+
+            <h3>
+              Creative Consultation
+            </h3>
+
+            <p>
+              We can help shape your idea, visual direction and production approach.
+            </p>
+
+          </div>
+
+
+          <div class="benefit">
+
+            <h3>
+              Production Planning
+            </h3>
+
+            <p>
+              We evaluate scope, deliverables, timeline and technical requirements.
+            </p>
+
+          </div>
+
+
+          <div class="benefit">
+
+            <h3>
+              Tailored Proposal
+            </h3>
+
+            <p>
+              Your project requirements are reviewed before discussing the appropriate production solution.
+            </p>
+
+          </div>
+
+
+          <div class="benefit">
+
+            <h3>
+              Confidentiality
+            </h3>
+
+            <p>
+              Project information submitted through this form is intended for project evaluation.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="quote-form-wrapper">
+
+          <h2>
+            Project Brief
+          </h2>
+
+          <p class="form-intro">
+            Please complete the fields below. Required fields are marked with an asterisk.
+          </p>
+
+
+          <form action="thank-you.html" method="GET">
+
+
+            <!-- NAME -->
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="name">
+                  Full Name <span class="required">*</span>
+                </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="company">
+                  Company / Organization
+                </label>
+
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Company name"
+                >
+
+              </div>
+
+            </div>
+
+
+            <!-- EMAIL / PHONE -->
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="email">
+                  Email Address <span class="required">*</span>
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="phone">
+                  Phone / WhatsApp
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+62 ..."
+                >
+
+              </div>
+
+            </div>
+
+
+            <!-- SERVICE -->
+
+            <div class="form-group">
+
+              <label for="service">
+                Primary Service <span class="required">*</span>
+              </label>
+
+              <select id="service" name="service" required>
+
+                <option value="">
+                  Select a service
+                </option>
+
+                <option value="3d-animation">
+                  3D Animation
+                </option>
+
+                <option value="vfx">
+                  VFX
+                </option>
+
+                <option value="cgi">
+                  CGI
+                </option>
+
+                <option value="video-production">
+                  Video Production
+                </option>
+
+                <option value="product-visualization">
+                  Product Visualization
+                </option>
+
+                <option value="motion-graphics">
+                  Motion Graphics
+                </option>
+
+                <option value="other">
+                  Other
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <!-- ADDITIONAL SERVICES -->
+
+            <div class="form-group">
+
+              <div class="services-title">
+                Additional Services
+              </div>
+
+              <div class="service-options">
+
+
+                <div class="service-option">
+
+                  <input
+                    type="checkbox"
+                    id="service-cgi"
+                    name="additional_services"
+                    value="cgi"
+                  >
+
+                  <label for="service-cgi">
+                    CGI
+                  </label>
+
+                </div>
+
+
+                <div class="service-option">
+
+                  <input
+                    type="checkbox"
+                    id="service-vfx"
+                    name="additional_services"
+                    value="vfx"
+                  >
+
+                  <label for="service-vfx">
+                    VFX
+                  </label>
+
+                </div>
+
+
+                <div class="service-option">
+
+                  <input
+                    type="checkbox"
+                    id="service-animation"
+                    name="additional_services"
+                    value="animation"
+                  >
+
+                  <label for="service-animation">
+                    3D Animation
+                  </label>
+
+                </div>
+
+
+                <div class="service-option">
+
+                  <input
+                    type="checkbox"
+                    id="service-editing"
+                    name="additional_services"
+                    value="editing"
+                  >
+
+                  <label for="service-editing">
+                    Video Editing
+                  </label>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+            <!-- PROJECT DESCRIPTION -->
+
+            <div class="form-group">
+
+              <label for="project">
+                Tell Us About Your Project <span class="required">*</span>
+              </label>
+
+              <textarea
+                id="project"
+                name="project"
+                placeholder="Describe your idea, objectives, story, visual style, deliverables or any other important information..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <!-- DEADLINE -->
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="deadline">
+                  Desired Deadline
+                </label>
+
+                <input
+                  type="date"
+                  id="deadline"
+                  name="deadline"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="reference">
+                  Reference / Portfolio Link
+                </label>
+
+                <input
+                  type="url"
+                  id="reference"
+                  name="reference"
+                  placeholder="https://..."
+                >
+
+              </div>
+
+            </div>
+
+
+            <!-- BUDGET -->
+
+            <div class="form-group">
+
+              <div class="services-title">
+                Estimated Project Budget
+              </div>
+
+              <div class="budget-options">
+
+
+                <div class="budget-option">
+
+                  <input
+                    type="radio"
+                    id="budget1"
+                    name="budget"
+                    value="under-5000"
+                  >
+
+                  <label for="budget1">
+                    Under $5K
+                  </label>
+
+                </div>
+
+
+                <div class="budget-option">
+
+                  <input
+                    type="radio"
+                    id="budget2"
+                    name="budget"
+                    value="5000-15000"
+                  >
+
+                  <label for="budget2">
+                    $5K–$15K
+                  </label>
+
+                </div>
+
+
+                <div class="budget-option">
+
+                  <input
+                    type="radio"
+                    id="budget3"
+                    name="budget"
+                    value="15000-30000"
+                  >
+
+                  <label for="budget3">
+                    $15K–$30K
+                  </label>
+
+                </div>
+
+
+                <div class="budget-option">
+
+                  <input
+                    type="radio"
+                    id="budget4"
+                    name="budget"
+                    value="30000-plus"
+                  >
+
+                  <label for="budget4">
+                    $30K+
+                  </label>
+
+                </div>
+
+
+                <div class="budget-option">
+
+                  <input
+                    type="radio"
+                    id="budget5"
+                    name="budget"
+                    value="not-sure"
+                  >
+
+                  <label for="budget5">
+                    Not Sure
+                  </label>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+              type="submit"
+              class="submit-button"
+            >
+              Submit Project Request
+            </button>
+
+
+            <p class="privacy-note">
+              By submitting this form, you agree that we may contact you regarding your project inquiry.
+            </p>
+
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Prefer to Talk First?
+      </h2>
+
+      <p>
+        If you are still developing your idea, you can contact our studio directly and discuss your project with us.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <h3 class="footer-title">
+            PT Autotube Crew Studio
+          </h3>
+
+          <p class="footer-text">
+            Visual production studio creating CGI, 3D animation, VFX and cinematic content.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="footer-title">
+            Explore
+          </h3>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="about.html">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="portfolio.html">
+                Portfolio
+              </a>
+            </li>
+
+            <li>
+              <a href="case-studies.html">
+                Case Studies
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="footer-title">
+            Contact
+          </h3>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="contact.html">
+                Contact Us
+              </a>
+            </li>
+
+            <li>
+              <a href="request-a-quote.html">
+                Request a Quote
+              </a>
+            </li>
+
+            <li>
+              <a href="faq.html">
+                FAQ
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        © 2026 PT Autotube Crew Studio. All Rights Reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
