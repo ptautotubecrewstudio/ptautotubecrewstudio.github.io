@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>News | PT Autotube Crew Studio</title>
+
+  <meta name="description" content="Latest news, studio updates, announcements and creative production developments from PT Autotube Crew Studio.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="logo.png.png">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #050505;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(5, 5, 5, 0.96);
+      border-bottom: 1px solid #222;
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .logo img {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #ccc;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #e50914;
+    }
+
+    .contact-btn {
+      border: 1px solid #e50914;
+      padding: 9px 16px;
+      border-radius: 4px;
+    }
+
+    .contact-btn:hover {
+      background: #e50914;
+      color: #fff;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 120px 0 100px;
+      background:
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(229, 9, 20, 0.15),
+          transparent 35%
+        ),
+        #050505;
+      border-bottom: 1px solid #222;
+    }
+
+    .label {
+      color: #e50914;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 58px;
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 18px;
+      max-width: 760px;
+    }
+
+    /* NEWS */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      color: #999;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .news-card {
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-6px);
+      border-color: #e50914;
+    }
+
+    .news-image {
+      height: 220px;
+      background:
+        linear-gradient(
+          135deg,
+          #1c1c1c,
+          #090909
+        );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 13px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .news-content {
+      padding: 28px;
+    }
+
+    .news-date {
+      color: #e50914;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .news-card h3 {
+      font-size: 22px;
+      line-height: 1.35;
+      margin-bottom: 14px;
+    }
+
+    .news-card p {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .read-more {
+      display: inline-block;
+      border: 1px solid #555;
+      padding: 9px 16px;
+      font-size: 13px;
+      transition: 0.3s;
+    }
+
+    .read-more:hover {
+      background: #e50914;
+      border-color: #e50914;
+    }
+
+    /* UPDATE SECTION */
+
+    .dark {
+      background: #090909;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    .updates {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .update-box {
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 10px;
+      padding: 32px;
+    }
+
+    .update-box h3 {
+      font-size: 23px;
+      margin-bottom: 15px;
+    }
+
+    .update-box p {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .update-list {
+      list-style: none;
+    }
+
+    .update-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #242424;
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    .update-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* CTA */
+
+    .cta {
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(229, 9, 20, 0.12),
+          transparent 55%
+        ),
+        #070707;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+      margin-bottom: 18px;
+    }
+
+    .cta p {
+      color: #aaa;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #e50914;
+      padding: 14px 28px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    .cta-btn:hover {
+      background: #ff2530;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #050505;
+      border-top: 1px solid #222;
+      padding: 50px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    footer h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #888;
+      font-size: 13px;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .footer-links p {
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #222;
+      padding-top: 22px;
+      text-align: center;
+      color: #666;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 950px) {
+
+      nav {
+        display: none;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .updates {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .container {
+        width: 90%;
+      }
+
+      .hero {
+        padding: 85px 0 70px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta h2 {
+        font-size: 30px;
+      }
+
+      .logo {
+        font-size: 14px;
+      }
+
+      .logo img {
+        width: 38px;
+        height: 38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="container navbar">
+
+    <a href="index.html" class="logo">
+
+      <img
+        src="logo.png.png"
+        alt="PT Autotube Crew Studio Logo"
+      >
+
+      <span>PT Autotube Crew Studio</span>
+
+    </a>
+
+    <nav>
+
+      <ul>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="about.html">About</a>
+        </li>
+
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+
+        <li>
+          <a href="case-studies.html">Case Studies</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+
+        <li>
+          <a
+            href="contact.html"
+            class="contact-btn"
+          >
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="label">
+      Studio Updates
+    </div>
+
+    <h1>
+      News & Updates
+    </h1>
+
+    <p>
+      Follow the latest studio announcements, creative developments, production updates and important news from PT Autotube Crew Studio.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- NEWS -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Latest News
+      </h2>
+
+      <p>
+        Updates from our studio, creative work, production activities and ongoing development.
+      </p>
+
+    </div>
+
+
+    <div class="news-grid">
+
+
+      <!-- NEWS 01 -->
+
+      <article class="news-card">
+
+        <div class="news-image">
+          STUDIO NEWS IMAGE
+        </div>
+
+        <div class="news-content">
+
+          <div class="news-date">
+            Studio Update
+          </div>
+
+          <h3>
+            PT Autotube Crew Studio Expands Its Creative Production Capabilities
+          </h3>
+
+          <p>
+            Our studio continues to develop its CGI, 3D animation, VFX and digital production capabilities to support a wider range of creative projects.
+          </p>
+
+          <a
+            href="blog-post.html"
+            class="read-more"
+          >
+            Read More
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NEWS 02 -->
+
+      <article class="news-card">
+
+        <div class="news-image">
+          PRODUCTION NEWS IMAGE
+        </div>
+
+        <div class="news-content">
+
+          <div class="news-date">
+            Production
+          </div>
+
+          <h3>
+            Building More Flexible Visual Production Workflows
+          </h3>
+
+          <p>
+            We are continuing to improve our production workflow to create efficient collaboration between creative direction, CGI, animation, VFX and post-production.
+          </p>
+
+          <a
+            href="our-workflow.html"
+            class="read-more"
+          >
+            Our Workflow
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NEWS 03 -->
+
+      <article class="news-card">
+
+        <div class="news-image">
+          CREATIVE NEWS IMAGE
+        </div>
+
+        <div class="news-content">
+
+          <div class="news-date">
+            Creative Development
+          </div>
+
+          <h3>
+            Developing New Visual Experiences for Global Collaboration
+          </h3>
+
+          <p>
+            PT Autotube Crew Studio is focused on developing creative partnerships and production opportunities with clients and teams in different markets.
+          </p>
+
+          <a
+            href="partners.html"
+            class="read-more"
+          >
+            Partnerships
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NEWS 04 -->
+
+      <article class="news-card">
+
+        <div class="news-image">
+          CGI NEWS IMAGE
+        </div>
+
+        <div class="news-content">
+
+          <div class="news-date">
+            CGI & 3D
+          </div>
+
+          <h3>
+            Exploring New Possibilities in CGI and 3D Animation
+          </h3>
+
+          <p>
+            Our creative development continues to explore new approaches to 3D visualization, animation, cinematic imagery and digital storytelling.
+          </p>
+
+          <a
+            href="3d-animation.html"
+            class="read-more"
+          >
+            3D Animation
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NEWS 05 -->
+
+      <article class="news-card">
+
+        <div class="news-image">
+          VFX NEWS IMAGE
+        </div>
+
+        <div class="news-content">
+
+          <div class="news-date">
+            Visual Effects
+          </div>
+
+          <h3>
+            Expanding Visual Effects and Post-Production Services
+          </h3>
+
+          <p>
+            Our VFX production services are designed to support projects that require detailed visual enhancement, compositing and cinematic finishing.
+          </p>
+
+          <a
+            href="vfx.html"
+            class="read-more"
+          >
+            Explore VFX
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- NEWS 06 -->
+
+      <article class="news-card">
+
+        <div class="news-image">
+          STUDIO PORTFOLIO IMAGE
+        </div>
+
+        <div class="news-content">
+
+          <div class="news-date">
+            Portfolio
+          </div>
+
+          <h3>
+            Discover Selected Work from Our Studio
+          </h3>
+
+          <p>
+            Explore selected visual projects and production work created through CGI, animation, VFX and other digital production disciplines.
+          </p>
+
+          <a
+            href="portfolio.html"
+            class="read-more"
+          >
+            View Portfolio
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- STUDIO UPDATES -->
+
+<section class="dark">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        What We Are Working On
+      </h2>
+
+      <p>
+        Our current focus is on building strong creative systems and long-term production relationships.
+      </p>
+
+    </div>
+
+
+    <div class="updates">
+
+
+      <div class="update-box">
+
+        <h3>
+          Creative Development
+        </h3>
+
+        <p>
+          We continue to develop new visual concepts and production approaches across multiple creative disciplines.
+        </p>
+
+        <ul class="update-list">
+
+          <li>
+            CGI & 3D visualization
+          </li>
+
+          <li>
+            3D animation
+          </li>
+
+          <li>
+            Visual effects
+          </li>
+
+          <li>
+            Cinematic digital content
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="update-box">
+
+        <h3>
+          Collaboration
+        </h3>
+
+        <p>
+          We are open to working with clients, agencies, brands and production partners on suitable projects.
+        </p>
+
+        <ul class="update-list">
+
+          <li>
+            Commercial production
+          </li>
+
+          <li>
+            Brand content
+          </li>
+
+          <li>
+            Entertainment projects
+          </li>
+
+          <li>
+            International production partnerships
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- EVENTS -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Studio Events
+      </h2>
+
+      <p>
+        For upcoming and past studio-related events, announcements and activities, visit our events section.
+      </p>
+
+    </div>
+
+    <a
+      href="events.html"
+      class="read-more"
+    >
+      View Events
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>
+      Want to Work With Us?
+    </h2>
+
+    <p>
+      If you have a creative project, production requirement or partnership opportunity, contact PT Autotube Crew Studio to discuss your ideas.
+    </p>
+
+    <a
+      href="request-a-quote.html"
+      class="cta-btn"
+    >
+      Request a Quote
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <h3>
+          PT Autotube Crew Studio
+        </h3>
+
+        <p>
+          Creative production studio based in Jakarta, Indonesia, focused on CGI, 3D animation, VFX and digital visual production.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Explore
+        </h3>
+
+        <div class="footer-links">
+
+          <p>
+            <a href="about.html">
+              About
+            </a>
+          </p>
+
+          <p>
+            <a href="services.html">
+              Services
+            </a>
+          </p>
+
+          <p>
+            <a href="portfolio.html">
+              Portfolio
+            </a>
+          </p>
+
+          <p>
+            <a href="case-studies.html">
+              Case Studies
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Resources
+        </h3>
+
+        <div class="footer-links">
+
+          <p>
+            <a href="blog.html">
+              Blog
+            </a>
+          </p>
+
+          <p>
+            <a href="news.html">
+              News
+            </a>
+          </p>
+
+          <p>
+            <a href="events.html">
+              Events
+            </a>
+          </p>
+
+          <p>
+            <a href="media-kit.html">
+              Media Kit
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      © 2026 PT Autotube Crew Studio. All Rights Reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
