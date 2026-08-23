@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Events | PT Autotube Crew Studio</title>
+
+  <meta name="description" content="Events, exhibitions, creative activities and industry updates from PT Autotube Crew Studio.">
+
+  <link rel="icon" href="logo.png.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #050505;
+      color: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(0,0,0,.94);
+      border-bottom: 1px solid #222;
+      backdrop-filter: blur(12px);
+    }
+
+    header .container {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .logo img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      font-size: 14px;
+      color: #ccc;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: #e50914;
+    }
+
+    .hero {
+      padding: 120px 0 100px;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229,9,20,.14), transparent 50%),
+        #050505;
+      border-bottom: 1px solid #222;
+    }
+
+    .hero h1 {
+      font-size: 62px;
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      color: #bbb;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      color: #999;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .event-card {
+      background: #101010;
+      border: 1px solid #262626;
+      border-radius: 18px;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .event-card:hover {
+      transform: translateY(-7px);
+      border-color: #e50914;
+    }
+
+    .event-image {
+      height: 220px;
+      background:
+        linear-gradient(135deg, #181818, #080808);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 14px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .event-content {
+      padding: 28px;
+    }
+
+    .event-date {
+      display: inline-block;
+      color: #e50914;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .event-content h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .event-content p {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .event-tag {
+      display: inline-block;
+      border: 1px solid #333;
+      padding: 6px 11px;
+      font-size: 11px;
+      color: #aaa;
+      border-radius: 20px;
+    }
+
+    .participation {
+      background: #090909;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    .participation-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .participation-card {
+      padding: 35px;
+      background: #101010;
+      border: 1px solid #252525;
+      border-radius: 16px;
+    }
+
+    .number {
+      color: #e50914;
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .participation-card h3 {
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .participation-card p {
+      color: #999;
+      font-size: 14px;
+    }
+
+    .cta {
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229,9,20,.12), transparent 55%),
+        #070707;
+    }
+
+    .cta h2 {
+      font-size: 42px;
+      margin-bottom: 18px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: auto;
+      color: #aaa;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: #e50914;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 40px;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      background: #ff303d;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background: #090909;
+      border-top: 1px solid #222;
+      padding: 50px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    footer p,
+    footer a {
+      color: #888;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #222;
+      margin-top: 40px;
+      padding-top: 22px;
+      text-align: center;
+    }
+
+    @media (max-width: 1000px) {
+      nav ul {
+        gap: 12px;
+      }
+
+      .events-grid,
+      .participation-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 90px 0 70px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .events-grid,
+      .participation-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2,
+      .cta h2 {
+        font-size: 31px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+
+    <a href="index.html" class="logo">
+      <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+      <span>PT Autotube Crew Studio</span>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="hero">
+
+  <div class="container">
+
+    <h1>Events</h1>
+
+    <p>
+      Follow PT Autotube Crew Studio's creative activities, industry participation,
+      exhibitions, networking opportunities and selected studio events.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Studio & Industry Events</h2>
+
+      <p>
+        A space for sharing our participation in creative events,
+        production activities and industry opportunities.
+      </p>
+
+    </div>
+
+
+    <div class="events-grid">
+
+
+      <article class="event-card">
+
+        <div class="event-image">
+          EVENT IMAGE / PHOTO
+        </div>
+
+        <div class="event-content">
+
+          <span class="event-date">
+            Upcoming
+          </span>
+
+          <h3>Creative Industry Networking</h3>
+
+          <p>
+            Studio participation in creative industry networking,
+            collaboration and production discussions.
+          </p>
+
+          <span class="event-tag">
+            Networking
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <article class="event-card">
+
+        <div class="event-image">
+          EVENT IMAGE / PHOTO
+        </div>
+
+        <div class="event-content">
+
+          <span class="event-date">
+            Studio Activity
+          </span>
+
+          <h3>CGI & 3D Production Showcase</h3>
+
+          <p>
+            A showcase opportunity highlighting selected CGI,
+            3D animation and visual production work.
+          </p>
+
+          <span class="event-tag">
+            CGI & 3D
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <article class="event-card">
+
+        <div class="event-image">
+          EVENT IMAGE / PHOTO
+        </div>
+
+        <div class="event-content">
+
+          <span class="event-date">
+            Industry
+          </span>
+
+          <h3>Creative Production Meetup</h3>
+
+          <p>
+            Opportunities to connect with artists, agencies,
+            studios and production partners.
+          </p>
+
+          <span class="event-tag">
+            Production
+          </span>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="participation">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>What We Look For</h2>
+
+      <p>
+        We are interested in events and opportunities that create
+        meaningful creative and professional connections.
+      </p>
+
+    </div>
+
+
+    <div class="participation-grid">
+
+
+      <div class="participation-card">
+
+        <div class="number">01</div>
+
+        <h3>Industry Connections</h3>
+
+        <p>
+          Building relationships with creative companies,
+          agencies, studios and production professionals.
+        </p>
+
+      </div>
+
+
+      <div class="participation-card">
+
+        <div class="number">02</div>
+
+        <h3>Creative Collaboration</h3>
+
+        <p>
+          Discovering new opportunities for collaborative
+          projects and international production partnerships.
+        </p>
+
+      </div>
+
+
+      <div class="participation-card">
+
+        <div class="number">03</div>
+
+        <h3>Knowledge & Inspiration</h3>
+
+        <p>
+          Learning about emerging technologies, production
+          workflows and new creative directions.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Want to Collaborate With Us?</h2>
+
+    <p>
+      If you are organizing an event, creative program,
+      production activity or industry collaboration,
+      we'd be happy to hear from you.
+    </p>
+
+    <a href="contact.html" class="btn">
+      Contact the Studio
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h3>PT Autotube Crew Studio</h3>
+
+        <p>
+          Creative production studio focused on CGI,
+          3D animation, VFX, visualization and digital
+          visual content.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>Explore</h3>
+
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="portfolio.html">Portfolio</a></p>
+        <p><a href="case-studies.html">Case Studies</a></p>
+
+      </div>
+
+
+      <div>
+
+        <h3>Resources</h3>
+
+        <p><a href="blog.html">Blog</a></p>
+        <p><a href="news.html">News</a></p>
+        <p><a href="events.html">Events</a></p>
+        <p><a href="downloads.html">Downloads</a></p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 PT Autotube Crew Studio. All Rights Reserved.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
