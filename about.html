@@ -1,1156 +1,1610 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About PT Autotube Crew Studio | CGI and 3D Production Studio</title>
-
-<meta name="description" content="Learn about PT Autotube Crew Studio, a Jakarta based creative production studio focused on CGI, 3D animation, VFX, visualization and digital content production for clients worldwide.">
-<meta name="author" content="PT Autotube Crew Studio">
-<meta name="robots" content="index, follow">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="About PT Autotube Crew Studio">
-<meta property="og:description" content="Discover the studio, its creative approach, values and vision for global CGI and digital production.">
-<meta property="og:image" content="logo.png.png">
-<meta property="og:url" content="https://www.autotubecrewstudio.com/about.html">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About PT Autotube Crew Studio">
-<meta name="twitter:description" content="Learn more about PT Autotube Crew Studio and its creative production approach.">
-<meta name="twitter:image" content="logo.png.png">
-
-<link rel="icon" href="logo.png.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#050505;
-    color:#fff;
-    line-height:1.7;
-    overflow-x:hidden;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-.container{
-    width:90%;
-    max-width:1400px;
-    margin:auto;
-}
-
-section{
-    padding:100px 0;
-}
-
-h1{
-    font-size:64px;
-    line-height:1.15;
-    font-weight:800;
-}
-
-h2{
-    font-size:44px;
-    line-height:1.2;
-    margin-bottom:22px;
-    font-weight:700;
-}
-
-h3{
-    font-size:27px;
-    line-height:1.3;
-    margin-bottom:15px;
-}
-
-p{
-    color:#cfcfcf;
-    font-size:17px;
-}
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:rgba(0,0,0,.9);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-    z-index:999;
-}
-
-header .container{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:16px 0;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:25px;
-    font-weight:700;
-}
-
-.logo img{
-    width:52px;
-    height:52px;
-    object-fit:contain;
-}
-
-nav ul{
-    display:flex;
-    align-items:center;
-    gap:28px;
-    list-style:none;
-}
-
-nav ul li{
-    position:relative;
-}
-
-nav ul li > a{
-    font-size:15px;
-    font-weight:500;
-    transition:.3s;
-}
-
-nav ul li > a:hover{
-    color:#e50914;
-}
-
-.dropdown{
-    position:absolute;
-    top:100%;
-    left:0;
-    min-width:245px;
-    background:#111;
-    border:1px solid #252525;
-    border-radius:12px;
-    padding:12px 0;
-    display:none;
-    z-index:1000;
-}
-
-.dropdown a{
-    display:block;
-    padding:11px 20px;
-    font-size:14px;
-    transition:.3s;
-}
-
-.dropdown a:hover{
-    background:#1b1b1b;
-    color:#e50914;
-    padding-left:25px;
-}
-
-nav ul li:hover .dropdown{
-    display:block;
-}
-
-.mobile-menu-btn{
-    display:none;
-    background:none;
-    border:none;
-    color:#fff;
-    font-size:30px;
-    cursor:pointer;
-}
-
-.mobile-menu{
-    display:none;
-}
-
-.page-hero{
-    padding-top:190px;
-    padding-bottom:110px;
-    background:
-        radial-gradient(circle at 80% 20%,rgba(229,9,20,.16),transparent 35%),
-        #050505;
-}
-
-.page-hero .container{
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    gap:70px;
-    align-items:center;
-}
-
-.hero-content p{
-    max-width:720px;
-    margin-top:25px;
-    font-size:18px;
-}
-
-.hero-image img{
-    width:100%;
-    max-width:600px;
-    margin:auto;
-    border-radius:22px;
-    border:1px solid #242424;
-    box-shadow:0 0 50px rgba(229,9,20,.16);
-}
-
-.btn{
-    display:inline-block;
-    margin-top:32px;
-    padding:15px 35px;
-    background:#e50914;
-    border-radius:50px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#ff303d;
-    transform:translateY(-3px);
-}
-
-.dark{
-    background:#090909;
-}
-
-.section-title{
-    text-align:center;
-    max-width:900px;
-    margin:0 auto 60px;
-}
-
-.section-title p{
-    margin-top:15px;
-}
-
-.two-column{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:70px;
-    align-items:center;
-}
-
-.content-block p{
-    margin-bottom:20px;
-}
-
-.info-box{
-    background:#101010;
-    border:1px solid #252525;
-    border-radius:20px;
-    padding:35px;
-}
-
-.info-box p{
-    margin-bottom:15px;
-}
-
-.info-box p:last-child{
-    margin-bottom:0;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.card{
-    background:#101010;
-    border:1px solid #242424;
-    border-radius:18px;
-    padding:32px;
-    transition:.35s;
-}
-
-.card:hover{
-    transform:translateY(-7px);
-    border-color:#e50914;
-}
-
-.card p{
-    font-size:15px;
-}
-
-.number{
-    font-size:42px;
-    font-weight:800;
-    color:#e50914;
-    margin-bottom:10px;
-}
-
-.approach{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:22px;
-}
-
-.approach-item{
-    padding:30px;
-    border-left:2px solid #e50914;
-    background:#101010;
-}
-
-.approach-item h3{
-    font-size:22px;
-}
-
-.cta{
-    text-align:center;
-    background:
-        radial-gradient(circle at center,rgba(229,9,20,.13),transparent 55%),
-        #070707;
-}
-
-.cta p{
-    max-width:760px;
-    margin:0 auto;
-}
-
-footer{
-    background:#090909;
-    border-top:1px solid #222;
-    padding:60px 0 30px;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.4fr 1fr 1fr 1.2fr;
-    gap:40px;
-}
-
-footer h3{
-    font-size:21px;
-}
-
-footer p,
-footer a{
-    color:#999;
-    font-size:14px;
-}
-
-footer a:hover{
-    color:#fff;
-}
-
-.footer-links p{
-    margin-bottom:8px;
-}
-
-.footer-bottom{
-    border-top:1px solid #222;
-    margin-top:45px;
-    padding-top:25px;
-    text-align:center;
-}
-
-#topBtn{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    width:54px;
-    height:54px;
-    border:none;
-    border-radius:50%;
-    background:#e50914;
-    color:#fff;
-    font-size:22px;
-    cursor:pointer;
-    display:none;
-    z-index:998;
-    transition:.3s;
-}
-
-#topBtn:hover{
-    transform:translateY(-5px);
-}
-
-@media(max-width:1100px){
-
-    nav ul{
-        gap:18px;
-    }
-
-    .grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .approach{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
-}
-
-@media(max-width:992px){
-
-    .container{
-        width:92%;
-    }
-
-    nav{
-        display:none;
-    }
-
-    .mobile-menu-btn{
-        display:block;
-    }
-
-    header .container{
-        position:relative;
-    }
-
-    .mobile-menu{
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:#0b0b0b;
-        border-top:1px solid #222;
-        border-bottom:1px solid #222;
-        padding:15px 20px;
-        z-index:1000;
-    }
-
-    .mobile-menu.active{
-        display:block;
-    }
-
-    .mobile-menu a{
-        display:block;
-        padding:12px 8px;
-        border-bottom:1px solid #222;
-        font-size:15px;
-    }
-
-    .mobile-menu a:last-child{
-        border-bottom:none;
-    }
-
-    .page-hero .container,
-    .two-column{
-        grid-template-columns:1fr;
-        gap:45px;
-    }
-
-    h1{
-        font-size:48px;
-    }
-
-    h2{
-        font-size:36px;
-    }
-}
-
-@media(max-width:768px){
-
-    section{
-        padding:75px 0;
-    }
-
-    .logo{
-        font-size:18px;
-    }
-
-    .logo img{
-        width:42px;
-        height:42px;
-    }
-
-    .page-hero{
-        padding-top:135px;
-        padding-bottom:75px;
-    }
-
-    h1{
-        font-size:38px;
-    }
-
-    h2{
-        font-size:31px;
-    }
-
-    h3{
-        font-size:23px;
-    }
-
-    p{
-        font-size:15px;
-    }
-
-    .hero-content p{
-        font-size:15px;
-    }
-
-    .grid,
-    .approach,
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
-
-    .card,
-    .info-box,
-    .approach-item{
-        padding:25px;
-    }
-
-    .btn{
-        width:100%;
-        text-align:center;
-    }
-}
-
-@media(max-width:480px){
-
-    .container{
-        width:90%;
-    }
-
-    .logo{
-        font-size:15px;
-    }
-
-    .logo img{
-        width:37px;
-        height:37px;
-    }
-
-    .page-hero{
-        padding-top:120px;
-    }
-
-    h1{
-        font-size:33px;
-    }
-
-    h2{
-        font-size:28px;
-    }
-
-    section{
-        padding:65px 0;
-    }
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About PT Autotube Crew Studio | CGI & 3D Production Studio</title>
+
+    <meta name="description" content="Learn about PT Autotube Crew Studio, a Jakarta based creative production studio focused on CGI, 3D animation, VFX, visualization and digital content production for clients worldwide.">
+
+    <meta name="author" content="PT Autotube Crew Studio">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About PT Autotube Crew Studio">
+    <meta property="og:description" content="Discover PT Autotube Crew Studio, its creative approach, production capabilities and vision for global digital visual production.">
+    <meta property="og:image" content="logo.png.png">
+    <meta property="og:url" content="https://www.autotubecrewstudio.com/about.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About PT Autotube Crew Studio">
+    <meta name="twitter:description" content="Learn more about PT Autotube Crew Studio and its creative production approach.">
+    <meta name="twitter:image" content="logo.png.png">
+
+    <link rel="icon" href="logo.png.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #050505;
+            color: #ffffff;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 1.12;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 44px;
+            line-height: 1.2;
+            margin-bottom: 22px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 27px;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #cfcfcf;
+            font-size: 17px;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            z-index: 999;
+        }
+
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 22px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul li > a {
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li > a:hover {
+            color: #e50914;
+        }
+
+        .active-link {
+            color: #e50914 !important;
+        }
+
+        /* =========================
+           MOBILE BUTTON
+        ========================= */
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .page-hero {
+            padding-top: 190px;
+            padding-bottom: 110px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(229, 9, 20, 0.17),
+                    transparent 35%
+                ),
+                #050505;
+        }
+
+        .page-hero .container {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .hero-content p {
+            max-width: 760px;
+            margin-top: 25px;
+            font-size: 18px;
+        }
+
+        .hero-content p + p {
+            margin-top: 15px;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-box {
+            width: 100%;
+            max-width: 520px;
+            min-height: 430px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(229, 9, 20, 0.16),
+                    transparent 55%
+                ),
+                #101010;
+
+            border: 1px solid #252525;
+            border-radius: 28px;
+
+            box-shadow:
+                0 0 70px rgba(229, 9, 20, 0.10);
+
+            padding: 50px;
+        }
+
+        .hero-image-box img {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 15px 35px;
+            background: #e50914;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff303d;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            display: inline-block;
+            margin-top: 32px;
+            margin-left: 10px;
+            padding: 14px 34px;
+            border: 1px solid #444;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-outline:hover {
+            border-color: #e50914;
+            color: #e50914;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        .dark {
+            background: #090909;
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+
+        .section-title p {
+            margin-top: 15px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .content-block p {
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: #101010;
+            border: 1px solid #252525;
+            border-radius: 20px;
+            padding: 35px;
+        }
+
+        .info-box p {
+            margin-bottom: 15px;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-box strong {
+            color: #ffffff;
+        }
+
+        /* =========================
+           CARDS
+        ========================= */
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #101010;
+            border: 1px solid #242424;
+            border-radius: 18px;
+            padding: 32px;
+            transition: 0.35s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #e50914;
+        }
+
+        .card p {
+            font-size: 15px;
+        }
+
+        .number {
+            font-size: 42px;
+            font-weight: 800;
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           APPROACH
+        ========================= */
+
+        .approach {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .approach-item {
+            padding: 30px;
+            border-left: 2px solid #e50914;
+            background: #101010;
+        }
+
+        .approach-item h3 {
+            font-size: 22px;
+        }
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(229, 9, 20, 0.13),
+                    transparent 55%
+                ),
+                #070707;
+        }
+
+        .cta p {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #090909;
+            border-top: 1px solid #222;
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            font-size: 21px;
+        }
+
+        footer p,
+        footer a {
+            color: #999;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .footer-links p {
+            margin-bottom: 8px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #222;
+            margin-top: 45px;
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        /* =========================
+           TOP BUTTON
+        ========================= */
+
+        #topBtn {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+
+            width: 54px;
+            height: 54px;
+
+            border: none;
+            border-radius: 50%;
+
+            background: #e50914;
+            color: #ffffff;
+
+            font-size: 22px;
+            cursor: pointer;
+
+            display: none;
+            z-index: 998;
+
+            transition: 0.3s;
+        }
+
+        #topBtn:hover {
+            transform: translateY(-5px);
+        }
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 1100px) {
+
+            nav ul {
+                gap: 18px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .approach {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        /* =========================
+           MOBILE NAV
+        ========================= */
+
+        @media (max-width: 992px) {
+
+            .container {
+                width: 92%;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            header .container {
+                position: relative;
+            }
+
+            .mobile-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+
+                width: 100%;
+
+                background: #0b0b0b;
+
+                border-top: 1px solid #222;
+                border-bottom: 1px solid #222;
+
+                padding: 15px 20px;
+
+                z-index: 1000;
+            }
+
+            .mobile-menu.active {
+                display: block;
+            }
+
+            .mobile-menu a {
+                display: block;
+                padding: 12px 8px;
+
+                border-bottom: 1px solid #222;
+
+                font-size: 15px;
+            }
+
+            .mobile-menu a:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero .container,
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            h2 {
+                font-size: 36px;
+            }
+
+        }
+
+        /* =========================
+           SMALL MOBILE
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            section {
+                padding: 75px 0;
+            }
+
+            .logo {
+                font-size: 17px;
+            }
+
+            .logo img {
+                width: 42px;
+                height: 42px;
+            }
+
+            .page-hero {
+                padding-top: 135px;
+                padding-bottom: 75px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            h2 {
+                font-size: 31px;
+            }
+
+            h3 {
+                font-size: 23px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .hero-content p {
+                font-size: 15px;
+            }
+
+            .grid,
+            .approach,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card,
+            .info-box,
+            .approach-item {
+                padding: 25px;
+            }
+
+            .hero-image-box {
+                min-height: 300px;
+                padding: 30px;
+            }
+
+            .hero-image-box img {
+                width: 170px;
+                height: 170px;
+            }
+
+            .btn,
+            .btn-outline {
+                width: 100%;
+                text-align: center;
+                margin-left: 0;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .container {
+                width: 90%;
+            }
+
+            .logo {
+                font-size: 14px;
+            }
+
+            .logo img {
+                width: 37px;
+                height: 37px;
+            }
+
+            .page-hero {
+                padding-top: 120px;
+            }
+
+            h1 {
+                font-size: 33px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
-<div class="container">
 
-<a href="index.html" class="logo">
-<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-<span>PT Autotube Crew Studio</span>
-</a>
+    <div class="container">
 
-<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
-☰
-</button>
+        <a href="index.html" class="logo">
+            <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+            <span>PT Autotube Crew Studio</span>
+        </a>
 
-<nav>
-<ul>
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Open Menu"
+            aria-expanded="false">
+            ☰
+        </button>
 
-<li><a href="index.html">Home</a></li>
+        <nav>
+            <ul>
 
-<li>
-<a href="#">About ▼</a>
-<div class="dropdown">
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-</div>
-</li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-<li>
-<a href="#">Services ▼</a>
-<div class="dropdown">
-<a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-</div>
-</li>
+                <li>
+                    <a href="about.html" class="active-link">About</a>
+                </li>
 
-<li>
-<a href="#">Portfolio ▼</a>
-<div class="dropdown">
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-</div>
-</li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
 
-<li>
-<a href="#">Resources ▼</a>
-<div class="dropdown">
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-</div>
-</li>
+                <li>
+                    <a href="technology.html">Technology</a>
+                </li>
 
-<li>
-<a href="contact.html">Contact</a>
-</li>
+                <li>
+                    <a href="industries.html">Industries</a>
+                </li>
 
-</ul>
-</nav>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
 
-<div class="mobile-menu" id="mobileMenu">
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
 
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-<a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-<a href="contact.html">Contact</a>
+                <li>
+                    <a href="request-a-quote.html">Request a Quote</a>
+                </li>
 
-</div>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
 
-</div>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="technology.html">Technology</a>
+
+            <a href="industries.html">Industries</a>
+
+            <a href="blog.html">Blog</a>
+
+            <a href="faq.html">FAQ</a>
+
+            <a href="request-a-quote.html">Request a Quote</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
 </header>
 
 
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="page-hero">
 
-<div class="container">
+    <div class="container">
 
-<div class="hero-content">
+        <div class="hero-content">
 
-<h1>About PT Autotube Crew Studio</h1>
+            <h1>
+                About PT Autotube Crew Studio
+            </h1>
 
-<p>
-PT Autotube Crew Studio is a creative production studio based in Jakarta, Indonesia, focused on building high-quality digital visual content for brands, businesses, agencies and production partners.
-</p>
+            <p>
+                PT Autotube Crew Studio is a creative production studio based in Jakarta, Indonesia, focused on developing high-quality digital visual content for brands, businesses, agencies and production partners.
+            </p>
 
-<p>
-Our work brings together creative thinking, 3D production and modern digital workflows to develop visual experiences for different production requirements and audiences.
-</p>
+            <p>
+                Our work brings together creative thinking, 3D production and modern digital workflows to develop visual experiences for different production requirements and audiences.
+            </p>
 
-<a href="team.html" class="btn">Meet Our Team</a>
+            <a href="services.html" class="btn">
+                Explore Our Services
+            </a>
 
-</div>
+            <a href="request-a-quote.html" class="btn-outline">
+                Start a Project
+            </a>
 
-<div class="hero-image">
+        </div>
 
-<img src="portfolio07.png.png" alt="PT Autotube Crew Studio Creative Production">
 
-</div>
+        <div class="hero-image">
 
-</div>
+            <div class="hero-image-box">
+
+                <img
+                    src="logo.png.png"
+                    alt="PT Autotube Crew Studio">
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- =========================
+     WHO WE ARE
+========================= -->
 
 <section class="dark">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-title">
+        <div class="section-title">
 
-<h2>Who We Are</h2>
+            <h2>
+                Who We Are
+            </h2>
 
-<p>
-A creative studio built around visual production, technical capability and long-term collaboration.
-</p>
+            <p>
+                A creative studio built around visual production, technical capability and long-term collaboration.
+            </p>
 
-</div>
+        </div>
 
-<div class="two-column">
 
-<div class="content-block">
+        <div class="two-column">
 
-<h3>Creative Production With a Practical Approach</h3>
+            <div class="content-block">
 
-<p>
-PT Autotube Crew Studio works across digital visual production with a focus on creating professional content that can support commercial, entertainment and communication objectives.
-</p>
+                <h3>
+                    Creative Production With a Practical Approach
+                </h3>
 
-<p>
-We combine artistic direction with production planning so that creative ideas can move through a structured process toward a usable final result.
-</p>
+                <p>
+                    PT Autotube Crew Studio works across digital visual production with a focus on creating professional content that can support commercial, entertainment and communication objectives.
+                </p>
 
-<p>
-Our studio is designed to support both individual projects and ongoing production relationships, depending on the needs of our clients and partners.
-</p>
+                <p>
+                    We combine artistic direction with production planning so that creative ideas can move through a structured process toward a usable final result.
+                </p>
 
-</div>
+                <p>
+                    Our studio is designed to support both individual projects and ongoing production relationships, depending on the needs of clients and production partners.
+                </p>
 
-<div class="info-box">
+            </div>
 
-<h3>Our Studio Focus</h3>
 
-<p><strong>Location:</strong> Jakarta, Indonesia</p>
-<p><strong>Collaboration:</strong> Local and international</p>
-<p><strong>Production:</strong> Digital visual content</p>
-<p><strong>Approach:</strong> Creative and production focused</p>
-<p><strong>Work Model:</strong> Project based and long term collaboration</p>
+            <div class="info-box">
 
-</div>
+                <h3>
+                    Our Studio Focus
+                </h3>
 
-</div>
+                <p>
+                    <strong>Location:</strong>
+                    Jakarta, Indonesia
+                </p>
 
-</div>
+                <p>
+                    <strong>Collaboration:</strong>
+                    Local and international
+                </p>
+
+                <p>
+                    <strong>Production:</strong>
+                    Digital visual content
+                </p>
+
+                <p>
+                    <strong>Specialization:</strong>
+                    CGI, 3D Animation, VFX and Digital Production
+                </p>
+
+                <p>
+                    <strong>Work Model:</strong>
+                    Project based and long-term collaboration
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- =========================
+     MISSION
+========================= -->
 
 <section>
 
-<div class="container">
+    <div class="container">
 
-<div class="section-title">
+        <div class="section-title">
 
-<h2>Our Mission and Vision</h2>
+            <h2>
+                Our Mission and Vision
+            </h2>
 
-<p>
-The principles that guide the direction of the studio.
-</p>
+            <p>
+                The principles that guide the direction of the studio.
+            </p>
 
-</div>
+        </div>
 
-<div class="grid">
 
-<div class="card">
+        <div class="grid">
 
-<div class="number">01</div>
+            <div class="card">
 
-<h3>Mission</h3>
+                <div class="number">
+                    01
+                </div>
 
-<p>
-To create professional visual content through creativity, technical skill, organized production and dependable collaboration.
-</p>
+                <h3>
+                    Mission
+                </h3>
 
-</div>
+                <p>
+                    To create professional visual content through creativity, technical skill, organized production and dependable collaboration.
+                </p>
 
-<div class="card">
+            </div>
 
-<div class="number">02</div>
 
-<h3>Vision</h3>
+            <div class="card">
 
-<p>
-To develop PT Autotube Crew Studio into a respected creative production partner capable of collaborating with companies and production teams internationally.
-</p>
+                <div class="number">
+                    02
+                </div>
 
-</div>
+                <h3>
+                    Vision
+                </h3>
 
-<div class="card">
+                <p>
+                    To develop PT Autotube Crew Studio into a respected creative production partner capable of collaborating with companies and production teams internationally.
+                </p>
 
-<div class="number">03</div>
+            </div>
 
-<h3>Long-Term Direction</h3>
 
-<p>
-To continuously improve our creative capabilities, production processes and international collaboration opportunities.
-</p>
+            <div class="card">
 
-</div>
+                <div class="number">
+                    03
+                </div>
 
-</div>
+                <h3>
+                    Long-Term Direction
+                </h3>
 
-</div>
+                <p>
+                    To continuously improve our creative capabilities, production processes and international collaboration opportunities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- =========================
+     HOW WE WORK
+========================= -->
 
 <section class="dark">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-title">
+        <div class="section-title">
 
-<h2>How We Work</h2>
+            <h2>
+                How We Work
+            </h2>
 
-<p>
-Our production mindset is based on clear communication, organized execution and attention to the final visual result.
-</p>
+            <p>
+                Our production mindset is based on clear communication, organized execution and attention to the final visual result.
+            </p>
 
-</div>
+        </div>
 
-<div class="approach">
 
-<div class="approach-item">
+        <div class="approach">
 
-<h3>Understand</h3>
+            <div class="approach-item">
 
-<p>
-We begin by understanding the project's objectives, audience, visual requirements and expected deliverables.
-</p>
+                <h3>
+                    Understand
+                </h3>
 
-</div>
+                <p>
+                    We begin by understanding the project's objectives, audience, visual requirements and expected deliverables.
+                </p>
 
-<div class="approach-item">
+            </div>
 
-<h3>Plan</h3>
 
-<p>
-Production requirements are organized into a practical workflow designed around the project's scope and timeline.
-</p>
+            <div class="approach-item">
 
-</div>
+                <h3>
+                    Plan
+                </h3>
 
-<div class="approach-item">
+                <p>
+                    Production requirements are organized into a practical workflow designed around the project's scope and timeline.
+                </p>
 
-<h3>Create</h3>
+            </div>
 
-<p>
-Our creative and technical work is developed through the appropriate production stages for the project.
-</p>
 
-</div>
+            <div class="approach-item">
 
-<div class="approach-item">
+                <h3>
+                    Create
+                </h3>
 
-<h3>Deliver</h3>
+                <p>
+                    Creative and technical work is developed through the appropriate production stages for each project.
+                </p>
 
-<p>
-The final work is prepared according to the agreed requirements and delivered in a professional production format.
-</p>
+            </div>
 
-</div>
 
-</div>
+            <div class="approach-item">
 
-</div>
+                <h3>
+                    Deliver
+                </h3>
+
+                <p>
+                    Final work is prepared according to the agreed requirements and delivered in a professional production format.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- =========================
+     VALUES
+========================= -->
 
 <section>
 
-<div class="container">
+    <div class="container">
 
-<div class="section-title">
+        <div class="section-title">
 
-<h2>What Matters to Us</h2>
+            <h2>
+                What Matters to Us
+            </h2>
 
-<p>
-These principles shape the way we approach creative production and professional relationships.
-</p>
+            <p>
+                These principles shape the way we approach creative production and professional relationships.
+            </p>
 
-</div>
+        </div>
 
-<div class="grid">
 
-<div class="card">
+        <div class="grid">
 
-<h3>Quality</h3>
+            <div class="card">
 
-<p>
-We aim for strong visual quality and careful execution throughout the production process.
-</p>
+                <h3>
+                    Quality
+                </h3>
 
-</div>
+                <p>
+                    We aim for strong visual quality and careful execution throughout the production process.
+                </p>
 
-<div class="card">
+            </div>
 
-<h3>Creativity</h3>
 
-<p>
-We value original thinking and visual solutions that help projects communicate effectively.
-</p>
+            <div class="card">
 
-</div>
+                <h3>
+                    Creativity
+                </h3>
 
-<div class="card">
+                <p>
+                    We value original thinking and visual solutions that help projects communicate effectively.
+                </p>
 
-<h3>Reliability</h3>
+            </div>
 
-<p>
-Clear communication, organized production and dependable collaboration are important to every project.
-</p>
 
-</div>
+            <div class="card">
 
-<div class="card">
+                <h3>
+                    Reliability
+                </h3>
 
-<h3>Growth</h3>
+                <p>
+                    Clear communication, organized production and dependable collaboration are important to every project.
+                </p>
 
-<p>
-We continuously look for ways to improve our skills, workflows and creative capabilities.
-</p>
+            </div>
 
-</div>
 
-<div class="card">
+            <div class="card">
 
-<h3>Collaboration</h3>
+                <h3>
+                    Growth
+                </h3>
 
-<p>
-We believe strong results come from productive relationships between creative teams, clients and production partners.
-</p>
+                <p>
+                    We continuously look for ways to improve our skills, workflows and creative capabilities.
+                </p>
 
-</div>
+            </div>
 
-<div class="card">
 
-<h3>Professionalism</h3>
+            <div class="card">
 
-<p>
-We approach each engagement with respect for project requirements, communication and delivery expectations.
-</p>
+                <h3>
+                    Collaboration
+                </h3>
 
-</div>
+                <p>
+                    We believe strong results come from productive relationships between creative teams, clients and production partners.
+                </p>
 
-</div>
+            </div>
 
-</div>
+
+            <div class="card">
+
+                <h3>
+                    Professionalism
+                </h3>
+
+                <p>
+                    We approach each engagement with respect for project requirements, communication and delivery expectations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- =========================
+     CAPABILITIES
+========================= -->
 
 <section class="dark">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-title">
+        <div class="section-title">
 
-<h2>Built for Collaboration</h2>
+            <h2>
+                Our Production Capabilities
+            </h2>
 
-<p>
-Our studio can work alongside businesses, agencies, creative teams and production companies that need additional visual production capability.
-</p>
+            <p>
+                We develop digital visual content across multiple areas of creative production.
+            </p>
 
-</div>
+        </div>
 
-<div class="two-column">
 
-<div class="content-block">
+        <div class="grid">
 
-<h3>Flexible Creative Partnership</h3>
+            <div class="card">
 
-<p>
-Different projects require different production structures. We therefore approach collaboration with flexibility, adapting our involvement to the project's requirements.
-</p>
+                <h3>
+                    CGI
+                </h3>
 
-<p>
-Whether the need is a defined production assignment or a longer-term creative relationship, the goal remains the same: clear communication, consistent production and quality results.
-</p>
+                <p>
+                    Computer-generated imagery for products, environments, visual communication and digital experiences.
+                </p>
 
-<a href="partners.html" class="btn">Explore Partnerships</a>
+            </div>
 
-</div>
 
-<div class="info-box">
+            <div class="card">
 
-<h3>Explore the Studio</h3>
+                <h3>
+                    3D Animation
+                </h3>
 
-<p>
-Discover the people behind the studio, our production capabilities and the work we have selected for our portfolio.
-</p>
+                <p>
+                    3D animation production designed for commercial, entertainment and communication projects.
+                </p>
 
-<p>
-<a href="team.html">Meet the Team →</a>
-</p>
+            </div>
 
-<p>
-<a href="portfolio.html">View Portfolio →</a>
-</p>
 
-<p>
-<a href="services.html">Explore Services →</a>
-</p>
+            <div class="card">
 
-</div>
+                <h3>
+                    VFX
+                </h3>
 
-</div>
+                <p>
+                    Visual effects workflows for productions requiring digital environments, effects and compositing.
+                </p>
 
-</div>
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Video Production
+                </h3>
+
+                <p>
+                    Digital video production and visual content designed around project objectives and audience needs.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Visualization
+                </h3>
+
+                <p>
+                    Visual development and 3D visualization for concepts, products, environments and presentations.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Digital Content
+                </h3>
+
+                <p>
+                    Creative digital content for brands, businesses, agencies and production partners.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- =========================
+     COLLABORATION
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Built for Collaboration
+            </h2>
+
+            <p>
+                Our studio can work alongside businesses, agencies, creative teams and production companies that need additional visual production capability.
+            </p>
+
+        </div>
+
+
+        <div class="two-column">
+
+            <div class="content-block">
+
+                <h3>
+                    Flexible Creative Partnership
+                </h3>
+
+                <p>
+                    Different projects require different production structures. We therefore approach collaboration with flexibility, adapting our involvement to the project's requirements.
+                </p>
+
+                <p>
+                    Whether the need is a defined production assignment or a longer-term creative relationship, the goal remains the same: clear communication, consistent production and quality results.
+                </p>
+
+                <a href="request-a-quote.html" class="btn">
+                    Request a Quote
+                </a>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>
+                    Explore the Studio
+                </h3>
+
+                <p>
+                    Learn more about our production services, industries and resources.
+                </p>
+
+                <p>
+                    <a href="services.html">
+                        Explore Services →
+                    </a>
+                </p>
+
+                <p>
+                    <a href="industries.html">
+                        Explore Industries →
+                    </a>
+                </p>
+
+                <p>
+                    <a href="blog.html">
+                        Read Our Blog →
+                    </a>
+                </p>
+
+                <p>
+                    <a href="faq.html">
+                        Frequently Asked Questions →
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
 
 <section class="cta">
 
-<div class="container">
+    <div class="container">
 
-<h2>Have a Creative Project in Mind?</h2>
+        <h2>
+            Have a Creative Project in Mind?
+        </h2>
 
-<p>
-If you are looking for a creative production partner for your next project, contact PT Autotube Crew Studio to discuss your requirements.
-</p>
+        <p>
+            If you are looking for a creative production partner for your next project, contact PT Autotube Crew Studio to discuss your requirements.
+        </p>
 
-<a href="contact.html" class="btn">Start a Conversation</a>
+        <a href="request-a-quote.html" class="btn">
+            Start a Project
+        </a>
 
-</div>
+    </div>
 
 </section>
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-<div class="container">
+    <div class="container">
 
-<div class="footer-grid">
+        <div class="footer-grid">
 
-<div>
+            <div>
 
-<h3>PT Autotube Crew Studio</h3>
+                <h3>
+                    PT Autotube Crew Studio
+                </h3>
 
-<p>
-Creative production studio based in Jakarta, Indonesia, working with clients and production partners through digital visual content and creative collaboration.
-</p>
+                <p>
+                    Creative production studio based in Jakarta, Indonesia, working with clients and production partners through digital visual content and creative collaboration.
+                </p>
 
-</div>
+            </div>
 
-<div class="footer-links">
 
-<h3>Company</h3>
+            <div class="footer-links">
 
-<p><a href="about.html">About Us</a></p>
-<p><a href="team.html">Our Team</a></p>
-<p><a href="careers.html">Careers</a></p>
-<p><a href="partners.html">Partners</a></p>
+                <h3>
+                    Company
+                </h3>
 
-</div>
+                <p>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </p>
 
-<div class="footer-links">
+                <p>
+                    <a href="about.html">
+                        About
+                    </a>
+                </p>
 
-<h3>Explore</h3>
+                <p>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </p>
 
-<p><a href="services.html">Services</a></p>
-<p><a href="portfolio.html">Portfolio</a></p>
-<p><a href="showreel.html">Showreel</a></p>
-<p><a href="case-studies.html">Case Studies</a></p>
+                <p>
+                    <a href="industries.html">
+                        Industries
+                    </a>
+                </p>
 
-</div>
+            </div>
 
-<div class="footer-links">
 
-<h3>Contact</h3>
+            <div class="footer-links">
 
-<p>📍 Jakarta, Indonesia</p>
+                <h3>
+                    Resources
+                </h3>
 
-<p>
-📧
-<a href="mailto:autotubecrewstudio@gmail.com">
-autotubecrewstudio@gmail.com
-</a>
-</p>
+                <p>
+                    <a href="blog.html">
+                        Blog
+                    </a>
+                </p>
 
-<p>
-▶
-<a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank">
-YouTube
-</a>
-</p>
+                <p>
+                    <a href="faq.html">
+                        FAQ
+                    </a>
+                </p>
 
-<p>
-in
-<a href="https://www.linkedin.com/company/ptautotubecrewstudio/" target="_blank">
-LinkedIn
-</a>
-</p>
+                <p>
+                    <a href="request-a-quote.html">
+                        Request a Quote
+                    </a>
+                </p>
 
-</div>
+            </div>
 
-</div>
 
-<div class="footer-bottom">
+            <div class="footer-links">
 
-<p>
-© 2026 PT Autotube Crew Studio. All Rights Reserved.
-</p>
+                <h3>
+                    Contact
+                </h3>
 
-</div>
+                <p>
+                    Jakarta, Indonesia
+                </p>
 
-</div>
+                <p>
+                    <a href="mailto:autotubecrewstudio@gmail.com">
+                        autotubecrewstudio@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <a
+                        href="https://www.youtube.com/@ptautotubecrewstudio"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        YouTube
+                    </a>
+                </p>
+
+                <p>
+                    <a
+                        href="https://www.linkedin.com/company/ptautotubecrewstudio/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 PT Autotube Crew Studio. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
 
 </footer>
 
 
-<button id="topBtn" aria-label="Back to top">↑</button>
+<!-- =========================
+     BACK TO TOP
+========================= -->
+
+<button id="topBtn" aria-label="Back to top">
+    ↑
+</button>
 
 
 <script>
 
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
+    /* =========================
+       MOBILE MENU
+    ========================= */
 
-mobileMenuBtn.addEventListener("click", function(){
-    mobileMenu.classList.toggle("active");
-});
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+    mobileMenuBtn.addEventListener("click", function () {
 
-mobileMenuLinks.forEach(function(link){
-    link.addEventListener("click", function(){
-        mobileMenu.classList.remove("active");
-    });
-});
+        mobileMenu.classList.toggle("active");
 
-const topBtn = document.getElementById("topBtn");
+        const isOpen = mobileMenu.classList.contains("active");
 
-window.addEventListener("scroll", function(){
+        mobileMenuBtn.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
 
-    if(
-        document.body.scrollTop > 300 ||
-        document.documentElement.scrollTop > 300
-    ){
-        topBtn.style.display = "block";
-    }else{
-        topBtn.style.display = "none";
-    }
-
-});
-
-topBtn.addEventListener("click", function(){
-
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
     });
 
-});
+
+    const mobileMenuLinks =
+        mobileMenu.querySelectorAll("a");
+
+    mobileMenuLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            mobileMenu.classList.remove("active");
+
+            mobileMenuBtn.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        });
+
+    });
+
+
+    /* =========================
+       BACK TO TOP
+    ========================= */
+
+    const topBtn =
+        document.getElementById("topBtn");
+
+    window.addEventListener("scroll", function () {
+
+        if (
+            document.body.scrollTop > 300 ||
+            document.documentElement.scrollTop > 300
+        ) {
+
+            topBtn.style.display = "block";
+
+        } else {
+
+            topBtn.style.display = "none";
+
+        }
+
+    });
+
+
+    topBtn.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
 
 </script>
 
