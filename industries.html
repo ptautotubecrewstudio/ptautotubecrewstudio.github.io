@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
-    content="Explore the industries served by PT Autotube Crew Studio including automotive, entertainment, technology, healthcare, architecture, advertising and brands."
+    content="Industries served by PT Autotube Crew Studio including automotive, entertainment, technology, advertising, architecture, products and more."
   >
 
   <title>Industries | PT Autotube Crew Studio</title>
+
 
   <style>
 
@@ -70,9 +73,9 @@
 
     nav ul {
       display: flex;
-      list-style: none;
       align-items: center;
       gap: 20px;
+      list-style: none;
     }
 
     nav a {
@@ -97,37 +100,39 @@
     ========================= */
 
     .hero {
-      padding: 110px 0 100px;
-      background:
-        linear-gradient(
-          135deg,
-          #111111,
-          #1c1c1c
-        );
-
-      border-bottom: 1px solid #303030;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
       text-align: center;
+      background: linear-gradient(135deg, #111111, #1d1d1d);
+      border-bottom: 1px solid #303030;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: auto;
+      padding: 90px 0;
     }
 
     .hero-label {
-      color: #888888;
+      color: #777777;
       text-transform: uppercase;
       letter-spacing: 4px;
       font-size: 12px;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .hero h1 {
-      font-size: 60px;
-      line-height: 1.1;
+      font-size: 64px;
+      line-height: 1.08;
       margin-bottom: 25px;
     }
 
     .hero p {
       color: #aaaaaa;
-      max-width: 780px;
-      margin: auto;
       font-size: 19px;
+      max-width: 760px;
+      margin: auto;
     }
 
 
@@ -136,7 +141,7 @@
     ========================= */
 
     .intro {
-      padding: 90px 0 50px;
+      padding: 100px 0 60px;
       text-align: center;
     }
 
@@ -149,12 +154,12 @@
     }
 
     .section-title {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 18px;
     }
 
     .section-description {
-      max-width: 750px;
+      max-width: 780px;
       margin: auto;
       color: #999999;
       font-size: 16px;
@@ -179,14 +184,12 @@
       background: #111111;
       border: 1px solid #292929;
       padding: 35px;
-      min-height: 300px;
+      min-height: 330px;
       transition: 0.3s;
-      position: relative;
-      overflow: hidden;
     }
 
     .industry-card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-7px);
       border-color: #555555;
     }
 
@@ -205,29 +208,33 @@
     .industry-card p {
       color: #999999;
       font-size: 14px;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
     }
 
     .industry-services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+      list-style: none;
     }
 
-    .industry-services span {
-      border: 1px solid #333333;
-      padding: 6px 10px;
-      color: #888888;
-      font-size: 11px;
+    .industry-services li {
+      color: #bbbbbb;
+      font-size: 13px;
+      padding: 8px 0;
+      border-top: 1px solid #292929;
+    }
+
+    .industry-services li::before {
+      content: "—";
+      color: #666666;
+      margin-right: 8px;
     }
 
 
     /* =========================
-       AUTOMOTIVE FEATURE
+       FEATURE
     ========================= */
 
     .feature {
-      padding: 100px 0;
+      padding: 110px 0;
       background: #111111;
       border-top: 1px solid #292929;
       border-bottom: 1px solid #292929;
@@ -235,95 +242,132 @@
 
     .feature-grid {
       display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 60px;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
       align-items: center;
     }
 
     .feature-visual {
-      min-height: 470px;
-      background:
-        linear-gradient(
-          135deg,
-          #202020,
-          #0b0b0b
-        );
-
+      min-height: 480px;
+      background: linear-gradient(135deg, #222222, #0b0b0b);
       border: 1px solid #333333;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       text-align: center;
       color: #666666;
       padding: 30px;
     }
 
-    .feature-content .section-label {
-      margin-bottom: 15px;
-    }
-
     .feature-content h2 {
       font-size: 42px;
       line-height: 1.2;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .feature-content p {
       color: #999999;
-      margin-bottom: 18px;
       font-size: 15px;
-    }
-
-    .feature-list {
-      list-style: none;
-      margin-top: 30px;
-    }
-
-    .feature-list li {
-      border-top: 1px solid #292929;
-      padding: 13px 0;
-      color: #bbbbbb;
-      font-size: 14px;
-    }
-
-    .feature-list li::before {
-      content: "—";
-      color: #666666;
-      margin-right: 10px;
+      margin-bottom: 18px;
     }
 
 
     /* =========================
-       CAPABILITIES
+       INDUSTRY SOLUTIONS
     ========================= */
 
-    .capabilities {
+    .solutions {
       padding: 100px 0;
     }
 
-    .capability-grid {
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .solution-card {
+      border: 1px solid #292929;
+      background: #111111;
+      padding: 35px;
+    }
+
+    .solution-card h3 {
+      font-size: 23px;
+      margin-bottom: 14px;
+    }
+
+    .solution-card p {
+      color: #999999;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .service-section {
+      padding: 100px 0;
+      background: #111111;
+      border-top: 1px solid #292929;
+      border-bottom: 1px solid #292929;
+    }
+
+    .service-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       margin-top: 50px;
     }
 
-    .capability-card {
+    .service-card {
       border: 1px solid #292929;
-      background: #0f0f0f;
-      padding: 28px;
+      padding: 30px;
+      background: #0d0d0d;
     }
 
-    .capability-card h3 {
-      font-size: 19px;
+    .service-card h3 {
+      font-size: 20px;
       margin-bottom: 12px;
     }
 
-    .capability-card p {
+    .service-card p {
       color: #888888;
       font-size: 13px;
+    }
+
+
+    /* =========================
+       WHY US
+    ========================= */
+
+    .why-us {
+      padding: 100px 0;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .why-card {
+      border: 1px solid #292929;
+      padding: 35px;
+      background: #111111;
+    }
+
+    .why-card h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .why-card p {
+      color: #888888;
+      font-size: 14px;
     }
 
 
@@ -333,21 +377,19 @@
 
     .cta {
       padding: 110px 0;
-      background: #111111;
-      border-top: 1px solid #292929;
-      border-bottom: 1px solid #292929;
       text-align: center;
+      border-top: 1px solid #292929;
     }
 
     .cta h2 {
-      font-size: 42px;
+      font-size: 44px;
       margin-bottom: 18px;
     }
 
     .cta p {
-      color: #999999;
       max-width: 700px;
       margin: auto auto 30px;
+      color: #999999;
       font-size: 17px;
     }
 
@@ -358,25 +400,26 @@
       flex-wrap: wrap;
     }
 
-    .cta-button {
+    .button {
       display: inline-block;
       padding: 14px 24px;
       border: 1px solid #ffffff;
       font-size: 13px;
       font-weight: 700;
+      transition: 0.3s;
     }
 
-    .cta-primary {
+    .button-primary {
       background: #ffffff;
       color: #000000;
     }
 
-    .cta-secondary {
+    .button-primary:hover {
       background: transparent;
       color: #ffffff;
     }
 
-    .cta-secondary:hover {
+    .button-secondary:hover {
       background: #ffffff;
       color: #000000;
     }
@@ -445,12 +488,20 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .capability-grid {
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .solutions-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .feature-grid {
-        grid-template-columns: 1fr;
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .footer-grid {
@@ -458,16 +509,13 @@
       }
 
       .hero h1 {
-        font-size: 48px;
+        font-size: 50px;
       }
+
     }
 
 
     @media (max-width: 650px) {
-
-      .navbar {
-        min-height: 70px;
-      }
 
       .logo {
         font-size: 13px;
@@ -482,7 +530,7 @@
       }
 
       .hero {
-        padding: 70px 0;
+        min-height: 500px;
       }
 
       .hero h1 {
@@ -493,49 +541,43 @@
         font-size: 15px;
       }
 
-      .industry-grid {
+      .industry-grid,
+      .service-grid,
+      .why-grid {
         grid-template-columns: 1fr;
       }
 
-      .capability-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .feature-visual {
-        min-height: 280px;
+      .section-title {
+        font-size: 31px;
       }
 
       .feature-content h2 {
         font-size: 32px;
       }
 
-      .section-title {
-        font-size: 30px;
-      }
-
       .cta h2 {
-        font-size: 31px;
+        font-size: 32px;
       }
 
       .cta-buttons {
         flex-direction: column;
       }
 
-      .cta-button {
+      .button {
         width: 100%;
       }
+
     }
 
   </style>
+
 </head>
 
 
 <body>
 
 
-  <!-- =========================
-       HEADER
-  ========================= -->
+  <!-- HEADER -->
 
   <header>
 
@@ -595,69 +637,71 @@
   </header>
 
 
-  <!-- =========================
-       HERO
-  ========================= -->
+  <!-- HERO -->
 
   <section class="hero">
 
-    <div class="container">
+    <div class="container hero-content">
+
 
       <div class="hero-label">
-        Industries
+        Industries We Serve
       </div>
 
+
       <h1>
-        Visual Production<br>
-        Across Industries
+        Visual Storytelling Built for Your Industry
       </h1>
 
+
       <p>
-        We create cinematic CGI, 3D animation, VFX and video content designed around the communication goals of different industries and audiences.
+        PT Autotube Crew Studio creates CGI, 3D animation, VFX and cinematic video content for brands, companies and creative teams across multiple industries.
       </p>
+
 
     </div>
 
   </section>
 
 
-  <!-- =========================
-       INTRO
-  ========================= -->
+  <!-- INTRO -->
 
   <section class="intro">
 
     <div class="container">
 
+
       <div class="section-label">
-        What We Do
+        Our Expertise
       </div>
 
+
       <h2 class="section-title">
-        Visuals Built Around Your Industry
+        Different Industries. One Creative Standard.
       </h2>
 
+
       <p class="section-description">
-        Different industries require different visual languages. Our production approach combines creative direction, technical production and cinematic storytelling to communicate complex ideas clearly and memorably.
+        Every industry has different audiences, products and communication challenges. We adapt our visual language, production approach and storytelling to fit the objectives of each project.
       </p>
+
 
     </div>
 
   </section>
 
 
-  <!-- =========================
-       INDUSTRY GRID
-  ========================= -->
+  <!-- INDUSTRIES -->
 
   <section class="industries">
 
     <div class="container">
 
+
       <div class="industry-grid">
 
 
-        <!-- AUTOMOTIVE -->
+        <!-- 01 -->
 
         <article class="industry-card">
 
@@ -670,33 +714,33 @@
           </h2>
 
           <p>
-            Cinematic automotive visuals, product reveals, vehicle animation, CGI environments and promotional content designed to showcase design, performance and technology.
+            High-impact automotive visuals for vehicles, mobility brands, launches, advertising and product communication.
           </p>
 
-          <div class="industry-services">
+          <ul class="industry-services">
 
-            <span>
-              Vehicle CGI
-            </span>
+            <li>
+              Automotive CGI
+            </li>
 
-            <span>
-              3D Animation
-            </span>
+            <li>
+              Vehicle Animation
+            </li>
 
-            <span>
+            <li>
               Product Films
-            </span>
+            </li>
 
-            <span>
-              VFX
-            </span>
+            <li>
+              Commercial Visuals
+            </li>
 
-          </div>
+          </ul>
 
         </article>
 
 
-        <!-- ENTERTAINMENT -->
+        <!-- 02 -->
 
         <article class="industry-card">
 
@@ -709,155 +753,38 @@
           </h2>
 
           <p>
-            Visual development, cinematic animation, VFX and promotional content for entertainment projects, characters, stories and digital experiences.
+            Cinematic visual production for entertainment brands, productions, events and digital experiences.
           </p>
 
-          <div class="industry-services">
+          <ul class="industry-services">
 
-            <span>
-              Animation
-            </span>
+            <li>
+              Cinematic Animation
+            </li>
 
-            <span>
+            <li>
               VFX
-            </span>
+            </li>
 
-            <span>
-              CGI
-            </span>
+            <li>
+              Motion Design
+            </li>
 
-            <span>
-              Cinematic
-            </span>
+            <li>
+              Promotional Content
+            </li>
 
-          </div>
-
-        </article>
-
-
-        <!-- TECHNOLOGY -->
-
-        <article class="industry-card">
-
-          <div class="industry-number">
-            03 / TECHNOLOGY
-          </div>
-
-          <h2>
-            Technology
-          </h2>
-
-          <p>
-            Complex technology can be difficult to explain. CGI and animation can transform technical concepts, products and systems into clear visual experiences.
-          </p>
-
-          <div class="industry-services">
-
-            <span>
-              Product CGI
-            </span>
-
-            <span>
-              Visualization
-            </span>
-
-            <span>
-              Motion
-            </span>
-
-            <span>
-              Explainers
-            </span>
-
-          </div>
+          </ul>
 
         </article>
 
 
-        <!-- ARCHITECTURE -->
+        <!-- 03 -->
 
         <article class="industry-card">
 
           <div class="industry-number">
-            04 / ARCHITECTURE
-          </div>
-
-          <h2>
-            Architecture
-          </h2>
-
-          <p>
-            Architectural visualization, cinematic walkthroughs, environment animation and presentation films that help audiences experience spaces before they are built.
-          </p>
-
-          <div class="industry-services">
-
-            <span>
-              Archviz
-            </span>
-
-            <span>
-              3D Walkthroughs
-            </span>
-
-            <span>
-              Environment
-            </span>
-
-            <span>
-              Animation
-            </span>
-
-          </div>
-
-        </article>
-
-
-        <!-- HEALTHCARE -->
-
-        <article class="industry-card">
-
-          <div class="industry-number">
-            05 / HEALTHCARE
-          </div>
-
-          <h2>
-            Healthcare
-          </h2>
-
-          <p>
-            Visual communication for medical concepts, products, procedures and innovations where accurate and understandable visual storytelling is essential.
-          </p>
-
-          <div class="industry-services">
-
-            <span>
-              Medical CGI
-            </span>
-
-            <span>
-              Visualization
-            </span>
-
-            <span>
-              Animation
-            </span>
-
-            <span>
-              VFX
-            </span>
-
-          </div>
-
-        </article>
-
-
-        <!-- ADVERTISING -->
-
-        <article class="industry-card">
-
-          <div class="industry-number">
-            06 / ADVERTISING
+            03 / ADVERTISING
           </div>
 
           <h2>
@@ -865,145 +792,262 @@
           </h2>
 
           <p>
-            High-impact visual campaigns combining CGI, animation, VFX and post-production to help brands communicate with clarity and create memorable campaigns.
+            Creative advertising visuals designed to capture attention and communicate a memorable brand message.
           </p>
 
-          <div class="industry-services">
+          <ul class="industry-services">
 
-            <span>
-              CGI Campaigns
-            </span>
-
-            <span>
+            <li>
               Commercials
-            </span>
+            </li>
 
-            <span>
-              VFX
-            </span>
+            <li>
+              Product Campaigns
+            </li>
 
-            <span>
-              Motion
-            </span>
+            <li>
+              CGI Advertising
+            </li>
 
-          </div>
+            <li>
+              Social Content
+            </li>
+
+          </ul>
 
         </article>
 
 
-        <!-- PRODUCT & BRANDS -->
+        <!-- 04 -->
 
         <article class="industry-card">
 
           <div class="industry-number">
-            07 / PRODUCTS
+            04 / TECHNOLOGY
           </div>
 
           <h2>
-            Products & Brands
+            Technology
           </h2>
 
           <p>
-            Product visualization and cinematic content that highlights materials, features, design and brand identity across digital and commercial platforms.
+            Complex technology and innovation transformed into understandable, engaging visual experiences.
           </p>
 
-          <div class="industry-services">
+          <ul class="industry-services">
 
-            <span>
+            <li>
+              Product Visualization
+            </li>
+
+            <li>
+              Explainer Animation
+            </li>
+
+            <li>
+              CGI Visualization
+            </li>
+
+            <li>
+              Launch Films
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- 05 -->
+
+        <article class="industry-card">
+
+          <div class="industry-number">
+            05 / ARCHITECTURE
+          </div>
+
+          <h2>
+            Architecture
+          </h2>
+
+          <p>
+            Architectural visualization that communicates spaces, structures and environments before they exist.
+          </p>
+
+          <ul class="industry-services">
+
+            <li>
+              Architectural CGI
+            </li>
+
+            <li>
+              3D Walkthroughs
+            </li>
+
+            <li>
+              Environment Design
+            </li>
+
+            <li>
+              Project Animation
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- 06 -->
+
+        <article class="industry-card">
+
+          <div class="industry-number">
+            06 / PRODUCT BRANDS
+          </div>
+
+          <h2>
+            Product Brands
+          </h2>
+
+          <p>
+            Premium product visualization and cinematic content for brands looking to present products with impact.
+          </p>
+
+          <ul class="industry-services">
+
+            <li>
               Product CGI
-            </span>
+            </li>
 
-            <span>
-              Product Animation
-            </span>
+            <li>
+              3D Product Animation
+            </li>
 
-            <span>
+            <li>
+              Launch Videos
+            </li>
+
+            <li>
+              Advertising Content
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- 07 -->
+
+        <article class="industry-card">
+
+          <div class="industry-number">
+            07 / MEDICAL & SCIENCE
+          </div>
+
+          <h2>
+            Medical & Science
+          </h2>
+
+          <p>
+            Scientific and medical concepts translated into clear visual stories through animation and CGI.
+          </p>
+
+          <ul class="industry-services">
+
+            <li>
+              Medical Animation
+            </li>
+
+            <li>
+              Scientific Visualization
+            </li>
+
+            <li>
+              Educational Content
+            </li>
+
+            <li>
+              Product Visualization
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- 08 -->
+
+        <article class="industry-card">
+
+          <div class="industry-number">
+            08 / CORPORATE
+          </div>
+
+          <h2>
+            Corporate
+          </h2>
+
+          <p>
+            Professional video content for companies, organizations, internal communication and business campaigns.
+          </p>
+
+          <ul class="industry-services">
+
+            <li>
+              Corporate Films
+            </li>
+
+            <li>
+              Brand Videos
+            </li>
+
+            <li>
+              Event Content
+            </li>
+
+            <li>
+              Presentation Videos
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- 09 -->
+
+        <article class="industry-card">
+
+          <div class="industry-number">
+            09 / FASHION & LIFESTYLE
+          </div>
+
+          <h2>
+            Fashion & Lifestyle
+          </h2>
+
+          <p>
+            Stylized visual campaigns and cinematic content for fashion, lifestyle and consumer brands.
+          </p>
+
+          <ul class="industry-services">
+
+            <li>
               Brand Films
-            </span>
+            </li>
 
-            <span>
-              Visualization
-            </span>
+            <li>
+              Product Visuals
+            </li>
 
-          </div>
+            <li>
+              Campaign Content
+            </li>
 
-        </article>
+            <li>
+              Social Media Films
+            </li>
 
-
-        <!-- GAMING -->
-
-        <article class="industry-card">
-
-          <div class="industry-number">
-            08 / GAMING
-          </div>
-
-          <h2>
-            Gaming & Interactive
-          </h2>
-
-          <p>
-            Cinematic assets, promotional visuals, environments, animation and visual effects for games and interactive entertainment experiences.
-          </p>
-
-          <div class="industry-services">
-
-            <span>
-              CGI
-            </span>
-
-            <span>
-              Characters
-            </span>
-
-            <span>
-              Environments
-            </span>
-
-            <span>
-              Cinematics
-            </span>
-
-          </div>
-
-        </article>
-
-
-        <!-- CORPORATE -->
-
-        <article class="industry-card">
-
-          <div class="industry-number">
-            09 / CORPORATE
-          </div>
-
-          <h2>
-            Corporate & Business
-          </h2>
-
-          <p>
-            Professional visual content for companies that need to explain services, present innovation, communicate strategy or strengthen their corporate identity.
-          </p>
-
-          <div class="industry-services">
-
-            <span>
-              Corporate Video
-            </span>
-
-            <span>
-              CGI
-            </span>
-
-            <span>
-              Explainers
-            </span>
-
-            <span>
-              Motion Graphics
-            </span>
-
-          </div>
+          </ul>
 
         </article>
 
@@ -1015,73 +1059,54 @@
   </section>
 
 
-  <!-- =========================
-       FEATURE
-  ========================= -->
+  <!-- FEATURE -->
 
   <section class="feature">
 
     <div class="container">
+
 
       <div class="feature-grid">
 
 
         <div class="feature-visual">
 
-          INDUSTRY FEATURE IMAGE<br>
-          OR CINEMATIC SHOWREEL
+          INDUSTRY PROJECT IMAGE<br>
+          CGI / 3D / CINEMATIC VISUAL
 
         </div>
 
 
         <div class="feature-content">
 
+
           <div class="section-label">
-            Flexible Production
+            Industry-Specific Thinking
           </div>
 
+
           <h2>
-            One Studio. Multiple Visual Disciplines.
+            We Start With the Audience
           </h2>
 
-          <p>
-            Modern productions often require more than one discipline. A single project may combine CGI, 3D animation, VFX, compositing, editing and motion design.
-          </p>
 
           <p>
-            Our production workflow allows these disciplines to work together as one visual system rather than as disconnected pieces.
+            The same visual technique does not work for every industry. A technology product may require clarity and precision, while an entertainment project may require emotion, spectacle and atmosphere.
           </p>
 
 
-          <ul class="feature-list">
+          <p>
+            Our creative process begins by understanding the purpose of the project and the audience it needs to reach.
+          </p>
 
-            <li>
-              Creative Direction
-            </li>
 
-            <li>
-              3D Modeling & CGI
-            </li>
+          <p>
+            From there, we build the appropriate visual language, production pipeline and storytelling approach.
+          </p>
 
-            <li>
-              Character & Object Animation
-            </li>
-
-            <li>
-              Visual Effects
-            </li>
-
-            <li>
-              Cinematic Editing
-            </li>
-
-            <li>
-              Motion Graphics
-            </li>
-
-          </ul>
 
         </div>
+
 
       </div>
 
@@ -1090,77 +1115,188 @@
   </section>
 
 
-  <!-- =========================
-       CAPABILITIES
-  ========================= -->
+  <!-- SOLUTIONS -->
 
-  <section class="capabilities">
+  <section class="solutions">
 
     <div class="container">
+
+
+      <div class="section-label">
+        Visual Solutions
+      </div>
+
+
+      <h2 class="section-title">
+        What We Can Create
+      </h2>
+
+
+      <p class="section-description">
+        Our production services can be combined into custom solutions depending on the goals and technical requirements of your project.
+      </p>
+
+
+      <div class="solutions-grid">
+
+
+        <article class="solution-card">
+
+          <h3>
+            Product Visualization
+          </h3>
+
+          <p>
+            Detailed 3D and CGI presentations that show products, features, materials and mechanisms in ways traditional filming may not be able to achieve.
+          </p>
+
+        </article>
+
+
+        <article class="solution-card">
+
+          <h3>
+            Brand Storytelling
+          </h3>
+
+          <p>
+            Cinematic films and visual campaigns designed to establish identity, communicate values and create stronger emotional connections.
+          </p>
+
+        </article>
+
+
+        <article class="solution-card">
+
+          <h3>
+            Technical Visualization
+          </h3>
+
+          <p>
+            Complex systems, technologies and processes transformed into understandable visual explanations through animation and CGI.
+          </p>
+
+        </article>
+
+
+        <article class="solution-card">
+
+          <h3>
+            Launch Campaigns
+          </h3>
+
+          <p>
+            High-impact visual content for product launches, announcements, campaigns, events and digital marketing.
+          </p>
+
+        </article>
+
+
+        <article class="solution-card">
+
+          <h3>
+            Cinematic Content
+          </h3>
+
+          <p>
+            Premium visual storytelling combining cinematography, animation, VFX, sound and post-production.
+          </p>
+
+        </article>
+
+
+        <article class="solution-card">
+
+          <h3>
+            Digital Experiences
+          </h3>
+
+          <p>
+            Visual content optimized for websites, social platforms, presentations, events and other digital environments.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section class="service-section">
+
+    <div class="container">
+
 
       <div class="section-label">
         Production Capabilities
       </div>
 
+
       <h2 class="section-title">
-        What We Bring to Every Project
+        Our Core Services
       </h2>
 
+
       <p class="section-description">
-        Our capabilities can be combined according to the creative and technical requirements of each production.
+        Build a complete production around one service or combine multiple disciplines into a single creative pipeline.
       </p>
 
 
-      <div class="capability-grid">
+      <div class="service-grid">
 
 
-        <div class="capability-card">
-
-          <h3>
-            CGI
-          </h3>
-
-          <p>
-            Computer-generated visuals for products, environments, concepts and cinematic presentations.
-          </p>
-
-        </div>
-
-
-        <div class="capability-card">
+        <div class="service-card">
 
           <h3>
             3D Animation
           </h3>
 
           <p>
-            Character, object, camera and environment animation designed around visual storytelling.
+            Cinematic 3D animation for products, concepts, characters and environments.
           </p>
 
         </div>
 
 
-        <div class="capability-card">
+        <div class="service-card">
+
+          <h3>
+            CGI
+          </h3>
+
+          <p>
+            High-quality computer-generated imagery for products, brands and visual campaigns.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
 
           <h3>
             VFX
           </h3>
 
           <p>
-            Visual effects and compositing that enhance live-action or fully digital productions.
+            Visual effects, compositing and digital environments for cinematic productions.
           </p>
 
         </div>
 
 
-        <div class="capability-card">
+        <div class="service-card">
 
           <h3>
             Video Production
           </h3>
 
           <p>
-            Creative video production combining planning, production, editing and final delivery.
+            Full-service video production from concept and filming through editing and final delivery.
           </p>
 
         </div>
@@ -1173,28 +1309,100 @@
   </section>
 
 
-  <!-- =========================
-       CTA
-  ========================= -->
+  <!-- WHY US -->
+
+  <section class="why-us">
+
+    <div class="container">
+
+
+      <div class="section-label">
+        Why Work With Us
+      </div>
+
+
+      <h2 class="section-title">
+        Creative + Technical Expertise
+      </h2>
+
+
+      <p class="section-description">
+        We combine storytelling with production technology to create visuals that are both creatively strong and technically practical.
+      </p>
+
+
+      <div class="why-grid">
+
+
+        <div class="why-card">
+
+          <h3>
+            Creative Direction
+          </h3>
+
+          <p>
+            Every project begins with a clear creative objective, visual direction and audience strategy.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <h3>
+            Production Expertise
+          </h3>
+
+          <p>
+            Our workflow brings together animation, CGI, VFX, video production and post-production.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <h3>
+            Global Visual Standard
+          </h3>
+
+          <p>
+            We aim to create polished, cinematic work suitable for international brands and global audiences.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
 
   <section class="cta">
 
     <div class="container">
 
+
       <h2>
         Have an Industry-Specific Project?
       </h2>
 
+
       <p>
-        Tell us what you need to communicate and we can explore the right visual production approach for your audience, platform and goals.
+        Tell us what you are building, launching or communicating. We will help determine the right visual production approach for your project.
       </p>
 
 
       <div class="cta-buttons">
 
+
         <a
           href="request-a-quote.html"
-          class="cta-button cta-primary"
+          class="button button-primary"
         >
           Request a Quote
         </a>
@@ -1202,25 +1410,26 @@
 
         <a
           href="contact.html"
-          class="cta-button cta-secondary"
+          class="button button-secondary"
         >
           Contact Studio
         </a>
 
+
       </div>
+
 
     </div>
 
   </section>
 
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
+  <!-- FOOTER -->
 
   <footer>
 
     <div class="container">
+
 
       <div class="footer-grid">
 
@@ -1284,26 +1493,32 @@
         <div>
 
           <h3 class="footer-title">
-            Contact
+            Services
           </h3>
 
           <ul class="footer-links">
 
             <li>
-              <a href="contact.html">
-                Contact Us
+              <a href="3d-animation.html">
+                3D Animation
               </a>
             </li>
 
             <li>
-              <a href="request-a-quote.html">
-                Request a Quote
+              <a href="vfx.html">
+                VFX
               </a>
             </li>
 
             <li>
-              <a href="faq.html">
-                FAQ
+              <a href="cgi.html">
+                CGI
+              </a>
+            </li>
+
+            <li>
+              <a href="video-production.html">
+                Video Production
               </a>
             </li>
 
@@ -1321,10 +1536,12 @@
 
       </div>
 
+
     </div>
 
   </footer>
 
 
 </body>
+
 </html>
