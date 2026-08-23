@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Press Kit | PT Autotube Crew Studio</title>
+
+  <meta name="description" content="Official press kit for PT Autotube Crew Studio including studio information, brand assets, company description and media resources.">
+
+  <meta name="author" content="PT Autotube Crew Studio">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="logo.png.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #050505;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(0, 0, 0, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #222;
+    }
+
+    header .container {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .logo img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #ccc;
+      font-size: 14px;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: #e50914;
+    }
+
+    .hero {
+      padding: 120px 0 100px;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, .14), transparent 52%),
+        #050505;
+      border-bottom: 1px solid #222;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: auto;
+      color: #bbb;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      max-width: 720px;
+      margin: auto;
+      color: #999;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .content h3 {
+      font-size: 27px;
+      margin-bottom: 18px;
+    }
+
+    .content p {
+      color: #aaa;
+      margin-bottom: 18px;
+    }
+
+    .logo-card {
+      background: #101010;
+      border: 1px solid #282828;
+      border-radius: 20px;
+      padding: 45px;
+      text-align: center;
+    }
+
+    .logo-card img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      margin: 0 auto 25px;
+    }
+
+    .logo-card p {
+      color: #888;
+      font-size: 13px;
+    }
+
+    .assets {
+      background: #090909;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .asset-card {
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 18px;
+      padding: 32px;
+      transition: .3s;
+    }
+
+    .asset-card:hover {
+      transform: translateY(-6px);
+      border-color: #e50914;
+    }
+
+    .asset-number {
+      color: #e50914;
+      font-size: 34px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .asset-card h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .asset-card p {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      border: 1px solid #fff;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .download-btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .fact {
+      background: #101010;
+      border: 1px solid #252525;
+      padding: 30px 22px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .fact strong {
+      display: block;
+      color: #fff;
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .fact span {
+      color: #888;
+      font-size: 13px;
+    }
+
+    .contact-box {
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, .12), transparent 55%),
+        #090909;
+      border: 1px solid #292929;
+      border-radius: 20px;
+      padding: 55px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      max-width: 700px;
+      margin: auto;
+      color: #aaa;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      background: #e50914;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 40px;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      background: #ff303d;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background: #090909;
+      border-top: 1px solid #222;
+      padding: 50px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #888;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #222;
+      margin-top: 40px;
+      padding-top: 22px;
+      text-align: center;
+    }
+
+    @media (max-width: 1000px) {
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .asset-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .facts-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }
+
+    @media (max-width: 700px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 90px 0 70px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .asset-grid,
+      .facts-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2,
+      .contact-box h2 {
+        font-size: 31px;
+      }
+
+      .contact-box {
+        padding: 35px 22px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+<header>
+
+  <div class="container">
+
+    <a href="index.html" class="logo">
+
+      <img
+        src="logo.png.png"
+        alt="PT Autotube Crew Studio Logo"
+      >
+
+      <span>PT Autotube Crew Studio</span>
+
+    </a>
+
+
+    <nav>
+
+      <ul>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="about.html">About</a>
+        </li>
+
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+
+        <li>
+          <a href="case-studies.html">Case Studies</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<section class="hero">
+
+  <div class="container">
+
+    <h1>Press Kit</h1>
+
+    <p>
+      Official information and selected brand resources for journalists,
+      media professionals, partners, clients and creative industry contacts.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+  <div class="container">
+
+    <div class="intro-grid">
+
+
+      <div class="content">
+
+        <h3>About PT Autotube Crew Studio</h3>
+
+        <p>
+          PT Autotube Crew Studio is a creative production studio based
+          in Jakarta, Indonesia, focused on CGI, 3D animation, VFX,
+          visualization and digital visual content production.
+        </p>
+
+        <p>
+          The studio works with clients, businesses, agencies and
+          production partners on visual projects that require creative
+          direction, technical production and professional delivery.
+        </p>
+
+        <p>
+          Our approach combines creative development with organized
+          production workflows to create visual content suitable for
+          commercial, entertainment, promotional and digital applications.
+        </p>
+
+      </div>
+
+
+      <div class="logo-card">
+
+        <img
+          src="logo.png.png"
+          alt="PT Autotube Crew Studio Logo"
+        >
+
+        <p>
+          Official Studio Logo
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="assets">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Press Resources</h2>
+
+      <p>
+        Selected resources available for media, partners and
+        professional communications.
+      </p>
+
+    </div>
+
+
+    <div class="asset-grid">
+
+
+      <div class="asset-card">
+
+        <div class="asset-number">01</div>
+
+        <h3>Company Profile</h3>
+
+        <p>
+          Overview of PT Autotube Crew Studio, its capabilities,
+          creative focus and production services.
+        </p>
+
+        <a
+          href="Company%20Profile.pdf"
+          class="download-btn"
+          target="_blank"
+        >
+          View Profile
+        </a>
+
+      </div>
+
+
+      <div class="asset-card">
+
+        <div class="asset-number">02</div>
+
+        <h3>Capability Statement</h3>
+
+        <p>
+          A concise overview of the studio's production capabilities
+          and areas of expertise.
+        </p>
+
+        <a
+          href="Capability%20Statement.pdf"
+          class="download-btn"
+          target="_blank"
+        >
+          View Statement
+        </a>
+
+      </div>
+
+
+      <div class="asset-card">
+
+        <div class="asset-number">03</div>
+
+        <h3>Brand Guidelines</h3>
+
+        <p>
+          Official brand usage information and visual identity
+          guidelines for professional communications.
+        </p>
+
+        <a
+          href="Brand%20Guidelines.pdf"
+          class="download-btn"
+          target="_blank"
+        >
+          View Guidelines
+        </a>
+
+      </div>
+
+
+      <div class="asset-card">
+
+        <div class="asset-number">04</div>
+
+        <h3>Portfolio</h3>
+
+        <p>
+          Selected studio work and visual production examples.
+        </p>
+
+        <a
+          href="Portfolio.pdf"
+          class="download-btn"
+          target="_blank"
+        >
+          View Portfolio
+        </a>
+
+      </div>
+
+
+      <div class="asset-card">
+
+        <div class="asset-number">05</div>
+
+        <h3>Service Brochure</h3>
+
+        <p>
+          Overview of the studio's creative and production services.
+        </p>
+
+        <a
+          href="Service%20Brochure.pdf"
+          class="download-btn"
+          target="_blank"
+        >
+          View Brochure
+        </a>
+
+      </div>
+
+
+      <div class="asset-card">
+
+        <div class="asset-number">06</div>
+
+        <h3>Studio Contact</h3>
+
+        <p>
+          For interviews, media inquiries, collaboration requests
+          and additional information.
+        </p>
+
+        <a
+          href="contact.html"
+          class="download-btn"
+        >
+          Contact Studio
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Studio Facts</h2>
+
+      <p>
+        Quick reference information about the studio.
+      </p>
+
+    </div>
+
+
+    <div class="facts-grid">
+
+
+      <div class="fact">
+
+        <strong>Studio</strong>
+
+        <span>
+          PT Autotube Crew Studio
+        </span>
+
+      </div>
+
+
+      <div class="fact">
+
+        <strong>Location</strong>
+
+        <span>
+          Jakarta, Indonesia
+        </span>
+
+      </div>
+
+
+      <div class="fact">
+
+        <strong>Focus</strong>
+
+        <span>
+          CGI, 3D, VFX & Visual Production
+        </span>
+
+      </div>
+
+
+      <div class="fact">
+
+        <strong>Collaboration</strong>
+
+        <span>
+          Local & International
+        </span>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+  <div class="container">
+
+    <div class="contact-box">
+
+      <h2>Media & Press Inquiries</h2>
+
+      <p>
+        For interviews, studio information, press requests,
+        collaboration opportunities or additional media resources,
+        please contact PT Autotube Crew Studio directly.
+      </p>
+
+      <a
+        href="contact.html"
+        class="btn"
+      >
+        Contact the Studio
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <h3>PT Autotube Crew Studio</h3>
+
+        <p>
+          Creative production studio focused on CGI,
+          3D animation, VFX, visualization and digital
+          visual content.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>Explore</h3>
+
+        <p>
+          <a href="about.html">About Us</a>
+        </p>
+
+        <p>
+          <a href="services.html">Services</a>
+        </p>
+
+        <p>
+          <a href="portfolio.html">Portfolio</a>
+        </p>
+
+        <p>
+          <a href="case-studies.html">Case Studies</a>
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>Resources</h3>
+
+        <p>
+          <a href="blog.html">Blog</a>
+        </p>
+
+        <p>
+          <a href="news.html">News</a>
+        </p>
+
+        <p>
+          <a href="events.html">Events</a>
+        </p>
+
+        <p>
+          <a href="downloads.html">Downloads</a>
+        </p>
+
+        <p>
+          <a href="media-kit.html">Media Kit</a>
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 PT Autotube Crew Studio. All Rights Reserved.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
