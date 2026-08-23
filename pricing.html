@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Pricing | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Explore production pricing and project packages for CGI, 3D animation, VFX, video production and digital visual content by PT Autotube Crew Studio.">
+<meta name="description" content="Explore production pricing and project packages at PT Autotube Crew Studio for CGI, 3D animation, VFX and video production.">
+
+<meta name="robots" content="index, follow">
 
 <link rel="icon" href="logo.png.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -31,6 +36,7 @@ body{
     background:#050505;
     color:#fff;
     line-height:1.7;
+    overflow-x:hidden;
 }
 
 a{
@@ -43,6 +49,7 @@ a{
     max-width:1400px;
     margin:auto;
 }
+
 
 /* HEADER */
 
@@ -58,133 +65,89 @@ header{
 }
 
 header .container{
+    min-height:82px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:15px 0;
 }
 
 .logo{
     display:flex;
     align-items:center;
     gap:12px;
-    font-size:22px;
+    font-size:20px;
     font-weight:700;
 }
 
 .logo img{
-    width:50px;
-    height:50px;
+    width:48px;
+    height:48px;
     object-fit:contain;
 }
 
 nav ul{
     display:flex;
     align-items:center;
-    gap:26px;
+    gap:25px;
     list-style:none;
 }
 
-nav ul li{
-    position:relative;
-}
-
-nav ul li > a{
+nav a{
+    color:#ddd;
     font-size:14px;
-    font-weight:500;
     transition:.3s;
 }
 
-nav ul li > a:hover{
+nav a:hover{
     color:#e50914;
 }
 
-.dropdown{
-    position:absolute;
-    top:100%;
-    left:0;
-    min-width:230px;
-    background:#111;
-    border:1px solid #292929;
-    border-radius:12px;
-    padding:10px 0;
-    display:none;
-}
-
-.dropdown a{
-    display:block;
-    padding:10px 18px;
-    font-size:13px;
-}
-
-.dropdown a:hover{
-    background:#1b1b1b;
-    color:#e50914;
-}
-
-nav ul li:hover .dropdown{
-    display:block;
-}
-
-.mobile-menu-btn{
-    display:none;
-    background:none;
-    border:none;
-    color:#fff;
-    font-size:30px;
-    cursor:pointer;
-}
-
-/* MOBILE MENU */
-
-.mobile-menu{
-    display:none;
-}
-
-.mobile-menu.active{
-    display:block;
-}
-
-.mobile-menu a{
-    display:block;
-    padding:12px 5px;
-    border-bottom:1px solid #222;
-    font-size:14px;
-}
 
 /* HERO */
 
 .hero{
-    padding-top:190px;
-    padding-bottom:110px;
+    padding:180px 0 100px;
     text-align:center;
+
     background:
-        radial-gradient(circle at 50% 20%,rgba(229,9,20,.16),transparent 40%),
-        #050505;
+    radial-gradient(
+        circle at center,
+        rgba(229,9,20,.14),
+        transparent 50%
+    ),
+    #050505;
+}
+
+.hero-label{
+    color:#e50914;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:18px;
 }
 
 .hero h1{
     font-size:64px;
-    line-height:1.15;
-    font-weight:800;
-    margin-bottom:25px;
+    line-height:1.1;
+    margin-bottom:22px;
 }
 
 .hero p{
     max-width:800px;
     margin:auto;
-    color:#cfcfcf;
-    font-size:18px;
+    color:#aaa;
+    font-size:17px;
 }
 
-/* GENERAL */
 
-section{
-    padding:100px 0;
-}
+/* PRICING */
 
-.dark{
+.pricing{
+    padding:90px 0 120px;
     background:#090909;
+    border-top:1px solid #222;
+    border-bottom:1px solid #222;
 }
 
 .section-title{
@@ -194,17 +157,18 @@ section{
 }
 
 .section-title h2{
-    font-size:44px;
+    font-size:42px;
     margin-bottom:18px;
 }
 
 .section-title p{
-    color:#aaa;
+    color:#999;
 }
 
-/* PRICING */
 
-.pricing-grid{
+/* PRICE CARDS */
+
+.price-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:25px;
@@ -213,10 +177,10 @@ section{
 .price-card{
     background:#101010;
     border:1px solid #292929;
-    border-radius:20px;
-    padding:40px 30px;
-    transition:.35s;
+    border-radius:18px;
+    padding:40px 32px;
     position:relative;
+    transition:.3s;
 }
 
 .price-card:hover{
@@ -225,70 +189,136 @@ section{
 }
 
 .price-card.featured{
-    border:1px solid #e50914;
-    box-shadow:0 0 35px rgba(229,9,20,.12);
+    border-color:#e50914;
 }
 
-.badge{
+.featured-label{
     position:absolute;
     top:18px;
     right:18px;
     background:#e50914;
     color:#fff;
-    padding:5px 12px;
+    padding:6px 12px;
     border-radius:20px;
-    font-size:11px;
+    font-size:10px;
     font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 
 .price-card h3{
-    font-size:27px;
+    font-size:25px;
     margin-bottom:12px;
 }
 
 .price-description{
     color:#999;
     font-size:14px;
-    min-height:70px;
+    min-height:75px;
+    margin-bottom:25px;
 }
 
 .price{
-    font-size:35px;
-    font-weight:800;
-    margin:25px 0;
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:25px;
 }
 
 .price span{
-    font-size:13px;
-    color:#888;
+    color:#777;
+    font-size:12px;
     font-weight:400;
 }
 
-.price-card ul{
+.features{
     list-style:none;
-    margin:25px 0;
+    border-top:1px solid #292929;
+    padding-top:22px;
 }
 
-.price-card li{
-    padding:10px 0;
-    border-bottom:1px solid #222;
-    color:#bbb;
+.features li{
+    color:#aaa;
     font-size:14px;
+    margin-bottom:12px;
+    padding-left:18px;
+    position:relative;
 }
 
-.price-card li::before{
+.features li::before{
     content:"✓";
+    position:absolute;
+    left:0;
     color:#e50914;
-    font-weight:bold;
-    margin-right:10px;
+}
+
+
+/* CUSTOM */
+
+.custom{
+    margin-top:30px;
+    padding:35px;
+    background:#0c0c0c;
+    border:1px solid #292929;
+    border-radius:18px;
+    text-align:center;
+}
+
+.custom h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.custom p{
+    max-width:750px;
+    margin:auto;
+    color:#999;
+}
+
+
+/* NOTE */
+
+.note{
+    margin-top:30px;
+    text-align:center;
+}
+
+.note p{
+    color:#666;
+    font-size:12px;
+}
+
+
+/* CTA */
+
+.cta{
+    padding:110px 0;
+    text-align:center;
+
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(229,9,20,.12),
+        transparent 55%
+    );
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.cta p{
+    max-width:720px;
+    margin:auto;
+    color:#aaa;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 28px;
+    margin-top:30px;
+    padding:15px 35px;
     background:#e50914;
-    border-radius:40px;
-    font-size:14px;
+    border-radius:50px;
     font-weight:600;
     transition:.3s;
 }
@@ -298,230 +328,49 @@ section{
     transform:translateY(-3px);
 }
 
-.btn-outline{
-    display:inline-block;
-    padding:13px 28px;
-    border:1px solid #555;
-    border-radius:40px;
-    font-size:14px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn-outline:hover{
-    border-color:#e50914;
-    color:#e50914;
-}
-
-/* SERVICES */
-
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.service-card{
-    background:#101010;
-    border:1px solid #252525;
-    padding:30px;
-    border-radius:18px;
-}
-
-.service-card h3{
-    font-size:21px;
-    margin-bottom:12px;
-}
-
-.service-card p{
-    color:#999;
-    font-size:14px;
-}
-
-/* NOTE */
-
-.note-box{
-    margin-top:50px;
-    padding:30px;
-    background:#101010;
-    border:1px solid #292929;
-    border-left:3px solid #e50914;
-    border-radius:12px;
-}
-
-.note-box h3{
-    margin-bottom:10px;
-}
-
-.note-box p{
-    color:#aaa;
-    font-size:14px;
-}
-
-/* PROCESS */
-
-.process-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:22px;
-}
-
-.process-card{
-    padding:30px;
-    background:#101010;
-    border:1px solid #252525;
-    border-radius:16px;
-}
-
-.process-number{
-    color:#e50914;
-    font-size:32px;
-    font-weight:800;
-    margin-bottom:12px;
-}
-
-.process-card h3{
-    font-size:20px;
-    margin-bottom:10px;
-}
-
-.process-card p{
-    color:#999;
-    font-size:14px;
-}
-
-/* CTA */
-
-.cta{
-    text-align:center;
-    background:
-        radial-gradient(circle at center,rgba(229,9,20,.14),transparent 55%),
-        #070707;
-}
-
-.cta h2{
-    font-size:44px;
-    margin-bottom:18px;
-}
-
-.cta p{
-    max-width:750px;
-    margin:auto;
-    color:#aaa;
-}
 
 /* FOOTER */
 
 footer{
-    background:#090909;
+    background:#080808;
     border-top:1px solid #222;
-    padding:55px 0 25px;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.5fr 1fr 1fr 1.2fr;
-    gap:35px;
-}
-
-footer h3{
-    font-size:20px;
-    margin-bottom:15px;
-}
-
-footer p,
-footer a{
-    color:#999;
-    font-size:13px;
-}
-
-footer a:hover{
-    color:#fff;
-}
-
-.footer-links p{
-    margin-bottom:8px;
-}
-
-.footer-bottom{
-    border-top:1px solid #222;
-    margin-top:40px;
-    padding-top:22px;
+    padding:45px 0 25px;
     text-align:center;
 }
 
-/* RESPONSIVE */
-
-@media(max-width:1100px){
-
-    nav ul{
-        gap:16px;
-    }
-
-    .pricing-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .service-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .process-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
+footer p{
+    color:#666;
+    font-size:13px;
 }
 
-@media(max-width:992px){
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
 
     nav{
         display:none;
     }
 
-    .mobile-menu-btn{
-        display:block;
-    }
-
-    .mobile-menu{
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:#0b0b0b;
-        border-top:1px solid #222;
-        padding:15px 25px;
+    .price-grid{
+        grid-template-columns:1fr 1fr;
     }
 
     .hero h1{
-        font-size:48px;
+        font-size:52px;
     }
+
 }
 
-@media(max-width:768px){
-
-    section{
-        padding:75px 0;
-    }
+@media(max-width:650px){
 
     .container{
         width:92%;
     }
 
-    .logo{
-        font-size:17px;
-    }
-
-    .logo img{
-        width:42px;
-        height:42px;
-    }
-
     .hero{
         padding-top:140px;
-        padding-bottom:75px;
+        padding-bottom:70px;
     }
 
     .hero h1{
@@ -532,10 +381,7 @@ footer a:hover{
         font-size:15px;
     }
 
-    .pricing-grid,
-    .service-grid,
-    .process-grid,
-    .footer-grid{
+    .price-grid{
         grid-template-columns:1fr;
     }
 
@@ -546,117 +392,71 @@ footer a:hover{
     .cta h2{
         font-size:32px;
     }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
 }
 
 </style>
+
 </head>
 
+
 <body>
+
 
 <header>
 
 <div class="container">
 
 <a href="index.html" class="logo">
+
 <img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
+
 <span>PT Autotube Crew Studio</span>
+
 </a>
 
-<button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
 
 <nav>
+
 <ul>
 
 <li><a href="index.html">Home</a></li>
-
-<li>
-<a href="#">About ▼</a>
-<div class="dropdown">
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-</div>
-</li>
-
-<li>
-<a href="#">Services ▼</a>
-<div class="dropdown">
-<a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-</div>
-</li>
-
-<li>
-<a href="#">Portfolio ▼</a>
-<div class="dropdown">
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-</div>
-</li>
-
-<li>
-<a href="#">Resources ▼</a>
-<div class="dropdown">
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-</div>
-</li>
-
-<li>
-<a href="contact.html">Contact</a>
-</li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="showreel.html">Showreel</a></li>
+<li><a href="case-studies.html">Case Studies</a></li>
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
+
 </nav>
 
-<div class="mobile-menu" id="mobileMenu">
-
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-<a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-<a href="contact.html">Contact</a>
-
 </div>
 
-</div>
 </header>
+
 
 
 <section class="hero">
 
 <div class="container">
 
-<h1>Production Pricing</h1>
+<div class="hero-label">
+Production Pricing
+</div>
+
+<h1>
+Pricing & Packages
+</h1>
 
 <p>
-Every creative project is different. Our production pricing is therefore structured around project scope, complexity, creative requirements, duration and final deliverables.
+Every production is different. Our pricing is based on the project's creative scope, technical requirements, duration, complexity and final deliverables.
 </p>
 
 </div>
@@ -664,244 +464,178 @@ Every creative project is different. Our production pricing is therefore structu
 </section>
 
 
-<section>
+
+<section class="pricing">
 
 <div class="container">
 
+
 <div class="section-title">
 
-<h2>Choose a Production Level</h2>
+<h2>
+Choose a Production Level
+</h2>
 
 <p>
-The packages below provide a starting point. Final quotations are prepared after reviewing the project requirements.
+The packages below provide a starting framework. Final project pricing is confirmed after reviewing the creative brief and production requirements.
 </p>
 
 </div>
 
 
-<div class="pricing-grid">
+
+<div class="price-grid">
 
 
 <div class="price-card">
 
-<h3>Starter</h3>
+<h3>
+Starter
+</h3>
 
 <p class="price-description">
-For smaller visual content projects and straightforward production requirements.
+Suitable for smaller visual content projects and straightforward production requirements.
 </p>
 
 <div class="price">
 Custom Quote
 </div>
 
-<ul>
+<ul class="features">
+
 <li>Project consultation</li>
+
 <li>Creative planning</li>
-<li>Basic 3D or CGI production</li>
-<li>Standard animation</li>
-<li>Professional rendering</li>
+
+<li>Basic CGI or 3D production</li>
+
+<li>Standard rendering</li>
+
 <li>Final delivery</li>
+
 </ul>
 
-<a href="request-a-quote.html" class="btn-outline">
-Request Quote
-</a>
-
 </div>
+
 
 
 <div class="price-card featured">
 
-<div class="badge">POPULAR</div>
+<div class="featured-label">
+Popular
+</div>
 
-<h3>Professional</h3>
+<h3>
+Professional
+</h3>
 
 <p class="price-description">
-For commercial projects requiring stronger visual development, animation and post-production.
+Designed for commercial projects requiring more detailed CGI, animation, VFX or visual production.
 </p>
 
 <div class="price">
 Custom Quote
 </div>
 
-<ul>
+<ul class="features">
+
 <li>Creative direction</li>
-<li>Advanced 3D production</li>
-<li>CGI animation</li>
-<li>VFX and compositing</li>
-<li>Professional lighting</li>
-<li>Final post-production</li>
+
+<li>Advanced CGI / 3D animation</li>
+
+<li>Professional VFX</li>
+
+<li>Cinematic lighting and rendering</li>
+
+<li>Post-production</li>
+
+<li>Multiple deliverables</li>
+
 </ul>
 
-<a href="request-a-quote.html" class="btn">
-Request Quote
-</a>
-
 </div>
+
 
 
 <div class="price-card">
 
-<h3>Enterprise</h3>
+<h3>
+Enterprise
+</h3>
 
 <p class="price-description">
-For large-scale productions, campaigns, agencies and long-term production partnerships.
+For larger campaigns, long-form productions and complex projects requiring a dedicated production workflow.
 </p>
 
 <div class="price">
 Custom Quote
 </div>
 
-<ul>
-<li>Full creative development</li>
-<li>Complex CGI production</li>
-<li>Advanced VFX</li>
-<li>Multiple deliverables</li>
-<li>Dedicated production workflow</li>
-<li>Long-term collaboration</li>
+<ul class="features">
+
+<li>Full project planning</li>
+
+<li>Advanced production pipeline</li>
+
+<li>Dedicated creative support</li>
+
+<li>Complex CGI / VFX</li>
+
+<li>Large-scale rendering</li>
+
+<li>Ongoing production support</li>
+
 </ul>
 
-<a href="request-a-quote.html" class="btn-outline">
-Discuss Project
+</div>
+
+
+</div>
+
+
+
+<div class="custom">
+
+<h3>
+Need Something Custom?
+</h3>
+
+<p>
+We can build a production plan around your exact requirements, including animation duration, number of assets, VFX complexity, delivery formats, revisions and production timeline.
+</p>
+
+<a href="request-a-quote.html" class="btn">
+Request Custom Quote
 </a>
 
 </div>
 
 
-</div>
-
-
-<div class="note-box">
-
-<h3>Why Don't We Publish Fixed Prices?</h3>
+<div class="note">
 
 <p>
-Production costs can vary significantly depending on the number of assets, animation duration, visual complexity, revisions, rendering requirements, deadlines and delivery formats. We therefore prepare project-specific quotations rather than using one fixed price for every client.
+* Pricing is project-specific. A final quotation is provided after reviewing the project brief and requirements.
 </p>
 
 </div>
+
 
 </div>
 
 </section>
 
-
-<section class="dark">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>What Can Affect Your Project Cost?</h2>
-
-<p>
-These are some of the main factors considered when preparing a production quotation.
-</p>
-
-</div>
-
-
-<div class="service-grid">
-
-<div class="service-card">
-<h3>Project Scope</h3>
-<p>
-The overall amount of creative and technical work required for the project.
-</p>
-</div>
-
-<div class="service-card">
-<h3>Visual Complexity</h3>
-<p>
-Detailed environments, characters, products, simulations and visual effects can increase production requirements.
-</p>
-</div>
-
-<div class="service-card">
-<h3>Animation Duration</h3>
-<p>
-Longer animation sequences generally require additional production, rendering and post-production time.
-</p>
-</div>
-
-<div class="service-card">
-<h3>Deadline</h3>
-<p>
-Urgent or accelerated production schedules may require additional production resources.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section>
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Our Production Process</h2>
-
-<p>
-A clear production process helps us understand your requirements and prepare an accurate quotation.
-</p>
-
-</div>
-
-
-<div class="process-grid">
-
-<div class="process-card">
-<div class="process-number">01</div>
-<h3>Brief</h3>
-<p>
-You provide the project idea, objectives, references and required deliverables.
-</p>
-</div>
-
-<div class="process-card">
-<div class="process-number">02</div>
-<h3>Review</h3>
-<p>
-We review the scope, creative requirements, production complexity and timeline.
-</p>
-</div>
-
-<div class="process-card">
-<div class="process-number">03</div>
-<h3>Quotation</h3>
-<p>
-We prepare a project-specific quotation based on the agreed production requirements.
-</p>
-</div>
-
-<div class="process-card">
-<div class="process-number">04</div>
-<h3>Production</h3>
-<p>
-Once approved, the project moves into the agreed production workflow.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 
 <section class="cta">
 
 <div class="container">
 
-<h2>Need a Project Estimate?</h2>
+<h2>
+Let's Discuss Your Project
+</h2>
 
 <p>
-Tell us about your project and our team can review the requirements and prepare a suitable production quotation.
+Send us your project requirements and our team can evaluate the scope, production approach and appropriate budget structure.
 </p>
 
 <a href="request-a-quote.html" class="btn">
@@ -913,69 +647,10 @@ Request a Quote
 </section>
 
 
+
 <footer>
 
 <div class="container">
-
-<div class="footer-grid">
-
-<div>
-
-<h3>PT Autotube Crew Studio</h3>
-
-<p>
-Creative production studio based in Jakarta, Indonesia, working on CGI, 3D animation, VFX, visualization and digital visual content.
-</p>
-
-</div>
-
-
-<div class="footer-links">
-
-<h3>Company</h3>
-
-<p><a href="about.html">About Us</a></p>
-<p><a href="team.html">Our Team</a></p>
-<p><a href="careers.html">Careers</a></p>
-<p><a href="partners.html">Partners</a></p>
-
-</div>
-
-
-<div class="footer-links">
-
-<h3>Explore</h3>
-
-<p><a href="services.html">Services</a></p>
-<p><a href="portfolio.html">Portfolio</a></p>
-<p><a href="case-studies.html">Case Studies</a></p>
-<p><a href="showreel.html">Showreel</a></p>
-
-</div>
-
-
-<div class="footer-links">
-
-<h3>Contact</h3>
-
-<p>Jakarta, Indonesia</p>
-
-<p>
-<a href="mailto:autotubecrewstudio@gmail.com">
-autotubecrewstudio@gmail.com
-</a>
-</p>
-
-<p>
-<a href="contact.html">Contact Studio →</a>
-</p>
-
-</div>
-
-</div>
-
-
-<div class="footer-bottom">
 
 <p>
 © 2026 PT Autotube Crew Studio. All Rights Reserved.
@@ -983,29 +658,9 @@ autotubecrewstudio@gmail.com
 
 </div>
 
-</div>
-
 </footer>
 
 
-<script>
-
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-
-mobileMenuBtn.addEventListener("click", function(){
-    mobileMenu.classList.toggle("active");
-});
-
-const mobileLinks = mobileMenu.querySelectorAll("a");
-
-mobileLinks.forEach(function(link){
-    link.addEventListener("click", function(){
-        mobileMenu.classList.remove("active");
-    });
-});
-
-</script>
-
 </body>
+
 </html>
