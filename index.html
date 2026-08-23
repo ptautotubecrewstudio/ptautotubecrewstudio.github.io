@@ -10,7 +10,7 @@
 
     <meta
         name="description"
-        content="PT Autotube Crew Studio creates cinematic CGI, 3D animation, VFX, motion graphics and digital visual experiences for clients and production partners worldwide."
+        content="PT Autotube Crew Studio creates cinematic CGI, 3D animation, VFX and digital visual experiences for clients and production partners worldwide."
     >
 
     <meta
@@ -27,18 +27,22 @@
     >
 
     <meta property="og:type" content="website">
+
     <meta
         property="og:title"
         content="PT Autotube Crew Studio | Creative Production Studio"
     >
+
     <meta
         property="og:description"
         content="CGI, 3D Animation, VFX and cinematic digital production."
     >
+
     <meta
         property="og:url"
         content="https://www.autotubecrewstudio.com/"
     >
+
     <meta
         property="og:image"
         content="https://www.autotubecrewstudio.com/logo.png.png"
@@ -71,6 +75,7 @@
     >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
@@ -109,6 +114,10 @@ body {
     overflow-x: hidden;
 }
 
+body.lightbox-open {
+    overflow: hidden;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -133,44 +142,25 @@ button {
     margin: 0 auto;
 }
 
-section {
-    position: relative;
-}
-
-.section-space {
-    padding: 120px 0;
-}
-
-.section-heading {
-    max-width: 850px;
-    margin-bottom: 55px;
-}
-
-.section-heading.center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .eyebrow {
     display: inline-block;
     margin-bottom: 18px;
     color: #e50914;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 h1 {
-    font-size: clamp(48px, 7vw, 105px);
-    line-height: 0.98;
+    font-size: clamp(48px, 8vw, 110px);
+    line-height: .95;
     letter-spacing: -5px;
     font-weight: 800;
 }
 
 h2 {
-    font-size: clamp(38px, 5vw, 70px);
+    font-size: clamp(40px, 5vw, 72px);
     line-height: 1;
     letter-spacing: -3px;
     font-weight: 700;
@@ -182,7 +172,7 @@ h3 {
 }
 
 p {
-    color: #a9a9a9;
+    color: #a8a8a8;
     font-size: 16px;
 }
 
@@ -197,7 +187,7 @@ p {
     color: #000000;
     font-size: 14px;
     font-weight: 700;
-    transition: 0.3s ease;
+    transition: .3s ease;
 }
 
 .btn:hover {
@@ -206,23 +196,24 @@ p {
     transform: translateY(-3px);
 }
 
-.btn-dark {
+.btn-outline {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: 52px;
     padding: 14px 28px;
-    border: 1px solid #444444;
+    border: 1px solid rgba(255,255,255,.45);
     border-radius: 999px;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 600;
-    transition: 0.3s ease;
+    transition: .3s ease;
 }
 
-.btn-dark:hover {
-    border-color: #ffffff;
+.btn-outline:hover {
     background: #ffffff;
     color: #000000;
+    border-color: #ffffff;
 }
 
 
@@ -236,14 +227,17 @@ p {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.55);
+
+    background: rgba(0,0,0,.55);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    border-bottom: 1px solid rgba(255,255,255,.07);
 }
 
 .header-inner {
     min-height: 78px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -252,12 +246,12 @@ p {
 .brand {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 11px;
 }
 
 .brand img {
-    width: 44px;
-    height: 44px;
+    width: 43px;
+    height: 43px;
     object-fit: contain;
 }
 
@@ -267,14 +261,10 @@ p {
     white-space: nowrap;
 }
 
-.desktop-nav {
-    display: flex;
-}
-
 .desktop-nav ul {
     display: flex;
     align-items: center;
-    gap: 27px;
+    gap: 25px;
     list-style: none;
 }
 
@@ -285,11 +275,14 @@ p {
 .desktop-nav > ul > li > a {
     display: flex;
     align-items: center;
+
     min-height: 78px;
-    color: #d5d5d5;
+
+    color: #d3d3d3;
     font-size: 13px;
     font-weight: 500;
-    transition: 0.25s;
+
+    transition: .25s;
 }
 
 .desktop-nav > ul > li > a:hover {
@@ -300,15 +293,22 @@ p {
     position: absolute;
     top: calc(100% - 1px);
     left: 0;
+
     width: 235px;
     padding: 10px 0;
+
     background: #111111;
-    border: 1px solid #292929;
+
+    border: 1px solid #2b2b2b;
     border-radius: 12px;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,.45);
+
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
-    transition: 0.2s ease;
+
+    transition: .2s ease;
 }
 
 .desktop-nav li:hover .dropdown {
@@ -319,37 +319,52 @@ p {
 
 .dropdown a {
     display: block;
+
     padding: 11px 18px;
-    color: #cfcfcf;
+
+    color: #cccccc;
     font-size: 13px;
+
+    transition: .2s ease;
 }
 
 .dropdown a:hover {
-    background: #1b1b1b;
+    background: #1a1a1a;
     color: #ffffff;
+    padding-left: 23px;
 }
 
 .mobile-button {
     display: none;
+
     width: 44px;
     height: 44px;
+
     border: 1px solid #333333;
     border-radius: 10px;
+
     background: transparent;
     color: #ffffff;
+
     font-size: 22px;
+
     cursor: pointer;
 }
 
 .mobile-menu {
     display: none;
+
     position: absolute;
     top: 100%;
     left: 0;
+
     width: 100%;
     max-height: calc(100vh - 78px);
+
     overflow-y: auto;
+
     background: #090909;
+
     border-top: 1px solid #222222;
 }
 
@@ -359,32 +374,42 @@ p {
 
 .mobile-menu a {
     display: block;
+
     padding: 14px 5%;
+
     border-bottom: 1px solid #202020;
+
     color: #dddddd;
     font-size: 14px;
 }
 
 
 /* =========================================================
-   CINEMATIC HERO
+   HERO
 ========================================================= */
 
 .hero {
-    min-height: 100vh;
     position: relative;
-    overflow: hidden;
+
+    min-height: 100vh;
+
     display: flex;
     align-items: flex-end;
+
+    overflow: hidden;
+
     padding: 150px 0 80px;
 }
 
 .hero-video {
     position: absolute;
     inset: 0;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     z-index: 0;
 }
 
@@ -392,32 +417,30 @@ p {
     position: absolute;
     inset: 0;
     z-index: 1;
+
     background:
         linear-gradient(
             90deg,
-            rgba(0,0,0,0.88) 0%,
-            rgba(0,0,0,0.58) 45%,
-            rgba(0,0,0,0.25) 100%
+            rgba(0,0,0,.90) 0%,
+            rgba(0,0,0,.55) 50%,
+            rgba(0,0,0,.25) 100%
         ),
         linear-gradient(
             0deg,
             #050505 0%,
-            transparent 45%
+            transparent 55%
         );
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 950px;
+
+    max-width: 1000px;
 }
 
 .hero-content .eyebrow {
     color: #ffffff;
-}
-
-.hero-title {
-    max-width: 1000px;
 }
 
 .hero-title span {
@@ -425,9 +448,12 @@ p {
 }
 
 .hero-description {
-    max-width: 690px;
+    max-width: 700px;
+
     margin-top: 28px;
-    color: #dddddd;
+
+    color: #dedede;
+
     font-size: 18px;
     line-height: 1.8;
 }
@@ -436,24 +462,30 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+
     margin-top: 34px;
 }
 
-.hero-bottom {
+.hero-scroll {
     position: absolute;
+
     right: 5%;
     bottom: 70px;
+
     z-index: 2;
+
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #aaaaaa;
-    font-size: 11px;
+
+    color: #999999;
+
+    font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.hero-bottom-line {
+.hero-scroll-line {
     width: 55px;
     height: 1px;
     background: #777777;
@@ -461,37 +493,50 @@ p {
 
 
 /* =========================================================
-   SELECTED WORK
+   WORK
 ========================================================= */
 
-.work-section {
+.work {
     padding: 130px 0;
+
     background: #050505;
 }
 
-.work-heading {
+.work-header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     gap: 40px;
+
     margin-bottom: 55px;
 }
 
-.work-heading p {
+.work-header-text {
     max-width: 520px;
+}
+
+.work-header-text p {
+    margin-top: 20px;
 }
 
 .work-grid {
     display: grid;
+
     grid-template-columns: repeat(12, 1fr);
-    gap: 18px;
+
+    gap: 16px;
 }
 
 .work-item {
     position: relative;
+
     overflow: hidden;
-    min-height: 480px;
-    background: #111111;
+
+    display: block;
+
+    background: #101010;
+
+    cursor: pointer;
 }
 
 .work-item:nth-child(1) {
@@ -534,56 +579,107 @@ p {
     grid-column: span 7;
 }
 
+.work-item:nth-child(11) {
+    grid-column: span 6;
+}
+
+.work-item:nth-child(12) {
+    grid-column: span 6;
+}
+
+.work-item:nth-child(13) {
+    grid-column: span 7;
+}
+
+.work-item:nth-child(14) {
+    grid-column: span 5;
+}
+
+.work-item:nth-child(15) {
+    grid-column: span 5;
+}
+
+.work-item:nth-child(16) {
+    grid-column: span 7;
+}
+
+.work-item:nth-child(17) {
+    grid-column: span 4;
+}
+
+.work-item:nth-child(18) {
+    grid-column: span 8;
+}
+
+.work-item:nth-child(19) {
+    grid-column: span 8;
+}
+
+.work-item:nth-child(20) {
+    grid-column: span 4;
+}
+
 .work-image {
     width: 100%;
-    height: 100%;
-    min-height: 480px;
+    height: 500px;
+
     object-fit: cover;
-    transition: transform 0.8s cubic-bezier(.2,.7,.2,1);
+
+    transition:
+        transform .8s cubic-bezier(.2,.7,.2,1),
+        filter .5s ease;
 }
 
 .work-item:hover .work-image {
     transform: scale(1.06);
+
+    filter: brightness(.72);
 }
 
 .work-overlay {
     position: absolute;
     inset: 0;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 30px;
+
+    padding: 28px;
+
     background:
         linear-gradient(
             0deg,
-            rgba(0,0,0,0.9),
-            rgba(0,0,0,0.05) 70%
+            rgba(0,0,0,.9),
+            rgba(0,0,0,.02) 70%
         );
+
+    pointer-events: none;
 }
 
 .work-category {
     margin-bottom: 8px;
+
     color: #e50914;
-    font-size: 11px;
+
+    font-size: 10px;
     font-weight: 700;
+
     letter-spacing: 2px;
+
     text-transform: uppercase;
 }
 
 .work-title {
-    font-size: 27px;
+    font-size: 26px;
     font-weight: 600;
 }
 
-.work-link {
-    margin-top: 15px;
-    color: #ffffff;
-    font-size: 13px;
-    opacity: 0.8;
-}
+.work-open {
+    margin-top: 12px;
 
-.work-item:hover .work-link {
-    opacity: 1;
+    color: #bbbbbb;
+
+    font-size: 12px;
 }
 
 
@@ -591,28 +687,49 @@ p {
    SHOWREEL
 ========================================================= */
 
-.showreel-section {
+.showreel {
     padding: 130px 0;
+
     background: #0a0a0a;
 }
 
-.showreel-container {
-    max-width: 1250px;
-    margin: auto;
+.showreel-heading {
+    max-width: 850px;
+    margin: 0 auto 55px;
+
+    text-align: center;
 }
 
-.showreel-frame {
-    position: relative;
+.showreel-heading p {
+    max-width: 650px;
+    margin: 20px auto 0;
+}
+
+.video-frame {
+    max-width: 1250px;
+    margin: auto;
+
     overflow: hidden;
-    border: 1px solid #252525;
+
     background: #000000;
+
+    border: 1px solid #252525;
 }
 
 .showreel-video {
     display: block;
+
     width: 100%;
+
     max-height: 720px;
-    object-fit: cover;
+
+    background: #000000;
+}
+
+.showreel-button {
+    text-align: center;
+
+    margin-top: 30px;
 }
 
 
@@ -620,33 +737,43 @@ p {
    STUDIO
 ========================================================= */
 
-.studio-section {
+.studio {
     padding: 130px 0;
+
     background: #050505;
 }
 
 .studio-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+
+    grid-template-columns: 1.05fr .95fr;
+
     gap: 80px;
+
     align-items: center;
 }
 
 .studio-copy p {
     max-width: 700px;
-    margin-top: 25px;
+
+    margin-top: 24px;
+
     font-size: 17px;
+
     line-height: 1.9;
 }
 
 .studio-image {
     overflow: hidden;
+
     border: 1px solid #292929;
 }
 
 .studio-image img {
     width: 100%;
+
     aspect-ratio: 4 / 3;
+
     object-fit: cover;
 }
 
@@ -655,24 +782,39 @@ p {
    SERVICES
 ========================================================= */
 
-.services-section {
+.services {
     padding: 120px 0;
+
     background: #0a0a0a;
+}
+
+.services-heading {
+    max-width: 750px;
+    margin-bottom: 55px;
+}
+
+.services-heading p {
+    margin-top: 20px;
 }
 
 .services-grid {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     border-top: 1px solid #292929;
     border-left: 1px solid #292929;
 }
 
 .service {
-    padding: 35px;
-    min-height: 230px;
+    min-height: 220px;
+
+    padding: 32px;
+
     border-right: 1px solid #292929;
     border-bottom: 1px solid #292929;
-    transition: 0.35s;
+
+    transition: .3s;
 }
 
 .service:hover {
@@ -680,75 +822,11 @@ p {
 }
 
 .service h3 {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .service p {
     font-size: 14px;
-}
-
-
-/* =========================================================
-   LEADERSHIP
-========================================================= */
-
-.leadership-section {
-    padding: 130px 0;
-    background: #050505;
-}
-
-.leadership-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.leader {
-    background: #0c0c0c;
-    border: 1px solid #242424;
-    overflow: hidden;
-}
-
-.leader-image {
-    width: 100%;
-    aspect-ratio: 4 / 4.5;
-    object-fit: cover;
-    background: #111111;
-    transition: transform 0.5s ease;
-}
-
-.leader:hover .leader-image {
-    transform: scale(1.03);
-}
-
-.leader-info {
-    padding: 25px;
-}
-
-.leader-role {
-    margin-bottom: 7px;
-    color: #e50914;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.leader-name {
-    margin-bottom: 15px;
-    font-size: 23px;
-}
-
-.leader-contact {
-    display: block;
-    padding-top: 14px;
-    border-top: 1px solid #252525;
-    color: #aaaaaa;
-    font-size: 13px;
-}
-
-.leader-contact:hover {
-    color: #ffffff;
 }
 
 
@@ -758,33 +836,39 @@ p {
 
 .final-cta {
     padding: 150px 0;
+
     text-align: center;
+
     background:
         radial-gradient(
             circle at center,
-            rgba(229,9,20,0.14),
+            rgba(229,9,20,.15),
             transparent 45%
         ),
         #070707;
 }
 
 .final-cta h2 {
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
 }
 
 .final-cta p {
-    max-width: 650px;
-    margin: 25px auto 0;
+    max-width: 680px;
+
+    margin: 24px auto 0;
+
     font-size: 17px;
 }
 
 .final-actions {
-    margin-top: 35px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     gap: 12px;
+
+    margin-top: 35px;
 }
 
 
@@ -794,24 +878,30 @@ p {
 
 .footer {
     padding: 70px 0 25px;
+
     background: #050505;
+
     border-top: 1px solid #222222;
 }
 
 .footer-grid {
     display: grid;
+
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
     gap: 45px;
 }
 
 .footer h3 {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
+
     font-size: 18px;
 }
 
 .footer p,
 .footer a {
     color: #858585;
+
     font-size: 13px;
 }
 
@@ -819,42 +909,166 @@ p {
     color: #ffffff;
 }
 
+.footer p {
+    margin-bottom: 8px;
+}
+
 .footer-line {
     margin: 50px 0 22px;
+
     border: 0;
+
     border-top: 1px solid #222222;
 }
 
 .copyright {
     text-align: center;
+
     color: #666666;
+
     font-size: 12px;
 }
 
 
 /* =========================================================
-   BACK TO TOP
+   BACK TOP
 ========================================================= */
 
 .back-top {
     position: fixed;
+
     right: 20px;
     bottom: 20px;
+
     z-index: 900;
+
     width: 48px;
     height: 48px;
+
     display: none;
+
     align-items: center;
     justify-content: center;
+
     border: 1px solid #444444;
     border-radius: 50%;
+
     background: #111111;
+
     color: #ffffff;
+
     cursor: pointer;
 }
 
 .back-top.visible {
     display: flex;
+}
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 3000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px;
+
+    background: rgba(0,0,0,.96);
+
+    backdrop-filter: blur(12px);
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-image {
+    max-width: 92vw;
+    max-height: 88vh;
+
+    object-fit: contain;
+
+    border: 1px solid #333333;
+
+    box-shadow: 0 30px 100px rgba(0,0,0,.7);
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: fixed;
+
+    z-index: 3001;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #444444;
+    border-radius: 50%;
+
+    background: rgba(15,15,15,.85);
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    font-size: 21px;
+}
+
+.lightbox-close {
+    top: 22px;
+    right: 22px;
+}
+
+.lightbox-prev {
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-next {
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.lightbox-caption {
+    position: fixed;
+
+    left: 50%;
+
+    bottom: 24px;
+
+    transform: translateX(-50%);
+
+    color: #cccccc;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
 }
 
 
@@ -870,6 +1084,7 @@ p {
 
     .mobile-button {
         display: flex;
+
         align-items: center;
         justify-content: center;
     }
@@ -886,10 +1101,6 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .leadership-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -904,10 +1115,6 @@ p {
 
     .container {
         width: 92%;
-    }
-
-    .section-space {
-        padding: 80px 0;
     }
 
     .header-inner {
@@ -929,22 +1136,23 @@ p {
 
     .hero {
         min-height: 100svh;
-        padding: 130px 0 55px;
+
+        padding: 125px 0 60px;
     }
 
     .hero-overlay {
         background:
             linear-gradient(
                 0deg,
-                rgba(0,0,0,0.94),
-                rgba(0,0,0,0.45) 75%,
-                rgba(0,0,0,0.3)
+                rgba(0,0,0,.96),
+                rgba(0,0,0,.45) 75%,
+                rgba(0,0,0,.25)
             );
     }
 
     h1 {
-        font-size: 46px;
-        letter-spacing: -2.5px;
+        font-size: 48px;
+        letter-spacing: -3px;
     }
 
     h2 {
@@ -958,22 +1166,25 @@ p {
 
     .hero-actions {
         display: grid;
+
         grid-template-columns: 1fr;
     }
 
-    .hero-bottom {
+    .hero-scroll {
         display: none;
     }
 
-    .work-section {
+    .work {
         padding: 85px 0;
     }
 
-    .work-heading {
+    .work-header {
         display: block;
+
+        margin-bottom: 40px;
     }
 
-    .work-heading p {
+    .work-header-text {
         margin-top: 20px;
     }
 
@@ -983,11 +1194,11 @@ p {
 
     .work-item:nth-child(n) {
         grid-column: span 1;
-        min-height: auto;
     }
 
     .work-image {
-        min-height: 0;
+        height: auto;
+
         aspect-ratio: 4 / 3;
     }
 
@@ -999,9 +1210,12 @@ p {
         font-size: 22px;
     }
 
-    .showreel-section,
-    .studio-section,
-    .leadership-section {
+    .showreel,
+    .studio {
+        padding: 85px 0;
+    }
+
+    .services {
         padding: 85px 0;
     }
 
@@ -1011,15 +1225,8 @@ p {
 
     .service {
         min-height: auto;
+
         padding: 27px;
-    }
-
-    .leadership-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .leader-image {
-        aspect-ratio: 1 / 1;
     }
 
     .final-cta {
@@ -1028,12 +1235,58 @@ p {
 
     .final-actions {
         display: grid;
+
         grid-template-columns: 1fr;
     }
 
     .footer-grid {
         grid-template-columns: 1fr;
     }
+
+    .lightbox {
+        padding: 20px;
+    }
+
+    .lightbox-image {
+        max-width: 95vw;
+        max-height: 78vh;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 43px;
+        height: 43px;
+    }
+
+    .lightbox-prev {
+        left: 12px;
+    }
+
+    .lightbox-next {
+        right: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .brand-name {
+        font-size: 13px;
+    }
+
+    .hero-title {
+        font-size: 41px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
 }
 
 </style>
@@ -1052,10 +1305,10 @@ p {
 
     <div class="container header-inner">
 
+
         <a
             href="index.html"
             class="brand"
-            aria-label="PT Autotube Crew Studio"
         >
 
             <img
@@ -1074,20 +1327,28 @@ p {
 
             <ul>
 
+
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">
+                        Home
+                    </a>
                 </li>
 
 
                 <li>
 
-                    <a href="#">About ▾</a>
+                    <a href="#">
+                        About ▾
+                    </a>
 
                     <div class="dropdown">
 
                         <a href="about.html">About Us</a>
+
                         <a href="team.html">Our Team</a>
+
                         <a href="careers.html">Careers</a>
+
                         <a href="partners.html">Partners</a>
 
                     </div>
@@ -1097,17 +1358,39 @@ p {
 
                 <li>
 
-                    <a href="#">Services ▾</a>
+                    <a href="#">
+                        Services ▾
+                    </a>
 
                     <div class="dropdown">
 
-                        <a href="services.html">Services</a>
-                        <a href="3d-animation.html">3D Animation</a>
-                        <a href="vfx.html">VFX</a>
-                        <a href="cgi.html">CGI</a>
-                        <a href="video-production.html">Video Production</a>
-                        <a href="industries.html">Industries</a>
-                        <a href="pricing.html">Pricing</a>
+                        <a href="services.html">
+                            Services
+                        </a>
+
+                        <a href="3d-animation.html">
+                            3D Animation
+                        </a>
+
+                        <a href="vfx.html">
+                            VFX
+                        </a>
+
+                        <a href="cgi.html">
+                            CGI
+                        </a>
+
+                        <a href="video-production.html">
+                            Video Production
+                        </a>
+
+                        <a href="industries.html">
+                            Industries
+                        </a>
+
+                        <a href="pricing.html">
+                            Pricing
+                        </a>
 
                     </div>
 
@@ -1116,15 +1399,31 @@ p {
 
                 <li>
 
-                    <a href="#">Work ▾</a>
+                    <a href="#">
+                        Work ▾
+                    </a>
 
                     <div class="dropdown">
 
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="showreel.html">Showreel</a>
-                        <a href="case-studies.html">Case Studies</a>
-                        <a href="clients.html">Clients</a>
-                        <a href="testimonials.html">Testimonials</a>
+                        <a href="portfolio.html">
+                            Portfolio
+                        </a>
+
+                        <a href="showreel.html">
+                            Showreel
+                        </a>
+
+                        <a href="case-studies.html">
+                            Case Studies
+                        </a>
+
+                        <a href="clients.html">
+                            Clients
+                        </a>
+
+                        <a href="testimonials.html">
+                            Testimonials
+                        </a>
 
                     </div>
 
@@ -1133,15 +1432,35 @@ p {
 
                 <li>
 
-                    <a href="#">Resources ▾</a>
+                    <a href="#">
+                        Resources ▾
+                    </a>
 
                     <div class="dropdown">
 
-                        <a href="downloads.html">Downloads</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="events.html">Events</a>
-                        <a href="press-kit.html">Press Kit</a>
-                        <a href="media-kit.html">Media Kit</a>
+                        <a href="downloads.html">
+                            Downloads
+                        </a>
+
+                        <a href="blog.html">
+                            Blog
+                        </a>
+
+                        <a href="news.html">
+                            News
+                        </a>
+
+                        <a href="events.html">
+                            Events
+                        </a>
+
+                        <a href="press-kit.html">
+                            Press Kit
+                        </a>
+
+                        <a href="media-kit.html">
+                            Media Kit
+                        </a>
 
                     </div>
 
@@ -1149,8 +1468,13 @@ p {
 
 
                 <li>
-                    <a href="contact.html">Contact</a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
                 </li>
+
 
             </ul>
 
@@ -1166,6 +1490,7 @@ p {
         >
             ☰
         </button>
+
 
     </div>
 
@@ -1198,6 +1523,7 @@ p {
 
         <a href="downloads.html">Downloads</a>
         <a href="blog.html">Blog</a>
+        <a href="news.html">News</a>
         <a href="events.html">Events</a>
         <a href="press-kit.html">Press Kit</a>
         <a href="media-kit.html">Media Kit</a>
@@ -1215,6 +1541,7 @@ p {
 ========================================================= -->
 
 <main>
+
 
 <section class="hero">
 
@@ -1242,7 +1569,9 @@ p {
 
     <div class="container">
 
+
         <div class="hero-content">
+
 
             <span class="eyebrow">
                 CGI • 3D Animation • VFX • Digital Production
@@ -1259,14 +1588,15 @@ p {
 
             <p class="hero-description">
 
-                PT Autotube Crew Studio is a creative production studio
-                creating cinematic visual experiences for brands,
-                businesses and production partners worldwide.
+                PT Autotube Crew Studio creates cinematic visual
+                experiences for brands, businesses and production
+                partners worldwide.
 
             </p>
 
 
             <div class="hero-actions">
+
 
                 <a
                     href="#work"
@@ -1278,43 +1608,51 @@ p {
 
                 <a
                     href="request-a-quote.html"
-                    class="btn-dark"
+                    class="btn-outline"
                 >
                     Start a Project
                 </a>
 
+
             </div>
+
 
         </div>
 
-    </div>
-
-
-    <div class="hero-bottom">
-
-        <span>Scroll to explore</span>
-
-        <span class="hero-bottom-line"></span>
 
     </div>
+
+
+    <div class="hero-scroll">
+
+        <span>
+            Scroll to explore
+        </span>
+
+        <span class="hero-scroll-line"></span>
+
+    </div>
+
 
 </section>
 
 
 
 <!-- =========================================================
-     SELECTED WORK
+     WORK
 ========================================================= -->
 
 <section
-    class="work-section"
+    class="work"
     id="work"
 >
+
 
     <div class="container">
 
 
-        <div class="work-heading">
+        <div class="work-header">
+
 
             <div>
 
@@ -1323,35 +1661,43 @@ p {
                 </span>
 
                 <h2>
-                    Work speaks<br>
-                    louder.
+                    Work speaks louder.
                 </h2>
 
             </div>
 
 
-            <p>
+            <div class="work-header-text">
 
-                Explore selected visual work created across CGI,
-                3D animation, VFX, visualization and digital production.
+                <p>
 
-            </p>
+                    Selected visual work across CGI,
+                    3D animation, VFX, visualization and
+                    digital production.
+
+                </p>
+
+            </div>
+
 
         </div>
+
 
 
         <div class="work-grid">
 
 
-            <a
-                href="portfolio.html"
+            <div
                 class="work-item"
+                data-image="portfolio01.png.png"
+                data-title="Cinematic CGI"
+                data-category="CGI"
             >
 
                 <img
                     class="work-image"
                     src="portfolio01.png.png"
-                    alt="Selected CGI work"
+                    alt="Cinematic CGI work"
                     loading="lazy"
                 >
 
@@ -1365,18 +1711,21 @@ p {
                         Cinematic CGI
                     </h3>
 
-                    <span class="work-link">
-                        View project →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
 
 
-            <a
-                href="3d-animation.html"
+
+            <div
                 class="work-item"
+                data-image="portfolio02.png.png"
+                data-title="3D Visual Storytelling"
+                data-category="3D Animation"
             >
 
                 <img
@@ -1396,24 +1745,27 @@ p {
                         3D Visual Storytelling
                     </h3>
 
-                    <span class="work-link">
-                        Explore →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
 
 
-            <a
-                href="cgi.html"
+
+            <div
                 class="work-item"
+                data-image="portfolio03.png.png"
+                data-title="Product CGI"
+                data-category="Product Visualization"
             >
 
                 <img
                     class="work-image"
                     src="portfolio03.png.png"
-                    alt="Product visualization work"
+                    alt="Product CGI work"
                     loading="lazy"
                 >
 
@@ -1427,24 +1779,27 @@ p {
                         Product CGI
                     </h3>
 
-                    <span class="work-link">
-                        Explore →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
 
 
-            <a
-                href="vfx.html"
+
+            <div
                 class="work-item"
+                data-image="portfolio04.png.png"
+                data-title="Visual Effects"
+                data-category="VFX"
             >
 
                 <img
                     class="work-image"
                     src="portfolio04.png.png"
-                    alt="VFX production work"
+                    alt="Visual effects work"
                     loading="lazy"
                 >
 
@@ -1458,24 +1813,27 @@ p {
                         Visual Effects
                     </h3>
 
-                    <span class="work-link">
-                        Explore →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
 
 
-            <a
-                href="video-production.html"
+
+            <div
                 class="work-item"
+                data-image="portfolio05.png.png"
+                data-title="Cinematic Production"
+                data-category="Production"
             >
 
                 <img
                     class="work-image"
                     src="portfolio05.png.png"
-                    alt="Video production work"
+                    alt="Cinematic production work"
                     loading="lazy"
                 >
 
@@ -1489,49 +1847,55 @@ p {
                         Cinematic Production
                     </h3>
 
-                    <span class="work-link">
-                        Explore →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
 
 
-            <a
-                href="case-studies.html"
+
+            <div
                 class="work-item"
+                data-image="portfolio06.png.png"
+                data-title="Creative Production"
+                data-category="Creative"
             >
 
                 <img
                     class="work-image"
                     src="portfolio06.png.png"
-                    alt="Creative case study"
+                    alt="Creative production work"
                     loading="lazy"
                 >
 
                 <div class="work-overlay">
 
                     <span class="work-category">
-                        Case Study
+                        Creative
                     </span>
 
                     <h3 class="work-title">
                         Creative Production
                     </h3>
 
-                    <span class="work-link">
-                        View case study →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
 
 
-            <a
-                href="portfolio.html"
+
+            <div
                 class="work-item"
+                data-image="portfolio07.png.png"
+                data-title="Visual Experience"
+                data-category="Digital Visuals"
             >
 
                 <img
@@ -1551,24 +1915,27 @@ p {
                         Visual Experience
                     </h3>
 
-                    <span class="work-link">
-                        View work →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
 
 
-            <a
-                href="portfolio.html"
+
+            <div
                 class="work-item"
+                data-image="portfolio08.png.png"
+                data-title="Digital Art Direction"
+                data-category="Creative"
             >
 
                 <img
                     class="work-image"
                     src="portfolio08.png.png"
-                    alt="Creative visual work"
+                    alt="Digital art direction work"
                     loading="lazy"
                 >
 
@@ -1582,24 +1949,27 @@ p {
                         Digital Art Direction
                     </h3>
 
-                    <span class="work-link">
-                        View work →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
 
 
-            <a
-                href="portfolio.html"
+
+            <div
                 class="work-item"
+                data-image="portfolio09.png.png"
+                data-title="3D Visual Development"
+                data-category="3D"
             >
 
                 <img
                     class="work-image"
                     src="portfolio09.png.png"
-                    alt="3D visual production"
+                    alt="3D visual development work"
                     loading="lazy"
                 >
 
@@ -1613,24 +1983,27 @@ p {
                         3D Visual Development
                     </h3>
 
-                    <span class="work-link">
-                        View work →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
 
 
-            <a
-                href="portfolio.html"
+
+            <div
                 class="work-item"
+                data-image="portfolio10.png.png"
+                data-title="Cinematic Visuals"
+                data-category="Cinematic"
             >
 
                 <img
                     class="work-image"
                     src="portfolio10.png.png"
-                    alt="Cinematic digital production"
+                    alt="Cinematic visual work"
                     loading="lazy"
                 >
 
@@ -1644,13 +2017,353 @@ p {
                         Cinematic Visuals
                     </h3>
 
-                    <span class="work-link">
-                        View work →
+                    <span class="work-open">
+                        Click to view fullscreen
                     </span>
 
                 </div>
 
-            </a>
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio11.png.png"
+                data-title="Digital Storytelling"
+                data-category="Creative Production"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio11.png.png"
+                    alt="Digital storytelling work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        Creative Production
+                    </span>
+
+                    <h3 class="work-title">
+                        Digital Storytelling
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio12.png.png"
+                data-title="Visual Development"
+                data-category="CGI"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio12.png.png"
+                    alt="Visual development work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        CGI
+                    </span>
+
+                    <h3 class="work-title">
+                        Visual Development
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio13.png.png"
+                data-title="Cinematic Design"
+                data-category="Design"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio13.png.png"
+                    alt="Cinematic design work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        Design
+                    </span>
+
+                    <h3 class="work-title">
+                        Cinematic Design
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio14.png.png"
+                data-title="Visual Production"
+                data-category="Production"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio14.png.png"
+                    alt="Visual production work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        Production
+                    </span>
+
+                    <h3 class="work-title">
+                        Visual Production
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio15.png.png"
+                data-title="CGI Visualization"
+                data-category="CGI"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio15.png.png"
+                    alt="CGI visualization work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        CGI
+                    </span>
+
+                    <h3 class="work-title">
+                        CGI Visualization
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio16.png.png"
+                data-title="Creative Visuals"
+                data-category="Creative"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio16.png.png"
+                    alt="Creative visual work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        Creative
+                    </span>
+
+                    <h3 class="work-title">
+                        Creative Visuals
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio17.png.png"
+                data-title="Digital Production"
+                data-category="Digital"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio17.png.png"
+                    alt="Digital production work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        Digital
+                    </span>
+
+                    <h3 class="work-title">
+                        Digital Production
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio18.png.png"
+                data-title="3D Visualization"
+                data-category="3D"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio18.png.png"
+                    alt="3D visualization work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        3D
+                    </span>
+
+                    <h3 class="work-title">
+                        3D Visualization
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio19.png.png"
+                data-title="Cinematic CGI"
+                data-category="CGI"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio19.png.png"
+                    alt="Cinematic CGI work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        CGI
+                    </span>
+
+                    <h3 class="work-title">
+                        Cinematic CGI
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="work-item"
+                data-image="portfolio20.png.png"
+                data-title="Final Visual"
+                data-category="Visual Production"
+            >
+
+                <img
+                    class="work-image"
+                    src="portfolio20.png.png"
+                    alt="Visual production work"
+                    loading="lazy"
+                >
+
+                <div class="work-overlay">
+
+                    <span class="work-category">
+                        Visual Production
+                    </span>
+
+                    <h3 class="work-title">
+                        Final Visual
+                    </h3>
+
+                    <span class="work-open">
+                        Click to view fullscreen
+                    </span>
+
+                </div>
+
+            </div>
 
 
         </div>
@@ -1667,6 +2380,7 @@ p {
 
         </div>
 
+
     </div>
 
 </section>
@@ -1677,66 +2391,62 @@ p {
      SHOWREEL
 ========================================================= -->
 
-<section class="showreel-section">
+<section class="showreel">
+
 
     <div class="container">
 
 
-        <div class="section-heading center">
+        <div class="showreel-heading">
 
             <span class="eyebrow">
                 Showreel
             </span>
 
             <h2>
-                See what we create.
+                See the work in motion.
             </h2>
 
-            <p style="margin-top:20px;">
-
-                A visual selection of our creative and production work.
-
+            <p>
+                A visual selection from PT Autotube Crew Studio.
             </p>
 
         </div>
 
 
-        <div class="showreel-container">
+        <div class="video-frame">
 
-            <div class="showreel-frame">
+            <video
+                class="showreel-video"
+                controls
+                playsinline
+                preload="metadata"
+                poster="portfolio11.png.png"
+            >
 
-                <video
-                    class="showreel-video"
-                    controls
-                    playsinline
-                    preload="metadata"
-                    poster="portfolio11.png.png"
+                <source
+                    src="showreel.mp4"
+                    type="video/mp4"
                 >
 
-                    <source
-                        src="showreel.mp4"
-                        type="video/mp4"
-                    >
+                Your browser does not support HTML5 video.
 
-                    Your browser does not support HTML5 video.
-
-                </video>
-
-            </div>
-
-
-            <div style="text-align:center; margin-top:30px;">
-
-                <a
-                    href="showreel.html"
-                    class="btn"
-                >
-                    Open Showreel
-                </a>
-
-            </div>
+            </video>
 
         </div>
+
+
+        <div class="showreel-button">
+
+            <a
+                href="showreel.html"
+                class="btn"
+            >
+                Open Showreel
+            </a>
+
+        </div>
+
 
     </div>
 
@@ -1748,9 +2458,11 @@ p {
      STUDIO
 ========================================================= -->
 
-<section class="studio-section">
+<section class="studio">
+
 
     <div class="container">
+
 
         <div class="studio-grid">
 
@@ -1770,16 +2482,16 @@ p {
                 <p>
 
                     PT Autotube Crew Studio combines creative direction,
-                    3D production and modern digital workflows to develop
-                    high-quality visual content for different production needs.
+                    3D production and modern digital workflows to create
+                    professional visual content.
 
                 </p>
 
 
                 <p>
 
-                    Based in Jakarta, Indonesia, we work with clients,
-                    agencies and production partners through flexible
+                    Based in Jakarta, Indonesia, the studio works with
+                    clients, agencies and production partners through
                     project-based and long-term collaboration.
 
                 </p>
@@ -1791,7 +2503,7 @@ p {
                         href="about.html"
                         class="btn"
                     >
-                        About the Studio
+                        Discover the Studio
                     </a>
 
                 </div>
@@ -1802,7 +2514,7 @@ p {
             <div class="studio-image">
 
                 <img
-                    src="portfolio11.png.png"
+                    src="portfolio07.png.png"
                     alt="PT Autotube Crew Studio visual production"
                     loading="lazy"
                 >
@@ -1811,6 +2523,7 @@ p {
 
 
         </div>
+
 
     </div>
 
@@ -1822,12 +2535,13 @@ p {
      SERVICES
 ========================================================= -->
 
-<section class="services-section">
+<section class="services">
+
 
     <div class="container">
 
 
-        <div class="section-heading center">
+        <div class="services-heading">
 
             <span class="eyebrow">
                 Capabilities
@@ -1836,6 +2550,11 @@ p {
             <h2>
                 What we create.
             </h2>
+
+            <p>
+                Production capabilities designed around creative,
+                commercial and digital visual requirements.
+            </p>
 
         </div>
 
@@ -1870,7 +2589,7 @@ p {
                 </h3>
 
                 <p>
-                    Character, product, environment and cinematic
+                    Product, character, environment and cinematic
                     animation for digital experiences.
                 </p>
 
@@ -1888,7 +2607,7 @@ p {
 
                 <p>
                     Visual effects, compositing and digital
-                    enhancement for cinematic production.
+                    enhancement for cinematic content.
                 </p>
 
             </a>
@@ -1904,8 +2623,8 @@ p {
                 </h3>
 
                 <p>
-                    Digital video production designed around
-                    creative communication and visual impact.
+                    Digital video production created around
+                    communication, storytelling and visual impact.
                 </p>
 
             </a>
@@ -1921,8 +2640,8 @@ p {
                 </h3>
 
                 <p>
-                    Animated visual systems for campaigns,
-                    presentations and digital media.
+                    Animated visual systems for digital content,
+                    campaigns and presentations.
                 </p>
 
             </a>
@@ -1938,8 +2657,8 @@ p {
                 </h3>
 
                 <p>
-                    Detailed visual presentation of products,
-                    materials, forms and design concepts.
+                    High-quality visual presentation for products,
+                    materials and design concepts.
                 </p>
 
             </a>
@@ -1955,8 +2674,8 @@ p {
                 </h3>
 
                 <p>
-                    Visual direction and creative planning from
-                    concept development through production.
+                    Visual planning and creative direction from
+                    concept development through final production.
                 </p>
 
             </a>
@@ -1989,157 +2708,14 @@ p {
 
 
 <!-- =========================================================
-     LEADERSHIP
-========================================================= -->
-
-<section class="leadership-section">
-
-    <div class="container">
-
-
-        <div class="section-heading center">
-
-            <span class="eyebrow">
-                Leadership
-            </span>
-
-            <h2>
-                The people behind the studio.
-            </h2>
-
-            <p style="margin-top:20px;">
-
-                Creative direction and studio leadership focused
-                on building professional production relationships.
-
-            </p>
-
-        </div>
-
-
-        <div class="leadership-grid">
-
-
-            <article class="leader">
-
-                <img
-                    class="leader-image"
-                    src="founder-shameer-sarfraz.jpg.jpeg"
-                    alt="Founder of PT Autotube Crew Studio"
-                    loading="lazy"
-                >
-
-                <div class="leader-info">
-
-                    <div class="leader-role">
-                        Founder
-                    </div>
-
-                    <h3 class="leader-name">
-                        Shameer Sarfraz
-                    </h3>
-
-                    <a
-                        class="leader-contact"
-                        href="mailto:autotubecrewstudio@gmail.com"
-                    >
-                        Studio Contact →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <article class="leader">
-
-                <img
-                    class="leader-image"
-                    src="director-hasnain-ali-shah.png.png"
-                    alt="Director of PT Autotube Crew Studio"
-                    loading="lazy"
-                >
-
-                <div class="leader-info">
-
-                    <div class="leader-role">
-                        Director
-                    </div>
-
-                    <h3 class="leader-name">
-                        Hasnain Ali Shah
-                    </h3>
-
-                    <a
-                        class="leader-contact"
-                        href="mailto:autotubecrewstudio@gmail.com"
-                    >
-                        Studio Contact →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <article class="leader">
-
-                <img
-                    class="leader-image"
-                    src="ceo-abdul-sattar.jpg.PNG"
-                    alt="CEO of PT Autotube Crew Studio"
-                    loading="lazy"
-                >
-
-                <div class="leader-info">
-
-                    <div class="leader-role">
-                        CEO
-                    </div>
-
-                    <h3 class="leader-name">
-                        Abdul Sattar
-                    </h3>
-
-                    <a
-                        class="leader-contact"
-                        href="mailto:autotubecrewstudio@gmail.com"
-                    >
-                        Studio Contact →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-
-        <div style="text-align:center; margin-top:45px;">
-
-            <a
-                href="team.html"
-                class="btn-dark"
-            >
-                Meet the Full Team
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
      FINAL CTA
 ========================================================= -->
 
 <section class="final-cta">
 
+
     <div class="container">
+
 
         <span class="eyebrow">
             Let's Create
@@ -2153,14 +2729,13 @@ p {
 
 
         <p>
-
             Tell us about your next project and let's explore
             what we can create together.
-
         </p>
 
 
         <div class="final-actions">
+
 
             <a
                 href="request-a-quote.html"
@@ -2172,16 +2747,20 @@ p {
 
             <a
                 href="contact.html"
-                class="btn-dark"
+                class="btn-outline"
             >
                 Contact the Studio
             </a>
 
+
         </div>
+
 
     </div>
 
+
 </section>
+
 
 </main>
 
@@ -2192,6 +2771,7 @@ p {
 ========================================================= -->
 
 <footer class="footer">
+
 
     <div class="container">
 
@@ -2206,10 +2786,8 @@ p {
                 </h3>
 
                 <p>
-
                     Creative production studio specializing in
                     CGI, 3D Animation, VFX and digital visual content.
-
                 </p>
 
             </div>
@@ -2222,19 +2800,27 @@ p {
                 </h3>
 
                 <p>
-                    <a href="about.html">About Us</a>
+                    <a href="about.html">
+                        About Us
+                    </a>
                 </p>
 
                 <p>
-                    <a href="team.html">Our Team</a>
+                    <a href="team.html">
+                        Our Team
+                    </a>
                 </p>
 
                 <p>
-                    <a href="careers.html">Careers</a>
+                    <a href="careers.html">
+                        Careers
+                    </a>
                 </p>
 
                 <p>
-                    <a href="partners.html">Partners</a>
+                    <a href="partners.html">
+                        Partners
+                    </a>
                 </p>
 
             </div>
@@ -2247,19 +2833,27 @@ p {
                 </h3>
 
                 <p>
-                    <a href="portfolio.html">Portfolio</a>
+                    <a href="portfolio.html">
+                        Portfolio
+                    </a>
                 </p>
 
                 <p>
-                    <a href="showreel.html">Showreel</a>
+                    <a href="showreel.html">
+                        Showreel
+                    </a>
                 </p>
 
                 <p>
-                    <a href="case-studies.html">Case Studies</a>
+                    <a href="case-studies.html">
+                        Case Studies
+                    </a>
                 </p>
 
                 <p>
-                    <a href="clients.html">Clients</a>
+                    <a href="clients.html">
+                        Clients
+                    </a>
                 </p>
 
             </div>
@@ -2314,9 +2908,69 @@ p {
             © 2026 PT Autotube Crew Studio. All Rights Reserved.
         </p>
 
+
     </div>
 
 </footer>
+
+
+
+<!-- =========================================================
+     LIGHTBOX
+========================================================= -->
+
+<div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true"
+>
+
+
+    <button
+        type="button"
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close image"
+    >
+        ✕
+    </button>
+
+
+    <button
+        type="button"
+        class="lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Previous image"
+    >
+        ←
+    </button>
+
+
+    <img
+        class="lightbox-image"
+        id="lightboxImage"
+        src=""
+        alt=""
+    >
+
+
+    <button
+        type="button"
+        class="lightbox-next"
+        id="lightboxNext"
+        aria-label="Next image"
+    >
+        →
+    </button>
+
+
+    <div
+        class="lightbox-caption"
+        id="lightboxCaption"
+    ></div>
+
+
+</div>
 
 
 
@@ -2348,42 +3002,263 @@ const mobileMenu =
     document.getElementById("mobileMenu");
 
 
-mobileButton.addEventListener("click", function () {
+mobileButton.addEventListener(
+    "click",
+    function () {
 
-    const opened =
-        mobileMenu.classList.toggle("active");
-
-    mobileButton.setAttribute(
-        "aria-expanded",
-        opened
-    );
-
-    mobileButton.textContent =
-        opened ? "✕" : "☰";
-
-});
-
-
-const mobileLinks =
-    mobileMenu.querySelectorAll("a");
-
-
-mobileLinks.forEach(function (link) {
-
-    link.addEventListener("click", function () {
-
-        mobileMenu.classList.remove("active");
+        const isOpen =
+            mobileMenu.classList.toggle("active");
 
         mobileButton.setAttribute(
             "aria-expanded",
-            "false"
+            isOpen
         );
 
-        mobileButton.textContent = "☰";
+        mobileButton.textContent =
+            isOpen ? "✕" : "☰";
+
+    }
+);
+
+
+mobileMenu
+    .querySelectorAll("a")
+    .forEach(function (link) {
+
+        link.addEventListener(
+            "click",
+            function () {
+
+                mobileMenu.classList.remove(
+                    "active"
+                );
+
+                mobileButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                mobileButton.textContent =
+                    "☰";
+
+            }
+        );
 
     });
 
-});
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+const workItems =
+    Array.from(
+        document.querySelectorAll(".work-item")
+    );
+
+const lightbox =
+    document.getElementById("lightbox");
+
+const lightboxImage =
+    document.getElementById("lightboxImage");
+
+const lightboxCaption =
+    document.getElementById("lightboxCaption");
+
+const lightboxClose =
+    document.getElementById("lightboxClose");
+
+const lightboxPrev =
+    document.getElementById("lightboxPrev");
+
+const lightboxNext =
+    document.getElementById("lightboxNext");
+
+
+let currentIndex = 0;
+
+
+function openLightbox(index) {
+
+    currentIndex = index;
+
+    const item =
+        workItems[currentIndex];
+
+    const image =
+        item.getAttribute("data-image");
+
+    const title =
+        item.getAttribute("data-title");
+
+    const category =
+        item.getAttribute("data-category");
+
+
+    lightboxImage.src = image;
+
+    lightboxImage.alt = title;
+
+    lightboxCaption.textContent =
+        category + "  •  " + title;
+
+
+    lightbox.classList.add("active");
+
+    lightbox.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+    document.body.classList.add(
+        "lightbox-open"
+    );
+
+}
+
+
+function closeLightbox() {
+
+    lightbox.classList.remove(
+        "active"
+    );
+
+    lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    lightboxImage.src = "";
+
+    document.body.classList.remove(
+        "lightbox-open"
+    );
+
+}
+
+
+function showPrevious() {
+
+    currentIndex--;
+
+    if (currentIndex < 0) {
+        currentIndex =
+            workItems.length - 1;
+    }
+
+    openLightbox(currentIndex);
+
+}
+
+
+function showNext() {
+
+    currentIndex++;
+
+    if (
+        currentIndex >=
+        workItems.length
+    ) {
+        currentIndex = 0;
+    }
+
+    openLightbox(currentIndex);
+
+}
+
+
+workItems.forEach(
+    function (item, index) {
+
+        item.addEventListener(
+            "click",
+            function () {
+
+                openLightbox(index);
+
+            }
+        );
+
+    }
+);
+
+
+lightboxClose.addEventListener(
+    "click",
+    closeLightbox
+);
+
+
+lightboxPrev.addEventListener(
+    "click",
+    showPrevious
+);
+
+
+lightboxNext.addEventListener(
+    "click",
+    showNext
+);
+
+
+lightbox.addEventListener(
+    "click",
+    function (event) {
+
+        if (
+            event.target ===
+            lightbox
+        ) {
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (
+            !lightbox.classList.contains(
+                "active"
+            )
+        ) {
+            return;
+        }
+
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closeLightbox();
+
+        }
+
+
+        if (
+            event.key === "ArrowLeft"
+        ) {
+
+            showPrevious();
+
+        }
+
+
+        if (
+            event.key === "ArrowRight"
+        ) {
+
+            showNext();
+
+        }
+
+    }
+);
 
 
 /* =========================================================
@@ -2394,29 +3269,41 @@ const backTop =
     document.getElementById("backTop");
 
 
-window.addEventListener("scroll", function () {
+window.addEventListener(
+    "scroll",
+    function () {
 
-    if (window.scrollY > 600) {
+        if (
+            window.scrollY > 600
+        ) {
 
-        backTop.classList.add("visible");
+            backTop.classList.add(
+                "visible"
+            );
 
-    } else {
+        } else {
 
-        backTop.classList.remove("visible");
+            backTop.classList.remove(
+                "visible"
+            );
+
+        }
 
     }
+);
 
-});
 
+backTop.addEventListener(
+    "click",
+    function () {
 
-backTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-});
+    }
+);
 
 </script>
 
