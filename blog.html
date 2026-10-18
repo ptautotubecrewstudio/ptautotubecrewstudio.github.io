@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore creative insights and visual production topics from PT Autotube Crew Studio">
+  <meta name="author" content="PT Autotube Crew Studio">
+  <meta name="robots" content="index follow">
+  <meta name="theme-color" content="#08090c">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PT Autotube Crew Studio">
+  <meta property="og:title" content="Studio Journal | PT Autotube Crew Studio">
+  <meta property="og:description" content="Explore creative insights and visual production topics from PT Autotube Crew Studio">
+  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/blog.html">
+  <meta property="og:image" content="https://ptautotubecrewstudio.github.io/portfolio01.png.png">
 
-  <meta
-    name="description"
-    content="News, insights, production stories and creative articles from PT Autotube Crew Studio."
-  >
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Studio Journal | PT Autotube Crew Studio">
+  <meta name="twitter:description" content="Explore creative insights and visual production topics from PT Autotube Crew Studio">
+  <meta name="twitter:image" content="https://ptautotubecrewstudio.github.io/portfolio01.png.png">
 
-  <title>Blog & Insights | PT Autotube Crew Studio</title>
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/blog.html">
+  <link rel="icon" type="image/png" href="logo.png.png">
 
+  <title>Studio Journal | PT Autotube Crew Studio</title>
 
   <style>
+    :root {
+      color-scheme: dark;
+      --background: #08090c;
+      --surface: #11141a;
+      --surface-light: #181c24;
+      --text: #f5f6f8;
+      --muted: #a2a8b3;
+      --line: rgba(255, 255, 255, 0.13);
+      --red: #e50914;
+      --red-light: #ff4655;
+      --content-width: 1200px;
+    }
 
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 96px;
     }
 
     body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
       font-family: Arial, Helvetica, sans-serif;
-      background: #090909;
-      color: #ffffff;
-      line-height: 1.6;
+      line-height: 1.65;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
     }
 
     a {
@@ -39,399 +66,375 @@
       text-decoration: none;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--red-light);
+      outline-offset: 4px;
     }
 
+    .container {
+      width: min(92%, var(--content-width));
+      margin-inline: auto;
+    }
 
-    /* =========================
-       HEADER
-    ========================= */
+    .skip-link {
+      position: absolute;
+      top: -60px;
+      left: 16px;
+      z-index: 100;
+      padding: 10px 14px;
+      background: #ffffff;
+      color: #000000;
+    }
 
-    header {
-      background: #111111;
-      border-bottom: 1px solid #303030;
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    .site-header {
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 20;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8, 9, 12, 0.94);
+      backdrop-filter: blur(14px);
     }
 
-    .navbar {
-      min-height: 80px;
+    .header-inner {
+      min-height: 78px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
+      gap: 24px;
     }
 
-    .logo {
-      font-size: 20px;
-      font-weight: 700;
-      letter-spacing: 1px;
+    .brand {
+      flex: 0 0 auto;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
     }
 
-    nav ul {
+    .brand span {
+      color: var(--red-light);
+    }
+
+    .site-nav ul {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: clamp(12px, 2vw, 24px);
+      margin: 0;
+      padding: 0;
       list-style: none;
     }
 
-    nav a {
-      color: #cccccc;
-      font-size: 14px;
-      transition: 0.3s;
+    .site-nav a {
+      color: #d0d3d9;
+      font-size: 13px;
+      transition: color 180ms ease;
     }
 
-    nav a:hover {
+    .site-nav a:hover,
+    .site-nav a[aria-current="page"] {
       color: #ffffff;
     }
 
-    .nav-button {
-      border: 1px solid #ffffff;
-      padding: 10px 16px;
+    .site-nav .nav-cta {
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      color: #ffffff;
     }
 
-
-    /* =========================
-       HERO
-    ========================= */
+    .menu-button {
+      display: none;
+    }
 
     .hero {
-      padding: 110px 0;
-      background: linear-gradient(135deg, #111111, #1d1d1d);
-      border-bottom: 1px solid #303030;
+      padding: clamp(72px, 10vw, 120px) 0;
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(229, 9, 20, 0.15), transparent 38rem),
+        #0b0d11;
       text-align: center;
     }
 
-    .hero-label {
-      color: #777777;
+    .hero-label,
+    .section-label,
+    .article-category {
+      margin: 0 0 13px;
+      color: var(--red-light);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size: 12px;
-      margin-bottom: 18px;
     }
 
     .hero h1 {
-      font-size: 62px;
-      line-height: 1.1;
-      margin-bottom: 22px;
+      max-width: 850px;
+      margin: 0 auto 17px;
+      font-size: clamp(40px, 6.5vw, 72px);
+      letter-spacing: -0.06em;
+      line-height: 1.02;
     }
 
     .hero p {
-      max-width: 760px;
-      margin: auto;
-      color: #aaaaaa;
-      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(16px, 1.8vw, 19px);
     }
 
-
-    /* =========================
-       CATEGORY NAVIGATION
-    ========================= */
-
-    .categories {
-      padding: 35px 0;
-      border-bottom: 1px solid #292929;
+    .topic-nav {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
     }
 
-    .category-list {
+    .topic-list {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
 
-    .category {
-      border: 1px solid #333333;
-      padding: 9px 16px;
-      color: #999999;
+    .topic-list a {
+      display: inline-flex;
+      min-height: 40px;
+      align-items: center;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      color: var(--muted);
       font-size: 12px;
-      transition: 0.3s;
+      transition:
+        color 180ms ease,
+        border-color 180ms ease;
     }
 
-    .category:hover {
-      border-color: #ffffff;
+    .topic-list a:hover {
+      border-color: var(--red);
       color: #ffffff;
     }
 
-
-    /* =========================
-       FEATURED ARTICLE
-    ========================= */
-
-    .featured {
-      padding: 90px 0;
+    .featured-section {
+      padding: clamp(62px, 8vw, 92px) 0;
     }
 
-    .featured-grid {
+    .featured-card {
       display: grid;
-      grid-template-columns: 1.25fr 1fr;
-      gap: 55px;
-      align-items: center;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--surface);
     }
 
     .featured-image {
-      min-height: 450px;
-      background: linear-gradient(135deg, #242424, #0d0d0d);
-      border: 1px solid #333333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #666666;
-      padding: 30px;
+      min-height: 390px;
+      height: 100%;
+      object-fit: cover;
+      background: #111111;
     }
 
-    .article-category {
-      color: #777777;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 11px;
-      margin-bottom: 15px;
+    .featured-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: clamp(26px, 4vw, 48px);
     }
 
     .featured-content h2 {
-      font-size: 42px;
-      line-height: 1.2;
-      margin-bottom: 18px;
+      margin: 0 0 13px;
+      font-size: clamp(28px, 3.6vw, 42px);
+      letter-spacing: -0.04em;
+      line-height: 1.12;
     }
 
     .featured-content p {
-      color: #999999;
+      margin: 0 0 20px;
+      color: var(--muted);
       font-size: 15px;
-      margin-bottom: 22px;
     }
 
-    .article-meta {
-      color: #666666;
-      font-size: 12px;
-      margin-bottom: 25px;
-    }
-
-    .read-button {
-      display: inline-block;
-      border: 1px solid #ffffff;
-      padding: 12px 20px;
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: auto;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--red-light);
+      color: #ffffff;
       font-size: 13px;
-      transition: 0.3s;
+      font-weight: 700;
     }
 
-    .read-button:hover {
-      background: #ffffff;
-      color: #000000;
+    .text-link span {
+      color: var(--red-light);
+      font-size: 18px;
+      line-height: 1;
     }
 
-
-    /* =========================
-       ARTICLES
-    ========================= */
-
-    .articles {
-      padding: 30px 0 110px;
+    .topics-section {
+      padding: 76px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.025);
     }
 
     .section-heading {
-      margin-bottom: 40px;
+      max-width: 720px;
+      margin-bottom: 30px;
     }
 
     .section-heading h2 {
-      font-size: 38px;
-      margin-bottom: 10px;
+      margin: 0 0 11px;
+      font-size: clamp(30px, 4vw, 44px);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
     }
 
     .section-heading p {
-      color: #888888;
-      max-width: 700px;
+      margin: 0;
+      color: var(--muted);
     }
 
-    .article-grid {
+    .topic-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .article-card {
-      background: #111111;
-      border: 1px solid #292929;
-      overflow: hidden;
-      transition: 0.3s;
-    }
-
-    .article-card:hover {
-      transform: translateY(-6px);
-      border-color: #555555;
-    }
-
-    .article-image {
-      height: 220px;
-      background: linear-gradient(135deg, #222222, #0d0d0d);
-      border-bottom: 1px solid #292929;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #666666;
-      padding: 20px;
-    }
-
-    .article-content {
-      padding: 28px;
-    }
-
-    .article-content .article-category {
-      margin-bottom: 10px;
-    }
-
-    .article-content h3 {
-      font-size: 22px;
-      line-height: 1.3;
-      margin-bottom: 13px;
-    }
-
-    .article-content p {
-      color: #888888;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-    .article-link {
-      color: #ffffff;
-      font-size: 13px;
-      border-bottom: 1px solid #ffffff;
-      padding-bottom: 4px;
-    }
-
-
-    /* =========================
-       INSIGHTS
-    ========================= */
-
-    .insights {
-      padding: 100px 0;
-      background: #111111;
-      border-top: 1px solid #292929;
-      border-bottom: 1px solid #292929;
-    }
-
-    .insights-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      margin-top: 45px;
-    }
-
-    .insight-card {
-      border: 1px solid #292929;
-      background: #0b0b0b;
-      padding: 32px;
-    }
-
-    .insight-card h3 {
-      font-size: 20px;
-      margin-bottom: 12px;
-    }
-
-    .insight-card p {
-      color: #888888;
-      font-size: 14px;
-    }
-
-
-    /* =========================
-       CTA
-    ========================= */
-
-    .cta {
-      padding: 110px 0;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 43px;
-      margin-bottom: 18px;
-    }
-
-    .cta p {
-      color: #999999;
-      max-width: 700px;
-      margin: auto auto 30px;
-      font-size: 17px;
-    }
-
-    .cta-buttons {
-      display: flex;
-      justify-content: center;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 15px;
-      flex-wrap: wrap;
+    }
+
+    .topic-card {
+      display: flex;
+      min-height: 340px;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease;
+    }
+
+    .topic-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(229, 9, 20, 0.65);
+    }
+
+    .topic-card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      background: #111111;
+    }
+
+    .topic-card-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 21px;
+    }
+
+    .topic-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .topic-card p {
+      margin: 0 0 17px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .topic-card .text-link {
+      margin-top: auto;
+    }
+
+    .cta-section {
+      padding: 78px 0;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      max-width: 720px;
+      margin: 0 auto 13px;
+      font-size: clamp(32px, 4.8vw, 50px);
+      letter-spacing: -0.045em;
+      line-height: 1.08;
+    }
+
+    .cta-section p {
+      max-width: 640px;
+      margin: 0 auto 23px;
+      color: var(--muted);
     }
 
     .button {
-      display: inline-block;
-      padding: 14px 24px;
-      border: 1px solid #ffffff;
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 19px;
+      border: 1px solid transparent;
       font-size: 13px;
       font-weight: 700;
-      transition: 0.3s;
+      transition:
+        transform 180ms ease,
+        background 180ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
     }
 
     .button-primary {
-      background: #ffffff;
-      color: #000000;
-    }
-
-    .button-primary:hover {
-      background: transparent;
+      background: var(--red);
       color: #ffffff;
     }
 
-    .button-secondary:hover {
-      background: #ffffff;
-      color: #000000;
+    .button-primary:hover {
+      background: #c90a14;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      background: #080808;
-      padding: 50px 0 25px;
-      border-top: 1px solid #292929;
+    .site-footer {
+      padding: 40px 0 22px;
+      border-top: 1px solid var(--line);
+      background: #06070a;
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 40px;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 30px;
+      padding-bottom: 25px;
     }
 
     .footer-title {
-      font-size: 18px;
-      margin-bottom: 15px;
+      margin: 0 0 10px;
+      font-size: 15px;
     }
 
-    .footer-text {
-      color: #777777;
-      font-size: 14px;
-      max-width: 400px;
+    .footer-copy,
+    .footer-links a {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-copy {
+      max-width: 380px;
+      margin: 0;
     }
 
     .footer-links {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
       list-style: none;
-    }
-
-    .footer-links li {
-      margin-bottom: 9px;
-    }
-
-    .footer-links a {
-      color: #777777;
-      font-size: 14px;
     }
 
     .footer-links a:hover {
@@ -439,760 +442,361 @@
     }
 
     .footer-bottom {
-      border-top: 1px solid #222222;
-      padding-top: 22px;
-      text-align: center;
-      color: #555555;
+      padding-top: 17px;
+      border-top: 1px solid var(--line);
+      color: #858b96;
       font-size: 12px;
+      text-align: center;
     }
 
-
-    /* =========================
-       RESPONSIVE
-    ========================= */
-
-    @media (max-width: 1000px) {
-
-      .featured-grid {
+    @media (max-width: 850px) {
+      .featured-card {
         grid-template-columns: 1fr;
       }
 
-      .article-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .featured-image {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
       }
 
-      .insights-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .topic-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      html {
+        scroll-padding-top: 82px;
+      }
+
+      .header-inner {
+        min-height: 72px;
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 10px 0;
+      }
+
+      .brand {
+        font-size: 13px;
+      }
+
+      .menu-button {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 13px;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: #ffffff;
+        cursor: pointer;
+        font: inherit;
+        font-size: 13px;
+      }
+
+      .site-nav {
+        display: none;
+        flex: 0 0 100%;
+        padding-top: 10px;
+      }
+
+      .site-nav.is-open {
+        display: block;
+      }
+
+      .site-nav ul {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .site-nav li {
+        border-top: 1px solid var(--line);
+      }
+
+      .site-nav a {
+        display: block;
+        padding: 11px 2px;
+        font-size: 14px;
+      }
+
+      .site-nav .nav-cta {
+        margin-top: 8px;
+        padding: 11px 14px;
+        text-align: center;
       }
 
       .footer-grid {
         grid-template-columns: 1fr;
       }
-
-      .hero h1 {
-        font-size: 50px;
-      }
-
     }
 
-
-    @media (max-width: 650px) {
-
-      .logo {
-        font-size: 13px;
-      }
-
-      nav ul {
-        gap: 8px;
-      }
-
-      nav a {
-        font-size: 10px;
-      }
-
-      .hero {
-        padding: 75px 0;
-      }
-
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .hero p {
-        font-size: 15px;
-      }
-
-      .featured-content h2 {
-        font-size: 31px;
-      }
-
-      .article-grid,
-      .insights-grid {
+    @media (max-width: 560px) {
+      .topic-grid {
         grid-template-columns: 1fr;
       }
 
-      .section-heading h2 {
-        font-size: 30px;
+      .topic-card {
+        min-height: 0;
       }
 
-      .cta h2 {
-        font-size: 31px;
+      .topic-list {
+        justify-content: flex-start;
       }
 
-      .cta-buttons {
-        flex-direction: column;
-      }
-
-      .button {
+      .cta-section .button {
         width: 100%;
+        max-width: 320px;
       }
-
     }
 
-  </style>
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
 
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-
-  <!-- HEADER -->
-
-  <header>
-
-    <div class="container navbar">
-
-      <a href="index.html" class="logo">
-        PT AUTOTUBE CREW STUDIO
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="PT Autotube Crew Studio home">
+        PT <span>AUTOTUBE</span> CREW STUDIO
       </a>
 
+      <button
+        class="menu-button"
+        id="menu-button"
+        type="button"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        Menu
+      </button>
 
-      <nav>
-
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
         <ul>
-
-          <li>
-            <a href="index.html">
-              Home
-            </a>
-          </li>
-
-          <li>
-            <a href="about.html">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href="services.html">
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a href="portfolio.html">
-              Portfolio
-            </a>
-          </li>
-
-          <li>
-            <a href="case-studies.html">
-              Case Studies
-            </a>
-          </li>
-
-          <li>
-            <a href="contact.html" class="nav-button">
-              Contact
-            </a>
-          </li>
-
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact</a></li>
         </ul>
-
       </nav>
-
     </div>
-
   </header>
 
-
-  <!-- HERO -->
-
-  <section class="hero">
-
-    <div class="container">
-
-      <div class="hero-label">
-        Studio Journal
+  <main id="main-content">
+    <section class="hero">
+      <div class="container">
+        <p class="hero-label">Studio Journal</p>
+        <h1>Ideas from the world of visual production</h1>
+        <p>
+          Explore creative insights and learn about the work behind CGI animation and visual storytelling
+        </p>
       </div>
+    </section>
 
-      <h1>
-        News, Insights & Creative Stories
-      </h1>
-
-      <p>
-        Explore ideas, production insights, visual storytelling techniques and behind-the-scenes perspectives from PT Autotube Crew Studio.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- CATEGORIES -->
-
-  <section class="categories">
-
-    <div class="container">
-
-      <div class="category-list">
-
-        <a href="#" class="category">
-          All
-        </a>
-
-        <a href="#" class="category">
-          3D Animation
-        </a>
-
-        <a href="#" class="category">
-          CGI
-        </a>
-
-        <a href="#" class="category">
-          VFX
-        </a>
-
-        <a href="#" class="category">
-          Video Production
-        </a>
-
-        <a href="#" class="category">
-          Industry
-        </a>
-
-        <a href="#" class="category">
-          Studio News
-        </a>
-
+    <nav class="topic-nav" aria-label="Explore journal topics">
+      <div class="container">
+        <ul class="topic-list">
+          <li><a href="#featured-article">3D Animation</a></li>
+          <li><a href="#cgi">CGI</a></li>
+          <li><a href="#vfx">VFX</a></li>
+          <li><a href="#workflow">Production Workflow</a></li>
+        </ul>
       </div>
+    </nav>
 
-    </div>
-
-  </section>
-
-
-  <!-- FEATURED ARTICLE -->
-
-  <section class="featured">
-
-    <div class="container">
-
-
-      <div class="featured-grid">
-
-
-        <div class="featured-image">
-
-          FEATURED ARTICLE IMAGE<br>
-          CGI / 3D / CINEMATIC VISUAL
-
-        </div>
-
-
-        <div class="featured-content">
-
-          <div class="article-category">
-            Featured / 3D Animation
-          </div>
-
-          <h2>
-            The Art of Creating Cinematic 3D Animation
-          </h2>
-
-          <div class="article-meta">
-            PT Autotube Crew Studio · Featured Article
-          </div>
-
-          <p>
-            Discover how cinematic 3D animation combines storytelling, composition, lighting, camera movement and technical production to create memorable visual experiences.
-          </p>
-
-          <p>
-            From the first concept to the final render, every creative decision contributes to the emotional impact of the finished piece.
-          </p>
-
-
-          <a
-            href="blog-post.html"
-            class="read-button"
+    <section class="featured-section" id="featured-article">
+      <div class="container">
+        <article class="featured-card">
+          <img
+            class="featured-image"
+            src="portfolio01.png.png"
+            alt="Selected work from the PT Autotube Crew Studio portfolio"
+            fetchpriority="high"
           >
-            Read Featured Article
-          </a>
 
+          <div class="featured-content">
+            <p class="article-category">3D Animation</p>
+            <h2>The Craft Behind Cinematic 3D Animation</h2>
+            <p>
+              Explore how story composition lighting camera movement and timing shape a cinematic visual experience
+            </p>
+            <a class="text-link" href="blog-post.html">
+              <span>Read the article</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="topics-section" id="journal-topics">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Explore the Studio</p>
+          <h2>More about our production work</h2>
+          <p>
+            Visit a service page to learn more about each part of the production process
+          </p>
         </div>
 
+        <div class="topic-grid">
+          <article class="topic-card" id="cgi">
+            <img
+              src="portfolio02.png.png"
+              alt="Selected visual work from the studio portfolio"
+              loading="lazy"
+            >
+            <div class="topic-card-content">
+              <h3>CGI Production</h3>
+              <p>
+                Discover digital visuals for products concepts and creative projects
+              </p>
+              <a class="text-link" href="cgi.html">
+                <span>Explore CGI</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
 
+          <article class="topic-card" id="vfx">
+            <img
+              src="portfolio03.png.png"
+              alt="Creative production work from the studio portfolio"
+              loading="lazy"
+            >
+            <div class="topic-card-content">
+              <h3>Visual Effects</h3>
+              <p>
+                Learn how visual effects and compositing support screen stories
+              </p>
+              <a class="text-link" href="vfx.html">
+                <span>Explore VFX</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="topic-card" id="workflow">
+            <img
+              src="portfolio04.png.png"
+              alt="A project image from the PT Autotube Crew Studio portfolio"
+              loading="lazy"
+            >
+            <div class="topic-card-content">
+              <h3>Production Workflow</h3>
+              <p>
+                See how a project moves from planning to final delivery
+              </p>
+              <a class="text-link" href="our-workflow.html">
+                <span>View Our Workflow</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
       </div>
+    </section>
 
-    </div>
-
-  </section>
-
-
-  <!-- ARTICLES -->
-
-  <section class="articles">
-
-    <div class="container">
-
-
-      <div class="section-heading">
-
-        <h2>
-          Latest Articles
-        </h2>
-
+    <section class="cta-section">
+      <div class="container">
+        <p class="section-label">Start a Conversation</p>
+        <h2>Have a visual project in mind</h2>
         <p>
-          Insights and practical perspectives from the world of animation, CGI, VFX and visual production.
+          Tell us about your project and we can discuss a suitable production approach
         </p>
-
+        <a class="button button-primary" href="request-a-quote.html">Request a Quote</a>
       </div>
+    </section>
+  </main>
 
-
-      <div class="article-grid">
-
-
-        <!-- ARTICLE 01 -->
-
-        <article class="article-card">
-
-          <div class="article-image">
-            ARTICLE IMAGE
-          </div>
-
-          <div class="article-content">
-
-            <div class="article-category">
-              CGI
-            </div>
-
-            <h3>
-              Why CGI Is Changing Modern Product Advertising
-            </h3>
-
-            <p>
-              How computer-generated imagery allows brands to create product visuals that are flexible, controlled and highly cinematic.
-            </p>
-
-            <a
-              href="blog-post.html"
-              class="article-link"
-            >
-              Read Article →
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- ARTICLE 02 -->
-
-        <article class="article-card">
-
-          <div class="article-image">
-            ARTICLE IMAGE
-          </div>
-
-          <div class="article-content">
-
-            <div class="article-category">
-              VFX
-            </div>
-
-            <h3>
-              Understanding the Role of VFX in Cinematic Storytelling
-            </h3>
-
-            <p>
-              Visual effects can extend environments, enhance realism and create moments that would be difficult or impossible to capture practically.
-            </p>
-
-            <a
-              href="blog-post.html"
-              class="article-link"
-            >
-              Read Article →
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- ARTICLE 03 -->
-
-        <article class="article-card">
-
-          <div class="article-image">
-            ARTICLE IMAGE
-          </div>
-
-          <div class="article-content">
-
-            <div class="article-category">
-              Production
-            </div>
-
-            <h3>
-              From Creative Brief to Final Render
-            </h3>
-
-            <p>
-              A look at the stages involved in turning an initial creative brief into a finished visual production.
-            </p>
-
-            <a
-              href="blog-post.html"
-              class="article-link"
-            >
-              Read Article →
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- ARTICLE 04 -->
-
-        <article class="article-card">
-
-          <div class="article-image">
-            ARTICLE IMAGE
-          </div>
-
-          <div class="article-content">
-
-            <div class="article-category">
-              3D Animation
-            </div>
-
-            <h3>
-              What Makes Animation Feel Cinematic?
-            </h3>
-
-            <p>
-              Exploring camera movement, timing, lighting, composition and visual rhythm in cinematic animation.
-            </p>
-
-            <a
-              href="blog-post.html"
-              class="article-link"
-            >
-              Read Article →
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- ARTICLE 05 -->
-
-        <article class="article-card">
-
-          <div class="article-image">
-            ARTICLE IMAGE
-          </div>
-
-          <div class="article-content">
-
-            <div class="article-category">
-              Industry
-            </div>
-
-            <h3>
-              Choosing the Right Visual Production Approach
-            </h3>
-
-            <p>
-              When should a project use live action, CGI, animation, VFX or a combination of multiple production techniques?
-            </p>
-
-            <a
-              href="blog-post.html"
-              class="article-link"
-            >
-              Read Article →
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- ARTICLE 06 -->
-
-        <article class="article-card">
-
-          <div class="article-image">
-            ARTICLE IMAGE
-          </div>
-
-          <div class="article-content">
-
-            <div class="article-category">
-              Studio News
-            </div>
-
-            <h3>
-              Building a Modern Visual Production Studio
-            </h3>
-
-            <p>
-              An inside look at the creative philosophy, production capabilities and ambitions behind PT Autotube Crew Studio.
-            </p>
-
-            <a
-              href="blog-post.html"
-              class="article-link"
-            >
-              Read Article →
-            </a>
-
-          </div>
-
-        </article>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- INSIGHTS -->
-
-  <section class="insights">
-
+  <footer class="site-footer">
     <div class="container">
-
-
-      <div class="section-heading">
-
-        <h2>
-          What We Write About
-        </h2>
-
-        <p>
-          Our journal focuses on the creative and technical disciplines behind modern visual storytelling.
-        </p>
-
-      </div>
-
-
-      <div class="insights-grid">
-
-
-        <div class="insight-card">
-
-          <h3>
-            Visual Storytelling
-          </h3>
-
-          <p>
-            Creative approaches to developing stories, concepts and visual experiences that connect with audiences.
-          </p>
-
-        </div>
-
-
-        <div class="insight-card">
-
-          <h3>
-            Production Technology
-          </h3>
-
-          <p>
-            Perspectives on CGI, 3D workflows, VFX, rendering and the technologies shaping visual production.
-          </p>
-
-        </div>
-
-
-        <div class="insight-card">
-
-          <h3>
-            Creative Industry
-          </h3>
-
-          <p>
-            Observations about advertising, entertainment, digital content and the evolving global creative industry.
-          </p>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CTA -->
-
-  <section class="cta">
-
-    <div class="container">
-
-      <h2>
-        Have a Story to Create?
-      </h2>
-
-      <p>
-        If you have a product, campaign, film or visual idea that needs professional production, tell us about it.
-      </p>
-
-
-      <div class="cta-buttons">
-
-        <a
-          href="request-a-quote.html"
-          class="button button-primary"
-        >
-          Request a Quote
-        </a>
-
-
-        <a
-          href="contact.html"
-          class="button button-secondary"
-        >
-          Contact Studio
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <div class="container">
-
-
       <div class="footer-grid">
-
-
         <div>
-
-          <h3 class="footer-title">
-            PT Autotube Crew Studio
-          </h3>
-
-          <p class="footer-text">
-            Visual production studio creating CGI, 3D animation, VFX and cinematic content.
+          <h2 class="footer-title">PT Autotube Crew Studio</h2>
+          <p class="footer-copy">
+            CGI 3D animation VFX and video production for brands and creative teams
           </p>
-
         </div>
-
 
         <div>
-
-          <h3 class="footer-title">
-            Explore
-          </h3>
-
+          <h2 class="footer-title">Explore</h2>
           <ul class="footer-links">
-
-            <li>
-              <a href="about.html">
-                About Us
-              </a>
-            </li>
-
-            <li>
-              <a href="services.html">
-                Services
-              </a>
-            </li>
-
-            <li>
-              <a href="portfolio.html">
-                Portfolio
-              </a>
-            </li>
-
-            <li>
-              <a href="case-studies.html">
-                Case Studies
-              </a>
-            </li>
-
-            <li>
-              <a href="industries.html">
-                Industries
-              </a>
-            </li>
-
-            <li>
-              <a href="faq.html">
-                FAQ
-              </a>
-            </li>
-
-            <li>
-              <a href="blog.html">
-                Blog
-              </a>
-            </li>
-
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html" aria-current="page">Blog</a></li>
           </ul>
-
         </div>
-
 
         <div>
-
-          <h3 class="footer-title">
-            Services
-          </h3>
-
+          <h2 class="footer-title">Contact</h2>
           <ul class="footer-links">
-
+            <li><a href="mailto:autotubecrewstudio@gmail.com">Email the Studio</a></li>
             <li>
-              <a href="3d-animation.html">
-                3D Animation
+              <a href="https://wa.me/628139953162" target="_blank" rel="noopener noreferrer">
+                Message on WhatsApp
               </a>
             </li>
-
-            <li>
-              <a href="vfx.html">
-                VFX
-              </a>
-            </li>
-
-            <li>
-              <a href="cgi.html">
-                CGI
-              </a>
-            </li>
-
-            <li>
-              <a href="video-production.html">
-                Video Production
-              </a>
-            </li>
-
+            <li><a href="contact.html">Contact Page</a></li>
           </ul>
-
         </div>
-
-
       </div>
-
 
       <div class="footer-bottom">
-
-        © 2026 PT Autotube Crew Studio. All Rights Reserved.
-
+        PT Autotube Crew Studio
       </div>
-
-
     </div>
-
   </footer>
 
+  <script>
+    const menuButton = document.getElementById("menu-button");
+    const navigation = document.getElementById("primary-navigation");
 
+    function closeNavigation() {
+      navigation.classList.remove("is-open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation menu");
+    }
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = navigation.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+    });
+
+    navigation.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeNavigation);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeNavigation();
+      }
+    });
+  </script>
 </body>
-
 </html>
