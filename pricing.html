@@ -1,666 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pricing | PT Autotube Crew Studio</title>
-
-<meta name="description" content="Explore production pricing and project packages at PT Autotube Crew Studio for CGI, 3D animation, VFX and video production.">
-
-<meta name="robots" content="index, follow">
-
-<link rel="icon" href="logo.png.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#050505;
-    color:#fff;
-    line-height:1.7;
-    overflow-x:hidden;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-.container{
-    width:90%;
-    max-width:1400px;
-    margin:auto;
-}
-
-
-/* HEADER */
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:rgba(0,0,0,.92);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-    z-index:999;
-}
-
-header .container{
-    min-height:82px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:20px;
-    font-weight:700;
-}
-
-.logo img{
-    width:48px;
-    height:48px;
-    object-fit:contain;
-}
-
-nav ul{
-    display:flex;
-    align-items:center;
-    gap:25px;
-    list-style:none;
-}
-
-nav a{
-    color:#ddd;
-    font-size:14px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#e50914;
-}
-
-
-/* HERO */
-
-.hero{
-    padding:180px 0 100px;
-    text-align:center;
-
-    background:
-    radial-gradient(
-        circle at center,
-        rgba(229,9,20,.14),
-        transparent 50%
-    ),
-    #050505;
-}
-
-.hero-label{
-    color:#e50914;
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:4px;
-    text-transform:uppercase;
-    margin-bottom:18px;
-}
-
-.hero h1{
-    font-size:64px;
-    line-height:1.1;
-    margin-bottom:22px;
-}
-
-.hero p{
-    max-width:800px;
-    margin:auto;
-    color:#aaa;
-    font-size:17px;
-}
-
-
-/* PRICING */
-
-.pricing{
-    padding:90px 0 120px;
-    background:#090909;
-    border-top:1px solid #222;
-    border-bottom:1px solid #222;
-}
-
-.section-title{
-    text-align:center;
-    max-width:850px;
-    margin:0 auto 60px;
-}
-
-.section-title h2{
-    font-size:42px;
-    margin-bottom:18px;
-}
-
-.section-title p{
-    color:#999;
-}
-
-
-/* PRICE CARDS */
-
-.price-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.price-card{
-    background:#101010;
-    border:1px solid #292929;
-    border-radius:18px;
-    padding:40px 32px;
-    position:relative;
-    transition:.3s;
-}
-
-.price-card:hover{
-    transform:translateY(-7px);
-    border-color:#e50914;
-}
-
-.price-card.featured{
-    border-color:#e50914;
-}
-
-.featured-label{
-    position:absolute;
-    top:18px;
-    right:18px;
-    background:#e50914;
-    color:#fff;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:10px;
-    font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-.price-card h3{
-    font-size:25px;
-    margin-bottom:12px;
-}
-
-.price-description{
-    color:#999;
-    font-size:14px;
-    min-height:75px;
-    margin-bottom:25px;
-}
-
-.price{
-    font-size:28px;
-    font-weight:700;
-    margin-bottom:25px;
-}
-
-.price span{
-    color:#777;
-    font-size:12px;
-    font-weight:400;
-}
-
-.features{
-    list-style:none;
-    border-top:1px solid #292929;
-    padding-top:22px;
-}
-
-.features li{
-    color:#aaa;
-    font-size:14px;
-    margin-bottom:12px;
-    padding-left:18px;
-    position:relative;
-}
-
-.features li::before{
-    content:"✓";
-    position:absolute;
-    left:0;
-    color:#e50914;
-}
-
-
-/* CUSTOM */
-
-.custom{
-    margin-top:30px;
-    padding:35px;
-    background:#0c0c0c;
-    border:1px solid #292929;
-    border-radius:18px;
-    text-align:center;
-}
-
-.custom h3{
-    font-size:24px;
-    margin-bottom:12px;
-}
-
-.custom p{
-    max-width:750px;
-    margin:auto;
-    color:#999;
-}
-
-
-/* NOTE */
-
-.note{
-    margin-top:30px;
-    text-align:center;
-}
-
-.note p{
-    color:#666;
-    font-size:12px;
-}
-
-
-/* CTA */
-
-.cta{
-    padding:110px 0;
-    text-align:center;
-
-    background:
-    radial-gradient(
-        circle at center,
-        rgba(229,9,20,.12),
-        transparent 55%
-    );
-}
-
-.cta h2{
-    font-size:42px;
-    margin-bottom:18px;
-}
-
-.cta p{
-    max-width:720px;
-    margin:auto;
-    color:#aaa;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
-    background:#e50914;
-    border-radius:50px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#ff303d;
-    transform:translateY(-3px);
-}
-
-
-/* FOOTER */
-
-footer{
-    background:#080808;
-    border-top:1px solid #222;
-    padding:45px 0 25px;
-    text-align:center;
-}
-
-footer p{
-    color:#666;
-    font-size:13px;
-}
-
-
-/* RESPONSIVE */
-
-@media(max-width:1000px){
-
-    nav{
-        display:none;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Project Pricing | PT Autotube Crew Studio</title>
+
+  <meta
+    name="description"
+    content="Request a project-specific quote for CGI, 3D animation, VFX and digital production from PT Autotube Crew Studio."
+  >
+  <meta name="author" content="PT Autotube Crew Studio">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Project Pricing | PT Autotube Crew Studio">
+  <meta
+    property="og:description"
+    content="Discuss your production requirements and request a project-specific quote."
+  >
+  <meta
+    property="og:url"
+    content="https://ptautotubecrewstudio.github.io/pricing.html"
+  >
+  <meta
+    property="og:image"
+    content="https://ptautotubecrewstudio.github.io/logo.png.png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://ptautotubecrewstudio.github.io/pricing.html"
+  >
+  <link rel="icon" href="logo.png.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .price-grid{
-        grid-template-columns:1fr 1fr;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .hero h1{
-        font-size:52px;
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #050505;
+      color: #ffffff;
+      line-height: 1.7;
+      overflow-x: hidden;
     }
 
-}
-
-@media(max-width:650px){
-
-    .container{
-        width:92%;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .hero{
-        padding-top:140px;
-        padding-bottom:70px;
+    .container {
+      width: min(92%, 1200px);
+      margin: 0 auto;
     }
 
-    .hero h1{
-        font-size:38px;
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      background: rgba(5, 5, 5, 0.95);
+      border-bottom: 1px solid #242424;
+      backdrop-filter: blur(14px);
     }
 
-    .hero p{
-        font-size:15px;
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
     }
 
-    .price-grid{
-        grid-template-columns:1fr;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      white-space: nowrap;
     }
 
-    .section-title h2{
-        font-size:32px;
+    .brand-mark {
+      position: relative;
+      display: block;
+      width: 150px;
+      height: 64px;
+      flex: 0 0 150px;
+      overflow: hidden;
     }
 
-    .cta h2{
-        font-size:32px;
+    .brand-mark img {
+      position: absolute;
+      top: -42px;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      max-width: none;
+      object-fit: cover;
     }
 
-    .btn{
-        width:100%;
-        text-align:center;
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
     }
 
-}
+    .desktop-nav a,
+    .mobile-nav a {
+      color: #d0d0d0;
+      font-size: 14px;
+      transition: color 0.2s ease;
+    }
 
-</style>
+    .desktop-nav a:hover,
+    .mobile-nav a:hover {
+      color: #ff2633;
+    }
 
+    .nav-contact {
+      padding: 9px 15px;
+      border: 1px solid #e50914;
+    }
+
+    .menu-button {
+      display: none;
+      border: 0;
+      padding: 8px;
+      background: transparent;
+      color: #ffffff;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      width: 100%;
+      padding: 12px 5% 18px;
+      background: #090909;
+      border-top: 1px solid #242424;
+    }
+
+    .mobile-nav.is-open {
+      display: grid;
+    }
+
+    .mobile-nav a {
+      padding: 11px 0;
+      border-bottom: 1px solid #202020;
+    }
+
+    .mobile-nav a:last-child {
+      border-bottom: 0;
+    }
+
+    main {
+      padding-top: 82px;
+    }
+
+    .hero {
+      padding: 105px 0 85px;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, 0.15), transparent 55%),
+        #050505;
+      border-bottom: 1px solid #222222;
+    }
+
+    .eyebrow {
+      margin-bottom: 14px;
+      color: #ff2633;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin-bottom: 18px;
+      font-size: clamp(38px, 6vw, 62px);
+      line-height: 1.12;
+    }
+
+    .hero p {
+      max-width: 780px;
+      margin: 0 auto;
+      color: #c4c4c4;
+      font-size: 16px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-dark {
+      background: #0a0a0a;
+      border-top: 1px solid #202020;
+      border-bottom: 1px solid #202020;
+    }
+
+    .section-heading {
+      max-width: 800px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 12px;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+    }
+
+    .section-heading p {
+      color: #b8b8b8;
+      font-size: 15px;
+    }
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .quote-card {
+      padding: 28px;
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 15px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .quote-card:hover {
+      transform: translateY(-4px);
+      border-color: #e50914;
+    }
+
+    .quote-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .quote-card p {
+      color: #b5b5b5;
+      font-size: 14px;
+    }
+
+    .details-panel {
+      max-width: 900px;
+      margin: 38px auto 0;
+      padding: 28px;
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 15px;
+    }
+
+    .details-panel h3 {
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .details-panel p {
+      color: #b8b8b8;
+      font-size: 14px;
+    }
+
+    .details-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 24px;
+      margin-top: 18px;
+      list-style: none;
+    }
+
+    .details-list li {
+      position: relative;
+      padding-left: 18px;
+      color: #d0d0d0;
+      font-size: 14px;
+    }
+
+    .details-list li::before {
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #e50914;
+      content: "";
+    }
+
+    .agreement-note {
+      max-width: 900px;
+      margin: 20px auto 0;
+      color: #999999;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .contact-section {
+      padding: 80px 0;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, 0.12), transparent 58%),
+        #070707;
+    }
+
+    .contact-section h2 {
+      margin-bottom: 14px;
+      font-size: clamp(29px, 4vw, 40px);
+    }
+
+    .contact-section p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #bdbdbd;
+      font-size: 15px;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      gap: 13px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 23px;
+      border: 1px solid #e50914;
+      border-radius: 28px;
+      background: #e50914;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #ff2633;
+    }
+
+    .button-outline {
+      background: transparent;
+    }
+
+    .button-outline:hover {
+      background: #e50914;
+    }
+
+    .site-footer {
+      padding: 44px 0 20px;
+      background: #080808;
+      border-top: 1px solid #222222;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    .site-footer h2 {
+      margin-bottom: 11px;
+      font-size: 17px;
+    }
+
+    .site-footer p,
+    .footer-links a {
+      color: #999999;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 7px;
+    }
+
+    .site-footer a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid #222222;
+      color: #777777;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .quote-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .navbar {
+        min-height: 72px;
+      }
+
+      .logo {
+        gap: 7px;
+        font-size: 13px;
+      }
+
+      .brand-mark {
+        width: 112px;
+        height: 50px;
+        flex-basis: 112px;
+      }
+
+      .brand-mark img {
+        top: -31px;
+        width: 112px;
+        height: 112px;
+      }
+
+      main {
+        padding-top: 72px;
+      }
+
+      .hero {
+        padding: 72px 0 62px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .section,
+      .contact-section {
+        padding: 62px 0;
+      }
+
+      .quote-grid,
+      .details-list,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .details-panel {
+        padding: 22px;
+      }
+
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        text-align: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 
-
 <body>
-
-
-<header>
-
-<div class="container">
-
-<a href="index.html" class="logo">
-
-<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-
-<span>PT Autotube Crew Studio</span>
-
-</a>
-
-
-<nav>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="showreel.html">Showreel</a></li>
-<li><a href="case-studies.html">Case Studies</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</div>
-
-</header>
-
-
-
-<section class="hero">
-
-<div class="container">
-
-<div class="hero-label">
-Production Pricing
-</div>
-
-<h1>
-Pricing & Packages
-</h1>
-
-<p>
-Every production is different. Our pricing is based on the project's creative scope, technical requirements, duration, complexity and final deliverables.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section class="pricing">
-
-<div class="container">
-
-
-<div class="section-title">
-
-<h2>
-Choose a Production Level
-</h2>
-
-<p>
-The packages below provide a starting framework. Final project pricing is confirmed after reviewing the creative brief and production requirements.
-</p>
-
-</div>
-
-
-
-<div class="price-grid">
-
-
-<div class="price-card">
-
-<h3>
-Starter
-</h3>
-
-<p class="price-description">
-Suitable for smaller visual content projects and straightforward production requirements.
-</p>
-
-<div class="price">
-Custom Quote
-</div>
-
-<ul class="features">
-
-<li>Project consultation</li>
-
-<li>Creative planning</li>
-
-<li>Basic CGI or 3D production</li>
-
-<li>Standard rendering</li>
-
-<li>Final delivery</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="price-card featured">
-
-<div class="featured-label">
-Popular
-</div>
-
-<h3>
-Professional
-</h3>
-
-<p class="price-description">
-Designed for commercial projects requiring more detailed CGI, animation, VFX or visual production.
-</p>
-
-<div class="price">
-Custom Quote
-</div>
-
-<ul class="features">
-
-<li>Creative direction</li>
-
-<li>Advanced CGI / 3D animation</li>
-
-<li>Professional VFX</li>
-
-<li>Cinematic lighting and rendering</li>
-
-<li>Post-production</li>
-
-<li>Multiple deliverables</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="price-card">
-
-<h3>
-Enterprise
-</h3>
-
-<p class="price-description">
-For larger campaigns, long-form productions and complex projects requiring a dedicated production workflow.
-</p>
-
-<div class="price">
-Custom Quote
-</div>
-
-<ul class="features">
-
-<li>Full project planning</li>
-
-<li>Advanced production pipeline</li>
-
-<li>Dedicated creative support</li>
-
-<li>Complex CGI / VFX</li>
-
-<li>Large-scale rendering</li>
-
-<li>Ongoing production support</li>
-
-</ul>
-
-</div>
-
-
-</div>
-
-
-
-<div class="custom">
-
-<h3>
-Need Something Custom?
-</h3>
-
-<p>
-We can build a production plan around your exact requirements, including animation duration, number of assets, VFX complexity, delivery formats, revisions and production timeline.
-</p>
-
-<a href="request-a-quote.html" class="btn">
-Request Custom Quote
-</a>
-
-</div>
-
-
-<div class="note">
-
-<p>
-* Pricing is project-specific. A final quotation is provided after reviewing the project brief and requirements.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section class="cta">
-
-<div class="container">
-
-<h2>
-Let's Discuss Your Project
-</h2>
-
-<p>
-Send us your project requirements and our team can evaluate the scope, production approach and appropriate budget structure.
-</p>
-
-<a href="request-a-quote.html" class="btn">
-Request a Quote
-</a>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<div class="container">
-
-<p>
-© 2026 PT Autotube Crew Studio. All Rights Reserved.
-</p>
-
-</div>
-
-</footer>
-
-
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="PT Autotube Crew Studio home">
+        <span class="brand-mark">
+          <img src="logo.png.png" alt="">
+        </span>
+        <span>PT Autotube Crew Studio</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a class="nav-contact" href="contact.html">Contact</a>
+      </nav>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="mobileNavigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNavigation" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html" aria-current="page">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Project Pricing</div>
+        <h1>Every Project Has Its Own Scope</h1>
+        <p>
+          The cost of CGI animation VFX and digital production depends on
+          what the project needs. Share your brief and the studio can review
+          the scope before preparing a quote.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">How We Prepare a Quote</div>
+          <h2>What Shapes Project Pricing</h2>
+          <p>
+            These details help define the work and prepare a project-specific
+            estimate.
+          </p>
+        </div>
+
+        <div class="quote-grid">
+          <article class="quote-card">
+            <h3>Creative Scope</h3>
+            <p>
+              The visual direction the project goals and the production work
+              requested.
+            </p>
+          </article>
+
+          <article class="quote-card">
+            <h3>Production Requirements</h3>
+            <p>
+              The assets animation VFX or other production tasks required
+              for the project.
+            </p>
+          </article>
+
+          <article class="quote-card">
+            <h3>Final Deliverables</h3>
+            <p>
+              The number of outputs their formats and where the finished
+              work will be used.
+            </p>
+          </article>
+
+          <article class="quote-card">
+            <h3>Schedule</h3>
+            <p>
+              The target dates review stages and any delivery deadlines.
+            </p>
+          </article>
+
+          <article class="quote-card">
+            <h3>Project Materials</h3>
+            <p>
+              Available scripts references designs models footage and
+              product information.
+            </p>
+          </article>
+
+          <article class="quote-card">
+            <h3>Review and Revisions</h3>
+            <p>
+              The feedback process and revision rounds agreed for the
+              project.
+            </p>
+          </article>
+        </div>
+
+        <div class="details-panel">
+          <h3>What to Include in Your Request</h3>
+          <p>
+            Share whatever information you already have. The studio can
+            discuss the remaining details with you.
+          </p>
+
+          <ul class="details-list">
+            <li>Project idea and main objective</li>
+            <li>Type of production support needed</li>
+            <li>Estimated duration or number of shots</li>
+            <li>Target delivery date</li>
+            <li>Reference images or links</li>
+            <li>Budget range if you have one</li>
+          </ul>
+        </div>
+
+        <p class="agreement-note">
+          Confirm the scope deliverables schedule fees revision terms and
+          payment arrangements in writing before production begins.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="eyebrow">Request a Project Quote</div>
+        <h2>Tell Us What You Are Planning</h2>
+        <p>
+          Send your project details and the studio can review the
+          requirements with you.
+        </p>
+
+        <div class="contact-actions">
+          <a class="button" href="request-a-quote.html">Request a Quote</a>
+          <a
+            class="button button-outline"
+            href="https://wa.me/628139953162"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Message on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>PT Autotube Crew Studio</h2>
+          <p>
+            Creative production studio based in Indonesia focused on CGI
+            3D animation VFX and visual content.
+          </p>
+        </div>
+
+        <div>
+          <h2>Explore</h2>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="partners.html">Partners</a>
+          </div>
+        </div>
+
+        <div>
+          <h2>Contact</h2>
+          <div class="footer-links">
+            <a href="contact.html">Contact the Studio</a>
+            <a href="mailto:autotubecrewstudio@gmail.com">Email</a>
+            <a href="https://ptautotubecrewstudio.github.io/">Official Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 PT Autotube Crew Studio. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileNavigation = document.getElementById("mobileNavigation");
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = mobileNavigation.classList.toggle("is-open");
+
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+      menuButton.textContent = isOpen ? "×" : "☰";
+    });
+
+    mobileNavigation.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileNavigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
+        menuButton.textContent = "☰";
+      });
+    });
+  </script>
 </body>
-
 </html>
