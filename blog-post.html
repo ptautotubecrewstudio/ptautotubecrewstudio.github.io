@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn how story composition lighting camera movement and timing shape cinematic 3D animation">
+  <meta name="author" content="PT Autotube Crew Studio">
+  <meta name="robots" content="index follow">
+  <meta name="theme-color" content="#08090c">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PT Autotube Crew Studio">
+  <meta property="og:title" content="The Craft Behind Cinematic 3D Animation">
+  <meta property="og:description" content="Explore the creative choices behind memorable 3D animation">
+  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/blog-post.html">
+  <meta property="og:image" content="https://ptautotubecrewstudio.github.io/portfolio01.png.png">
 
-  <meta
-    name="description"
-    content="Creative insights, production knowledge and visual storytelling from PT Autotube Crew Studio."
-  >
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Craft Behind Cinematic 3D Animation">
+  <meta name="twitter:description" content="Explore the creative choices behind memorable 3D animation">
+  <meta name="twitter:image" content="https://ptautotubecrewstudio.github.io/portfolio01.png.png">
 
-  <title>Article | PT Autotube Crew Studio</title>
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/blog-post.html">
+  <link rel="icon" type="image/png" href="logo.png.png">
 
+  <title>The Craft Behind Cinematic 3D Animation | PT Autotube Crew Studio</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Craft Behind Cinematic 3D Animation",
+    "description": "Explore the creative choices behind memorable 3D animation",
+    "author": {
+      "@type": "Organization",
+      "name": "PT Autotube Crew Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PT Autotube Crew Studio"
+    },
+    "image": "https://ptautotubecrewstudio.github.io/portfolio01.png.png",
+    "mainEntityOfPage": "https://ptautotubecrewstudio.github.io/blog-post.html"
+  }
+  </script>
 
   <style>
+    :root {
+      color-scheme: dark;
+      --background: #08090c;
+      --surface: #11141a;
+      --surface-light: #181c24;
+      --text: #f5f6f8;
+      --muted: #a2a8b3;
+      --line: rgba(255, 255, 255, 0.13);
+      --red: #e50914;
+      --red-light: #ff4655;
+      --content-width: 1200px;
+    }
 
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 100px;
     }
 
     body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
       font-family: Arial, Helvetica, sans-serif;
-      background: #090909;
-      color: #ffffff;
-      line-height: 1.8;
+      line-height: 1.7;
     }
 
     a {
@@ -39,171 +80,193 @@
       text-decoration: none;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1150px;
-      margin: auto;
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--red-light);
+      outline-offset: 4px;
     }
 
+    .container {
+      width: min(92%, var(--content-width));
+      margin-inline: auto;
+    }
 
-    /* =========================
-       HEADER
-    ========================= */
+    .skip-link {
+      position: absolute;
+      top: -60px;
+      left: 16px;
+      z-index: 100;
+      padding: 10px 14px;
+      background: #ffffff;
+      color: #000000;
+    }
 
-    header {
-      background: #111111;
-      border-bottom: 1px solid #303030;
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    .site-header {
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 20;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8, 9, 12, 0.94);
+      backdrop-filter: blur(14px);
     }
 
-    .navbar {
-      min-height: 80px;
+    .header-inner {
+      min-height: 78px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
+      gap: 24px;
     }
 
-    .logo {
-      font-size: 20px;
-      font-weight: 700;
-      letter-spacing: 1px;
+    .brand {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
     }
 
-    nav ul {
+    .brand span {
+      color: var(--red-light);
+    }
+
+    .site-nav ul {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: clamp(12px, 2vw, 24px);
+      margin: 0;
+      padding: 0;
       list-style: none;
     }
 
-    nav a {
-      color: #cccccc;
-      font-size: 14px;
-      transition: 0.3s;
+    .site-nav a {
+      color: #d0d3d9;
+      font-size: 13px;
+      transition: color 180ms ease;
     }
 
-    nav a:hover {
+    .site-nav a:hover,
+    .site-nav a[aria-current="page"] {
       color: #ffffff;
     }
 
-    .nav-button {
-      border: 1px solid #ffffff;
-      padding: 10px 16px;
+    .site-nav .nav-cta {
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      color: #ffffff;
     }
 
-
-    /* =========================
-       ARTICLE HERO
-    ========================= */
+    .menu-button {
+      display: none;
+    }
 
     .article-hero {
-      padding: 100px 0 80px;
-      background: linear-gradient(135deg, #111111, #1c1c1c);
-      border-bottom: 1px solid #303030;
+      padding: clamp(64px, 9vw, 100px) 0 70px;
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(ellipse at 78% 15%, rgba(229, 9, 20, 0.13), transparent 34rem),
+        #0b0d11;
     }
 
     .back-link {
       display: inline-block;
-      color: #888888;
+      margin-bottom: 30px;
+      color: var(--muted);
       font-size: 13px;
-      margin-bottom: 35px;
-      transition: 0.3s;
+      transition: color 180ms ease;
     }
 
     .back-link:hover {
       color: #ffffff;
     }
 
-    .article-category {
-      color: #777777;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+    .article-category,
+    .section-label {
+      margin: 0 0 13px;
+      color: var(--red-light);
       font-size: 11px;
-      margin-bottom: 18px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
     }
 
     .article-hero h1 {
       max-width: 900px;
-      font-size: 58px;
-      line-height: 1.15;
-      margin-bottom: 25px;
+      margin: 0 0 20px;
+      font-size: clamp(40px, 6vw, 68px);
+      letter-spacing: -0.055em;
+      line-height: 1.05;
     }
 
     .article-intro {
       max-width: 780px;
-      color: #aaaaaa;
-      font-size: 18px;
-      margin-bottom: 25px;
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: clamp(16px, 1.8vw, 19px);
     }
 
-    .article-meta {
-      color: #666666;
+    .article-byline {
+      color: #858b96;
+      font-size: 13px;
+    }
+
+    .feature-section {
+      padding: 52px 0 12px;
+    }
+
+    .feature-figure {
+      overflow: hidden;
+      margin: 0;
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .feature-figure video {
+      display: block;
+      width: 100%;
+      max-height: 620px;
+      aspect-ratio: 16 / 8;
+      object-fit: cover;
+      background: #111111;
+    }
+
+    .feature-figure figcaption {
+      padding: 12px 16px;
+      color: var(--muted);
       font-size: 12px;
     }
 
-
-    /* =========================
-       MAIN VISUAL
-    ========================= */
-
-    .article-visual {
-      padding: 70px 0 20px;
-    }
-
-    .visual-placeholder {
-      height: 520px;
-      background: linear-gradient(135deg, #242424, #0c0c0c);
-      border: 1px solid #333333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #666666;
-      padding: 30px;
-    }
-
-
-    /* =========================
-       ARTICLE LAYOUT
-    ========================= */
-
     .article-section {
-      padding: 70px 0 110px;
+      padding: 58px 0 100px;
     }
 
     .article-layout {
       display: grid;
       grid-template-columns: minmax(0, 760px) 280px;
-      gap: 70px;
       align-items: start;
+      gap: 58px;
     }
 
-
-    /* =========================
-       ARTICLE CONTENT
-    ========================= */
-
     .article-content h2 {
-      font-size: 32px;
-      line-height: 1.3;
-      margin: 45px 0 18px;
+      margin: 48px 0 15px;
+      font-size: clamp(26px, 3.4vw, 34px);
+      letter-spacing: -0.035em;
+      line-height: 1.2;
+      scroll-margin-top: 100px;
     }
 
     .article-content h2:first-child {
       margin-top: 0;
     }
 
-    .article-content h3 {
-      font-size: 22px;
-      margin: 35px 0 12px;
-    }
-
     .article-content p {
-      color: #a0a0a0;
+      margin: 0 0 19px;
+      color: #b1b6c0;
       font-size: 16px;
-      margin-bottom: 22px;
     }
 
     .article-content strong {
@@ -211,221 +274,240 @@
     }
 
     .article-content ul {
-      margin: 20px 0 25px 25px;
-      color: #999999;
+      display: grid;
+      gap: 9px;
+      margin: 18px 0 26px;
+      padding-left: 22px;
+      color: #b1b6c0;
     }
 
-    .article-content li {
-      margin-bottom: 10px;
+    .article-content li::marker {
+      color: var(--red-light);
     }
 
     .highlight {
-      border-left: 2px solid #ffffff;
-      padding: 20px 25px;
-      background: #111111;
-      margin: 35px 0;
-      color: #bbbbbb;
+      margin: 30px 0;
+      padding: 20px 23px;
+      border-left: 3px solid var(--red);
+      background: var(--surface);
+      color: #e0e3e8;
       font-size: 16px;
     }
 
-
-    /* =========================
-       SIDEBAR
-    ========================= */
-
     .sidebar {
       position: sticky;
-      top: 110px;
+      top: 102px;
     }
 
     .sidebar-box {
-      background: #111111;
-      border: 1px solid #292929;
-      padding: 25px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      background: var(--surface);
     }
 
+    .sidebar-box h2,
     .sidebar-box h3 {
-      font-size: 18px;
-      margin-bottom: 18px;
+      margin: 0 0 13px;
+      font-size: 17px;
     }
 
     .sidebar-box p {
-      color: #888888;
+      margin: 0 0 14px;
+      color: var(--muted);
       font-size: 13px;
     }
 
     .toc {
+      display: grid;
+      gap: 0;
+      margin: 0;
+      padding: 0;
       list-style: none;
     }
 
     .toc li {
-      border-bottom: 1px solid #252525;
-      padding: 11px 0;
-    }
-
-    .toc li:last-child {
-      border-bottom: none;
+      border-top: 1px solid var(--line);
     }
 
     .toc a {
-      color: #888888;
+      display: block;
+      padding: 10px 0;
+      color: var(--muted);
       font-size: 13px;
-      transition: 0.3s;
+      transition: color 180ms ease;
     }
 
     .toc a:hover {
       color: #ffffff;
     }
 
-
-    /* =========================
-       AUTHOR
-    ========================= */
-
     .author-box {
-      margin-top: 60px;
-      padding: 30px;
-      background: #111111;
-      border: 1px solid #292929;
+      margin-top: 48px;
+      padding: 25px;
+      border: 1px solid var(--line);
+      background: var(--surface);
     }
 
-    .author-box h3 {
-      font-size: 19px;
-      margin-bottom: 10px;
+    .author-box h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
     }
 
     .author-box p {
-      color: #888888;
+      margin: 0;
+      color: var(--muted);
       font-size: 14px;
     }
 
-
-    /* =========================
-       RELATED ARTICLES
-    ========================= */
-
-    .related {
-      padding: 90px 0;
-      background: #111111;
-      border-top: 1px solid #292929;
-      border-bottom: 1px solid #292929;
+    .explore-section {
+      padding: 78px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
     }
 
-    .section-title {
-      font-size: 36px;
-      margin-bottom: 35px;
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 32px;
     }
 
-    .related-grid {
+    .section-heading h2 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 4vw, 44px);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .explore-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
     }
 
-    .related-card {
-      border: 1px solid #292929;
-      background: #0a0a0a;
-      padding: 28px;
+    .explore-card {
+      display: flex;
+      min-height: 190px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 23px;
+      border: 1px solid var(--line);
+      background: #0b0d11;
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease;
     }
 
-    .related-card .category {
-      color: #777777;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 10px;
-      margin-bottom: 12px;
+    .explore-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(229, 9, 20, 0.65);
     }
 
-    .related-card h3 {
-      font-size: 20px;
-      line-height: 1.35;
-      margin-bottom: 15px;
+    .explore-card h3 {
+      margin: 0 0 9px;
+      font-size: 18px;
     }
 
-    .related-card p {
-      color: #888888;
+    .explore-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
       font-size: 13px;
-      margin-bottom: 20px;
     }
 
-    .related-link {
+    .explore-card span {
+      margin-top: auto;
+      color: var(--red-light);
       font-size: 12px;
-      border-bottom: 1px solid #ffffff;
-      padding-bottom: 3px;
+      font-weight: 700;
     }
 
-
-    /* =========================
-       CTA
-    ========================= */
-
-    .cta {
-      padding: 110px 0;
+    .cta-section {
+      padding: 84px 0;
       text-align: center;
     }
 
-    .cta h2 {
-      font-size: 42px;
-      margin-bottom: 18px;
+    .cta-section h2 {
+      max-width: 740px;
+      margin: 0 auto 14px;
+      font-size: clamp(32px, 4.8vw, 50px);
+      letter-spacing: -0.045em;
+      line-height: 1.08;
     }
 
-    .cta p {
-      max-width: 680px;
-      margin: auto auto 30px;
-      color: #999999;
-      font-size: 16px;
+    .cta-section p {
+      max-width: 650px;
+      margin: 0 auto 24px;
+      color: var(--muted);
     }
 
-    .cta-button {
-      display: inline-block;
-      background: #ffffff;
-      color: #000000;
-      padding: 14px 25px;
-      font-weight: 700;
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 19px;
+      border: 1px solid transparent;
       font-size: 13px;
+      font-weight: 700;
+      transition:
+        transform 180ms ease,
+        background 180ms ease,
+        border-color 180ms ease;
     }
 
+    .button:hover {
+      transform: translateY(-2px);
+    }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    .button-primary {
+      background: var(--red);
+      color: #ffffff;
+    }
 
-    footer {
-      background: #080808;
-      padding: 50px 0 25px;
-      border-top: 1px solid #292929;
+    .button-primary:hover {
+      background: #c90a14;
+    }
+
+    .site-footer {
+      padding: 42px 0 22px;
+      border-top: 1px solid var(--line);
+      background: #06070a;
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 40px;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 32px;
+      padding-bottom: 26px;
     }
 
     .footer-title {
-      font-size: 18px;
-      margin-bottom: 15px;
+      margin: 0 0 10px;
+      font-size: 15px;
     }
 
-    .footer-text {
-      color: #777777;
-      font-size: 14px;
-      max-width: 400px;
+    .footer-copy,
+    .footer-links a {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-copy {
+      max-width: 380px;
+      margin: 0;
     }
 
     .footer-links {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
       list-style: none;
-    }
-
-    .footer-links li {
-      margin-bottom: 9px;
-    }
-
-    .footer-links a {
-      color: #777777;
-      font-size: 14px;
     }
 
     .footer-links a:hover {
@@ -433,731 +515,409 @@
     }
 
     .footer-bottom {
-      border-top: 1px solid #222222;
-      padding-top: 22px;
-      text-align: center;
-      color: #555555;
+      padding-top: 17px;
+      border-top: 1px solid var(--line);
+      color: #858b96;
       font-size: 12px;
+      text-align: center;
     }
 
-
-    /* =========================
-       RESPONSIVE
-    ========================= */
-
-    @media (max-width: 950px) {
-
+    @media (max-width: 900px) {
       .article-layout {
         grid-template-columns: 1fr;
+        gap: 30px;
       }
 
       .sidebar {
         position: static;
       }
 
-      .related-grid {
-        grid-template-columns: 1fr;
+      .explore-grid {
+        grid-template-columns: 1fr 1fr;
       }
 
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      html {
+        scroll-padding-top: 82px;
+      }
+
+      .header-inner {
+        min-height: 72px;
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 10px 0;
+      }
+
+      .brand {
+        font-size: 13px;
+      }
+
+      .menu-button {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 13px;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: #ffffff;
+        cursor: pointer;
+        font: inherit;
+        font-size: 13px;
+      }
+
+      .site-nav {
+        display: none;
+        flex: 0 0 100%;
+        padding-top: 10px;
+      }
+
+      .site-nav.is-open {
+        display: block;
+      }
+
+      .site-nav ul {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .site-nav li {
+        border-top: 1px solid var(--line);
+      }
+
+      .site-nav a {
+        display: block;
+        padding: 11px 2px;
+        font-size: 14px;
+      }
+
+      .site-nav .nav-cta {
+        margin-top: 8px;
+        padding: 11px 14px;
+        text-align: center;
+      }
+
+      .feature-section {
+        padding-top: 32px;
+      }
+
+      .feature-figure video {
+        aspect-ratio: 16 / 10;
+      }
+
+      .explore-grid,
       .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .article-hero h1 {
-        font-size: 48px;
-      }
-
-    }
-
-
-    @media (max-width: 650px) {
-
-      .logo {
-        font-size: 13px;
-      }
-
-      nav ul {
-        gap: 8px;
-      }
-
-      nav a {
-        font-size: 10px;
-      }
-
-      .article-hero {
-        padding: 70px 0 60px;
-      }
-
-      .article-hero h1 {
-        font-size: 35px;
-      }
-
-      .article-intro {
+      .article-content p {
         font-size: 15px;
       }
-
-      .visual-placeholder {
-        height: 280px;
-      }
-
-      .article-content h2 {
-        font-size: 27px;
-      }
-
-      .section-title {
-        font-size: 30px;
-      }
-
-      .cta h2 {
-        font-size: 31px;
-      }
-
     }
 
-  </style>
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
 
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-
-  <!-- =========================
-       HEADER
-  ========================= -->
-
-  <header>
-
-    <div class="container navbar">
-
-      <a href="index.html" class="logo">
-        PT AUTOTUBE CREW STUDIO
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="PT Autotube Crew Studio home">
+        PT <span>AUTOTUBE</span> CREW STUDIO
       </a>
 
+      <button
+        class="menu-button"
+        id="menu-button"
+        type="button"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        Menu
+      </button>
 
-      <nav>
-
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
         <ul>
-
-          <li>
-            <a href="index.html">
-              Home
-            </a>
-          </li>
-
-          <li>
-            <a href="about.html">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href="services.html">
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a href="portfolio.html">
-              Portfolio
-            </a>
-          </li>
-
-          <li>
-            <a href="case-studies.html">
-              Case Studies
-            </a>
-          </li>
-
-          <li>
-            <a href="contact.html" class="nav-button">
-              Contact
-            </a>
-          </li>
-
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact</a></li>
         </ul>
-
       </nav>
-
     </div>
-
   </header>
 
-
-  <!-- =========================
-       ARTICLE HERO
-  ========================= -->
-
-  <section class="article-hero">
-
-    <div class="container">
-
-      <a href="blog.html" class="back-link">
-        ← Back to Blog
-      </a>
-
-
-      <div class="article-category">
-        3D Animation / Visual Storytelling
-      </div>
-
-
-      <h1>
-        The Art of Creating Cinematic 3D Animation
-      </h1>
-
-
-      <p class="article-intro">
-        Cinematic animation is more than technical movement. It is the combination of storytelling, composition, lighting, camera language and timing that turns a digital scene into an emotional visual experience.
-      </p>
-
-
-      <div class="article-meta">
-        PT Autotube Crew Studio · Creative Insights · 2026
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       MAIN VISUAL
-  ========================= -->
-
-  <section class="article-visual">
-
-    <div class="container">
-
-      <div class="visual-placeholder">
-
-        ARTICLE HERO IMAGE / VIDEO<br>
-        CINEMATIC 3D ANIMATION VISUAL
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       ARTICLE
-  ========================= -->
-
-  <section class="article-section">
-
-    <div class="container">
-
-
-      <div class="article-layout">
-
-
-        <!-- MAIN CONTENT -->
-
-        <main class="article-content">
-
-
-          <h2 id="introduction">
-            Introduction
-          </h2>
-
-          <p>
-            Great 3D animation begins long before the first frame is rendered. The most effective cinematic sequences are built around a clear creative idea and a deliberate visual language.
+  <main id="main-content">
+    <article>
+      <header class="article-hero">
+        <div class="container">
+          <a class="back-link" href="blog.html">← Back to Blog</a>
+          <p class="article-category">3D Animation</p>
+          <h1>The Craft Behind Cinematic 3D Animation</h1>
+          <p class="article-intro">
+            Cinematic animation brings story composition lighting camera movement and timing together to create a memorable visual experience
           </p>
+          <p class="article-byline">Studio insights from PT Autotube Crew Studio</p>
+        </div>
+      </header>
 
-          <p>
-            Technology gives artists the ability to create almost anything, but technology alone does not create emotion. The role of the production team is to use those tools in service of story, atmosphere and audience experience.
-          </p>
+      <section class="feature-section" aria-label="Studio showreel">
+        <div class="container">
+          <figure class="feature-figure">
+            <video
+              controls
+              playsinline
+              preload="none"
+              poster="portfolio01.png.png"
+              aria-label="PT Autotube Crew Studio showreel"
+            >
+              <source src="showreel.mp4" type="video/mp4">
+              Your browser does not support video playback
+            </video>
+            <figcaption>Watch selected work from the studio</figcaption>
+          </figure>
+        </div>
+      </section>
 
-
-          <div class="highlight">
-            Cinematic animation is not simply about making objects move. It is about controlling what the audience sees, feels and understands at every moment.
-          </div>
-
-
-          <h2 id="story">
-            1. Start With the Story
-          </h2>
-
-          <p>
-            Before developing models, materials or animation, the creative direction needs to establish what the audience should experience.
-          </p>
-
-          <p>
-            A strong sequence usually has a clear beginning, progression and visual payoff. Even a short commercial animation can benefit from this structure.
-          </p>
-
-          <h3>
-            Define the visual objective
-          </h3>
-
-          <p>
-            The team should understand whether the purpose is to introduce a product, create excitement, explain a complex concept, establish a brand identity or simply deliver an emotional cinematic moment.
-          </p>
-
-
-          <h2 id="composition">
-            2. Composition Creates Focus
-          </h2>
-
-          <p>
-            Composition determines where the audience looks and how visual information is organized inside the frame.
-          </p>
-
-          <p>
-            Camera position, lens choice, scale, negative space and subject placement all influence how a shot feels.
-          </p>
-
-          <ul>
-
-            <li>
-              Strong subject placement creates visual hierarchy.
-            </li>
-
-            <li>
-              Negative space can create atmosphere and anticipation.
-            </li>
-
-            <li>
-              Camera perspective can communicate scale and power.
-            </li>
-
-            <li>
-              Controlled framing helps guide audience attention.
-            </li>
-
-          </ul>
-
-
-          <h2 id="lighting">
-            3. Lighting Builds Atmosphere
-          </h2>
-
-          <p>
-            Lighting is one of the most important components of cinematic 3D production. The same model can feel luxurious, mysterious, dramatic or futuristic depending on how it is illuminated.
-          </p>
-
-          <p>
-            Instead of simply making a scene bright enough to see, cinematic lighting should support the mood and story of the shot.
-          </p>
-
-
-          <h2 id="camera">
-            4. Camera Movement Has Meaning
-          </h2>
-
-          <p>
-            Camera movement should have a creative reason. A slow push-in can build anticipation. A wide camera move can reveal scale. A fast movement can increase energy and excitement.
-          </p>
-
-          <p>
-            When camera movement is carefully synchronized with animation, music and editing, the sequence begins to feel intentional rather than mechanical.
-          </p>
-
-
-          <h2 id="animation">
-            5. Animation Needs Timing
-          </h2>
-
-          <p>
-            Timing is fundamental to believable and emotionally effective animation.
-          </p>
-
-          <p>
-            Movement that happens too quickly can feel weightless. Movement that is too slow can lose energy. The right timing depends on the subject, environment, camera language and intended emotion.
-          </p>
-
-
-          <h2 id="render">
-            6. Rendering and Post Production
-          </h2>
-
-          <p>
-            The final render is only one stage of the visual production process. Color treatment, compositing, VFX, sound design and editing can significantly influence the final result.
-          </p>
-
-          <p>
-            A strong post-production workflow allows the creative team to refine contrast, atmosphere, depth and visual consistency across the complete sequence.
-          </p>
-
-
-          <h2 id="conclusion">
-            Conclusion
-          </h2>
-
-          <p>
-            Creating cinematic 3D animation requires a combination of artistic direction and technical execution.
-          </p>
-
-          <p>
-            The most memorable results come from treating every element of the production as part of one visual story — from the initial concept and composition through animation, lighting, rendering and final post production.
-          </p>
-
-
-          <!-- AUTHOR -->
-
-          <div class="author-box">
-
-            <h3>
-              About PT Autotube Crew Studio
-            </h3>
-
+      <section class="article-section">
+        <div class="container article-layout">
+          <div class="article-content">
+            <h2 id="introduction">The Idea Comes First</h2>
             <p>
-              PT Autotube Crew Studio develops CGI, 3D animation, VFX and cinematic visual content for brands, productions and creative projects.
+              Great 3D animation begins before the first frame is rendered
+            </p>
+            <p>
+              A clear idea helps the creative team decide what the audience should see feel and understand
             </p>
 
-          </div>
+            <div class="highlight">
+              Every visual choice should help tell the story
+            </div>
 
+            <h2 id="story">Build a Clear Story</h2>
+            <p>
+              A short animation still needs a beginning a progression and a visual payoff
+            </p>
+            <p>
+              The creative direction should explain whether the goal is to introduce a product explain an idea or create an emotional moment
+            </p>
 
-        </main>
-
-
-        <!-- SIDEBAR -->
-
-        <aside class="sidebar">
-
-
-          <div class="sidebar-box">
-
-            <h3>
-              Article Contents
-            </h3>
-
-
-            <ul class="toc">
-
-              <li>
-                <a href="#introduction">
-                  Introduction
-                </a>
-              </li>
-
-              <li>
-                <a href="#story">
-                  Start With the Story
-                </a>
-              </li>
-
-              <li>
-                <a href="#composition">
-                  Composition
-                </a>
-              </li>
-
-              <li>
-                <a href="#lighting">
-                  Lighting
-                </a>
-              </li>
-
-              <li>
-                <a href="#camera">
-                  Camera Movement
-                </a>
-              </li>
-
-              <li>
-                <a href="#animation">
-                  Animation Timing
-                </a>
-              </li>
-
-              <li>
-                <a href="#render">
-                  Rendering
-                </a>
-              </li>
-
-              <li>
-                <a href="#conclusion">
-                  Conclusion
-                </a>
-              </li>
-
+            <h2 id="composition">Guide the Eye</h2>
+            <p>
+              Composition organizes the visual information inside each frame
+            </p>
+            <ul>
+              <li>Place the subject where it attracts attention</li>
+              <li>Use open space to create atmosphere</li>
+              <li>Choose a camera angle that supports the scene</li>
+              <li>Keep the main idea clear in every shot</li>
             </ul>
 
-          </div>
-
-
-          <div class="sidebar-box">
-
-            <h3>
-              Need Production?
-            </h3>
-
+            <h2 id="lighting">Shape the Mood With Light</h2>
             <p>
-              Have a project that requires CGI, 3D animation, VFX or cinematic production?
+              Lighting can make the same scene feel dramatic calm luxurious or futuristic
+            </p>
+            <p>
+              Thoughtful lighting supports the story and helps the audience understand the subject
             </p>
 
-            <br>
+            <h2 id="camera">Move the Camera With Purpose</h2>
+            <p>
+              Camera movement works best when it has a clear reason
+            </p>
+            <p>
+              A slow move can build anticipation while a wider view can reveal the scale of a scene
+            </p>
 
-            <a
-              href="request-a-quote.html"
-              class="cta-button"
-            >
-              Request a Quote
-            </a>
+            <h2 id="timing">Give Every Movement the Right Timing</h2>
+            <p>
+              Timing helps animation feel natural and gives each action the right energy
+            </p>
+            <p>
+              Movement should suit the subject the camera and the emotion of the scene
+            </p>
 
+            <h2 id="finish">Bring the Final Image Together</h2>
+            <p>
+              Rendering is one part of the process
+            </p>
+            <p>
+              Compositing color work sound and editing help bring the finished sequence together
+            </p>
+
+            <h2 id="conclusion">A Strong Visual Story</h2>
+            <p>
+              Cinematic 3D animation brings creative direction and technical production together
+            </p>
+            <p>
+              Clear storytelling thoughtful composition lighting and timing help every frame work toward one visual idea
+            </p>
+
+            <div class="author-box">
+              <h2>About the Studio</h2>
+              <p>
+                PT Autotube Crew Studio creates CGI 3D animation VFX and digital visual content for brands and production teams
+              </p>
+            </div>
           </div>
 
+          <aside class="sidebar">
+            <nav class="sidebar-box" aria-label="Article contents">
+              <h2>In This Article</h2>
+              <ul class="toc">
+                <li><a href="#introduction">The Idea Comes First</a></li>
+                <li><a href="#story">Build a Clear Story</a></li>
+                <li><a href="#composition">Guide the Eye</a></li>
+                <li><a href="#lighting">Shape the Mood With Light</a></li>
+                <li><a href="#camera">Move the Camera With Purpose</a></li>
+                <li><a href="#timing">Movement and Timing</a></li>
+                <li><a href="#finish">Final Image</a></li>
+                <li><a href="#conclusion">A Strong Visual Story</a></li>
+              </ul>
+            </nav>
 
-        </aside>
+            <div class="sidebar-box">
+              <h3>Planning a Project</h3>
+              <p>Tell us about the visual work you need</p>
+              <a class="button button-primary" href="request-a-quote.html">Request a Quote</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </article>
 
+    <section class="explore-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Explore More</p>
+          <h2>More from the studio</h2>
+          <p>Learn about our production services and process</p>
+        </div>
 
+        <div class="explore-grid">
+          <a class="explore-card" href="cgi.html">
+            <h3>CGI Production</h3>
+            <p>Explore computer generated visuals for products and creative projects</p>
+            <span>Explore CGI</span>
+          </a>
+
+          <a class="explore-card" href="vfx.html">
+            <h3>Visual Effects</h3>
+            <p>Learn about visual effects and digital compositing</p>
+            <span>Explore VFX</span>
+          </a>
+
+          <a class="explore-card" href="our-workflow.html">
+            <h3>Our Workflow</h3>
+            <p>See how projects move from planning through final delivery</p>
+            <span>View Our Workflow</span>
+          </a>
+        </div>
       </div>
+    </section>
 
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       RELATED ARTICLES
-  ========================= -->
-
-  <section class="related">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        More From the Studio
-      </h2>
-
-
-      <div class="related-grid">
-
-
-        <article class="related-card">
-
-          <div class="category">
-            CGI
-          </div>
-
-          <h3>
-            Why CGI Is Changing Modern Product Advertising
-          </h3>
-
-          <p>
-            Explore how CGI gives brands greater creative control over product visualization and advertising.
-          </p>
-
-          <a href="blog-post.html" class="related-link">
-            Read Article →
-          </a>
-
-        </article>
-
-
-        <article class="related-card">
-
-          <div class="category">
-            VFX
-          </div>
-
-          <h3>
-            Understanding VFX in Cinematic Storytelling
-          </h3>
-
-          <p>
-            How visual effects can enhance environments, realism and cinematic storytelling.
-          </p>
-
-          <a href="blog-post.html" class="related-link">
-            Read Article →
-          </a>
-
-        </article>
-
-
-        <article class="related-card">
-
-          <div class="category">
-            Production
-          </div>
-
-          <h3>
-            From Creative Brief to Final Render
-          </h3>
-
-          <p>
-            A look at the production pipeline behind professional visual content.
-          </p>
-
-          <a href="blog-post.html" class="related-link">
-            Read Article →
-          </a>
-
-        </article>
-
-
+    <section class="cta-section">
+      <div class="container">
+        <p class="section-label">Start a Conversation</p>
+        <h2>Have a visual project in mind</h2>
+        <p>
+          Tell us about your idea and we can discuss a suitable production approach
+        </p>
+        <a class="button button-primary" href="request-a-quote.html">Request a Quote</a>
       </div>
+    </section>
+  </main>
 
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       CTA
-  ========================= -->
-
-  <section class="cta">
-
+  <footer class="site-footer">
     <div class="container">
-
-      <h2>
-        Have a Visual Project in Mind?
-      </h2>
-
-      <p>
-        Tell us about your idea and let our creative team explore the right production approach for your project.
-      </p>
-
-      <a
-        href="request-a-quote.html"
-        class="cta-button"
-      >
-        Request a Quote
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
-  <footer>
-
-    <div class="container">
-
-
       <div class="footer-grid">
-
-
         <div>
-
-          <h3 class="footer-title">
-            PT Autotube Crew Studio
-          </h3>
-
-          <p class="footer-text">
-            Visual production studio creating CGI, 3D animation, VFX and cinematic content.
+          <h2 class="footer-title">PT Autotube Crew Studio</h2>
+          <p class="footer-copy">
+            CGI 3D animation VFX and video production for brands and creative teams
           </p>
-
         </div>
-
 
         <div>
-
-          <h3 class="footer-title">
-            Explore
-          </h3>
-
+          <h2 class="footer-title">Explore</h2>
           <ul class="footer-links">
-
-            <li>
-              <a href="about.html">
-                About Us
-              </a>
-            </li>
-
-            <li>
-              <a href="services.html">
-                Services
-              </a>
-            </li>
-
-            <li>
-              <a href="portfolio.html">
-                Portfolio
-              </a>
-            </li>
-
-            <li>
-              <a href="case-studies.html">
-                Case Studies
-              </a>
-            </li>
-
-            <li>
-              <a href="industries.html">
-                Industries
-              </a>
-            </li>
-
-            <li>
-              <a href="faq.html">
-                FAQ
-              </a>
-            </li>
-
-            <li>
-              <a href="blog.html">
-                Blog
-              </a>
-            </li>
-
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
-
         </div>
-
 
         <div>
-
-          <h3 class="footer-title">
-            Services
-          </h3>
-
+          <h2 class="footer-title">Contact</h2>
           <ul class="footer-links">
-
+            <li><a href="mailto:autotubecrewstudio@gmail.com">Email the Studio</a></li>
             <li>
-              <a href="3d-animation.html">
-                3D Animation
+              <a href="https://wa.me/628139953162" target="_blank" rel="noopener noreferrer">
+                Message on WhatsApp
               </a>
             </li>
-
-            <li>
-              <a href="vfx.html">
-                VFX
-              </a>
-            </li>
-
-            <li>
-              <a href="cgi.html">
-                CGI
-              </a>
-            </li>
-
-            <li>
-              <a href="video-production.html">
-                Video Production
-              </a>
-            </li>
-
+            <li><a href="contact.html">Contact Page</a></li>
           </ul>
-
         </div>
-
-
       </div>
-
 
       <div class="footer-bottom">
-
-        © 2026 PT Autotube Crew Studio. All Rights Reserved.
-
+        PT Autotube Crew Studio
       </div>
-
-
     </div>
-
   </footer>
 
+  <script>
+    const menuButton = document.getElementById("menu-button");
+    const navigation = document.getElementById("primary-navigation");
 
+    function closeNavigation() {
+      navigation.classList.remove("is-open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation menu");
+    }
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = navigation.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+    });
+
+    navigation.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeNavigation);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeNavigation();
+      }
+    });
+  </script>
 </body>
-
 </html>
