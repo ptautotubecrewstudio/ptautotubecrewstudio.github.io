@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://ptautubecrewstudio.github.io/</loc>
-<lastmod>2026-07-30</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-</url>
-
+  <url><loc>https://ptautotubecrewstudio.github.io/</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/3d-animation.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/about.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/blog-post.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/blog.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/careers.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/case-studies.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/cgi.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/clients.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/contact.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/downloads.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/events.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/faq.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/industries.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/media-kit.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/news.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/our-workflow.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/partners.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/portfolio.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/press-kit.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/pricing.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/privacy-policy.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/project-details.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/request-a-quote.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/services.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/showreel.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/team.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/technology.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/terms-and-conditions.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/testimonials.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/vfx.html</loc></url>
+  <url><loc>https://ptautotubecrewstudio.github.io/video-production.html</loc></url>
 </urlset>
