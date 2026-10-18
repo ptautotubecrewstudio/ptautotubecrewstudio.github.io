@@ -1,689 +1,730 @@
-<!-- privacy-policy.html -->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Privacy Policy | PT Autotube Crew Studio</title>
-
-<meta name="description" content="Privacy Policy for PT Autotube Crew Studio explaining how information may be collected, used, protected and managed when visiting our website.">
-
-<meta name="robots" content="index, follow">
-
-<link rel="icon" href="logo.png.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Poppins',sans-serif;
-background:#050505;
-color:#fff;
-line-height:1.8;
-overflow-x:hidden;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-header{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(0,0,0,.94);
-border-bottom:1px solid #222;
-backdrop-filter:blur(12px);
-}
-
-.header-inner{
-min-height:80px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:30px;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:12px;
-font-size:22px;
-font-weight:700;
-}
-
-.logo img{
-width:48px;
-height:48px;
-object-fit:contain;
-}
-
-nav{
-display:flex;
-align-items:center;
-gap:25px;
-}
-
-nav a{
-font-size:15px;
-color:#ddd;
-transition:.3s;
-}
-
-nav a:hover{
-color:#e50914;
-}
-
-.menu-button{
-display:none;
-background:none;
-border:0;
-color:#fff;
-font-size:28px;
-cursor:pointer;
-}
-
-.mobile-nav{
-display:none;
-background:#0b0b0b;
-border-top:1px solid #222;
-}
-
-.mobile-nav a{
-display:block;
-padding:14px 5%;
-border-bottom:1px solid #222;
-color:#ddd;
-}
-
-.mobile-nav.active{
-display:block;
-}
-
-.hero{
-padding:100px 0 80px;
-background:
-radial-gradient(circle at top right,rgba(229,9,20,.15),transparent 35%),
-#050505;
-}
-
-.hero-content{
-max-width:900px;
-margin:auto;
-text-align:center;
-}
-
-.hero h1{
-font-size:54px;
-line-height:1.15;
-font-weight:800;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:16px;
-color:#aaa;
-}
-
-.policy-section{
-padding:80px 0;
-}
-
-.policy-wrapper{
-max-width:950px;
-margin:auto;
-background:#111;
-border:1px solid #252525;
-border-radius:18px;
-padding:45px;
-}
-
-.policy-section h2{
-font-size:27px;
-margin:38px 0 14px;
-}
-
-.policy-section h2:first-child{
-margin-top:0;
-}
-
-.policy-section h3{
-font-size:19px;
-margin:25px 0 10px;
-}
-
-.policy-section p{
-font-size:14px;
-color:#aaa;
-margin-bottom:15px;
-}
-
-.policy-section ul{
-margin:10px 0 20px 22px;
-color:#aaa;
-}
-
-.policy-section li{
-font-size:14px;
-margin-bottom:8px;
-}
-
-.policy-section a{
-color:#e50914;
-}
-
-.policy-section a:hover{
-text-decoration:underline;
-}
-
-.last-updated{
-display:inline-block;
-padding:7px 14px;
-border:1px solid #333;
-border-radius:30px;
-font-size:12px;
-color:#aaa;
-margin-bottom:30px;
-}
-
-.highlight{
-background:#0a0a0a;
-border-left:3px solid #e50914;
-padding:18px 20px;
-margin:20px 0;
-border-radius:5px;
-}
-
-.highlight p{
-margin:0;
-}
-
-.cta{
-padding:90px 0;
-text-align:center;
-background:#0b0b0b;
-border-top:1px solid #222;
-}
-
-.cta h2{
-font-size:38px;
-margin-bottom:15px;
-}
-
-.cta p{
-max-width:700px;
-margin:0 auto 28px;
-color:#aaa;
-font-size:15px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 32px;
-border-radius:40px;
-background:#e50914;
-font-weight:600;
-transition:.3s;
-}
-
-.btn:hover{
-background:#ff2633;
-transform:translateY(-3px);
-}
-
-footer{
-background:#090909;
-border-top:1px solid #222;
-padding:45px 0;
-text-align:center;
-}
-
-footer p{
-color:#888;
-font-size:14px;
-margin-bottom:10px;
-}
-
-.footer-links{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.footer-links a{
-font-size:13px;
-color:#777;
-transition:.3s;
-}
-
-.footer-links a:hover{
-color:#e50914;
-}
-
-@media(max-width:950px){
-
-nav{
-display:none;
-}
-
-.menu-button{
-display:block;
-}
-
-.hero h1{
-font-size:46px;
-}
-
-}
-
-@media(max-width:650px){
-
-.container{
-width:92%;
-}
-
-.header-inner{
-min-height:70px;
-}
-
-.logo{
-font-size:16px;
-}
-
-.logo img{
-width:40px;
-height:40px;
-}
-
-.hero{
-padding:75px 0 60px;
-}
-
-.hero h1{
-font-size:36px;
-}
-
-.hero p{
-font-size:14px;
-}
-
-.policy-section{
-padding:55px 0;
-}
-
-.policy-wrapper{
-padding:27px 22px;
-}
-
-.policy-section h2{
-font-size:23px;
-margin-top:32px;
-}
-
-.policy-section h3{
-font-size:17px;
-}
-
-.policy-section p,
-.policy-section li{
-font-size:13px;
-}
-
-.cta{
-padding:65px 0;
-}
-
-.cta h2{
-font-size:30px;
-}
-
-.btn{
-width:100%;
-text-align:center;
-}
-
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy | PT Autotube Crew Studio</title>
+
+  <meta
+    name="description"
+    content="Learn how PT Autotube Crew Studio handles information shared through this website and its contact options."
+  >
+  <meta name="author" content="PT Autotube Crew Studio">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Privacy Policy | PT Autotube Crew Studio">
+  <meta
+    property="og:description"
+    content="Privacy information for visitors and people contacting PT Autotube Crew Studio."
+  >
+  <meta
+    property="og:url"
+    content="https://ptautotubecrewstudio.github.io/privacy-policy.html"
+  >
+
+  <link
+    rel="canonical"
+    href="https://ptautotubecrewstudio.github.io/privacy-policy.html"
+  >
+  <link rel="icon" href="logo.png.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #050505;
+      color: #ffffff;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, 1200px);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      background: rgba(5, 5, 5, 0.95);
+      border-bottom: 1px solid #242424;
+      backdrop-filter: blur(14px);
+    }
+
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      position: relative;
+      display: block;
+      width: 150px;
+      height: 64px;
+      flex: 0 0 150px;
+      overflow: hidden;
+    }
+
+    .brand-mark img {
+      position: absolute;
+      top: -42px;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      max-width: none;
+      object-fit: cover;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .desktop-nav a,
+    .mobile-nav a {
+      color: #d0d0d0;
+      font-size: 14px;
+      transition: color 0.2s ease;
+    }
+
+    .desktop-nav a:hover,
+    .mobile-nav a:hover {
+      color: #ff2633;
+    }
+
+    .nav-contact {
+      padding: 9px 15px;
+      border: 1px solid #e50914;
+    }
+
+    .menu-button {
+      display: none;
+      border: 0;
+      padding: 8px;
+      background: transparent;
+      color: #ffffff;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      width: 100%;
+      padding: 12px 5% 18px;
+      background: #090909;
+      border-top: 1px solid #242424;
+    }
+
+    .mobile-nav.is-open {
+      display: grid;
+    }
+
+    .mobile-nav a {
+      padding: 11px 0;
+      border-bottom: 1px solid #202020;
+    }
+
+    .mobile-nav a:last-child {
+      border-bottom: 0;
+    }
+
+    main {
+      padding-top: 82px;
+    }
+
+    .hero {
+      padding: 88px 0 68px;
+      text-align: center;
+      background:
+        radial-gradient(circle at top right, rgba(229, 9, 20, 0.15), transparent 38%),
+        #050505;
+      border-bottom: 1px solid #222222;
+    }
+
+    .eyebrow {
+      margin-bottom: 13px;
+      color: #ff2633;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin-bottom: 16px;
+      font-size: clamp(36px, 5vw, 54px);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #c2c2c2;
+      font-size: 15px;
+    }
+
+    .policy-section {
+      padding: 64px 0 80px;
+    }
+
+    .policy-card {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 42px;
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 16px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-bottom: 24px;
+      padding: 6px 12px;
+      color: #c5c5c5;
+      background: #171717;
+      border: 1px solid #303030;
+      border-radius: 24px;
+      font-size: 12px;
+    }
+
+    .policy-card h2 {
+      margin: 34px 0 11px;
+      font-size: 22px;
+      line-height: 1.35;
+    }
+
+    .policy-card h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .policy-card p,
+    .policy-card li {
+      color: #b7b7b7;
+      font-size: 14px;
+    }
+
+    .policy-card p {
+      margin-bottom: 14px;
+    }
+
+    .policy-card ul {
+      margin: 10px 0 18px 22px;
+    }
+
+    .policy-card li {
+      margin-bottom: 7px;
+    }
+
+    .policy-card a {
+      color: #ff4b55;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+
+    .policy-card a:hover {
+      color: #ffffff;
+    }
+
+    .notice {
+      margin: 20px 0;
+      padding: 17px 19px;
+      background: #0a0a0a;
+      border-left: 3px solid #e50914;
+      border-radius: 4px;
+    }
+
+    .notice p {
+      margin: 0;
+    }
+
+    .contact-section {
+      padding: 70px 0;
+      text-align: center;
+      background: #0a0a0a;
+      border-top: 1px solid #222222;
+    }
+
+    .contact-section h2 {
+      margin-bottom: 12px;
+      font-size: clamp(28px, 4vw, 38px);
+    }
+
+    .contact-section p {
+      max-width: 680px;
+      margin: 0 auto;
+      color: #b7b7b7;
+      font-size: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 24px;
+      background: #e50914;
+      border: 1px solid #e50914;
+      border-radius: 28px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #ff2633;
+    }
+
+    .site-footer {
+      padding: 22px 0;
+      background: #070707;
+      border-top: 1px solid #222222;
+      text-align: center;
+    }
+
+    .footer-copy {
+      margin-bottom: 10px;
+      color: #888888;
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #999999;
+      font-size: 12px;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 900px) {
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-button {
+        display: block;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .navbar {
+        min-height: 72px;
+      }
+
+      .logo {
+        gap: 7px;
+        font-size: 13px;
+      }
+
+      .brand-mark {
+        width: 112px;
+        height: 50px;
+        flex-basis: 112px;
+      }
+
+      .brand-mark img {
+        top: -31px;
+        width: 112px;
+        height: 112px;
+      }
+
+      main {
+        padding-top: 72px;
+      }
+
+      .hero {
+        padding: 68px 0 54px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .policy-section {
+        padding: 42px 0 58px;
+      }
+
+      .policy-card {
+        padding: 25px 20px;
+      }
+
+      .policy-card h2 {
+        margin-top: 28px;
+        font-size: 20px;
+      }
+
+      .policy-card p,
+      .policy-card li {
+        font-size: 13px;
+      }
+
+      .contact-section {
+        padding: 56px 0;
+      }
+
+      .button {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-<header>
-
-<div class="container header-inner">
-
-<a href="index.html" class="logo">
-
-<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-
-<span>PT Autotube Crew Studio</span>
-
-</a>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="workflow.html">Workflow</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-<button class="menu-button" id="menuButton" aria-label="Open navigation">
-☰
-</button>
-
-</div>
-
-<div class="mobile-nav" id="mobileNav">
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="workflow.html">Workflow</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
-</header>
-
-<main>
-
-<section class="hero">
-
-<div class="container hero-content">
-
-<h1>Privacy Policy</h1>
-
-<p>
-Information about how PT Autotube Crew Studio handles information when you use our website.
-</p>
-
-</div>
-
-</section>
-
-<section class="policy-section">
-
-<div class="container">
-
-<div class="policy-wrapper">
-
-<span class="last-updated">
-Last Updated: August 2026
-</span>
-
-<h2>1. Introduction</h2>
-
-<p>
-PT Autotube Crew Studio respects your privacy and is committed to protecting information that you provide when using our website.
-</p>
-
-<p>
-This Privacy Policy explains the general ways information may be collected, used, stored and protected when you visit our website or contact our studio.
-</p>
-
-<div class="highlight">
-
-<p>
-By using this website, you acknowledge that you have read and understood this Privacy Policy.
-</p>
-
-</div>
-
-<h2>2. Information We May Collect</h2>
-
-<p>
-Depending on how you interact with our website, we may receive information that you voluntarily provide to us.
-</p>
-
-<h3>Contact Information</h3>
-
-<p>
-If you contact us through a contact form, email or other communication method, information may include:
-</p>
-
-<ul>
-
-<li>Your name</li>
-<li>Company or organization name</li>
-<li>Email address</li>
-<li>Phone number or WhatsApp number</li>
-<li>Project information</li>
-<li>Other information you choose to provide</li>
-
-</ul>
-
-<h3>Technical Information</h3>
-
-<p>
-Our website or hosting infrastructure may automatically process certain technical information such as browser type, device information, approximate location, IP address and general website usage information.
-</p>
-
-<h2>3. How We Use Information</h2>
-
-<p>
-Information provided to us may be used for legitimate business and communication purposes, including:
-</p>
-
-<ul>
-
-<li>Responding to inquiries</li>
-<li>Discussing potential projects</li>
-<li>Providing requested services</li>
-<li>Communicating with clients and partners</li>
-<li>Improving our website and services</li>
-<li>Maintaining website security</li>
-<li>Managing business operations</li>
-
-</ul>
-
-<h2>4. Project Information</h2>
-
-<p>
-If you provide project materials, creative references, documents or other information to PT Autotube Crew Studio, we will use those materials for the purpose for which they were provided and according to the applicable project agreement.
-</p>
-
-<p>
-Confidential project information may also be subject to separate confidentiality agreements or non-disclosure agreements where applicable.
-</p>
-
-<h2>5. Cookies</h2>
-
-<p>
-Our website may use cookies or similar technologies depending on the services, analytics tools, hosting configuration or other technologies implemented on the website.
-</p>
-
-<p>
-Cookies may help websites remember preferences, understand website usage and improve functionality.
-</p>
-
-<p>
-You can generally manage or disable cookies through your web browser settings. Disabling certain cookies may affect website functionality.
-</p>
-
-<h2>6. Third-Party Services</h2>
-
-<p>
-Our website may contain links to or use services provided by third parties. These services may have their own privacy policies and terms.
-</p>
-
-<p>
-PT Autotube Crew Studio is not responsible for the privacy practices, security or content of external websites or third-party services.
-</p>
-
-<h2>7. Data Security</h2>
-
-<p>
-We take reasonable measures to protect information handled through our website and business communications.
-</p>
-
-<p>
-However, no method of transmission over the internet or electronic storage system can be guaranteed to be completely secure.
-</p>
-
-<h2>8. Data Retention</h2>
-
-<p>
-We may retain information for as long as reasonably necessary for the purpose for which it was collected, to provide services, maintain business records, resolve disputes, comply with legal obligations or protect legitimate business interests.
-</p>
-
-<h2>9. Your Privacy Choices</h2>
-
-<p>
-Depending on applicable law, you may have rights regarding personal information provided to us, including the ability to request access, correction or deletion of certain information.
-</p>
-
-<p>
-To make a privacy-related request, please contact us using the information provided below.
-</p>
-
-<h2>10. Children's Privacy</h2>
-
-<p>
-Our website and services are intended for general business and professional audiences. We do not knowingly request personal information from children for business purposes.
-</p>
-
-<h2>11. Changes to This Privacy Policy</h2>
-
-<p>
-We may update this Privacy Policy from time to time to reflect changes in our website, services, business practices or applicable requirements.
-</p>
-
-<p>
-Any updated version will be published on this page with a revised update date.
-</p>
-
-<h2>12. Contact Us</h2>
-
-<p>
-If you have questions about this Privacy Policy or wish to make a privacy-related request, please contact PT Autotube Crew Studio.
-</p>
-
-<ul>
-
-<li><strong>Company:</strong> PT Autotube Crew Studio</li>
-
-<li><strong>Location:</strong> Jakarta, Indonesia</li>
-
-<li><strong>WhatsApp:</strong>
-<a href="https://wa.me/628139953162" target="_blank" rel="noopener">
-+62 813-9953-162
-</a>
-</li>
-
-<li><strong>Email:</strong>
-<a href="mailto:info@autotubecrew.com">
-info@autotubecrew.com
-</a>
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="cta">
-
-<div class="container">
-
-<h2>Questions About Privacy?</h2>
-
-<p>
-If you have questions about how we handle information or want to make a privacy-related request, please contact our studio.
-</p>
-
-<a href="contact.html" class="btn">
-Contact Us
-</a>
-
-</div>
-
-</section>
-
-</main>
-
-<footer>
-
-<div class="container">
-
-<p>
-© 2026 PT Autotube Crew Studio. All Rights Reserved.
-</p>
-
-<div class="footer-links">
-
-<a href="privacy-policy.html">Privacy Policy</a>
-
-<a href="terms.html">Terms & Conditions</a>
-
-<a href="faq.html">FAQ</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-</div>
-
-</footer>
-
-<script>
-
-const menuButton = document.getElementById("menuButton");
-const mobileNav = document.getElementById("mobileNav");
-
-menuButton.addEventListener("click", function(){
-
-mobileNav.classList.toggle("active");
-
-});
-
-mobileNav.querySelectorAll("a").forEach(function(link){
-
-link.addEventListener("click", function(){
-
-mobileNav.classList.remove("active");
-
-});
-
-});
-
-</script>
-
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="PT Autotube Crew Studio home">
+        <span class="brand-mark">
+          <img src="logo.png.png" alt="">
+        </span>
+        <span>PT Autotube Crew Studio</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="our-workflow.html">Workflow</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="mobileNavigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNavigation" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="our-workflow.html">Workflow</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Your Information</div>
+        <h1>Privacy Policy</h1>
+        <p>
+          This page explains what information may be handled when you visit
+          the PT Autotube Crew Studio website or contact the studio.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-section">
+      <div class="container">
+        <article class="policy-card">
+          <span class="updated">Last updated October 19 2026</span>
+
+          <h2>About This Policy</h2>
+          <p>
+            PT Autotube Crew Studio operates this website to share
+            information about the studio and its services. This policy
+            describes the website setup currently in use and how information
+            you choose to send may be handled.
+          </p>
+
+          <div class="notice">
+            <p>
+              The website is hosted on GitHub Pages. GitHub states that
+              visitor IP addresses may be logged and stored for security.
+              Please also read
+              <a
+                href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                target="_blank"
+                rel="noopener noreferrer"
+              >GitHub's Privacy Statement</a>.
+            </p>
+          </div>
+
+          <h2>Information You Choose to Send</h2>
+          <p>
+            If you contact the studio you may choose to provide information
+            such as your name email address company country phone or
+            WhatsApp number project details and files or links you include.
+            Please only send information you are allowed to share.
+          </p>
+
+          <h2>How Website Contact Works</h2>
+          <p>
+            The contact form currently opens your email application with a
+            prepared message. The website itself does not upload or store
+            that form information. The studio receives it only if you choose
+            to send the email from your email application.
+          </p>
+          <p>
+            A WhatsApp link opens a conversation in WhatsApp. Information is
+            shared with the studio only if you choose to send a message.
+            Email and WhatsApp are operated by third parties and their own
+            privacy terms apply.
+          </p>
+
+          <h2>Technical Information and Website Hosting</h2>
+          <p>
+            GitHub Pages hosts this website. When you visit it GitHub may
+            process technical information such as your IP address and
+            request details to deliver and protect the site. Read
+            <a
+              href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub Pages information</a>
+            and
+            <a
+              href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub's Privacy Statement</a>
+            for details.
+          </p>
+
+          <h2>Third-Party Services</h2>
+          <p>
+            Some pages load fonts from Google Fonts. Your browser may contact
+            Google to retrieve those fonts and Google may process technical
+            request information under its
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Privacy Policy</a>.
+          </p>
+          <p>
+            If you choose to use WhatsApp or an external link those services
+            handle information under their own privacy policies. You can
+            review
+            <a
+              href="https://www.whatsapp.com/legal/privacy-policies"
+              target="_blank"
+              rel="noopener noreferrer"
+            >WhatsApp's privacy policies</a>
+            before using WhatsApp.
+          </p>
+          <p>
+            This website does not currently send contact form responses to
+            a spreadsheet or a website database. If a form service analytics
+            tool or other data collection service is added the policy should
+            be updated to explain that change.
+          </p>
+
+          <h2>How Information May Be Used</h2>
+          <p>
+            Information you send to the studio may be used to respond to
+            your inquiry discuss a project provide agreed services maintain
+            business records or address legal and security matters.
+          </p>
+
+          <h2>Sharing and Retention</h2>
+          <p>
+            The studio does not publish your private inquiry on this
+            website. Information may be handled by the service providers
+            needed to communicate with you or host the website. It may also
+            be disclosed if required by applicable law.
+          </p>
+          <p>
+            Messages and project information are kept only as long as
+            reasonably needed to respond manage a business relationship
+            maintain necessary records or meet legal obligations.
+          </p>
+
+          <h2>Cookies and Similar Technologies</h2>
+          <p>
+            The website pages described here do not intentionally use
+            advertising cookies or an analytics service to collect contact
+            form responses. GitHub Pages and third-party services may handle
+            technical data according to their own policies. Your browser
+            settings may let you manage cookies and external content.
+          </p>
+
+          <h2>Keeping Information Secure</h2>
+          <p>
+            The studio takes reasonable steps to handle received information
+            responsibly. No internet transmission or electronic storage
+            method can be guaranteed to be completely secure.
+          </p>
+
+          <h2>Your Privacy Requests</h2>
+          <p>
+            Indonesian Law No. 27 of 2022 on Personal Data Protection
+            addresses the processing of personal data and the rights of
+            individuals. You may contact the studio to ask about personal
+            information you have sent or to request a correction or deletion
+            where applicable.
+          </p>
+          <p>
+            Read the official
+            <a
+              href="https://peraturan.bpk.go.id/Details/229798/uu-no-27-"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Indonesian Personal Data Protection Law</a>.
+          </p>
+
+          <h2>Children</h2>
+          <p>
+            This website is intended for general audiences and business
+            inquiries. Please contact the studio if you believe a child has
+            sent personal information through the website.
+          </p>
+
+          <h2>Changes to This Policy</h2>
+          <p>
+            This policy may be updated when website features or information
+            handling practices change. The latest update date will be shown
+            near the start of this page.
+          </p>
+
+          <h2>Contact the Studio</h2>
+          <p>
+            For questions or privacy requests contact PT Autotube Crew
+            Studio in Jakarta Indonesia.
+          </p>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:autotubecrewstudio@gmail.com">
+                autotubecrewstudio@gmail.com
+              </a>
+            </li>
+            <li>
+              WhatsApp:
+              <a
+                href="https://wa.me/628139953162"
+                target="_blank"
+                rel="noopener noreferrer"
+              >+62 813-9953-162</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <h2>Privacy Question?</h2>
+        <p>
+          Contact the studio if you want to ask about information you have
+          shared or make a privacy-related request.
+        </p>
+        <a
+          class="button"
+          href="mailto:autotubecrewstudio@gmail.com?subject=Privacy%20Request"
+        >
+          Email the Studio
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-copy">
+        © 2026 PT Autotube Crew Studio. All rights reserved.
+      </p>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms and Conditions</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileNavigation = document.getElementById("mobileNavigation");
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = mobileNavigation.classList.toggle("is-open");
+
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+      menuButton.textContent = isOpen ? "×" : "☰";
+    });
+
+    mobileNavigation.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileNavigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
+        menuButton.textContent = "☰";
+      });
+    });
+  </script>
 </body>
-
 </html>
