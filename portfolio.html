@@ -1,1331 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio | PT Autotube Crew Studio | CGI 3D Animation VFX</title>
+  <title>Portfolio | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Explore the portfolio of PT Autotube Crew Studio featuring CGI, 3D animation, visual effects, product visualization, motion graphics and digital production work.">
+  <meta
+    name="description"
+    content="Explore selected visual work by PT Autotube Crew Studio and watch the studio showreel."
+  >
+  <meta name="author" content="PT Autotube Crew Studio">
+  <meta name="robots" content="index, follow">
+  <meta
+    property="og:title"
+    content="Portfolio | PT Autotube Crew Studio"
+  >
+  <meta
+    property="og:description"
+    content="Explore selected visual work and the studio showreel from PT Autotube Crew Studio."
+  >
+  <meta
+    property="og:type"
+    content="website"
+  >
+  <meta
+    property="og:url"
+    content="https://ptautotubecrewstudio.github.io/portfolio.html"
+  >
+  <meta
+    property="og:image"
+    content="https://ptautotubecrewstudio.github.io/portfolio01.png.png"
+  >
+  <meta name="twitter:card" content="summary_large_image">
 
-<meta name="keywords" content="PT Autotube Crew Studio Portfolio, CGI Portfolio, 3D Animation Portfolio, VFX Portfolio, Product Visualization, Motion Graphics, 3D Environment, Animation Studio Indonesia">
+  <link
+    rel="canonical"
+    href="https://ptautotubecrewstudio.github.io/portfolio.html"
+  >
+  <link rel="icon" href="logo.png.png">
 
-<meta name="author" content="PT Autotube Crew Studio">
-<meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Portfolio | PT Autotube Crew Studio">
-<meta property="og:description" content="Explore CGI, 3D animation, VFX, product visualization and creative production work by PT Autotube Crew Studio.">
-<meta property="og:image" content="portfolio01.png.png">
-<meta property="og:url" content="https://www.autotubecrewstudio.com/portfolio.html">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Portfolio | PT Autotube Crew Studio">
-<meta name="twitter:description" content="Explore our CGI, 3D animation, VFX and digital production portfolio.">
-<meta name="twitter:image" content="portfolio01.png.png">
+    html {
+      scroll-behavior: smooth;
+    }
 
-<link rel="icon" href="logo.png.png">
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #050505;
+      color: #ffffff;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    img,
+    video {
+      display: block;
+      max-width: 100%;
+    }
 
-<style>
+    .container {
+      width: min(92%, 1240px);
+      margin: 0 auto;
+    }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      background: rgba(5, 5, 5, 0.95);
+      border-bottom: 1px solid #242424;
+      backdrop-filter: blur(14px);
+    }
 
-html{
-    scroll-behavior:smooth;
-}
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#050505;
-    color:#ffffff;
-    line-height:1.7;
-    overflow-x:hidden;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 17px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
 
-a{
-    text-decoration:none;
-    color:inherit;
-}
+    .brand-mark {
+      position: relative;
+      display: block;
+      width: 150px;
+      height: 64px;
+      flex: 0 0 150px;
+      overflow: hidden;
+    }
 
-img{
-    width:100%;
-    display:block;
-}
+    .brand-mark img {
+      position: absolute;
+      top: -42px;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      max-width: none;
+      object-fit: cover;
+    }
 
-.container{
-    width:90%;
-    max-width:1400px;
-    margin:auto;
-}
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
 
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:rgba(0,0,0,.92);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-    z-index:1000;
-}
+    .desktop-nav a,
+    .mobile-nav a {
+      color: #d0d0d0;
+      font-size: 14px;
+      transition: color 0.2s ease;
+    }
 
-header .container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 0;
-}
+    .desktop-nav a:hover,
+    .mobile-nav a:hover {
+      color: #ff2633;
+    }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:23px;
-    font-weight:700;
-}
+    .nav-contact {
+      padding: 9px 15px;
+      border: 1px solid #e50914;
+    }
 
-.logo img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
-}
+    .menu-button {
+      display: none;
+      border: 0;
+      padding: 8px;
+      background: transparent;
+      color: #ffffff;
+      font-size: 28px;
+      cursor: pointer;
+    }
 
-nav ul{
-    display:flex;
-    align-items:center;
-    list-style:none;
-    gap:28px;
-}
+    .mobile-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      width: 100%;
+      padding: 12px 5% 18px;
+      background: #090909;
+      border-top: 1px solid #242424;
+    }
 
-nav a{
-    font-size:15px;
-    font-weight:500;
-    transition:.3s;
-}
+    .mobile-nav.is-open {
+      display: grid;
+    }
 
-nav a:hover{
-    color:#e50914;
-}
+    .mobile-nav a {
+      padding: 11px 0;
+      border-bottom: 1px solid #202020;
+    }
 
-.dropdown{
-    position:absolute;
-    top:100%;
-    left:0;
-    min-width:230px;
-    padding:12px 0;
-    background:#111;
-    border:1px solid #252525;
-    border-radius:12px;
-    display:none;
-}
+    .mobile-nav a:last-child {
+      border-bottom: 0;
+    }
 
-nav li{
-    position:relative;
-}
+    main {
+      padding-top: 82px;
+    }
 
-nav li:hover .dropdown{
-    display:block;
-}
-
-.dropdown a{
-    display:block;
-    padding:11px 20px;
-}
-
-.dropdown a:hover{
-    background:#1b1b1b;
-}
-
-.mobile-menu-btn{
-    display:none;
-    border:none;
-    background:none;
-    color:#fff;
-    font-size:29px;
-    cursor:pointer;
-}
-
-.mobile-menu{
-    display:none;
-    background:#0b0b0b;
-    border-top:1px solid #222;
-    padding:15px 20px;
-}
-
-.mobile-menu.active{
-    display:block;
-}
-
-.mobile-menu a{
-    display:block;
-    padding:13px 5px;
-    border-bottom:1px solid #222;
-    font-size:15px;
-}
-
-.mobile-menu a:hover{
-    color:#e50914;
-}
-
-.page-hero{
-    padding:180px 0 110px;
-    text-align:center;
-    background:
-        radial-gradient(circle at center,rgba(229,9,20,.14),transparent 55%),
+    .hero {
+      padding: 105px 0 85px;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, 0.15), transparent 55%),
         #050505;
-}
-
-.page-hero h1{
-    font-size:64px;
-    line-height:1.15;
-    font-weight:800;
-    margin-bottom:22px;
-}
-
-.page-hero p{
-    max-width:850px;
-    margin:auto;
-    color:#cfcfcf;
-    font-size:18px;
-}
-
-.portfolio-section{
-    padding:100px 0;
-    background:#090909;
-}
-
-.portfolio-intro{
-    text-align:center;
-    max-width:850px;
-    margin:0 auto 60px;
-}
-
-.portfolio-intro h2{
-    font-size:44px;
-    margin-bottom:18px;
-}
-
-.portfolio-intro p{
-    color:#cfcfcf;
-    font-size:16px;
-}
-
-.portfolio-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:28px;
-}
-
-.portfolio-card{
-    background:#111;
-    border:1px solid #252525;
-    border-radius:18px;
-    overflow:hidden;
-    transition:.35s;
-}
-
-.portfolio-card:hover{
-    transform:translateY(-8px);
-    border-color:#e50914;
-}
-
-.portfolio-image{
-    aspect-ratio:16/10;
-    overflow:hidden;
-    background:#151515;
-}
-
-.portfolio-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.5s;
-}
-
-.portfolio-card:hover .portfolio-image img{
-    transform:scale(1.05);
-}
-
-.portfolio-content{
-    padding:25px;
-}
-
-.portfolio-content h3{
-    font-size:23px;
-    margin-bottom:10px;
-}
-
-.portfolio-content p{
-    color:#bdbdbd;
-    font-size:15px;
-}
-
-.category{
-    display:inline-block;
-    margin-bottom:12px;
-    padding:5px 12px;
-    border-radius:30px;
-    background:#e50914;
-    color:#fff;
-    font-size:11px;
-    font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:.5px;
-}
-
-.process-section{
-    padding:100px 0;
-    background:#101010;
-}
-
-.process-title{
-    text-align:center;
-    margin-bottom:55px;
-}
-
-.process-title h2{
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-.process-title p{
-    color:#cfcfcf;
-    max-width:800px;
-    margin:auto;
-}
-
-.process-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-
-.process-card{
-    padding:30px;
-    background:#151515;
-    border:1px solid #252525;
-    border-radius:16px;
-}
-
-.process-number{
-    font-size:35px;
-    font-weight:800;
-    color:#e50914;
-    margin-bottom:15px;
-}
-
-.process-card h3{
-    font-size:21px;
-    margin-bottom:10px;
-}
-
-.process-card p{
-    color:#bdbdbd;
-    font-size:14px;
-}
-
-.cta{
-    padding:100px 0;
-    text-align:center;
-    background:
-        radial-gradient(circle at center,rgba(229,9,20,.12),transparent 60%),
-        #050505;
-}
-
-.cta h2{
-    font-size:44px;
-    margin-bottom:18px;
-}
-
-.cta p{
-    max-width:800px;
-    margin:auto;
-    color:#cfcfcf;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:32px;
-    padding:15px 35px;
-    border-radius:50px;
-    background:#e50914;
-    color:#fff;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#ff2935;
-    transform:translateY(-3px);
-}
-
-footer{
-    background:#090909;
-    padding:65px 0 30px;
-    border-top:1px solid #222;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.5fr 1fr 1fr 1.2fr;
-    gap:40px;
-}
-
-footer h3{
-    font-size:20px;
-    margin-bottom:18px;
-}
-
-footer p{
-    color:#999;
-    font-size:14px;
-    margin-bottom:9px;
-}
-
-footer a{
-    color:#aaa;
-    transition:.3s;
-}
-
-footer a:hover{
-    color:#fff;
-}
-
-.footer-bottom{
-    margin-top:50px;
-    padding-top:25px;
-    border-top:1px solid #222;
-    text-align:center;
-    color:#777;
-    font-size:13px;
-}
-
-#topBtn{
-    position:fixed;
-    right:22px;
-    bottom:22px;
-    width:52px;
-    height:52px;
-    border:none;
-    border-radius:50%;
-    background:#e50914;
-    color:#fff;
-    font-size:22px;
-    cursor:pointer;
-    display:none;
-    z-index:900;
-}
-
-#topBtn:hover{
-    transform:translateY(-4px);
-}
-
-@media(max-width:1100px){
-
-    .portfolio-grid{
-        grid-template-columns:repeat(2,1fr);
+      border-bottom: 1px solid #222222;
     }
 
-    .process-grid{
-        grid-template-columns:repeat(2,1fr);
+    .eyebrow {
+      margin-bottom: 14px;
+      color: #ff2633;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
 
-    .footer-grid{
-        grid-template-columns:repeat(2,1fr);
+    .hero h1 {
+      margin-bottom: 18px;
+      font-size: clamp(38px, 6vw, 62px);
+      line-height: 1.12;
     }
 
-}
-
-@media(max-width:900px){
-
-    nav{
-        display:none;
+    .hero p {
+      max-width: 780px;
+      margin: 0 auto;
+      color: #c4c4c4;
+      font-size: 16px;
     }
 
-    .mobile-menu-btn{
-        display:block;
+    .section {
+      padding: 82px 0;
     }
 
-    .page-hero{
-        padding-top:145px;
+    .section-dark {
+      background: #0a0a0a;
+      border-top: 1px solid #202020;
+      border-bottom: 1px solid #202020;
     }
 
-    .page-hero h1{
-        font-size:48px;
+    .section-heading {
+      max-width: 800px;
+      margin: 0 auto 38px;
+      text-align: center;
     }
 
-}
-
-@media(max-width:700px){
-
-    .container{
-        width:92%;
+    .section-heading h2 {
+      margin-bottom: 12px;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
     }
 
-    .logo{
-        font-size:17px;
+    .section-heading p {
+      color: #b8b8b8;
+      font-size: 15px;
     }
 
-    .logo img{
-        width:40px;
-        height:40px;
+    .showreel {
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 16px;
     }
 
-    .page-hero{
-        padding:130px 0 75px;
+    .showreel video {
+      width: 100%;
+      max-height: 560px;
+      background: #000000;
     }
 
-    .page-hero h1{
-        font-size:36px;
+    .showreel-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: #e5e5e5;
+      font-size: 14px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
-    .page-hero p{
-        font-size:15px;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
     }
 
-    .portfolio-section,
-    .process-section,
-    .cta{
-        padding:70px 0;
+    .gallery-item {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      background: #111111;
+      border: 1px solid #292929;
+      border-radius: 12px;
     }
 
-    .portfolio-intro h2,
-    .process-title h2,
-    .cta h2{
-        font-size:31px;
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
     }
 
-    .portfolio-grid{
-        grid-template-columns:1fr;
+    .gallery-item::after {
+      position: absolute;
+      inset: auto 0 0;
+      padding: 28px 16px 14px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.78));
+      color: #ffffff;
+      content: "View portfolio image";
+      font-size: 13px;
+      opacity: 0;
+      transition: opacity 0.25s ease;
     }
 
-    .process-grid{
-        grid-template-columns:1fr;
+    .gallery-item:hover img {
+      transform: scale(1.04);
     }
 
-    .footer-grid{
-        grid-template-columns:1fr;
+    .gallery-item:hover::after,
+    .gallery-item:focus-visible::after {
+      opacity: 1;
     }
 
-}
-
-@media(max-width:480px){
-
-    .page-hero h1{
-        font-size:32px;
+    .cta {
+      padding: 82px 0;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, 0.12), transparent 58%),
+        #070707;
     }
 
-    .portfolio-content{
-        padding:21px;
+    .cta h2 {
+      margin-bottom: 14px;
+      font-size: clamp(29px, 4vw, 40px);
     }
 
-}
+    .cta p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #bdbdbd;
+      font-size: 15px;
+    }
 
-</style>
+    .button {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 13px 26px;
+      border: 1px solid #e50914;
+      border-radius: 30px;
+      background: #e50914;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #ff2633;
+    }
+
+    .site-footer {
+      padding: 46px 0 22px;
+      background: #080808;
+      border-top: 1px solid #222222;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 32px;
+    }
+
+    .site-footer h2 {
+      margin-bottom: 12px;
+      font-size: 17px;
+    }
+
+    .site-footer p,
+    .footer-links a {
+      color: #999999;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 7px;
+    }
+
+    .site-footer a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 30px;
+      padding-top: 17px;
+      border-top: 1px solid #222222;
+      color: #777777;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .top-button {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 900;
+      width: 48px;
+      height: 48px;
+      border: 0;
+      border-radius: 50%;
+      background: #e50914;
+      color: #ffffff;
+      font-size: 21px;
+      cursor: pointer;
+    }
+
+    .top-button[hidden] {
+      display: none;
+    }
+
+    @media (max-width: 960px) {
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px) {
+      .navbar {
+        min-height: 72px;
+      }
+
+      .logo {
+        gap: 7px;
+        font-size: 14px;
+      }
+
+      .brand-mark {
+        width: 112px;
+        height: 50px;
+        flex-basis: 112px;
+      }
+
+      .brand-mark img {
+        top: -31px;
+        width: 112px;
+        height: 112px;
+      }
+
+      main {
+        padding-top: 72px;
+      }
+
+      .hero {
+        padding: 72px 0 62px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .section,
+      .cta {
+        padding: 62px 0;
+      }
+
+      .gallery,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item {
+        aspect-ratio: 4 / 3;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-<header>
-
-<div class="container">
-
-<a href="index.html" class="logo">
-<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-<span>PT Autotube Crew Studio</span>
-</a>
-
-<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation">
-☰
-</button>
-
-<nav>
-<ul>
-
-<li>
-<a href="index.html">Home</a>
-</li>
-
-<li>
-<a href="#">About ▼</a>
-<div class="dropdown">
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-</div>
-</li>
-
-<li>
-<a href="#">Services ▼</a>
-<div class="dropdown">
-<a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-</div>
-</li>
-
-<li>
-<a href="#">Portfolio ▼</a>
-<div class="dropdown">
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-</div>
-</li>
-
-<li>
-<a href="#">Resources ▼</a>
-<div class="dropdown">
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-</div>
-</li>
-
-<li>
-<a href="contact.html">Contact</a>
-</li>
-
-</ul>
-</nav>
-
-</div>
-
-<div class="mobile-menu" id="mobileMenu">
-
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-<a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
-</header>
-
-
-<section class="page-hero">
-
-<div class="container">
-
-<h1>Our Portfolio</h1>
-
-<p>
-Explore selected creative work from PT Autotube Crew Studio across CGI production, 3D animation, visual effects, product visualization, motion graphics and digital content production.
-</p>
-
-</div>
-
-</section>
-
-
-<section class="portfolio-section">
-
-<div class="container">
-
-<div class="portfolio-intro">
-
-<h2>Featured Creative Work</h2>
-
-<p>
-Our portfolio demonstrates our approach to visual storytelling, technical production and high-quality digital content. Each project is developed with attention to composition, detail, lighting, animation and presentation.
-</p>
-
-</div>
-
-
-<div class="portfolio-grid">
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio01.png.png" alt="Commercial CGI Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">CGI</span>
-
-<h3>Commercial CGI</h3>
-
-<p>
-Photorealistic CGI imagery created for advertising, promotional content and commercial visual communication.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio02.png.png" alt="3D Environment Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">3D Environment</span>
-
-<h3>3D Environment</h3>
-
-<p>
-Detailed 3D environment creation designed for animation, games, cinematic productions and digital experiences.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio03.png.png" alt="Product Visualization Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Product Visualization</span>
-
-<h3>Product Visualization</h3>
-
-<p>
-High-quality product visualization designed to present products with realistic materials, lighting and presentation.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio04.png.png" alt="Motion Graphics Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Motion Graphics</span>
-
-<h3>Motion Graphics</h3>
-
-<p>
-Creative motion graphics and animated visual content for promotional campaigns, digital media and presentations.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio05.png.png" alt="Visual Effects Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">VFX</span>
-
-<h3>Visual Effects</h3>
-
-<p>
-Visual effects and digital compositing designed to enhance cinematic productions, commercials and creative content.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio06.png.png" alt="3D Animation Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Animation</span>
-
-<h3>3D Animation</h3>
-
-<p>
-Professional 3D animation created for storytelling, product communication, entertainment and digital platforms.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio07.png.png" alt="Creative 3D Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Creative 3D</span>
-
-<h3>Creative 3D Production</h3>
-
-<p>
-Creative 3D artwork combining modeling, materials, lighting and rendering for visual communication.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio08.png.png" alt="Digital Production Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Digital Production</span>
-
-<h3>Digital Production</h3>
-
-<p>
-Digital visual content developed for modern media, advertising, presentation and online communication.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio09.png.png" alt="Cinematic Production Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Cinematic</span>
-
-<h3>Cinematic Visuals</h3>
-
-<p>
-Cinematic visual development focused on atmosphere, composition, lighting and storytelling.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio10.png.png" alt="3D Design Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">3D Design</span>
-
-<h3>3D Design</h3>
-
-<p>
-Custom 3D design and visual development for creative concepts, campaigns and digital production.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio11.png.png" alt="Animation Design Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Animation Design</span>
-
-<h3>Animation Design</h3>
-
-<p>
-Animation-focused visual design created for engaging digital storytelling and communication.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio12.png.png" alt="CGI Visual Development Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Visual Development</span>
-
-<h3>CGI Visual Development</h3>
-
-<p>
-Concept-driven CGI development combining visual design, 3D production and cinematic presentation.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio13.png.png" alt="3D Rendering Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Rendering</span>
-
-<h3>3D Rendering</h3>
-
-<p>
-High-quality rendering with detailed materials, lighting and environments for professional visual presentation.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio14.png.png" alt="Digital Art Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Digital Art</span>
-
-<h3>Digital Art Production</h3>
-
-<p>
-Digital artwork developed for visual storytelling, creative campaigns and multimedia applications.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio15.png.png" alt="Creative Visualization Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Visualization</span>
-
-<h3>Creative Visualization</h3>
-
-<p>
-Creative visualization solutions designed to communicate ideas through compelling digital imagery.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio16.png.png" alt="3D Production Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">3D Production</span>
-
-<h3>3D Production</h3>
-
-<p>
-End-to-end 3D production combining modeling, texturing, lighting, rendering and visual development.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio17.png.png" alt="CGI Art Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">CGI Art</span>
-
-<h3>CGI Artwork</h3>
-
-<p>
-Detailed CGI artwork created for creative presentation, digital campaigns and visual communication.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio18.png.png" alt="3D Scene Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">3D Scene</span>
-
-<h3>3D Scene Production</h3>
-
-<p>
-Complete 3D scene development with focus on environment, composition, lighting and visual quality.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio19.png.png" alt="Visual Production Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Visual Production</span>
-
-<h3>Visual Production</h3>
-
-<p>
-Professional digital visual production for commercial, entertainment and online media applications.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="portfolio-card">
-
-<div class="portfolio-image">
-<img src="portfolio20.png.png" alt="Studio Portfolio">
-</div>
-
-<div class="portfolio-content">
-
-<span class="category">Studio Work</span>
-
-<h3>Studio Creative Work</h3>
-
-<p>
-A selection of studio work demonstrating our creative, technical and production capabilities.
-</p>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="process-section">
-
-<div class="container">
-
-<div class="process-title">
-
-<h2>Our Creative Production Approach</h2>
-
-<p>
-We combine creative direction and technical production to develop professional visual content from initial concept through final delivery.
-</p>
-
-</div>
-
-
-<div class="process-grid">
-
-<div class="process-card">
-
-<div class="process-number">01</div>
-
-<h3>Concept</h3>
-
-<p>
-Understanding the project objective, visual direction, audience and production requirements.
-</p>
-
-</div>
-
-
-<div class="process-card">
-
-<div class="process-number">02</div>
-
-<h3>Production</h3>
-
-<p>
-Developing the required 3D assets, animation, visual effects and digital content.
-</p>
-
-</div>
-
-
-<div class="process-card">
-
-<div class="process-number">03</div>
-
-<h3>Refinement</h3>
-
-<p>
-Reviewing visual quality, composition, lighting, animation and technical requirements.
-</p>
-
-</div>
-
-
-<div class="process-card">
-
-<div class="process-number">04</div>
-
-<h3>Final Delivery</h3>
-
-<p>
-Preparing optimized final content according to the required format and delivery specifications.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="cta">
-
-<div class="container">
-
-<h2>Have a Creative Project in Mind?</h2>
-
-<p>
-Tell us about your project and let our studio help turn your creative idea into professional digital content.
-</p>
-
-<a href="contact.html" class="btn">
-Start Your Project
-</a>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div>
-
-<h3>PT Autotube Crew Studio</h3>
-
-<p>
-Professional CGI, 3D animation, visual effects, product visualization and digital production studio based in Jakarta, Indonesia.
-</p>
-
-</div>
-
-
-<div>
-
-<h3>Company</h3>
-
-<p><a href="about.html">About Us</a></p>
-<p><a href="team.html">Our Team</a></p>
-<p><a href="careers.html">Careers</a></p>
-<p><a href="partners.html">Partners</a></p>
-
-</div>
-
-
-<div>
-
-<h3>Creative</h3>
-
-<p><a href="services.html">Services</a></p>
-<p><a href="portfolio.html">Portfolio</a></p>
-<p><a href="showreel.html">Showreel</a></p>
-<p><a href="case-studies.html">Case Studies</a></p>
-
-</div>
-
-
-<div>
-
-<h3>Contact</h3>
-
-<p>Jakarta, Indonesia</p>
-
-<p>
-<a href="mailto:autotubecrewstudio@gmail.com">
-autotubecrewstudio@gmail.com
-</a>
-</p>
-
-<p>
-<a href="https://www.autotubecrewstudio.com">
-www.autotubecrewstudio.com
-</a>
-</p>
-
-<p>
-<a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank">
-YouTube
-</a>
-</p>
-
-<p>
-<a href="https://www.linkedin.com/company/ptautotubecrewstudio/" target="_blank">
-LinkedIn
-</a>
-</p>
-
-</div>
-
-</div>
-
-
-<div class="footer-bottom">
-
-© 2026 PT Autotube Crew Studio. All Rights Reserved.
-
-</div>
-
-</div>
-
-</footer>
-
-
-<button id="topBtn" aria-label="Back to top">
-↑
-</button>
-
-
-<script>
-
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-
-mobileMenuBtn.addEventListener("click", function(){
-    mobileMenu.classList.toggle("active");
-});
-
-const mobileLinks = mobileMenu.querySelectorAll("a");
-
-mobileLinks.forEach(function(link){
-    link.addEventListener("click", function(){
-        mobileMenu.classList.remove("active");
-    });
-});
-
-
-const topBtn = document.getElementById("topBtn");
-
-window.addEventListener("scroll", function(){
-
-    if(
-        document.documentElement.scrollTop > 350 ||
-        document.body.scrollTop > 350
-    ){
-        topBtn.style.display = "block";
-    }else{
-        topBtn.style.display = "none";
-    }
-
-});
-
-
-topBtn.addEventListener("click", function(){
-
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="PT Autotube Crew Studio home">
+        <span class="brand-mark">
+          <img src="logo.png.png" alt="">
+        </span>
+        <span>PT Autotube Crew Studio</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="showreel.html">Showreel</a>
+        <a href="partners.html">Partners</a>
+        <a class="nav-contact" href="contact.html">Contact</a>
+      </nav>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="mobileNavigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNavigation" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+      <a href="showreel.html">Showreel</a>
+      <a href="partners.html">Partners</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Selected Studio Work</div>
+        <h1>Our Portfolio</h1>
+        <p>
+          Explore visual work from PT Autotube Crew Studio. Contact us to
+          discuss the production details and creative requirements for your
+          project.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Watch</div>
+          <h2>Studio Showreel</h2>
+          <p>
+            Watch selected visual work from the studio. Use the player
+            controls to play the video.
+          </p>
+        </div>
+
+        <div class="showreel">
+          <video controls preload="metadata" playsinline poster="portfolio01.png.png">
+            <source src="showreel.mp4" type="video/mp4">
+            Your browser does not support video playback.
+            <a href="showreel.mp4">Open the showreel video</a>
+          </video>
+        </div>
+
+        <div class="section-heading">
+          <a class="showreel-link" href="showreel.html">Visit the showreel page</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Image Gallery</div>
+          <h2>Portfolio Visuals</h2>
+          <p>
+            Select an image to open it at full size.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <a class="gallery-item" href="portfolio01.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio01.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio02.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio02.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio03.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio03.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio04.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio04.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio05.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio05.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio06.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio06.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio07.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio07.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio08.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio08.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio09.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio09.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio10.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio10.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio11.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio11.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio12.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio12.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio13.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio13.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio14.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio14.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio15.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio15.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio16.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio16.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio17.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio17.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio18.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio18.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio19.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio19.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+          <a class="gallery-item" href="portfolio20.png.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio image">
+            <img src="portfolio20.png.png" alt="Selected visual from PT Autotube Crew Studio portfolio" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="eyebrow">Have a Project?</div>
+        <h2>Let’s Discuss Your Creative Idea</h2>
+        <p>
+          Contact the studio with your project goals and the kind of visual
+          production you need.
+        </p>
+        <a class="button" href="request-a-quote.html">Request a Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>PT Autotube Crew Studio</h2>
+          <p>
+            CGI 3D animation VFX and digital visual production based in
+            Indonesia.
+          </p>
+        </div>
+
+        <div>
+          <h2>Explore</h2>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="partners.html">Partners</a>
+            <a href="showreel.html">Showreel</a>
+          </div>
+        </div>
+
+        <div>
+          <h2>Contact</h2>
+          <div class="footer-links">
+            <a href="contact.html">Contact the Studio</a>
+            <a href="mailto:autotubecrewstudio@gmail.com">Email</a>
+            <a href="https://ptautotubecrewstudio.github.io/">Official Website</a>
+            <a
+              href="https://www.youtube.com/@ptautotubecrewstudio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >YouTube</a>
+            <a
+              href="https://www.linkedin.com/company/ptautotubecrewstudio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 PT Autotube Crew Studio. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <button
+    class="top-button"
+    id="topButton"
+    type="button"
+    aria-label="Back to top"
+    hidden
+  >
+    ↑
+  </button>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileNavigation = document.getElementById("mobileNavigation");
+    const topButton = document.getElementById("topButton");
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = mobileNavigation.classList.toggle("is-open");
+
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+      menuButton.textContent = isOpen ? "×" : "☰";
     });
 
-});
+    mobileNavigation.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileNavigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
+        menuButton.textContent = "☰";
+      });
+    });
 
-</script>
+    window.addEventListener("scroll", function () {
+      topButton.hidden = window.scrollY < 350;
+    });
 
+    topButton.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
 </body>
 </html>
