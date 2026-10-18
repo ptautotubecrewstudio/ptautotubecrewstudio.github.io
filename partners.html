@@ -1,1037 +1,776 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Partners | PT Autotube Crew Studio</title>
+  <title>Production Partnerships | PT Autotube Crew Studio</title>
 
-<meta name="description" content="Explore partnership opportunities with PT Autotube Crew Studio for CGI, 3D Animation, VFX, Motion Graphics, Product Visualization and digital production.">
-<meta name="robots" content="index, follow">
-<meta name="author" content="PT Autotube Crew Studio">
+  <meta
+    name="description"
+    content="Explore production collaboration opportunities with PT Autotube Crew Studio for CGI, 3D animation, VFX and digital visual production."
+  >
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="PT Autotube Crew Studio">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Production Partnerships | PT Autotube Crew Studio">
+  <meta
+    property="og:description"
+    content="Discuss CGI, animation, VFX and digital production collaborations with PT Autotube Crew Studio."
+  >
+  <meta
+    property="og:url"
+    content="https://ptautotubecrewstudio.github.io/partners.html"
+  >
 
-<link rel="icon" href="logo.png.png">
+  <link rel="icon" href="logo.png.png">
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/partners.html">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #050505;
+      color: #ffffff;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
 
-html{
-    scroll-behavior:smooth;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#050505;
-    color:#ffffff;
-    line-height:1.7;
-    overflow-x:hidden;
-}
+    .container {
+      width: min(90%, 1240px);
+      margin: 0 auto;
+    }
 
-a{
-    text-decoration:none;
-    color:inherit;
-}
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      background: rgba(5, 5, 5, 0.94);
+      border-bottom: 1px solid #242424;
+      backdrop-filter: blur(14px);
+    }
 
-img{
-    max-width:100%;
-    display:block;
-}
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
 
-.container{
-    width:90%;
-    max-width:1400px;
-    margin:auto;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 17px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
 
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:rgba(0,0,0,.92);
-    backdrop-filter:blur(15px);
-    z-index:999;
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
+    .brand-mark {
+      width: 150px;
+      height: 64px;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      flex: 0 0 150px;
+    }
 
-header .container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 0;
-}
+    .brand-mark img {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: 0;
+      top: -42px;
+      object-fit: cover;
+    }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:23px;
-    font-weight:700;
-}
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
 
-.logo img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
-}
+    .desktop-nav a,
+    .mobile-nav a {
+      color: #d0d0d0;
+      font-size: 14px;
+      transition: color 0.2s ease;
+    }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    align-items:center;
-    gap:27px;
-}
+    .desktop-nav a:hover,
+    .mobile-nav a:hover {
+      color: #ff2633;
+    }
 
-nav ul li{
-    position:relative;
-}
+    .nav-contact {
+      border: 1px solid #e50914;
+      padding: 9px 15px;
+    }
 
-nav ul li a{
-    font-size:15px;
-    font-weight:500;
-    transition:.3s;
-}
+    .menu-button {
+      display: none;
+      padding: 8px;
+      border: 0;
+      background: transparent;
+      color: #ffffff;
+      font-size: 28px;
+      cursor: pointer;
+    }
 
-nav ul li a:hover{
-    color:#e50914;
-}
+    .mobile-nav {
+      display: none;
+      padding: 12px 5% 18px;
+      background: #090909;
+      border-top: 1px solid #242424;
+    }
 
-.dropdown{
-    position:absolute;
-    top:100%;
-    left:0;
-    background:#111111;
-    min-width:245px;
-    border:1px solid #252525;
-    border-radius:12px;
-    padding:12px 0;
-    display:none;
-    z-index:1000;
-}
+    .mobile-nav.is-open {
+      display: grid;
+      gap: 0;
+    }
 
-.dropdown a{
-    display:block;
-    padding:11px 20px;
-}
+    .mobile-nav a {
+      padding: 11px 0;
+      border-bottom: 1px solid #202020;
+    }
 
-.dropdown a:hover{
-    background:#1c1c1c;
-}
+    .mobile-nav a:last-child {
+      border-bottom: 0;
+    }
 
-nav ul li:hover .dropdown{
-    display:block;
-}
+    main {
+      padding-top: 82px;
+    }
 
-.mobile-menu-btn{
-    display:none;
-    background:none;
-    border:none;
-    color:#ffffff;
-    font-size:30px;
-    cursor:pointer;
-}
-
-.mobile-menu{
-    display:none;
-}
-
-.hero{
-    padding:180px 0 110px;
-    background:
-        radial-gradient(circle at 80% 30%,rgba(229,9,20,.16),transparent 35%),
+    .hero {
+      padding: 112px 0 100px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 78% 28%, rgba(229, 9, 20, 0.16), transparent 36%),
         #050505;
-}
-
-.hero-content{
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:62px;
-    line-height:1.15;
-    font-weight:800;
-    margin-bottom:25px;
-}
-
-.hero h1 span{
-    color:#e50914;
-}
-
-.hero p{
-    color:#cfcfcf;
-    font-size:18px;
-    max-width:780px;
-    margin:auto;
-}
-
-.section{
-    padding:100px 0;
-}
-
-.section-dark{
-    background:#090909;
-}
-
-.section-title{
-    text-align:center;
-    max-width:850px;
-    margin:0 auto 60px;
-}
-
-.section-title h2{
-    font-size:43px;
-    margin-bottom:18px;
-}
-
-.section-title p{
-    color:#bdbdbd;
-    font-size:16px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:28px;
-}
-
-.card{
-    background:#101010;
-    border:1px solid #252525;
-    border-radius:18px;
-    padding:35px;
-    transition:.35s;
-}
-
-.card:hover{
-    transform:translateY(-7px);
-    border-color:#e50914;
-}
-
-.card-number{
-    font-size:15px;
-    color:#e50914;
-    font-weight:700;
-    margin-bottom:15px;
-    letter-spacing:1px;
-}
-
-.card h3{
-    font-size:24px;
-    margin-bottom:14px;
-}
-
-.card p{
-    color:#bdbdbd;
-    font-size:15px;
-}
-
-.partnership{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:55px;
-    align-items:center;
-}
-
-.partnership-text h2{
-    font-size:42px;
-    line-height:1.2;
-    margin-bottom:22px;
-}
-
-.partnership-text p{
-    color:#c5c5c5;
-    margin-bottom:18px;
-}
-
-.partnership-box{
-    background:#101010;
-    border:1px solid #292929;
-    border-radius:20px;
-    padding:40px;
-}
-
-.partnership-box h3{
-    font-size:26px;
-    margin-bottom:20px;
-}
-
-.partnership-box ul{
-    list-style:none;
-}
-
-.partnership-box li{
-    padding:12px 0;
-    border-bottom:1px solid #242424;
-    color:#cfcfcf;
-}
-
-.partnership-box li:last-child{
-    border-bottom:none;
-}
-
-.partnership-box li::before{
-    content:"✓";
-    color:#e50914;
-    font-weight:700;
-    margin-right:12px;
-}
-
-.cta{
-    text-align:center;
-    padding:100px 0;
-}
-
-.cta h2{
-    font-size:43px;
-    margin-bottom:20px;
-}
-
-.cta p{
-    max-width:750px;
-    margin:auto;
-    color:#c0c0c0;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
-    background:#e50914;
-    border-radius:50px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#ff2936;
-    transform:translateY(-4px);
-}
-
-footer{
-    background:#090909;
-    border-top:1px solid #222;
-    padding:65px 0 30px;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr 1.5fr;
-    gap:40px;
-}
-
-footer h3{
-    margin-bottom:18px;
-    font-size:20px;
-}
-
-footer p,
-footer a{
-    color:#999;
-    font-size:14px;
-}
-
-footer a:hover{
-    color:#ffffff;
-}
-
-.footer-links{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-}
-
-.footer-bottom{
-    margin-top:50px;
-    padding-top:25px;
-    border-top:1px solid #222;
-    text-align:center;
-    color:#777;
-    font-size:13px;
-}
-
-#topBtn{
-    position:fixed;
-    right:24px;
-    bottom:24px;
-    width:52px;
-    height:52px;
-    border:none;
-    border-radius:50%;
-    background:#e50914;
-    color:#ffffff;
-    font-size:22px;
-    cursor:pointer;
-    display:none;
-    z-index:900;
-}
-
-#topBtn:hover{
-    transform:translateY(-4px);
-}
-
-@media(max-width:1000px){
-
-    nav{
-        display:none;
+      border-bottom: 1px solid #222222;
     }
 
-    .mobile-menu-btn{
-        display:block;
+    .eyebrow {
+      margin-bottom: 16px;
+      color: #ff2633;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
 
-    .grid{
-        grid-template-columns:1fr 1fr;
+    .hero h1 {
+      max-width: 900px;
+      margin: 0 auto 22px;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.12;
+      font-weight: 800;
     }
 
-    .partnership{
-        grid-template-columns:1fr;
+    .hero h1 span {
+      color: #e50914;
     }
 
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
-}
-
-@media(max-width:768px){
-
-    .container{
-        width:92%;
+    .hero p {
+      max-width: 790px;
+      margin: 0 auto;
+      color: #c3c3c3;
+      font-size: 17px;
     }
 
-    header .container{
-        padding:11px 0;
+    .section {
+      padding: 88px 0;
     }
 
-    .logo{
-        font-size:16px;
+    .section-dark {
+      background: #0a0a0a;
+      border-top: 1px solid #202020;
+      border-bottom: 1px solid #202020;
     }
 
-    .logo img{
-        width:40px;
-        height:40px;
+    .section-heading {
+      max-width: 820px;
+      margin: 0 auto 48px;
+      text-align: center;
     }
 
-    .mobile-menu{
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:#0b0b0b;
-        border-top:1px solid #222;
-        padding:15px 20px;
+    .section-heading h2 {
+      margin-bottom: 14px;
+      font-size: clamp(29px, 4vw, 42px);
+      line-height: 1.2;
     }
 
-    .mobile-menu.active{
-        display:block;
+    .section-heading p {
+      color: #b7b7b7;
+      font-size: 15px;
     }
 
-    .mobile-menu a{
-        display:block;
-        padding:13px 5px;
-        border-bottom:1px solid #222;
-        font-size:15px;
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
     }
 
-    .mobile-menu a:hover{
-        color:#e50914;
+    .partner-card {
+      padding: 30px;
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 16px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
     }
 
-    .hero{
-        padding:135px 0 75px;
+    .partner-card:hover {
+      transform: translateY(-5px);
+      border-color: #e50914;
     }
 
-    .hero h1{
-        font-size:40px;
+    .partner-card h3 {
+      margin-bottom: 11px;
+      font-size: 21px;
     }
 
-    .hero p{
-        font-size:15px;
+    .partner-card p {
+      color: #b7b7b7;
+      font-size: 14px;
     }
 
-    .section{
-        padding:75px 0;
+    .collaboration {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 50px;
     }
 
-    .section-title{
-        margin-bottom:40px;
+    .collaboration-copy h2 {
+      margin-bottom: 18px;
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.2;
     }
 
-    .section-title h2{
-        font-size:32px;
+    .collaboration-copy p {
+      margin-bottom: 16px;
+      color: #bdbdbd;
+      font-size: 15px;
     }
 
-    .grid{
-        grid-template-columns:1fr;
+    .capability-panel {
+      padding: 32px;
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 16px;
     }
 
-    .partnership-text h2{
-        font-size:32px;
+    .capability-panel h3 {
+      margin-bottom: 15px;
+      font-size: 22px;
     }
 
-    .cta{
-        padding:75px 0;
+    .capability-list {
+      list-style: none;
     }
 
-    .cta h2{
-        font-size:32px;
+    .capability-list li {
+      position: relative;
+      padding: 12px 0 12px 22px;
+      color: #c9c9c9;
+      border-bottom: 1px solid #252525;
+      font-size: 14px;
     }
 
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:480px){
-
-    .hero h1{
-        font-size:34px;
+    .capability-list li:last-child {
+      border-bottom: 0;
     }
 
-    .card{
-        padding:27px;
+    .capability-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 21px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #e50914;
     }
 
-    .partnership-box{
-        padding:28px;
+    .agreement-note {
+      max-width: 900px;
+      margin: 35px auto 0;
+      padding: 20px 22px;
+      color: #bdbdbd;
+      background: #101010;
+      border-left: 3px solid #e50914;
+      font-size: 14px;
     }
-}
 
-</style>
+    .contact-section {
+      padding: 90px 0;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, 0.12), transparent 55%),
+        #070707;
+    }
+
+    .contact-section h2 {
+      margin-bottom: 16px;
+      font-size: clamp(30px, 4vw, 42px);
+    }
+
+    .contact-section p {
+      max-width: 740px;
+      margin: 0 auto;
+      color: #bdbdbd;
+      font-size: 15px;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 24px;
+      border: 1px solid #e50914;
+      border-radius: 30px;
+      background: #e50914;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #ff2633;
+    }
+
+    .button-outline {
+      background: transparent;
+    }
+
+    .button-outline:hover {
+      background: #e50914;
+    }
+
+    .site-footer {
+      padding: 48px 0 22px;
+      background: #080808;
+      border-top: 1px solid #222222;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 34px;
+    }
+
+    .site-footer h2 {
+      margin-bottom: 12px;
+      font-size: 17px;
+    }
+
+    .site-footer p,
+    .footer-links a {
+      color: #999999;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 7px;
+    }
+
+    .site-footer a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 32px;
+      padding-top: 18px;
+      border-top: 1px solid #222222;
+      color: #777777;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    @media (max-width: 960px) {
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .partner-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .collaboration {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: 92%;
+      }
+
+      .navbar {
+        min-height: 72px;
+      }
+
+      .logo {
+        gap: 8px;
+        font-size: 14px;
+      }
+
+      .brand-mark {
+        width: 112px;
+        height: 50px;
+        flex-basis: 112px;
+      }
+
+      .brand-mark img {
+        width: 112px;
+        height: 112px;
+        top: -31px;
+      }
+
+      main {
+        padding-top: 72px;
+      }
+
+      .hero {
+        padding: 78px 0 66px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .section {
+        padding: 66px 0;
+      }
+
+      .partner-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .partner-card,
+      .capability-panel {
+        padding: 25px;
+      }
+
+      .contact-section {
+        padding: 68px 0;
+      }
+
+      .contact-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button {
+        text-align: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-<header>
-
-<div class="container">
-
-<a href="index.html" class="logo">
-<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-<span>PT Autotube Crew Studio</span>
-</a>
-
-<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
-☰
-</button>
-
-<nav>
-
-<ul>
-
-<li>
-<a href="index.html">Home</a>
-</li>
-
-<li>
-<a href="#">About ▼</a>
-
-<div class="dropdown">
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-</div>
-
-</li>
-
-<li>
-<a href="#">Services ▼</a>
-
-<div class="dropdown">
-<a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-</div>
-
-</li>
-
-<li>
-<a href="#">Portfolio ▼</a>
-
-<div class="dropdown">
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-</div>
-
-</li>
-
-<li>
-<a href="#">Resources ▼</a>
-
-<div class="dropdown">
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-</div>
-
-</li>
-
-<li>
-<a href="contact.html">Contact</a>
-</li>
-
-</ul>
-
-</nav>
-
-</div>
-
-<div class="mobile-menu" id="mobileMenu">
-
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-<a href="services.html">Services</a>
-<a href="technology.html">Technology</a>
-<a href="industries.html">Industries</a>
-<a href="pricing.html">Pricing</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="downloads.html">Downloads</a>
-<a href="blog.html">Blog</a>
-<a href="news.html">News</a>
-<a href="events.html">Events</a>
-<a href="press-kit.html">Press Kit</a>
-<a href="media-kit.html">Media Kit</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
-</header>
-
-
-<section class="hero">
-
-<div class="container">
-
-<div class="hero-content">
-
-<h1>
-Creative <span>Partnerships</span> Built for Long-Term Growth
-</h1>
-
-<p>
-PT Autotube Crew Studio collaborates with brands, agencies, production companies, creative teams and technology partners to deliver high-quality CGI, 3D Animation, VFX and digital production solutions.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Who We Partner With</h2>
-
-<p>
-We work with organizations that need reliable creative production support, specialized 3D expertise or long-term digital content collaboration.
-</p>
-
-</div>
-
-
-<div class="grid">
-
-<div class="card">
-
-<div class="card-number">01</div>
-
-<h3>Creative Agencies</h3>
-
-<p>
-Supporting advertising and creative agencies with CGI, 3D animation, visual effects, product visualization and digital content production.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-number">02</div>
-
-<h3>Production Companies</h3>
-
-<p>
-Providing specialized production support for film, television, commercial and digital media projects.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-number">03</div>
-
-<h3>Global Brands</h3>
-
-<p>
-Creating high-quality visual content that helps brands communicate products, ideas and campaigns through compelling imagery.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-number">04</div>
-
-<h3>Technology Companies</h3>
-
-<p>
-Collaborating on immersive experiences, digital environments, visualization and technology-driven creative projects.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-number">05</div>
-
-<h3>Entertainment Studios</h3>
-
-<p>
-Supporting animation, cinematic, entertainment and digital production teams with scalable creative capabilities.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-number">06</div>
-
-<h3>Independent Creators</h3>
-
-<p>
-Working with directors, artists, filmmakers and independent creative teams to transform concepts into finished visual content.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section section-dark">
-
-<div class="container">
-
-<div class="partnership">
-
-<div class="partnership-text">
-
-<h2>
-A Flexible Production Partner for Your Creative Team
-</h2>
-
-<p>
-Every project has different requirements. Our partnership approach allows us to support individual production tasks, complete creative projects or ongoing production needs.
-</p>
-
-<p>
-We focus on clear communication, dependable delivery and a professional production workflow designed around the requirements of each collaboration.
-</p>
-
-</div>
-
-
-<div class="partnership-box">
-
-<h3>Partnership Capabilities</h3>
-
-<ul>
-
-<li>CGI and 3D Production Support</li>
-
-<li>3D Animation and Motion Design</li>
-
-<li>Environment and Asset Creation</li>
-
-<li>Product Visualization</li>
-
-<li>Visual Effects and Compositing</li>
-
-<li>Commercial Content Production</li>
-
-<li>Remote Production Collaboration</li>
-
-<li>Long-Term Creative Support</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Why Build a Partnership With Us?</h2>
-
-<p>
-Our goal is to become a dependable extension of your creative or production team.
-</p>
-
-</div>
-
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Reliable Collaboration</h3>
-
-<p>
-Clear communication and organized production support throughout every stage of a project.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Scalable Support</h3>
-
-<p>
-Production resources can be adapted according to project size, deadlines and creative requirements.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Creative & Technical</h3>
-
-<p>
-Combining artistic creativity with practical technical knowledge across modern digital production workflows.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="cta">
-
-<div class="container">
-
-<h2>Let's Explore a Partnership</h2>
-
-<p>
-If you are looking for a CGI, 3D Animation, VFX or digital production partner, we would be pleased to discuss how PT Autotube Crew Studio can support your next project.
-</p>
-
-<a href="contact.html" class="btn">
-Discuss a Partnership
-</a>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div>
-
-<h3>PT Autotube Crew Studio</h3>
-
-<p>
-Professional CGI, 3D Animation, Visual Effects, Motion Graphics, Product Visualization and Digital Production Studio based in Jakarta, Indonesia.
-</p>
-
-</div>
-
-
-<div>
-
-<h3>Company</h3>
-
-<div class="footer-links">
-
-<a href="about.html">About Us</a>
-<a href="team.html">Our Team</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-
-</div>
-
-</div>
-
-
-<div>
-
-<h3>Portfolio</h3>
-
-<div class="footer-links">
-
-<a href="portfolio.html">Portfolio</a>
-<a href="showreel.html">Showreel</a>
-<a href="case-studies.html">Case Studies</a>
-<a href="clients.html">Clients</a>
-
-</div>
-
-</div>
-
-
-<div>
-
-<h3>Contact</h3>
-
-<p>Jakarta, Indonesia</p>
-<p>autotubecrewstudio@gmail.com</p>
-<p>
-<a href="https://www.autotubecrewstudio.com">
-www.autotubecrewstudio.com
-</a>
-</p>
-
-<p>
-<a href="https://www.linkedin.com/company/ptautotubecrewstudio/" target="_blank">
-LinkedIn
-</a>
-</p>
-
-<p>
-<a href="https://www.youtube.com/@ptautotubecrewstudio" target="_blank">
-YouTube
-</a>
-</p>
-
-</div>
-
-</div>
-
-
-<div class="footer-bottom">
-
-© 2026 PT Autotube Crew Studio. All Rights Reserved.
-
-</div>
-
-</div>
-
-</footer>
-
-
-<button id="topBtn" aria-label="Back to top">
-↑
-</button>
-
-
-<script>
-
-const mobileMenuBtn =
-document.getElementById("mobileMenuBtn");
-
-const mobileMenu =
-document.getElementById("mobileMenu");
-
-mobileMenuBtn.addEventListener("click",function(){
-
-mobileMenu.classList.toggle("active");
-
-});
-
-
-const mobileLinks =
-mobileMenu.querySelectorAll("a");
-
-mobileLinks.forEach(function(link){
-
-link.addEventListener("click",function(){
-
-mobileMenu.classList.remove("active");
-
-});
-
-});
-
-
-const topBtn =
-document.getElementById("topBtn");
-
-window.addEventListener("scroll",function(){
-
-if(
-document.documentElement.scrollTop > 350
-){
-
-topBtn.style.display="block";
-
-}else{
-
-topBtn.style.display="none";
-
-}
-
-});
-
-
-topBtn.addEventListener("click",function(){
-
-window.scrollTo({
-
-top:0,
-behavior:"smooth"
-
-});
-
-});
-
-</script>
-
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo" aria-label="PT Autotube Crew Studio home">
+        <span class="brand-mark">
+          <img src="logo.png.png" alt="">
+        </span>
+        <span>PT Autotube Crew Studio</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="partners.html" aria-current="page">Partners</a>
+        <a href="contact.html" class="nav-contact">Contact</a>
+      </nav>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="mobileNavigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNavigation" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="partners.html" aria-current="page">Partners</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Work Together</div>
+        <h1>Creative <span>Production Partnerships</span></h1>
+        <p>
+          PT Autotube Crew Studio welcomes conversations with agencies
+          production companies brands and creative teams seeking CGI
+          animation VFX or digital production support.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Who We Can Work With</h2>
+          <p>
+            Each collaboration starts with a discussion about the project
+            requirements the people involved and the work needed.
+          </p>
+        </div>
+
+        <div class="partner-grid">
+          <article class="partner-card">
+            <h3>Creative Agencies</h3>
+            <p>
+              Production support for campaigns product visuals CGI
+              animation and visual effects.
+            </p>
+          </article>
+
+          <article class="partner-card">
+            <h3>Production Companies</h3>
+            <p>
+              Specialist visual production support for film commercial
+              television and digital media projects.
+            </p>
+          </article>
+
+          <article class="partner-card">
+            <h3>Brands and Businesses</h3>
+            <p>
+              CGI and digital content for products campaigns presentations
+              and communication.
+            </p>
+          </article>
+
+          <article class="partner-card">
+            <h3>Creative Teams</h3>
+            <p>
+              Collaboration with directors artists and teams developing
+              visual stories and digital productions.
+            </p>
+          </article>
+
+          <article class="partner-card">
+            <h3>Technology Projects</h3>
+            <p>
+              Visual development and production support for technology
+              products and digital experiences.
+            </p>
+          </article>
+
+          <article class="partner-card">
+            <h3>International Partners</h3>
+            <p>
+              Remote project discussions and production collaboration with
+              teams in different locations.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="collaboration">
+          <div class="collaboration-copy">
+            <div class="eyebrow">Ways to Collaborate</div>
+            <h2>Production Support That Fits the Project</h2>
+            <p>
+              We can discuss support for a specific production stage
+              collaboration on a complete project or ongoing creative
+              production needs.
+            </p>
+            <p>
+              The project scope responsibilities schedule fees usage rights
+              and deliverables should be agreed in writing before work
+              begins.
+            </p>
+          </div>
+
+          <div class="capability-panel">
+            <h3>Areas We Can Discuss</h3>
+            <ul class="capability-list">
+              <li>CGI and 3D production</li>
+              <li>3D animation and motion design</li>
+              <li>Product and environment visualization</li>
+              <li>Visual effects and compositing</li>
+              <li>Co-production for suitable projects</li>
+              <li>Remote production collaboration</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="agreement-note">
+          Every opportunity is reviewed individually. A partnership
+          discussion does not confirm a project agreement or guarantee
+          availability.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="eyebrow">Start a Conversation</div>
+        <h2>Discuss a Partnership</h2>
+        <p>
+          Tell us about your organization your project and the kind of
+          production support you are looking for.
+        </p>
+
+        <div class="contact-actions">
+          <a
+            class="button"
+            href="mailto:autotubecrewstudio@gmail.com?subject=Production%20Partnership%20Inquiry"
+          >
+            Email the Studio
+          </a>
+
+          <a
+            class="button button-outline"
+            href="https://wa.me/628139953162?text=Hello%20PT%20Autotube%20Crew%20Studio%20I%20would%20like%20to%20discuss%20a%20production%20partnership"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Message on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>PT Autotube Crew Studio</h2>
+          <p>
+            CGI 3D animation VFX and digital visual production based in
+            Indonesia.
+          </p>
+        </div>
+
+        <div>
+          <h2>Explore</h2>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="showreel.html">Showreel</a>
+          </div>
+        </div>
+
+        <div>
+          <h2>Contact</h2>
+          <div class="footer-links">
+            <a href="contact.html">Contact the Studio</a>
+            <a href="mailto:autotubecrewstudio@gmail.com">Email</a>
+            <a
+              href="https://wa.me/628139953162"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </a>
+            <a href="https://ptautotubecrewstudio.github.io/">
+              Official Website
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 PT Autotube Crew Studio. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileNavigation = document.getElementById("mobileNavigation");
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = mobileNavigation.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+      menuButton.textContent = isOpen ? "×" : "☰";
+    });
+
+    mobileNavigation.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileNavigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
+        menuButton.textContent = "☰";
+      });
+    });
+  </script>
 </body>
 </html>
