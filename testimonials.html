@@ -1,539 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials | PT Autotube Crew Studio</title>
+  <meta name="description" content="Learn how PT Autotube Crew Studio approaches client communication, creative collaboration and digital production.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="PT Autotube Crew Studio">
 
-<title>Testimonials | PT Autotube Crew Studio</title>
+  <link rel="icon" href="logo.png.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<meta name="description" content="Testimonials and client feedback for PT Autotube Crew Studio creative production services.">
-
-<link rel="icon" href="logo.png.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#050505;
-    color:#fff;
-    line-height:1.7;
-    overflow-x:hidden;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-.container{
-    width:90%;
-    max-width:1400px;
-    margin:auto;
-}
-
-
-/* HEADER */
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:rgba(0,0,0,.92);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-    z-index:999;
-}
-
-header .container{
-    min-height:82px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:20px;
-    font-weight:700;
-}
-
-.logo img{
-    width:48px;
-    height:48px;
-    object-fit:contain;
-}
-
-nav ul{
-    display:flex;
-    align-items:center;
-    gap:26px;
-    list-style:none;
-}
-
-nav a{
-    color:#ddd;
-    font-size:14px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#e50914;
-}
-
-
-/* HERO */
-
-.hero{
-    padding:180px 0 100px;
-    text-align:center;
-
-    background:
-    radial-gradient(
-        circle at center,
-        rgba(229,9,20,.14),
-        transparent 50%
-    ),
-    #050505;
-}
-
-.hero-label{
-    color:#e50914;
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:4px;
-    text-transform:uppercase;
-    margin-bottom:18px;
-}
-
-.hero h1{
-    font-size:64px;
-    line-height:1.1;
-    margin-bottom:22px;
-}
-
-.hero p{
-    max-width:780px;
-    margin:auto;
-    color:#aaa;
-    font-size:17px;
-}
-
-
-/* TESTIMONIALS */
-
-.testimonials{
-    padding:90px 0 120px;
-    background:#090909;
-    border-top:1px solid #222;
-    border-bottom:1px solid #222;
-}
-
-.section-title{
-    text-align:center;
-    max-width:850px;
-    margin:0 auto 60px;
-}
-
-.section-title h2{
-    font-size:42px;
-    margin-bottom:18px;
-}
-
-.section-title p{
-    color:#999;
-}
-
-.testimonial-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.testimonial-card{
-    background:#101010;
-    border:1px solid #292929;
-    border-radius:18px;
-    padding:35px;
-    transition:.3s;
-}
-
-.testimonial-card:hover{
-    transform:translateY(-6px);
-    border-color:#e50914;
-}
-
-.quote{
-    color:#e50914;
-    font-size:42px;
-    line-height:1;
-    margin-bottom:18px;
-}
-
-.testimonial-text{
-    color:#bbb;
-    font-size:15px;
-    margin-bottom:28px;
-}
-
-.client-name{
-    font-size:17px;
-    font-weight:600;
-}
-
-.client-role{
-    color:#777;
-    font-size:12px;
-    margin-top:4px;
-}
-
-
-/* CTA */
-
-.cta{
-    padding:110px 0;
-    text-align:center;
-
-    background:
-    radial-gradient(
-        circle at center,
-        rgba(229,9,20,.12),
-        transparent 55%
-    );
-}
-
-.cta h2{
-    font-size:42px;
-    margin-bottom:18px;
-}
-
-.cta p{
-    max-width:700px;
-    margin:auto;
-    color:#aaa;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
-    background:#e50914;
-    border-radius:50px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#ff303d;
-    transform:translateY(-3px);
-}
-
-
-/* FOOTER */
-
-footer{
-    background:#080808;
-    border-top:1px solid #222;
-    padding:45px 0 25px;
-    text-align:center;
-}
-
-footer p{
-    color:#666;
-    font-size:13px;
-}
-
-
-/* RESPONSIVE */
-
-@media(max-width:1000px){
-
-    nav{
-        display:none;
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #050505;
+      --surface: #101010;
+      --border: #292929;
+      --muted: #aaa;
+      --accent: #e50914;
     }
 
-    .testimonial-grid{
-        grid-template-columns:1fr 1fr;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    .hero h1{
-        font-size:52px;
+    html {
+      scroll-behavior: smooth;
     }
 
-}
-
-@media(max-width:650px){
-
-    .container{
-        width:92%;
+    body {
+      overflow-x: hidden;
+      background: var(--background);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
     }
 
-    .hero{
-        padding-top:140px;
-        padding-bottom:70px;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .hero h1{
-        font-size:38px;
+    button {
+      font: inherit;
     }
 
-    .hero p{
-        font-size:15px;
+    .container {
+      width: min(90%, 1200px);
+      margin: 0 auto;
     }
 
-    .testimonial-grid{
-        grid-template-columns:1fr;
+    /* Header */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, .94);
+      border-bottom: 1px solid #222;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
 
-    .section-title h2{
-        font-size:32px;
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
     }
 
-    .cta h2{
-        font-size:32px;
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      flex: 0 0 auto;
+      font-size: 18px;
+      font-weight: 700;
     }
 
-    .btn{
-        width:100%;
+    /* Crops the lower tagline area while keeping the original logo image. */
+    .brand-mark {
+      position: relative;
+      display: block;
+      width: 46px;
+      height: 25px;
+      flex: 0 0 46px;
+      overflow: hidden;
     }
 
-}
+    .brand-mark img {
+      position: absolute;
+      top: -13px;
+      left: 0;
+      width: 46px;
+      height: 46px;
+      max-width: none;
+      object-fit: contain;
+    }
 
-</style>
+    .desktop-nav ul {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+    }
 
+    .desktop-nav a {
+      color: #ddd;
+      font-size: 13px;
+      transition: color .2s ease;
+    }
+
+    .desktop-nav a:hover,
+    .desktop-nav a:focus-visible,
+    .desktop-nav a[aria-current="page"] {
+      color: var(--accent);
+    }
+
+    .menu-button {
+      display: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #333;
+      border-radius: 10px;
+      background: transparent;
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      max-height: calc(100vh - 78px);
+      overflow-y: auto;
+      background: #0b0b0b;
+      border-top: 1px solid #222;
+    }
+
+    .mobile-nav.active {
+      display: block;
+    }
+
+    .mobile-nav a {
+      display: block;
+      padding: 12px 5%;
+      border-bottom: 1px solid #222;
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    .mobile-nav a:hover,
+    .mobile-nav a[aria-current="page"] {
+      color: var(--accent);
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 115px 0 85px;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, .14), transparent 52%),
+        var(--background);
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin-bottom: 18px;
+      font-size: clamp(38px, 6vw, 60px);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #aaa;
+      font-size: 16px;
+    }
+
+    /* Feedback section */
+
+    .testimonials {
+      padding: 85px 0 100px;
+      background: #090909;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    .section-heading {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 14px;
+      font-size: clamp(30px, 4vw, 40px);
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .notice {
+      max-width: 850px;
+      margin: 0 auto 50px;
+      padding: 24px 26px;
+      background: #111;
+      border: 1px solid #303030;
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .notice h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .notice p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .approach-card {
+      padding: 30px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .approach-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
+    }
+
+    .approach-label {
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .approach-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .approach-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 90px 0;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, .12), transparent 55%),
+        #070707;
+    }
+
+    .cta h2 {
+      margin-bottom: 15px;
+      font-size: clamp(30px, 4vw, 40px);
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 50px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #ff303d;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 26px 0;
+      background: #090909;
+      border-top: 1px solid #222;
+      text-align: center;
+    }
+
+    footer p {
+      color: #888;
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-button {
+        display: inline-flex;
+      }
+
+      .approach-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: 92%;
+      }
+
+      .header-inner {
+        min-height: 70px;
+      }
+
+      .logo {
+        gap: 9px;
+        font-size: 15px;
+      }
+
+      .brand-mark {
+        width: 40px;
+        height: 22px;
+        flex-basis: 40px;
+      }
+
+      .brand-mark img {
+        top: -11px;
+        width: 40px;
+        height: 40px;
+      }
+
+      .mobile-nav {
+        max-height: calc(100vh - 70px);
+      }
+
+      .hero {
+        padding: 75px 0 60px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .testimonials {
+        padding: 65px 0;
+      }
+
+      .approach-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .approach-card {
+        padding: 25px;
+      }
+
+      .notice {
+        padding: 21px;
+      }
+
+      .cta {
+        padding: 65px 0;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
 </head>
 
-
 <body>
-
-
-<header>
-
-<div class="container">
-
-<a href="index.html" class="logo">
-
-<img src="logo.png.png" alt="PT Autotube Crew Studio Logo">
-
-<span>PT Autotube Crew Studio</span>
-
-</a>
-
-
-<nav>
-
-<ul>
-
-<li>
-<a href="index.html">Home</a>
-</li>
-
-<li>
-<a href="about.html">About</a>
-</li>
-
-<li>
-<a href="services.html">Services</a>
-</li>
-
-<li>
-<a href="portfolio.html">Portfolio</a>
-</li>
-
-<li>
-<a href="showreel.html">Showreel</a>
-</li>
-
-<li>
-<a href="case-studies.html">Case Studies</a>
-</li>
-
-<li>
-<a href="contact.html">Contact</a>
-</li>
-
-</ul>
-
-</nav>
-
-</div>
-
-</header>
-
-
-
-<section class="hero">
-
-<div class="container">
-
-<div class="hero-label">
-Client Experience
-</div>
-
-<h1>
-Testimonials
-</h1>
-
-<p>
-Feedback and experiences from clients and creative partners we work with.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section class="testimonials">
-
-<div class="container">
-
-
-<div class="section-title">
-
-<h2>
-What Our Clients Say
-</h2>
-
-<p>
-We value professional communication, creative collaboration and the quality of the final result.
-</p>
-
-</div>
-
-
-
-<div class="testimonial-grid">
-
-
-<div class="testimonial-card">
-
-<div class="quote">
-“
-</div>
-
-<p class="testimonial-text">
-PT Autotube Crew Studio delivered a professional visual production experience with a strong focus on creative execution and project requirements.
-</p>
-
-<div class="client-name">
-Client Feedback
-</div>
-
-<div class="client-role">
-Creative Production Project
-</div>
-
-</div>
-
-
-
-<div class="testimonial-card">
-
-<div class="quote">
-“
-</div>
-
-<p class="testimonial-text">
-The production approach was organized and collaborative, making it easier to move from the initial concept toward the final visual result.
-</p>
-
-<div class="client-name">
-Client Feedback
-</div>
-
-<div class="client-role">
-CGI & Animation Project
-</div>
-
-</div>
-
-
-
-<div class="testimonial-card">
-
-<div class="quote">
-“
-</div>
-
-<p class="testimonial-text">
-A strong creative partner for visual content requiring CGI, animation and professional digital production.
-</p>
-
-<div class="client-name">
-Client Feedback
-</div>
-
-<div class="client-role">
-Visual Production Project
-</div>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section class="cta">
-
-<div class="container">
-
-<h2>
-Want to Work With Us?
-</h2>
-
-<p>
-Tell us about your project and our team can discuss the creative direction, production requirements and next steps.
-</p>
-
-<a href="request-a-quote.html" class="btn">
-Request a Quote
-</a>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<div class="container">
-
-<p>
-© 2026 PT Autotube Crew Studio. All Rights Reserved.
-</p>
-
-</div>
-
-</footer>
-
-
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="PT Autotube Crew Studio home">
+        <span class="brand-mark">
+          <img src="logo.png.png" alt="">
+        </span>
+        <span>PT Autotube Crew Studio</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="showreel.html">Showreel</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="testimonials.html" aria-current="page">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+      >☰</button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Our Team</a>
+      <a href="careers.html">Careers</a>
+      <a href="partners.html">Partners</a>
+      <a href="services.html">Services</a>
+      <a href="technology.html">Technology</a>
+      <a href="industries.html">Industries</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="showreel.html">Showreel</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="clients.html">Clients</a>
+      <a href="testimonials.html" aria-current="page">Testimonials</a>
+      <a href="our-workflow.html">Workflow</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="blog.html">Blog</a>
+      <a href="news.html">News</a>
+      <a href="events.html">Events</a>
+      <a href="press-kit.html">Press Kit</a>
+      <a href="media-kit.html">Media Kit</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="eyebrow">Client Experience</span>
+        <h1>Testimonials</h1>
+        <p>
+          We value clear communication, thoughtful creative collaboration
+          and a production process shaped around each project's requirements.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Client Feedback</h2>
+          <p>
+            Client comments should reflect real experiences and be shared
+            with permission.
+          </p>
+        </div>
+
+        <div class="notice">
+          <h3>Testimonials will be published here when approved</h3>
+          <p>
+            We do not publish anonymous or sample testimonials as client
+            endorsements. This section will be updated when feedback is
+            approved for publication.
+          </p>
+        </div>
+
+        <div class="section-heading">
+          <h2>How We Approach Collaboration</h2>
+          <p>
+            These are the working principles we bring to project discussions
+            and production planning.
+          </p>
+        </div>
+
+        <div class="approach-grid">
+          <article class="approach-card">
+            <div class="approach-label">Communication</div>
+            <h3>Clear Project Discussions</h3>
+            <p>
+              We discuss objectives, requirements, deliverables and review
+              points so the project scope is understood.
+            </p>
+          </article>
+
+          <article class="approach-card">
+            <div class="approach-label">Creative Process</div>
+            <h3>Collaborative Development</h3>
+            <p>
+              Creative direction and production choices are developed
+              around the project's brief and agreed visual direction.
+            </p>
+          </article>
+
+          <article class="approach-card">
+            <div class="approach-label">Production</div>
+            <h3>Organized Review Stages</h3>
+            <p>
+              Review stages can be planned around the project's milestones
+              and the feedback process agreed with the client.
+            </p>
+          </article>
+
+          <article class="approach-card">
+            <div class="approach-label">Delivery</div>
+            <h3>Agreed Final Formats</h3>
+            <p>
+              Final content is prepared according to the formats and
+              delivery requirements set for the project.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Discuss Your Project With Us</h2>
+        <p>
+          Tell us about your creative requirements, deliverables and timeline.
+          We can discuss the production approach and next steps.
+        </p>
+        <a href="request-a-quote.html" class="button">Request a Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 PT Autotube Crew Studio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileNav = document.getElementById("mobileNav");
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = mobileNav.classList.toggle("active");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+
+    mobileNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileNav.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+        menuButton.textContent = "☰";
+      });
+    });
+  </script>
 </body>
-
 </html>
