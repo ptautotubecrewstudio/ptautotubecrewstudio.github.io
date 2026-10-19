@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Investor Relations | PT Autotube Crew Studio</title>
+  <meta name="description" content="Company information and investor inquiry contact for PT Autotube Crew Studio, a creative production studio based in Jakarta, Indonesia.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080808">
+
+  <link rel="icon" href="logo.png.png">
+
+  <style>
+    :root {
+      --background: #080808;
+      --surface: #111;
+      --text: #f5f5f5;
+      --muted: #aaa;
+      --line: #292929;
+      --red: #e50914;
+      --width: 1200px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--width));
+      margin-inline: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(8, 8, 8, .95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo img {
+      display: block;
+      width: 150px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .nav-contact {
+      padding: 9px 15px;
+      border: 1px solid #777;
+    }
+
+    .menu-button {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      background: #151515;
+      color: #fff;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      padding: 8px 4% 18px;
+      border-top: 1px solid var(--line);
+      background: #0b0b0b;
+    }
+
+    .mobile-nav.open {
+      display: grid;
+    }
+
+    .mobile-nav a {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero {
+      padding: 105px 0 90px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at 50% 20%, rgba(229, 9, 20, .2), transparent 38rem),
+        #080808;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+      color: #ff6269;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    .hero h1 {
+      margin-bottom: 18px;
+      font-size: clamp(40px, 7vw, 68px);
+      line-height: 1.08;
+      letter-spacing: -.04em;
+    }
+
+    .hero h1 span {
+      color: var(--red);
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #c5c5c5;
+      font-size: 17px;
+    }
+
+    section {
+      padding: 78px 0;
+    }
+
+    .section-heading {
+      max-width: 780px;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 12px;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.15;
+    }
+
+    .section-heading p:last-child {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .facts-grid,
+    .capability-grid,
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .capabilities {
+      background: #0d0d0d;
+      border-block: 1px solid var(--line);
+    }
+
+    .capability-card {
+      min-height: 145px;
+    }
+
+    .capability-card::before {
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin-bottom: 18px;
+      background: var(--red);
+      content: "";
+    }
+
+    .team-card {
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .team-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 4.2;
+      object-fit: cover;
+      object-position: center top;
+      background: #202020;
+    }
+
+    .team-info {
+      padding: 17px 18px 19px;
+    }
+
+    .team-info h3 {
+      margin-bottom: 2px;
+    }
+
+    .team-info p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border: 1px solid #fff;
+      background: #fff;
+      color: #080808;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #e5e5e5;
+    }
+
+    .button-secondary {
+      border-color: #777;
+      background: transparent;
+      color: #fff;
+    }
+
+    .button-secondary:hover {
+      background: #fff;
+      color: #080808;
+    }
+
+    .links-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .inquiry {
+      padding: 76px 0;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at center, rgba(229, 9, 20, .16), transparent 55%),
+        #0b0b0b;
+      border-top: 1px solid var(--line);
+    }
+
+    .inquiry h2 {
+      margin-bottom: 12px;
+      font-size: clamp(32px, 5vw, 46px);
+    }
+
+    .inquiry p {
+      max-width: 700px;
+      margin: 0 auto 24px;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 35px 0 20px;
+      background: #060606;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer p {
+      margin: 0;
+      color: #888;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    :focus-visible {
+      outline: 2px solid #ff6269;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 800px) {
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .facts-grid,
+      .capability-grid,
+      .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 540px) {
+      .hero {
+        padding: 75px 0 65px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .facts-grid,
+      .capability-grid,
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-card {
+        display: grid;
+        grid-template-columns: 115px 1fr;
+        align-items: center;
+      }
+
+      .team-card img {
+        height: 125px;
+        aspect-ratio: auto;
+      }
+
+      .links-row {
+        display: grid;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="PT Autotube Crew Studio home">
+      <img src="logo.png.png" alt="PT Autotube Crew Studio">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="team.html">Team</a>
+      <a href="investor-relations.html" aria-current="page">Investors</a>
+      <a class="nav-contact" href="contact.html">Contact</a>
+    </nav>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="mobileNav"
+    >☰</button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="team.html">Team</a>
+    <a href="investor-relations.html">Investor Relations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Company information</p>
+      <h1>Investor <span>Relations</span></h1>
+      <p>
+        Learn about PT Autotube Crew Studio and contact us for investor-related
+        inquiries about our creative production studio.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Studio overview</p>
+        <h2>A creative production studio in Jakarta</h2>
+        <p>
+          PT Autotube Crew Studio works across CGI, 3D animation, VFX,
+          visualization and digital production. This page provides an
+          introduction to the studio for people seeking company information.
+        </p>
+      </div>
+
+      <div class="facts-grid">
+        <article class="card">
+          <h3>Company</h3>
+          <p>PT Autotube Crew Studio</p>
+        </article>
+
+        <article class="card">
+          <h3>Location</h3>
+          <p>Jakarta, Indonesia</p>
+        </article>
+
+        <article class="card">
+          <h3>Creative Focus</h3>
+          <p>CGI, 3D animation, VFX and digital visual production</p>
+        </article>
+      </div>
+
+      <div class="links-row">
+        <a class="button button-secondary" href="about.html">About the Studio</a>
+        <a class="button button-secondary" href="portfolio.html">View Portfolio</a>
+        <a class="button button-secondary" href="services.html">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="capabilities">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Production capabilities</p>
+        <h2>What the studio creates</h2>
+        <p>
+          The studio’s published services cover creative and technical work
+          for commercial, entertainment and digital projects.
+        </p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="card capability-card">
+          <h3>CGI & 3D Production</h3>
+          <p>3D assets, environments, lighting and rendered visuals.</p>
+        </article>
+
+        <article class="card capability-card">
+          <h3>Animation</h3>
+          <p>3D animation and motion design for visual storytelling.</p>
+        </article>
+
+        <article class="card capability-card">
+          <h3>Visual Effects</h3>
+          <p>VFX, compositing and digital visual enhancement.</p>
+        </article>
+
+        <article class="card capability-card">
+          <h3>Product Visualization</h3>
+          <p>Digital product imagery and animation for presentation.</p>
+        </article>
+
+        <article class="card capability-card">
+          <h3>Video Production</h3>
+          <p>Video and digital content production for project needs.</p>
+        </article>
+
+        <article class="card capability-card">
+          <h3>Creative Collaboration</h3>
+          <p>Production support for brands, agencies and creative teams.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Leadership</p>
+        <h2>Meet the studio team</h2>
+        <p>Learn more about the people behind the studio.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="card team-card">
+          <img src="founder-shameer-sarfraz.jpg.jpeg" alt="Shameer Sarfraz" loading="lazy">
+          <div class="team-info">
+            <h3>Shameer Sarfraz</h3>
+            <p>Founder</p>
+          </div>
+        </article>
+
+        <article class="card team-card">
+          <img src="ceo-abdul-sattar.jpg.PNG" alt="Abdul Sattar" loading="lazy">
+          <div class="team-info">
+            <h3>Abdul Sattar</h3>
+            <p>CEO</p>
+          </div>
+        </article>
+
+        <article class="card team-card">
+          <img src="director-hasnain-ali-shah.png.png" alt="Hasnain Ali Shah" loading="lazy">
+          <div class="team-info">
+            <h3>Hasnain Ali Shah</h3>
+            <p>Director</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="links-row">
+        <a class="button button-secondary" href="team.html">View Team Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="container">
+      <p class="eyebrow">Investor inquiries</p>
+      <h2>Contact the studio</h2>
+      <p>
+        For investor-related questions or company information, contact
+        PT Autotube Crew Studio directly.
+      </p>
+
+      <div class="links-row" style="justify-content:center">
+        <a
+          class="button"
+          href="mailto:autotubecrewstudio@gmail.com?subject=Investor%20Inquiry"
+        >Email Investor Inquiry</a>
+
+        <a class="button button-secondary" href="contact.html">Contact the Studio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>© 2026 PT Autotube Crew Studio. All Rights Reserved.</p>
+
+    <div class="footer-links">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuButton = document.getElementById("menuButton");
+  const mobileNav = document.getElementById("mobileNav");
+
+  menuButton.addEventListener("click", function () {
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+
+    menuButton.setAttribute("aria-expanded", String(!isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+    mobileNav.classList.toggle("open", !isOpen);
+  });
+
+  mobileNav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      mobileNav.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation");
+    });
+  });
+</script>
+
+</body>
+</html>
