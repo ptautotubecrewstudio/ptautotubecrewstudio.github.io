@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Thank you for contacting PT Autotube Crew Studio."
-  >
-
   <title>Thank You | PT Autotube Crew Studio</title>
+  <meta name="description" content="Thank you for your interest in PT Autotube Crew Studio. Contact our studio by email or WhatsApp to share your project brief.">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" href="logo.png.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      color-scheme: dark;
+      --background: #070707;
+      --surface: #111;
+      --border: #292929;
+      --muted: #aaa;
+      --accent: #e50914;
+    }
+
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     html {
@@ -24,12 +34,13 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #080808;
-      color: #ffffff;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      background: var(--background);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
     }
 
     a {
@@ -38,213 +49,288 @@
     }
 
     .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
+      width: min(90%, 1100px);
+      margin: 0 auto;
     }
 
-    /* HEADER */
+    /* Header */
 
     header {
-      background: #111111;
-      border-bottom: 1px solid #303030;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, .94);
+      border-bottom: 1px solid #222;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
 
     .navbar {
-      min-height: 80px;
+      min-height: 78px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      gap: 24px;
     }
 
     .logo {
-      font-size: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 18px;
       font-weight: 700;
-      letter-spacing: 1px;
     }
 
-    nav ul {
+    /* Crops the lower tagline area while keeping the original logo image. */
+    .brand-mark {
+      position: relative;
+      display: block;
+      width: 46px;
+      height: 25px;
+      flex: 0 0 46px;
+      overflow: hidden;
+    }
+
+    .brand-mark img {
+      position: absolute;
+      top: -13px;
+      left: 0;
+      width: 46px;
+      height: 46px;
+      max-width: none;
+      object-fit: contain;
+    }
+
+    .desktop-nav {
       display: flex;
-      list-style: none;
       align-items: center;
       gap: 22px;
     }
 
-    nav a {
-      color: #cccccc;
+    .desktop-nav a {
+      color: #ddd;
+      font-size: 13px;
+      transition: color .2s ease;
+    }
+
+    .desktop-nav a:hover,
+    .desktop-nav a:focus-visible {
+      color: var(--accent);
+    }
+
+    .menu-button {
+      display: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #333;
+      border-radius: 10px;
+      background: transparent;
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      max-height: calc(100vh - 78px);
+      overflow-y: auto;
+      background: #0b0b0b;
+      border-top: 1px solid #222;
+    }
+
+    .mobile-nav.active {
+      display: block;
+    }
+
+    .mobile-nav a {
+      display: block;
+      padding: 12px 5%;
+      border-bottom: 1px solid #222;
+      color: #ddd;
       font-size: 14px;
-      transition: 0.3s;
     }
 
-    nav a:hover {
-      color: #ffffff;
+    .mobile-nav a:hover {
+      color: var(--accent);
     }
 
-    .nav-button {
-      border: 1px solid #ffffff;
-      padding: 10px 16px;
-      color: #ffffff;
-    }
-
-    /* MAIN */
+    /* Main thank-you panel */
 
     main {
       flex: 1;
       display: flex;
       align-items: center;
-      justify-content: center;
-      padding: 80px 0;
+      padding: 70px 0;
+      background:
+        radial-gradient(circle at center, rgba(229, 9, 20, .12), transparent 55%),
+        var(--background);
     }
 
     .thank-you-box {
       width: 100%;
-      max-width: 760px;
-      text-align: center;
-      background: #111111;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 55px;
+      background: var(--surface);
       border: 1px solid #303030;
-      padding: 70px 50px;
+      border-radius: 18px;
+      text-align: center;
     }
 
-    .success-icon {
-      width: 70px;
-      height: 70px;
-      border: 1px solid #ffffff;
-      border-radius: 50%;
+    .status-icon {
       display: flex;
+      width: 66px;
+      height: 66px;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 30px;
-      font-size: 30px;
+      margin: 0 auto 23px;
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      color: var(--accent);
+      font-size: 28px;
+      font-weight: 600;
     }
 
     .eyebrow {
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+      margin-bottom: 12px;
+      color: var(--accent);
       font-size: 12px;
-      margin-bottom: 15px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
     }
 
     h1 {
-      font-size: 52px;
+      margin-bottom: 15px;
+      font-size: clamp(36px, 6vw, 52px);
       line-height: 1.15;
-      margin-bottom: 20px;
     }
 
     .main-message {
-      color: #aaaaaa;
-      font-size: 18px;
       max-width: 620px;
-      margin: 0 auto 35px;
+      margin: 0 auto;
+      color: #bbb;
+      font-size: 16px;
     }
 
-    .next-steps {
-      border-top: 1px solid #292929;
-      border-bottom: 1px solid #292929;
-      padding: 30px 0;
-      margin-bottom: 35px;
+    .delivery-note {
+      margin: 28px 0;
+      padding: 18px 20px;
+      background: #0a0a0a;
+      border: 1px solid #303030;
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      color: #aaa;
+      font-size: 13px;
+      text-align: left;
     }
 
-    .next-steps h2 {
-      font-size: 22px;
-      margin-bottom: 15px;
-    }
-
-    .next-steps p {
-      color: #888888;
-      font-size: 14px;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .buttons {
+    .contact-options {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 12px;
       flex-wrap: wrap;
     }
 
     .button {
-      display: inline-block;
-      padding: 14px 24px;
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 22px;
+      border: 1px solid #fff;
+      border-radius: 40px;
       font-size: 13px;
-      font-weight: 700;
-      border: 1px solid #ffffff;
-      transition: 0.3s;
+      font-weight: 600;
+      transition: background .2s ease, color .2s ease, transform .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #fff;
+      color: #000;
     }
 
     .button-primary {
-      background: #ffffff;
-      color: #000000;
+      border-color: var(--accent);
+      background: var(--accent);
     }
 
     .button-primary:hover {
-      background: #dddddd;
+      border-color: #ff303d;
+      background: #ff303d;
+      color: #fff;
     }
 
-    .button-secondary {
-      background: transparent;
-      color: #ffffff;
-    }
-
-    .button-secondary:hover {
-      background: #ffffff;
-      color: #000000;
-    }
-
-    /* FOOTER */
+    /* Footer */
 
     footer {
+      padding: 24px 0;
       background: #050505;
       border-top: 1px solid #292929;
-      padding: 30px 0;
+      text-align: center;
     }
 
     .footer-content {
-      text-align: center;
-      color: #555555;
+      color: #777;
       font-size: 12px;
     }
 
-    /* RESPONSIVE */
+    @media (max-width: 850px) {
+      .desktop-nav {
+        display: none;
+      }
 
-    @media (max-width: 700px) {
+      .menu-button {
+        display: inline-flex;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: 92%;
+      }
 
       .navbar {
         min-height: 70px;
       }
 
       .logo {
-        font-size: 13px;
-      }
-
-      nav ul {
         gap: 9px;
+        font-size: 15px;
       }
 
-      nav a {
-        font-size: 10px;
+      .brand-mark {
+        width: 40px;
+        height: 22px;
+        flex-basis: 40px;
+      }
+
+      .brand-mark img {
+        top: -11px;
+        width: 40px;
+        height: 40px;
+      }
+
+      .mobile-nav {
+        max-height: calc(100vh - 70px);
+      }
+
+      main {
+        padding: 40px 0;
       }
 
       .thank-you-box {
-        padding: 50px 25px;
-      }
-
-      h1 {
-        font-size: 36px;
+        padding: 38px 22px;
       }
 
       .main-message {
-        font-size: 16px;
+        font-size: 14px;
       }
 
-      .success-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 25px;
-      }
-
-      .buttons {
+      .contact-options {
         flex-direction: column;
       }
 
@@ -252,142 +338,129 @@
         width: 100%;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+      }
+    }
   </style>
 </head>
 
 <body>
-
-  <!-- HEADER -->
-
   <header>
-
     <div class="container navbar">
-
-      <a href="index.html" class="logo">
-        PT AUTOTUBE CREW STUDIO
+      <a href="index.html" class="logo" aria-label="PT Autotube Crew Studio home">
+        <span class="brand-mark">
+          <img src="logo.png.png" alt="">
+        </span>
+        <span>PT Autotube Crew Studio</span>
       </a>
 
-      <nav>
-
-        <ul>
-
-          <li>
-            <a href="index.html">
-              Home
-            </a>
-          </li>
-
-          <li>
-            <a href="about.html">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href="services.html">
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a href="portfolio.html">
-              Portfolio
-            </a>
-          </li>
-
-          <li>
-            <a href="contact.html" class="nav-button">
-              Contact
-            </a>
-          </li>
-
-        </ul>
-
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="our-workflow.html">Workflow</a>
+        <a href="contact.html">Contact</a>
       </nav>
 
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+      >☰</button>
     </div>
 
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="showreel.html">Showreel</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="our-workflow.html">Workflow</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-
-  <!-- MAIN -->
-
   <main>
-
     <div class="container">
-
-      <div class="thank-you-box">
-
-        <div class="success-icon">
-          ✓
-        </div>
-
-        <div class="eyebrow">
-          Request Received
-        </div>
-
-        <h1>
-          Thank You
-        </h1>
+      <section class="thank-you-box" aria-labelledby="pageTitle">
+        <div class="status-icon" aria-hidden="true">✓</div>
+        <p class="eyebrow">Thank You</p>
+        <h1 id="pageTitle">We Appreciate Your Interest</h1>
 
         <p class="main-message">
-          Thank you for reaching out to PT Autotube Crew Studio. Your project request has been received and our team can now review your requirements.
+          To make sure your project brief reaches PT Autotube Crew Studio,
+          please contact us directly by email or WhatsApp.
         </p>
 
+        <p class="delivery-note">
+          This page does not confirm that a form was delivered. The website
+          needs a connected form service or a direct email/WhatsApp action
+          to send inquiries to the studio.
+        </p>
 
-        <div class="next-steps">
-
-          <h2>
-            What Happens Next?
-          </h2>
-
-          <p>
-            We will review your project brief, production requirements and objectives. Our team will then determine the appropriate next steps for your project.
-          </p>
-
-        </div>
-
-
-        <div class="buttons">
-
+        <div class="contact-options">
           <a
-            href="case-studies.html"
             class="button button-primary"
-          >
-            Explore Case Studies
-          </a>
+            href="mailto:autotubecrewstudio@gmail.com?subject=Project%20Inquiry"
+          >Email the Studio</a>
 
           <a
-            href="index.html"
-            class="button button-secondary"
-          >
-            Back to Homepage
-          </a>
+            class="button"
+            href="https://wa.me/628139953162"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Contact on WhatsApp</a>
 
+          <a class="button" href="index.html">Back to Homepage</a>
         </div>
-
-      </div>
-
+      </section>
     </div>
-
   </main>
 
-
-  <!-- FOOTER -->
-
   <footer>
-
     <div class="container">
-
-      <div class="footer-content">
-
+      <p class="footer-content">
         © 2026 PT Autotube Crew Studio. All Rights Reserved.
-
-      </div>
-
+      </p>
     </div>
-
   </footer>
 
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileNav = document.getElementById("mobileNav");
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = mobileNav.classList.toggle("active");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+
+    mobileNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileNav.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+        menuButton.textContent = "☰";
+      });
+    });
+  </script>
 </body>
 </html>
