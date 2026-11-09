@@ -1,0 +1,1189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>Industries | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description" content="Explore the industries that can benefit from AUTOTUBE CREW STUDIO creative production, animation, CGI, VFX, video production and digital platform capabilities.">
+
+    <link rel="canonical" href="https://ptautotubecrewstudio.github.io/industries.html">
+
+    <meta property="og:title" content="Industries | AUTOTUBE CREW STUDIO">
+    <meta property="og:description" content="Creative production and digital experiences for different industries and business sectors.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptautotubecrewstudio.github.io/industries.html">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+    <style>
+
+/* =========================================
+   AUTOTUBE CREW
+   INDUSTRIES PAGE
+   ========================================= */
+
+
+/* 1. INDUSTRIES HERO */
+
+.industries-hero {
+    min-height: 75vh;
+    padding: 150px 5% 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            ellipse at 80% 45%,
+            rgba(229, 9, 32, 0.17),
+            transparent 45%
+        ),
+        linear-gradient(110deg, #080808, #151515);
+}
+
+.industries-hero-content {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.industries-hero h1 {
+    font-size: clamp(48px, 8vw, 95px);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin-bottom: 28px;
+}
+
+.industries-hero h1 span {
+    color: var(--red);
+}
+
+.industries-hero-description {
+    color: #b5b5b5;
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.industries-hero-actions {
+    margin-top: 35px;
+}
+
+
+/* 2. INDUSTRIES INTRODUCTION */
+
+.industries-intro {
+    padding: 100px 5%;
+    background: var(--dark);
+}
+
+.industries-container {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+}
+
+.industries-intro-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.industries-intro h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.industries-intro h2 span {
+    color: var(--red);
+}
+
+.industries-intro p {
+    color: var(--grey);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.industries-intro-visual {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(229,9,32,0.2),
+            transparent 60%
+        ),
+        #151515;
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.industries-intro-visual::before,
+.industries-intro-visual::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(229,9,32,0.35);
+    border-radius: 50%;
+}
+
+.industries-intro-visual::after {
+    width: 170px;
+    height: 170px;
+}
+
+.industries-intro-visual span {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.industries-intro-visual span b {
+    color: var(--red);
+}
+
+
+/* 3. INDUSTRY CARDS */
+
+.industries-section {
+    padding: 110px 5%;
+    background: var(--black);
+}
+
+.industries-heading {
+    max-width: 750px;
+    margin-bottom: 55px;
+}
+
+.industries-heading h2 {
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+.industries-heading h2 span {
+    color: var(--red);
+}
+
+.industries-heading p {
+    color: var(--grey);
+    line-height: 1.9;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.industry-card {
+    min-height: 300px;
+    padding: 32px 28px;
+    background: #141414;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.35s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--red);
+    background: #1b1012;
+}
+
+.industry-number {
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.industry-card h3 {
+    font-size: 21px;
+    margin: 27px 0 15px;
+    line-height: 1.3;
+}
+
+.industry-card p {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.85;
+    margin-bottom: 22px;
+}
+
+.industry-card .industry-application {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: auto;
+}
+
+.industry-card .industry-application span {
+    color: var(--red);
+}
+
+
+/* 4. OUR CAPABILITIES */
+
+.industries-capabilities {
+    padding: 105px 5%;
+    background: var(--dark);
+}
+
+.capabilities-heading {
+    max-width: 750px;
+    margin-bottom: 45px;
+}
+
+.capabilities-heading h2 {
+    font-size: clamp(32px, 5vw, 54px);
+    margin: 18px 0;
+}
+
+.capabilities-heading h2 span {
+    color: var(--red);
+}
+
+.capabilities-heading p {
+    color: var(--grey);
+    line-height: 1.9;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.capability-card {
+    padding: 30px;
+    background: #151515;
+    border-top: 3px solid var(--red);
+}
+
+.capability-card span {
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.capability-card h3 {
+    font-size: 20px;
+    margin: 20px 0 12px;
+}
+
+.capability-card p {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.capability-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.capability-card a:hover {
+    color: var(--red);
+}
+
+
+/* 5. INDUSTRY APPROACH */
+
+.industries-approach {
+    padding: 110px 5%;
+    background: var(--black);
+}
+
+.approach-heading {
+    max-width: 750px;
+    margin-bottom: 45px;
+}
+
+.approach-heading h2 {
+    font-size: clamp(32px, 5vw, 54px);
+    margin: 18px 0;
+}
+
+.approach-heading h2 span {
+    color: var(--red);
+}
+
+.approach-heading p {
+    color: var(--grey);
+    line-height: 1.9;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.approach-card {
+    padding: 28px 22px;
+    background: #151515;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.approach-card span {
+    color: var(--red);
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.approach-card h3 {
+    font-size: 18px;
+    margin: 18px 0 12px;
+}
+
+.approach-card p {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* 6. INDUSTRIES CTA */
+
+.industries-cta {
+    padding: 110px 5%;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(229,9,32,0.15),
+            transparent 65%
+        ),
+        #111111;
+}
+
+.industries-cta-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.industries-cta h2 {
+    font-size: clamp(32px, 5vw, 58px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.industries-cta h2 span {
+    color: var(--red);
+}
+
+.industries-cta p {
+    color: var(--grey);
+    line-height: 1.9;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+
+/* 7. RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .industries-grid,
+    .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .industries-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .industries-hero {
+        min-height: 65vh;
+        padding: 125px 6% 75px;
+    }
+
+    .industries-hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .industries-intro,
+    .industries-section,
+    .industries-capabilities,
+    .industries-approach,
+    .industries-cta {
+        padding: 75px 6%;
+    }
+
+    .industries-grid,
+    .capabilities-grid,
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .industry-card {
+        min-height: auto;
+    }
+
+    .industries-intro-visual {
+        min-height: 260px;
+    }
+
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            AUTO<span>TUBE</span> CREW
+        </a>
+
+        <nav class="navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="portfolio.html">Portfolio</a>
+
+            <a href="contact.html" class="contact-link">
+                Let's Talk ↗
+            </a>
+
+        </nav>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- HERO SECTION -->
+
+        <section class="industries-hero">
+
+            <div class="industries-hero-content">
+
+                <p class="eyebrow">
+                    CREATIVE SOLUTIONS ACROSS INDUSTRIES
+                </p>
+
+                <h1>
+                    INDUSTRIES<br>
+                    <span>WE CAN SERVE.</span>
+                </h1>
+
+                <p class="industries-hero-description">
+                    Connecting creative production,
+                    visual storytelling and digital
+                    technology with the needs of
+                    different industries and businesses.
+                </p>
+
+                <div class="industries-hero-actions">
+
+                    <a href="#industries"
+                       class="button-primary">
+                        EXPLORE INDUSTRIES ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-background">
+                <div class="hero-circle"></div>
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+
+        <section class="industries-intro">
+
+            <div class="industries-container">
+
+                <div class="industries-intro-grid">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            CREATIVITY MEETS BUSINESS
+                        </p>
+
+                        <h2>
+                            DIFFERENT INDUSTRIES.
+                            <span>ONE CREATIVE VISION.</span>
+                        </h2>
+
+                        <p>
+                            Every industry has different
+                            communication needs, audiences
+                            and business objectives.
+                        </p>
+
+                        <p>
+                            AUTOTUBE CREW STUDIO brings
+                            together animation, CGI,
+                            visual effects, video production
+                            and digital platform capabilities
+                            to develop creative solutions
+                            for different business sectors.
+                        </p>
+
+                        <p>
+                            The right production approach
+                            depends on the project,
+                            its objectives and the
+                            requirements of each client.
+                        </p>
+
+                    </div>
+
+
+                    <div class="industries-intro-visual">
+
+                        <span>
+                            CREATIVE<br>
+                            <b>×</b><br>
+                            INDUSTRY
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INDUSTRIES GRID -->
+
+        <section class="industries-section"
+                 id="industries">
+
+            <div class="industries-container">
+
+                <div class="industries-heading">
+
+                    <p class="eyebrow">
+                        INDUSTRY APPLICATIONS
+                    </p>
+
+                    <h2>
+                        WHERE OUR
+                        <span>CAPABILITIES FIT.</span>
+                    </h2>
+
+                    <p>
+                        Explore potential applications
+                        of our creative and digital
+                        production capabilities across
+                        different business sectors.
+                        These are industry areas we
+                        can discuss for suitable projects.
+                    </p>
+
+                </div>
+
+
+                <div class="industries-grid">
+
+
+                    <!-- INDUSTRY 01 -->
+
+                    <article class="industry-card">
+
+                        <span class="industry-number">
+                            01 / ENTERTAINMENT
+                        </span>
+
+                        <h3>
+                            Film & Entertainment
+                        </h3>
+
+                        <p>
+                            Animation, cinematic
+                            storytelling, CGI, VFX
+                            and creative video production
+                            for entertainment concepts
+                            and screen-based content.
+                        </p>
+
+                        <div class="industry-application">
+                            <span>APPLICATION:</span>
+                            Film, Animation & VFX
+                        </div>
+
+                    </article>
+
+
+                    <!-- INDUSTRY 02 -->
+
+                    <article class="industry-card">
+
+                        <span class="industry-number">
+                            02 / ADVERTISING
+                        </span>
+
+                        <h3>
+                            Advertising & Marketing
+                        </h3>
+
+                        <p>
+                            Promotional videos,
+                            visual campaigns,
+                            commercial content
+                            and creative storytelling
+                            for marketing communication.
+                        </p>
+
+                        <div class="industry-application">
+                            <span>APPLICATION:</span>
+                            Commercials & Campaigns
+                        </div>
+
+                    </article>
+
+
+                    <!-- INDUSTRY 03 -->
+
+                    <article class="industry-card">
+
+                        <span class="industry-number">
+                            03 / CORPORATE
+                        </span>
+
+                        <h3>
+                            Corporate & Business
+                        </h3>
+
+                        <p>
+                            Corporate presentations,
+                            company profile videos,
+                            business communication
+                            and digital experiences
+                            for organizations.
+                        </p>
+
+                        <div class="industry-application">
+                            <span>APPLICATION:</span>
+                            Corporate Content
+                        </div>
+
+                    </article>
+
+
+                    <!-- INDUSTRY 04 -->
+
+                    <article class="industry-card">
+
+                        <span class="industry-number">
+                            04 / CONSUMER PRODUCTS
+                        </span>
+
+                        <h3>
+                            Consumer Products & Retail
+                        </h3>
+
+                        <p>
+                            Product visualization,
+                            CGI presentations,
+                            promotional videos
+                            and digital content
+                            for consumer products.
+                        </p>
+
+                        <div class="industry-application">
+                            <span>APPLICATION:</span>
+                            Product CGI & Video
+                        </div>
+
+                    </article>
+
+
+                    <!-- INDUSTRY 05 -->
+
+                    <article class="industry-card">
+
+                        <span class="industry-number">
+                            05 / AUTOMOTIVE
+                        </span>
+
+                        <h3>
+                            Automotive & Mobility
+                        </h3>
+
+                        <p>
+                            Vehicle visualization,
+                            automotive promotional
+                            content, CGI presentations
+                            and creative video production
+                            for mobility-related projects.
+                        </p>
+
+                        <div class="industry-application">
+                            <span>APPLICATION:</span>
+                            Automotive CGI & Media
+                        </div>
+
+                    </article>
+
+
+                    <!-- INDUSTRY 06 -->
+
+                    <article class="industry-card">
+
+                        <span class="industry-number">
+                            06 / TECHNOLOGY
+                        </span>
+
+                        <h3>
+                            Technology & Digital
+                        </h3>
+
+                        <p>
+                            Digital platform experiences,
+                            product explainers,
+                            technology presentations
+                            and visual communication
+                            for technology businesses.
+                        </p>
+
+                        <div class="industry-application">
+                            <span>APPLICATION:</span>
+                            Digital Platforms & Content
+                        </div>
+
+                    </article>
+
+
+                    <!-- INDUSTRY 07 -->
+
+                    <article class="industry-card">
+
+                        <span class="industry-number">
+                            07 / EDUCATION
+                        </span>
+
+                        <h3>
+                            Education & Training
+                        </h3>
+
+                        <p>
+                            Educational animation,
+                            instructional videos,
+                            explainer content
+                            and digital learning
+                            communication materials.
+                        </p>
+
+                        <div class="industry-application">
+                            <span>APPLICATION:</span>
+                            Educational Media
+                        </div>
+
+                    </article>
+
+
+                    <!-- INDUSTRY 08 -->
+
+                    <article class="industry-card">
+
+                        <span class="industry-number">
+                            08 / ARCHITECTURE
+                        </span>
+
+                        <h3>
+                            Architecture & Real Estate
+                        </h3>
+
+                        <p>
+                            Architectural visualization,
+                            CGI environments,
+                            property presentation
+                            videos and visual
+                            concept communication.
+                        </p>
+
+                        <div class="industry-application">
+                            <span>APPLICATION:</span>
+                            CGI & Visualization
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OUR CAPABILITIES -->
+
+        <section class="industries-capabilities">
+
+            <div class="industries-container">
+
+                <div class="capabilities-heading">
+
+                    <p class="eyebrow">
+                        OUR CREATIVE CAPABILITIES
+                    </p>
+
+                    <h2>
+                        THE SERVICES
+                        <span>BEHIND THE IDEAS.</span>
+                    </h2>
+
+                    <p>
+                        Our production and digital
+                        capabilities can be combined
+                        according to the requirements
+                        of each industry and project.
+                    </p>
+
+                </div>
+
+
+                <div class="capabilities-grid">
+
+
+                    <article class="capability-card">
+
+                        <span>01 / ANIMATION</span>
+
+                        <h3>3D Animation</h3>
+
+                        <p>
+                            Character animation,
+                            digital environments
+                            and visual storytelling.
+                        </p>
+
+                        <a href="3d-animation.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <article class="capability-card">
+
+                        <span>02 / CGI</span>
+
+                        <h3>CGI & Visualization</h3>
+
+                        <p>
+                            Computer-generated imagery,
+                            product visualization
+                            and digital environments.
+                        </p>
+
+                        <a href="cgi.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <article class="capability-card">
+
+                        <span>03 / VFX</span>
+
+                        <h3>Visual Effects</h3>
+
+                        <p>
+                            Visual effects,
+                            compositing and
+                            digital enhancements.
+                        </p>
+
+                        <a href="vfx.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <article class="capability-card">
+
+                        <span>04 / VIDEO</span>
+
+                        <h3>Video Production</h3>
+
+                        <p>
+                            Corporate videos,
+                            commercials and
+                            branded visual content.
+                        </p>
+
+                        <a href="video-production.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <article class="capability-card">
+
+                        <span>05 / FILM</span>
+
+                        <h3>Film Production</h3>
+
+                        <p>
+                            Creative development,
+                            filmmaking and
+                            cinematic production.
+                        </p>
+
+                        <a href="film-production.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <article class="capability-card">
+
+                        <span>06 / DIGITAL</span>
+
+                        <h3>Digital Platforms</h3>
+
+                        <p>
+                            Digital experiences,
+                            web platforms and
+                            technology-driven solutions.
+                        </p>
+
+                        <a href="digital-platforms.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OUR APPROACH -->
+
+        <section class="industries-approach">
+
+            <div class="industries-container">
+
+                <div class="approach-heading">
+
+                    <p class="eyebrow">
+                        OUR PROJECT APPROACH
+                    </p>
+
+                    <h2>
+                        UNDERSTANDING
+                        <span>YOUR INDUSTRY.</span>
+                    </h2>
+
+                    <p>
+                        Every collaboration begins
+                        by understanding what the
+                        project needs to achieve.
+                    </p>
+
+                </div>
+
+
+                <div class="approach-grid">
+
+
+                    <article class="approach-card">
+
+                        <span>STEP 01</span>
+
+                        <h3>Understand</h3>
+
+                        <p>
+                            Learn about the business,
+                            industry, audience
+                            and project objectives.
+                        </p>
+
+                    </article>
+
+
+                    <article class="approach-card">
+
+                        <span>STEP 02</span>
+
+                        <h3>Develop</h3>
+
+                        <p>
+                            Explore creative concepts,
+                            visual direction
+                            and suitable solutions.
+                        </p>
+
+                    </article>
+
+
+                    <article class="approach-card">
+
+                        <span>STEP 03</span>
+
+                        <h3>Produce</h3>
+
+                        <p>
+                            Coordinate the agreed
+                            production workflow
+                            and creative deliverables.
+                        </p>
+
+                    </article>
+
+
+                    <article class="approach-card">
+
+                        <span>STEP 04</span>
+
+                        <h3>Deliver</h3>
+
+                        <p>
+                            Review, finalize
+                            and deliver the
+                            agreed project outputs.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT CTA -->
+
+        <section class="industries-cta">
+
+            <div class="industries-cta-content">
+
+                <p class="eyebrow">
+                    HAVE AN INDUSTRY-SPECIFIC PROJECT?
+                </p>
+
+                <h2>
+                    LET'S CREATE
+                    <span>NEW POSSIBILITIES.</span>
+                </h2>
+
+                <p>
+                    Tell us about your industry,
+                    business objectives and
+                    creative requirements.
+                    Our team can discuss
+                    potential production
+                    and digital solutions.
+                </p>
+
+                <a href="contact.html"
+                   class="button-primary">
+                    DISCUSS YOUR PROJECT ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            AUTO<span>TUBE</span> CREW
+        </a>
+
+        <p>
+            Creative Production. Without Limits.
+        </p>
+
+        <p>
+            © 2026 AUTOTUBE CREW STUDIO.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./assets/js/main.js" defer></script>
+
+</body>
+</html>
