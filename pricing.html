@@ -1,0 +1,2491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>Pricing & Quotations | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description" content="Explore customized pricing, production cost factors and quotation options for animation, CGI, VFX, film production, video production and digital platform development at AUTOTUBE CREW STUDIO.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://ptautotubecrewstudio.github.io/pricing.html">
+
+    <meta property="og:title" content="Pricing | AUTOTUBE CREW STUDIO">
+
+    <meta property="og:description" content="Discover customized project pricing and professional production quotation options.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://ptautotubecrewstudio.github.io/pricing.html">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+
+    <style>
+
+/* =========================================
+   AUTOTUBE CREW
+   PRICING PAGE
+   ========================================= */
+
+
+/* 1. PRICING HERO */
+
+.pricing-hero {
+    min-height: 75vh;
+    padding: 155px 5% 100px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            ellipse at 80% 45%,
+            rgba(229, 9, 32, 0.18),
+            transparent 45%
+        ),
+        linear-gradient(
+            110deg,
+            #080808,
+            #151515
+        );
+}
+
+.pricing-hero-content {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.pricing-hero h1 {
+    font-size: clamp(45px, 8vw, 90px);
+    line-height: 1.05;
+    font-weight: 900;
+    letter-spacing: -3px;
+
+    margin-bottom: 28px;
+}
+
+.pricing-hero h1 span {
+    color: var(--red);
+}
+
+.pricing-hero-description {
+    max-width: 700px;
+
+    color: #b5b5b5;
+
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.pricing-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+/* 2. PRICING INTRODUCTION */
+
+.pricing-intro {
+    padding: 100px 5%;
+    background: var(--dark);
+}
+
+.pricing-container {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+}
+
+.pricing-intro-grid {
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+    gap: 60px;
+}
+
+.pricing-intro h2 {
+    font-size: clamp(32px, 5vw, 53px);
+    line-height: 1.15;
+
+    margin: 20px 0;
+}
+
+.pricing-intro h2 span {
+    color: var(--red);
+}
+
+.pricing-intro p {
+    color: var(--grey);
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.pricing-intro-visual {
+    min-height: 340px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(229,9,32,0.2),
+            transparent 60%
+        ),
+        #151515;
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.pricing-intro-visual::before,
+.pricing-intro-visual::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border: 1px solid rgba(229,9,32,0.35);
+    border-radius: 50%;
+}
+
+.pricing-intro-visual::after {
+    width: 180px;
+    height: 180px;
+}
+
+.pricing-intro-visual span {
+    position: relative;
+    z-index: 2;
+
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+    text-align: center;
+}
+
+.pricing-intro-visual span b {
+    color: var(--red);
+}
+
+
+/* 3. PRICING APPROACH */
+
+.pricing-approach {
+    padding: 100px 5%;
+    background: var(--black);
+}
+
+.pricing-heading {
+    max-width: 780px;
+    margin-bottom: 50px;
+}
+
+.pricing-heading h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.15;
+
+    margin: 18px 0;
+}
+
+.pricing-heading h2 span {
+    color: var(--red);
+}
+
+.pricing-heading p {
+    color: var(--grey);
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.pricing-approach-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.pricing-approach-card {
+    min-height: 250px;
+
+    padding: 32px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s ease;
+}
+
+.pricing-approach-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--red);
+}
+
+.pricing-approach-card span {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.pricing-approach-card h3 {
+    font-size: 21px;
+
+    margin: 23px 0 13px;
+}
+
+.pricing-approach-card p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+
+/* 4. SERVICE PRICING */
+
+.service-pricing {
+    padding: 110px 5%;
+    background: var(--dark);
+}
+
+.service-pricing-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.service-pricing-card {
+    padding: 32px 28px;
+
+    min-height: 330px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.service-pricing-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--red);
+}
+
+.service-pricing-card .service-number {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.service-pricing-card h3 {
+    font-size: 22px;
+
+    margin: 22px 0 13px;
+}
+
+.service-pricing-card p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.85;
+
+    margin-bottom: 20px;
+}
+
+.service-pricing-card .price-label {
+    display: block;
+
+    margin-top: auto;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #333;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.service-pricing-card .price-label span {
+    color: var(--red);
+}
+
+.service-pricing-card a {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.service-pricing-card a:hover {
+    color: var(--red);
+}
+
+
+/* 5. PRICING FACTORS */
+
+.pricing-factors {
+    padding: 105px 5%;
+    background: var(--black);
+}
+
+.pricing-factor-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-top: 45px;
+}
+
+.pricing-factor-card {
+    padding: 30px;
+
+    background: #151515;
+
+    border-left: 3px solid var(--red);
+}
+
+.pricing-factor-card span {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.pricing-factor-card h3 {
+    font-size: 20px;
+
+    margin: 17px 0 12px;
+}
+
+.pricing-factor-card p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* 6. ENGAGEMENT MODELS */
+
+.pricing-models {
+    padding: 105px 5%;
+    background: var(--dark);
+}
+
+.pricing-model-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+
+    margin-top: 45px;
+}
+
+.pricing-model-card {
+    padding: 34px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s ease;
+}
+
+.pricing-model-card:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.pricing-model-card span {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.pricing-model-card h3 {
+    font-size: 22px;
+
+    margin: 20px 0 13px;
+}
+
+.pricing-model-card p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* 7. QUOTATION PROCESS */
+
+.pricing-process {
+    padding: 110px 5%;
+    background: var(--black);
+}
+
+.pricing-process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+
+    margin-top: 45px;
+}
+
+.pricing-process-card {
+    padding: 25px 20px;
+
+    background: #151515;
+
+    border-top: 3px solid var(--red);
+}
+
+.pricing-process-card span {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.pricing-process-card h3 {
+    font-size: 18px;
+
+    margin: 19px 0 12px;
+}
+
+.pricing-process-card p {
+    color: var(--grey);
+
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+
+/* 8. QUOTATION CHECKLIST */
+
+.pricing-checklist {
+    padding: 100px 5%;
+    background: var(--dark);
+}
+
+.pricing-checklist-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pricing-checklist-card {
+    padding: 35px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.pricing-checklist-card h3 {
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+.pricing-checklist-card h3 span {
+    color: var(--red);
+}
+
+.pricing-checklist-card ul {
+    list-style: none;
+}
+
+.pricing-checklist-card li {
+    position: relative;
+
+    padding: 12px 0 12px 27px;
+
+    border-bottom: 1px solid #292929;
+
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.pricing-checklist-card li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--red);
+    font-weight: 800;
+}
+
+
+/* 9. PAYMENT & TERMS */
+
+.pricing-terms {
+    padding: 90px 5%;
+    background: var(--black);
+}
+
+.pricing-terms-box {
+    max-width: 1180px;
+    margin: auto;
+
+    padding: 38px;
+
+    background: #151515;
+
+    border-left: 3px solid var(--red);
+}
+
+.pricing-terms-box h2 {
+    font-size: clamp(27px, 4vw, 39px);
+    margin-bottom: 20px;
+}
+
+.pricing-terms-box h2 span {
+    color: var(--red);
+}
+
+.pricing-terms-box p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+}
+
+
+/* 10. PRICING FAQ */
+
+.pricing-faq {
+    padding: 100px 5%;
+    background: var(--dark);
+}
+
+.pricing-faq-container {
+    max-width: 950px;
+    margin: auto;
+}
+
+.pricing-faq-heading {
+    margin-bottom: 40px;
+}
+
+.pricing-faq-heading h2 {
+    font-size: clamp(30px, 5vw, 48px);
+
+    margin-top: 18px;
+}
+
+.pricing-faq-heading h2 span {
+    color: var(--red);
+}
+
+.pricing-faq-item {
+    margin-bottom: 12px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.pricing-faq-item[open] {
+    border-color: var(--red);
+}
+
+.pricing-faq-item summary {
+    position: relative;
+
+    cursor: pointer;
+    list-style: none;
+
+    padding: 22px 55px 22px 24px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.pricing-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.pricing-faq-item summary::after {
+    content: "+";
+
+    position: absolute;
+    right: 23px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: var(--red);
+    font-size: 25px;
+}
+
+.pricing-faq-item[open] summary::after {
+    content: "−";
+}
+
+.pricing-faq-answer {
+    padding: 20px 24px 24px;
+
+    border-top: 1px solid #292929;
+}
+
+.pricing-faq-answer p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* 11. PRICING CTA */
+
+.pricing-cta {
+    padding: 110px 5%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(229,9,32,0.16),
+            transparent 65%
+        ),
+        #080808;
+}
+
+.pricing-cta-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.pricing-cta h2 {
+    font-size: clamp(32px, 5vw, 56px);
+
+    line-height: 1.2;
+
+    margin: 20px 0;
+}
+
+.pricing-cta h2 span {
+    color: var(--red);
+}
+
+.pricing-cta p {
+    color: var(--grey);
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* 12. RESPONSIVE DESIGN */
+
+@media (max-width: 1050px) {
+
+    .pricing-process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .pricing-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .pricing-intro-visual {
+        min-height: 280px;
+    }
+
+    .pricing-approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .pricing-hero {
+        min-height: 65vh;
+        padding: 125px 6% 75px;
+    }
+
+    .pricing-hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .pricing-intro,
+    .pricing-approach,
+    .service-pricing,
+    .pricing-factors,
+    .pricing-models,
+    .pricing-process,
+    .pricing-checklist,
+    .pricing-terms,
+    .pricing-faq,
+    .pricing-cta {
+        padding: 75px 6%;
+    }
+
+    .pricing-approach-grid,
+    .service-pricing-grid,
+    .pricing-factor-grid,
+    .pricing-model-grid,
+    .pricing-checklist-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-approach-card,
+    .service-pricing-card {
+        min-height: auto;
+    }
+
+    .pricing-terms-box,
+    .pricing-checklist-card {
+        padding: 27px;
+    }
+
+    .pricing-faq-item summary {
+        padding: 20px 48px 20px 18px;
+        font-size: 14px;
+    }
+
+    .pricing-faq-answer {
+        padding: 18px;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .pricing-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         HEADER & NAVIGATION
+         ===================================== -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            AUTO<span>TUBE</span> CREW
+        </a>
+
+        <nav class="navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="portfolio.html">Portfolio</a>
+
+            <a href="contact.html" class="contact-link">
+                Let's Talk ↗
+            </a>
+
+        </nav>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false">
+
+            ☰
+
+        </button>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================
+             1. PRICING HERO
+             ===================================== -->
+
+        <section class="pricing-hero">
+
+            <div class="pricing-hero-content">
+
+                <p class="eyebrow">
+                    PROJECT PRICING & QUOTATIONS
+                </p>
+
+                <h1>
+
+                    PRICING<br>
+
+                    <span>BUILT AROUND YOUR PROJECT.</span>
+
+                </h1>
+
+                <p class="pricing-hero-description">
+
+                    Every creative and digital project
+                    has different requirements.
+
+                    We develop project-specific
+                    pricing proposals based on
+                    scope, complexity, resources
+                    and agreed deliverables.
+
+                </p>
+
+                <div class="pricing-hero-actions">
+
+                    <a href="contact.html"
+                       class="button-primary">
+
+                        REQUEST A QUOTE ↗
+
+                    </a>
+
+                    <a href="#services-pricing"
+                       class="button-secondary">
+
+                        EXPLORE OUR SERVICES
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-background">
+
+                <div class="hero-circle"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             2. INTRODUCTION
+             ===================================== -->
+
+        <section class="pricing-intro">
+
+            <div class="pricing-container">
+
+                <div class="pricing-intro-grid">
+
+
+                    <div>
+
+                        <p class="eyebrow">
+                            OUR PRICING PHILOSOPHY
+                        </p>
+
+                        <h2>
+
+                            EVERY PROJECT
+                            <span>IS DIFFERENT.</span>
+
+                        </h2>
+
+                        <p>
+
+                            At PT AUTOTUBE CREW STUDIO,
+                            project pricing is based
+                            on the actual requirements
+                            and scope of the work.
+
+                        </p>
+
+                        <p>
+
+                            A short promotional video,
+                            a detailed CGI production,
+                            an animated film
+                            and a digital platform
+                            all require different
+                            levels of planning,
+                            resources and production time.
+
+                        </p>
+
+                        <p>
+
+                            Rather than presenting
+                            misleading fixed prices,
+                            we aim to develop
+                            project-specific quotations
+                            with clearly defined
+                            deliverables and
+                            commercial terms.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="pricing-intro-visual">
+
+                        <span>
+
+                            VALUE<br>
+
+                            <b>×</b><br>
+
+                            QUALITY
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             3. OUR PRICING APPROACH
+             ===================================== -->
+
+        <section class="pricing-approach">
+
+            <div class="pricing-container">
+
+
+                <div class="pricing-heading">
+
+                    <p class="eyebrow">
+                        TRANSPARENT PROJECT PRICING
+                    </p>
+
+                    <h2>
+
+                        BUILT AROUND
+                        <span>REAL REQUIREMENTS.</span>
+
+                    </h2>
+
+                    <p>
+
+                        Our quotation approach
+                        focuses on understanding
+                        the work before determining
+                        the commercial proposal.
+
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-approach-grid">
+
+
+                    <article class="pricing-approach-card">
+
+                        <span>01 / SCOPE</span>
+
+                        <h3>
+                            Clear Project Scope
+                        </h3>
+
+                        <p>
+
+                            Understanding project
+                            objectives, requirements,
+                            deliverables and
+                            responsibilities
+                            before preparing
+                            a quotation.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-approach-card">
+
+                        <span>02 / RESOURCES</span>
+
+                        <h3>
+                            Production Resources
+                        </h3>
+
+                        <p>
+
+                            Evaluating the people,
+                            equipment, technology,
+                            software and infrastructure
+                            required for the work.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-approach-card">
+
+                        <span>03 / DELIVERABLES</span>
+
+                        <h3>
+                            Defined Deliverables
+                        </h3>
+
+                        <p>
+
+                            Establishing what
+                            will be delivered,
+                            in which formats
+                            and according
+                            to which agreed
+                            specifications.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             4. SERVICES & QUOTATIONS
+             ===================================== -->
+
+        <section class="service-pricing"
+                 id="services-pricing">
+
+            <div class="pricing-container">
+
+
+                <div class="pricing-heading">
+
+                    <p class="eyebrow">
+                        SERVICES & QUOTATION OPTIONS
+                    </p>
+
+                    <h2>
+
+                        EXPLORE OUR
+                        <span>PRODUCTION SERVICES.</span>
+
+                    </h2>
+
+                    <p>
+
+                        Each service has its own
+                        pricing considerations.
+                        Select a service to
+                        understand its requirements
+                        and discuss a customized quote.
+
+                    </p>
+
+                </div>
+
+
+                <div class="service-pricing-grid">
+
+
+                    <!-- SERVICE 01 -->
+
+                    <article class="service-pricing-card">
+
+                        <span class="service-number">
+                            01 / ANIMATION
+                        </span>
+
+                        <h3>
+                            3D Animation
+                        </h3>
+
+                        <p>
+
+                            Character animation,
+                            digital environments,
+                            cinematic sequences
+                            and animated content.
+
+                            Pricing depends on
+                            duration, complexity,
+                            assets and animation
+                            requirements.
+
+                        </p>
+
+                        <div class="price-label">
+
+                            PRICING:
+                            <span>CUSTOM QUOTE</span>
+
+                        </div>
+
+                        <a href="3d-animation.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 02 -->
+
+                    <article class="service-pricing-card">
+
+                        <span class="service-number">
+                            02 / CGI
+                        </span>
+
+                        <h3>
+                            CGI & Visualization
+                        </h3>
+
+                        <p>
+
+                            Product visualization,
+                            realistic environments,
+                            digital assets,
+                            lighting and
+                            computer-generated imagery.
+
+                            Pricing depends on
+                            detail, assets,
+                            scene complexity
+                            and final outputs.
+
+                        </p>
+
+                        <div class="price-label">
+
+                            PRICING:
+                            <span>CUSTOM QUOTE</span>
+
+                        </div>
+
+                        <a href="cgi.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 03 -->
+
+                    <article class="service-pricing-card">
+
+                        <span class="service-number">
+                            03 / VISUAL EFFECTS
+                        </span>
+
+                        <h3>
+                            VFX & Compositing
+                        </h3>
+
+                        <p>
+
+                            Visual effects,
+                            digital compositing,
+                            scene enhancement
+                            and post-production
+                            services.
+
+                            Pricing depends on
+                            shot count, complexity
+                            and technical requirements.
+
+                        </p>
+
+                        <div class="price-label">
+
+                            PRICING:
+                            <span>CUSTOM QUOTE</span>
+
+                        </div>
+
+                        <a href="vfx.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 04 -->
+
+                    <article class="service-pricing-card">
+
+                        <span class="service-number">
+                            04 / VIDEO PRODUCTION
+                        </span>
+
+                        <h3>
+                            Video Production
+                        </h3>
+
+                        <p>
+
+                            Corporate videos,
+                            commercial production,
+                            promotional films,
+                            product videos
+                            and branded content.
+
+                            Pricing depends on
+                            production scope,
+                            duration and resources.
+
+                        </p>
+
+                        <div class="price-label">
+
+                            PRICING:
+                            <span>CUSTOM QUOTE</span>
+
+                        </div>
+
+                        <a href="video-production.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 05 -->
+
+                    <article class="service-pricing-card">
+
+                        <span class="service-number">
+                            05 / FILM PRODUCTION
+                        </span>
+
+                        <h3>
+                            Film Production
+                        </h3>
+
+                        <p>
+
+                            Creative development,
+                            filmmaking, production
+                            planning and
+                            cinematic content.
+
+                            Pricing depends on
+                            the project scale,
+                            production schedule
+                            and required resources.
+
+                        </p>
+
+                        <div class="price-label">
+
+                            PRICING:
+                            <span>CUSTOM QUOTE</span>
+
+                        </div>
+
+                        <a href="film-production.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 06 -->
+
+                    <article class="service-pricing-card">
+
+                        <span class="service-number">
+                            06 / DIGITAL PLATFORMS
+                        </span>
+
+                        <h3>
+                            Digital Platforms
+                        </h3>
+
+                        <p>
+
+                            Websites, digital
+                            platform experiences,
+                            user interfaces
+                            and technology-based
+                            business solutions.
+
+                            Pricing depends on
+                            features, integrations
+                            and technical scope.
+
+                        </p>
+
+                        <div class="price-label">
+
+                            PRICING:
+                            <span>CUSTOM QUOTE</span>
+
+                        </div>
+
+                        <a href="digital-platforms.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 07 -->
+
+                    <article class="service-pricing-card">
+
+                        <span class="service-number">
+                            07 / CREATIVE CONTENT
+                        </span>
+
+                        <h3>
+                            Creative Content
+                        </h3>
+
+                        <p>
+
+                            Creative concepts,
+                            digital campaigns,
+                            visual communication
+                            and brand-focused
+                            content production.
+
+                            Pricing depends on
+                            scope, formats
+                            and creative requirements.
+
+                        </p>
+
+                        <div class="price-label">
+
+                            PRICING:
+                            <span>CUSTOM QUOTE</span>
+
+                        </div>
+
+                        <a href="creative-content.html">
+                            EXPLORE SERVICE ↗
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             5. PRICING FACTORS
+             ===================================== -->
+
+        <section class="pricing-factors">
+
+            <div class="pricing-container">
+
+
+                <div class="pricing-heading">
+
+                    <p class="eyebrow">
+                        WHAT INFLUENCES PROJECT COST?
+                    </p>
+
+                    <h2>
+
+                        UNDERSTANDING
+                        <span>THE INVESTMENT.</span>
+
+                    </h2>
+
+                    <p>
+
+                        Several project-specific
+                        factors influence the
+                        resources, production
+                        effort and final quotation.
+
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-factor-grid">
+
+
+                    <article class="pricing-factor-card">
+
+                        <span>01 / COMPLEXITY</span>
+
+                        <h3>
+                            Creative & Technical Complexity
+                        </h3>
+
+                        <p>
+
+                            The level of creative
+                            detail, technical
+                            difficulty, animation
+                            requirements, visual
+                            effects and functionality
+                            required.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-factor-card">
+
+                        <span>02 / DURATION</span>
+
+                        <h3>
+                            Project Duration
+                        </h3>
+
+                        <p>
+
+                            Animation length,
+                            video duration,
+                            number of scenes,
+                            production schedule
+                            and total project
+                            timeline.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-factor-card">
+
+                        <span>03 / RESOURCES</span>
+
+                        <h3>
+                            People & Infrastructure
+                        </h3>
+
+                        <p>
+
+                            Production team,
+                            specialized expertise,
+                            computing resources,
+                            equipment, software
+                            and infrastructure
+                            requirements.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-factor-card">
+
+                        <span>04 / DELIVERABLES</span>
+
+                        <h3>
+                            Output Requirements
+                        </h3>
+
+                        <p>
+
+                            Final file formats,
+                            output resolutions,
+                            platform specifications,
+                            source files and
+                            additional deliverables
+                            included in the scope.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-factor-card">
+
+                        <span>05 / REVISIONS</span>
+
+                        <h3>
+                            Review & Revisions
+                        </h3>
+
+                        <p>
+
+                            Number of agreed
+                            review rounds,
+                            feedback requirements,
+                            revision scope and
+                            approval process.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-factor-card">
+
+                        <span>06 / DEADLINES</span>
+
+                        <h3>
+                            Delivery Schedule
+                        </h3>
+
+                        <p>
+
+                            Project urgency,
+                            production dependencies,
+                            milestone deadlines
+                            and resource
+                            scheduling requirements.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             6. ENGAGEMENT MODELS
+             ===================================== -->
+
+        <section class="pricing-models">
+
+            <div class="pricing-container">
+
+
+                <div class="pricing-heading">
+
+                    <p class="eyebrow">
+                        WORKING ARRANGEMENTS
+                    </p>
+
+                    <h2>
+
+                        FLEXIBLE
+                        <span>ENGAGEMENT MODELS.</span>
+
+                    </h2>
+
+                    <p>
+
+                        The appropriate commercial
+                        arrangement depends on
+                        the nature of the work,
+                        expected duration
+                        and agreed responsibilities.
+
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-model-grid">
+
+
+                    <article class="pricing-model-card">
+
+                        <span>
+                            MODEL 01 / FIXED SCOPE
+                        </span>
+
+                        <h3>
+                            Project-Based Pricing
+                        </h3>
+
+                        <p>
+
+                            A defined project scope,
+                            specified deliverables,
+                            agreed timeline
+                            and documented
+                            commercial terms.
+
+                            Suitable for projects
+                            with clearly established
+                            requirements.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-model-card">
+
+                        <span>
+                            MODEL 02 / MILESTONES
+                        </span>
+
+                        <h3>
+                            Milestone-Based Pricing
+                        </h3>
+
+                        <p>
+
+                            Payments and project
+                            progress structured
+                            around agreed production
+                            or development milestones.
+
+                            Suitable where the project
+                            requires several stages
+                            of execution and approval.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-model-card">
+
+                        <span>
+                            MODEL 03 / ONGOING
+                        </span>
+
+                        <h3>
+                            Retainer-Based Engagement
+                        </h3>
+
+                        <p>
+
+                            An ongoing service
+                            arrangement with
+                            defined responsibilities,
+                            recurring deliverables
+                            and an agreed
+                            service period.
+
+                            Subject to scope
+                            and mutual agreement.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-model-card">
+
+                        <span>
+                            MODEL 04 / PRODUCTION
+                        </span>
+
+                        <h3>
+                            Outsourcing & Co-Production
+                        </h3>
+
+                        <p>
+
+                            Project-specific
+                            collaboration between
+                            studios, production teams
+                            and business partners.
+
+                            Commercial responsibilities,
+                            resources and deliverables
+                            are agreed individually.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             7. QUOTATION PROCESS
+             ===================================== -->
+
+        <section class="pricing-process">
+
+            <div class="pricing-container">
+
+
+                <div class="pricing-heading">
+
+                    <p class="eyebrow">
+                        FROM ENQUIRY TO PROPOSAL
+                    </p>
+
+                    <h2>
+
+                        HOW TO GET
+                        <span>A PROJECT QUOTE.</span>
+
+                    </h2>
+
+                    <p>
+
+                        Our quotation process
+                        is designed to understand
+                        your requirements before
+                        preparing a commercial
+                        proposal.
+
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-process-grid">
+
+
+                    <article class="pricing-process-card">
+
+                        <span>STEP 01</span>
+
+                        <h3>
+                            Submit Enquiry
+                        </h3>
+
+                        <p>
+
+                            Share the project
+                            concept, objectives,
+                            service requirements
+                            and preferred timeline.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-process-card">
+
+                        <span>STEP 02</span>
+
+                        <h3>
+                            Review Scope
+                        </h3>
+
+                        <p>
+
+                            Evaluate technical,
+                            creative and
+                            operational
+                            requirements.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-process-card">
+
+                        <span>STEP 03</span>
+
+                        <h3>
+                            Develop Proposal
+                        </h3>
+
+                        <p>
+
+                            Prepare the proposed
+                            scope, deliverables,
+                            production approach
+                            and commercial details.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-process-card">
+
+                        <span>STEP 04</span>
+
+                        <h3>
+                            Discuss Terms
+                        </h3>
+
+                        <p>
+
+                            Review pricing,
+                            milestones, payment
+                            terms, revisions
+                            and project conditions.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="pricing-process-card">
+
+                        <span>STEP 05</span>
+
+                        <h3>
+                            Confirm Project
+                        </h3>
+
+                        <p>
+
+                            Proceed after
+                            appropriate approvals
+                            and formal agreement
+                            between both parties.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             8. QUOTATION CHECKLIST
+             ===================================== -->
+
+        <section class="pricing-checklist">
+
+            <div class="pricing-container">
+
+
+                <div class="pricing-heading">
+
+                    <p class="eyebrow">
+                        PREPARE YOUR PROJECT
+                    </p>
+
+                    <h2>
+
+                        HELP US UNDERSTAND
+                        <span>YOUR REQUIREMENTS.</span>
+
+                    </h2>
+
+                    <p>
+
+                        Providing relevant
+                        information helps
+                        us evaluate the
+                        project and prepare
+                        a suitable proposal.
+
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-checklist-grid">
+
+
+                    <!-- PROJECT INFORMATION -->
+
+                    <article class="pricing-checklist-card">
+
+                        <h3>
+                            <span>01.</span>
+                            Project Information
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Project title
+                                and description.
+                            </li>
+
+                            <li>
+                                Main objectives
+                                and target audience.
+                            </li>
+
+                            <li>
+                                Selected services
+                                and production scope.
+                            </li>
+
+                            <li>
+                                Creative references
+                                or project materials.
+                            </li>
+
+                            <li>
+                                Expected timeline
+                                and delivery date.
+                            </li>
+
+                            <li>
+                                Required output
+                                formats and specifications.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <!-- COMMERCIAL INFORMATION -->
+
+                    <article class="pricing-checklist-card">
+
+                        <h3>
+                            <span>02.</span>
+                            Commercial Information
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Available project
+                                budget range, if known.
+                            </li>
+
+                            <li>
+                                Payment and
+                                milestone preferences.
+                            </li>
+
+                            <li>
+                                Required project
+                                delivery milestones.
+                            </li>
+
+                            <li>
+                                Review and
+                                revision expectations.
+                            </li>
+
+                            <li>
+                                Required licensing
+                                or usage rights.
+                            </li>
+
+                            <li>
+                                Additional technical
+                                or commercial conditions.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             9. PAYMENT TERMS
+             ===================================== -->
+
+        <section class="pricing-terms">
+
+            <div class="pricing-terms-box">
+
+                <p class="eyebrow">
+                    COMMERCIAL TRANSPARENCY
+                </p>
+
+                <h2>
+
+                    CLEAR TERMS.
+                    <span>BETTER COLLABORATION.</span>
+
+                </h2>
+
+                <p>
+
+                    Each project proposal
+                    should clearly identify
+                    the approved scope,
+                    price, deliverables,
+                    payment schedule
+                    and applicable conditions.
+
+                </p>
+
+                <p>
+
+                    Payment arrangements
+                    may be structured around
+                    an agreed advance payment,
+                    production milestones
+                    or other mutually
+                    accepted commercial terms.
+
+                </p>
+
+                <p>
+
+                    Revision limits,
+                    additional work,
+                    change requests,
+                    delivery conditions,
+                    intellectual property
+                    and source-file handover
+                    should be documented
+                    in the applicable agreement.
+
+                </p>
+
+                <p>
+
+                    Applicable taxes,
+                    additional expenses
+                    and currency arrangements
+                    should be stated
+                    in the formal proposal
+                    or agreement.
+
+                </p>
+
+                <p>
+
+                    No project pricing,
+                    payment schedule
+                    or production commitment
+                    is final until accepted
+                    through the appropriate
+                    written agreement.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             10. PRICING FAQ
+             ===================================== -->
+
+        <section class="pricing-faq">
+
+            <div class="pricing-faq-container">
+
+
+                <div class="pricing-faq-heading">
+
+                    <p class="eyebrow">
+                        PRICING INFORMATION
+                    </p>
+
+                    <h2>
+
+                        COMMON
+                        <span>QUESTIONS.</span>
+
+                    </h2>
+
+                </div>
+
+
+                <!-- FAQ 01 -->
+
+                <details class="pricing-faq-item">
+
+                    <summary>
+                        Why does the company not display fixed service prices?
+                    </summary>
+
+                    <div class="pricing-faq-answer">
+
+                        <p>
+
+                            Production requirements
+                            vary significantly
+                            between projects.
+
+                            Animation duration,
+                            technical complexity,
+                            creative assets,
+                            production resources
+                            and deliverables
+                            can all affect
+                            the final cost.
+
+                            We therefore use
+                            project-specific
+                            quotations instead
+                            of presenting
+                            misleading fixed prices.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <!-- FAQ 02 -->
+
+                <details class="pricing-faq-item">
+
+                    <summary>
+                        Can I request a customized quotation?
+                    </summary>
+
+                    <div class="pricing-faq-answer">
+
+                        <p>
+
+                            Yes. You can submit
+                            your project requirements
+                            through our official
+                            contact channel.
+
+                            After reviewing the
+                            scope, a suitable
+                            proposal can be
+                            discussed.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <!-- FAQ 03 -->
+
+                <details class="pricing-faq-item">
+
+                    <summary>
+                        Can the project be divided into milestones?
+                    </summary>
+
+                    <div class="pricing-faq-answer">
+
+                        <p>
+
+                            Suitable projects
+                            may be structured
+                            around production
+                            or development
+                            milestones.
+
+                            Milestones, approvals
+                            and payment conditions
+                            must be agreed
+                            in the project
+                            proposal or contract.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <!-- FAQ 04 -->
+
+                <details class="pricing-faq-item">
+
+                    <summary>
+                        Does the quotation include revisions?
+                    </summary>
+
+                    <div class="pricing-faq-answer">
+
+                        <p>
+
+                            The quotation should
+                            specify the agreed
+                            review and revision
+                            allowance.
+
+                            Additional revisions
+                            or changes outside
+                            the approved scope
+                            may require a
+                            separate cost review.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <!-- FAQ 05 -->
+
+                <details class="pricing-faq-item">
+
+                    <summary>
+                        Can international clients request quotations?
+                    </summary>
+
+                    <div class="pricing-faq-answer">
+
+                        <p>
+
+                            We welcome enquiries
+                            from local and
+                            international clients.
+
+                            Currency, applicable
+                            taxes, payment methods
+                            and other commercial
+                            conditions can be
+                            discussed during
+                            proposal preparation.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <!-- FAQ 06 -->
+
+                <details class="pricing-faq-item">
+
+                    <summary>
+                        How do I start the quotation process?
+                    </summary>
+
+                    <div class="pricing-faq-answer">
+
+                        <p>
+
+                            Visit our
+                            <a href="contact.html"
+                               style="color:var(--red);">
+
+                                Contact page
+
+                            </a>
+
+                            and share your
+                            project description,
+                            services required,
+                            timeline and
+                            available budget
+                            information.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <!-- FAQ 07 -->
+
+                <details class="pricing-faq-item">
+
+                    <summary>
+                        Is a quotation the same as a confirmed project agreement?
+                    </summary>
+
+                    <div class="pricing-faq-answer">
+
+                        <p>
+
+                            No. A quotation
+                            or proposal outlines
+                            proposed commercial
+                            terms and scope.
+
+                            A project is
+                            confirmed only
+                            after the necessary
+                            approvals and
+                            formal agreements.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             11. PRICING CONTACT CTA
+             ===================================== -->
+
+        <section class="pricing-cta">
+
+            <div class="pricing-cta-content">
+
+                <p class="eyebrow">
+                    READY TO DISCUSS YOUR PROJECT?
+                </p>
+
+                <h2>
+
+                    LET'S PLAN
+                    <span>YOUR NEXT PROJECT.</span>
+
+                </h2>
+
+                <p>
+
+                    Tell us about your
+                    creative or digital
+                    project requirements.
+
+                    Our team can review
+                    the scope and discuss
+                    a customized quotation
+                    based on your needs.
+
+                </p>
+
+                <a href="contact.html"
+                   class="button-primary">
+
+                    REQUEST A PROJECT QUOTE ↗
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+         ===================================== -->
+
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            AUTO<span>TUBE</span> CREW
+        </a>
+
+        <p>
+            Creative Production. Without Limits.
+        </p>
+
+        <p>
+            © 2026 AUTOTUBE CREW STUDIO.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./assets/js/main.js" defer></script>
+
+
+</body>
+</html>
