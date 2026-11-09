@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Downloads | AUTOTUBE CREW</title>
+
+    <meta name="description" content="Explore and download official AUTOTUBE CREW company documents, brand guidelines, capability statement, company profile, portfolio and service brochure.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://ptautotubecrewstudio.github.io/downloads.html">
+
+    <meta property="og:title" content="Downloads | AUTOTUBE CREW">
+    <meta property="og:description" content="Access official AUTOTUBE CREW documents and studio resources.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptautotubecrewstudio.github.io/downloads.html">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Downloads | AUTOTUBE CREW">
+    <meta name="twitter:description" content="Official company documents and studio resources.">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+    <style>
+        /* =========================================
+           AUTOTUBE CREW - DOWNLOADS PAGE
+           ========================================= */
+
+        .downloads-page {
+            background: #080808;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .downloads-hero {
+            min-height: 430px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 24px 80px;
+            background:
+                radial-gradient(
+                    circle at 50% 40%,
+                    rgba(229, 9, 32, 0.17),
+                    transparent 48%
+                ),
+                linear-gradient(180deg, #111111, #080808);
+            border-bottom: 1px solid #252525;
+        }
+
+        .downloads-eyebrow {
+            color: #e50920;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .downloads-hero h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.05;
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin: 0 0 22px;
+        }
+
+        .downloads-hero h1 span {
+            color: #e50920;
+        }
+
+        .downloads-hero p {
+            max-width: 650px;
+            color: #b8b8b8;
+            font-size: 17px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .downloads-section {
+            padding: 90px 24px;
+        }
+
+        .downloads-container {
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .downloads-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .downloads-heading .section-label {
+            display: block;
+            color: #e50920;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .downloads-heading h2 {
+            color: #ffffff;
+            font-size: clamp(30px, 5vw, 44px);
+            line-height: 1.2;
+            margin: 0 0 16px;
+        }
+
+        .downloads-heading p {
+            color: #a3a3a3;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .download-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 245px;
+            padding: 30px;
+            background: #111111;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease,
+                background 0.3s ease;
+        }
+
+        .download-card:hover {
+            transform: translateY(-5px);
+            border-color: #e50920;
+            background: #151515;
+        }
+
+        .download-card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .download-icon {
+            width: 58px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #e50920;
+            background: rgba(229, 9, 32, 0.10);
+            border: 1px solid rgba(229, 9, 32, 0.25);
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: 800;
+        }
+
+        .download-format {
+            color: #888888;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .download-card h3 {
+            color: #ffffff;
+            font-size: 22px;
+            margin: 25px 0 10px;
+        }
+
+        .download-card p {
+            color: #a3a3a3;
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0 0 25px;
+        }
+
+        .download-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            width: fit-content;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding-bottom: 7px;
+            border-bottom: 2px solid #e50920;
+            transition: color 0.3s ease;
+        }
+
+        .download-link:hover {
+            color: #e50920;
+        }
+
+        .download-link span {
+            font-size: 18px;
+        }
+
+        .downloads-note {
+            max-width: 850px;
+            margin: 50px auto 0;
+            padding: 22px 25px;
+            background: #101010;
+            border-left: 3px solid #e50920;
+        }
+
+        .downloads-note p {
+            color: #a3a3a3;
+            font-size: 13px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .downloads-note strong {
+            color: #ffffff;
+        }
+
+        .downloads-cta {
+            padding: 80px 24px;
+            text-align: center;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(229, 9, 32, 0.13),
+                    transparent 65%
+                ),
+                #101010;
+            border-top: 1px solid #292929;
+        }
+
+        .downloads-cta h2 {
+            color: #ffffff;
+            font-size: clamp(30px, 5vw, 43px);
+            margin: 0 0 18px;
+        }
+
+        .downloads-cta p {
+            max-width: 600px;
+            margin: 0 auto 28px;
+            color: #a3a3a3;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .downloads-cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #e50920;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid #e50920;
+            transition: all 0.3s ease;
+        }
+
+        .downloads-cta a:hover {
+            color: #e50920;
+            background: transparent;
+        }
+
+        @media (max-width: 700px) {
+            .downloads-hero {
+                min-height: 360px;
+                padding: 85px 20px 65px;
+            }
+
+            .downloads-hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .downloads-hero p {
+                font-size: 15px;
+            }
+
+            .downloads-section {
+                padding: 65px 18px;
+            }
+
+            .downloads-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .download-card {
+                min-height: 220px;
+                padding: 24px;
+            }
+
+            .downloads-note {
+                margin-top: 35px;
+            }
+
+            .downloads-cta {
+                padding: 65px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="downloads-page">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            AUTO<span>TUBE</span> CREW
+        </a>
+
+        <nav class="navigation" id="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Journal</a>
+            <a href="contact.html">Let's Talk</a>
+        </nav>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="downloads-hero">
+
+            <span class="downloads-eyebrow">
+                Studio Resources
+            </span>
+
+            <h1>
+                Official <span>Downloads</span>
+            </h1>
+
+            <p>
+                Explore official AUTOTUBE CREW documents and studio
+                resources. Access our company information, brand
+                materials and production-related documents.
+            </p>
+
+        </section>
+
+
+        <!-- DOWNLOAD DOCUMENTS -->
+        <section class="downloads-section">
+
+            <div class="downloads-container">
+
+                <div class="downloads-heading">
+
+                    <span class="section-label">
+                        Document Library
+                    </span>
+
+                    <h2>
+                        Explore Our Resources
+                    </h2>
+
+                    <p>
+                        Select a document below to access the relevant
+                        company or studio resource.
+                    </p>
+
+                </div>
+
+
+                <div class="downloads-grid">
+
+
+                    <!-- BRAND GUIDELINES -->
+                    <article class="download-card">
+
+                        <div>
+
+                            <div class="download-card-top">
+
+                                <div class="download-icon">
+                                    A
+                                </div>
+
+                                <span class="download-format">
+                                    PDF Document
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Brand Guidelines
+                            </h3>
+
+                            <p>
+                                Access the official brand guidelines
+                                document for AUTOTUBE CREW.
+                            </p>
+
+                        </div>
+
+                        <a
+                            class="download-link"
+                            href="Brand%20Guidelines.pdf"
+                            download>
+
+                            Download PDF
+                            <span>↓</span>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- CAPABILITY STATEMENT -->
+                    <article class="download-card">
+
+                        <div>
+
+                            <div class="download-card-top">
+
+                                <div class="download-icon">
+                                    C
+                                </div>
+
+                                <span class="download-format">
+                                    PDF Document
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Capability Statement
+                            </h3>
+
+                            <p>
+                                Review the official capability statement
+                                and company information.
+                            </p>
+
+                        </div>
+
+                        <a
+                            class="download-link"
+                            href="Capability%20Statement.pdf"
+                            download>
+
+                            Download PDF
+                            <span>↓</span>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- COMPANY PROFILE -->
+                    <article class="download-card">
+
+                        <div>
+
+                            <div class="download-card-top">
+
+                                <div class="download-icon">
+                                    P
+                                </div>
+
+                                <span class="download-format">
+                                    PDF Document
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Company Profile
+                            </h3>
+
+                            <p>
+                                Explore the official company profile
+                                and general studio information.
+                            </p>
+
+                        </div>
+
+                        <a
+                            class="download-link"
+                            href="Company%20Profile.pdf"
+                            download>
+
+                            Download PDF
+                            <span>↓</span>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- PORTFOLIO -->
+                    <article class="download-card">
+
+                        <div>
+
+                            <div class="download-card-top">
+
+                                <div class="download-icon">
+                                    W
+                                </div>
+
+                                <span class="download-format">
+                                    PDF Document
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Portfolio
+                            </h3>
+
+                            <p>
+                                Access the portfolio document
+                                available from the studio.
+                            </p>
+
+                        </div>
+
+                        <a
+                            class="download-link"
+                            href="Portfolio.pdf"
+                            download>
+
+                            Download PDF
+                            <span>↓</span>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE BROCHURE -->
+                    <article class="download-card">
+
+                        <div>
+
+                            <div class="download-card-top">
+
+                                <div class="download-icon">
+                                    S
+                                </div>
+
+                                <span class="download-format">
+                                    PDF Document
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Service Brochure
+                            </h3>
+
+                            <p>
+                                Explore the official service brochure
+                                for information about studio services.
+                            </p>
+
+                        </div>
+
+                        <a
+                            class="download-link"
+                            href="Service%20Brochure.pdf"
+                            download>
+
+                            Download PDF
+                            <span>↓</span>
+
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- DOCUMENT NOTICE -->
+                <div class="downloads-note">
+
+                    <p>
+                        <strong>Document availability:</strong>
+                        These download links use the original PDF
+                        filenames. Keep all five PDF files in the
+                        repository's root directory, alongside
+                        <strong>downloads.html</strong>, so the links
+                        can locate them correctly.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT CTA -->
+        <section class="downloads-cta">
+
+            <h2>
+                Need More Information?
+            </h2>
+
+            <p>
+                For company information, production enquiries
+                or business discussions, contact the AUTOTUBE CREW team.
+            </p>
+
+            <a href="contact.html">
+                Contact Our Studio
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <a href="index.html" class="logo">
+                AUTO<span>TUBE</span> CREW
+            </a>
+
+            <p>
+                Beyond Imagination. Beyond Expectations.
+            </p>
+
+            <p>
+                &copy; 2026 AUTOTUBE CREW. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- SHARED JAVASCRIPT -->
+    <script src="./assets/js/main.js" defer></script>
+
+</body>
+</html>
