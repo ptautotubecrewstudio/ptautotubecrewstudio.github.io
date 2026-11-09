@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | Autotube Crew Studio</title>
+
+    <meta name="description" content="Discover events, exhibitions, creative workshops and industry activities at PT Autotube Crew Studio.">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .events-section {
+            min-height: 80vh;
+            padding: 120px 8%;
+            background: #080808;
+            color: #ffffff;
+        }
+
+        .events-heading {
+            max-width: 750px;
+            margin-bottom: 60px;
+        }
+
+        .events-heading span {
+            color: #e50920;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .events-heading h1 {
+            font-size: clamp(40px, 7vw, 75px);
+            margin: 20px 0;
+            font-weight: 800;
+        }
+
+        .events-heading p {
+            color: #a3a3a3;
+            line-height: 1.8;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .event-card {
+            background: #151515;
+            border: 1px solid #292929;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-6px);
+            border-color: #e50920;
+        }
+
+        .event-image {
+            height: 220px;
+            background:
+                linear-gradient(
+                    135deg,
+                    #252525,
+                    #101010
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e50920;
+            font-size: 45px;
+        }
+
+        .event-content {
+            padding: 28px;
+        }
+
+        .event-category {
+            color: #e50920;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .event-content h2 {
+            font-size: 23px;
+            margin: 15px 0;
+        }
+
+        .event-content p {
+            color: #999;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .event-status {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 9px 15px;
+            border: 1px solid #444;
+            color: #ffffff;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .events-note {
+            margin-top: 60px;
+            padding: 35px;
+            background: #151515;
+            border-left: 3px solid #e50920;
+        }
+
+        .events-note h2 {
+            margin-bottom: 12px;
+        }
+
+        .events-note p {
+            color: #999;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            .events-section {
+                padding: 90px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <!-- Add the same shared navigation used in about.html here -->
+
+    <main>
+
+        <section class="events-section">
+
+            <div class="events-heading">
+
+                <span>Connect. Create. Inspire.</span>
+
+                <h1>
+                    Events<span style="color:#e50920;">.</span>
+                </h1>
+
+                <p>
+                    Discover creative events, industry
+                    gatherings, workshops and opportunities
+                    to connect with the world of animation,
+                    filmmaking and digital production.
+                </p>
+
+            </div>
+
+            <div class="events-grid">
+
+                <!-- EVENT 1 -->
+
+                <article class="event-card">
+
+                    <div class="event-image">
+                        ◈
+                    </div>
+
+                    <div class="event-content">
+
+                        <span class="event-category">
+                            Animation
+                        </span>
+
+                        <h2>
+                            Animation & VFX Showcase
+                        </h2>
+
+                        <p>
+                            A creative platform to explore
+                            animation techniques, visual
+                            effects and digital storytelling.
+                        </p>
+
+                        <span class="event-status">
+                            UPCOMING
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <!-- EVENT 2 -->
+
+                <article class="event-card">
+
+                    <div class="event-image">
+                        ◇
+                    </div>
+
+                    <div class="event-content">
+
+                        <span class="event-category">
+                            Film Production
+                        </span>
+
+                        <h2>
+                            Filmmaking & Production Meetup
+                        </h2>
+
+                        <p>
+                            Connect with creative professionals
+                            and explore opportunities in
+                            film and media production.
+                        </p>
+
+                        <span class="event-status">
+                            UPCOMING
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <!-- EVENT 3 -->
+
+                <article class="event-card">
+
+                    <div class="event-image">
+                        ▣
+                    </div>
+
+                    <div class="event-content">
+
+                        <span class="event-category">
+                            Digital Creativity
+                        </span>
+
+                        <h2>
+                            Digital Creative Workshop
+                        </h2>
+
+                        <p>
+                            Explore creative workflows,
+                            digital technologies and
+                            modern production methods.
+                        </p>
+
+                        <span class="event-status">
+                            COMING SOON
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="events-note">
+
+                <h2>
+                    Stay Connected
+                </h2>
+
+                <p>
+                    More events and creative activities
+                    will be announced soon. Stay connected
+                    with Autotube Crew Studio for future
+                    updates and opportunities.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <!-- Add the same shared footer used on other pages here -->
+
+    <script src="./assets/js/main.js" defer></script>
+
+</body>
+</html>
