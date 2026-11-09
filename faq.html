@@ -1,0 +1,1075 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>Frequently Asked Questions | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description" content="Find answers to frequently asked questions about AUTOTUBE CREW STUDIO services, animation, CGI, VFX, video production, projects and business collaborations.">
+
+    <link rel="canonical" href="https://ptautotubecrewstudio.github.io/faq.html">
+
+    <meta property="og:title" content="Frequently Asked Questions | AUTOTUBE CREW STUDIO">
+    <meta property="og:description" content="Learn more about our creative production services, project workflow and business collaborations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptautotubecrewstudio.github.io/faq.html">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+    <style>
+
+/* =========================================
+   AUTOTUBE CREW
+   FREQUENTLY ASKED QUESTIONS
+   ========================================= */
+
+
+/* 1. FAQ HERO */
+
+.faq-hero {
+    min-height: 65vh;
+    padding: 160px 5% 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            ellipse at 80% 45%,
+            rgba(229, 9, 32, 0.17),
+            transparent 45%
+        ),
+        linear-gradient(110deg, #080808, #151515);
+}
+
+.faq-hero-content {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.faq-hero h1 {
+    font-size: clamp(45px, 8vw, 85px);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.faq-hero h1 span {
+    color: var(--red);
+}
+
+.faq-hero p {
+    max-width: 650px;
+    color: #b5b5b5;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* 2. FAQ INTRODUCTION */
+
+.faq-intro {
+    padding: 80px 5%;
+    background: var(--dark);
+    text-align: center;
+}
+
+.faq-intro-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-intro h2 {
+    font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.faq-intro h2 span {
+    color: var(--red);
+}
+
+.faq-intro p {
+    color: var(--grey);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* 3. FAQ MAIN SECTION */
+
+.faq-section {
+    padding: 100px 5%;
+    background: var(--black);
+}
+
+.faq-container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.faq-heading {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.faq-heading .eyebrow {
+    color: var(--red);
+}
+
+.faq-heading h2 {
+    font-size: clamp(30px, 5vw, 50px);
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.faq-heading h2 span {
+    color: var(--red);
+}
+
+.faq-heading p {
+    color: var(--grey);
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+
+/* 4. FAQ CATEGORIES */
+
+.faq-category {
+    margin-bottom: 50px;
+}
+
+.faq-category-title {
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #292929;
+}
+
+.faq-category-title h3 {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.faq-category-title h3 span {
+    color: var(--red);
+}
+
+
+/* 5. FAQ ACCORDION */
+
+.faq-item {
+    margin-bottom: 12px;
+    background: #151515;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(229,9,32,0.6);
+}
+
+.faq-item[open] {
+    border-color: var(--red);
+}
+
+.faq-item summary {
+    position: relative;
+    padding: 23px 60px 23px 25px;
+    cursor: pointer;
+    list-style: none;
+
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: var(--red);
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-answer {
+    padding: 0 25px 25px;
+    border-top: 1px solid #292929;
+}
+
+.faq-answer p {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.9;
+    padding-top: 20px;
+}
+
+.faq-answer a {
+    color: var(--red);
+    font-weight: 700;
+}
+
+.faq-answer a:hover {
+    text-decoration: underline;
+}
+
+
+/* 6. FAQ CONTACT CTA */
+
+.faq-contact {
+    padding: 90px 5%;
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(229,9,32,0.13),
+            transparent 65%
+        ),
+        #111111;
+
+    text-align: center;
+}
+
+.faq-contact-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.faq-contact h2 {
+    font-size: clamp(30px, 5vw, 48px);
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.faq-contact h2 span {
+    color: var(--red);
+}
+
+.faq-contact p {
+    color: var(--grey);
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+
+/* 7. RESPONSIVE DESIGN */
+
+@media (max-width: 650px) {
+
+    .faq-hero {
+        min-height: 60vh;
+        padding: 130px 6% 75px;
+    }
+
+    .faq-section {
+        padding: 75px 6%;
+    }
+
+    .faq-intro {
+        padding: 65px 6%;
+    }
+
+    .faq-item summary {
+        font-size: 14px;
+        padding: 20px 50px 20px 18px;
+    }
+
+    .faq-item summary::after {
+        right: 18px;
+    }
+
+    .faq-answer {
+        padding: 0 18px 20px;
+    }
+
+    .faq-category-title h3 {
+        font-size: 20px;
+    }
+
+    .faq-contact {
+        padding: 75px 6%;
+    }
+
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            AUTO<span>TUBE</span> CREW
+        </a>
+
+        <nav class="navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="portfolio.html">Portfolio</a>
+
+            <a href="contact.html" class="contact-link">
+                Let's Talk ↗
+            </a>
+
+        </nav>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- HERO SECTION -->
+
+        <section class="faq-hero">
+
+            <div class="faq-hero-content">
+
+                <p class="eyebrow">
+                    HELP & INFORMATION
+                </p>
+
+                <h1>
+                    FREQUENTLY<br>
+                    ASKED <span>QUESTIONS.</span>
+                </h1>
+
+                <p>
+                    Find answers to common questions
+                    about our creative services,
+                    production capabilities,
+                    project workflow and
+                    business collaborations.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+
+        <section class="faq-intro">
+
+            <div class="faq-intro-container">
+
+                <p class="eyebrow">
+                    HOW CAN WE HELP?
+                </p>
+
+                <h2>
+                    EVERYTHING YOU NEED
+                    TO <span>KNOW.</span>
+                </h2>
+
+                <p>
+                    Whether you are exploring our
+                    production services, planning
+                    a new project or interested
+                    in a business collaboration,
+                    this section provides useful
+                    information about working
+                    with AUTOTUBE CREW STUDIO.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ CONTENT -->
+
+        <section class="faq-section">
+
+            <div class="faq-container">
+
+
+                <div class="faq-heading">
+
+                    <p class="eyebrow">
+                        COMMON QUESTIONS
+                    </p>
+
+                    <h2>
+                        FIND YOUR <span>ANSWERS.</span>
+                    </h2>
+
+                    <p>
+                        Select a question below
+                        to explore more information.
+                    </p>
+
+                </div>
+
+
+                <!-- CATEGORY 01: GENERAL -->
+
+                <div class="faq-category">
+
+                    <div class="faq-category-title">
+
+                        <h3>
+                            01. <span>General Information</span>
+                        </h3>
+
+                    </div>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            What is AUTOTUBE CREW STUDIO?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                AUTOTUBE CREW STUDIO is a
+                                creative production studio
+                                based in Indonesia, working
+                                across digital platforms,
+                                animation, CGI, visual effects,
+                                video production and
+                                creative content.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            Where is your company based?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                AUTOTUBE CREW STUDIO is
+                                based in Indonesia.
+                                For business enquiries
+                                and project discussions,
+                                please contact our team
+                                through the official
+                                <a href="contact.html">
+                                    Contact page
+                                </a>.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            What types of clients do you work with?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                We welcome enquiries from
+                                brands, businesses,
+                                production companies,
+                                filmmakers, creative
+                                professionals and
+                                potential business partners.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+
+                <!-- CATEGORY 02: SERVICES -->
+
+                <div class="faq-category">
+
+                    <div class="faq-category-title">
+
+                        <h3>
+                            02. <span>Services & Capabilities</span>
+                        </h3>
+
+                    </div>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            What services does your studio offer?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Our listed service areas
+                                include 3D animation,
+                                CGI and visualization,
+                                visual effects (VFX),
+                                film and video production,
+                                digital platforms and
+                                creative content.
+                            </p>
+
+                            <p>
+                                Explore our
+                                <a href="services.html">
+                                    Services page
+                                </a>
+                                for more information.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            Do you work on animated films?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Animation and cinematic
+                                storytelling are part of
+                                our creative production
+                                focus. Project scope,
+                                production requirements,
+                                creative direction and
+                                collaboration arrangements
+                                can be discussed individually.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            Can you develop customized creative projects?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Yes, project requirements
+                                can be discussed according
+                                to the creative concept,
+                                production scope, technical
+                                requirements and intended
+                                deliverables.
+                            </p>
+
+                            <p>
+                                Every project is evaluated
+                                individually before a
+                                proposed scope and
+                                production plan are agreed.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+
+                <!-- CATEGORY 03: PROJECTS -->
+
+                <div class="faq-category">
+
+                    <div class="faq-category-title">
+
+                        <h3>
+                            03. <span>Projects & Production</span>
+                        </h3>
+
+                    </div>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            How can I start a project with your studio?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Start by visiting our
+                                <a href="contact.html">
+                                    Contact page
+                                </a>
+                                and sharing your project
+                                requirements.
+                            </p>
+
+                            <p>
+                                Include information about
+                                your concept, objectives,
+                                preferred deliverables,
+                                expected timeline and
+                                any relevant references.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            What information should I provide for a project enquiry?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Useful information includes
+                                the project description,
+                                target audience, creative
+                                references, production
+                                requirements, preferred
+                                delivery formats, timeline
+                                and available budget range.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            What is your production workflow?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                A typical creative production
+                                workflow may include:
+                                project briefing,
+                                concept development,
+                                pre-production,
+                                production,
+                                post-production,
+                                review and final delivery.
+                            </p>
+
+                            <p>
+                                The exact workflow depends
+                                on the nature and complexity
+                                of each project.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            How long does a production project take?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Production timelines vary
+                                depending on project scope,
+                                creative complexity,
+                                technical requirements,
+                                production resources
+                                and review schedules.
+                            </p>
+
+                            <p>
+                                A project-specific timeline
+                                can be discussed after
+                                evaluating the requirements.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+
+                <!-- CATEGORY 04: PRICING -->
+
+                <div class="faq-category">
+
+                    <div class="faq-category-title">
+
+                        <h3>
+                            04. <span>Pricing & Payments</span>
+                        </h3>
+
+                    </div>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            How much do your services cost?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Pricing depends on the
+                                project scope, creative
+                                requirements, production
+                                complexity, resources
+                                and final deliverables.
+                            </p>
+
+                            <p>
+                                Contact our team with
+                                your project details
+                                to discuss a suitable
+                                proposal.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            Do you provide customized quotations?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Project proposals and
+                                quotations can be prepared
+                                according to the requirements
+                                and scope agreed during
+                                the project discussion.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            What are your payment terms?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Payment terms depend on
+                                the individual project
+                                agreement. The agreed
+                                payment schedule,
+                                milestones and conditions
+                                should be documented
+                                before production begins.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+
+                <!-- CATEGORY 05: PARTNERSHIPS -->
+
+                <div class="faq-category">
+
+                    <div class="faq-category-title">
+
+                        <h3>
+                            05. <span>Partnerships & Careers</span>
+                        </h3>
+
+                    </div>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            Do you accept business partnerships?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                We welcome enquiries
+                                regarding potential
+                                business partnerships,
+                                creative collaborations
+                                and production opportunities.
+                            </p>
+
+                            <p>
+                                Please share your proposal
+                                and collaboration objectives
+                                through our
+                                <a href="contact.html">
+                                    Contact page
+                                </a>.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            How can I enquire about investment opportunities?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Investment and strategic
+                                business enquiries can
+                                be submitted through
+                                our official communication
+                                channels.
+                            </p>
+
+                            <p>
+                                Relevant information
+                                and proposals can then
+                                be discussed through
+                                an appropriate business
+                                communication process.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            How can I explore career opportunities?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Visit our
+                                <a href="careers.html">
+                                    Careers page
+                                </a>
+                                to learn about our
+                                creative disciplines
+                                and future collaboration
+                                opportunities.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+
+                <!-- CATEGORY 06: CONTACT -->
+
+                <div class="faq-category">
+
+                    <div class="faq-category-title">
+
+                        <h3>
+                            06. <span>Contact & Communication</span>
+                        </h3>
+
+                    </div>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            How can I contact AUTOTUBE CREW STUDIO?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                You can contact our studio
+                                through the official
+                                <a href="contact.html">
+                                    Contact page
+                                </a>.
+                                Share your enquiry,
+                                project details or
+                                business proposal
+                                with our team.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            Can I submit a project proposal or creative idea?
+                        </summary>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Yes. You can submit a
+                                project enquiry describing
+                                your idea, objectives,
+                                expected production scope
+                                and relevant references
+                                through our official
+                                contact channel.
+                            </p>
+
+                            <p>
+                                Avoid submitting passwords,
+                                confidential credentials
+                                or sensitive personal
+                                information.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT CTA -->
+
+        <section class="faq-contact">
+
+            <div class="faq-contact-content">
+
+                <p class="eyebrow">
+                    STILL HAVE QUESTIONS?
+                </p>
+
+                <h2>
+                    LET'S START A
+                    <span>CONVERSATION.</span>
+                </h2>
+
+                <p>
+                    Every project and collaboration
+                    is different. Contact our team
+                    to discuss your specific
+                    requirements and opportunities.
+                </p>
+
+                <a href="contact.html"
+                   class="button-primary">
+                    CONTACT OUR STUDIO ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            AUTO<span>TUBE</span> CREW
+        </a>
+
+        <p>
+            Creative Production. Without Limits.
+        </p>
+
+        <p>
+            © 2026 AUTOTUBE CREW STUDIO.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./assets/js/main.js" defer></script>
+
+</body>
+</html>
