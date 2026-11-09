@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News | Autotube Crew Studio</title>
+
+    <meta name="description" content="Explore official news, announcements, company updates and creative production developments from PT Autotube Crew Studio.">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .news-section {
+            min-height: 80vh;
+            padding: 120px 8%;
+            background: #080808;
+            color: #ffffff;
+        }
+
+        .news-heading {
+            max-width: 750px;
+            margin-bottom: 60px;
+        }
+
+        .news-heading span {
+            color: #e50920;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .news-heading h1 {
+            font-size: clamp(40px, 7vw, 75px);
+            margin: 20px 0;
+            font-weight: 800;
+        }
+
+        .news-heading p {
+            color: #a3a3a3;
+            line-height: 1.8;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .news-card {
+            background: #151515;
+            border: 1px solid #292929;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-6px);
+            border-color: #e50920;
+        }
+
+        .news-image {
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(
+                135deg,
+                #292929,
+                #101010
+            );
+            color: #e50920;
+            font-size: 45px;
+        }
+
+        .news-content {
+            padding: 28px;
+        }
+
+        .news-category {
+            color: #e50920;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .news-content h2 {
+            font-size: 22px;
+            margin: 15px 0;
+            line-height: 1.4;
+        }
+
+        .news-content p {
+            color: #999;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .news-date {
+            display: block;
+            margin-top: 20px;
+            color: #777;
+            font-size: 12px;
+        }
+
+        .news-footer {
+            margin-top: 60px;
+            padding: 35px;
+            background: #151515;
+            border-left: 3px solid #e50920;
+        }
+
+        .news-footer h2 {
+            margin-bottom: 12px;
+        }
+
+        .news-footer p {
+            color: #999;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            .news-section {
+                padding: 90px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <!-- Add the same shared navigation used in about.html here -->
+
+    <main>
+
+        <section class="news-section">
+
+            <div class="news-heading">
+
+                <span>Latest Updates & Announcements</span>
+
+                <h1>
+                    Company News<span style="color:#e50920;">.</span>
+                </h1>
+
+                <p>
+                    Stay connected with PT Autotube Crew
+                    Studio. Explore company announcements,
+                    creative developments, production
+                    updates and our journey in the
+                    digital media industry.
+                </p>
+
+            </div>
+
+            <div class="news-grid">
+
+                <!-- NEWS 1 -->
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        ◈
+                    </div>
+
+                    <div class="news-content">
+
+                        <span class="news-category">
+                            Company Update
+                        </span>
+
+                        <h2>
+                            Building Our Creative Future
+                        </h2>
+
+                        <p>
+                            We continue to develop our
+                            creative capabilities and
+                            strengthen our position in
+                            digital media and production.
+                        </p>
+
+                        <span class="news-date">
+                            Official Announcement
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <!-- NEWS 2 -->
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        ◇
+                    </div>
+
+                    <div class="news-content">
+
+                        <span class="news-category">
+                            Production
+                        </span>
+
+                        <h2>
+                            Advancing Animation & CGI
+                        </h2>
+
+                        <p>
+                            Our focus remains on developing
+                            high-quality animation, CGI
+                            and cinematic visual production
+                            capabilities.
+                        </p>
+
+                        <span class="news-date">
+                            Production Update
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <!-- NEWS 3 -->
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        ▣
+                    </div>
+
+                    <div class="news-content">
+
+                        <span class="news-category">
+                            Digital Platform
+                        </span>
+
+                        <h2>
+                            Expanding Digital Experiences
+                        </h2>
+
+                        <p>
+                            We are working towards creating
+                            innovative digital experiences
+                            through technology, creativity
+                            and digital platforms.
+                        </p>
+
+                        <span class="news-date">
+                            Company Development
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="news-footer">
+
+                <h2>
+                    More Updates Coming Soon
+                </h2>
+
+                <p>
+                    Follow our journey as we continue
+                    developing new ideas, creative projects
+                    and digital production opportunities.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <!-- Add the same shared footer used on other pages here -->
+
+    <script src="./assets/js/main.js" defer></script>
+
+</body>
+</html>
