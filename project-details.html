@@ -1,0 +1,2368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>Project Details | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description" content="Explore project requirements, production scope, creative development, deliverables, milestones and collaboration information at PT AUTOTUBE CREW STUDIO.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://ptautotubecrewstudio.github.io/project-details.html">
+
+    <meta property="og:title" content="Project Details | AUTOTUBE CREW STUDIO">
+
+    <meta property="og:description" content="Understand project scope, production requirements, deliverables and collaboration processes at AUTOTUBE CREW STUDIO.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://ptautotubecrewstudio.github.io/project-details.html">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+
+    <style>
+
+/* =========================================
+   AUTOTUBE CREW
+   PROJECT DETAILS PAGE
+   ========================================= */
+
+
+/* 1. PROJECT HERO */
+
+.details-hero {
+    min-height: 75vh;
+    padding: 155px 5% 100px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            ellipse at 80% 45%,
+            rgba(229,9,32,0.18),
+            transparent 45%
+        ),
+        linear-gradient(
+            110deg,
+            #080808,
+            #151515
+        );
+}
+
+.details-hero-content {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.details-hero h1 {
+    font-size: clamp(43px, 8vw, 90px);
+    font-weight: 900;
+    line-height: 1.06;
+    letter-spacing: -3px;
+
+    margin-bottom: 28px;
+}
+
+.details-hero h1 span {
+    color: var(--red);
+}
+
+.details-hero-description {
+    max-width: 720px;
+
+    color: #b5b5b5;
+
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.details-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+    margin-top: 35px;
+}
+
+
+/* 2. INTRODUCTION */
+
+.details-intro {
+    padding: 105px 5%;
+    background: var(--dark);
+}
+
+.details-container {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+}
+
+.details-intro-grid {
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+    gap: 60px;
+}
+
+.details-intro h2 {
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.15;
+
+    margin: 20px 0;
+}
+
+.details-intro h2 span {
+    color: var(--red);
+}
+
+.details-intro p {
+    color: var(--grey);
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.details-intro-visual {
+    min-height: 360px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(229,9,32,0.2),
+            transparent 60%
+        ),
+        #151515;
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.details-intro-visual::before,
+.details-intro-visual::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border: 1px solid rgba(229,9,32,0.35);
+    border-radius: 50%;
+}
+
+.details-intro-visual::after {
+    width: 180px;
+    height: 180px;
+}
+
+.details-intro-visual span {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.details-intro-visual span b {
+    color: var(--red);
+}
+
+
+/* 3. PROJECT INFORMATION */
+
+.details-overview {
+    padding: 105px 5%;
+    background: var(--black);
+}
+
+.details-heading {
+    max-width: 780px;
+    margin-bottom: 50px;
+}
+
+.details-heading h2 {
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.15;
+
+    margin: 18px 0;
+}
+
+.details-heading h2 span {
+    color: var(--red);
+}
+
+.details-heading p {
+    color: var(--grey);
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.details-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.details-overview-card {
+    min-height: 250px;
+
+    padding: 30px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s ease;
+}
+
+.details-overview-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--red);
+}
+
+.details-overview-card span {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.details-overview-card h3 {
+    font-size: 20px;
+
+    margin: 22px 0 13px;
+}
+
+.details-overview-card p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+
+/* 4. PROJECT CATEGORIES */
+
+.details-categories {
+    padding: 105px 5%;
+    background: var(--dark);
+}
+
+.details-category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.details-category-card {
+    padding: 32px;
+
+    background: #151515;
+
+    border-left: 3px solid var(--red);
+
+    transition: 0.3s ease;
+}
+
+.details-category-card:hover {
+    transform: translateY(-4px);
+    background: #1b1b1b;
+}
+
+.details-category-card span {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.details-category-card h3 {
+    font-size: 22px;
+
+    margin: 20px 0 13px;
+}
+
+.details-category-card p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.details-category-card a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.details-category-card a:hover {
+    color: var(--red);
+}
+
+
+/* 5. PROJECT SCOPE */
+
+.details-scope {
+    padding: 105px 5%;
+    background: var(--black);
+}
+
+.details-scope-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+    margin-top: 45px;
+}
+
+.details-scope-card {
+    padding: 32px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.details-scope-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+.details-scope-card h3 span {
+    color: var(--red);
+}
+
+.details-scope-card ul {
+    list-style: none;
+}
+
+.details-scope-card li {
+    position: relative;
+
+    padding: 12px 0 12px 26px;
+
+    border-bottom: 1px solid #292929;
+
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.details-scope-card li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--red);
+    font-weight: 800;
+}
+
+
+/* 6. DELIVERABLES */
+
+.details-deliverables {
+    padding: 105px 5%;
+    background: var(--dark);
+}
+
+.details-deliverable-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.details-deliverable-card {
+    padding: 30px;
+
+    min-height: 240px;
+
+    background: #151515;
+
+    border-top: 3px solid var(--red);
+}
+
+.details-deliverable-card span {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.details-deliverable-card h3 {
+    font-size: 19px;
+
+    margin: 20px 0 12px;
+}
+
+.details-deliverable-card p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+
+/* 7. PROJECT MILESTONES */
+
+.details-milestones {
+    padding: 105px 5%;
+    background: var(--black);
+}
+
+.details-milestone-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+    margin-top: 45px;
+}
+
+.details-milestone-card {
+    padding: 27px 22px;
+
+    background: #151515;
+
+    border-top: 3px solid var(--red);
+}
+
+.details-milestone-card span {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.details-milestone-card h3 {
+    font-size: 18px;
+
+    margin: 19px 0 12px;
+}
+
+.details-milestone-card p {
+    color: var(--grey);
+
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+
+/* 8. PROJECT COLLABORATION */
+
+.details-collaboration {
+    padding: 105px 5%;
+    background: var(--dark);
+}
+
+.details-collaboration-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+    margin-top: 45px;
+}
+
+.details-collaboration-card {
+    padding: 33px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.details-collaboration-card h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.details-collaboration-card h3 span {
+    color: var(--red);
+}
+
+.details-collaboration-card ul {
+    list-style: none;
+}
+
+.details-collaboration-card li {
+    position: relative;
+
+    padding: 11px 0 11px 26px;
+
+    border-bottom: 1px solid #292929;
+
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.details-collaboration-card li::before {
+    content: "→";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--red);
+}
+
+
+/* 9. PROJECT DOCUMENTATION */
+
+.details-documentation {
+    padding: 100px 5%;
+    background: var(--black);
+}
+
+.details-documentation-box {
+    max-width: 1180px;
+    margin: auto;
+
+    padding: 38px;
+
+    background: #151515;
+
+    border-left: 3px solid var(--red);
+}
+
+.details-documentation-box h2 {
+    font-size: clamp(28px, 4vw, 40px);
+
+    margin-bottom: 20px;
+}
+
+.details-documentation-box h2 span {
+    color: var(--red);
+}
+
+.details-documentation-box p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+}
+
+
+/* 10. PROJECT FAQ */
+
+.details-faq {
+    padding: 100px 5%;
+    background: var(--dark);
+}
+
+.details-faq-container {
+    max-width: 950px;
+    margin: auto;
+}
+
+.details-faq-heading {
+    margin-bottom: 40px;
+}
+
+.details-faq-heading h2 {
+    font-size: clamp(30px, 5vw, 48px);
+
+    margin-top: 18px;
+}
+
+.details-faq-heading h2 span {
+    color: var(--red);
+}
+
+.details-faq-item {
+    margin-bottom: 12px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.details-faq-item[open] {
+    border-color: var(--red);
+}
+
+.details-faq-item summary {
+    position: relative;
+
+    cursor: pointer;
+    list-style: none;
+
+    padding: 22px 55px 22px 24px;
+
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.details-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.details-faq-item summary::after {
+    content: "+";
+
+    position: absolute;
+    right: 23px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: var(--red);
+    font-size: 25px;
+}
+
+.details-faq-item[open] summary::after {
+    content: "−";
+}
+
+.details-faq-answer {
+    padding: 20px 24px 24px;
+
+    border-top: 1px solid #292929;
+}
+
+.details-faq-answer p {
+    color: var(--grey);
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* 11. PROJECT CTA */
+
+.details-cta {
+    padding: 110px 5%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(229,9,32,0.16),
+            transparent 65%
+        ),
+        #080808;
+}
+
+.details-cta-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.details-cta h2 {
+    font-size: clamp(32px, 5vw, 56px);
+
+    line-height: 1.2;
+
+    margin: 20px 0;
+}
+
+.details-cta h2 span {
+    color: var(--red);
+}
+
+.details-cta p {
+    color: var(--grey);
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* 12. RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+
+    .details-overview-grid,
+    .details-deliverable-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details-milestone-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .details-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .details-intro-visual {
+        min-height: 280px;
+    }
+
+    .details-category-grid,
+    .details-scope-grid,
+    .details-collaboration-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .details-hero {
+        min-height: 65vh;
+        padding: 125px 6% 75px;
+    }
+
+    .details-hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .details-intro,
+    .details-overview,
+    .details-categories,
+    .details-scope,
+    .details-deliverables,
+    .details-milestones,
+    .details-collaboration,
+    .details-documentation,
+    .details-faq,
+    .details-cta {
+        padding: 75px 6%;
+    }
+
+    .details-overview-grid,
+    .details-deliverable-grid,
+    .details-milestone-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .details-overview-card,
+    .details-deliverable-card {
+        min-height: auto;
+    }
+
+    .details-scope-card,
+    .details-collaboration-card,
+    .details-documentation-box {
+        padding: 25px;
+    }
+
+    .details-faq-item summary {
+        padding: 20px 48px 20px 18px;
+        font-size: 14px;
+    }
+
+    .details-faq-answer {
+        padding: 18px;
+    }
+
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         HEADER & NAVIGATION
+         ===================================== -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            AUTO<span>TUBE</span> CREW
+        </a>
+
+        <nav class="navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="portfolio.html">Portfolio</a>
+
+            <a href="contact.html" class="contact-link">
+                Let's Talk ↗
+            </a>
+
+        </nav>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false">
+
+            ☰
+
+        </button>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================
+             1. PROJECT HERO
+             ===================================== -->
+
+        <section class="details-hero">
+
+            <div class="details-hero-content">
+
+                <p class="eyebrow">
+                    PROJECT INFORMATION & DEVELOPMENT
+                </p>
+
+                <h1>
+
+                    PROJECT<br>
+
+                    <span>DETAILS.</span>
+
+                </h1>
+
+                <p class="details-hero-description">
+
+                    Every successful project
+                    begins with a clear understanding
+                    of its vision, objectives,
+                    requirements and deliverables.
+
+                    Discover how project details
+                    are structured at
+                    PT AUTOTUBE CREW STUDIO.
+
+                </p>
+
+                <div class="details-hero-actions">
+
+                    <a href="#project-overview"
+                       class="button-primary">
+
+                        EXPLORE PROJECT DETAILS ↗
+
+                    </a>
+
+                    <a href="contact.html"
+                       class="button-secondary">
+
+                        DISCUSS YOUR PROJECT
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-background">
+
+                <div class="hero-circle"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             2. PROJECT INTRODUCTION
+             ===================================== -->
+
+        <section class="details-intro"
+                 id="project-overview">
+
+            <div class="details-container">
+
+                <div class="details-intro-grid">
+
+
+                    <div>
+
+                        <p class="eyebrow">
+                            UNDERSTANDING YOUR PROJECT
+                        </p>
+
+                        <h2>
+
+                            EVERY DETAIL
+                            <span>MATTERS.</span>
+
+                        </h2>
+
+                        <p>
+
+                            Before starting
+                            a creative or digital
+                            project, it is important
+                            to understand the
+                            objectives, requirements
+                            and expected outcomes.
+
+                        </p>
+
+                        <p>
+
+                            PT AUTOTUBE CREW STUDIO
+                            approaches project
+                            discussions by considering
+                            the creative vision,
+                            technical scope,
+                            required resources,
+                            production process
+                            and agreed deliverables.
+
+                        </p>
+
+                        <p>
+
+                            This information
+                            helps establish
+                            a shared understanding
+                            between the company
+                            and the client
+                            before project execution.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="details-intro-visual">
+
+                        <span>
+
+                            PROJECT<br>
+
+                            <b>→</b><br>
+
+                            EXECUTION
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             3. PROJECT INFORMATION
+             ===================================== -->
+
+        <section class="details-overview">
+
+            <div class="details-container">
+
+
+                <div class="details-heading">
+
+                    <p class="eyebrow">
+                        PROJECT FOUNDATION
+                    </p>
+
+                    <h2>
+
+                        SIX IMPORTANT
+                        <span>PROJECT ELEMENTS.</span>
+
+                    </h2>
+
+                    <p>
+
+                        A clear project brief
+                        should establish
+                        the following information
+                        before production
+                        or development begins.
+
+                    </p>
+
+                </div>
+
+
+                <div class="details-overview-grid">
+
+
+                    <article class="details-overview-card">
+
+                        <span>01 / IDENTITY</span>
+
+                        <h3>
+                            Project Identification
+                        </h3>
+
+                        <p>
+
+                            Project title,
+                            business or client
+                            background, project
+                            category and
+                            responsible contacts.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-overview-card">
+
+                        <span>02 / OBJECTIVES</span>
+
+                        <h3>
+                            Project Objectives
+                        </h3>
+
+                        <p>
+
+                            The problem
+                            to solve,
+                            intended audience,
+                            creative purpose
+                            and expected
+                            business outcomes.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-overview-card">
+
+                        <span>03 / SCOPE</span>
+
+                        <h3>
+                            Scope of Work
+                        </h3>
+
+                        <p>
+
+                            Tasks, production
+                            activities,
+                            responsibilities,
+                            technical requirements
+                            and project boundaries.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-overview-card">
+
+                        <span>04 / RESOURCES</span>
+
+                        <h3>
+                            Resources & Technology
+                        </h3>
+
+                        <p>
+
+                            Required people,
+                            production assets,
+                            software, equipment,
+                            infrastructure
+                            and technical resources.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-overview-card">
+
+                        <span>05 / SCHEDULE</span>
+
+                        <h3>
+                            Timeline & Milestones
+                        </h3>
+
+                        <p>
+
+                            Production stages,
+                            target dates,
+                            review periods,
+                            dependencies
+                            and delivery milestones.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-overview-card">
+
+                        <span>06 / DELIVERY</span>
+
+                        <h3>
+                            Final Deliverables
+                        </h3>
+
+                        <p>
+
+                            Approved outputs,
+                            technical formats,
+                            resolutions,
+                            documentation
+                            and agreed handover
+                            materials.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             4. PROJECT CATEGORIES
+             ===================================== -->
+
+        <section class="details-categories">
+
+            <div class="details-container">
+
+
+                <div class="details-heading">
+
+                    <p class="eyebrow">
+                        OUR PROJECT AREAS
+                    </p>
+
+                    <h2>
+
+                        DIFFERENT PROJECTS.
+                        <span>DIFFERENT REQUIREMENTS.</span>
+
+                    </h2>
+
+                    <p>
+
+                        Project information
+                        and production details
+                        depend on the type
+                        of creative or digital
+                        work involved.
+
+                    </p>
+
+                </div>
+
+
+                <div class="details-category-grid">
+
+
+                    <!-- CATEGORY 01 -->
+
+                    <article class="details-category-card">
+
+                        <span>01 / ANIMATION</span>
+
+                        <h3>
+                            3D Animation Projects
+                        </h3>
+
+                        <p>
+
+                            Character design,
+                            environments,
+                            modeling, rigging,
+                            animation, lighting,
+                            rendering and
+                            final sequences.
+
+                        </p>
+
+                        <a href="3d-animation.html">
+                            EXPLORE 3D ANIMATION ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- CATEGORY 02 -->
+
+                    <article class="details-category-card">
+
+                        <span>02 / CGI</span>
+
+                        <h3>
+                            CGI & Visualization
+                        </h3>
+
+                        <p>
+
+                            Digital assets,
+                            product models,
+                            materials, lighting,
+                            rendering requirements
+                            and visualization
+                            deliverables.
+
+                        </p>
+
+                        <a href="cgi.html">
+                            EXPLORE CGI ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- CATEGORY 03 -->
+
+                    <article class="details-category-card">
+
+                        <span>03 / VFX</span>
+
+                        <h3>
+                            Visual Effects Projects
+                        </h3>
+
+                        <p>
+
+                            Shot requirements,
+                            visual effects,
+                            compositing,
+                            assets, tracking
+                            and post-production
+                            specifications.
+
+                        </p>
+
+                        <a href="vfx.html">
+                            EXPLORE VFX ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- CATEGORY 04 -->
+
+                    <article class="details-category-card">
+
+                        <span>04 / VIDEO</span>
+
+                        <h3>
+                            Video Production
+                        </h3>
+
+                        <p>
+
+                            Creative briefs,
+                            scripts, filming,
+                            production schedules,
+                            editing and
+                            delivery formats.
+
+                        </p>
+
+                        <a href="video-production.html">
+                            EXPLORE VIDEO PRODUCTION ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- CATEGORY 05 -->
+
+                    <article class="details-category-card">
+
+                        <span>05 / FILM</span>
+
+                        <h3>
+                            Film Production
+                        </h3>
+
+                        <p>
+
+                            Story development,
+                            visual direction,
+                            pre-production,
+                            production planning,
+                            post-production
+                            and delivery.
+
+                        </p>
+
+                        <a href="film-production.html">
+                            EXPLORE FILM PRODUCTION ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- CATEGORY 06 -->
+
+                    <article class="details-category-card">
+
+                        <span>06 / DIGITAL</span>
+
+                        <h3>
+                            Digital Platform Projects
+                        </h3>
+
+                        <p>
+
+                            Business requirements,
+                            platform architecture,
+                            UI/UX, features,
+                            development,
+                            testing and deployment.
+
+                        </p>
+
+                        <a href="digital-platforms.html">
+                            EXPLORE DIGITAL PLATFORMS ↗
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             5. PROJECT SCOPE
+             ===================================== -->
+
+        <section class="details-scope">
+
+            <div class="details-container">
+
+
+                <div class="details-heading">
+
+                    <p class="eyebrow">
+                        DEFINING THE WORK
+                    </p>
+
+                    <h2>
+
+                        CLEAR SCOPE.
+                        <span>CLEAR EXPECTATIONS.</span>
+
+                    </h2>
+
+                    <p>
+
+                        A documented scope
+                        helps both parties
+                        understand which
+                        activities are included
+                        and what is outside
+                        the approved project.
+
+                    </p>
+
+                </div>
+
+
+                <div class="details-scope-grid">
+
+
+                    <article class="details-scope-card">
+
+                        <h3>
+                            <span>01.</span>
+                            Included in Project Scope
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Approved project
+                                objectives and
+                                creative brief.
+                            </li>
+
+                            <li>
+                                Agreed production
+                                or development
+                                activities.
+                            </li>
+
+                            <li>
+                                Specified work
+                                stages and
+                                milestones.
+                            </li>
+
+                            <li>
+                                Defined review
+                                and approval
+                                procedures.
+                            </li>
+
+                            <li>
+                                Agreed final
+                                deliverables
+                                and output formats.
+                            </li>
+
+                            <li>
+                                Documented
+                                commercial
+                                and delivery
+                                conditions.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <article class="details-scope-card">
+
+                        <h3>
+                            <span>02.</span>
+                            Items Requiring Separate Approval
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Additional features
+                                outside the
+                                approved brief.
+                            </li>
+
+                            <li>
+                                Major creative
+                                direction changes.
+                            </li>
+
+                            <li>
+                                Additional
+                                deliverables
+                                or formats.
+                            </li>
+
+                            <li>
+                                Extra revisions
+                                beyond the
+                                agreed allowance.
+                            </li>
+
+                            <li>
+                                Additional
+                                equipment,
+                                software or
+                                production resources.
+                            </li>
+
+                            <li>
+                                Changes that
+                                affect the
+                                budget or
+                                delivery timeline.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             6. PROJECT DELIVERABLES
+             ===================================== -->
+
+        <section class="details-deliverables">
+
+            <div class="details-container">
+
+
+                <div class="details-heading">
+
+                    <p class="eyebrow">
+                        COMPLETED PROJECT OUTPUTS
+                    </p>
+
+                    <h2>
+
+                        WHAT WILL
+                        <span>BE DELIVERED?</span>
+
+                    </h2>
+
+                    <p>
+
+                        Deliverables are established
+                        according to the selected
+                        service, approved scope
+                        and project agreement.
+
+                    </p>
+
+                </div>
+
+
+                <div class="details-deliverable-grid">
+
+
+                    <article class="details-deliverable-card">
+
+                        <span>01 / VIDEO</span>
+
+                        <h3>
+                            Video Deliverables
+                        </h3>
+
+                        <p>
+
+                            Approved final videos,
+                            specified resolutions,
+                            aspect ratios,
+                            export formats
+                            and agreed versions.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-deliverable-card">
+
+                        <span>02 / ANIMATION</span>
+
+                        <h3>
+                            Animation Outputs
+                        </h3>
+
+                        <p>
+
+                            Completed animated
+                            sequences, approved
+                            renders, specified
+                            frame rates and
+                            final video exports.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-deliverable-card">
+
+                        <span>03 / CGI & VFX</span>
+
+                        <h3>
+                            Visual Assets
+                        </h3>
+
+                        <p>
+
+                            Approved rendered
+                            images, visual effects
+                            shots, composited
+                            outputs and
+                            agreed image formats.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-deliverable-card">
+
+                        <span>04 / DIGITAL</span>
+
+                        <h3>
+                            Digital Platforms
+                        </h3>
+
+                        <p>
+
+                            Agreed website
+                            or platform functions,
+                            user interfaces,
+                            deployment and
+                            handover materials.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-deliverable-card">
+
+                        <span>05 / DOCUMENTATION</span>
+
+                        <h3>
+                            Project Documentation
+                        </h3>
+
+                        <p>
+
+                            Relevant project
+                            records, approved
+                            specifications,
+                            documentation
+                            and handover details.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-deliverable-card">
+
+                        <span>06 / SOURCE FILES</span>
+
+                        <h3>
+                            Working Files
+                        </h3>
+
+                        <p>
+
+                            Editable source files,
+                            working assets and
+                            project files only
+                            where their delivery
+                            is expressly included
+                            in the agreement.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             7. PROJECT MILESTONES
+             ===================================== -->
+
+        <section class="details-milestones">
+
+            <div class="details-container">
+
+
+                <div class="details-heading">
+
+                    <p class="eyebrow">
+                        PROJECT MANAGEMENT
+                    </p>
+
+                    <h2>
+
+                        TRACKING
+                        <span>PROJECT PROGRESS.</span>
+
+                    </h2>
+
+                    <p>
+
+                        Larger projects may
+                        be divided into
+                        defined milestones
+                        to support planning,
+                        progress reviews
+                        and approvals.
+
+                    </p>
+
+                </div>
+
+
+                <div class="details-milestone-grid">
+
+
+                    <article class="details-milestone-card">
+
+                        <span>01 / BRIEF</span>
+
+                        <h3>
+                            Project Approval
+                        </h3>
+
+                        <p>
+
+                            Confirming the
+                            project requirements,
+                            scope, commercial
+                            terms and
+                            responsibilities.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-milestone-card">
+
+                        <span>02 / PLANNING</span>
+
+                        <h3>
+                            Planning Approval
+                        </h3>
+
+                        <p>
+
+                            Reviewing concepts,
+                            technical planning,
+                            scripts, storyboards
+                            or platform
+                            design as required.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-milestone-card">
+
+                        <span>03 / PRODUCTION</span>
+
+                        <h3>
+                            Production Review
+                        </h3>
+
+                        <p>
+
+                            Reviewing intermediate
+                            work, progress,
+                            production stages
+                            and agreed
+                            review materials.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="details-milestone-card">
+
+                        <span>04 / DELIVERY</span>
+
+                        <h3>
+                            Final Approval
+                        </h3>
+
+                        <p>
+
+                            Reviewing approved
+                            deliverables,
+                            completing handover
+                            and confirming
+                            agreed completion
+                            conditions.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             8. CLIENT & STUDIO RESPONSIBILITIES
+             ===================================== -->
+
+        <section class="details-collaboration">
+
+            <div class="details-container">
+
+
+                <div class="details-heading">
+
+                    <p class="eyebrow">
+                        PROFESSIONAL COLLABORATION
+                    </p>
+
+                    <h2>
+
+                        SHARED
+                        <span>RESPONSIBILITIES.</span>
+
+                    </h2>
+
+                    <p>
+
+                        Clear responsibilities
+                        help maintain communication,
+                        project accountability
+                        and delivery expectations.
+
+                    </p>
+
+                </div>
+
+
+                <div class="details-collaboration-grid">
+
+
+                    <article class="details-collaboration-card">
+
+                        <h3>
+                            Studio <span>Responsibilities</span>
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Review project
+                                requirements
+                                and objectives.
+                            </li>
+
+                            <li>
+                                Establish agreed
+                                production scope
+                                and workflow.
+                            </li>
+
+                            <li>
+                                Coordinate relevant
+                                production
+                                activities.
+                            </li>
+
+                            <li>
+                                Communicate
+                                project progress
+                                and relevant
+                                developments.
+                            </li>
+
+                            <li>
+                                Perform agreed
+                                quality checks
+                                and reviews.
+                            </li>
+
+                            <li>
+                                Prepare and
+                                deliver the
+                                agreed outputs.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <article class="details-collaboration-card">
+
+                        <h3>
+                            Client <span>Responsibilities</span>
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Provide accurate
+                                project information
+                                and requirements.
+                            </li>
+
+                            <li>
+                                Supply authorized
+                                references,
+                                content and assets.
+                            </li>
+
+                            <li>
+                                Nominate appropriate
+                                project contacts
+                                and decision-makers.
+                            </li>
+
+                            <li>
+                                Review submitted
+                                work and provide
+                                clear feedback.
+                            </li>
+
+                            <li>
+                                Provide approvals
+                                within agreed
+                                review periods.
+                            </li>
+
+                            <li>
+                                Meet agreed
+                                commercial and
+                                contractual
+                                obligations.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             9. PROJECT DOCUMENTATION
+             ===================================== -->
+
+        <section class="details-documentation">
+
+            <div class="details-documentation-box">
+
+                <p class="eyebrow">
+                    FORMAL PROJECT DOCUMENTATION
+                </p>
+
+                <h2>
+
+                    DOCUMENTATION
+                    <span>PROTECTS BOTH PARTIES.</span>
+
+                </h2>
+
+                <p>
+
+                    Before a project starts,
+                    relevant commercial
+                    and operational conditions
+                    should be properly
+                    documented.
+
+                </p>
+
+                <p>
+
+                    Depending on the nature
+                    of the engagement,
+                    documentation may include
+                    a project proposal,
+                    statement of work,
+                    commercial quotation,
+                    production schedule,
+                    milestone approvals
+                    and a formal agreement.
+
+                </p>
+
+                <p>
+
+                    Payment arrangements,
+                    revision limits,
+                    intellectual property,
+                    confidentiality,
+                    source-file ownership,
+                    licensing and
+                    project termination
+                    conditions should
+                    be clearly established.
+
+                </p>
+
+                <p>
+
+                    Any changes to
+                    approved project
+                    requirements should
+                    follow an appropriate
+                    change-control process
+                    and receive the
+                    necessary approval.
+
+                </p>
+
+                <a href="terms-and-conditions.html"
+                   class="button-secondary">
+
+                    REVIEW TERMS & CONDITIONS ↗
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             10. PROJECT FAQ
+             ===================================== -->
+
+        <section class="details-faq">
+
+            <div class="details-faq-container">
+
+
+                <div class="details-faq-heading">
+
+                    <p class="eyebrow">
+                        PROJECT INFORMATION
+                    </p>
+
+                    <h2>
+
+                        PROJECT
+                        <span>QUESTIONS.</span>
+
+                    </h2>
+
+                </div>
+
+
+                <details class="details-faq-item">
+
+                    <summary>
+                        What information should a project brief contain?
+                    </summary>
+
+                    <div class="details-faq-answer">
+
+                        <p>
+
+                            A useful project brief
+                            includes objectives,
+                            background,
+                            target audience,
+                            creative references,
+                            required services,
+                            intended deliverables,
+                            timeline and
+                            available budget
+                            information.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <details class="details-faq-item">
+
+                    <summary>
+                        Can project requirements change after production begins?
+                    </summary>
+
+                    <div class="details-faq-answer">
+
+                        <p>
+
+                            Changes may be discussed
+                            during production.
+
+                            However, any change
+                            that affects approved
+                            scope, cost, resources
+                            or schedule should
+                            be assessed and
+                            agreed before
+                            implementation.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <details class="details-faq-item">
+
+                    <summary>
+                        How are final project deliverables determined?
+                    </summary>
+
+                    <div class="details-faq-answer">
+
+                        <p>
+
+                            Final deliverables
+                            are defined in
+                            the project proposal
+                            or formal agreement.
+
+                            File formats,
+                            resolution, versions
+                            and handover
+                            requirements should
+                            be specified
+                            in advance.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <details class="details-faq-item">
+
+                    <summary>
+                        Will clients own the source files?
+                    </summary>
+
+                    <div class="details-faq-answer">
+
+                        <p>
+
+                            Ownership, licensing
+                            and handover of
+                            source files must
+                            be expressly addressed
+                            in the relevant
+                            project agreement.
+
+                            Delivery of final
+                            outputs does not
+                            automatically mean
+                            that all underlying
+                            working files
+                            are transferred.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <details class="details-faq-item">
+
+                    <summary>
+                        Can international projects be discussed?
+                    </summary>
+
+                    <div class="details-faq-answer">
+
+                        <p>
+
+                            Yes. We welcome
+                            enquiries from
+                            local and
+                            international
+                            businesses,
+                            production studios
+                            and creative
+                            collaborators.
+
+                            Relevant commercial
+                            and operational
+                            arrangements can
+                            be discussed
+                            individually.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <details class="details-faq-item">
+
+                    <summary>
+                        How can I submit a project enquiry?
+                    </summary>
+
+                    <div class="details-faq-answer">
+
+                        <p>
+
+                            Visit our
+                            Contact page
+                            and share
+                            your project
+                            description,
+                            requirements
+                            and expected
+                            deliverables.
+
+                            Our team can
+                            then discuss
+                            the appropriate
+                            next steps.
+
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             11. CONTACT CTA
+             ===================================== -->
+
+        <section class="details-cta">
+
+            <div class="details-cta-content">
+
+                <p class="eyebrow">
+                    HAVE A PROJECT IN MIND?
+                </p>
+
+                <h2>
+
+                    LET'S DEFINE
+                    <span>THE DETAILS.</span>
+
+                </h2>
+
+                <p>
+
+                    Tell us about
+                    your creative
+                    or digital project.
+
+                    Share your objectives,
+                    production requirements
+                    and expectations
+                    so we can discuss
+                    a suitable approach.
+
+                </p>
+
+                <a href="contact.html"
+                   class="button-primary">
+
+                    DISCUSS YOUR PROJECT ↗
+
+                </a>
+
+                <a href="case-studies.html"
+                   class="button-secondary">
+
+                    EXPLORE CASE STUDIES
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+         ===================================== -->
+
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            AUTO<span>TUBE</span> CREW
+        </a>
+
+        <p>
+            Creative Production. Without Limits.
+        </p>
+
+        <p>
+            © 2026 AUTOTUBE CREW STUDIO.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./assets/js/main.js" defer></script>
+
+
+</body>
+</html>
