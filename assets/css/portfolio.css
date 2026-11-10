@@ -1,0 +1,135 @@
+/* =========================================================
+   AUTOTUBE CREW STUDIO — PORTFOLIO GALLERY
+   Scoped to .portfolio-page; existing pages remain unchanged.
+   ========================================================= */
+
+.portfolio-page .portfolio-hero { min-height: 570px; }
+.portfolio-page .portfolio-hero-visual {
+  position: relative;
+  min-height: 345px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.16);
+  background: #111;
+}
+.portfolio-page .portfolio-hero-visual::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(0,0,0,.72));
+  pointer-events: none;
+}
+.portfolio-page .portfolio-hero-visual > img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; transition: transform .6s ease;
+}
+.portfolio-page .portfolio-hero-visual:hover > img { transform: scale(1.035); }
+.portfolio-page .portfolio-hero-overlay,
+.portfolio-page .portfolio-hero-index {
+  position: absolute; z-index: 1; left: 24px; right: 24px;
+  display: flex; justify-content: space-between; gap: 16px;
+  color: #fff; font-size: 10px; font-weight: 800; letter-spacing: .15em;
+}
+.portfolio-page .portfolio-hero-overlay { bottom: 40px; align-items: end; }
+.portfolio-page .portfolio-hero-overlay strong { color: #ff6472; }
+.portfolio-page .portfolio-hero-index { bottom: 16px; color: rgba(255,255,255,.65); font-size: 9px; }
+
+.portfolio-page .portfolio-intro-layout {
+  display: grid; grid-template-columns: .65fr 1.35fr;
+  gap: clamp(30px,7vw,90px); align-items: start;
+}
+.portfolio-page .portfolio-intro-copy h2 {
+  margin: 0; font-size: clamp(34px,5.2vw,65px);
+  line-height: 1.08; letter-spacing: -.05em;
+}
+.portfolio-page .portfolio-intro-copy h2 span { color: var(--inner-red); }
+.portfolio-page .portfolio-intro-copy p {
+  max-width: 700px; margin: 20px 0 0; color: var(--inner-muted);
+  font-size: 15px; line-height: 1.9;
+}
+.portfolio-page .portfolio-category-nav {
+  display: flex; flex-wrap: wrap; gap: 9px; margin-top: 40px;
+}
+.portfolio-page .portfolio-category-nav a {
+  display: inline-flex; align-items: center; min-height: 38px;
+  padding: 8px 14px; border: 1px solid var(--inner-line);
+  color: #ddd; font-size: 11px; font-weight: 750;
+  letter-spacing: .07em; text-transform: uppercase;
+  transition: border-color .2s ease, color .2s ease, background .2s ease;
+}
+.portfolio-page .portfolio-category-nav a:hover,
+.portfolio-page .portfolio-category-nav a:focus-visible {
+  color: #fff; border-color: var(--inner-red); background: rgba(229,9,32,.12);
+}
+
+.portfolio-page .portfolio-category { scroll-margin-top: 95px; }
+.portfolio-page .portfolio-category:nth-of-type(even) { background: #0b0b0b; }
+.portfolio-page .portfolio-category-heading {
+  display: flex; align-items: end; justify-content: space-between;
+  gap: 30px; margin-bottom: 34px;
+}
+.portfolio-page .portfolio-category-heading .eyebrow {
+  margin: 0 0 12px; color: #ff5262; font-size: 10px;
+  letter-spacing: .18em;
+}
+.portfolio-page .portfolio-category-heading h2 {
+  margin: 0; color: #fff; font-size: clamp(30px,4vw,48px);
+  line-height: 1.1; letter-spacing: -.045em;
+}
+.portfolio-page .portfolio-category-heading > p {
+  max-width: 390px; margin: 0; color: var(--inner-muted);
+  font-size: 13px; line-height: 1.8;
+}
+.portfolio-page .portfolio-gallery-grid {
+  display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px;
+}
+.portfolio-page .portfolio-gallery-item {
+  min-width: 0; margin: 0; overflow: hidden;
+  border: 1px solid rgba(255,255,255,.1); background: #111;
+}
+.portfolio-page .portfolio-image-link {
+  position: relative; display: block; overflow: hidden;
+  aspect-ratio: 4 / 3; background: #191919;
+}
+.portfolio-page .portfolio-image-link img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform .45s ease, opacity .3s ease;
+}
+.portfolio-page .portfolio-image-link:hover img,
+.portfolio-page .portfolio-image-link:focus-visible img { transform: scale(1.045); opacity: .88; }
+.portfolio-page .portfolio-image-open {
+  position: absolute; right: 12px; bottom: 12px; width: 34px; height: 34px;
+  display: grid; place-items: center; color: #fff; background: rgba(229,9,32,.9);
+  font-size: 16px; opacity: 0; transform: translateY(5px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+.portfolio-page .portfolio-image-link:hover .portfolio-image-open,
+.portfolio-page .portfolio-image-link:focus-visible .portfolio-image-open { opacity: 1; transform: translateY(0); }
+.portfolio-page .portfolio-gallery-item figcaption {
+  display: flex; justify-content: space-between; gap: 12px;
+  padding: 12px 14px; color: #aaa; font-size: 9px;
+  font-weight: 800; letter-spacing: .13em;
+}
+.portfolio-page .portfolio-gallery-item figcaption span:first-child { color: #ff6472; }
+.portfolio-page .portfolio-cta { margin-top: 0; }
+
+@media (max-width: 900px) {
+  .portfolio-page .portfolio-hero-visual { min-height: 300px; }
+  .portfolio-page .portfolio-gallery-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 760px) {
+  .portfolio-page .portfolio-hero .inner-hero-layout,
+  .portfolio-page .portfolio-intro-layout { grid-template-columns: 1fr; }
+  .portfolio-page .portfolio-hero-visual { min-height: 260px; }
+  .portfolio-page .portfolio-category-heading { align-items: start; flex-direction: column; gap: 12px; }
+}
+@media (max-width: 520px) {
+  .portfolio-page .portfolio-gallery-grid { grid-template-columns: 1fr; gap: 13px; }
+  .portfolio-page .portfolio-hero-overlay,
+  .portfolio-page .portfolio-hero-index { left: 14px; right: 14px; }
+  .portfolio-page .portfolio-hero-overlay { bottom: 38px; }
+  .portfolio-page .portfolio-gallery-item figcaption { padding: 11px 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-page *, .portfolio-page *::before, .portfolio-page *::after {
+    scroll-behavior: auto !important; animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important; transition-duration: .01ms !important;
+  }
+}
