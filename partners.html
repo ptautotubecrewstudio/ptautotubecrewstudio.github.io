@@ -1,1367 +1,544 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#080808">
 
-    <title>Our Partners | AUTOTUBE CREW STUDIO</title>
+    <title>Studio Partnerships | AUTOTUBE CREW STUDIO</title>
 
-    <meta name="description" content="Explore strategic business partnerships, creative production collaborations, technology partnerships and international opportunities with PT AUTOTUBE CREW STUDIO.">
+    <meta name="description"
+        content="Explore production partnerships with AUTOTUBE CREW STUDIO. We collaborate with international film production companies, animation studios, VFX teams, advertising agencies and creative partners.">
+
+    <meta name="keywords"
+        content="Production Partnerships, Animation Studio Partnerships, VFX Partnerships, CGI Studio, International Production Partners, AUTOTUBE CREW STUDIO">
+
+    <meta name="author" content="PT Autotube Crew Studio">
 
     <meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://ptautotubecrewstudio.github.io/partners.html">
+    <link rel="canonical"
+        href="https://ptautotubecrewstudio.github.io/partners.html">
 
-    <meta property="og:title" content="Our Partners | AUTOTUBE CREW STUDIO">
-
-    <meta property="og:description" content="Building creative, production and technology partnerships across industries and international markets.">
-
-    <meta property="og:type" content="website">
-
-    <meta property="og:url" content="https://ptautotubecrewstudio.github.io/partners.html">
-
-    <link rel="stylesheet" href="./assets/css/style.css?v=3">
-
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
-
-/* =========================================
-   AUTOTUBE CREW
-   PARTNERSHIPS PAGE
-   ========================================= */
-
-
-/* 1. PARTNERS HERO */
-
-.partners-hero {
-    min-height: 78vh;
-    padding: 155px 5% 100px;
-
-    display: flex;
-    align-items: center;
-
-    position: relative;
-    overflow: hidden;
-
-    background:
-        radial-gradient(
-            ellipse at 80% 45%,
-            rgba(229, 9, 32, 0.18),
-            transparent 45%
-        ),
-        linear-gradient(
-            110deg,
-            #080808,
-            #151515
-        );
-}
-
-.partners-hero-content {
-    max-width: 1180px;
-    width: 100%;
-    margin: auto;
-
-    position: relative;
-    z-index: 2;
-}
-
-.partners-hero h1 {
-    font-size: clamp(45px, 8vw, 90px);
-    line-height: 1.05;
-    font-weight: 900;
-    letter-spacing: -3px;
-
-    margin-bottom: 28px;
-}
-
-.partners-hero h1 span {
-    color: var(--red);
-}
-
-.partners-hero-description {
-    max-width: 700px;
-
-    color: #b5b5b5;
-
-    font-size: 17px;
-    line-height: 1.9;
-}
-
-.partners-hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-
-    margin-top: 35px;
-}
-
-
-/* 2. PARTNERS INTRODUCTION */
-
-.partners-intro {
-    padding: 105px 5%;
-    background: var(--dark);
-}
-
-.partners-container {
-    width: 100%;
-    max-width: 1180px;
-    margin: auto;
-}
-
-.partners-intro-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-
-    align-items: center;
-    gap: 65px;
-}
-
-.partners-intro h2 {
-    font-size: clamp(32px, 5vw, 55px);
-    line-height: 1.15;
-
-    margin: 20px 0;
-}
-
-.partners-intro h2 span {
-    color: var(--red);
-}
-
-.partners-intro p {
-    color: var(--grey);
-
-    font-size: 15px;
-    line-height: 1.9;
-
-    margin-bottom: 20px;
-}
-
-.partners-intro-visual {
-    min-height: 370px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-    overflow: hidden;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(229,9,32,0.20),
-            transparent 60%
-        ),
-        #151515;
-
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.partners-intro-visual::before,
-.partners-intro-visual::after {
-    content: "";
-
-    position: absolute;
-
-    width: 270px;
-    height: 270px;
-
-    border: 1px solid rgba(229,9,32,0.35);
-    border-radius: 50%;
-}
-
-.partners-intro-visual::after {
-    width: 185px;
-    height: 185px;
-}
-
-.partners-intro-visual span {
-    position: relative;
-    z-index: 2;
-
-    text-align: center;
-
-    font-size: 29px;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-
-.partners-intro-visual span b {
-    color: var(--red);
-}
-
-
-/* 3. PARTNERSHIP CATEGORIES */
-
-.partners-categories {
-    padding: 110px 5%;
-    background: var(--black);
-}
-
-.partners-heading {
-    max-width: 780px;
-    margin-bottom: 55px;
-}
-
-.partners-heading h2 {
-    font-size: clamp(32px, 5vw, 55px);
-    line-height: 1.15;
-
-    margin: 18px 0;
-}
-
-.partners-heading h2 span {
-    color: var(--red);
-}
-
-.partners-heading p {
-    color: var(--grey);
-
-    font-size: 15px;
-    line-height: 1.9;
-}
-
-.partners-category-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 21px;
-}
-
-.partner-category-card {
-    min-height: 310px;
-    padding: 32px 28px;
-
-    background: #151515;
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    transition: 0.35s ease;
-}
-
-.partner-category-card:hover {
-    transform: translateY(-7px);
-
-    border-color: var(--red);
-
-    background: #1b1012;
-}
-
-.partner-category-number {
-    color: var(--red);
-
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.partner-category-card h3 {
-    font-size: 21px;
-
-    margin: 25px 0 15px;
-}
-
-.partner-category-card p {
-    color: var(--grey);
-
-    font-size: 14px;
-    line-height: 1.85;
-
-    margin-bottom: 20px;
-}
-
-.partner-category-card .partner-focus {
-    color: #fff;
-
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.partner-category-card .partner-focus span {
-    color: var(--red);
-}
-
-
-/* 4. PARTNERSHIP MODELS */
-
-.partners-models {
-    padding: 105px 5%;
-    background: var(--dark);
-}
-
-.partner-model-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 20px;
-}
-
-.partner-model-card {
-    padding: 32px;
-
-    background: #151515;
-
-    border-left: 3px solid var(--red);
-
-    transition: 0.3s ease;
-}
-
-.partner-model-card:hover {
-    background: #1b1b1b;
-    transform: translateY(-4px);
-}
-
-.partner-model-card span {
-    color: var(--red);
-
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.partner-model-card h3 {
-    font-size: 21px;
-
-    margin: 18px 0 12px;
-}
-
-.partner-model-card p {
-    color: var(--grey);
-
-    font-size: 14px;
-    line-height: 1.9;
-}
-
-
-/* 5. INTERNATIONAL COLLABORATION */
-
-.partners-international {
-    padding: 110px 5%;
-    background: var(--black);
-}
-
-.partners-international-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    align-items: center;
-    gap: 60px;
-}
-
-.partners-international-content h2 {
-    font-size: clamp(32px, 5vw, 52px);
-    line-height: 1.2;
-
-    margin: 20px 0;
-}
-
-.partners-international-content h2 span {
-    color: var(--red);
-}
-
-.partners-international-content p {
-    color: var(--grey);
-
-    font-size: 14px;
-    line-height: 1.9;
-
-    margin-bottom: 20px;
-}
-
-.international-card {
-    padding: 35px;
-
-    background: #151515;
-
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
-.international-card h3 {
-    font-size: 23px;
-    margin-bottom: 25px;
-}
-
-.international-card ul {
-    list-style: none;
-}
-
-.international-card li {
-    position: relative;
-
-    padding: 15px 0 15px 26px;
-
-    color: var(--grey);
-
-    font-size: 14px;
-    line-height: 1.8;
-
-    border-bottom: 1px solid #292929;
-}
-
-.international-card li::before {
-    content: "→";
-
-    position: absolute;
-    left: 0;
-
-    color: var(--red);
-    font-weight: 800;
-}
-
-
-/* 6. PARTNERSHIP BENEFITS */
-
-.partners-benefits {
-    padding: 105px 5%;
-    background: var(--dark);
-}
-
-.partners-benefit-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 18px;
-    margin-top: 45px;
-}
-
-.partner-benefit-card {
-    padding: 30px 23px;
-
-    background: #151515;
-
-    border-top: 3px solid var(--red);
-}
-
-.partner-benefit-card span {
-    color: var(--red);
-
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.partner-benefit-card h3 {
-    font-size: 18px;
-
-    margin: 20px 0 12px;
-}
-
-.partner-benefit-card p {
-    color: var(--grey);
-
-    font-size: 13px;
-    line-height: 1.85;
-}
-
-
-/* 7. PARTNERSHIP PROCESS */
-
-.partners-process {
-    padding: 110px 5%;
-    background: var(--black);
-}
-
-.partner-process-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-
-    gap: 15px;
-    margin-top: 45px;
-}
-
-.partner-process-card {
-    padding: 25px 20px;
-
-    background: #151515;
-
-    border-top: 3px solid var(--red);
-}
-
-.partner-process-card span {
-    color: var(--red);
-
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.partner-process-card h3 {
-    font-size: 18px;
-
-    margin: 19px 0 12px;
-}
-
-.partner-process-card p {
-    color: var(--grey);
-
-    font-size: 13px;
-    line-height: 1.85;
-}
-
-
-/* 8. PARTNERSHIP PRINCIPLES */
-
-.partners-principles {
-    padding: 105px 5%;
-    background: var(--dark);
-}
-
-.partner-principle-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 20px;
-    margin-top: 45px;
-}
-
-.partner-principle-card {
-    padding: 30px;
-
-    background: #151515;
-
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
-.partner-principle-card h3 {
-    font-size: 20px;
-
-    margin-bottom: 14px;
-}
-
-.partner-principle-card h3 span {
-    color: var(--red);
-}
-
-.partner-principle-card p {
-    color: var(--grey);
-
-    font-size: 14px;
-    line-height: 1.9;
-}
-
-
-/* 9. PARTNER EXPECTATIONS */
-
-.partners-expectations {
-    padding: 100px 5%;
-    background: var(--black);
-}
-
-.partner-expectations-box {
-    max-width: 1180px;
-    margin: auto;
-
-    padding: 38px;
-
-    background: #151515;
-
-    border-left: 3px solid var(--red);
-}
-
-.partner-expectations-box h2 {
-    font-size: clamp(28px, 4vw, 40px);
-
-    margin-bottom: 18px;
-}
-
-.partner-expectations-box h2 span {
-    color: var(--red);
-}
-
-.partner-expectations-box p {
-    color: var(--grey);
-
-    font-size: 14px;
-    line-height: 1.9;
-
-    margin-bottom: 17px;
-}
-
-.partner-expectations-box ul {
-    list-style: none;
-}
-
-.partner-expectations-box li {
-    position: relative;
-
-    padding: 11px 0 11px 27px;
-
-    color: #b5b5b5;
-
-    font-size: 14px;
-    line-height: 1.8;
-
-    border-bottom: 1px solid #292929;
-}
-
-.partner-expectations-box li::before {
-    content: "✓";
-
-    position: absolute;
-    left: 0;
-
-    color: var(--red);
-    font-weight: 800;
-}
-
-
-/* 10. PARTNERSHIP FAQ */
-
-.partners-faq {
-    padding: 100px 5%;
-    background: var(--dark);
-}
-
-.partners-faq-container {
-    max-width: 950px;
-    margin: auto;
-}
-
-.partners-faq-heading {
-    margin-bottom: 40px;
-}
-
-.partners-faq-heading h2 {
-    font-size: clamp(30px, 5vw, 48px);
-
-    margin-top: 18px;
-}
-
-.partners-faq-heading h2 span {
-    color: var(--red);
-}
-
-.partner-faq-item {
-    margin-bottom: 12px;
-
-    background: #151515;
-
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
-.partner-faq-item[open] {
-    border-color: var(--red);
-}
-
-.partner-faq-item summary {
-    position: relative;
-
-    cursor: pointer;
-    list-style: none;
-
-    padding: 22px 55px 22px 24px;
-
-    color: #fff;
-
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1.6;
-}
-
-.partner-faq-item summary::-webkit-details-marker {
-    display: none;
-}
-
-.partner-faq-item summary::after {
-    content: "+";
-
-    position: absolute;
-    right: 23px;
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    color: var(--red);
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.partner-faq-item[open] summary::after {
-    content: "−";
-}
-
-.partner-faq-answer {
-    padding: 20px 24px 24px;
-
-    border-top: 1px solid #292929;
-}
-
-.partner-faq-answer p {
-    color: var(--grey);
-
-    font-size: 14px;
-    line-height: 1.9;
-}
-
-
-/* 11. PARTNERS CONTACT */
-
-.partners-cta {
-    padding: 110px 5%;
-
-    text-align: center;
-
-    background:
-        radial-gradient(
-            ellipse at center,
-            rgba(229,9,32,0.16),
-            transparent 65%
-        ),
-        #080808;
-}
-
-.partners-cta-content {
-    max-width: 850px;
-    margin: auto;
-}
-
-.partners-cta h2 {
-    font-size: clamp(32px, 5vw, 56px);
-
-    line-height: 1.2;
-
-    margin: 20px 0;
-}
-
-.partners-cta h2 span {
-    color: var(--red);
-}
-
-.partners-cta p {
-    max-width: 700px;
-
-    color: var(--grey);
-
-    font-size: 15px;
-    line-height: 1.9;
-
-    margin: 0 auto 30px;
-}
-
-
-/* 12. RESPONSIVE DESIGN */
-
-@media (max-width: 1000px) {
-
-    .partners-category-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .partners-benefit-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .partner-process-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
-
-@media (max-width: 800px) {
-
-    .partners-intro-grid,
-    .partners-international-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .partners-intro-visual {
-        min-height: 280px;
-    }
-
-    .partner-process-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (max-width: 650px) {
-
-    .partners-hero {
-        min-height: 65vh;
-        padding: 125px 6% 75px;
-    }
-
-    .partners-hero h1 {
-        letter-spacing: -2px;
-    }
-
-    .partners-intro,
-    .partners-categories,
-    .partners-models,
-    .partners-international,
-    .partners-benefits,
-    .partners-process,
-    .partners-principles,
-    .partners-expectations,
-    .partners-faq,
-    .partners-cta {
-        padding: 75px 6%;
-    }
-
-    .partners-category-grid,
-    .partner-model-grid,
-    .partners-benefit-grid,
-    .partner-process-grid,
-    .partner-principle-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .partner-category-card {
-        min-height: auto;
-    }
-
-    .partner-process-card {
-        padding: 27px;
-    }
-
-    .partner-faq-item summary {
-        padding: 20px 48px 20px 18px;
-        font-size: 14px;
-    }
-
-    .partner-faq-answer {
-        padding: 18px;
-    }
-
-    .partner-expectations-box {
-        padding: 27px;
-    }
-
-}
+        /* =====================================
+           PARTNERS PAGE
+           AUTOTUBE CREW STUDIO
+        ===================================== */
+
+        .partners-page {
+            background: #080808;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        .partners-page * {
+            box-sizing: border-box;
+        }
+
+        .partners-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* HEADER */
+
+        .partners-header {
+            background: #080808;
+            border-bottom: 1px solid #292929;
+            position: relative;
+            z-index: 100;
+        }
+
+        .partners-header-inner {
+            min-height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .partners-logo img {
+            display: block;
+            max-width: 210px;
+            max-height: 65px;
+            object-fit: contain;
+        }
+
+        .partners-nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .partners-nav a {
+            color: #eeeeee;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .partners-nav a:hover,
+        .partners-nav a.active {
+            color: #e50920;
+        }
+
+        .partners-menu-toggle {
+            display: none;
+            border: 1px solid #444;
+            color: #fff;
+            background: transparent;
+            padding: 9px 13px;
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        /* HERO */
+
+        .partners-hero {
+            min-height: 510px;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,0.97),
+                    rgba(0,0,0,0.75)
+                );
+            border-bottom: 1px solid #252525;
+            padding: 100px 0;
+        }
+
+        .partners-eyebrow {
+            color: #e50920;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .partners-hero h1 {
+            font-size: clamp(38px, 6vw, 76px);
+            line-height: 1.08;
+            max-width: 850px;
+            margin: 22px 0;
+            text-transform: uppercase;
+        }
+
+        .partners-hero h1 span {
+            color: #e50920;
+        }
+
+        .partners-hero p {
+            color: #bdbdbd;
+            max-width: 700px;
+            font-size: 17px;
+        }
+
+        .partners-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .partners-btn {
+            display: inline-block;
+            padding: 14px 26px;
+            background: #e50920;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 1px solid #e50920;
+            transition: 0.3s;
+        }
+
+        .partners-btn:hover {
+            background: transparent;
+            color: #ffffff;
+        }
+
+        .partners-btn-secondary {
+            background: transparent;
+            border-color: #666;
+        }
+
+        /* GENERAL SECTIONS */
+
+        .partners-section {
+            padding: 90px 0;
+        }
+
+        .partners-section-dark {
+            background: #101010;
+        }
+
+        .partners-section-heading {
+            max-width: 760px;
+            margin-bottom: 45px;
+        }
+
+        .partners-section-heading h2 {
+            font-size: clamp(28px, 4vw, 45px);
+            line-height: 1.2;
+            text-transform: uppercase;
+            margin: 15px 0;
+        }
+
+        .partners-section-heading p {
+            color: #a9a9a9;
+            font-size: 15px;
+        }
+
+        /* PARTNER GRID */
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .partners-card {
+            background: #141414;
+            border: 1px solid #292929;
+            padding: 30px;
+            transition: 0.3s ease;
+        }
+
+        .partners-card:hover {
+            border-color: #e50920;
+            transform: translateY(-5px);
+        }
+
+        .partners-card-number {
+            color: #e50920;
+            font-size: 13px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .partners-card h3 {
+            font-size: 20px;
+            margin: 17px 0 12px;
+        }
+
+        .partners-card p {
+            color: #aaaaaa;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* COLLABORATION MODELS */
+
+        .partners-models {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .partners-model {
+            padding: 30px;
+            border-left: 3px solid #e50920;
+            background: #141414;
+        }
+
+        .partners-model h3 {
+            font-size: 21px;
+            margin: 0 0 12px;
+        }
+
+        .partners-model p {
+            color: #aaa;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* AGREEMENT */
+
+        .partners-agreement {
+            background: #0c0c0c;
+            border: 1px solid #333;
+            padding: 35px;
+            margin-top: 30px;
+        }
+
+        .partners-agreement h3 {
+            font-size: 23px;
+            margin-top: 0;
+        }
+
+        .partners-agreement p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .partners-agreement ul {
+            padding-left: 20px;
+            color: #c5c5c5;
+        }
+
+        .partners-agreement li {
+            margin-bottom: 12px;
+        }
+
+        /* PROCESS */
+
+        .partners-process {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .partners-step {
+            border-top: 2px solid #e50920;
+            padding: 23px 15px;
+            background: #141414;
+        }
+
+        .partners-step span {
+            color: #e50920;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .partners-step h3 {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+
+        .partners-step p {
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        /* FINAL CTA */
+
+        .partners-cta {
+            background: #151515;
+            text-align: center;
+            padding: 85px 20px;
+            border-top: 1px solid #333;
+        }
+
+        .partners-cta h2 {
+            font-size: clamp(28px, 4vw, 48px);
+            margin: 0 0 15px;
+        }
+
+        .partners-cta p {
+            max-width: 650px;
+            margin: 0 auto;
+            color: #aaa;
+        }
+
+        /* FOOTER */
+
+        .partners-footer {
+            background: #050505;
+            border-top: 1px solid #292929;
+            padding: 35px 0;
+            text-align: center;
+        }
+
+        .partners-footer p {
+            color: #888;
+            font-size: 13px;
+        }
+
+        .partners-footer a {
+            color: #e50920;
+            text-decoration: none;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .partners-process {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .partners-nav {
+                gap: 13px;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .partners-header-inner {
+                flex-wrap: wrap;
+                padding: 15px 0;
+            }
+
+            .partners-menu-toggle {
+                display: block;
+            }
+
+            .partners-nav {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                padding: 15px 0;
+                border-top: 1px solid #333;
+            }
+
+            .partners-nav.is-open {
+                display: flex;
+            }
+
+            .partners-hero {
+                min-height: 420px;
+                padding: 75px 0;
+            }
+
+            .partners-grid,
+            .partners-models,
+            .partners-process {
+                grid-template-columns: 1fr;
+            }
+
+            .partners-section {
+                padding: 65px 0;
+            }
+
+            .partners-agreement {
+                padding: 22px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .partners-page *,
+            .partners-page *::before,
+            .partners-page *::after {
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+            }
+        }
 
     </style>
-
 </head>
 
+<body class="partners-page">
 
-<body>
+    <!-- HEADER -->
 
+    <header class="partners-header">
+        <div class="partners-container partners-header-inner">
 
-    <!-- =====================================
-         HEADER & NAVIGATION
-         ===================================== -->
-
-    <header class="header">
-
-        <a href="index.html" class="logo">
-            AUTO<span>TUBE</span> CREW
-        </a>
-
-        <nav class="navigation">
-
-            <a href="index.html">Home</a>
-
-            <a href="about.html">About</a>
-
-            <a href="services.html">Services</a>
-
-            <a href="portfolio.html">Portfolio</a>
-
-            <a href="contact.html" class="contact-link">
-                Let's Talk ↗
+            <a href="index.html" class="partners-logo">
+                <img
+                    src="assets/brand/logo.png.png"
+                    alt="AUTOTUBE CREW STUDIO">
             </a>
 
-        </nav>
+            <nav class="partners-nav" id="partners-navigation"
+                aria-label="Main navigation">
 
-        <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Open navigation"
-            aria-expanded="false">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="partners.html" class="active"
+                    aria-current="page">Partners</a>
+                <a href="contact.html">Contact</a>
 
-            ☰
+            </nav>
 
-        </button>
+            <button
+                class="partners-menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="partners-navigation">
+                ☰
+            </button>
 
+        </div>
     </header>
 
 
     <main>
 
-
-        <!-- =====================================
-             1. PARTNERS HERO
-             ===================================== -->
+        <!-- HERO -->
 
         <section class="partners-hero">
 
-            <div class="partners-hero-content">
+            <div class="partners-container">
 
-                <p class="eyebrow">
-                    STRATEGIC & CREATIVE COLLABORATION
-                </p>
+                <span class="partners-eyebrow">
+                    Global Creative Collaboration
+                </span>
 
                 <h1>
-
-                    PARTNERSHIPS<br>
-
-                    <span>BEYOND BOUNDARIES.</span>
-
+                    Stronger Together.
+                    <span>Creating Beyond Limits.</span>
                 </h1>
 
-                <p class="partners-hero-description">
-
-                    Building meaningful business
-                    relationships across creative
-                    production, digital technology,
-                    animation, filmmaking
-                    and international collaboration.
-
+                <p>
+                    We build meaningful production partnerships with
+                    creative studios, film production companies,
+                    animation teams, VFX specialists and international
+                    industry professionals.
                 </p>
 
-                <div class="partners-hero-actions">
+                <div class="partners-buttons">
 
-                    <a href="#partnership-types"
-                       class="button-primary">
-
-                        EXPLORE PARTNERSHIPS ↗
-
+                    <a href="contact.html" class="partners-btn">
+                        Discuss a Partnership
                     </a>
 
-                    <a href="contact.html"
-                       class="button-secondary">
-
-                        BECOME A PARTNER
-
+                    <a href="services.html"
+                        class="partners-btn partners-btn-secondary">
+                        Explore Our Capabilities
                     </a>
 
                 </div>
 
             </div>
 
-            <div class="hero-background">
-
-                <div class="hero-circle"></div>
-
-            </div>
-
         </section>
 
 
-        <!-- =====================================
-             2. PARTNERS INTRODUCTION
-             ===================================== -->
+        <!-- INTRODUCTION -->
 
-        <section class="partners-intro">
+        <section class="partners-section">
 
             <div class="partners-container">
 
-                <div class="partners-intro-grid">
+                <div class="partners-section-heading">
 
-
-                    <div>
-
-                        <p class="eyebrow">
-                            BUILDING TOGETHER
-                        </p>
-
-                        <h2>
-
-                            STRONGER THROUGH
-                            <span>COLLABORATION.</span>
-
-                        </h2>
-
-                        <p>
-
-                            At PT AUTOTUBE CREW STUDIO,
-                            we recognize the importance
-                            of professional relationships
-                            in developing creative
-                            projects and digital
-                            business opportunities.
-
-                        </p>
-
-                        <p>
-
-                            Our business combines
-                            digital platform development
-                            with creative production
-                            capabilities.
-
-                            These areas offer opportunities
-                            to work with production studios,
-                            technology companies,
-                            creative professionals,
-                            infrastructure providers
-                            and strategic business partners.
-
-                        </p>
-
-                        <p>
-
-                            We welcome serious
-                            partnership enquiries
-                            and explore each proposed
-                            collaboration according
-                            to its objectives,
-                            capabilities and
-                            commercial requirements.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="partners-intro-visual">
-
-                        <span>
-
-                            AUTOTUBE<br>
-
-                            <b>×</b><br>
-
-                            PARTNERS
-
-                        </span>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             3. PARTNERSHIP CATEGORIES
-             ===================================== -->
-
-        <section class="partners-categories"
-                 id="partnership-types">
-
-            <div class="partners-container">
-
-
-                <div class="partners-heading">
-
-                    <p class="eyebrow">
-                        OUR COLLABORATION NETWORK
-                    </p>
+                    <span class="partners-eyebrow">
+                        Our Partnership Philosophy
+                    </span>
 
                     <h2>
-
-                        WHO WE CAN
-                        <span>COLLABORATE WITH.</span>
-
+                        Creative Vision.
+                        Shared Expertise.
+                        Exceptional Production.
                     </h2>
 
                     <p>
+                        AUTOTUBE CREW STUDIO works through collaborative
+                        production relationships that bring together
+                        creative talent, technical expertise and
+                        production capabilities.
 
-                        We are interested in exploring
-                        relationships with organizations
-                        and professionals whose expertise
-                        can complement our digital
-                        and creative business activities.
-
+                        Our approach is built around transparent
+                        communication, clearly defined responsibilities
+                        and a shared commitment to quality.
                     </p>
-
-                </div>
-
-
-                <div class="partners-category-grid">
-
-
-                    <!-- PARTNER 01 -->
-
-                    <article class="partner-category-card">
-
-                        <span class="partner-category-number">
-                            01 / PRODUCTION STUDIOS
-                        </span>
-
-                        <h3>
-                            Film & Production Studios
-                        </h3>
-
-                        <p>
-
-                            Collaboration with production
-                            houses, film studios
-                            and independent production
-                            teams for suitable
-                            creative and cinematic projects.
-
-                        </p>
-
-                        <div class="partner-focus">
-
-                            <span>FOCUS:</span>
-                            Co-Production & Outsourcing
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PARTNER 02 -->
-
-                    <article class="partner-category-card">
-
-                        <span class="partner-category-number">
-                            02 / ANIMATION & VFX
-                        </span>
-
-                        <h3>
-                            Animation & VFX Studios
-                        </h3>
-
-                        <p>
-
-                            Working with specialized
-                            animation, CGI, rendering,
-                            visual effects and
-                            post-production teams
-                            for project-based collaboration.
-
-                        </p>
-
-                        <div class="partner-focus">
-
-                            <span>FOCUS:</span>
-                            Animation, CGI & VFX
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PARTNER 03 -->
-
-                    <article class="partner-category-card">
-
-                        <span class="partner-category-number">
-                            03 / TECHNOLOGY
-                        </span>
-
-                        <h3>
-                            Technology Companies
-                        </h3>
-
-                        <p>
-
-                            Exploring technology
-                            integration, software,
-                            digital systems and
-                            technical partnerships
-                            that support our business
-                            development.
-
-                        </p>
-
-                        <div class="partner-focus">
-
-                            <span>FOCUS:</span>
-                            Software & Digital Solutions
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PARTNER 04 -->
-
-                    <article class="partner-category-card">
-
-                        <span class="partner-category-number">
-                            04 / INFRASTRUCTURE
-                        </span>
-
-                        <h3>
-                            Infrastructure Providers
-                        </h3>
-
-                        <p>
-
-                            Potential collaboration
-                            involving render farms,
-                            computing resources,
-                            production hardware,
-                            storage and technical
-                            infrastructure.
-
-                        </p>
-
-                        <div class="partner-focus">
-
-                            <span>FOCUS:</span>
-                            Rendering & Production Systems
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PARTNER 05 -->
-
-                    <article class="partner-category-card">
-
-                        <span class="partner-category-number">
-                            05 / CREATIVE TALENT
-                        </span>
-
-                        <h3>
-                            Artists & Creative Professionals
-                        </h3>
-
-                        <p>
-
-                            Connecting with directors,
-                            animators, designers,
-                            editors, artists and
-                            other professionals
-                            for suitable projects.
-
-                        </p>
-
-                        <div class="partner-focus">
-
-                            <span>FOCUS:</span>
-                            Creative Talent & Expertise
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PARTNER 06 -->
-
-                    <article class="partner-category-card">
-
-                        <span class="partner-category-number">
-                            06 / DIGITAL BUSINESS
-                        </span>
-
-                        <h3>
-                            Digital & Platform Businesses
-                        </h3>
-
-                        <p>
-
-                            Exploring cooperation
-                            with digital businesses,
-                            platform developers
-                            and technology-based
-                            service providers.
-
-                        </p>
-
-                        <div class="partner-focus">
-
-                            <span>FOCUS:</span>
-                            Platform Development
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PARTNER 07 -->
-
-                    <article class="partner-category-card">
-
-                        <span class="partner-category-number">
-                            07 / MEDIA & DISTRIBUTION
-                        </span>
-
-                        <h3>
-                            Media & Distribution Partners
-                        </h3>
-
-                        <p>
-
-                            Exploring potential
-                            relationships involving
-                            content distribution,
-                            marketing, media
-                            communication and
-                            content licensing.
-
-                        </p>
-
-                        <div class="partner-focus">
-
-                            <span>FOCUS:</span>
-                            Media & Content Distribution
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PARTNER 08 -->
-
-                    <article class="partner-category-card">
-
-                        <span class="partner-category-number">
-                            08 / STRATEGIC BUSINESS
-                        </span>
-
-                        <h3>
-                            Strategic Business Partners
-                        </h3>
-
-                        <p>
-
-                            Discussing commercial
-                            relationships with
-                            organizations interested
-                            in business development
-                            and long-term cooperation.
-
-                        </p>
-
-                        <div class="partner-focus">
-
-                            <span>FOCUS:</span>
-                            Strategic Collaboration
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PARTNER 09 -->
-
-                    <article class="partner-category-card">
-
-                        <span class="partner-category-number">
-                            09 / INVESTMENT
-                        </span>
-
-                        <h3>
-                            Investors & Financing Partners
-                        </h3>
-
-                        <p>
-
-                            Exploring appropriate
-                            investment relationships,
-                            project financing
-                            and business development
-                            opportunities.
-
-                        </p>
-
-                        <div class="partner-focus">
-
-                            <span>FOCUS:</span>
-                            Investment & Financing
-
-                        </div>
-
-                    </article>
-
 
                 </div>
 
@@ -1370,200 +547,91 @@
         </section>
 
 
-        <!-- =====================================
-             4. PARTNERSHIP MODELS
-             ===================================== -->
+        <!-- PARTNER CATEGORIES -->
 
-        <section class="partners-models">
+        <section class="partners-section partners-section-dark">
 
             <div class="partners-container">
 
+                <div class="partners-section-heading">
 
-                <div class="partners-heading">
-
-                    <p class="eyebrow">
-                        WAYS TO WORK TOGETHER
-                    </p>
+                    <span class="partners-eyebrow">
+                        Who We Work With
+                    </span>
 
                     <h2>
-
-                        FLEXIBLE
-                        <span>PARTNERSHIP MODELS.</span>
-
+                        Building Connections Across The Industry
                     </h2>
 
                     <p>
-
-                        Collaboration structures
-                        are considered according
-                        to the nature of the
-                        opportunity, project
-                        requirements and agreed
-                        responsibilities.
-
+                        We welcome professional collaboration with
+                        companies and individuals whose capabilities
+                        complement our production services.
                     </p>
 
                 </div>
 
 
-                <div class="partner-model-grid">
+                <div class="partners-grid">
 
-
-                    <!-- MODEL 01 -->
-
-                    <article class="partner-model-card">
-
-                        <span>
-                            MODEL 01 / PROJECT
-                        </span>
-
-                        <h3>
-                            Project-Based Collaboration
-                        </h3>
-
+                    <article class="partners-card">
+                        <span class="partners-card-number">01</span>
+                        <h3>Film Production Companies</h3>
                         <p>
-
-                            Working together on
-                            specific projects with
-                            clearly defined scopes,
-                            responsibilities,
-                            milestones and
-                            commercial arrangements.
-
+                            Production collaboration for feature films,
+                            cinematic projects and screen-based
+                            entertainment.
                         </p>
-
                     </article>
 
-
-                    <!-- MODEL 02 -->
-
-                    <article class="partner-model-card">
-
-                        <span>
-                            MODEL 02 / CO-PRODUCTION
-                        </span>
-
-                        <h3>
-                            Co-Production Partnerships
-                        </h3>
-
+                    <article class="partners-card">
+                        <span class="partners-card-number">02</span>
+                        <h3>Animation Studios</h3>
                         <p>
-
-                            Combining creative,
-                            technical or production
-                            resources on suitable
-                            film, animation,
-                            video and digital
-                            content projects.
-
+                            Creative and technical collaboration for
+                            3D animation, character animation and
+                            cinematic storytelling.
                         </p>
-
                     </article>
 
-
-                    <!-- MODEL 03 -->
-
-                    <article class="partner-model-card">
-
-                        <span>
-                            MODEL 03 / OUTSOURCING
-                        </span>
-
-                        <h3>
-                            Production Outsourcing
-                        </h3>
-
+                    <article class="partners-card">
+                        <span class="partners-card-number">03</span>
+                        <h3>CGI & VFX Studios</h3>
                         <p>
-
-                            Project-specific
-                            collaboration where
-                            specialized production
-                            tasks or defined
-                            work packages are
-                            assigned to suitable
-                            external studios.
-
+                            Specialist collaboration across CGI,
+                            visual effects, compositing and
+                            digital environments.
                         </p>
-
                     </article>
 
-
-                    <!-- MODEL 04 -->
-
-                    <article class="partner-model-card">
-
-                        <span>
-                            MODEL 04 / TECHNOLOGY
-                        </span>
-
-                        <h3>
-                            Technology Integration
-                        </h3>
-
+                    <article class="partners-card">
+                        <span class="partners-card-number">04</span>
+                        <h3>Advertising Agencies</h3>
                         <p>
-
-                            Collaboration involving
-                            software, rendering
-                            infrastructure, hardware,
-                            digital systems and
-                            technical services.
-
+                            Production support for commercial campaigns,
+                            branded content and advertising projects.
                         </p>
-
                     </article>
 
-
-                    <!-- MODEL 05 -->
-
-                    <article class="partner-model-card">
-
-                        <span>
-                            MODEL 05 / COMMERCIAL
-                        </span>
-
-                        <h3>
-                            Commercial Partnerships
-                        </h3>
-
+                    <article class="partners-card">
+                        <span class="partners-card-number">05</span>
+                        <h3>Gaming Companies</h3>
                         <p>
-
-                            Exploring mutually
-                            suitable business
-                            relationships,
-                            service cooperation,
-                            referrals and
-                            market opportunities.
-
+                            Collaboration on game cinematics,
+                            Unreal Engine environments and
+                            high-quality digital assets.
                         </p>
-
                     </article>
 
-
-                    <!-- MODEL 06 -->
-
-                    <article class="partner-model-card">
-
-                        <span>
-                            MODEL 06 / STRATEGIC
-                        </span>
-
-                        <h3>
-                            Long-Term Strategic Partnerships
-                        </h3>
-
+                    <article class="partners-card">
+                        <span class="partners-card-number">06</span>
+                        <h3>Independent Production Specialists</h3>
                         <p>
-
-                            Discussing ongoing
-                            cooperation based
-                            on complementary
-                            capabilities,
-                            business objectives
-                            and agreed plans.
-
+                            Professional collaboration with directors,
+                            producers, artists and technical
+                            production specialists.
                         </p>
-
                     </article>
-
 
                 </div>
 
@@ -1572,242 +640,67 @@
         </section>
 
 
-        <!-- =====================================
-             5. INTERNATIONAL PARTNERSHIPS
-             ===================================== -->
+        <!-- COLLABORATION MODELS -->
 
-        <section class="partners-international">
+        <section class="partners-section">
 
             <div class="partners-container">
 
-                <div class="partners-international-grid">
+                <div class="partners-section-heading">
 
-
-                    <div class="partners-international-content">
-
-                        <p class="eyebrow">
-                            GLOBAL COLLABORATION
-                        </p>
-
-                        <h2>
-
-                            CONNECTING
-                            <span>BEYOND BORDERS.</span>
-
-                        </h2>
-
-                        <p>
-
-                            Creative production
-                            and digital businesses
-                            can involve teams,
-                            technologies and
-                            business relationships
-                            across different markets.
-
-                        </p>
-
-                        <p>
-
-                            PT AUTOTUBE CREW STUDIO
-                            welcomes enquiries
-                            from local and
-                            international organizations
-                            interested in discussing
-                            suitable production,
-                            technology and
-                            business collaborations.
-
-                        </p>
-
-                        <p>
-
-                            Each proposed relationship
-                            is evaluated according
-                            to its commercial,
-                            operational and
-                            legal requirements.
-
-                        </p>
-
-                        <a href="contact.html"
-                           class="button-primary">
-
-                            DISCUSS INTERNATIONAL PARTNERSHIP ↗
-
-                        </a>
-
-                    </div>
-
-
-                    <div class="international-card">
-
-                        <h3>
-                            Areas for International Cooperation
-                        </h3>
-
-                        <ul>
-
-                            <li>
-                                Animation and visual
-                                effects production.
-                            </li>
-
-                            <li>
-                                Film and cinematic
-                                co-production.
-                            </li>
-
-                            <li>
-                                Digital platform
-                                and technology development.
-                            </li>
-
-                            <li>
-                                Rendering and
-                                computing infrastructure.
-                            </li>
-
-                            <li>
-                                Creative talent
-                                and production services.
-                            </li>
-
-                            <li>
-                                Content distribution
-                                and commercial development.
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             6. PARTNERSHIP BENEFITS
-             ===================================== -->
-
-        <section class="partners-benefits">
-
-            <div class="partners-container">
-
-
-                <div class="partners-heading">
-
-                    <p class="eyebrow">
-                        THE VALUE OF COLLABORATION
-                    </p>
+                    <span class="partners-eyebrow">
+                        Collaboration Opportunities
+                    </span>
 
                     <h2>
-
-                        BUILDING
-                        <span>SHARED VALUE.</span>
-
+                        Flexible Production Partnership Models
                     </h2>
 
                     <p>
-
-                        Every potential partnership
-                        should have a clear purpose
-                        and complementary value
-                        for the organizations involved.
-
+                        Each collaboration is structured according
+                        to the project's requirements, capabilities,
+                        responsibilities and agreed commercial terms.
                     </p>
 
                 </div>
 
 
-                <div class="partners-benefit-grid">
+                <div class="partners-models">
 
-
-                    <article class="partner-benefit-card">
-
-                        <span>01 / EXPERTISE</span>
-
-                        <h3>
-                            Complementary Expertise
-                        </h3>
-
+                    <article class="partners-model">
+                        <h3>Studio-to-Studio Collaboration</h3>
                         <p>
-
-                            Combining relevant
-                            creative, technical
-                            and business knowledge
-                            for suitable projects.
-
+                            Work alongside established studios to
+                            combine creative resources, technical
+                            expertise and production capabilities.
                         </p>
-
                     </article>
 
-
-                    <article class="partner-benefit-card">
-
-                        <span>02 / RESOURCES</span>
-
-                        <h3>
-                            Shared Resources
-                        </h3>
-
+                    <article class="partners-model">
+                        <h3>Production Support Partnership</h3>
                         <p>
-
-                            Exploring access
-                            to specialized
-                            production resources,
-                            facilities and
-                            technical infrastructure.
-
+                            Provide agreed production and post-production
+                            services to support larger creative projects.
                         </p>
-
                     </article>
 
-
-                    <article class="partner-benefit-card">
-
-                        <span>03 / OPPORTUNITY</span>
-
-                        <h3>
-                            New Opportunities
-                        </h3>
-
+                    <article class="partners-model">
+                        <h3>Co-Production Opportunities</h3>
                         <p>
-
-                            Evaluating potential
-                            projects, commercial
-                            opportunities and
-                            market relationships.
-
+                            Explore project-based co-production
+                            arrangements with clearly allocated
+                            responsibilities and deliverables.
                         </p>
-
                     </article>
 
-
-                    <article class="partner-benefit-card">
-
-                        <span>04 / DEVELOPMENT</span>
-
-                        <h3>
-                            Long-Term Development
-                        </h3>
-
+                    <article class="partners-model">
+                        <h3>International Industry Collaboration</h3>
                         <p>
-
-                            Building professional
-                            relationships that
-                            may support future
-                            business development
-                            and cooperation.
-
+                            Establish professional working relationships
+                            with international production companies
+                            and creative industry partners.
                         </p>
-
                     </article>
-
 
                 </div>
 
@@ -1816,144 +709,233 @@
         </section>
 
 
-        <!-- =====================================
-             7. PARTNERSHIP PROCESS
-             ===================================== -->
+        <!-- PROJECT AGREEMENT FRAMEWORK -->
 
-        <section class="partners-process">
+        <section class="partners-section partners-section-dark">
 
             <div class="partners-container">
 
+                <div class="partners-section-heading">
 
-                <div class="partners-heading">
-
-                    <p class="eyebrow">
-                        OUR COLLABORATION PROCESS
-                    </p>
+                    <span class="partners-eyebrow">
+                        Professional Project Governance
+                    </span>
 
                     <h2>
-
-                        FROM INTRODUCTION
-                        <span>TO AGREEMENT.</span>
-
+                        Clear Agreements.
+                        Transparent Responsibilities.
                     </h2>
 
                     <p>
-
-                        A structured approach
-                        helps both parties
-                        understand the opportunity
-                        before beginning a
-                        business relationship.
-
+                        Successful production partnerships require more
+                        than creative alignment. Every project should
+                        have a clearly documented agreement covering
+                        responsibilities, approvals, revisions,
+                        ownership and project scope.
                     </p>
 
                 </div>
 
 
-                <div class="partner-process-grid">
+                <div class="partners-grid">
+
+                    <article class="partners-card">
+                        <span class="partners-card-number">01</span>
+                        <h3>Project Scope & Deliverables</h3>
+                        <p>
+                            Document the agreed project scope,
+                            production requirements, deliverables,
+                            formats, milestones and responsibilities
+                            before work begins.
+                        </p>
+                    </article>
+
+                    <article class="partners-card">
+                        <span class="partners-card-number">02</span>
+                        <h3>Client Approval Process</h3>
+                        <p>
+                            Identify authorized approvers, milestone
+                            approval requirements, feedback procedures
+                            and written approval records.
+                        </p>
+                    </article>
+
+                    <article class="partners-card">
+                        <span class="partners-card-number">03</span>
+                        <h3>Revision Management</h3>
+                        <p>
+                            Define the included revision rounds,
+                            feedback consolidation process and
+                            procedures for additional revisions.
+                        </p>
+                    </article>
+
+                    <article class="partners-card">
+                        <span class="partners-card-number">04</span>
+                        <h3>Source Files & Ownership</h3>
+                        <p>
+                            Specify ownership, usage rights,
+                            editable source files, project assets,
+                            third-party licences and agreed
+                            file handover conditions.
+                        </p>
+                    </article>
+
+                    <article class="partners-card">
+                        <span class="partners-card-number">05</span>
+                        <h3>Scope Change Control</h3>
+                        <p>
+                            Manage new requirements, additional
+                            deliverables and changes to creative
+                            direction through documented change
+                            requests and agreed adjustments.
+                        </p>
+                    </article>
+
+                    <article class="partners-card">
+                        <span class="partners-card-number">06</span>
+                        <h3>Commercial & Delivery Terms</h3>
+                        <p>
+                            Establish project fees, payment milestones,
+                            deadlines, delivery conditions,
+                            confidentiality and applicable
+                            contractual responsibilities.
+                        </p>
+                    </article>
+
+                </div>
 
 
-                    <article class="partner-process-card">
+                <div class="partners-agreement">
 
+                    <h3>Formal Project Agreement Framework</h3>
+
+                    <p>
+                        The following controls should be documented
+                        in the applicable project agreement before
+                        production begins:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Written confirmation of the agreed
+                            project brief and scope.
+                        </li>
+
+                        <li>
+                            Named client and studio representatives
+                            responsible for milestone approvals.
+                        </li>
+
+                        <li>
+                            Agreed revision limits and procedures
+                            for additional revision requests.
+                        </li>
+
+                        <li>
+                            Defined ownership and transfer conditions
+                            for deliverables and editable source files.
+                        </li>
+
+                        <li>
+                            Written change requests covering new
+                            requirements, additional costs and
+                            schedule adjustments.
+                        </li>
+
+                        <li>
+                            Defined payment terms, delivery milestones
+                            and confidentiality obligations.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Specific contractual rights and obligations
+                        must be established in the signed agreement
+                        for each project. This framework is a
+                        planning structure and does not replace
+                        legal review or a formal contract.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PARTNERSHIP WORKFLOW -->
+
+        <section class="partners-section">
+
+            <div class="partners-container">
+
+                <div class="partners-section-heading">
+
+                    <span class="partners-eyebrow">
+                        Our Working Process
+                    </span>
+
+                    <h2>
+                        From Initial Discussion To Final Delivery
+                    </h2>
+
+                    <p>
+                        A structured collaboration process helps
+                        establish expectations, accountability
+                        and production quality at every stage.
+                    </p>
+
+                </div>
+
+
+                <div class="partners-process">
+
+                    <article class="partners-step">
                         <span>STEP 01</span>
-
-                        <h3>
-                            Introduction
-                        </h3>
-
+                        <h3>Introduction</h3>
                         <p>
-
-                            Share your company
-                            background, capabilities
-                            and collaboration
-                            interests.
-
+                            Understand the partner's capabilities,
+                            project vision and collaboration objectives.
                         </p>
-
                     </article>
 
-
-                    <article class="partner-process-card">
-
+                    <article class="partners-step">
                         <span>STEP 02</span>
-
-                        <h3>
-                            Evaluation
-                        </h3>
-
+                        <h3>Project Evaluation</h3>
                         <p>
-
-                            Review objectives,
-                            available capabilities
-                            and potential
-                            collaboration areas.
-
+                            Review scope, resources, deliverables,
+                            schedule and production requirements.
                         </p>
-
                     </article>
 
-
-                    <article class="partner-process-card">
-
+                    <article class="partners-step">
                         <span>STEP 03</span>
-
-                        <h3>
-                            Discussion
-                        </h3>
-
+                        <h3>Agreement</h3>
                         <p>
-
-                            Discuss the proposed
-                            scope, responsibilities,
-                            resources and
-                            commercial expectations.
-
+                            Establish responsibilities, commercial
+                            terms, approval procedures and ownership
+                            conditions in writing.
                         </p>
-
                     </article>
 
-
-                    <article class="partner-process-card">
-
+                    <article class="partners-step">
                         <span>STEP 04</span>
-
-                        <h3>
-                            Agreement
-                        </h3>
-
+                        <h3>Production</h3>
                         <p>
-
-                            Document the
-                            approved arrangement,
-                            responsibilities
-                            and applicable terms.
-
+                            Coordinate production, reviews,
+                            revisions and milestone approvals.
                         </p>
-
                     </article>
 
-
-                    <article class="partner-process-card">
-
+                    <article class="partners-step">
                         <span>STEP 05</span>
-
-                        <h3>
-                            Collaboration
-                        </h3>
-
+                        <h3>Delivery</h3>
                         <p>
-
-                            Begin the agreed work,
-                            coordinate activities
-                            and review progress
-                            according to the
-                            arrangement.
-
+                            Complete final delivery and agreed
+                            handover documentation.
                         </p>
-
                     </article>
-
 
                 </div>
 
@@ -1962,515 +944,111 @@
         </section>
 
 
-        <!-- =====================================
-             8. PARTNERSHIP PRINCIPLES
-             ===================================== -->
-
-        <section class="partners-principles">
-
-            <div class="partners-container">
-
-
-                <div class="partners-heading">
-
-                    <p class="eyebrow">
-                        OUR BUSINESS PRINCIPLES
-                    </p>
-
-                    <h2>
-
-                        PROFESSIONAL
-                        <span>PARTNERSHIPS.</span>
-
-                    </h2>
-
-                    <p>
-
-                        We believe that effective
-                        collaboration depends on
-                        clarity, accountability
-                        and respect for
-                        each party's role.
-
-                    </p>
-
-                </div>
-
-
-                <div class="partner-principle-grid">
-
-
-                    <article class="partner-principle-card">
-
-                        <h3>
-                            <span>01.</span>
-                            Transparency
-                        </h3>
-
-                        <p>
-
-                            Clear discussions
-                            about expectations,
-                            responsibilities,
-                            project requirements
-                            and commercial terms.
-
-                        </p>
-
-                    </article>
-
-
-                    <article class="partner-principle-card">
-
-                        <h3>
-                            <span>02.</span>
-                            Professionalism
-                        </h3>
-
-                        <p>
-
-                            Maintaining professional
-                            communication,
-                            agreed commitments
-                            and responsible
-                            business practices.
-
-                        </p>
-
-                    </article>
-
-
-                    <article class="partner-principle-card">
-
-                        <h3>
-                            <span>03.</span>
-                            Confidentiality
-                        </h3>
-
-                        <p>
-
-                            Respecting confidential
-                            information and
-                            using appropriate
-                            non-disclosure
-                            arrangements where needed.
-
-                        </p>
-
-                    </article>
-
-
-                    <article class="partner-principle-card">
-
-                        <h3>
-                            <span>04.</span>
-                            Accountability
-                        </h3>
-
-                        <p>
-
-                            Defining ownership,
-                            deliverables, milestones
-                            and individual
-                            responsibilities
-                            in written agreements.
-
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             9. PARTNER REQUIREMENTS
-             ===================================== -->
-
-        <section class="partners-expectations">
-
-            <div class="partner-expectations-box">
-
-                <p class="eyebrow">
-                    WORKING WITH OUR COMPANY
-                </p>
-
-                <h2>
-
-                    WHAT MAKES
-                    <span>A GOOD PARTNER?</span>
-
-                </h2>
-
-                <p>
-
-                    We encourage organizations
-                    and professionals interested
-                    in collaboration to provide
-                    clear information about
-                    their capabilities and
-                    proposed business relationship.
-
-                </p>
-
-                <ul>
-
-                    <li>
-                        Company or professional
-                        background and introduction.
-                    </li>
-
-                    <li>
-                        Relevant production,
-                        technology or business
-                        capabilities.
-                    </li>
-
-                    <li>
-                        Examples of relevant
-                        work or portfolio, where available.
-                    </li>
-
-                    <li>
-                        Proposed collaboration
-                        model and business objectives.
-                    </li>
-
-                    <li>
-                        Resource capacity
-                        and project availability,
-                        where applicable.
-                    </li>
-
-                    <li>
-                        Relevant commercial,
-                        technical and operational
-                        requirements.
-                    </li>
-
-                </ul>
-
-                <p>
-
-                    Partnership enquiries
-                    are reviewed individually.
-                    Submission of an enquiry
-                    does not guarantee
-                    a partnership or contract.
-
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             10. PARTNERSHIP FAQ
-             ===================================== -->
-
-        <section class="partners-faq">
-
-            <div class="partners-faq-container">
-
-
-                <div class="partners-faq-heading">
-
-                    <p class="eyebrow">
-                        PARTNERSHIP INFORMATION
-                    </p>
-
-                    <h2>
-
-                        COMMON
-                        <span>QUESTIONS.</span>
-
-                    </h2>
-
-                </div>
-
-
-                <!-- FAQ 01 -->
-
-                <details class="partner-faq-item">
-
-                    <summary>
-                        What types of partnerships does the company consider?
-                    </summary>
-
-                    <div class="partner-faq-answer">
-
-                        <p>
-
-                            We welcome enquiries
-                            involving production
-                            collaboration, co-production,
-                            outsourcing, digital
-                            technology, infrastructure,
-                            creative talent, commercial
-                            relationships and
-                            strategic business development.
-
-                            Every proposal is evaluated
-                            according to its suitability.
-
-                        </p>
-
-                    </div>
-
-                </details>
-
-
-                <!-- FAQ 02 -->
-
-                <details class="partner-faq-item">
-
-                    <summary>
-                        Does AUTOTUBE CREW STUDIO work with international partners?
-                    </summary>
-
-                    <div class="partner-faq-answer">
-
-                        <p>
-
-                            We welcome enquiries
-                            from international
-                            businesses, studios,
-                            technology providers
-                            and creative professionals.
-
-                            Potential collaborations
-                            are considered subject
-                            to operational,
-                            commercial and
-                            applicable legal requirements.
-
-                        </p>
-
-                    </div>
-
-                </details>
-
-
-                <!-- FAQ 03 -->
-
-                <details class="partner-faq-item">
-
-                    <summary>
-                        Can production studios collaborate on animation and film projects?
-                    </summary>
-
-                    <div class="partner-faq-answer">
-
-                        <p>
-
-                            Yes. Suitable animation,
-                            CGI, VFX and film
-                            production collaborations
-                            can be discussed
-                            on a project-specific
-                            basis.
-
-                            Responsibilities,
-                            production scope
-                            and deliverables
-                            should be agreed
-                            in writing.
-
-                        </p>
-
-                    </div>
-
-                </details>
-
-
-                <!-- FAQ 04 -->
-
-                <details class="partner-faq-item">
-
-                    <summary>
-                        Can technology companies provide render farm or infrastructure services?
-                    </summary>
-
-                    <div class="partner-faq-answer">
-
-                        <p>
-
-                            We welcome technical
-                            enquiries regarding
-                            rendering infrastructure,
-                            computing resources,
-                            storage, software
-                            and production hardware.
-
-                            Technical specifications,
-                            capacity, security
-                            and commercial
-                            arrangements would
-                            need to be evaluated.
-
-                        </p>
-
-                    </div>
-
-                </details>
-
-
-                <!-- FAQ 05 -->
-
-                <details class="partner-faq-item">
-
-                    <summary>
-                        How can an organization become a partner?
-                    </summary>
-
-                    <div class="partner-faq-answer">
-
-                        <p>
-
-                            Organizations can
-                            contact our company
-                            with a brief introduction,
-                            capabilities, relevant
-                            portfolio and proposed
-                            collaboration objectives.
-
-                            Our team can then
-                            review the enquiry
-                            and discuss suitable
-                            next steps.
-
-                        </p>
-
-                    </div>
-
-                </details>
-
-
-                <!-- FAQ 06 -->
-
-                <details class="partner-faq-item">
-
-                    <summary>
-                        Does submitting a partnership proposal guarantee acceptance?
-                    </summary>
-
-                    <div class="partner-faq-answer">
-
-                        <p>
-
-                            No. All partnership
-                            proposals are subject
-                            to individual review,
-                            business suitability,
-                            due diligence where
-                            appropriate and
-                            mutually agreed terms.
-
-                        </p>
-
-                    </div>
-
-                </details>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             11. PARTNER CONTACT CTA
-             ===================================== -->
+        <!-- FINAL CTA -->
 
         <section class="partners-cta">
 
-            <div class="partners-cta-content">
+            <div class="partners-container">
 
-                <p class="eyebrow">
-                    LET'S BUILD SOMETHING TOGETHER
-                </p>
+                <span class="partners-eyebrow">
+                    Let's Create Something Exceptional
+                </span>
 
                 <h2>
-
-                    GREAT IDEAS
-                    <span>GROW THROUGH PARTNERSHIPS.</span>
-
+                    Explore Partnership Opportunities
                 </h2>
 
                 <p>
-
-                    Are you a production studio,
-                    technology company,
-                    creative professional
-                    or strategic business
-                    organization?
-
-                    Introduce your company
-                    and share your collaboration
-                    proposal with our team.
-
+                    We welcome professional enquiries from
+                    production companies, creative studios and
+                    industry specialists interested in exploring
+                    potential collaboration opportunities.
                 </p>
 
-                <a href="contact.html"
-                   class="button-primary">
+                <div class="partners-buttons"
+                    style="justify-content:center;">
 
-                    SUBMIT A PARTNERSHIP ENQUIRY ↗
-
-                </a>
-
-                <p style="margin-top:25px;">
-
-                    Interested in investment
-                    and financing discussions?
-
-                    <a href="investor-relations.html"
-                       style="color:var(--red);font-weight:800;">
-
-                        VISIT INVESTOR RELATIONS
-
+                    <a href="contact.html" class="partners-btn">
+                        Contact Our Studio
                     </a>
 
-                </p>
+                    <a href="request-a-quote.html"
+                        class="partners-btn partners-btn-secondary">
+                        Discuss A Project
+                    </a>
+
+                </div>
 
             </div>
 
         </section>
-
 
     </main>
 
 
-    <!-- =====================================
-         FOOTER
-         ===================================== -->
+    <!-- FOOTER -->
 
-    <footer class="footer">
+    <footer class="partners-footer">
 
-        <a href="index.html" class="logo">
-            AUTO<span>TUBE</span> CREW
-        </a>
+        <div class="partners-container">
 
-        <p>
-            Creative Production. Without Limits.
-        </p>
+            <p>
+                &copy; 2026
+                <a href="index.html">AUTOTUBE CREW STUDIO</a>.
+                All Rights Reserved.
+            </p>
 
-        <p>
-            © 2026 AUTOTUBE CREW STUDIO.
-            All Rights Reserved.
-        </p>
+            <p>
+                Jakarta, Indonesia |
+                <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="terms-and-conditions.html">
+                    Terms & Conditions
+                </a>
+            </p>
+
+        </div>
 
     </footer>
 
 
-    <!-- JAVASCRIPT -->
+    <!-- MOBILE NAVIGATION -->
 
-    <script src="./assets/js/main.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
+            const menuButton = document.querySelector(
+                ".partners-menu-toggle"
+            );
+
+            const navigation = document.getElementById(
+                "partners-navigation"
+            );
+
+            if (!menuButton || !navigation) {
+                return;
+            }
+
+            menuButton.addEventListener("click", function () {
+
+                const isExpanded =
+                    menuButton.getAttribute("aria-expanded") === "true";
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    String(!isExpanded)
+                );
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    isExpanded ? "Open navigation" : "Close navigation"
+                );
+
+                navigation.classList.toggle("is-open");
+
+            });
+
+        });
+    </script>
 
 </body>
 </html>
