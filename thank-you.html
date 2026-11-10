@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description"
+        content="Thank you for contacting AUTOTUBE CREW STUDIO. We appreciate your business enquiry and interest in our creative production services.">
+
+    <meta name="author" content="PT Autotube Crew Studio">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="theme-color" content="#080808">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+
+        /* ==========================================
+           AUTOTUBE CREW STUDIO
+           THANK YOU PAGE
+        ========================================== */
+
+        :root {
+            --thank-black: #080808;
+            --thank-dark: #111111;
+            --thank-grey: #191919;
+            --thank-red: #e50920;
+            --thank-white: #ffffff;
+            --thank-muted: #a3a3a3;
+            --thank-border: #303030;
+            --thank-font: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--thank-black);
+            color: var(--thank-white);
+            font-family: var(--thank-font);
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .thank-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* ==========================================
+           HEADER
+        ========================================== */
+
+        .thank-header {
+            background: #080808;
+            border-bottom: 1px solid var(--thank-border);
+        }
+
+        .thank-header-inner {
+            min-height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .thank-logo img {
+            display: block;
+            max-width: 210px;
+            max-height: 65px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .thank-header-link {
+            color: #cccccc;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .thank-header-link:hover {
+            color: var(--thank-red);
+        }
+
+
+        /* ==========================================
+           MAIN SECTION
+        ========================================== */
+
+        .thank-main {
+            min-height: calc(100vh - 160px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            background:
+                radial-gradient(
+                    ellipse at center,
+                    #1b1113 0%,
+                    #111111 45%,
+                    #080808 100%
+                );
+        }
+
+        .thank-card {
+            width: 100%;
+            max-width: 820px;
+            padding: 65px 45px;
+            background: #111111;
+            border: 1px solid #333333;
+            border-top: 3px solid var(--thank-red);
+            text-align: center;
+        }
+
+
+        /* ==========================================
+           SUCCESS ICON
+        ========================================== */
+
+        .thank-icon {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--thank-red);
+            border-radius: 50%;
+            color: var(--thank-red);
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+
+        /* ==========================================
+           CONTENT
+        ========================================== */
+
+        .thank-eyebrow {
+            color: var(--thank-red);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .thank-card h1 {
+            margin: 20px 0;
+            font-size: clamp(35px, 6vw, 65px);
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .thank-card h1 span {
+            color: var(--thank-red);
+        }
+
+        .thank-description {
+            max-width: 620px;
+            margin: 0 auto;
+            color: #aaaaaa;
+            font-size: 16px;
+        }
+
+
+        /* ==========================================
+           REFERENCE INFORMATION
+        ========================================== */
+
+        .thank-reference {
+            margin-top: 35px;
+            padding: 20px;
+            background: #181818;
+            border: 1px solid #333333;
+            text-align: left;
+        }
+
+        .thank-reference h2 {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .thank-reference p {
+            color: #aaaaaa;
+            font-size: 13px;
+        }
+
+
+        /* ==========================================
+           NEXT STEPS
+        ========================================== */
+
+        .thank-next {
+            margin-top: 35px;
+            text-align: left;
+        }
+
+        .thank-next h2 {
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+
+        .thank-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid #303030;
+        }
+
+        .thank-step:last-child {
+            border-bottom: none;
+        }
+
+        .thank-step-number {
+            min-width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #251114;
+            border: 1px solid #5a2028;
+            color: var(--thank-red);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .thank-step h3 {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .thank-step p {
+            color: #999999;
+            font-size: 12px;
+        }
+
+
+        /* ==========================================
+           ACTION BUTTONS
+        ========================================== */
+
+        .thank-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .thank-btn {
+            display: inline-block;
+            padding: 14px 25px;
+            background: var(--thank-red);
+            border: 1px solid var(--thank-red);
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+        }
+
+        .thank-btn:hover {
+            background: transparent;
+        }
+
+        .thank-btn-secondary {
+            background: transparent;
+            border-color: #555555;
+        }
+
+
+        /* ==========================================
+           FOOTER
+        ========================================== */
+
+        .thank-footer {
+            padding: 25px 0;
+            background: #050505;
+            border-top: 1px solid #292929;
+            text-align: center;
+        }
+
+        .thank-footer p {
+            color: #888888;
+            font-size: 12px;
+            margin: 5px 0;
+        }
+
+        .thank-footer a {
+            color: var(--thank-red);
+        }
+
+
+        /* ==========================================
+           ACCESSIBILITY
+        ========================================== */
+
+        .thank-btn:focus-visible,
+        .thank-header-link:focus-visible {
+            outline: 2px solid white;
+            outline-offset: 4px;
+        }
+
+
+        /* ==========================================
+           RESPONSIVE DESIGN
+        ========================================== */
+
+        @media (max-width: 600px) {
+
+            .thank-header-inner {
+                min-height: 70px;
+            }
+
+            .thank-logo img {
+                max-width: 165px;
+            }
+
+            .thank-main {
+                padding: 45px 15px;
+            }
+
+            .thank-card {
+                padding: 40px 20px;
+            }
+
+            .thank-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 35px;
+            }
+
+            .thank-description {
+                font-size: 14px;
+            }
+
+            .thank-actions {
+                flex-direction: column;
+            }
+
+            .thank-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         HEADER
+    ========================================== -->
+
+    <header class="thank-header">
+
+        <div class="thank-container thank-header-inner">
+
+            <a href="index.html" class="thank-logo">
+
+                <img
+                    src="assets/brand/logo.png.png"
+                    alt="AUTOTUBE CREW STUDIO">
+
+            </a>
+
+            <a href="index.html" class="thank-header-link">
+                Back To Home
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main class="thank-main">
+
+        <div class="thank-container">
+
+            <section class="thank-card">
+
+                <div class="thank-icon"
+                    aria-hidden="true">
+
+                    ✓
+
+                </div>
+
+
+                <span class="thank-eyebrow">
+                    AUTOTUBE CREW STUDIO
+                </span>
+
+
+                <h1>
+                    Thank <span>You.</span>
+                </h1>
+
+
+                <p class="thank-description">
+
+                    Thank you for your interest
+                    in AUTOTUBE CREW STUDIO.
+
+                    We appreciate your time
+                    and your interest in exploring
+                    a potential professional
+                    collaboration with our team.
+
+                </p>
+
+
+
+                <!-- ==================================
+                     ENQUIRY INFORMATION
+                ================================== -->
+
+                <div class="thank-reference">
+
+                    <h2>
+                        About Your Enquiry
+                    </h2>
+
+                    <p>
+                        If your enquiry has been
+                        successfully submitted through
+                        our connected contact or
+                        quotation service, our team
+                        can review the information
+                        provided and determine
+                        the appropriate next steps.
+                    </p>
+
+                </div>
+
+
+
+                <!-- ==================================
+                     NEXT STEPS
+                ================================== -->
+
+                <div class="thank-next">
+
+                    <h2>
+                        What Happens Next?
+                    </h2>
+
+
+                    <div class="thank-step">
+
+                        <span class="thank-step-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Enquiry Review
+                            </h3>
+
+                            <p>
+                                Your submitted information
+                                can be reviewed against
+                                the relevant business
+                                and production requirements.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="thank-step">
+
+                        <span class="thank-step-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Project Assessment
+                            </h3>
+
+                            <p>
+                                Relevant project details,
+                                creative objectives and
+                                technical requirements
+                                may be evaluated.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="thank-step">
+
+                        <span class="thank-step-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Further Communication
+                            </h3>
+
+                            <p>
+                                If the enquiry is suitable
+                                for further discussion,
+                                the Company may contact
+                                you through the details
+                                you provided.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="thank-step">
+
+                        <span class="thank-step-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Project Discussion
+                            </h3>
+
+                            <p>
+                                Potential projects may
+                                proceed to discussions
+                                concerning scope,
+                                deliverables, timelines
+                                and commercial terms.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     ACTION BUTTONS
+                ================================== -->
+
+                <div class="thank-actions">
+
+                    <a href="index.html"
+                        class="thank-btn">
+
+                        Return To Homepage
+
+                    </a>
+
+
+                    <a href="portfolio.html"
+                        class="thank-btn thank-btn-secondary">
+
+                        Explore Our Portfolio
+
+                    </a>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="thank-footer">
+
+        <div class="thank-container">
+
+            <p>
+
+                &copy; 2026
+                <a href="index.html">
+                    AUTOTUBE CREW STUDIO
+                </a>.
+                All Rights Reserved.
+
+            </p>
+
+            <p>
+                Jakarta, Indonesia
+            </p>
+
+            <p>
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                |
+
+                <a href="terms-and-conditions.html">
+                    Terms & Conditions
+                </a>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
