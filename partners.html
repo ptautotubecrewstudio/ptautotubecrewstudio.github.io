@@ -1,1054 +1,214 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Studio Partnerships | AUTOTUBE CREW STUDIO</title>
-
-    <meta name="description"
-        content="Explore production partnerships with AUTOTUBE CREW STUDIO. We collaborate with international film production companies, animation studios, VFX teams, advertising agencies and creative partners.">
-
-    <meta name="keywords"
-        content="Production Partnerships, Animation Studio Partnerships, VFX Partnerships, CGI Studio, International Production Partners, AUTOTUBE CREW STUDIO">
-
-    <meta name="author" content="PT Autotube Crew Studio">
-
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical"
-        href="https://ptautotubecrewstudio.github.io/partners.html">
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        /* =====================================
-           PARTNERS PAGE
-           AUTOTUBE CREW STUDIO
-        ===================================== */
-
-        .partners-page {
-            background: #080808;
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-        }
-
-        .partners-page * {
-            box-sizing: border-box;
-        }
-
-        .partners-container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* HEADER */
-
-        .partners-header {
-            background: #080808;
-            border-bottom: 1px solid #292929;
-            position: relative;
-            z-index: 100;
-        }
-
-        .partners-header-inner {
-            min-height: 85px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-        }
-
-        .partners-logo img {
-            display: block;
-            max-width: 210px;
-            max-height: 65px;
-            object-fit: contain;
-        }
-
-        .partners-nav {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-
-        .partners-nav a {
-            color: #eeeeee;
-            text-decoration: none;
-            font-size: 13px;
-            transition: color 0.3s ease;
-        }
-
-        .partners-nav a:hover,
-        .partners-nav a.active {
-            color: #e50920;
-        }
-
-        .partners-menu-toggle {
-            display: none;
-            border: 1px solid #444;
-            color: #fff;
-            background: transparent;
-            padding: 9px 13px;
-            font-size: 23px;
-            cursor: pointer;
-        }
-
-        /* HERO */
-
-        .partners-hero {
-            min-height: 510px;
-            display: flex;
-            align-items: center;
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(0,0,0,0.97),
-                    rgba(0,0,0,0.75)
-                );
-            border-bottom: 1px solid #252525;
-            padding: 100px 0;
-        }
-
-        .partners-eyebrow {
-            color: #e50920;
-            font-size: 12px;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        .partners-hero h1 {
-            font-size: clamp(38px, 6vw, 76px);
-            line-height: 1.08;
-            max-width: 850px;
-            margin: 22px 0;
-            text-transform: uppercase;
-        }
-
-        .partners-hero h1 span {
-            color: #e50920;
-        }
-
-        .partners-hero p {
-            color: #bdbdbd;
-            max-width: 700px;
-            font-size: 17px;
-        }
-
-        .partners-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 35px;
-        }
-
-        .partners-btn {
-            display: inline-block;
-            padding: 14px 26px;
-            background: #e50920;
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: bold;
-            text-transform: uppercase;
-            border: 1px solid #e50920;
-            transition: 0.3s;
-        }
-
-        .partners-btn:hover {
-            background: transparent;
-            color: #ffffff;
-        }
-
-        .partners-btn-secondary {
-            background: transparent;
-            border-color: #666;
-        }
-
-        /* GENERAL SECTIONS */
-
-        .partners-section {
-            padding: 90px 0;
-        }
-
-        .partners-section-dark {
-            background: #101010;
-        }
-
-        .partners-section-heading {
-            max-width: 760px;
-            margin-bottom: 45px;
-        }
-
-        .partners-section-heading h2 {
-            font-size: clamp(28px, 4vw, 45px);
-            line-height: 1.2;
-            text-transform: uppercase;
-            margin: 15px 0;
-        }
-
-        .partners-section-heading p {
-            color: #a9a9a9;
-            font-size: 15px;
-        }
-
-        /* PARTNER GRID */
-
-        .partners-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
-
-        .partners-card {
-            background: #141414;
-            border: 1px solid #292929;
-            padding: 30px;
-            transition: 0.3s ease;
-        }
-
-        .partners-card:hover {
-            border-color: #e50920;
-            transform: translateY(-5px);
-        }
-
-        .partners-card-number {
-            color: #e50920;
-            font-size: 13px;
-            letter-spacing: 2px;
-            font-weight: bold;
-        }
-
-        .partners-card h3 {
-            font-size: 20px;
-            margin: 17px 0 12px;
-        }
-
-        .partners-card p {
-            color: #aaaaaa;
-            font-size: 14px;
-            margin: 0;
-        }
-
-        /* COLLABORATION MODELS */
-
-        .partners-models {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .partners-model {
-            padding: 30px;
-            border-left: 3px solid #e50920;
-            background: #141414;
-        }
-
-        .partners-model h3 {
-            font-size: 21px;
-            margin: 0 0 12px;
-        }
-
-        .partners-model p {
-            color: #aaa;
-            font-size: 14px;
-            margin: 0;
-        }
-
-        /* AGREEMENT */
-
-        .partners-agreement {
-            background: #0c0c0c;
-            border: 1px solid #333;
-            padding: 35px;
-            margin-top: 30px;
-        }
-
-        .partners-agreement h3 {
-            font-size: 23px;
-            margin-top: 0;
-        }
-
-        .partners-agreement p {
-            color: #aaa;
-            font-size: 14px;
-        }
-
-        .partners-agreement ul {
-            padding-left: 20px;
-            color: #c5c5c5;
-        }
-
-        .partners-agreement li {
-            margin-bottom: 12px;
-        }
-
-        /* PROCESS */
-
-        .partners-process {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-        }
-
-        .partners-step {
-            border-top: 2px solid #e50920;
-            padding: 23px 15px;
-            background: #141414;
-        }
-
-        .partners-step span {
-            color: #e50920;
-            font-weight: bold;
-            font-size: 13px;
-        }
-
-        .partners-step h3 {
-            font-size: 17px;
-            margin: 12px 0;
-        }
-
-        .partners-step p {
-            color: #aaa;
-            font-size: 13px;
-        }
-
-        /* FINAL CTA */
-
-        .partners-cta {
-            background: #151515;
-            text-align: center;
-            padding: 85px 20px;
-            border-top: 1px solid #333;
-        }
-
-        .partners-cta h2 {
-            font-size: clamp(28px, 4vw, 48px);
-            margin: 0 0 15px;
-        }
-
-        .partners-cta p {
-            max-width: 650px;
-            margin: 0 auto;
-            color: #aaa;
-        }
-
-        /* FOOTER */
-
-        .partners-footer {
-            background: #050505;
-            border-top: 1px solid #292929;
-            padding: 35px 0;
-            text-align: center;
-        }
-
-        .partners-footer p {
-            color: #888;
-            font-size: 13px;
-        }
-
-        .partners-footer a {
-            color: #e50920;
-            text-decoration: none;
-        }
-
-        /* RESPONSIVE */
-
-        @media (max-width: 900px) {
-
-            .partners-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .partners-process {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .partners-nav {
-                gap: 13px;
-            }
-        }
-
-        @media (max-width: 700px) {
-
-            .partners-header-inner {
-                flex-wrap: wrap;
-                padding: 15px 0;
-            }
-
-            .partners-menu-toggle {
-                display: block;
-            }
-
-            .partners-nav {
-                display: none;
-                flex-direction: column;
-                align-items: flex-start;
-                width: 100%;
-                padding: 15px 0;
-                border-top: 1px solid #333;
-            }
-
-            .partners-nav.is-open {
-                display: flex;
-            }
-
-            .partners-hero {
-                min-height: 420px;
-                padding: 75px 0;
-            }
-
-            .partners-grid,
-            .partners-models,
-            .partners-process {
-                grid-template-columns: 1fr;
-            }
-
-            .partners-section {
-                padding: 65px 0;
-            }
-
-            .partners-agreement {
-                padding: 22px;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .partners-page *,
-            .partners-page *::before,
-            .partners-page *::after {
-                scroll-behavior: auto !important;
-                transition-duration: 0.01ms !important;
-                animation-duration: 0.01ms !important;
-            }
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Explore production partnerships with AUTOTUBE CREW STUDIO. We collaborate with film production companies, animation studios, CGI and VFX teams, advertising agencies and creative production specialists.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/partners.html">
+  <meta property="og:title" content="Studio Partnerships | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Creative and production collaboration built on shared expertise, clear responsibilities and agreed delivery requirements.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/partners.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+  <link rel="stylesheet" href="./assets/css/service-pages.css?v=1">
+  <title>Studio Partnerships | AUTOTUBE CREW STUDIO</title>
 </head>
+<body class="inner-page service-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<body class="partners-page">
+  <header class="header site-header">
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
+    </a>
+    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="showreel.html">Showreel</a>
+      <a href="partners.html" aria-current="page">Partners</a>
+      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+  </header>
 
-    <!-- HEADER -->
-
-    <header class="partners-header">
-        <div class="partners-container partners-header-inner">
-
-            <a href="index.html" class="partners-logo">
-                <img
-                    src="assets/brand/logo.png.png"
-                    alt="AUTOTUBE CREW STUDIO">
-            </a>
-
-            <nav class="partners-nav" id="partners-navigation"
-                aria-label="Main navigation">
-
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="partners.html" class="active"
-                    aria-current="page">Partners</a>
-                <a href="contact.html">Contact</a>
-
-            </nav>
-
-            <button
-                class="partners-menu-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-                aria-controls="partners-navigation">
-                ☰
-            </button>
-
+  <main id="main-content">
+    <section class="inner-hero service-hero" aria-labelledby="partners-title">
+      <div class="inner-container inner-hero-layout service-hero-layout">
+        <div>
+          <p class="eyebrow">STUDIO PARTNERSHIPS / PRODUCTION COLLABORATION / SHARED EXPERTISE</p>
+          <h1 id="partners-title">Stronger production partnerships.<br><span>Built on shared expertise.</span></h1>
+          <p class="inner-hero-copy">We work with production companies, creative studios, agencies and specialist teams to bring complementary capabilities together around clearly defined project goals.</p>
+          <div class="inner-hero-actions">
+            <a class="button-primary" href="#partnership-models">Explore partnership models <span aria-hidden="true">↓</span></a>
+            <a class="button-secondary" href="contact.html">Discuss a collaboration</a>
+          </div>
         </div>
-    </header>
-
-
-    <main>
-
-        <!-- HERO -->
-
-        <section class="partners-hero">
-
-            <div class="partners-container">
-
-                <span class="partners-eyebrow">
-                    Global Creative Collaboration
-                </span>
-
-                <h1>
-                    Stronger Together.
-                    <span>Creating Beyond Limits.</span>
-                </h1>
-
-                <p>
-                    We build meaningful production partnerships with
-                    creative studios, film production companies,
-                    animation teams, VFX specialists and international
-                    industry professionals.
-                </p>
-
-                <div class="partners-buttons">
-
-                    <a href="contact.html" class="partners-btn">
-                        Discuss a Partnership
-                    </a>
-
-                    <a href="services.html"
-                        class="partners-btn partners-btn-secondary">
-                        Explore Our Capabilities
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- INTRODUCTION -->
-
-        <section class="partners-section">
-
-            <div class="partners-container">
-
-                <div class="partners-section-heading">
-
-                    <span class="partners-eyebrow">
-                        Our Partnership Philosophy
-                    </span>
-
-                    <h2>
-                        Creative Vision.
-                        Shared Expertise.
-                        Exceptional Production.
-                    </h2>
-
-                    <p>
-                        AUTOTUBE CREW STUDIO works through collaborative
-                        production relationships that bring together
-                        creative talent, technical expertise and
-                        production capabilities.
-
-                        Our approach is built around transparent
-                        communication, clearly defined responsibilities
-                        and a shared commitment to quality.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PARTNER CATEGORIES -->
-
-        <section class="partners-section partners-section-dark">
-
-            <div class="partners-container">
-
-                <div class="partners-section-heading">
-
-                    <span class="partners-eyebrow">
-                        Who We Work With
-                    </span>
-
-                    <h2>
-                        Building Connections Across The Industry
-                    </h2>
-
-                    <p>
-                        We welcome professional collaboration with
-                        companies and individuals whose capabilities
-                        complement our production services.
-                    </p>
-
-                </div>
-
-
-                <div class="partners-grid">
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">01</span>
-                        <h3>Film Production Companies</h3>
-                        <p>
-                            Production collaboration for feature films,
-                            cinematic projects and screen-based
-                            entertainment.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">02</span>
-                        <h3>Animation Studios</h3>
-                        <p>
-                            Creative and technical collaboration for
-                            3D animation, character animation and
-                            cinematic storytelling.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">03</span>
-                        <h3>CGI & VFX Studios</h3>
-                        <p>
-                            Specialist collaboration across CGI,
-                            visual effects, compositing and
-                            digital environments.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">04</span>
-                        <h3>Advertising Agencies</h3>
-                        <p>
-                            Production support for commercial campaigns,
-                            branded content and advertising projects.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">05</span>
-                        <h3>Gaming Companies</h3>
-                        <p>
-                            Collaboration on game cinematics,
-                            Unreal Engine environments and
-                            high-quality digital assets.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">06</span>
-                        <h3>Independent Production Specialists</h3>
-                        <p>
-                            Professional collaboration with directors,
-                            producers, artists and technical
-                            production specialists.
-                        </p>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- COLLABORATION MODELS -->
-
-        <section class="partners-section">
-
-            <div class="partners-container">
-
-                <div class="partners-section-heading">
-
-                    <span class="partners-eyebrow">
-                        Collaboration Opportunities
-                    </span>
-
-                    <h2>
-                        Flexible Production Partnership Models
-                    </h2>
-
-                    <p>
-                        Each collaboration is structured according
-                        to the project's requirements, capabilities,
-                        responsibilities and agreed commercial terms.
-                    </p>
-
-                </div>
-
-
-                <div class="partners-models">
-
-                    <article class="partners-model">
-                        <h3>Studio-to-Studio Collaboration</h3>
-                        <p>
-                            Work alongside established studios to
-                            combine creative resources, technical
-                            expertise and production capabilities.
-                        </p>
-                    </article>
-
-                    <article class="partners-model">
-                        <h3>Production Support Partnership</h3>
-                        <p>
-                            Provide agreed production and post-production
-                            services to support larger creative projects.
-                        </p>
-                    </article>
-
-                    <article class="partners-model">
-                        <h3>Co-Production Opportunities</h3>
-                        <p>
-                            Explore project-based co-production
-                            arrangements with clearly allocated
-                            responsibilities and deliverables.
-                        </p>
-                    </article>
-
-                    <article class="partners-model">
-                        <h3>International Industry Collaboration</h3>
-                        <p>
-                            Establish professional working relationships
-                            with international production companies
-                            and creative industry partners.
-                        </p>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROJECT AGREEMENT FRAMEWORK -->
-
-        <section class="partners-section partners-section-dark">
-
-            <div class="partners-container">
-
-                <div class="partners-section-heading">
-
-                    <span class="partners-eyebrow">
-                        Professional Project Governance
-                    </span>
-
-                    <h2>
-                        Clear Agreements.
-                        Transparent Responsibilities.
-                    </h2>
-
-                    <p>
-                        Successful production partnerships require more
-                        than creative alignment. Every project should
-                        have a clearly documented agreement covering
-                        responsibilities, approvals, revisions,
-                        ownership and project scope.
-                    </p>
-
-                </div>
-
-
-                <div class="partners-grid">
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">01</span>
-                        <h3>Project Scope & Deliverables</h3>
-                        <p>
-                            Document the agreed project scope,
-                            production requirements, deliverables,
-                            formats, milestones and responsibilities
-                            before work begins.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">02</span>
-                        <h3>Client Approval Process</h3>
-                        <p>
-                            Identify authorized approvers, milestone
-                            approval requirements, feedback procedures
-                            and written approval records.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">03</span>
-                        <h3>Revision Management</h3>
-                        <p>
-                            Define the included revision rounds,
-                            feedback consolidation process and
-                            procedures for additional revisions.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">04</span>
-                        <h3>Source Files & Ownership</h3>
-                        <p>
-                            Specify ownership, usage rights,
-                            editable source files, project assets,
-                            third-party licences and agreed
-                            file handover conditions.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">05</span>
-                        <h3>Scope Change Control</h3>
-                        <p>
-                            Manage new requirements, additional
-                            deliverables and changes to creative
-                            direction through documented change
-                            requests and agreed adjustments.
-                        </p>
-                    </article>
-
-                    <article class="partners-card">
-                        <span class="partners-card-number">06</span>
-                        <h3>Commercial & Delivery Terms</h3>
-                        <p>
-                            Establish project fees, payment milestones,
-                            deadlines, delivery conditions,
-                            confidentiality and applicable
-                            contractual responsibilities.
-                        </p>
-                    </article>
-
-                </div>
-
-
-                <div class="partners-agreement">
-
-                    <h3>Formal Project Agreement Framework</h3>
-
-                    <p>
-                        The following controls should be documented
-                        in the applicable project agreement before
-                        production begins:
-                    </p>
-
-                    <ul>
-                        <li>
-                            Written confirmation of the agreed
-                            project brief and scope.
-                        </li>
-
-                        <li>
-                            Named client and studio representatives
-                            responsible for milestone approvals.
-                        </li>
-
-                        <li>
-                            Agreed revision limits and procedures
-                            for additional revision requests.
-                        </li>
-
-                        <li>
-                            Defined ownership and transfer conditions
-                            for deliverables and editable source files.
-                        </li>
-
-                        <li>
-                            Written change requests covering new
-                            requirements, additional costs and
-                            schedule adjustments.
-                        </li>
-
-                        <li>
-                            Defined payment terms, delivery milestones
-                            and confidentiality obligations.
-                        </li>
-                    </ul>
-
-                    <p>
-                        Specific contractual rights and obligations
-                        must be established in the signed agreement
-                        for each project. This framework is a
-                        planning structure and does not replace
-                        legal review or a formal contract.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PARTNERSHIP WORKFLOW -->
-
-        <section class="partners-section">
-
-            <div class="partners-container">
-
-                <div class="partners-section-heading">
-
-                    <span class="partners-eyebrow">
-                        Our Working Process
-                    </span>
-
-                    <h2>
-                        From Initial Discussion To Final Delivery
-                    </h2>
-
-                    <p>
-                        A structured collaboration process helps
-                        establish expectations, accountability
-                        and production quality at every stage.
-                    </p>
-
-                </div>
-
-
-                <div class="partners-process">
-
-                    <article class="partners-step">
-                        <span>STEP 01</span>
-                        <h3>Introduction</h3>
-                        <p>
-                            Understand the partner's capabilities,
-                            project vision and collaboration objectives.
-                        </p>
-                    </article>
-
-                    <article class="partners-step">
-                        <span>STEP 02</span>
-                        <h3>Project Evaluation</h3>
-                        <p>
-                            Review scope, resources, deliverables,
-                            schedule and production requirements.
-                        </p>
-                    </article>
-
-                    <article class="partners-step">
-                        <span>STEP 03</span>
-                        <h3>Agreement</h3>
-                        <p>
-                            Establish responsibilities, commercial
-                            terms, approval procedures and ownership
-                            conditions in writing.
-                        </p>
-                    </article>
-
-                    <article class="partners-step">
-                        <span>STEP 04</span>
-                        <h3>Production</h3>
-                        <p>
-                            Coordinate production, reviews,
-                            revisions and milestone approvals.
-                        </p>
-                    </article>
-
-                    <article class="partners-step">
-                        <span>STEP 05</span>
-                        <h3>Delivery</h3>
-                        <p>
-                            Complete final delivery and agreed
-                            handover documentation.
-                        </p>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- FINAL CTA -->
-
-        <section class="partners-cta">
-
-            <div class="partners-container">
-
-                <span class="partners-eyebrow">
-                    Let's Create Something Exceptional
-                </span>
-
-                <h2>
-                    Explore Partnership Opportunities
-                </h2>
-
-                <p>
-                    We welcome professional enquiries from
-                    production companies, creative studios and
-                    industry specialists interested in exploring
-                    potential collaboration opportunities.
-                </p>
-
-                <div class="partners-buttons"
-                    style="justify-content:center;">
-
-                    <a href="contact.html" class="partners-btn">
-                        Contact Our Studio
-                    </a>
-
-                    <a href="request-a-quote.html"
-                        class="partners-btn partners-btn-secondary">
-                        Discuss A Project
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-
-    <footer class="partners-footer">
-
-        <div class="partners-container">
-
-            <p>
-                &copy; 2026
-                <a href="index.html">AUTOTUBE CREW STUDIO</a>.
-                All Rights Reserved.
-            </p>
-
-            <p>
-                Jakarta, Indonesia |
-                <a href="privacy-policy.html">Privacy Policy</a> |
-                <a href="terms-and-conditions.html">
-                    Terms & Conditions
-                </a>
-            </p>
-
+        <div class="service-hero-panel" aria-label="AUTOTUBE CREW STUDIO partnership approach">
+          <div class="service-panel-top"><span>Collaborative production</span><span>PARTNERS / 01</span></div>
+          <img class="service-panel-mark" src="assets/brand/logo.png.png" alt="" aria-hidden="true" width="190" height="100">
+          <div class="service-panel-bottom"><span>Shared expertise</span><strong>ONE CONNECTED TEAM</strong></div>
         </div>
+      </div>
+    </section>
 
-    </footer>
+    <section class="inner-section">
+      <div class="inner-container service-intro-grid">
+        <div>
+          <p class="section-kicker">CREATIVE VISION. SHARED EXPERTISE.</p>
+          <h2 class="service-statement">Better collaboration starts with <span>clear alignment.</span></h2>
+        </div>
+        <div class="service-intro-copy">
+          <p>Different projects call for different combinations of creative talent, production capacity and specialist knowledge. AUTOTUBE CREW STUDIO approaches collaboration by first understanding the brief, the required capabilities and the responsibilities each party is prepared to undertake.</p>
+          <p>Our aim is to establish practical working relationships with transparent communication, agreed deliverables and a shared understanding of production quality, timing and commercial terms.</p>
+          <div class="service-related-links">
+            <a href="clients.html">Explore client collaboration <span aria-hidden="true">↗</span></a>
+            <a href="our-workflow.html">Our project workflow <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="inner-section" id="partner-types" aria-labelledby="partner-types-title">
+      <div class="inner-container">
+        <p class="section-kicker">WHO WE CAN WORK WITH</p>
+        <h2 class="section-heading" id="partner-types-title">Connections across <span>the production landscape.</span></h2>
+        <p class="service-gallery-intro">We welcome enquiries from organisations and independent specialists whose work complements the studio's production capabilities. These are potential collaboration categories, not a list of confirmed partners or client relationships.</p>
+        <div class="service-capability-grid">
+          <article class="service-capability-card">
+            <span class="card-index">01 / FILM</span>
+            <h3>Film production companies</h3>
+            <p>Project-based collaboration for feature films, cinematic projects, visual development and production support.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">02 / ANIMATION</span>
+            <h3>Animation studios</h3>
+            <p>Creative and technical collaboration across 3D animation, character work, environments and screen storytelling.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">03 / CGI &amp; VFX</span>
+            <h3>CGI &amp; VFX specialists</h3>
+            <p>Complementary expertise in digital assets, compositing, visual effects, rendering and visual integration.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">04 / ADVERTISING</span>
+            <h3>Advertising &amp; creative agencies</h3>
+            <p>Production collaboration for commercial content, campaign visuals, branded films and creative communication.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">05 / INTERACTIVE</span>
+            <h3>Gaming &amp; interactive teams</h3>
+            <p>Project-specific support for cinematic game content, 3D assets, environments and visual experiences.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">06 / SPECIALISTS</span>
+            <h3>Independent production specialists</h3>
+            <p>Collaboration with experienced creative and technical professionals when specialist skills are required.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!-- MOBILE NAVIGATION -->
+    <section class="inner-section" id="partnership-models" aria-labelledby="partnership-models-title">
+      <div class="inner-container">
+        <p class="section-kicker">FLEXIBLE COLLABORATION</p>
+        <h2 class="section-heading" id="partnership-models-title">A model that fits <span>the project.</span></h2>
+        <div class="service-capability-grid">
+          <article class="service-capability-card">
+            <span class="card-index">MODEL 01 / STUDIO-TO-STUDIO</span>
+            <h3>Studio-to-studio collaboration</h3>
+            <p>Bring teams and capabilities together for a defined production brief, with responsibilities and interfaces agreed in advance.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">MODEL 02 / PRODUCTION SUPPORT</span>
+            <h3>Production support</h3>
+            <p>Provide an agreed service, production stage or specialist contribution within a partner-led project.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">MODEL 03 / CO-PRODUCTION</span>
+            <h3>Project-based co-production</h3>
+            <p>Explore shared production arrangements with documented contributions, decision-making responsibilities and delivery expectations.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">MODEL 04 / INTERNATIONAL</span>
+            <h3>International collaboration</h3>
+            <p>Coordinate with overseas production partners on project requirements, communication, media specifications and delivery schedules.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+    <section class="inner-section" aria-labelledby="agreement-title">
+      <div class="inner-container">
+        <p class="section-kicker">CLEAR AGREEMENTS. DEFINED RESPONSIBILITIES.</p>
+        <h2 class="section-heading" id="agreement-title">A shared understanding <span>before production begins.</span></h2>
+        <p class="service-gallery-intro">Every collaboration should be supported by written project terms appropriate to its scope. The final agreement governs the project; the points below describe topics that should be clarified, not substitute contract terms.</p>
+        <div class="service-capability-grid">
+          <article class="service-capability-card"><span class="card-index">01 / SCOPE</span><h3>Project scope &amp; deliverables</h3><p>Document the work, formats, milestones, responsibilities, assumptions and exclusions agreed for the project.</p></article>
+          <article class="service-capability-card"><span class="card-index">02 / APPROVALS</span><h3>Review &amp; approvals</h3><p>Identify authorized reviewers, approval stages, feedback requirements and written sign-off procedures.</p></article>
+          <article class="service-capability-card"><span class="card-index">03 / REVISIONS</span><h3>Revision management</h3><p>Define included revision rounds, feedback consolidation and how additional revision requests are evaluated.</p></article>
+          <article class="service-capability-card"><span class="card-index">04 / OWNERSHIP</span><h3>Source files &amp; intellectual property</h3><p>Clarify ownership, usage rights, licences, third-party materials and any source-file handover obligations in the applicable agreement.</p></article>
+          <article class="service-capability-card"><span class="card-index">05 / CHANGE CONTROL</span><h3>Scope and schedule changes</h3><p>Agree how changes to requirements, resources, costs or timelines are reviewed and approved before extra work proceeds.</p></article>
+          <article class="service-capability-card"><span class="card-index">06 / COMMERCIAL</span><h3>Commercial &amp; delivery terms</h3><p>Record fees, payment milestones, delivery dates, confidentiality requirements and other relevant commercial conditions.</p></article>
+        </div>
+      </div>
+    </section>
 
-            const menuButton = document.querySelector(
-                ".partners-menu-toggle"
-            );
+    <section class="inner-section" aria-labelledby="collaboration-process-title">
+      <div class="inner-container">
+        <p class="section-kicker">FROM INTRODUCTION TO DELIVERY</p>
+        <h2 class="section-heading" id="collaboration-process-title">A clear path to <span>working together.</span></h2>
+        <div class="service-process-grid">
+          <article class="service-process-card"><span class="card-index">STAGE 01 / INTRODUCE</span><h3>Initial discussion</h3><p>Share the project context, capabilities, objectives and intended collaboration.</p></article>
+          <article class="service-process-card"><span class="card-index">STAGE 02 / EVALUATE</span><h3>Project evaluation</h3><p>Review scope, resources, schedule, dependencies, technical needs and deliverables.</p></article>
+          <article class="service-process-card"><span class="card-index">STAGE 03 / AGREE</span><h3>Written agreement</h3><p>Confirm responsibilities, approvals, ownership, commercial terms and delivery requirements.</p></article>
+          <article class="service-process-card"><span class="card-index">STAGE 04 / EXECUTE</span><h3>Production &amp; delivery</h3><p>Coordinate production, reviews and handover against the agreed project plan.</p></article>
+        </div>
+        <div class="service-related-links">
+          <a href="services.html">Explore studio services <span aria-hidden="true">↗</span></a>
+          <a href="portfolio.html">View selected work <span aria-hidden="true">↗</span></a>
+          <a href="careers.html">Career opportunities <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
 
-            const navigation = document.getElementById(
-                "partners-navigation"
-            );
+    <section class="inner-section" aria-labelledby="partnership-faq-title">
+      <div class="inner-container">
+        <p class="section-kicker">PARTNERSHIP INFORMATION</p>
+        <h2 class="section-heading" id="partnership-faq-title">Frequently asked <span>questions.</span></h2>
+        <div class="service-capability-grid">
+          <article class="service-capability-card"><span class="card-index">QUESTION 01</span><h3>Can international studios approach AUTOTUBE CREW STUDIO?</h3><p>Yes. We welcome enquiries from international production companies, creative studios and specialists. Scope and feasibility are reviewed for each project.</p></article>
+          <article class="service-capability-card"><span class="card-index">QUESTION 02</span><h3>Can the studio provide production support?</h3><p>Production support can be discussed according to the required discipline, available capacity, schedule and agreed deliverables.</p></article>
+          <article class="service-capability-card"><span class="card-index">QUESTION 03</span><h3>How are ownership and source files handled?</h3><p>Ownership, licences and source-file handover are defined in the applicable written project agreement. They should not be assumed to transfer automatically.</p></article>
+          <article class="service-capability-card"><span class="card-index">QUESTION 04</span><h3>How do we start a partnership discussion?</h3><p>Use the contact page to share your organisation, project outline, required capabilities, expected timing and preferred next steps.</p></article>
+        </div>
+      </div>
+    </section>
 
-            if (!menuButton || !navigation) {
-                return;
-            }
+    <section class="inner-cta" aria-labelledby="partners-cta-title">
+      <div class="inner-container">
+        <p class="eyebrow">EXPLORE A PRODUCTION COLLABORATION</p>
+        <h2 id="partners-cta-title">Bring the right people together.<br><span>Make the work stronger.</span></h2>
+        <p>Tell us about your organisation, project requirements and the capabilities you would like to bring together. Our team can review the proposed collaboration and discuss a suitable next step.</p>
+        <a class="button-primary" href="contact.html">Discuss a partnership <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-            menuButton.addEventListener("click", function () {
+  <footer class="site-footer">
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
+    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
+    <div class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html">Contact</a></div>
+    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+  </footer>
 
-                const isExpanded =
-                    menuButton.getAttribute("aria-expanded") === "true";
-
-                menuButton.setAttribute(
-                    "aria-expanded",
-                    String(!isExpanded)
-                );
-
-                menuButton.setAttribute(
-                    "aria-label",
-                    isExpanded ? "Open navigation" : "Close navigation"
-                );
-
-                navigation.classList.toggle("is-open");
-
-            });
-
-        });
-    </script>
-
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
