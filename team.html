@@ -1,0 +1,1465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Team | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description"
+        content="Meet the leadership and creative production team behind AUTOTUBE CREW STUDIO, an end-to-end visual production studio based in Jakarta, Indonesia.">
+
+    <meta name="keywords"
+        content="AUTOTUBE CREW STUDIO Team, Company Leadership, Animation Studio Team, CGI Production Team, VFX Studio Jakarta">
+
+    <meta name="author" content="PT Autotube Crew Studio">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://ptautotubecrewstudio.github.io/team.html">
+
+    <meta name="theme-color" content="#080808">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* ==========================================
+           AUTOTUBE CREW STUDIO
+           TEAM PAGE
+        ========================================== */
+
+        :root {
+            --team-black: #080808;
+            --team-dark: #111111;
+            --team-grey: #191919;
+            --team-red: #e50920;
+            --team-white: #ffffff;
+            --team-muted: #a3a3a3;
+            --team-border: #303030;
+            --team-font: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--team-black);
+            color: var(--team-white);
+            font-family: var(--team-font);
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .team-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* ==========================================
+           HEADER
+        ========================================== */
+
+        .team-header {
+            background: #080808;
+            border-bottom: 1px solid var(--team-border);
+            position: relative;
+            z-index: 100;
+        }
+
+        .team-header-inner {
+            min-height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .team-logo img {
+            display: block;
+            max-width: 210px;
+            max-height: 65px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .team-nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .team-nav a {
+            color: #eeeeee;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .team-nav a:hover,
+        .team-nav a.active {
+            color: var(--team-red);
+        }
+
+        .team-menu-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid #444;
+            color: white;
+            padding: 8px 13px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+
+        /* ==========================================
+           HERO
+        ========================================== */
+
+        .team-hero {
+            padding: 110px 0 95px;
+            background:
+                linear-gradient(
+                    110deg,
+                    #080808 0%,
+                    #111111 65%,
+                    #191919 100%
+                );
+            border-bottom: 1px solid var(--team-border);
+        }
+
+        .team-eyebrow {
+            color: var(--team-red);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .team-hero h1 {
+            max-width: 900px;
+            margin: 20px 0;
+            font-size: clamp(40px, 7vw, 78px);
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .team-hero h1 span {
+            color: var(--team-red);
+        }
+
+        .team-hero p {
+            max-width: 720px;
+            color: #b5b5b5;
+            font-size: 17px;
+        }
+
+        .team-hero-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 32px;
+        }
+
+        .team-btn {
+            display: inline-block;
+            padding: 14px 27px;
+            background: var(--team-red);
+            border: 1px solid var(--team-red);
+            color: #fff;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+        }
+
+        .team-btn:hover {
+            background: transparent;
+            color: #fff;
+        }
+
+        .team-btn-secondary {
+            background: transparent;
+            border-color: #555;
+        }
+
+
+        /* ==========================================
+           GENERAL SECTIONS
+        ========================================== */
+
+        .team-section {
+            padding: 85px 0;
+        }
+
+        .team-section-dark {
+            background: #101010;
+        }
+
+        .team-section-heading {
+            max-width: 780px;
+            margin-bottom: 42px;
+        }
+
+        .team-section-heading h2 {
+            margin: 15px 0;
+            font-size: clamp(29px, 4vw, 45px);
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .team-section-heading p {
+            color: var(--team-muted);
+            font-size: 15px;
+        }
+
+
+        /* ==========================================
+           LEADERSHIP GRID
+        ========================================== */
+
+        .team-leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .team-leader-card {
+            background: #141414;
+            border: 1px solid #303030;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .team-leader-card:hover {
+            border-color: var(--team-red);
+            transform: translateY(-5px);
+        }
+
+        .team-leader-image {
+            height: 350px;
+            background: #202020;
+            overflow: hidden;
+            border-bottom: 2px solid var(--team-red);
+        }
+
+        .team-leader-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center top;
+            transition: transform 0.5s ease;
+        }
+
+        .team-leader-card:hover .team-leader-image img {
+            transform: scale(1.04);
+        }
+
+        .team-leader-content {
+            padding: 25px;
+        }
+
+        .team-role {
+            color: var(--team-red);
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .team-leader-content h3 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .team-leader-content p {
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+
+
+        /* ==========================================
+           COMPANY PHILOSOPHY
+        ========================================== */
+
+        .team-philosophy {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .team-philosophy h2 {
+            font-size: clamp(29px, 4vw, 43px);
+            line-height: 1.2;
+            margin: 15px 0;
+            text-transform: uppercase;
+        }
+
+        .team-philosophy p {
+            color: #aaaaaa;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .team-philosophy-panel {
+            background: #151515;
+            border: 1px solid #303030;
+            padding: 35px;
+        }
+
+        .team-philosophy-item {
+            padding: 18px 0;
+            border-bottom: 1px solid #353535;
+        }
+
+        .team-philosophy-item:last-child {
+            border-bottom: none;
+        }
+
+        .team-philosophy-item h3 {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .team-philosophy-item p {
+            color: #999;
+            font-size: 13px;
+            margin: 0;
+        }
+
+
+        /* ==========================================
+           DEPARTMENTS
+        ========================================== */
+
+        .team-departments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .team-department {
+            padding: 28px;
+            background: #151515;
+            border: 1px solid #303030;
+            transition: 0.3s ease;
+        }
+
+        .team-department:hover {
+            border-color: var(--team-red);
+        }
+
+        .team-department-number {
+            color: var(--team-red);
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .team-department h3 {
+            margin: 15px 0 10px;
+            font-size: 19px;
+        }
+
+        .team-department p {
+            color: #aaa;
+            font-size: 13px;
+        }
+
+
+        /* ==========================================
+           PRODUCTION COLLABORATION
+        ========================================== */
+
+        .team-collaboration {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .team-collaboration-card {
+            padding: 28px;
+            background: #141414;
+            border-left: 3px solid var(--team-red);
+        }
+
+        .team-collaboration-card h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .team-collaboration-card p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+
+        /* ==========================================
+           WORKING PRINCIPLES
+        ========================================== */
+
+        .team-principles-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 17px;
+        }
+
+        .team-principle {
+            padding: 25px;
+            border: 1px solid #303030;
+            background: #131313;
+        }
+
+        .team-principle span {
+            color: var(--team-red);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .team-principle h3 {
+            margin: 12px 0;
+            font-size: 17px;
+        }
+
+        .team-principle p {
+            color: #999;
+            font-size: 13px;
+        }
+
+
+        /* ==========================================
+           FINAL CTA
+        ========================================== */
+
+        .team-cta {
+            background: #151515;
+            padding: 85px 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .team-cta h2 {
+            font-size: clamp(29px, 4vw, 46px);
+            margin: 15px 0;
+        }
+
+        .team-cta p {
+            max-width: 660px;
+            margin: auto;
+            color: #aaa;
+            font-size: 15px;
+        }
+
+        .team-cta .team-btn {
+            margin-top: 25px;
+        }
+
+
+        /* ==========================================
+           FOOTER
+        ========================================== */
+
+        .team-footer {
+            background: #050505;
+            padding: 35px 0;
+            text-align: center;
+            border-top: 1px solid #292929;
+        }
+
+        .team-footer p {
+            color: #888;
+            font-size: 13px;
+            margin: 6px 0;
+        }
+
+        .team-footer a {
+            color: var(--team-red);
+        }
+
+
+        /* ==========================================
+           ACCESSIBILITY
+        ========================================== */
+
+        .team-nav a:focus-visible,
+        .team-btn:focus-visible,
+        .team-menu-toggle:focus-visible {
+            outline: 2px solid white;
+            outline-offset: 4px;
+        }
+
+
+        /* ==========================================
+           RESPONSIVE DESIGN
+        ========================================== */
+
+        @media (max-width: 1000px) {
+
+            .team-leadership-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .team-departments-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .team-principles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .team-header-inner {
+                flex-wrap: wrap;
+                padding: 12px 0;
+            }
+
+            .team-menu-toggle {
+                display: block;
+            }
+
+            .team-nav {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                gap: 15px;
+                padding: 18px 0;
+                border-top: 1px solid #333;
+            }
+
+            .team-nav.is-open {
+                display: flex;
+            }
+
+            .team-hero {
+                padding: 75px 0;
+            }
+
+            .team-section {
+                padding: 60px 0;
+            }
+
+            .team-leadership-grid,
+            .team-departments-grid,
+            .team-collaboration,
+            .team-principles-grid,
+            .team-philosophy {
+                grid-template-columns: 1fr;
+            }
+
+            .team-leader-image {
+                height: 380px;
+            }
+
+            .team-philosophy-panel {
+                padding: 24px;
+            }
+
+        }
+
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         HEADER
+    ========================================== -->
+
+    <header class="team-header">
+
+        <div class="team-container team-header-inner">
+
+
+            <a href="index.html" class="team-logo">
+
+                <img
+                    src="assets/brand/logo.png.png"
+                    alt="AUTOTUBE CREW STUDIO">
+
+            </a>
+
+
+            <nav
+                class="team-nav"
+                id="team-navigation"
+                aria-label="Main navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="portfolio.html">Portfolio</a>
+
+                <a href="showreel.html">Showreel</a>
+
+                <a href="team.html"
+                    class="active"
+                    aria-current="page">
+                    Our Team
+                </a>
+
+                <a href="partners.html">Partners</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+            <button
+                class="team-menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="team-navigation">
+
+                ☰
+
+            </button>
+
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ==========================================
+             HERO
+        =========================================== -->
+
+        <section class="team-hero">
+
+            <div class="team-container">
+
+                <span class="team-eyebrow">
+                    The People Behind The Vision
+                </span>
+
+                <h1>
+                    Creative Minds.
+                    <span>Collective Excellence.</span>
+                </h1>
+
+                <p>
+                    Meet the leadership behind AUTOTUBE CREW STUDIO
+                    and discover the collaborative production
+                    structure that supports our creative vision.
+
+                    We bring together leadership, creative direction,
+                    technical expertise and production capabilities
+                    to deliver professional visual experiences.
+                </p>
+
+
+                <div class="team-hero-links">
+
+                    <a href="#leadership" class="team-btn">
+                        Meet Our Leadership
+                    </a>
+
+                    <a href="careers.html"
+                        class="team-btn team-btn-secondary">
+                        Explore Careers
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             LEADERSHIP
+        ========================================== -->
+
+        <section class="team-section" id="leadership">
+
+            <div class="team-container">
+
+
+                <div class="team-section-heading">
+
+                    <span class="team-eyebrow">
+                        Company Leadership
+                    </span>
+
+                    <h2>
+                        Leadership & Management
+                    </h2>
+
+                    <p>
+                        Our leadership structure supports company
+                        direction, strategic development and
+                        professional production management.
+
+                        Each leadership role contributes to the
+                        overall direction and management of
+                        AUTOTUBE CREW STUDIO.
+                    </p>
+
+                </div>
+
+
+
+                <div class="team-leadership-grid">
+
+
+                    <!-- FOUNDER -->
+
+                    <article class="team-leader-card">
+
+                        <div class="team-leader-image">
+
+                            <img
+                                src="assets/images/founder-shameer-sarfraz.jpg.jpeg"
+                                alt="Shameer Sarfraz, Founder of AUTOTUBE CREW STUDIO"
+                                loading="lazy">
+
+                        </div>
+
+                        <div class="team-leader-content">
+
+                            <span class="team-role">
+                                Founder
+                            </span>
+
+                            <h3>
+                                Shameer Sarfraz
+                            </h3>
+
+                            <p>
+                                Founder of AUTOTUBE CREW STUDIO,
+                                contributing to the company's
+                                founding vision and organizational
+                                development.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CEO -->
+
+                    <article class="team-leader-card">
+
+                        <div class="team-leader-image">
+
+                            <img
+                                src="assets/images/ceo-abdul-sattar.jpg.PNG.png"
+                                alt="Abdul Sattar, CEO of AUTOTUBE CREW STUDIO"
+                                loading="lazy">
+
+                        </div>
+
+                        <div class="team-leader-content">
+
+                            <span class="team-role">
+                                Chief Executive Officer
+                            </span>
+
+                            <h3>
+                                Abdul Sattar
+                            </h3>
+
+                            <p>
+                                CEO of AUTOTUBE CREW STUDIO,
+                                responsible for executive leadership
+                                and company-level management.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- DIRECTOR -->
+
+                    <article class="team-leader-card">
+
+                        <div class="team-leader-image">
+
+                            <img
+                                src="assets/images/director-hasnain-ali-shah.png.png"
+                                alt="Hasnain Ali Shah, Director of AUTOTUBE CREW STUDIO"
+                                loading="lazy">
+
+                        </div>
+
+                        <div class="team-leader-content">
+
+                            <span class="team-role">
+                                Director
+                            </span>
+
+                            <h3>
+                                Hasnain Ali Shah
+                            </h3>
+
+                            <p>
+                                Director of AUTOTUBE CREW STUDIO,
+                                contributing to company direction,
+                                organizational planning and
+                                business development.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             COMPANY PHILOSOPHY
+        ========================================== -->
+
+        <section class="team-section team-section-dark">
+
+            <div class="team-container team-philosophy">
+
+
+                <div>
+
+                    <span class="team-eyebrow">
+                        Our Philosophy
+                    </span>
+
+                    <h2>
+                        Great Production Begins With Great Collaboration.
+                    </h2>
+
+                    <p>
+                        Exceptional visual production is built
+                        through the coordination of creative
+                        thinking, technical expertise,
+                        production planning and professional
+                        execution.
+                    </p>
+
+                    <p>
+                        Our working approach emphasizes
+                        communication, accountability,
+                        creative development and a shared
+                        commitment to production quality.
+                    </p>
+
+                </div>
+
+
+
+                <div class="team-philosophy-panel">
+
+
+                    <div class="team-philosophy-item">
+
+                        <h3>Creative Collaboration</h3>
+
+                        <p>
+                            Encouraging ideas, artistic expression
+                            and teamwork throughout production.
+                        </p>
+
+                    </div>
+
+
+                    <div class="team-philosophy-item">
+
+                        <h3>Professional Accountability</h3>
+
+                        <p>
+                            Maintaining defined responsibilities
+                            and clear communication across teams.
+                        </p>
+
+                    </div>
+
+
+                    <div class="team-philosophy-item">
+
+                        <h3>Technical Excellence</h3>
+
+                        <p>
+                            Supporting quality and consistency
+                            throughout the production pipeline.
+                        </p>
+
+                    </div>
+
+
+                    <div class="team-philosophy-item">
+
+                        <h3>Continuous Development</h3>
+
+                        <p>
+                            Supporting learning, innovation
+                            and evolving creative production methods.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             CREATIVE DEPARTMENTS
+        ========================================== -->
+
+        <section class="team-section">
+
+            <div class="team-container">
+
+
+                <div class="team-section-heading">
+
+                    <span class="team-eyebrow">
+                        Our Production Structure
+                    </span>
+
+                    <h2>
+                        Creative & Technical Departments
+                    </h2>
+
+                    <p>
+                        Our production capabilities are organized
+                        around specialized creative and technical
+                        functions that can work together according
+                        to individual project requirements.
+
+                        The following represents our functional
+                        production areas, not a published employee
+                        directory.
+                    </p>
+
+                </div>
+
+
+
+                <div class="team-departments-grid">
+
+
+                    <article class="team-department">
+
+                        <span class="team-department-number">
+                            DEPARTMENT 01
+                        </span>
+
+                        <h3>
+                            Creative Development
+                        </h3>
+
+                        <p>
+                            Concept development, creative direction,
+                            visual storytelling and project planning.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-department">
+
+                        <span class="team-department-number">
+                            DEPARTMENT 02
+                        </span>
+
+                        <h3>
+                            3D Animation
+                        </h3>
+
+                        <p>
+                            Character animation, environment
+                            animation and 3D visual storytelling.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-department">
+
+                        <span class="team-department-number">
+                            DEPARTMENT 03
+                        </span>
+
+                        <h3>
+                            CGI Production
+                        </h3>
+
+                        <p>
+                            Digital assets, computer-generated
+                            imagery and visual environment creation.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-department">
+
+                        <span class="team-department-number">
+                            DEPARTMENT 04
+                        </span>
+
+                        <h3>
+                            Visual Effects
+                        </h3>
+
+                        <p>
+                            VFX development, compositing,
+                            digital effects and visual enhancement.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-department">
+
+                        <span class="team-department-number">
+                            DEPARTMENT 05
+                        </span>
+
+                        <h3>
+                            Video & Cinematic Production
+                        </h3>
+
+                        <p>
+                            Video production, cinematic content,
+                            commercial production and filmmaking.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-department">
+
+                        <span class="team-department-number">
+                            DEPARTMENT 06
+                        </span>
+
+                        <h3>
+                            Post-Production
+                        </h3>
+
+                        <p>
+                            Editing, compositing, finishing
+                            and final media preparation.
+                        </p>
+
+                    </article>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             PRODUCTION COLLABORATION
+        ========================================== -->
+
+        <section class="team-section team-section-dark">
+
+            <div class="team-container">
+
+
+                <div class="team-section-heading">
+
+                    <span class="team-eyebrow">
+                        Working Together
+                    </span>
+
+                    <h2>
+                        A Connected Production Environment
+                    </h2>
+
+                    <p>
+                        Different production functions collaborate
+                        according to the scope, scale and requirements
+                        of each project.
+                    </p>
+
+                </div>
+
+
+
+                <div class="team-collaboration">
+
+
+                    <article class="team-collaboration-card">
+
+                        <h3>
+                            Project Coordination
+                        </h3>
+
+                        <p>
+                            Organizing project requirements,
+                            timelines, production responsibilities,
+                            communication and milestone coordination.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-collaboration-card">
+
+                        <h3>
+                            Creative & Technical Coordination
+                        </h3>
+
+                        <p>
+                            Connecting creative objectives with
+                            technical workflows, visual standards
+                            and production requirements.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-collaboration-card">
+
+                        <h3>
+                            Client & Partner Communication
+                        </h3>
+
+                        <p>
+                            Maintaining structured communication,
+                            project feedback, approvals and
+                            professional collaboration.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-collaboration-card">
+
+                        <h3>
+                            Quality & Delivery Coordination
+                        </h3>
+
+                        <p>
+                            Supporting production reviews,
+                            deliverable consistency and
+                            agreed project delivery requirements.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             WORKING PRINCIPLES
+        ========================================== -->
+
+        <section class="team-section">
+
+            <div class="team-container">
+
+
+                <div class="team-section-heading">
+
+                    <span class="team-eyebrow">
+                        Our Standards
+                    </span>
+
+                    <h2>
+                        Principles That Guide Our Work
+                    </h2>
+
+                    <p>
+                        Our approach to creative production
+                        is guided by professional working
+                        principles and shared responsibilities.
+                    </p>
+
+                </div>
+
+
+
+                <div class="team-principles-grid">
+
+
+                    <article class="team-principle">
+
+                        <span>01</span>
+
+                        <h3>Communication</h3>
+
+                        <p>
+                            Clear and structured communication
+                            throughout project execution.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-principle">
+
+                        <span>02</span>
+
+                        <h3>Responsibility</h3>
+
+                        <p>
+                            Defined ownership of assigned
+                            responsibilities and deliverables.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-principle">
+
+                        <span>03</span>
+
+                        <h3>Collaboration</h3>
+
+                        <p>
+                            Productive coordination between
+                            creative and technical disciplines.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="team-principle">
+
+                        <span>04</span>
+
+                        <h3>Quality</h3>
+
+                        <p>
+                            Consistent attention to production
+                            standards and final presentation.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             CAREERS
+        ========================================== -->
+
+        <section class="team-cta">
+
+            <div class="team-container">
+
+                <span class="team-eyebrow">
+                    Grow With Us
+                </span>
+
+                <h2>
+                    Join Our Creative Community.
+                </h2>
+
+                <p>
+                    We welcome professional talent and creative
+                    specialists interested in contributing to
+                    animation, CGI, VFX, cinematic production
+                    and digital visual experiences.
+
+                    Explore opportunities through our careers page.
+                </p>
+
+
+                <a href="careers.html" class="team-btn">
+                    Explore Career Opportunities
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="team-footer">
+
+        <div class="team-container">
+
+            <p>
+                &copy; 2026
+                <a href="index.html">
+                    AUTOTUBE CREW STUDIO
+                </a>.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Jakarta, Indonesia
+                |
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+                |
+                <a href="terms-and-conditions.html">
+                    Terms & Conditions
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+         MOBILE NAVIGATION
+    ========================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const menuButton = document.querySelector(
+                ".team-menu-toggle"
+            );
+
+            const navigation = document.getElementById(
+                "team-navigation"
+            );
+
+
+            if (!menuButton || !navigation) {
+                return;
+            }
+
+
+            menuButton.addEventListener("click", function () {
+
+                const expanded =
+                    menuButton.getAttribute("aria-expanded")
+                    === "true";
+
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    String(!expanded)
+                );
+
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    expanded
+                        ? "Open navigation"
+                        : "Close navigation"
+                );
+
+
+                navigation.classList.toggle("is-open");
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>
