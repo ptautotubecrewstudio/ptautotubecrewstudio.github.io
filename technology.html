@@ -1,1785 +1,220 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Technology & Innovation | AUTOTUBE CREW STUDIO</title>
-
-    <meta name="description"
-        content="Explore the technology, digital production workflows and technical capabilities behind AUTOTUBE CREW STUDIO, covering 3D animation, CGI, VFX, Unreal Engine environments and cinematic production.">
-
-    <meta name="keywords"
-        content="Production Technology, 3D Animation Technology, CGI, VFX, Unreal Engine, Digital Production, Visual Effects Technology, AUTOTUBE CREW STUDIO">
-
-    <meta name="author" content="PT Autotube Crew Studio">
-
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical"
-        href="https://ptautotubecrewstudio.github.io/technology.html">
-
-    <meta name="theme-color" content="#080808">
-
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <style>
-
-        /* ==========================================
-           AUTOTUBE CREW STUDIO
-           TECHNOLOGY PAGE
-        ========================================== */
-
-        :root {
-            --tech-black: #080808;
-            --tech-dark: #111111;
-            --tech-grey: #191919;
-            --tech-red: #e50920;
-            --tech-white: #ffffff;
-            --tech-muted: #a3a3a3;
-            --tech-border: #303030;
-            --tech-font: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background: var(--tech-black);
-            color: var(--tech-white);
-            font-family: var(--tech-font);
-            line-height: 1.7;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        button {
-            font-family: inherit;
-        }
-
-        .tech-container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-
-        /* ==========================================
-           HEADER
-        ========================================== */
-
-        .tech-header {
-            background: #080808;
-            border-bottom: 1px solid var(--tech-border);
-            position: relative;
-            z-index: 100;
-        }
-
-        .tech-header-inner {
-            min-height: 85px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-        }
-
-        .tech-logo img {
-            display: block;
-            width: auto;
-            max-width: 210px;
-            max-height: 65px;
-            object-fit: contain;
-        }
-
-        .tech-nav {
-            display: flex;
-            align-items: center;
-            gap: 23px;
-        }
-
-        .tech-nav a {
-            color: #eeeeee;
-            font-size: 13px;
-            transition: color 0.3s ease;
-        }
-
-        .tech-nav a:hover,
-        .tech-nav a.active {
-            color: var(--tech-red);
-        }
-
-        .tech-menu-toggle {
-            display: none;
-            background: transparent;
-            border: 1px solid #444;
-            color: white;
-            padding: 8px 13px;
-            font-size: 22px;
-            cursor: pointer;
-        }
-
-
-        /* ==========================================
-           HERO
-        ========================================== */
-
-        .tech-hero {
-            position: relative;
-            overflow: hidden;
-            padding: 110px 0 100px;
-            background:
-                linear-gradient(
-                    110deg,
-                    #080808 0%,
-                    #111111 65%,
-                    #191919 100%
-                );
-            border-bottom: 1px solid var(--tech-border);
-        }
-
-        .tech-hero::after {
-            content: "";
-            position: absolute;
-            width: 420px;
-            height: 420px;
-            border: 1px solid rgba(229, 9, 32, 0.12);
-            border-radius: 50%;
-            right: -150px;
-            top: -170px;
-            pointer-events: none;
-        }
-
-        .tech-eyebrow {
-            color: var(--tech-red);
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-
-        .tech-hero h1 {
-            position: relative;
-            z-index: 1;
-            max-width: 950px;
-            margin: 20px 0;
-            font-size: clamp(40px, 7vw, 80px);
-            line-height: 1.08;
-            text-transform: uppercase;
-        }
-
-        .tech-hero h1 span {
-            color: var(--tech-red);
-        }
-
-        .tech-hero p {
-            position: relative;
-            z-index: 1;
-            max-width: 740px;
-            color: #b5b5b5;
-            font-size: 17px;
-        }
-
-        .tech-hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 32px;
-        }
-
-        .tech-btn {
-            display: inline-block;
-            padding: 14px 27px;
-            background: var(--tech-red);
-            border: 1px solid var(--tech-red);
-            color: #ffffff;
-            font-size: 13px;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: 0.3s ease;
-        }
-
-        .tech-btn:hover {
-            background: transparent;
-            color: #ffffff;
-        }
-
-        .tech-btn-secondary {
-            background: transparent;
-            border-color: #555555;
-        }
-
-
-        /* ==========================================
-           GENERAL SECTIONS
-        ========================================== */
-
-        .tech-section {
-            padding: 85px 0;
-        }
-
-        .tech-section-dark {
-            background: #101010;
-        }
-
-        .tech-section-heading {
-            max-width: 790px;
-            margin-bottom: 42px;
-        }
-
-        .tech-section-heading h2 {
-            margin: 15px 0;
-            font-size: clamp(29px, 4vw, 45px);
-            line-height: 1.2;
-            text-transform: uppercase;
-        }
-
-        .tech-section-heading p {
-            color: var(--tech-muted);
-            font-size: 15px;
-        }
-
-
-        /* ==========================================
-           INTRODUCTION
-        ========================================== */
-
-        .tech-intro-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .tech-intro-content h2 {
-            font-size: clamp(28px, 4vw, 42px);
-            line-height: 1.2;
-            margin: 15px 0;
-            text-transform: uppercase;
-        }
-
-        .tech-intro-content p {
-            color: #aaaaaa;
-            font-size: 14px;
-            margin-bottom: 17px;
-        }
-
-        .tech-intro-panel {
-            padding: 35px;
-            background:
-                linear-gradient(
-                    145deg,
-                    #1b1b1b,
-                    #101010
-                );
-            border: 1px solid #333333;
-            position: relative;
-        }
-
-        .tech-intro-panel::before {
-            content: "";
-            width: 55px;
-            height: 3px;
-            background: var(--tech-red);
-            display: block;
-            margin-bottom: 25px;
-        }
-
-        .tech-intro-panel h3 {
-            font-size: 23px;
-            margin-bottom: 14px;
-        }
-
-        .tech-intro-panel p {
-            color: #aaaaaa;
-            font-size: 14px;
-        }
-
-
-        /* ==========================================
-           TECHNOLOGY DOMAINS
-        ========================================== */
-
-        .tech-domain-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
-
-        .tech-domain-card {
-            background: #151515;
-            border: 1px solid #303030;
-            padding: 30px;
-            transition: 0.3s ease;
-        }
-
-        .tech-domain-card:hover {
-            border-color: var(--tech-red);
-            transform: translateY(-5px);
-        }
-
-        .tech-domain-number {
-            color: var(--tech-red);
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        .tech-domain-card h3 {
-            font-size: 20px;
-            margin: 15px 0 10px;
-        }
-
-        .tech-domain-card p {
-            color: #aaaaaa;
-            font-size: 13px;
-        }
-
-
-        /* ==========================================
-           PRODUCTION PIPELINE
-        ========================================== */
-
-        .tech-pipeline {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-        }
-
-        .tech-pipeline-step {
-            padding: 23px 17px;
-            background: #151515;
-            border-top: 3px solid var(--tech-red);
-        }
-
-        .tech-pipeline-step span {
-            color: var(--tech-red);
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        .tech-pipeline-step h3 {
-            font-size: 17px;
-            margin: 13px 0 8px;
-        }
-
-        .tech-pipeline-step p {
-            color: #999999;
-            font-size: 12px;
-        }
-
-
-        /* ==========================================
-           PRODUCTION INFRASTRUCTURE
-        ========================================== */
-
-        .tech-infrastructure-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 22px;
-        }
-
-        .tech-infrastructure-card {
-            background: #141414;
-            border: 1px solid #303030;
-            padding: 28px;
-        }
-
-        .tech-infrastructure-card h3 {
-            font-size: 19px;
-            margin-bottom: 12px;
-        }
-
-        .tech-infrastructure-card p {
-            color: #aaaaaa;
-            font-size: 14px;
-        }
-
-        .tech-infrastructure-card ul {
-            padding-left: 20px;
-            margin-top: 15px;
-            color: #b5b5b5;
-        }
-
-        .tech-infrastructure-card li {
-            font-size: 13px;
-            margin-bottom: 8px;
-        }
-
-
-        /* ==========================================
-           TECHNICAL STANDARDS
-        ========================================== */
-
-        .tech-standards {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
-
-        .tech-standard {
-            padding: 25px;
-            background: #151515;
-            border: 1px solid #303030;
-        }
-
-        .tech-standard span {
-            color: var(--tech-red);
-            font-weight: bold;
-            font-size: 12px;
-        }
-
-        .tech-standard h3 {
-            font-size: 17px;
-            margin: 12px 0;
-        }
-
-        .tech-standard p {
-            font-size: 13px;
-            color: #999999;
-        }
-
-
-        /* ==========================================
-           TECHNOLOGY SELECTION
-        ========================================== */
-
-        .tech-selection-box {
-            padding: 35px;
-            background: #151515;
-            border: 1px solid #333333;
-            border-left: 3px solid var(--tech-red);
-        }
-
-        .tech-selection-box h3 {
-            font-size: 23px;
-            margin-bottom: 12px;
-        }
-
-        .tech-selection-box p {
-            color: #aaaaaa;
-            font-size: 14px;
-        }
-
-
-        /* ==========================================
-           COLLABORATION
-        ========================================== */
-
-        .tech-collaboration-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 22px;
-        }
-
-        .tech-collaboration-card {
-            padding: 28px;
-            background: #141414;
-            border: 1px solid #303030;
-        }
-
-        .tech-collaboration-card h3 {
-            font-size: 19px;
-            margin-bottom: 10px;
-        }
-
-        .tech-collaboration-card p {
-            font-size: 14px;
-            color: #aaaaaa;
-        }
-
-
-        /* ==========================================
-           FINAL CTA
-        ========================================== */
-
-        .tech-cta {
-            padding: 85px 20px;
-            background: #151515;
-            border-top: 1px solid #333333;
-            text-align: center;
-        }
-
-        .tech-cta h2 {
-            font-size: clamp(29px, 4vw, 46px);
-            margin: 15px 0;
-        }
-
-        .tech-cta p {
-            max-width: 680px;
-            margin: auto;
-            color: #aaaaaa;
-            font-size: 15px;
-        }
-
-        .tech-cta .tech-btn {
-            margin-top: 25px;
-        }
-
-
-        /* ==========================================
-           FOOTER
-        ========================================== */
-
-        .tech-footer {
-            background: #050505;
-            padding: 35px 0;
-            text-align: center;
-            border-top: 1px solid #292929;
-        }
-
-        .tech-footer p {
-            color: #888888;
-            font-size: 13px;
-            margin: 6px 0;
-        }
-
-        .tech-footer a {
-            color: var(--tech-red);
-        }
-
-
-        /* ==========================================
-           ACCESSIBILITY
-        ========================================== */
-
-        .tech-nav a:focus-visible,
-        .tech-btn:focus-visible,
-        .tech-menu-toggle:focus-visible {
-            outline: 2px solid white;
-            outline-offset: 4px;
-        }
-
-
-        /* ==========================================
-           RESPONSIVE DESIGN
-        ========================================== */
-
-        @media (max-width: 1000px) {
-
-            .tech-domain-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .tech-pipeline {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .tech-standards {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-        }
-
-
-        @media (max-width: 700px) {
-
-            .tech-header-inner {
-                flex-wrap: wrap;
-                padding: 12px 0;
-            }
-
-            .tech-menu-toggle {
-                display: block;
-            }
-
-            .tech-nav {
-                display: none;
-                flex-direction: column;
-                align-items: flex-start;
-                width: 100%;
-                gap: 15px;
-                padding: 18px 0;
-                border-top: 1px solid #333333;
-            }
-
-            .tech-nav.is-open {
-                display: flex;
-            }
-
-            .tech-hero {
-                padding: 75px 0;
-            }
-
-            .tech-section {
-                padding: 60px 0;
-            }
-
-            .tech-intro-grid,
-            .tech-domain-grid,
-            .tech-infrastructure-grid,
-            .tech-collaboration-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .tech-pipeline,
-            .tech-standards {
-                grid-template-columns: 1fr;
-            }
-
-            .tech-intro-panel,
-            .tech-selection-box {
-                padding: 24px;
-            }
-
-        }
-
-
-        @media (prefers-reduced-motion: reduce) {
-
-            html {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                transition-duration: 0.01ms !important;
-                animation-duration: 0.01ms !important;
-            }
-
-        }
-
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Explore the production technologies, digital workflows and technical methods behind AUTOTUBE CREW STUDIO's 3D animation, CGI, VFX, cinematic production and digital content capabilities.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/technology.html">
+  <meta property="og:title" content="Technology & Innovation | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Creative vision supported by project-specific production technology, organized workflows and technical quality control.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/technology.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+  <link rel="stylesheet" href="./assets/css/service-pages.css?v=1">
+  <title>Technology &amp; Innovation | AUTOTUBE CREW STUDIO</title>
 </head>
+<body class="inner-page service-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
+  <header class="header site-header">
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
+    </a>
+    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="showreel.html">Showreel</a>
+      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+  </header>
 
-<body>
-
-
-    <!-- ==========================================
-         HEADER
-    ========================================== -->
-
-    <header class="tech-header">
-
-        <div class="tech-container tech-header-inner">
-
-
-            <a href="index.html" class="tech-logo">
-
-                <img
-                    src="assets/brand/logo.png.png"
-                    alt="AUTOTUBE CREW STUDIO">
-
-            </a>
-
-
-            <nav
-                class="tech-nav"
-                id="tech-navigation"
-                aria-label="Main navigation">
-
-                <a href="index.html">Home</a>
-
-                <a href="about.html">About</a>
-
-                <a href="services.html">Services</a>
-
-                <a href="portfolio.html">Portfolio</a>
-
-                <a href="showreel.html">Showreel</a>
-
-                <a href="technology.html"
-                    class="active"
-                    aria-current="page">
-                    Technology
-                </a>
-
-                <a href="partners.html">Partners</a>
-
-                <a href="contact.html">Contact</a>
-
-            </nav>
-
-
-            <button
-                class="tech-menu-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-                aria-controls="tech-navigation">
-
-                ☰
-
-            </button>
-
-
+  <main id="main-content">
+    <section class="inner-hero service-hero" aria-labelledby="technology-title">
+      <div class="inner-container inner-hero-layout service-hero-layout">
+        <div>
+          <p class="eyebrow">TECHNOLOGY / PRODUCTION PIPELINES / DIGITAL CRAFT</p>
+          <h1 id="technology-title">Technology.<br><span>Creativity without limits.</span></h1>
+          <p class="inner-hero-copy">We connect creative direction with considered production methods, digital tools and technical workflows to support animation, CGI, VFX, cinematic production and digital content.</p>
+          <div class="inner-hero-actions">
+            <a class="button-primary" href="#technology-capabilities">Explore capabilities <span aria-hidden="true">↓</span></a>
+            <a class="button-secondary" href="contact.html">Discuss a project</a>
+          </div>
         </div>
-
-    </header>
-
-
-
-    <main>
-
-
-        <!-- ==========================================
-             HERO
-        ========================================== -->
-
-        <section class="tech-hero">
-
-            <div class="tech-container">
-
-                <span class="tech-eyebrow">
-                    Technology & Innovation
-                </span>
-
-                <h1>
-                    Technology.
-                    <span>Creativity Without Limits.</span>
-                </h1>
-
-                <p>
-                    We connect creative vision with digital
-                    production technology to develop immersive
-                    visual experiences.
-
-                    From 3D animation and CGI to VFX,
-                    cinematic environments and digital content,
-                    our production approach focuses on
-                    technical quality, creative flexibility
-                    and professional execution.
-                </p>
-
-
-                <div class="tech-hero-buttons">
-
-                    <a href="#technology-domains" class="tech-btn">
-                        Explore Our Technology
-                    </a>
-
-                    <a href="services.html"
-                        class="tech-btn tech-btn-secondary">
-                        Explore Our Services
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==========================================
-             INTRODUCTION
-        ========================================== -->
-
-        <section class="tech-section">
-
-            <div class="tech-container tech-intro-grid">
-
-
-                <div class="tech-intro-content">
-
-                    <span class="tech-eyebrow">
-                        Our Technical Approach
-                    </span>
-
-                    <h2>
-                        Where Creative Vision Meets Production Technology
-                    </h2>
-
-                    <p>
-                        AUTOTUBE CREW STUDIO is a visual production
-                        studio working across animation, CGI,
-                        visual effects, cinematic production
-                        and digital content creation.
-                    </p>
-
-                    <p>
-                        Our approach brings together artistic
-                        direction, production planning,
-                        technical processes and digital tools
-                        to support projects from development
-                        through final delivery.
-                    </p>
-
-                    <p>
-                        Technology is selected according to
-                        project requirements, creative objectives,
-                        production complexity and delivery standards.
-                    </p>
-
-                </div>
-
-
-
-                <div class="tech-intro-panel">
-
-                    <h3>
-                        Technology With Creative Purpose
-                    </h3>
-
-                    <p>
-                        We focus on using appropriate production
-                        methods and digital technologies to
-                        support visual storytelling, improve
-                        production coordination and achieve
-                        the creative objectives of each project.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==========================================
-             TECHNOLOGY DOMAINS
-        ========================================== -->
-
-        <section
-            class="tech-section tech-section-dark"
-            id="technology-domains">
-
-            <div class="tech-container">
-
-
-                <div class="tech-section-heading">
-
-                    <span class="tech-eyebrow">
-                        Core Technology Areas
-                    </span>
-
-                    <h2>
-                        The Technology Behind Our Capabilities
-                    </h2>
-
-                    <p>
-                        Our production activities cover multiple
-                        digital disciplines. Each technology area
-                        supports a different stage of visual
-                        development and production.
-                    </p>
-
-                </div>
-
-
-
-                <div class="tech-domain-grid">
-
-
-                    <article class="tech-domain-card">
-
-                        <span class="tech-domain-number">
-                            TECHNOLOGY 01
-                        </span>
-
-                        <h3>
-                            3D Animation Technology
-                        </h3>
-
-                        <p>
-                            Digital character development,
-                            3D modelling, animation workflows,
-                            environment creation and cinematic
-                            visual storytelling.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-domain-card">
-
-                        <span class="tech-domain-number">
-                            TECHNOLOGY 02
-                        </span>
-
-                        <h3>
-                            CGI & Digital Rendering
-                        </h3>
-
-                        <p>
-                            Computer-generated imagery,
-                            lighting, materials, rendering
-                            and digital scene development.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-domain-card">
-
-                        <span class="tech-domain-number">
-                            TECHNOLOGY 03
-                        </span>
-
-                        <h3>
-                            Visual Effects Technology
-                        </h3>
-
-                        <p>
-                            Visual effects production,
-                            compositing, digital integration
-                            and image enhancement processes.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-domain-card">
-
-                        <span class="tech-domain-number">
-                            TECHNOLOGY 04
-                        </span>
-
-                        <h3>
-                            Real-Time 3D Environments
-                        </h3>
-
-                        <p>
-                            Real-time visualization,
-                            digital environments and
-                            virtual production concepts,
-                            including Unreal Engine workflows.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-domain-card">
-
-                        <span class="tech-domain-number">
-                            TECHNOLOGY 05
-                        </span>
-
-                        <h3>
-                            Motion & Video Technology
-                        </h3>
-
-                        <p>
-                            Motion graphics, video editing,
-                            cinematic sequencing, visual
-                            communication and media finishing.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-domain-card">
-
-                        <span class="tech-domain-number">
-                            TECHNOLOGY 06
-                        </span>
-
-                        <h3>
-                            Digital Asset Production
-                        </h3>
-
-                        <p>
-                            3D models, digital characters,
-                            textures, materials, visual assets
-                            and production-ready resources.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-domain-card">
-
-                        <span class="tech-domain-number">
-                            TECHNOLOGY 07
-                        </span>
-
-                        <h3>
-                            Cinematic Production Tools
-                        </h3>
-
-                        <p>
-                            Digital camera workflows,
-                            scene composition, lighting
-                            and cinematic visual development.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-domain-card">
-
-                        <span class="tech-domain-number">
-                            TECHNOLOGY 08
-                        </span>
-
-                        <h3>
-                            Post-Production Technology
-                        </h3>
-
-                        <p>
-                            Editing, compositing, colour
-                            refinement, audio-visual
-                            coordination and final output.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-domain-card">
-
-                        <span class="tech-domain-number">
-                            TECHNOLOGY 09
-                        </span>
-
-                        <h3>
-                            Digital Production Platforms
-                        </h3>
-
-                        <p>
-                            Digital workflows, structured
-                            production information, project
-                            coordination and online content
-                            delivery.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==========================================
-             PRODUCTION PIPELINE
-        ========================================== -->
-
-        <section class="tech-section">
-
-            <div class="tech-container">
-
-
-                <div class="tech-section-heading">
-
-                    <span class="tech-eyebrow">
-                        Technical Production Pipeline
-                    </span>
-
-                    <h2>
-                        Connecting Every Stage Of Production
-                    </h2>
-
-                    <p>
-                        Our technical workflows are organized
-                        to connect creative development,
-                        asset production, visual execution
-                        and final delivery.
-                    </p>
-
-                </div>
-
-
-
-                <div class="tech-pipeline">
-
-
-                    <article class="tech-pipeline-step">
-
-                        <span>STEP 01</span>
-
-                        <h3>
-                            Development
-                        </h3>
-
-                        <p>
-                            Concept preparation, technical
-                            evaluation and production planning.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-pipeline-step">
-
-                        <span>STEP 02</span>
-
-                        <h3>
-                            Asset Creation
-                        </h3>
-
-                        <p>
-                            Modelling, character development,
-                            digital assets and environments.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-pipeline-step">
-
-                        <span>STEP 03</span>
-
-                        <h3>
-                            Production
-                        </h3>
-
-                        <p>
-                            Animation, rendering,
-                            visual effects and
-                            cinematic production.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-pipeline-step">
-
-                        <span>STEP 04</span>
-
-                        <h3>
-                            Post-Production
-                        </h3>
-
-                        <p>
-                            Editing, compositing,
-                            refinement and finishing.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-pipeline-step">
-
-                        <span>STEP 05</span>
-
-                        <h3>
-                            Final Delivery
-                        </h3>
-
-                        <p>
-                            Quality review, output
-                            preparation and agreed
-                            project handover.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==========================================
-             PRODUCTION INFRASTRUCTURE
-        ========================================== -->
-
-        <section class="tech-section tech-section-dark">
-
-            <div class="tech-container">
-
-
-                <div class="tech-section-heading">
-
-                    <span class="tech-eyebrow">
-                        Production Infrastructure
-                    </span>
-
-                    <h2>
-                        Organized Digital Production Environments
-                    </h2>
-
-                    <p>
-                        Production infrastructure supports
-                        coordination, creative resources,
-                        project organization and reliable
-                        media delivery.
-                    </p>
-
-                </div>
-
-
-
-                <div class="tech-infrastructure-grid">
-
-
-                    <article class="tech-infrastructure-card">
-
-                        <h3>
-                            Digital Production Assets
-                        </h3>
-
-                        <p>
-                            Structured handling of digital
-                            content and production resources
-                            throughout project execution.
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                3D models and digital assets
-                            </li>
-
-                            <li>
-                                Textures and visual resources
-                            </li>
-
-                            <li>
-                                Animation and rendering outputs
-                            </li>
-
-                            <li>
-                                Project media organization
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-
-                    <article class="tech-infrastructure-card">
-
-                        <h3>
-                            Project Data Organization
-                        </h3>
-
-                        <p>
-                            Organized project information
-                            supports consistent communication
-                            and production coordination.
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                Project documentation
-                            </li>
-
-                            <li>
-                                Production references
-                            </li>
-
-                            <li>
-                                Delivery specifications
-                            </li>
-
-                            <li>
-                                Version and revision records
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-
-                    <article class="tech-infrastructure-card">
-
-                        <h3>
-                            Visual Production Workflows
-                        </h3>
-
-                        <p>
-                            Production processes connect
-                            technical execution with creative
-                            objectives and approved requirements.
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                Pre-production preparation
-                            </li>
-
-                            <li>
-                                Creative and technical coordination
-                            </li>
-
-                            <li>
-                                Production review processes
-                            </li>
-
-                            <li>
-                                Final output preparation
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-
-                    <article class="tech-infrastructure-card">
-
-                        <h3>
-                            Media & Content Delivery
-                        </h3>
-
-                        <p>
-                            Delivery processes are organized
-                            around project specifications,
-                            approved formats and agreed
-                            handover requirements.
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                Video and image exports
-                            </li>
-
-                            <li>
-                                Digital content preparation
-                            </li>
-
-                            <li>
-                                Agreed source-file handover
-                            </li>
-
-                            <li>
-                                Project delivery documentation
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==========================================
-             TECHNICAL STANDARDS
-        ========================================== -->
-
-        <section class="tech-section">
-
-            <div class="tech-container">
-
-
-                <div class="tech-section-heading">
-
-                    <span class="tech-eyebrow">
-                        Technical Standards
-                    </span>
-
-                    <h2>
-                        Quality, Consistency & Reliability
-                    </h2>
-
-                    <p>
-                        Technical quality is an important
-                        part of delivering professional
-                        visual production work.
-                    </p>
-
-                </div>
-
-
-
-                <div class="tech-standards">
-
-
-                    <article class="tech-standard">
-
-                        <span>STANDARD 01</span>
-
-                        <h3>
-                            Visual Quality
-                        </h3>
-
-                        <p>
-                            Attention to image quality,
-                            visual consistency and
-                            production refinement.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-standard">
-
-                        <span>STANDARD 02</span>
-
-                        <h3>
-                            Workflow Consistency
-                        </h3>
-
-                        <p>
-                            Structured production processes
-                            and organized project execution.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-standard">
-
-                        <span>STANDARD 03</span>
-
-                        <h3>
-                            Technical Compatibility
-                        </h3>
-
-                        <p>
-                            Deliverable formats and
-                            technical specifications
-                            aligned with project requirements.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-standard">
-
-                        <span>STANDARD 04</span>
-
-                        <h3>
-                            Quality Review
-                        </h3>
-
-                        <p>
-                            Review processes before
-                            final output and delivery.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==========================================
-             TECHNOLOGY SELECTION
-        ========================================== -->
-
-        <section class="tech-section tech-section-dark">
-
-            <div class="tech-container">
-
-
-                <div class="tech-section-heading">
-
-                    <span class="tech-eyebrow">
-                        Technology Selection
-                    </span>
-
-                    <h2>
-                        The Right Tools For The Right Project
-                    </h2>
-
-                    <p>
-                        Production requirements differ
-                        across animation, CGI, VFX,
-                        film and commercial projects.
-                    </p>
-
-                </div>
-
-
-
-                <div class="tech-selection-box">
-
-                    <h3>
-                        Project-Based Technology Decisions
-                    </h3>
-
-                    <p>
-                        Software, production tools,
-                        rendering methods and technical
-                        workflows are selected according
-                        to the approved creative brief,
-                        project complexity, available
-                        resources and final delivery
-                        specifications.
-
-                        Technology selection is therefore
-                        project-specific rather than
-                        dependent on one fixed toolset.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==========================================
-             TECHNICAL COLLABORATION
-        ========================================== -->
-
-        <section class="tech-section">
-
-            <div class="tech-container">
-
-
-                <div class="tech-section-heading">
-
-                    <span class="tech-eyebrow">
-                        Technical Collaboration
-                    </span>
-
-                    <h2>
-                        Working With Creative & Production Partners
-                    </h2>
-
-                    <p>
-                        Technical requirements are coordinated
-                        with clients, production companies
-                        and professional creative partners.
-                    </p>
-
-                </div>
-
-
-
-                <div class="tech-collaboration-grid">
-
-
-                    <article class="tech-collaboration-card">
-
-                        <h3>
-                            Production Compatibility
-                        </h3>
-
-                        <p>
-                            Coordinate project requirements,
-                            media formats, delivery specifications
-                            and compatible production workflows
-                            with external partners.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-collaboration-card">
-
-                        <h3>
-                            Project Documentation
-                        </h3>
-
-                        <p>
-                            Establish clear technical
-                            requirements, project references,
-                            deliverable definitions and
-                            production documentation.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-collaboration-card">
-
-                        <h3>
-                            Client Review & Approval
-                        </h3>
-
-                        <p>
-                            Support structured review,
-                            feedback, revisions and
-                            milestone approvals according
-                            to the project agreement.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="tech-collaboration-card">
-
-                        <h3>
-                            Source Files & Handover
-                        </h3>
-
-                        <p>
-                            Define editable files, project
-                            assets, ownership and handover
-                            arrangements according to
-                            agreed contractual terms.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==========================================
-             FINAL CTA
-        ========================================== -->
-
-        <section class="tech-cta">
-
-            <div class="tech-container">
-
-                <span class="tech-eyebrow">
-                    Innovation Through Production
-                </span>
-
-                <h2>
-                    Let's Build Something Extraordinary.
-                </h2>
-
-                <p>
-                    Have a complex visual production requirement,
-                    CGI concept, animation project or VFX challenge?
-
-                    Connect with AUTOTUBE CREW STUDIO to discuss
-                    your technical and creative requirements.
-                </p>
-
-
-                <a href="request-a-quote.html" class="tech-btn">
-                    Discuss Your Project
-                </a>
-
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-
-    <!-- ==========================================
-         FOOTER
-    ========================================== -->
-
-    <footer class="tech-footer">
-
-        <div class="tech-container">
-
-            <p>
-                &copy; 2026
-                <a href="index.html">
-                    AUTOTUBE CREW STUDIO
-                </a>.
-                All Rights Reserved.
-            </p>
-
-            <p>
-                Jakarta, Indonesia
-                |
-                <a href="privacy-policy.html">
-                    Privacy Policy
-                </a>
-                |
-                <a href="terms-and-conditions.html">
-                    Terms & Conditions
-                </a>
-            </p>
-
+        <div class="service-hero-panel" aria-label="Creative technology and production workflow">
+          <div class="service-panel-top"><span>Creative technology</span><span>TECH / 01</span></div>
+          <img class="service-panel-mark" src="assets/brand/logo.png.png" alt="" aria-hidden="true" width="190" height="100">
+          <div class="service-panel-bottom"><span>Creative intent</span><strong>TECHNICAL EXECUTION</strong></div>
         </div>
+      </div>
+    </section>
 
-    </footer>
+    <section class="inner-section">
+      <div class="inner-container service-intro-grid">
+        <div>
+          <p class="section-kicker">TECHNOLOGY WITH PURPOSE</p>
+          <h2 class="service-statement">The right method for <span>the right creative challenge.</span></h2>
+        </div>
+        <div class="service-intro-copy">
+          <p>A strong production outcome depends on more than a software name or a single tool. It requires the right combination of creative planning, technical decisions, skilled execution, review and delivery.</p>
+          <p>Our production approach brings together artistic direction, project requirements and practical technical workflows. Methods and tools are considered against the brief, production complexity, available resources and agreed deliverables.</p>
+          <div class="service-related-links">
+            <a href="services.html">Explore studio services <span aria-hidden="true">↗</span></a>
+            <a href="our-workflow.html">Understand our workflow <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="inner-section" id="technology-capabilities" aria-labelledby="technology-capabilities-title">
+      <div class="inner-container">
+        <p class="section-kicker">PRODUCTION TECHNOLOGY AREAS</p>
+        <h2 class="section-heading" id="technology-capabilities-title">Technology that supports <span>the work.</span></h2>
+        <p class="service-gallery-intro">Different production disciplines call for different methods. These capability areas describe the types of technical work involved, not a claim that every project uses the same software or pipeline.</p>
+        <div class="service-capability-grid">
+          <article class="service-capability-card">
+            <span class="card-index">01 / 3D ANIMATION</span>
+            <h3>3D modelling &amp; animation</h3>
+            <p>Digital modelling, character and environment development, rigging, animation, scene preparation and visual storytelling.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">02 / CGI</span>
+            <h3>CGI, lighting &amp; rendering</h3>
+            <p>Computer-generated imagery, asset creation, materials, lighting, scene development and rendered visual content.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">03 / VFX</span>
+            <h3>Visual effects &amp; compositing</h3>
+            <p>Visual enhancement, compositing, digital integration, effects work and refinement for screen-based projects.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">04 / REAL-TIME</span>
+            <h3>Real-time 3D environments</h3>
+            <p>Interactive and real-time scene development, digital environments and visual presentation workflows where project needs call for them.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">05 / MOTION &amp; VIDEO</span>
+            <h3>Motion &amp; video production</h3>
+            <p>Motion graphics, editing, visual sequencing, video finishing and preparation of content for agreed formats.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">06 / DIGITAL</span>
+            <h3>Digital platforms &amp; assets</h3>
+            <p>Organized digital content, web experiences, asset preparation and technical coordination for platform-based work.</p>
+          </article>
+        </div>
+        <div class="service-related-links">
+          <a href="3d-animation.html">3D Animation <span aria-hidden="true">↗</span></a>
+          <a href="cgi.html">CGI <span aria-hidden="true">↗</span></a>
+          <a href="vfx.html">Visual Effects <span aria-hidden="true">↗</span></a>
+          <a href="video-production.html">Video Production <span aria-hidden="true">↗</span></a>
+          <a href="digital-platforms.html">Digital Platforms <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
 
+    <section class="inner-section" aria-labelledby="pipeline-title">
+      <div class="inner-container">
+        <p class="section-kicker">CONNECTED PRODUCTION PIPELINE</p>
+        <h2 class="section-heading" id="pipeline-title">From creative development <span>to final delivery.</span></h2>
+        <p class="service-gallery-intro">The pipeline is adapted to the scope and format of each assignment. A project may use selected stages or a more integrated pre-to-post production process.</p>
+        <div class="service-process-grid">
+          <article class="service-process-card">
+            <span class="card-index">STAGE 01</span>
+            <h3>Development</h3>
+            <p>Understand the brief, define creative direction, assess technical requirements and prepare the production approach.</p>
+          </article>
+          <article class="service-process-card">
+            <span class="card-index">STAGE 02</span>
+            <h3>Asset creation</h3>
+            <p>Prepare the digital assets, scenes, environments, project elements and production materials required.</p>
+          </article>
+          <article class="service-process-card">
+            <span class="card-index">STAGE 03</span>
+            <h3>Production</h3>
+            <p>Execute the agreed animation, CGI, VFX, video or digital development work using suitable technical methods.</p>
+          </article>
+          <article class="service-process-card">
+            <span class="card-index">STAGE 04</span>
+            <h3>Post-production</h3>
+            <p>Refine, composite, edit, review and finish project content according to the approved direction.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!-- ==========================================
-         JAVASCRIPT
-         MOBILE NAVIGATION
-    ========================================== -->
+    <section class="inner-section" aria-labelledby="production-environment-title">
+      <div class="inner-container">
+        <p class="section-kicker">ORGANIZED DIGITAL PRODUCTION</p>
+        <h2 class="section-heading" id="production-environment-title">A connected environment for <span>consistent execution.</span></h2>
+        <div class="service-capability-grid">
+          <article class="service-capability-card">
+            <span class="card-index">01 / ASSETS</span>
+            <h3>Digital asset organization</h3>
+            <p>Project assets and production resources are organized to support clarity, continuity and efficient collaboration.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">02 / PROJECT DATA</span>
+            <h3>Project information management</h3>
+            <p>Structured references, requirements, feedback and delivery information help keep teams aligned through production.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">03 / WORKFLOW</span>
+            <h3>Production coordination</h3>
+            <p>Creative and technical functions are coordinated against agreed responsibilities, milestones and project needs.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">04 / DELIVERY</span>
+            <h3>Media preparation &amp; handover</h3>
+            <p>Final materials are checked and prepared against the formats, specifications and handover items agreed for the project.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <script>
+    <section class="inner-section" aria-labelledby="quality-title">
+      <div class="inner-container service-intro-grid">
+        <div>
+          <p class="section-kicker">QUALITY &amp; TECHNICAL REVIEW</p>
+          <h2 class="service-statement" id="quality-title">Creative quality.<br><span>Technical confidence.</span></h2>
+        </div>
+        <div class="service-intro-copy">
+          <p>Quality review is considered throughout the production process, not only at the final export stage. Visual consistency, creative direction, technical compatibility and agreed deliverables are reviewed according to the project requirements.</p>
+          <p>Final formats, source files, project documentation and handover materials depend on the approved scope and applicable project agreement. Technical specifications are confirmed with the client or production partner before delivery.</p>
+          <div class="service-related-links">
+            <a href="our-workflow.html">Read about quality and workflow <span aria-hidden="true">↗</span></a>
+            <a href="request-a-quote.html">Request a project discussion <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        document.addEventListener("DOMContentLoaded", function () {
+    <section class="inner-cta" aria-labelledby="technology-cta-title">
+      <div class="inner-container">
+        <p class="eyebrow">HAVE A TECHNICAL OR CREATIVE BRIEF?</p>
+        <h2 id="technology-cta-title">Let's find the right<br><span>way to build it.</span></h2>
+        <p>Share your production goals, technical requirements and delivery expectations with AUTOTUBE CREW STUDIO. We can discuss an approach suited to the project.</p>
+        <a class="button-primary" href="contact.html">Discuss your project <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-            const menuButton = document.querySelector(
-                ".tech-menu-toggle"
-            );
+  <footer class="site-footer">
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
+    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
+    <div class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html">Contact</a></div>
+    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+  </footer>
 
-            const navigation = document.getElementById(
-                "tech-navigation"
-            );
-
-
-            if (!menuButton || !navigation) {
-                return;
-            }
-
-
-            menuButton.addEventListener("click", function () {
-
-                const expanded =
-                    menuButton.getAttribute("aria-expanded")
-                    === "true";
-
-
-                menuButton.setAttribute(
-                    "aria-expanded",
-                    String(!expanded)
-                );
-
-
-                menuButton.setAttribute(
-                    "aria-label",
-                    expanded
-                        ? "Open navigation"
-                        : "Close navigation"
-                );
-
-
-                navigation.classList.toggle("is-open");
-
-            });
-
-        });
-
-    </script>
-
-
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
