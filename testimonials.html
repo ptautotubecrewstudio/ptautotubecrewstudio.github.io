@@ -1,0 +1,1541 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Client Testimonials | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description"
+        content="Discover the client feedback and professional collaboration standards of AUTOTUBE CREW STUDIO, a visual production studio specializing in 3D animation, CGI, VFX and cinematic production.">
+
+    <meta name="keywords"
+        content="Client Testimonials, Client Feedback, Production Studio, Animation Studio, CGI, VFX, AUTOTUBE CREW STUDIO">
+
+    <meta name="author" content="PT Autotube Crew Studio">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://ptautotubecrewstudio.github.io/testimonials.html">
+
+    <meta name="theme-color" content="#080808">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+
+        /* ==========================================
+           AUTOTUBE CREW STUDIO
+           TESTIMONIALS PAGE
+        ========================================== */
+
+        :root {
+            --test-black: #080808;
+            --test-dark: #111111;
+            --test-grey: #191919;
+            --test-red: #e50920;
+            --test-white: #ffffff;
+            --test-muted: #a3a3a3;
+            --test-border: #303030;
+            --test-font: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--test-black);
+            color: var(--test-white);
+            font-family: var(--test-font);
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        .test-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* ==========================================
+           HEADER
+        ========================================== */
+
+        .test-header {
+            background: #080808;
+            border-bottom: 1px solid var(--test-border);
+            position: relative;
+            z-index: 100;
+        }
+
+        .test-header-inner {
+            min-height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .test-logo img {
+            display: block;
+            max-width: 210px;
+            max-height: 65px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .test-nav {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+        }
+
+        .test-nav a {
+            color: #eeeeee;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .test-nav a:hover,
+        .test-nav a.active {
+            color: var(--test-red);
+        }
+
+        .test-menu-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid #444;
+            color: white;
+            padding: 8px 13px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+
+        /* ==========================================
+           HERO
+        ========================================== */
+
+        .test-hero {
+            padding: 110px 0 100px;
+            background:
+                linear-gradient(
+                    110deg,
+                    #080808 0%,
+                    #111111 65%,
+                    #191919 100%
+                );
+            border-bottom: 1px solid var(--test-border);
+        }
+
+        .test-eyebrow {
+            color: var(--test-red);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .test-hero h1 {
+            max-width: 950px;
+            margin: 20px 0;
+            font-size: clamp(40px, 7vw, 78px);
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .test-hero h1 span {
+            color: var(--test-red);
+        }
+
+        .test-hero p {
+            max-width: 740px;
+            color: #b5b5b5;
+            font-size: 17px;
+        }
+
+        .test-hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 32px;
+        }
+
+        .test-btn {
+            display: inline-block;
+            padding: 14px 27px;
+            background: var(--test-red);
+            border: 1px solid var(--test-red);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+        }
+
+        .test-btn:hover {
+            background: transparent;
+            color: #ffffff;
+        }
+
+        .test-btn-secondary {
+            background: transparent;
+            border-color: #555555;
+        }
+
+
+        /* ==========================================
+           GENERAL SECTIONS
+        ========================================== */
+
+        .test-section {
+            padding: 85px 0;
+        }
+
+        .test-section-dark {
+            background: #101010;
+        }
+
+        .test-section-heading {
+            max-width: 780px;
+            margin-bottom: 42px;
+        }
+
+        .test-section-heading h2 {
+            font-size: clamp(29px, 4vw, 45px);
+            line-height: 1.2;
+            margin: 15px 0;
+            text-transform: uppercase;
+        }
+
+        .test-section-heading p {
+            color: var(--test-muted);
+            font-size: 15px;
+        }
+
+
+        /* ==========================================
+           TESTIMONIAL EMPTY STATE
+        ========================================== */
+
+        .test-empty-state {
+            background: #131313;
+            border: 1px solid #353535;
+            border-top: 3px solid var(--test-red);
+            padding: 65px 35px;
+            text-align: center;
+        }
+
+        .test-quote-symbol {
+            font-size: 65px;
+            line-height: 1;
+            color: var(--test-red);
+            font-family: Georgia, serif;
+        }
+
+        .test-empty-state h2 {
+            max-width: 650px;
+            margin: 20px auto 15px;
+            font-size: clamp(25px, 4vw, 36px);
+            line-height: 1.3;
+        }
+
+        .test-empty-state p {
+            max-width: 650px;
+            margin: auto;
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+
+        .test-empty-label {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 8px 14px;
+            border: 1px solid #444444;
+            color: #bbbbbb;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+
+        /* ==========================================
+           FEEDBACK PRINCIPLES
+        ========================================== */
+
+        .test-principles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .test-principle-card {
+            padding: 30px;
+            background: #151515;
+            border: 1px solid #303030;
+            transition: 0.3s ease;
+        }
+
+        .test-principle-card:hover {
+            border-color: var(--test-red);
+            transform: translateY(-4px);
+        }
+
+        .test-number {
+            color: var(--test-red);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .test-principle-card h3 {
+            font-size: 20px;
+            margin: 15px 0 10px;
+        }
+
+        .test-principle-card p {
+            color: #aaaaaa;
+            font-size: 13px;
+        }
+
+
+        /* ==========================================
+           CLIENT EXPERIENCE
+        ========================================== */
+
+        .test-experience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .test-experience-content h2 {
+            font-size: clamp(29px, 4vw, 42px);
+            line-height: 1.2;
+            margin: 15px 0;
+            text-transform: uppercase;
+        }
+
+        .test-experience-content p {
+            color: #aaaaaa;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .test-experience-panel {
+            background: #151515;
+            border: 1px solid #333333;
+            padding: 30px;
+        }
+
+        .test-experience-item {
+            padding: 17px 0;
+            border-bottom: 1px solid #353535;
+        }
+
+        .test-experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .test-experience-item h3 {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .test-experience-item p {
+            color: #999999;
+            font-size: 13px;
+        }
+
+
+        /* ==========================================
+           FEEDBACK PROCESS
+        ========================================== */
+
+        .test-process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .test-process-card {
+            padding: 25px;
+            background: #151515;
+            border-top: 3px solid var(--test-red);
+        }
+
+        .test-process-card span {
+            color: var(--test-red);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .test-process-card h3 {
+            font-size: 18px;
+            margin: 13px 0 8px;
+        }
+
+        .test-process-card p {
+            color: #999999;
+            font-size: 13px;
+        }
+
+
+        /* ==========================================
+           TESTIMONIAL PUBLICATION POLICY
+        ========================================== */
+
+        .test-policy-box {
+            background: #151515;
+            border: 1px solid #333333;
+            border-left: 3px solid var(--test-red);
+            padding: 30px;
+        }
+
+        .test-policy-box h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .test-policy-box p {
+            color: #aaaaaa;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .test-policy-box ul {
+            padding-left: 22px;
+            color: #bbbbbb;
+            margin-top: 12px;
+        }
+
+        .test-policy-box li {
+            font-size: 13px;
+            margin-bottom: 9px;
+        }
+
+
+        /* ==========================================
+           PORTFOLIO CONNECTION
+        ========================================== */
+
+        .test-portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .test-portfolio-card {
+            background: #151515;
+            padding: 28px;
+            border: 1px solid #303030;
+            transition: border-color 0.3s ease;
+        }
+
+        .test-portfolio-card:hover {
+            border-color: var(--test-red);
+        }
+
+        .test-portfolio-card h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .test-portfolio-card p {
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+
+        .test-portfolio-card a {
+            display: inline-block;
+            color: var(--test-red);
+            margin-top: 15px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+
+        /* ==========================================
+           FINAL CTA
+        ========================================== */
+
+        .test-cta {
+            background: #151515;
+            padding: 85px 20px;
+            text-align: center;
+            border-top: 1px solid #333333;
+        }
+
+        .test-cta h2 {
+            font-size: clamp(29px, 4vw, 45px);
+            margin: 15px 0;
+        }
+
+        .test-cta p {
+            max-width: 650px;
+            margin: auto;
+            color: #aaaaaa;
+            font-size: 15px;
+        }
+
+        .test-cta .test-btn {
+            margin-top: 25px;
+        }
+
+
+        /* ==========================================
+           FOOTER
+        ========================================== */
+
+        .test-footer {
+            background: #050505;
+            padding: 35px 0;
+            text-align: center;
+            border-top: 1px solid #292929;
+        }
+
+        .test-footer p {
+            color: #888888;
+            font-size: 13px;
+            margin: 6px 0;
+        }
+
+        .test-footer a {
+            color: var(--test-red);
+        }
+
+
+        /* ==========================================
+           ACCESSIBILITY
+        ========================================== */
+
+        .test-nav a:focus-visible,
+        .test-btn:focus-visible,
+        .test-menu-toggle:focus-visible,
+        .test-portfolio-card a:focus-visible {
+            outline: 2px solid white;
+            outline-offset: 4px;
+        }
+
+
+        /* ==========================================
+           RESPONSIVE DESIGN
+        ========================================== */
+
+        @media (max-width: 1000px) {
+
+            .test-principles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .test-process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .test-header-inner {
+                flex-wrap: wrap;
+                padding: 12px 0;
+            }
+
+            .test-menu-toggle {
+                display: block;
+            }
+
+            .test-nav {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                gap: 15px;
+                padding: 18px 0;
+                border-top: 1px solid #333333;
+            }
+
+            .test-nav.is-open {
+                display: flex;
+            }
+
+            .test-hero {
+                padding: 75px 0;
+            }
+
+            .test-section {
+                padding: 60px 0;
+            }
+
+            .test-principles-grid,
+            .test-experience-grid,
+            .test-process-grid,
+            .test-portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .test-empty-state {
+                padding: 45px 22px;
+            }
+
+            .test-experience-panel,
+            .test-policy-box {
+                padding: 22px;
+            }
+
+        }
+
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         HEADER
+    ========================================== -->
+
+    <header class="test-header">
+
+        <div class="test-container test-header-inner">
+
+
+            <a href="index.html" class="test-logo">
+
+                <img
+                    src="assets/brand/logo.png.png"
+                    alt="AUTOTUBE CREW STUDIO">
+
+            </a>
+
+
+            <nav
+                class="test-nav"
+                id="test-navigation"
+                aria-label="Main navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="portfolio.html">Portfolio</a>
+
+                <a href="showreel.html">Showreel</a>
+
+                <a href="team.html">Our Team</a>
+
+                <a href="partners.html">Partners</a>
+
+                <a href="testimonials.html"
+                    class="active"
+                    aria-current="page">
+                    Testimonials
+                </a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+            <button
+                class="test-menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="test-navigation">
+
+                ☰
+
+            </button>
+
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ==========================================
+             HERO
+        ========================================== -->
+
+        <section class="test-hero">
+
+            <div class="test-container">
+
+                <span class="test-eyebrow">
+                    Client Relationships
+                </span>
+
+                <h1>
+                    Trust Is Earned.
+                    <span>Quality Speaks.</span>
+                </h1>
+
+                <p>
+                    Professional relationships are built through
+                    collaboration, communication, creative
+                    understanding and consistent attention
+                    to production requirements.
+
+                    At AUTOTUBE CREW STUDIO, we value
+                    meaningful client relationships and
+                    constructive project feedback.
+                </p>
+
+
+                <div class="test-hero-buttons">
+
+                    <a href="portfolio.html" class="test-btn">
+                        Explore Our Portfolio
+                    </a>
+
+                    <a href="contact.html"
+                        class="test-btn test-btn-secondary">
+                        Contact Our Studio
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             TESTIMONIALS
+        ========================================== -->
+
+        <section class="test-section">
+
+            <div class="test-container">
+
+
+                <div class="test-section-heading">
+
+                    <span class="test-eyebrow">
+                        Client Testimonials
+                    </span>
+
+                    <h2>
+                        Feedback Built On Real Experiences
+                    </h2>
+
+                    <p>
+                        Genuine feedback provides valuable
+                        insight into professional
+                        collaboration and project experiences.
+                    </p>
+
+                </div>
+
+
+
+                <div class="test-empty-state">
+
+                    <div class="test-quote-symbol"
+                        aria-hidden="true">
+                        "
+                    </div>
+
+                    <h2>
+                        Every Client Voice Deserves Authentic Representation.
+                    </h2>
+
+                    <p>
+                        Client testimonials are not currently
+                        published on this page.
+
+                        We publish feedback only when the
+                        original statement has been verified
+                        and the relevant client has authorized
+                        its public use.
+                    </p>
+
+                    <span class="test-empty-label">
+                        Verified Testimonials Pending Publication
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             CLIENT EXPERIENCE
+        ========================================== -->
+
+        <section class="test-section test-section-dark">
+
+            <div class="test-container test-experience-grid">
+
+
+                <div class="test-experience-content">
+
+                    <span class="test-eyebrow">
+                        Our Approach
+                    </span>
+
+                    <h2>
+                        Professional Collaboration Comes First.
+                    </h2>
+
+                    <p>
+                        Every production project has its own
+                        creative objectives, technical
+                        requirements and delivery expectations.
+                    </p>
+
+                    <p>
+                        We emphasize clear communication,
+                        project understanding, production
+                        coordination and a structured
+                        approach to feedback.
+                    </p>
+
+                    <p>
+                        Our objective is to establish
+                        professional working relationships
+                        based on transparency and mutual
+                        understanding.
+                    </p>
+
+                    <a href="our-workflow.html" class="test-btn">
+                        Explore Our Workflow
+                    </a>
+
+                </div>
+
+
+
+                <div class="test-experience-panel">
+
+
+                    <div class="test-experience-item">
+
+                        <h3>
+                            Clear Communication
+                        </h3>
+
+                        <p>
+                            Structured discussions about
+                            creative objectives and
+                            production requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="test-experience-item">
+
+                        <h3>
+                            Production Transparency
+                        </h3>
+
+                        <p>
+                            Clear information about
+                            project scope, milestones
+                            and deliverables.
+                        </p>
+
+                    </div>
+
+
+                    <div class="test-experience-item">
+
+                        <h3>
+                            Constructive Feedback
+                        </h3>
+
+                        <p>
+                            An organized approach to
+                            reviews, revisions and
+                            approved creative changes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="test-experience-item">
+
+                        <h3>
+                            Professional Delivery
+                        </h3>
+
+                        <p>
+                            Attention to agreed technical
+                            specifications and final
+                            delivery requirements.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             COLLABORATION PRINCIPLES
+        ========================================== -->
+
+        <section class="test-section">
+
+            <div class="test-container">
+
+
+                <div class="test-section-heading">
+
+                    <span class="test-eyebrow">
+                        Working Principles
+                    </span>
+
+                    <h2>
+                        What Guides Our Client Relationships
+                    </h2>
+
+                    <p>
+                        Our approach to professional
+                        production collaboration is
+                        based on clearly defined
+                        working principles.
+                    </p>
+
+                </div>
+
+
+
+                <div class="test-principles-grid">
+
+
+                    <article class="test-principle-card">
+
+                        <span class="test-number">
+                            PRINCIPLE 01
+                        </span>
+
+                        <h3>
+                            Understanding The Vision
+                        </h3>
+
+                        <p>
+                            Understanding client objectives,
+                            creative direction and
+                            production expectations
+                            before work begins.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="test-principle-card">
+
+                        <span class="test-number">
+                            PRINCIPLE 02
+                        </span>
+
+                        <h3>
+                            Defined Expectations
+                        </h3>
+
+                        <p>
+                            Establishing clear project
+                            requirements, deliverables,
+                            timelines and responsibilities.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="test-principle-card">
+
+                        <span class="test-number">
+                            PRINCIPLE 03
+                        </span>
+
+                        <h3>
+                            Collaborative Reviews
+                        </h3>
+
+                        <p>
+                            Supporting constructive
+                            communication, creative
+                            reviews and documented
+                            client feedback.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="test-principle-card">
+
+                        <span class="test-number">
+                            PRINCIPLE 04
+                        </span>
+
+                        <h3>
+                            Professional Accountability
+                        </h3>
+
+                        <p>
+                            Working according to
+                            agreed responsibilities,
+                            project scope and
+                            production milestones.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="test-principle-card">
+
+                        <span class="test-number">
+                            PRINCIPLE 05
+                        </span>
+
+                        <h3>
+                            Respect For Creative Rights
+                        </h3>
+
+                        <p>
+                            Addressing ownership,
+                            licensing, source files
+                            and usage rights
+                            through appropriate
+                            agreements.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="test-principle-card">
+
+                        <span class="test-number">
+                            PRINCIPLE 06
+                        </span>
+
+                        <h3>
+                            Long-Term Relationships
+                        </h3>
+
+                        <p>
+                            Encouraging professional
+                            partnerships through
+                            transparent communication
+                            and mutual respect.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             CLIENT FEEDBACK PROCESS
+        ========================================== -->
+
+        <section class="test-section test-section-dark">
+
+            <div class="test-container">
+
+
+                <div class="test-section-heading">
+
+                    <span class="test-eyebrow">
+                        Feedback & Quality
+                    </span>
+
+                    <h2>
+                        How Client Feedback Is Managed
+                    </h2>
+
+                    <p>
+                        Feedback is an important part
+                        of production review and
+                        project development.
+                    </p>
+
+                </div>
+
+
+
+                <div class="test-process-grid">
+
+
+                    <article class="test-process-card">
+
+                        <span>STEP 01</span>
+
+                        <h3>
+                            Review
+                        </h3>
+
+                        <p>
+                            Clients review agreed
+                            production milestones
+                            and deliverables.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="test-process-card">
+
+                        <span>STEP 02</span>
+
+                        <h3>
+                            Feedback
+                        </h3>
+
+                        <p>
+                            Feedback and revision
+                            requirements are
+                            communicated through
+                            agreed channels.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="test-process-card">
+
+                        <span>STEP 03</span>
+
+                        <h3>
+                            Refinement
+                        </h3>
+
+                        <p>
+                            Production refinements
+                            are handled according
+                            to the approved scope
+                            and revision terms.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="test-process-card">
+
+                        <span>STEP 04</span>
+
+                        <h3>
+                            Evaluation
+                        </h3>
+
+                        <p>
+                            Completed deliverables
+                            are evaluated against
+                            the agreed requirements.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             TESTIMONIAL AUTHENTICITY POLICY
+        ========================================== -->
+
+        <section class="test-section">
+
+            <div class="test-container">
+
+
+                <div class="test-section-heading">
+
+                    <span class="test-eyebrow">
+                        Transparency & Authenticity
+                    </span>
+
+                    <h2>
+                        Our Testimonial Publication Standards
+                    </h2>
+
+                    <p>
+                        Client feedback should represent
+                        genuine professional experiences
+                        and must not create misleading
+                        impressions.
+                    </p>
+
+                </div>
+
+
+
+                <div class="test-policy-box">
+
+                    <h3>
+                        Authentic Feedback. Authorized Publication.
+                    </h3>
+
+                    <p>
+                        AUTOTUBE CREW STUDIO intends
+                        to maintain accuracy and transparency
+                        when presenting client testimonials
+                        and project-related endorsements.
+                    </p>
+
+                    <p>
+                        Before publishing a testimonial,
+                        the relevant statement and
+                        supporting information should
+                        be verified.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Feedback must originate
+                            from a genuine client
+                            or authorized representative.
+                        </li>
+
+                        <li>
+                            Client permission must
+                            be obtained before
+                            public attribution.
+                        </li>
+
+                        <li>
+                            Names, job titles and
+                            company details must
+                            be accurately represented.
+                        </li>
+
+                        <li>
+                            Client logos and photographs
+                            must not be used without
+                            appropriate authorization.
+                        </li>
+
+                        <li>
+                            Testimonials must not be
+                            fabricated, misleadingly
+                            edited or presented
+                            outside their intended context.
+                        </li>
+
+                        <li>
+                            Confidential project information
+                            must remain protected.
+                        </li>
+
+                    </ul>
+
+                    <p>
+                        Where permission is limited,
+                        feedback may be presented
+                        anonymously only when
+                        the client has authorized
+                        that form of publication.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             PORTFOLIO CONNECTION
+        ========================================== -->
+
+        <section class="test-section test-section-dark">
+
+            <div class="test-container">
+
+
+                <div class="test-section-heading">
+
+                    <span class="test-eyebrow">
+                        Explore Our Work
+                    </span>
+
+                    <h2>
+                        Discover Our Production Capabilities
+                    </h2>
+
+                    <p>
+                        Explore our visual production
+                        portfolio and cinematic
+                        presentations to understand
+                        our creative and technical focus.
+                    </p>
+
+                </div>
+
+
+
+                <div class="test-portfolio-grid">
+
+
+                    <article class="test-portfolio-card">
+
+                        <h3>
+                            Creative Portfolio
+                        </h3>
+
+                        <p>
+                            Explore visual projects,
+                            animation, CGI, VFX
+                            and creative production work.
+                        </p>
+
+                        <a href="portfolio.html">
+                            Explore Portfolio →
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="test-portfolio-card">
+
+                        <h3>
+                            Cinematic Showreel
+                        </h3>
+
+                        <p>
+                            Discover our cinematic
+                            production presentation
+                            and visual storytelling approach.
+                        </p>
+
+                        <a href="showreel.html">
+                            Watch Showreel →
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             FINAL CTA
+        ========================================== -->
+
+        <section class="test-cta">
+
+            <div class="test-container">
+
+                <span class="test-eyebrow">
+                    Start A Conversation
+                </span>
+
+                <h2>
+                    Let's Build A Professional Partnership.
+                </h2>
+
+                <p>
+                    Have a production project,
+                    creative collaboration opportunity
+                    or business enquiry?
+
+                    Connect with AUTOTUBE CREW STUDIO
+                    to discuss your requirements
+                    and explore potential opportunities.
+                </p>
+
+
+                <div class="test-hero-buttons"
+                    style="justify-content:center;">
+
+                    <a href="contact.html" class="test-btn">
+                        Contact Our Studio
+                    </a>
+
+                    <a href="request-a-quote.html"
+                        class="test-btn test-btn-secondary">
+                        Request A Quote
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="test-footer">
+
+        <div class="test-container">
+
+            <p>
+                &copy; 2026
+                <a href="index.html">
+                    AUTOTUBE CREW STUDIO
+                </a>.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Jakarta, Indonesia
+                |
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+                |
+                <a href="terms-and-conditions.html">
+                    Terms & Conditions
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+         MOBILE NAVIGATION
+    ========================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const menuButton = document.querySelector(
+                ".test-menu-toggle"
+            );
+
+            const navigation = document.getElementById(
+                "test-navigation"
+            );
+
+
+            if (!menuButton || !navigation) {
+                return;
+            }
+
+
+            menuButton.addEventListener("click", function () {
+
+                const expanded =
+                    menuButton.getAttribute("aria-expanded")
+                    === "true";
+
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    String(!expanded)
+                );
+
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    expanded
+                        ? "Open navigation"
+                        : "Close navigation"
+                );
+
+
+                navigation.classList.toggle("is-open");
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>
