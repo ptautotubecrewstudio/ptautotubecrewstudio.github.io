@@ -1,463 +1,197 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Digital Platforms | AUTOTUBE CREW STUDIO</title>
-
-    <meta name="description" content="Explore digital platform development, web portals, website development and custom digital solutions at AUTOTUBE CREW STUDIO.">
-
-    <link rel="stylesheet" href="./assets/css/style.css?v=3">
-
-    <style>
-        .service-detail {
-            padding: 75px 8%;
-            max-width: 1250px;
-            margin: auto;
-        }
-
-        .service-detail .intro {
-            background: transparent;
-            padding: 0;
-            color: var(--red);
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
-        }
-
-        .service-detail h2 {
-            font-size: clamp(28px, 4vw, 46px);
-            margin-bottom: 22px;
-        }
-
-        .service-detail h2 span,
-        .service-cta h2 span {
-            color: var(--red);
-        }
-
-        .service-detail > p:not(.intro) {
-            color: var(--grey);
-            line-height: 1.8;
-        }
-
-        .detail-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .detail-card {
-            background: var(--dark-grey);
-            border: 1px solid #333;
-            padding: 30px;
-            transition: 0.3s;
-        }
-
-        .detail-card:hover {
-            border-color: var(--red);
-            transform: translateY(-5px);
-        }
-
-        .detail-card .number,
-        .process-step .number {
-            color: var(--red);
-            font-size: 13px;
-            letter-spacing: 2px;
-        }
-
-        .detail-card h3 {
-            margin: 15px 0;
-            font-size: 22px;
-        }
-
-        .detail-card p {
-            color: var(--grey);
-            line-height: 1.8;
-        }
-
-        .process-list {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-            margin-top: 35px;
-        }
-
-        .process-step {
-            background: var(--dark-grey);
-            border-top: 3px solid var(--red);
-            padding: 24px;
-        }
-
-        .process-step h3 {
-            margin: 12px 0;
-        }
-
-        .process-step p {
-            color: var(--grey);
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        .service-cta {
-            background: var(--dark);
-            text-align: center;
-            padding: 80px 8%;
-        }
-
-        .service-cta h2 {
-            font-size: clamp(30px, 5vw, 48px);
-            margin-bottom: 20px;
-        }
-
-        .service-cta p {
-            color: var(--grey);
-            line-height: 1.8;
-            max-width: 650px;
-            margin: 0 auto 28px;
-        }
-
-        @media (max-width: 768px) {
-            .detail-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .process-list {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .service-detail {
-                padding: 55px 6%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .process-list {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="AUTOTUBE CREW STUDIO shapes digital platform experiences, commercial web portals and responsive website solutions that connect businesses, services and audiences. Jakarta, Indonesia.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/digital-platforms.html">
+  <title>Digital Platforms &amp; Web Portals | AUTOTUBE CREW STUDIO</title>
+  <meta property="og:title" content="Digital Platforms &amp; Web Portals | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Purpose-led digital platforms, commercial web portals and responsive website experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/digital-platforms.html">
+  <meta property="og:site_name" content="AUTOTUBE CREW STUDIO">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+  <link rel="stylesheet" href="./assets/css/service-pages.css?v=1">
 </head>
+<body class="inner-page service-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<body>
+  <header class="header site-header">
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
+    </a>
+    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="showreel.html">Showreel</a>
+      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
+      <span aria-hidden="true">☰</span>
+    </button>
+  </header>
 
-    <!-- HEADER -->
-    <header class="header">
-        <a href="index.html" class="logo">AUTOTUBE CREW</a>
-
-        <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <button
-    class="menu-toggle"
-    type="button"
-    aria-label="Open navigation"
-    aria-expanded="false">
-    ☰
-</button>
-    </header>
-
-
-    <!-- HERO -->
-    <section class="hero">
-
-        <div class="hero-background"></div>
-        <div class="hero-circle"></div>
-
-        <div class="hero-content">
-
-            <p class="eyebrow">OUR DIGITAL TECHNOLOGY CAPABILITIES</p>
-
-            <h1>
-                DIGITAL <span>PLATFORMS</span>
-            </h1>
-
-            <p>
-                Building modern digital experiences,
-                connected platforms and technology-driven
-                solutions for businesses and creative industries.
-            </p>
-
-            <a href="#overview" class="button-primary">
-                EXPLORE DIGITAL PLATFORMS
-            </a>
-
+  <main id="main-content">
+    <section class="inner-hero service-hero" aria-labelledby="digital-title">
+      <div class="inner-container inner-hero-layout service-hero-layout">
+        <div>
+          <p class="eyebrow">DIGITAL PLATFORMS / WEB PORTALS / DIGITAL EXPERIENCES</p>
+          <h1 id="digital-title">Digital experiences.<br><span>Built to connect.</span></h1>
+          <p class="inner-hero-copy">We shape purposeful digital experiences that help businesses present their services, organize information and connect with the audiences they want to reach.</p>
+          <div class="inner-hero-actions">
+            <a class="button-primary" href="#digital-capabilities">Explore capabilities <span aria-hidden="true">↓</span></a>
+            <a class="button-secondary" href="contact.html">Discuss a project</a>
+          </div>
         </div>
-
-    </section>
-
-
-    <!-- OVERVIEW -->
-    <section class="service-detail" id="overview">
-
-        <p class="intro">DIGITAL INNOVATION & DEVELOPMENT</p>
-
-        <h2>
-            BUILDING THE FUTURE OF
-            <span>DIGITAL EXPERIENCES.</span>
-        </h2>
-
-        <p>
-            Digital platforms connect businesses, services
-            and audiences through technology.
-
-            AUTOTUBE CREW STUDIO focuses on digital platform
-            concepts, website development, web portals and
-            technology-driven digital experiences.
-
-            Our approach combines user-focused design,
-            modern web technologies and functional
-            digital solutions to help businesses
-            establish and expand their online presence.
-        </p>
-
-    </section>
-
-
-    <!-- DIGITAL CAPABILITIES -->
-    <section class="service-detail">
-
-        <p class="intro">OUR DIGITAL CAPABILITIES</p>
-
-        <h2>
-            TECHNOLOGY THAT
-            <span>CONNECTS IDEAS.</span>
-        </h2>
-
-        <div class="detail-grid">
-
-            <div class="detail-card">
-
-                <span class="number">01 / WEB DEVELOPMENT</span>
-
-                <h3>Website Development</h3>
-
-                <p>
-                    Modern, responsive and professional
-                    websites designed to represent brands,
-                    businesses and digital services.
-                </p>
-
-            </div>
-
-
-            <div class="detail-card">
-
-                <span class="number">02 / WEB PORTALS</span>
-
-                <h3>Commercial Web Portals</h3>
-
-                <p>
-                    Digital portals designed to organize
-                    information, connect audiences and
-                    support online business activities.
-                </p>
-
-            </div>
-
-
-            <div class="detail-card">
-
-                <span class="number">03 / PLATFORM DEVELOPMENT</span>
-
-                <h3>Digital Platform Development</h3>
-
-                <p>
-                    Concept development and implementation
-                    of digital platforms with structured
-                    features, services and user experiences.
-                </p>
-
-            </div>
-
-
-            <div class="detail-card">
-
-                <span class="number">04 / UI & UX DESIGN</span>
-
-                <h3>User Interface & Experience</h3>
-
-                <p>
-                    User-focused interfaces, intuitive
-                    navigation and clear digital experiences
-                    across desktop and mobile devices.
-                </p>
-
-            </div>
-
-
-            <div class="detail-card">
-
-                <span class="number">05 / WEB APPLICATIONS</span>
-
-                <h3>Custom Web Applications</h3>
-
-                <p>
-                    Browser-based applications and
-                    functional digital tools developed
-                    around specific business requirements.
-                </p>
-
-            </div>
-
-
-            <div class="detail-card">
-
-                <span class="number">06 / DIGITAL SOLUTIONS</span>
-
-                <h3>Platform Integration & Maintenance</h3>
-
-                <p>
-                    Digital functionality integration,
-                    platform improvements, technical
-                    maintenance and ongoing updates.
-                </p>
-
-            </div>
-
+        <div class="service-hero-panel" aria-label="AUTOTUBE CREW STUDIO digital platform capabilities">
+          <div class="service-panel-top"><span>Digital platforms &amp; web portals</span><span>DIGITAL / 01</span></div>
+          <img class="service-panel-mark" src="assets/brand/logo.png.png" alt="" width="190" height="100">
+          <div class="service-panel-bottom"><span>Purpose-led digital experiences</span><strong>JAKARTA / GLOBAL</strong></div>
         </div>
-
+      </div>
     </section>
 
-
-    <!-- DEVELOPMENT PROCESS -->
-    <section class="service-detail">
-
-        <p class="intro">OUR DEVELOPMENT WORKFLOW</p>
-
-        <h2>
-            FROM CONCEPT TO
-            <span>DIGITAL REALITY.</span>
-        </h2>
-
-        <div class="process-list">
-
-            <div class="process-step">
-
-                <span class="number">STEP 01</span>
-
-                <h3>Discovery</h3>
-
-                <p>
-                    Understanding business objectives,
-                    project requirements and
-                    target audiences.
-                </p>
-
-            </div>
-
-
-            <div class="process-step">
-
-                <span class="number">STEP 02</span>
-
-                <h3>Planning & Design</h3>
-
-                <p>
-                    Developing platform structure,
-                    user journeys, wireframes
-                    and interface concepts.
-                </p>
-
-            </div>
-
-
-            <div class="process-step">
-
-                <span class="number">STEP 03</span>
-
-                <h3>Development</h3>
-
-                <p>
-                    Building website structures,
-                    digital features and
-                    functional platform components.
-                </p>
-
-            </div>
-
-
-            <div class="process-step">
-
-                <span class="number">STEP 04</span>
-
-                <h3>Testing & Launch</h3>
-
-                <p>
-                    Testing functionality,
-                    reviewing performance and
-                    preparing the platform for launch.
-                </p>
-
-            </div>
-
+    <section class="inner-section" aria-labelledby="digital-intro-title">
+      <div class="inner-container service-intro-grid">
+        <div>
+          <p class="section-kicker">DIGITAL THINKING / PRACTICAL EXECUTION</p>
+          <h2 class="service-statement" id="digital-intro-title">Make every digital interaction <span>clear and useful.</span></h2>
         </div>
-
+        <div class="service-intro-copy">
+          <p>A strong digital platform gives people a clear way to discover information, explore services and take the next step. AUTOTUBE CREW STUDIO brings creative thinking, interface planning and production discipline together to shape website and platform experiences for businesses and creative industries.</p>
+          <p>Depending on each brief, a project may include website structure, commercial web portal concepts, interface design, content integration and implementation planning. The scope is defined around the objectives, required functionality, content and delivery needs of the project.</p>
+          <div class="service-related-links">
+            <a href="creative-content.html">Creative content <span aria-hidden="true">↗</span></a>
+            <a href="portfolio.html">Explore portfolio <span aria-hidden="true">↗</span></a>
+            <a href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-    <!-- DIGITAL VISION -->
-    <section class="service-detail">
-
-        <p class="intro">OUR DIGITAL VISION</p>
-
-        <h2>
-            INNOVATION STARTS WITH
-            <span>A BETTER CONNECTION.</span>
-        </h2>
-
-        <p>
-            The digital world creates new opportunities
-            for businesses to reach audiences,
-            deliver services and develop new experiences.
-
-            We believe in combining creative thinking
-            with technology to develop digital solutions
-            that are useful, accessible and built
-            around real-world needs.
-        </p>
-
+    <section class="inner-section" id="digital-capabilities" aria-labelledby="digital-capabilities-title">
+      <div class="inner-container">
+        <p class="section-kicker">WHAT THE PROJECT MAY INCLUDE</p>
+        <div class="section-heading">
+          <h2 id="digital-capabilities-title">Digital platform <span>capabilities.</span></h2>
+          <p>Every engagement is scoped to its purpose and requirements. The capabilities below describe the types of digital work we can plan and deliver as part of an agreed project.</p>
+        </div>
+        <div class="service-capability-grid">
+          <article class="service-capability-card">
+            <span class="card-index">01 / WEB PRESENCE</span>
+            <h3>Website experiences</h3>
+            <p>Responsive business and brand websites with clear information architecture, purposeful page structure and consistent visual presentation.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">02 / WEB PORTALS</span>
+            <h3>Commercial web portals</h3>
+            <p>Portal concepts that organize useful information, services and audience journeys within a coherent online experience.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">03 / EXPERIENCE DESIGN</span>
+            <h3>Interface &amp; user journeys</h3>
+            <p>Interface planning, navigation patterns and user journeys designed to make content easier to understand and use.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">04 / CONTENT</span>
+            <h3>Digital content integration</h3>
+            <p>Structured presentation of text, imagery, video and other approved content across relevant pages and platform sections.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">05 / RESPONSIVE DELIVERY</span>
+            <h3>Multi-device implementation</h3>
+            <p>Layouts and front-end experiences planned to remain usable across desktop, tablet and mobile screen sizes.</p>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">06 / IMPROVEMENT</span>
+            <h3>Review &amp; refinement</h3>
+            <p>Quality checks, usability review and agreed improvements to help keep the digital experience aligned with project goals.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-
-    <!-- CTA -->
-    <section class="service-cta">
-
-        <p>HAVE A DIGITAL PROJECT?</p>
-
-        <h2>
-            LET'S BUILD SOMETHING
-            <span>EXTRAORDINARY.</span>
-        </h2>
-
-        <p>
-            Share your website idea, digital platform
-            concept or technology requirements
-            with AUTOTUBE CREW STUDIO.
-        </p>
-
-        <a href="contact.html" class="button-primary">
-            DISCUSS YOUR PROJECT
-        </a>
-
+    <section class="inner-section" aria-labelledby="digital-approach-title">
+      <div class="inner-container">
+        <p class="section-kicker">OUR DEVELOPMENT APPROACH</p>
+        <div class="section-heading">
+          <h2 id="digital-approach-title">From a clear brief to a <span>connected experience.</span></h2>
+          <p>A considered process helps keep the purpose, content, design and implementation aligned from the first discussion through delivery.</p>
+        </div>
+        <div class="service-process-grid">
+          <article class="service-process-card">
+            <span class="card-index">STAGE 01 / DISCOVER</span>
+            <h3>Objectives &amp; requirements</h3>
+            <p>Understand the business objective, intended audience, required content, key user tasks and project boundaries.</p>
+          </article>
+          <article class="service-process-card">
+            <span class="card-index">STAGE 02 / STRUCTURE</span>
+            <h3>Architecture &amp; experience</h3>
+            <p>Plan the page structure, information hierarchy, navigation and user journeys before visual execution.</p>
+          </article>
+          <article class="service-process-card">
+            <span class="card-index">STAGE 03 / CREATE</span>
+            <h3>Design &amp; implementation</h3>
+            <p>Develop the visual interface and agreed front-end functionality using the approved project scope.</p>
+          </article>
+          <article class="service-process-card">
+            <span class="card-index">STAGE 04 / REVIEW</span>
+            <h3>Testing &amp; handover</h3>
+            <p>Review responsive behaviour, navigation, content and agreed functionality before preparing the delivery handover.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <section class="inner-section" aria-labelledby="digital-principles-title">
+      <div class="inner-container service-intro-grid">
+        <div>
+          <p class="section-kicker">BUILT AROUND REAL NEEDS</p>
+          <h2 class="service-statement" id="digital-principles-title">Technology should serve <span>the experience.</span></h2>
+        </div>
+        <div class="service-intro-copy">
+          <p>We approach digital work by starting with what people need to find, understand or do. The result should feel coherent: the content, navigation and visual language working together rather than competing for attention.</p>
+          <p>Specialist back-end systems, third-party services, hosting, ongoing maintenance and advanced integrations are considered only where they are required, technically suitable and included in the agreed project scope.</p>
+          <div class="service-related-links">
+            <a href="services.html">View studio services <span aria-hidden="true">↗</span></a>
+            <a href="request-a-quote.html">Request a project quote <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <section class="inner-cta" aria-labelledby="digital-cta-title">
+      <div class="inner-container">
+        <p class="eyebrow">HAVE A WEBSITE OR DIGITAL PLATFORM PROJECT?</p>
+        <h2 id="digital-cta-title">Let's shape what<br><span>comes next.</span></h2>
+        <p>Share your objectives, platform concept or website requirements with AUTOTUBE CREW STUDIO. We can discuss the right creative and delivery approach for your brief.</p>
+        <a class="button-primary" href="contact.html">Discuss your project <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-        <p>© 2026 AUTOTUBE CREW STUDIO. ALL RIGHTS RESERVED.</p>
+  <footer class="site-footer">
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58">
+    </a>
+    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms-and-conditions.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+  </footer>
 
-        <p>CREATIVITY. TECHNOLOGY. STORYTELLING.</p>
-
-    </footer>
-<script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
