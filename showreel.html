@@ -1,0 +1,1447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Showreel | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description"
+        content="Explore the cinematic showreel of AUTOTUBE CREW STUDIO, showcasing 3D animation, CGI, VFX, cinematic production, visual storytelling and creative production capabilities.">
+
+    <meta name="keywords"
+        content="Studio Showreel, 3D Animation Showreel, CGI, VFX, Cinematic Production, Animation Studio Jakarta, AUTOTUBE CREW STUDIO">
+
+    <meta name="author" content="PT Autotube Crew Studio">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://ptautotubecrewstudio.github.io/showreel.html">
+
+    <meta name="theme-color" content="#080808">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* ==========================================
+           AUTOTUBE CREW STUDIO
+           SHOWREEL PAGE
+        ========================================== */
+
+        :root {
+            --sr-black: #080808;
+            --sr-dark: #111111;
+            --sr-grey: #191919;
+            --sr-red: #e50920;
+            --sr-white: #ffffff;
+            --sr-muted: #a3a3a3;
+            --sr-border: #303030;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--sr-black);
+            color: var(--sr-white);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        video {
+            font-family: inherit;
+        }
+
+        .sr-container {
+            width: 90%;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+
+        /* ==========================================
+           HEADER
+        ========================================== */
+
+        .sr-header {
+            background: #080808;
+            border-bottom: 1px solid var(--sr-border);
+            position: relative;
+            z-index: 100;
+        }
+
+        .sr-header-inner {
+            min-height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .sr-logo img {
+            display: block;
+            width: auto;
+            max-width: 210px;
+            max-height: 65px;
+            object-fit: contain;
+        }
+
+        .sr-nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .sr-nav a {
+            color: #eeeeee;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .sr-nav a:hover,
+        .sr-nav a.active {
+            color: var(--sr-red);
+        }
+
+        .sr-menu-toggle {
+            display: none;
+            background: transparent;
+            color: white;
+            border: 1px solid #444;
+            padding: 8px 13px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+
+        /* ==========================================
+           HERO
+        ========================================== */
+
+        .sr-hero {
+            padding: 105px 0 80px;
+            background:
+                linear-gradient(
+                    110deg,
+                    #080808 0%,
+                    #111111 65%,
+                    #191919 100%
+                );
+            border-bottom: 1px solid var(--sr-border);
+        }
+
+        .sr-eyebrow {
+            color: var(--sr-red);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .sr-hero h1 {
+            max-width: 950px;
+            font-size: clamp(42px, 7vw, 85px);
+            line-height: 1.08;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .sr-hero h1 span {
+            color: var(--sr-red);
+        }
+
+        .sr-hero p {
+            max-width: 730px;
+            color: #b5b5b5;
+            font-size: 17px;
+        }
+
+        .sr-hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .sr-btn {
+            display: inline-block;
+            padding: 14px 27px;
+            background: var(--sr-red);
+            border: 1px solid var(--sr-red);
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+        }
+
+        .sr-btn:hover {
+            background: transparent;
+            color: white;
+        }
+
+        .sr-btn-secondary {
+            background: transparent;
+            border-color: #555;
+        }
+
+
+        /* ==========================================
+           SECTION GENERAL
+        ========================================== */
+
+        .sr-section {
+            padding: 85px 0;
+        }
+
+        .sr-section-dark {
+            background: #101010;
+        }
+
+        .sr-section-heading {
+            max-width: 780px;
+            margin-bottom: 40px;
+        }
+
+        .sr-section-heading h2 {
+            font-size: clamp(29px, 4vw, 46px);
+            line-height: 1.2;
+            margin: 15px 0;
+            text-transform: uppercase;
+        }
+
+        .sr-section-heading p {
+            color: var(--sr-muted);
+            font-size: 15px;
+        }
+
+
+        /* ==========================================
+           MAIN SHOWREEL VIDEO
+        ========================================== */
+
+        .sr-video-section {
+            padding: 65px 0 85px;
+            background: #080808;
+        }
+
+        .sr-video-heading {
+            margin-bottom: 25px;
+        }
+
+        .sr-video-heading h2 {
+            font-size: clamp(24px, 4vw, 36px);
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+
+        .sr-video-heading p {
+            color: var(--sr-muted);
+            font-size: 14px;
+        }
+
+        .sr-video-frame {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background: #151515;
+            border: 1px solid #333;
+            aspect-ratio: 16 / 9;
+        }
+
+        .sr-video-frame video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+            background: #000;
+        }
+
+        .sr-video-fallback {
+            padding: 25px;
+            background: #151515;
+            color: #cccccc;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .sr-video-caption {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            margin-top: 18px;
+            flex-wrap: wrap;
+        }
+
+        .sr-video-caption h3 {
+            font-size: 18px;
+        }
+
+        .sr-video-caption p {
+            color: #888;
+            font-size: 12px;
+        }
+
+
+        /* ==========================================
+           PROJECT GRID
+        ========================================== */
+
+        .sr-project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .sr-project-card {
+            background: #151515;
+            border: 1px solid #2b2b2b;
+            transition: 0.3s ease;
+        }
+
+        .sr-project-card:hover {
+            border-color: var(--sr-red);
+            transform: translateY(-5px);
+        }
+
+        .sr-project-visual {
+            min-height: 190px;
+            padding: 25px;
+            display: flex;
+            align-items: flex-end;
+            background:
+                linear-gradient(
+                    145deg,
+                    #252525,
+                    #111111 65%,
+                    #080808
+                );
+            border-bottom: 2px solid var(--sr-red);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sr-project-visual::before {
+            content: "";
+            width: 150px;
+            height: 150px;
+            border: 1px solid rgba(229, 9, 32, 0.25);
+            border-radius: 50%;
+            position: absolute;
+            top: -60px;
+            right: -30px;
+        }
+
+        .sr-project-number {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: var(--sr-red);
+            position: absolute;
+            top: 20px;
+            left: 25px;
+        }
+
+        .sr-project-visual h3 {
+            font-size: 20px;
+            line-height: 1.3;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sr-project-content {
+            padding: 22px;
+        }
+
+        .sr-project-content p {
+            color: #aaa;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .sr-project-category {
+            display: inline-block;
+            color: var(--sr-red);
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+
+        /* ==========================================
+           CAPABILITIES
+        ========================================== */
+
+        .sr-capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .sr-capability {
+            padding: 27px;
+            background: #151515;
+            border: 1px solid #303030;
+            transition: 0.3s ease;
+        }
+
+        .sr-capability:hover {
+            border-color: var(--sr-red);
+        }
+
+        .sr-capability span {
+            color: var(--sr-red);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .sr-capability h3 {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .sr-capability p {
+            margin-top: 8px;
+            color: #999;
+            font-size: 13px;
+        }
+
+
+        /* ==========================================
+           PRODUCTION APPROACH
+        ========================================== */
+
+        .sr-production-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .sr-production-content h2 {
+            font-size: clamp(29px, 4vw, 43px);
+            line-height: 1.2;
+            margin: 15px 0;
+            text-transform: uppercase;
+        }
+
+        .sr-production-content p {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .sr-production-points {
+            border-left: 2px solid var(--sr-red);
+            padding-left: 25px;
+        }
+
+        .sr-production-point {
+            padding: 14px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .sr-production-point:last-child {
+            border-bottom: none;
+        }
+
+        .sr-production-point h3 {
+            font-size: 16px;
+        }
+
+        .sr-production-point p {
+            font-size: 13px;
+            margin: 5px 0 0;
+        }
+
+
+        /* ==========================================
+           CTA
+        ========================================== */
+
+        .sr-cta {
+            padding: 85px 20px;
+            background: #151515;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .sr-cta h2 {
+            font-size: clamp(30px, 4vw, 48px);
+            margin: 15px 0;
+        }
+
+        .sr-cta p {
+            max-width: 650px;
+            color: #aaa;
+            margin: auto;
+            font-size: 15px;
+        }
+
+        .sr-cta .sr-btn {
+            margin-top: 25px;
+        }
+
+
+        /* ==========================================
+           FOOTER
+        ========================================== */
+
+        .sr-footer {
+            padding: 35px 0;
+            background: #050505;
+            text-align: center;
+            border-top: 1px solid #292929;
+        }
+
+        .sr-footer p {
+            color: #888;
+            font-size: 13px;
+            margin: 6px 0;
+        }
+
+        .sr-footer a {
+            color: var(--sr-red);
+        }
+
+
+        /* ==========================================
+           ACCESSIBILITY
+        ========================================== */
+
+        .sr-nav a:focus-visible,
+        .sr-btn:focus-visible,
+        .sr-menu-toggle:focus-visible {
+            outline: 2px solid white;
+            outline-offset: 4px;
+        }
+
+
+        /* ==========================================
+           RESPONSIVE
+        ========================================== */
+
+        @media (max-width: 1000px) {
+
+            .sr-project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .sr-capabilities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 700px) {
+
+            .sr-header-inner {
+                flex-wrap: wrap;
+                padding: 12px 0;
+            }
+
+            .sr-menu-toggle {
+                display: block;
+            }
+
+            .sr-nav {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                gap: 15px;
+                padding: 18px 0;
+                border-top: 1px solid #333;
+            }
+
+            .sr-nav.is-open {
+                display: flex;
+            }
+
+            .sr-hero {
+                padding: 75px 0;
+            }
+
+            .sr-section {
+                padding: 60px 0;
+            }
+
+            .sr-video-section {
+                padding: 50px 0;
+            }
+
+            .sr-project-grid,
+            .sr-capabilities-grid,
+            .sr-production-content {
+                grid-template-columns: 1fr;
+            }
+
+            .sr-project-visual {
+                min-height: 165px;
+            }
+
+            .sr-video-caption {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+
+    <header class="sr-header">
+
+        <div class="sr-container sr-header-inner">
+
+
+            <a href="index.html" class="sr-logo">
+
+                <img
+                    src="assets/brand/logo.png.png"
+                    alt="AUTOTUBE CREW STUDIO">
+
+            </a>
+
+
+            <nav
+                class="sr-nav"
+                id="sr-navigation"
+                aria-label="Main navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="portfolio.html">Portfolio</a>
+
+                <a href="showreel.html"
+                    class="active"
+                    aria-current="page">
+                    Showreel
+                </a>
+
+                <a href="partners.html">Partners</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+            <button
+                class="sr-menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="sr-navigation">
+
+                ☰
+
+            </button>
+
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ==========================================
+             HERO
+        =========================================== -->
+
+        <section class="sr-hero">
+
+            <div class="sr-container">
+
+                <span class="sr-eyebrow">
+                    AUTOTUBE CREW STUDIO
+                </span>
+
+                <h1>
+                    Visual Stories.
+                    <span>Cinematic Experiences.</span>
+                </h1>
+
+                <p>
+                    Discover our creative and production capabilities
+                    through cinematic storytelling, 3D animation,
+                    CGI, visual effects and digital production.
+
+                    Every frame represents a commitment to
+                    imagination, technical excellence and
+                    visual craftsmanship.
+                </p>
+
+
+                <div class="sr-hero-buttons">
+
+                    <a href="#main-showreel" class="sr-btn">
+                        Watch Showreel
+                    </a>
+
+                    <a href="portfolio.html"
+                        class="sr-btn sr-btn-secondary">
+                        Explore Portfolio
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             MAIN SHOWREEL VIDEO
+        =========================================== -->
+
+        <section class="sr-video-section"
+            id="main-showreel">
+
+            <div class="sr-container">
+
+
+                <div class="sr-video-heading">
+
+                    <span class="sr-eyebrow">
+                        Studio Presentation
+                    </span>
+
+                    <h2>
+                        Our Cinematic Showreel
+                    </h2>
+
+                    <p>
+                        A visual introduction to our production
+                        environment and creative capabilities.
+                    </p>
+
+                </div>
+
+
+                <div class="sr-video-frame">
+
+                    <video
+                        controls
+                        playsinline
+                        preload="metadata"
+                        aria-label="AUTOTUBE CREW STUDIO cinematic showreel">
+
+                        <source
+                            src="assets/videos/hero/hero-video.mp4"
+                            type="video/mp4">
+
+                        Your browser does not support HTML5 video.
+
+                    </video>
+
+                </div>
+
+
+                <div class="sr-video-fallback">
+
+                    Showreel video is available when the
+                    configured video asset is uploaded
+                    to the repository.
+
+                </div>
+
+
+                <div class="sr-video-caption">
+
+                    <div>
+
+                        <h3>
+                            AUTOTUBE CREW STUDIO
+                        </h3>
+
+                        <p>
+                            Pre to Post Production Studio
+                        </p>
+
+                    </div>
+
+                    <span class="sr-project-category">
+                        Cinematic Production
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             FEATURED PROJECTS
+        =========================================== -->
+
+        <section class="sr-section sr-section-dark">
+
+            <div class="sr-container">
+
+
+                <div class="sr-section-heading">
+
+                    <span class="sr-eyebrow">
+                        Selected Visual Projects
+                    </span>
+
+                    <h2>
+                        Stories Across Creative Worlds
+                    </h2>
+
+                    <p>
+                        Explore the six featured project presentations
+                        selected for the AUTOTUBE CREW STUDIO
+                        website experience.
+                    </p>
+
+                </div>
+
+
+
+                <div class="sr-project-grid">
+
+
+                    <!-- PROJECT 01 -->
+
+                    <article class="sr-project-card">
+
+                        <div class="sr-project-visual">
+
+                            <span class="sr-project-number">
+                                PROJECT 01
+                            </span>
+
+                            <h3>
+                                Dark Fantasy Environment UE5
+                            </h3>
+
+                        </div>
+
+                        <div class="sr-project-content">
+
+                            <span class="sr-project-category">
+                                Unreal Engine 5
+                            </span>
+
+                            <p>
+                                A cinematic fantasy environment
+                                presentation focused on atmospheric
+                                world-building and visual storytelling.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 02 -->
+
+                    <article class="sr-project-card">
+
+                        <div class="sr-project-visual">
+
+                            <span class="sr-project-number">
+                                PROJECT 02
+                            </span>
+
+                            <h3>
+                                The King of Forest & Mountain
+                            </h3>
+
+                        </div>
+
+                        <div class="sr-project-content">
+
+                            <span class="sr-project-category">
+                                Cinematic Environment
+                            </span>
+
+                            <p>
+                                A visual world centered around
+                                natural environments, cinematic
+                                composition and atmosphere.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 03 -->
+
+                    <article class="sr-project-card">
+
+                        <div class="sr-project-visual">
+
+                            <span class="sr-project-number">
+                                PROJECT 03
+                            </span>
+
+                            <h3>
+                                Destroy Earth
+                            </h3>
+
+                        </div>
+
+                        <div class="sr-project-content">
+
+                            <span class="sr-project-category">
+                                CGI & Visual Effects
+                            </span>
+
+                            <p>
+                                A large-scale cinematic concept
+                                exploring visual destruction
+                                and digital spectacle.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 04 -->
+
+                    <article class="sr-project-card">
+
+                        <div class="sr-project-visual">
+
+                            <span class="sr-project-number">
+                                PROJECT 04
+                            </span>
+
+                            <h3>
+                                The Matrix City
+                            </h3>
+
+                        </div>
+
+                        <div class="sr-project-content">
+
+                            <span class="sr-project-category">
+                                3D Environment
+                            </span>
+
+                            <p>
+                                A digital city concept built around
+                                cinematic architecture, depth
+                                and immersive visual design.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 05 -->
+
+                    <article class="sr-project-card">
+
+                        <div class="sr-project-visual">
+
+                            <span class="sr-project-number">
+                                PROJECT 05
+                            </span>
+
+                            <h3>
+                                Sniper Animated Cinematic UE5
+                            </h3>
+
+                        </div>
+
+                        <div class="sr-project-content">
+
+                            <span class="sr-project-category">
+                                Animation & Cinematics
+                            </span>
+
+                            <p>
+                                An animated cinematic concept
+                                combining character-driven
+                                storytelling and virtual production.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 06 -->
+
+                    <article class="sr-project-card">
+
+                        <div class="sr-project-visual">
+
+                            <span class="sr-project-number">
+                                PROJECT 06
+                            </span>
+
+                            <h3>
+                                Car Chase Cinematic
+                            </h3>
+
+                        </div>
+
+                        <div class="sr-project-content">
+
+                            <span class="sr-project-category">
+                                Cinematic Production
+                            </span>
+
+                            <p>
+                                A high-energy cinematic concept
+                                built around motion, camera
+                                composition and visual action.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             CREATIVE CAPABILITIES
+        =========================================== -->
+
+        <section class="sr-section">
+
+            <div class="sr-container">
+
+
+                <div class="sr-section-heading">
+
+                    <span class="sr-eyebrow">
+                        Our Expertise
+                    </span>
+
+                    <h2>
+                        Creative & Technical Capabilities
+                    </h2>
+
+                    <p>
+                        We bring together artistic direction,
+                        technical production and creative
+                        problem-solving across the production pipeline.
+                    </p>
+
+                </div>
+
+
+
+                <div class="sr-capabilities-grid">
+
+
+                    <article class="sr-capability">
+
+                        <span>01</span>
+
+                        <h3>3D Animation</h3>
+
+                        <p>
+                            Character animation, 3D storytelling
+                            and cinematic animation production.
+                        </p>
+
+                    </article>
+
+
+                    <article class="sr-capability">
+
+                        <span>02</span>
+
+                        <h3>CGI Production</h3>
+
+                        <p>
+                            Computer-generated imagery,
+                            digital environments and
+                            visual compositions.
+                        </p>
+
+                    </article>
+
+
+                    <article class="sr-capability">
+
+                        <span>03</span>
+
+                        <h3>Visual Effects</h3>
+
+                        <p>
+                            VFX production, compositing,
+                            digital effects and visual enhancement.
+                        </p>
+
+                    </article>
+
+
+                    <article class="sr-capability">
+
+                        <span>04</span>
+
+                        <h3>Motion Graphics</h3>
+
+                        <p>
+                            Graphic animation, title design
+                            and motion-based visual communication.
+                        </p>
+
+                    </article>
+
+
+                    <article class="sr-capability">
+
+                        <span>05</span>
+
+                        <h3>Video Production</h3>
+
+                        <p>
+                            Cinematic video creation and
+                            professional visual content production.
+                        </p>
+
+                    </article>
+
+
+                    <article class="sr-capability">
+
+                        <span>06</span>
+
+                        <h3>Commercial Production</h3>
+
+                        <p>
+                            Creative production for advertising,
+                            campaigns and commercial content.
+                        </p>
+
+                    </article>
+
+
+                    <article class="sr-capability">
+
+                        <span>07</span>
+
+                        <h3>Feature Film Projects</h3>
+
+                        <p>
+                            Visual development and production
+                            collaboration for film projects.
+                        </p>
+
+                    </article>
+
+
+                    <article class="sr-capability">
+
+                        <span>08</span>
+
+                        <h3>Post-Production</h3>
+
+                        <p>
+                            Editing, compositing and
+                            final visual production workflows.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             PRODUCTION APPROACH
+        =========================================== -->
+
+        <section class="sr-section sr-section-dark">
+
+            <div class="sr-container sr-production-content">
+
+
+                <div>
+
+                    <span class="sr-eyebrow">
+                        Our Production Philosophy
+                    </span>
+
+                    <h2>
+                        From Creative Vision To Final Delivery
+                    </h2>
+
+                    <p>
+                        AUTOTUBE CREW STUDIO operates as an
+                        end-to-end visual production studio,
+                        connecting creative development with
+                        professional production execution.
+                    </p>
+
+                    <p>
+                        Our production approach focuses on
+                        collaboration, planning, visual quality
+                        and clearly defined project requirements.
+                    </p>
+
+                    <a href="our-workflow.html" class="sr-btn">
+                        Explore Our Workflow
+                    </a>
+
+                </div>
+
+
+
+                <div class="sr-production-points">
+
+
+                    <div class="sr-production-point">
+
+                        <h3>Pre-Production</h3>
+
+                        <p>
+                            Creative planning, project development,
+                            visual direction and production preparation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="sr-production-point">
+
+                        <h3>Production</h3>
+
+                        <p>
+                            Animation, CGI, VFX and
+                            cinematic content creation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="sr-production-point">
+
+                        <h3>Post-Production</h3>
+
+                        <p>
+                            Editing, compositing, refinement
+                            and final visual delivery.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             FINAL CTA
+        =========================================== -->
+
+        <section class="sr-cta">
+
+            <div class="sr-container">
+
+                <span class="sr-eyebrow">
+                    Start Your Next Project
+                </span>
+
+                <h2>
+                    Let's Create Something Extraordinary.
+                </h2>
+
+                <p>
+                    Have a creative concept, film project,
+                    animation requirement or commercial production
+                    opportunity?
+
+                    Connect with our studio to discuss
+                    your production vision.
+                </p>
+
+
+                <a href="request-a-quote.html" class="sr-btn">
+                    Request a Project Quote
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="sr-footer">
+
+        <div class="sr-container">
+
+            <p>
+                &copy; 2026
+                <a href="index.html">
+                    AUTOTUBE CREW STUDIO
+                </a>.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Jakarta, Indonesia
+                |
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+                |
+                <a href="terms-and-conditions.html">
+                    Terms & Conditions
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+         MOBILE NAVIGATION
+    =========================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+            const menuButton = document.querySelector(
+                ".sr-menu-toggle"
+            );
+
+            const navigation = document.getElementById(
+                "sr-navigation"
+            );
+
+
+            if (!menuButton || !navigation) {
+                return;
+            }
+
+
+            menuButton.addEventListener("click", function () {
+
+                const expanded =
+                    menuButton.getAttribute("aria-expanded")
+                    === "true";
+
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    String(!expanded)
+                );
+
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    expanded
+                        ? "Open navigation"
+                        : "Close navigation"
+                );
+
+
+                navigation.classList.toggle("is-open");
+
+            });
+
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
