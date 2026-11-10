@@ -1,0 +1,83 @@
+/* =========================================================
+   AUTOTUBE CREW STUDIO — SERVICE DETAIL PAGE SYSTEM
+   Scoped to .service-page so unrelated pages are unaffected.
+   Reuse on 3D Animation, CGI, VFX and production service pages.
+   ========================================================= */
+
+.service-page .service-hero { min-height: 570px; }
+.service-page .service-hero-panel {
+  position: relative;
+  min-height: 330px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.16);
+  background: radial-gradient(circle at 50% 48%, rgba(229,9,32,.18), transparent 48%), linear-gradient(145deg,#191919,#090909);
+}
+.service-page .service-hero-panel::before,
+.service-page .service-hero-panel::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 230px; height: 230px;
+  border: 1px solid rgba(229,9,32,.5);
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 75px rgba(229,9,32,.12), inset 0 0 55px rgba(229,9,32,.08);
+}
+.service-page .service-hero-panel::after { width: 285px; height: 285px; border-color: rgba(255,255,255,.15); }
+.service-page .service-panel-top,
+.service-page .service-panel-bottom { position: relative; z-index: 1; display:flex; justify-content:space-between; gap:12px; color:#aaa; font-size:10px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+.service-page .service-panel-mark { position:relative; z-index:1; width:100%; max-width:190px; max-height:100px; margin:auto; object-fit:contain; }
+.service-page .service-panel-bottom strong { color:#fff; }
+
+.service-page .service-intro-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:clamp(35px,8vw,100px); align-items:start; }
+.service-page .service-statement { margin:0; color:#fff; font-size:clamp(27px,3.7vw,46px); line-height:1.15; letter-spacing:-.045em; }
+.service-page .service-statement span { color:var(--inner-red); }
+.service-page .service-intro-copy p { margin:0 0 20px; color:#bdbdbd; font-size:15px; line-height:1.95; }
+.service-page .service-intro-copy p strong { color:#fff; }
+
+.service-page .service-capability-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:38px; }
+.service-page .service-capability-card { min-height:190px; padding:26px; border:1px solid var(--inner-line); background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012)); }
+.service-page .service-capability-card .card-index { color:#ff4658; font-size:10px; font-weight:800; letter-spacing:.17em; }
+.service-page .service-capability-card h3 { margin:28px 0 9px; color:#fff; font-size:20px; }
+.service-page .service-capability-card p { margin:0; color:#aaa; font-size:13px; line-height:1.85; }
+
+.service-page .service-gallery-intro { max-width:720px; margin:18px 0 0; color:#aaa; font-size:14px; line-height:1.9; }
+.service-page .service-gallery-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:38px; }
+.service-page .service-gallery-item { min-width:0; margin:0; overflow:hidden; border:1px solid var(--inner-line); background:#101010; }
+.service-page .service-gallery-item img { display:block; width:100%; aspect-ratio:16/10; object-fit:cover; transition:transform .45s ease; }
+.service-page .service-gallery-item:hover img,
+.service-page .service-gallery-item:focus-within img { transform:scale(1.035); }
+.service-page .service-gallery-item figcaption { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 14px; color:#c9c9c9; font-size:11px; letter-spacing:.08em; }
+.service-page .service-gallery-item figcaption span:last-child { color:#ff4658; font-weight:800; }
+
+.service-page .service-process-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:38px; }
+.service-page .service-process-card { min-height:190px; padding:23px; border-top:2px solid var(--inner-red); background:#111; }
+.service-page .service-process-card .card-index { color:#ff4658; font-size:10px; font-weight:800; letter-spacing:.16em; }
+.service-page .service-process-card h3 { margin:28px 0 9px; color:#fff; font-size:18px; }
+.service-page .service-process-card p { margin:0; color:#aaa; font-size:12px; line-height:1.8; }
+
+.service-page .service-related-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; }
+.service-page .service-related-links a { display:inline-flex; align-items:center; gap:14px; padding:12px 15px; border:1px solid var(--inner-line); color:#ccc; font-size:12px; transition:border-color .2s ease,color .2s ease; }
+.service-page .service-related-links a:hover { border-color:var(--inner-red); color:#fff; }
+.service-page .service-related-links span { color:#ff4658; }
+
+@media (max-width:900px) {
+  .service-page .service-hero-layout { grid-template-columns:1fr; }
+  .service-page .service-hero-panel { min-height:260px; }
+  .service-page .service-process-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:650px) {
+  .service-page .service-intro-grid { grid-template-columns:1fr; gap:24px; }
+  .service-page .service-capability-grid,
+  .service-page .service-gallery-grid,
+  .service-page .service-process-grid { grid-template-columns:1fr; }
+  .service-page .service-gallery-item img { aspect-ratio:16/11; }
+  .service-page .service-hero-panel { min-height:230px; padding:22px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .service-page *, .service-page *::before, .service-page *::after { scroll-behavior:auto !important; transition-duration:.01ms !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; }
+}
