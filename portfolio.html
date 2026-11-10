@@ -1,709 +1,561 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portfolio | AUTOTUBE CREW STUDIO</title>
-
-    <meta name="description" content="Explore the creative capabilities of AUTOTUBE CREW STUDIO across 3D animation, CGI, VFX, film production, digital platforms and creative content.">
-
-    <link rel="stylesheet" href="./assets/css/style.css?v=3">
-
-    <style>
-        .portfolio-intro {
-            padding: 100px 8%;
-            max-width: 1250px;
-            margin: auto;
-        }
-
-        .portfolio-intro .intro-label {
-            color: var(--red);
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
-        }
-
-        .portfolio-intro h2 {
-            font-size: clamp(30px, 5vw, 52px);
-            line-height: 1.15;
-            margin-bottom: 25px;
-        }
-
-        .portfolio-intro h2 span {
-            color: var(--red);
-        }
-
-        .portfolio-intro > p:last-child {
-            color: var(--grey);
-            max-width: 720px;
-            line-height: 1.9;
-        }
-
-        .portfolio-section {
-            padding: 85px 8%;
-            background: var(--black);
-        }
-
-        .portfolio-heading {
-            max-width: 1250px;
-            margin: 0 auto 45px;
-        }
-
-        .portfolio-heading .eyebrow {
-            color: var(--red);
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 3px;
-        }
-
-        .portfolio-heading h2 {
-            font-size: clamp(30px, 4vw, 46px);
-        }
-
-        .portfolio-heading h2 span {
-            color: var(--red);
-        }
-
-        .portfolio-heading p {
-            color: var(--grey);
-            margin-top: 12px;
-            max-width: 650px;
-        }
-
-        .portfolio-grid {
-            max-width: 1250px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-        }
-
-        .portfolio-card {
-            display: block;
-            background: var(--dark-grey);
-            border: 1px solid #292929;
-            overflow: hidden;
-            transition: 0.3s ease;
-        }
-
-        .portfolio-card:hover {
-            transform: translateY(-8px);
-            border-color: var(--red);
-        }
-
-        .portfolio-visual {
-            height: 230px;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .portfolio-visual::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                135deg,
-                rgba(0,0,0,0.1),
-                rgba(0,0,0,0.7)
-            );
-        }
-
-        .portfolio-visual .visual-number {
-            position: relative;
-            z-index: 1;
-            font-size: 75px;
-            font-weight: 900;
-            color: rgba(255,255,255,0.15);
-            letter-spacing: -5px;
-        }
-
-        .visual-animation {
-            background:
-                radial-gradient(circle at 70% 30%,
-                    rgba(229,9,32,0.7), transparent 35%),
-                linear-gradient(135deg,#292929,#080808);
-        }
-
-        .visual-cgi {
-            background:
-                radial-gradient(circle at 30% 40%,
-                    rgba(150,150,150,0.4), transparent 35%),
-                linear-gradient(135deg,#373737,#090909);
-        }
-
-        .visual-vfx {
-            background:
-                radial-gradient(circle at 60% 40%,
-                    rgba(229,9,32,0.6), transparent 40%),
-                linear-gradient(135deg,#171717,#350b10);
-        }
-
-        .visual-film {
-            background:
-                radial-gradient(circle at 75% 35%,
-                    rgba(180,100,50,0.45), transparent 40%),
-                linear-gradient(135deg,#292018,#080808);
-        }
-
-        .visual-digital {
-            background:
-                radial-gradient(circle at 50% 50%,
-                    rgba(50,90,160,0.45), transparent 45%),
-                linear-gradient(135deg,#1c2635,#080808);
-        }
-
-        .visual-creative {
-            background:
-                radial-gradient(circle at 30% 40%,
-                    rgba(229,9,32,0.5), transparent 40%),
-                linear-gradient(135deg,#252525,#080808);
-        }
-
-        .visual-tag {
-            position: absolute;
-            bottom: 18px;
-            left: 20px;
-            z-index: 2;
-            color: #fff;
-            font-size: 10px;
-            font-weight: 800;
-            letter-spacing: 2px;
-        }
-
-        .portfolio-info {
-            padding: 25px;
-        }
-
-        .portfolio-info .category {
-            color: var(--red);
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 2px;
-        }
-
-        .portfolio-info h3 {
-            font-size: 20px;
-            margin: 12px 0;
-        }
-
-        .portfolio-info p {
-            color: var(--grey);
-            font-size: 14px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .portfolio-link {
-            color: #fff;
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-
-        .portfolio-card:hover .portfolio-link {
-            color: var(--red);
-        }
-
-        .portfolio-note {
-            max-width: 1250px;
-            margin: 35px auto 0;
-            padding: 22px;
-            border-left: 3px solid var(--red);
-            background: #151515;
-            color: var(--grey);
-            font-size: 13px;
-            line-height: 1.8;
-        }
-
-        .portfolio-approach {
-            padding: 100px 8%;
-            text-align: center;
-            background: var(--dark);
-        }
-
-        .portfolio-approach h2 {
-            font-size: clamp(30px, 5vw, 48px);
-            margin-bottom: 22px;
-        }
-
-        .portfolio-approach h2 span {
-            color: var(--red);
-        }
-
-        .portfolio-approach p {
-            color: var(--grey);
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.9;
-        }
-
-        .portfolio-cta {
-            text-align: center;
-            padding: 85px 8%;
-        }
-
-        .portfolio-cta h2 {
-            font-size: clamp(30px, 5vw, 46px);
-            margin-bottom: 20px;
-        }
-
-        .portfolio-cta h2 span {
-            color: var(--red);
-        }
-
-        .portfolio-cta p {
-            color: var(--grey);
-            max-width: 650px;
-            margin: 0 auto 28px;
-            line-height: 1.8;
-        }
-
-        @media (max-width: 950px) {
-            .portfolio-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .portfolio-section {
-                padding: 65px 6%;
-            }
-
-            .portfolio-intro {
-                padding: 65px 6%;
-            }
-
-            .portfolio-visual {
-                height: 210px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Explore the AUTOTUBE CREW STUDIO visual portfolio across VFX, 3D animation, CGI, 3D assets, advertising and feature-film imagery.">
+  <meta name="robots" content="index, follow">
+  <title>Portfolio | AUTOTUBE CREW STUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+  <link rel="stylesheet" href="./assets/css/portfolio.css?v=1">
 </head>
+<body class="inner-page portfolio-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<body>
+  <header class="header site-header">
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
+    </a>
+    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" aria-current="page">Our Work</a>
+      <a href="showreel.html">Showreel</a>
+      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+  </header>
 
-    <!-- HEADER -->
-    <header class="header">
-
-        <a href="index.html" class="logo">
-            AUTOTUBE CREW
-        </a>
-
-        <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <button
-    class="menu-toggle"
-    type="button"
-    aria-label="Open navigation"
-    aria-expanded="false">
-    ☰
-</button>
-
-    </header>
-
-
-    <!-- HERO -->
-    <section class="hero">
-
-        <div class="hero-background"></div>
-        <div class="hero-circle"></div>
-
-        <div class="hero-content">
-
-            <p class="eyebrow">OUR CREATIVE WORLD</p>
-
-            <h1>
-                OUR <span>PORTFOLIO</span>
-            </h1>
-
-            <p>
-                Exploring creative disciplines, cinematic
-                production and digital capabilities
-                through imagination and technology.
-            </p>
-
-            <a href="#creative-work" class="button-primary">
-                EXPLORE OUR WORK
-            </a>
-
+  <main id="main-content">
+    <section class="inner-hero portfolio-hero" aria-labelledby="portfolio-title">
+      <div class="inner-container inner-hero-layout">
+        <div>
+          <p class="eyebrow">SELECTED STUDIO VISUALS</p>
+          <h1 id="portfolio-title">Visual worlds.<br><span>Made to move.</span></h1>
+          <p class="inner-hero-copy">Explore visual material across our creative disciplines, from 3D animation and CGI to VFX, digital assets, advertising and feature-film imagery.</p>
+          <div class="inner-hero-actions">
+            <a class="button-primary" href="#portfolio-gallery">Explore the gallery <span aria-hidden="true">↓</span></a>
+            <a class="button-secondary" href="showreel.html">Watch the showreel <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-
-    </section>
-
-
-    <!-- INTRODUCTION -->
-    <section class="portfolio-intro">
-
-        <p class="intro-label">
-            IMAGINATION INTO REALITY
-        </p>
-
-        <h2>
-            BUILT AROUND
-            <span>CREATIVE VISION.</span>
-        </h2>
-
-        <p>
-            AUTOTUBE CREW STUDIO brings together
-            animation, visual effects, filmmaking
-            and digital technology.
-
-            Our creative disciplines represent
-            the production capabilities and
-            directions through which we develop
-            ambitious visual and digital projects.
-        </p>
-
-    </section>
-
-
-    <!-- CREATIVE SHOWCASE -->
-    <section class="portfolio-section" id="creative-work">
-
-        <div class="portfolio-heading">
-
-            <p class="eyebrow">
-                OUR CREATIVE CAPABILITIES
-            </p>
-
-            <h2>
-                EXPLORE OUR
-                <span>DISCIPLINES.</span>
-            </h2>
-
-            <p>
-                Discover the different creative and
-                production areas of our studio.
-            </p>
-
+        <div class="portfolio-hero-visual">
+          <img src="assets/images/homepage/darkfantasy.jpg.jpg" alt="Dark Fantasy environment artwork" width="960" height="600" fetchpriority="high">
+          <div class="portfolio-hero-overlay"><span>CREATIVE PRODUCTION</span><strong>PRE TO POST</strong></div>
+          <span class="portfolio-hero-index">AUTOTUBE / VISUAL ARCHIVE</span>
         </div>
-
-
-        <div class="portfolio-grid">
-
-
-            <!-- 3D ANIMATION -->
-            <a href="3d-animation.html"
-               class="portfolio-card"
-               aria-label="Explore 3D Animation">
-
-                <div class="portfolio-visual visual-animation">
-
-                    <span class="visual-number">01</span>
-
-                    <span class="visual-tag">
-                        ANIMATION & STORYTELLING
-                    </span>
-
-                </div>
-
-                <div class="portfolio-info">
-
-                    <span class="category">
-                        3D PRODUCTION
-                    </span>
-
-                    <h3>3D Animation</h3>
-
-                    <p>
-                        Character animation, cinematic sequences,
-                        digital environments and animated
-                        visual storytelling.
-                    </p>
-
-                    <span class="portfolio-link">
-                        EXPLORE CAPABILITY →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- CGI -->
-            <a href="cgi.html"
-               class="portfolio-card"
-               aria-label="Explore CGI and Visualization">
-
-                <div class="portfolio-visual visual-cgi">
-
-                    <span class="visual-number">02</span>
-
-                    <span class="visual-tag">
-                        DIGITAL VISUALIZATION
-                    </span>
-
-                </div>
-
-                <div class="portfolio-info">
-
-                    <span class="category">
-                        CGI & RENDERING
-                    </span>
-
-                    <h3>CGI & Visualization</h3>
-
-                    <p>
-                        Photorealistic rendering, product
-                        visualization and detailed digital
-                        environments.
-                    </p>
-
-                    <span class="portfolio-link">
-                        EXPLORE CAPABILITY →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- VFX -->
-            <a href="vfx.html"
-               class="portfolio-card"
-               aria-label="Explore Visual Effects">
-
-                <div class="portfolio-visual visual-vfx">
-
-                    <span class="visual-number">03</span>
-
-                    <span class="visual-tag">
-                        CINEMATIC EFFECTS
-                    </span>
-
-                </div>
-
-                <div class="portfolio-info">
-
-                    <span class="category">
-                        VISUAL EFFECTS
-                    </span>
-
-                    <h3>Visual Effects</h3>
-
-                    <p>
-                        Digital compositing, CGI integration,
-                        environment creation and
-                        cinematic enhancements.
-                    </p>
-
-                    <span class="portfolio-link">
-                        EXPLORE CAPABILITY →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- FILM PRODUCTION -->
-            <a href="film-production.html"
-               class="portfolio-card"
-               aria-label="Explore Film Production">
-
-                <div class="portfolio-visual visual-film">
-
-                    <span class="visual-number">04</span>
-
-                    <span class="visual-tag">
-                        CINEMATIC STORYTELLING
-                    </span>
-
-                </div>
-
-                <div class="portfolio-info">
-
-                    <span class="category">
-                        FILM PRODUCTION
-                    </span>
-
-                    <h3>Film & Video Production</h3>
-
-                    <p>
-                        Filmmaking, cinematography,
-                        creative direction and
-                        professional post-production.
-                    </p>
-
-                    <span class="portfolio-link">
-                        EXPLORE CAPABILITY →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- DIGITAL PLATFORMS -->
-            <a href="digital-platforms.html"
-               class="portfolio-card"
-               aria-label="Explore Digital Platforms">
-
-                <div class="portfolio-visual visual-digital">
-
-                    <span class="visual-number">05</span>
-
-                    <span class="visual-tag">
-                        DIGITAL INNOVATION
-                    </span>
-
-                </div>
-
-                <div class="portfolio-info">
-
-                    <span class="category">
-                        DIGITAL TECHNOLOGY
-                    </span>
-
-                    <h3>Digital Platforms</h3>
-
-                    <p>
-                        Website development, commercial
-                        portals, web applications and
-                        digital experiences.
-                    </p>
-
-                    <span class="portfolio-link">
-                        EXPLORE CAPABILITY →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- CREATIVE CONTENT -->
-            <a href="creative-content.html"
-               class="portfolio-card"
-               aria-label="Explore Creative Content">
-
-                <div class="portfolio-visual visual-creative">
-
-                    <span class="visual-number">06</span>
-
-                    <span class="visual-tag">
-                        CREATIVE COMMUNICATION
-                    </span>
-
-                </div>
-
-                <div class="portfolio-info">
-
-                    <span class="category">
-                        CREATIVE CONTENT
-                    </span>
-
-                    <h3>Creative Content</h3>
-
-                    <p>
-                        Brand storytelling, advertising
-                        campaigns, motion graphics and
-                        digital content production.
-                    </p>
-
-                    <span class="portfolio-link">
-                        EXPLORE CAPABILITY →
-                    </span>
-
-                </div>
-
-            </a>
-
-
+      </div>
+    </section>
+
+    <section class="portfolio-intro inner-section" id="portfolio-gallery">
+      <div class="inner-container portfolio-intro-layout">
+        <div class="section-kicker"><span>01</span><span>Studio Portfolio</span></div>
+        <div class="portfolio-intro-copy">
+          <h2>A range of disciplines.<br><span>One visual language.</span></h2>
+          <p>Browse the studio's visual material by discipline. Each image opens at its original repository asset, while the category links below make it easy to move through the collection.</p>
         </div>
+      </div>
+      <nav class="portfolio-category-nav inner-container" aria-label="Portfolio categories">
+        <a href="#vfx">VFX</a>
+        <a href="#animation">3D Animation</a>
+        <a href="#cgi">CGI</a>
+        <a href="#assets">3D Assets</a>
+        <a href="#advertising">Advertising</a>
+        <a href="#films">Feature Films</a>
+      </nav>
+    </section>
 
-
-        <!-- TRANSPARENCY NOTE -->
-        <div class="portfolio-note">
-
-            <strong>Portfolio information:</strong>
-
-            These cards present our creative capabilities
-            and service areas. Individual project case studies,
-            production stills and approved client work
-            will be added as they become available.
-
+    <section class="portfolio-category inner-section" id="vfx" aria-labelledby="heading-vfx">
+      <div class="inner-container">
+        <div class="portfolio-category-heading">
+          <div>
+            <p class="eyebrow">01 / VISUAL EFFECTS</p>
+            <h2 id="heading-vfx">Visual Effects</h2>
+          </div>
+          <p>Visual effects imagery and cinematic visual development.</p>
         </div>
-
+        <div class="portfolio-gallery-grid">
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/vfx/vfx-01.png.png" target="_blank" rel="noopener" aria-label="Open Visual Effects portfolio visual 01 at full size">
+              <img src="assets/images/portfolio/vfx/vfx-01.png.png" alt="Visual Effects portfolio visual 01" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>01</span><span>VISUAL 01</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/vfx/vfx-02.png.png" target="_blank" rel="noopener" aria-label="Open Visual Effects portfolio visual 02 at full size">
+              <img src="assets/images/portfolio/vfx/vfx-02.png.png" alt="Visual Effects portfolio visual 02" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>01</span><span>VISUAL 02</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/vfx/vfx-03.png.png" target="_blank" rel="noopener" aria-label="Open Visual Effects portfolio visual 03 at full size">
+              <img src="assets/images/portfolio/vfx/vfx-03.png.png" alt="Visual Effects portfolio visual 03" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>01</span><span>VISUAL 03</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/vfx/vfx-04.png.png" target="_blank" rel="noopener" aria-label="Open Visual Effects portfolio visual 04 at full size">
+              <img src="assets/images/portfolio/vfx/vfx-04.png.png" alt="Visual Effects portfolio visual 04" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>01</span><span>VISUAL 04</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/vfx/vfx-05.png.png" target="_blank" rel="noopener" aria-label="Open Visual Effects portfolio visual 05 at full size">
+              <img src="assets/images/portfolio/vfx/vfx-05.png.png" alt="Visual Effects portfolio visual 05" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>01</span><span>VISUAL 05</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/vfx/vfx-06.png.png" target="_blank" rel="noopener" aria-label="Open Visual Effects portfolio visual 06 at full size">
+              <img src="assets/images/portfolio/vfx/vfx-06.png.png" alt="Visual Effects portfolio visual 06" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>01</span><span>VISUAL 06</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/vfx/vfx-07.png.png" target="_blank" rel="noopener" aria-label="Open Visual Effects portfolio visual 07 at full size">
+              <img src="assets/images/portfolio/vfx/vfx-07.png.png" alt="Visual Effects portfolio visual 07" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>01</span><span>VISUAL 07</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/vfx/vfx-08.png.png" target="_blank" rel="noopener" aria-label="Open Visual Effects portfolio visual 08 at full size">
+              <img src="assets/images/portfolio/vfx/vfx-08.png.png" alt="Visual Effects portfolio visual 08" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>01</span><span>VISUAL 08</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/vfx/vfx-09.png.png" target="_blank" rel="noopener" aria-label="Open Visual Effects portfolio visual 09 at full size">
+              <img src="assets/images/portfolio/vfx/vfx-09.png.png" alt="Visual Effects portfolio visual 09" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>01</span><span>VISUAL 09</span></figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
 
-
-    <!-- CREATIVE PHILOSOPHY -->
-    <section class="portfolio-approach">
-
-        <p class="eyebrow">
-            BEYOND THE ORDINARY
-        </p>
-
-        <h2>
-            EVERY FRAME HAS
-            <span>A PURPOSE.</span>
-        </h2>
-
-        <p>
-            We believe powerful creative work starts
-            with a strong idea. Our approach combines
-            imagination, technical expertise and
-            attention to detail at every stage
-            of production.
-        </p>
-
+    <section class="portfolio-category inner-section" id="animation" aria-labelledby="heading-animation">
+      <div class="inner-container">
+        <div class="portfolio-category-heading">
+          <div>
+            <p class="eyebrow">02 / 3D ANIMATION</p>
+            <h2 id="heading-animation">3D Animation</h2>
+          </div>
+          <p>Character, environment and animation-focused visual work.</p>
+        </div>
+        <div class="portfolio-gallery-grid">
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-01.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 01 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-01.png.png" alt="3D Animation portfolio visual 01" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 01</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-02.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 02 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-02.png.png" alt="3D Animation portfolio visual 02" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 02</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-03.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 03 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-03.png.png" alt="3D Animation portfolio visual 03" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 03</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-04.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 04 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-04.png.png" alt="3D Animation portfolio visual 04" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 04</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-05.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 05 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-05.png.png" alt="3D Animation portfolio visual 05" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 05</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-06.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 06 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-06.png.png" alt="3D Animation portfolio visual 06" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 06</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-07.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 07 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-07.png.png" alt="3D Animation portfolio visual 07" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 07</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-08.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 08 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-08.png.png" alt="3D Animation portfolio visual 08" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 08</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-09.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 09 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-09.png.png" alt="3D Animation portfolio visual 09" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 09</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3danim/3d-animation-10.png.png" target="_blank" rel="noopener" aria-label="Open 3D Animation portfolio visual 10 at full size">
+              <img src="assets/images/portfolio/3danim/3d-animation-10.png.png" alt="3D Animation portfolio visual 10" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>02</span><span>VISUAL 10</span></figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
 
-
-    <!-- PROJECT ENQUIRY -->
-    <section class="portfolio-cta">
-
-        <p class="eyebrow">
-            LET'S BUILD SOMETHING EXTRAORDINARY
-        </p>
-
-        <h2>
-            HAVE A <span>PROJECT?</span>
-        </h2>
-
-        <p>
-            Whether you are developing a film,
-            animation, visual campaign or digital
-            platform, let's discuss your vision.
-        </p>
-
-        <a href="contact.html" class="button-primary">
-            START A CONVERSATION
-        </a>
-
+    <section class="portfolio-category inner-section" id="cgi" aria-labelledby="heading-cgi">
+      <div class="inner-container">
+        <div class="portfolio-category-heading">
+          <div>
+            <p class="eyebrow">03 / CGI</p>
+            <h2 id="heading-cgi">CGI & Visualisation</h2>
+          </div>
+          <p>Computer-generated imagery, digital scenes and visualisation.</p>
+        </div>
+        <div class="portfolio-gallery-grid">
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/cgi/cgi-01.png.png" target="_blank" rel="noopener" aria-label="Open CGI & Visualisation portfolio visual 01 at full size">
+              <img src="assets/images/portfolio/cgi/cgi-01.png.png" alt="CGI & Visualisation portfolio visual 01" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>03</span><span>VISUAL 01</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/cgi/cgi-02.png.png" target="_blank" rel="noopener" aria-label="Open CGI & Visualisation portfolio visual 02 at full size">
+              <img src="assets/images/portfolio/cgi/cgi-02.png.png" alt="CGI & Visualisation portfolio visual 02" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>03</span><span>VISUAL 02</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/cgi/cgi-03.png.png" target="_blank" rel="noopener" aria-label="Open CGI & Visualisation portfolio visual 03 at full size">
+              <img src="assets/images/portfolio/cgi/cgi-03.png.png" alt="CGI & Visualisation portfolio visual 03" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>03</span><span>VISUAL 03</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/cgi/cgi-04.png.png" target="_blank" rel="noopener" aria-label="Open CGI & Visualisation portfolio visual 04 at full size">
+              <img src="assets/images/portfolio/cgi/cgi-04.png.png" alt="CGI & Visualisation portfolio visual 04" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>03</span><span>VISUAL 04</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/cgi/cgi-05.png.png" target="_blank" rel="noopener" aria-label="Open CGI & Visualisation portfolio visual 05 at full size">
+              <img src="assets/images/portfolio/cgi/cgi-05.png.png" alt="CGI & Visualisation portfolio visual 05" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>03</span><span>VISUAL 05</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/cgi/cgi-06.png.png" target="_blank" rel="noopener" aria-label="Open CGI & Visualisation portfolio visual 06 at full size">
+              <img src="assets/images/portfolio/cgi/cgi-06.png.png" alt="CGI & Visualisation portfolio visual 06" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>03</span><span>VISUAL 06</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/cgi/cgi-07.png.png" target="_blank" rel="noopener" aria-label="Open CGI & Visualisation portfolio visual 07 at full size">
+              <img src="assets/images/portfolio/cgi/cgi-07.png.png" alt="CGI & Visualisation portfolio visual 07" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>03</span><span>VISUAL 07</span></figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
 
+    <section class="portfolio-category inner-section" id="assets" aria-labelledby="heading-assets">
+      <div class="inner-container">
+        <div class="portfolio-category-heading">
+          <div>
+            <p class="eyebrow">04 / 3D ASSETS</p>
+            <h2 id="heading-assets">3D Assets & Characters</h2>
+          </div>
+          <p>Digital characters and 3D asset imagery.</p>
+        </div>
+        <div class="portfolio-gallery-grid">
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3dassets/3d-character-asset-01.jpeg.jpeg" target="_blank" rel="noopener" aria-label="Open 3D Assets & Characters portfolio visual 01 at full size">
+              <img src="assets/images/portfolio/3dassets/3d-character-asset-01.jpeg.jpeg" alt="3D Assets & Characters portfolio visual 01" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>04</span><span>VISUAL 01</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3dassets/3d-character-asset-02.jpeg.jpeg" target="_blank" rel="noopener" aria-label="Open 3D Assets & Characters portfolio visual 02 at full size">
+              <img src="assets/images/portfolio/3dassets/3d-character-asset-02.jpeg.jpeg" alt="3D Assets & Characters portfolio visual 02" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>04</span><span>VISUAL 02</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3dassets/3d-character-asset-03.jpeg.jpeg" target="_blank" rel="noopener" aria-label="Open 3D Assets & Characters portfolio visual 03 at full size">
+              <img src="assets/images/portfolio/3dassets/3d-character-asset-03.jpeg.jpeg" alt="3D Assets & Characters portfolio visual 03" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>04</span><span>VISUAL 03</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3dassets/3d-character-asset-04.jpeg.jpeg" target="_blank" rel="noopener" aria-label="Open 3D Assets & Characters portfolio visual 04 at full size">
+              <img src="assets/images/portfolio/3dassets/3d-character-asset-04.jpeg.jpeg" alt="3D Assets & Characters portfolio visual 04" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>04</span><span>VISUAL 04</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3dassets/3d-character-asset-05.jpeg.jpeg" target="_blank" rel="noopener" aria-label="Open 3D Assets & Characters portfolio visual 05 at full size">
+              <img src="assets/images/portfolio/3dassets/3d-character-asset-05.jpeg.jpeg" alt="3D Assets & Characters portfolio visual 05" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>04</span><span>VISUAL 05</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3dassets/3d-character-asset-06.jpeg.jpeg" target="_blank" rel="noopener" aria-label="Open 3D Assets & Characters portfolio visual 06 at full size">
+              <img src="assets/images/portfolio/3dassets/3d-character-asset-06.jpeg.jpeg" alt="3D Assets & Characters portfolio visual 06" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>04</span><span>VISUAL 06</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/3dassets/3d-character-asset-07.jpeg.jpeg" target="_blank" rel="noopener" aria-label="Open 3D Assets & Characters portfolio visual 07 at full size">
+              <img src="assets/images/portfolio/3dassets/3d-character-asset-07.jpeg.jpeg" alt="3D Assets & Characters portfolio visual 07" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>04</span><span>VISUAL 07</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <section class="portfolio-category inner-section" id="advertising" aria-labelledby="heading-advertising">
+      <div class="inner-container">
+        <div class="portfolio-category-heading">
+          <div>
+            <p class="eyebrow">05 / ADVERTISING</p>
+            <h2 id="heading-advertising">Advertising</h2>
+          </div>
+          <p>Advertising and commercial visual material.</p>
+        </div>
+        <div class="portfolio-gallery-grid">
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/ads/advertising-01.jpeg.jpeg" target="_blank" rel="noopener" aria-label="Open Advertising portfolio visual 01 at full size">
+              <img src="assets/images/portfolio/ads/advertising-01.jpeg.jpeg" alt="Advertising portfolio visual 01" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>05</span><span>VISUAL 01</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/ads/advertising-02.png.png" target="_blank" rel="noopener" aria-label="Open Advertising portfolio visual 02 at full size">
+              <img src="assets/images/portfolio/ads/advertising-02.png.png" alt="Advertising portfolio visual 02" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>05</span><span>VISUAL 02</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/ads/advertising-03.png.png" target="_blank" rel="noopener" aria-label="Open Advertising portfolio visual 03 at full size">
+              <img src="assets/images/portfolio/ads/advertising-03.png.png" alt="Advertising portfolio visual 03" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>05</span><span>VISUAL 03</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/ads/advertising-04.png.png" target="_blank" rel="noopener" aria-label="Open Advertising portfolio visual 04 at full size">
+              <img src="assets/images/portfolio/ads/advertising-04.png.png" alt="Advertising portfolio visual 04" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>05</span><span>VISUAL 04</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/ads/advertising-05.png.png" target="_blank" rel="noopener" aria-label="Open Advertising portfolio visual 05 at full size">
+              <img src="assets/images/portfolio/ads/advertising-05.png.png" alt="Advertising portfolio visual 05" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>05</span><span>VISUAL 05</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/ads/advertising-06.png.png" target="_blank" rel="noopener" aria-label="Open Advertising portfolio visual 06 at full size">
+              <img src="assets/images/portfolio/ads/advertising-06.png.png" alt="Advertising portfolio visual 06" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>05</span><span>VISUAL 06</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-        <p>
-            © 2026 AUTOTUBE CREW STUDIO.
-            ALL RIGHTS RESERVED.
-        </p>
+    <section class="portfolio-category inner-section" id="films" aria-labelledby="heading-films">
+      <div class="inner-container">
+        <div class="portfolio-category-heading">
+          <div>
+            <p class="eyebrow">06 / FEATURE FILMS</p>
+            <h2 id="heading-films">Feature Films</h2>
+          </div>
+          <p>Feature-film visual material and cinematic imagery.</p>
+        </div>
+        <div class="portfolio-gallery-grid">
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-01.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 01 at full size">
+              <img src="assets/images/portfolio/films/feature-film-01.png.png" alt="Feature Films portfolio visual 01" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 01</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-02.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 02 at full size">
+              <img src="assets/images/portfolio/films/feature-film-02.png.png" alt="Feature Films portfolio visual 02" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 02</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-03.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 03 at full size">
+              <img src="assets/images/portfolio/films/feature-film-03.png.png" alt="Feature Films portfolio visual 03" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 03</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-04.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 04 at full size">
+              <img src="assets/images/portfolio/films/feature-film-04.png.png" alt="Feature Films portfolio visual 04" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 04</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-05.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 05 at full size">
+              <img src="assets/images/portfolio/films/feature-film-05.png.png" alt="Feature Films portfolio visual 05" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 05</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-06.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 06 at full size">
+              <img src="assets/images/portfolio/films/feature-film-06.png.png" alt="Feature Films portfolio visual 06" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 06</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-07.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 07 at full size">
+              <img src="assets/images/portfolio/films/feature-film-07.png.png" alt="Feature Films portfolio visual 07" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 07</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-08.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 08 at full size">
+              <img src="assets/images/portfolio/films/feature-film-08.png.png" alt="Feature Films portfolio visual 08" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 08</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-09.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 09 at full size">
+              <img src="assets/images/portfolio/films/feature-film-09.png.png" alt="Feature Films portfolio visual 09" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 09</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-10.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 10 at full size">
+              <img src="assets/images/portfolio/films/feature-film-10.png.png" alt="Feature Films portfolio visual 10" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 10</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-11.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 11 at full size">
+              <img src="assets/images/portfolio/films/feature-film-11.png.png" alt="Feature Films portfolio visual 11" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 11</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-12.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 12 at full size">
+              <img src="assets/images/portfolio/films/feature-film-12.png.png" alt="Feature Films portfolio visual 12" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 12</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-13.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 13 at full size">
+              <img src="assets/images/portfolio/films/feature-film-13.png.png" alt="Feature Films portfolio visual 13" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 13</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-14.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 14 at full size">
+              <img src="assets/images/portfolio/films/feature-film-14.png.png" alt="Feature Films portfolio visual 14" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 14</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-15.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 15 at full size">
+              <img src="assets/images/portfolio/films/feature-film-15.png.png" alt="Feature Films portfolio visual 15" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 15</span></figcaption>
+          </figure>
+          <figure class="portfolio-gallery-item">
+            <a class="portfolio-image-link" href="assets/images/portfolio/films/feature-film-16.png.png" target="_blank" rel="noopener" aria-label="Open Feature Films portfolio visual 16 at full size">
+              <img src="assets/images/portfolio/films/feature-film-16.png.png" alt="Feature Films portfolio visual 16" loading="lazy" decoding="async" width="900" height="620">
+              <span class="portfolio-image-open" aria-hidden="true">↗</span>
+            </a>
+            <figcaption><span>06</span><span>VISUAL 16</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-        <p>
-            CREATIVITY. TECHNOLOGY. STORYTELLING.
-        </p>
+    <section class="inner-cta portfolio-cta" aria-labelledby="portfolio-cta-title">
+      <div class="inner-container">
+        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+        <h2 id="portfolio-cta-title">Let's create the<br><span>next visual world.</span></h2>
+        <p>Tell us about your creative brief, production needs or collaboration opportunity.</p>
+        <a class="button-primary" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-    </footer>
-<script src="./assets/js/main.js" defer></script>
+  <footer class="site-footer">
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
+    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
+    <div class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html">Contact</a></div>
+    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
