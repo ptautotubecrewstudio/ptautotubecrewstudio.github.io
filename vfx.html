@@ -1,435 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Visual Effects (VFX) | AUTOTUBE CREW STUDIO</title>
-
-    <meta name="description" content="Explore cinematic visual effects, compositing, CGI integration and digital environments at AUTOTUBE CREW STUDIO.">
-
-    <link rel="stylesheet" href="./assets/css/style.css?v=3">
-
-    <style>
-        .service-detail {
-            padding: 75px 8%;
-            max-width: 1250px;
-            margin: auto;
-        }
-
-        .service-detail .intro {
-            background: transparent;
-            padding: 0;
-            color: var(--red);
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
-        }
-
-        .service-detail h2 {
-            font-size: clamp(28px, 4vw, 46px);
-            margin-bottom: 22px;
-        }
-
-        .service-detail h2 span,
-        .service-cta h2 span {
-            color: var(--red);
-        }
-
-        .service-detail > p:not(.intro) {
-            color: var(--grey);
-            line-height: 1.8;
-        }
-
-        .detail-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .detail-card {
-            background: var(--dark-grey);
-            border: 1px solid #333;
-            padding: 30px;
-            transition: 0.3s;
-        }
-
-        .detail-card:hover {
-            border-color: var(--red);
-            transform: translateY(-5px);
-        }
-
-        .detail-card .number,
-        .process-step .number {
-            color: var(--red);
-            font-size: 13px;
-            letter-spacing: 2px;
-        }
-
-        .detail-card h3 {
-            margin: 15px 0;
-            font-size: 22px;
-        }
-
-        .detail-card p {
-            color: var(--grey);
-            line-height: 1.8;
-        }
-
-        .process-list {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-            margin-top: 35px;
-        }
-
-        .process-step {
-            background: var(--dark-grey);
-            border-top: 3px solid var(--red);
-            padding: 24px;
-        }
-
-        .process-step h3 {
-            margin: 12px 0;
-        }
-
-        .process-step p {
-            color: var(--grey);
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        .service-cta {
-            background: var(--dark);
-            text-align: center;
-            padding: 80px 8%;
-        }
-
-        .service-cta h2 {
-            font-size: clamp(30px, 5vw, 48px);
-            margin-bottom: 20px;
-        }
-
-        .service-cta p {
-            color: var(--grey);
-            line-height: 1.8;
-            max-width: 650px;
-            margin: 0 auto 28px;
-        }
-
-        @media (max-width: 768px) {
-            .detail-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .process-list {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .service-detail {
-                padding: 55px 6%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .process-list {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Explore AUTOTUBE CREW STUDIO visual effects capabilities, including compositing, CGI integration, digital environments, cleanup and cinematic effects workflows.">
+  <meta name="robots" content="index, follow">
+  <title>Visual Effects (VFX) | AUTOTUBE CREW STUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+  <link rel="stylesheet" href="./assets/css/service-pages.css?v=1">
 </head>
+<body class="inner-page service-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<body>
+  <header class="header site-header">
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
+    </a>
+    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="showreel.html">Showreel</a>
+      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+  </header>
 
-    <!-- HEADER -->
-    <header class="header">
-        <a href="index.html" class="logo">AUTOTUBE CREW</a>
-
-        <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <button
-    class="menu-toggle"
-    type="button"
-    aria-label="Open navigation"
-    aria-expanded="false">
-    ☰
-</button>
-    </header>
-
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-circle"></div>
-
-        <div class="hero-content">
-
-            <p class="eyebrow">OUR VISUAL EFFECTS CAPABILITIES</p>
-
-            <h1>
-                VISUAL <span>EFFECTS</span>
-            </h1>
-
-            <p>
-                Creating powerful cinematic visuals by combining
-                digital technology, creative imagination
-                and advanced visual effects techniques.
-            </p>
-
-            <a href="#overview" class="button-primary">
-                EXPLORE VFX
-            </a>
-
+  <main id="main-content">
+    <section class="inner-hero service-hero" aria-labelledby="service-title">
+      <div class="inner-container inner-hero-layout service-hero-layout">
+        <div>
+          <p class="eyebrow">VFX / CINEMATIC VISUAL EFFECTS</p>
+          <h1 id="service-title">Visual effects.<br><span>Beyond the visible.</span></h1>
+          <p class="inner-hero-copy">Cinematic visual effects that bring live-action footage, computer-generated imagery and digital elements together into considered screen experiences.</p>
+          <div class="inner-hero-actions">
+            <a class="button-primary" href="#vfx-gallery">Explore VFX visuals <span aria-hidden="true">↓</span></a>
+            <a class="button-secondary" href="contact.html">Discuss a project</a>
+          </div>
         </div>
-    </section>
-
-
-    <!-- OVERVIEW -->
-    <section class="service-detail" id="overview">
-
-        <p class="intro">CINEMATIC VISUAL EFFECTS</p>
-
-        <h2>
-            BEYOND THE <span>IMAGINATION.</span>
-        </h2>
-
-        <p>
-            Visual Effects (VFX) transform the possibilities
-            of filmmaking by combining live-action footage,
-            computer-generated imagery and digital techniques.
-
-            AUTOTUBE CREW STUDIO focuses on cinematic visual
-            effects and digital production capabilities for
-            films, advertisements, entertainment and creative
-            projects.
-
-            Our approach brings together visual storytelling,
-            technical precision and creative direction
-            to develop compelling screen experiences.
-        </p>
-
-    </section>
-
-
-    <!-- VFX CAPABILITIES -->
-    <section class="service-detail">
-
-        <p class="intro">OUR VFX CAPABILITIES</p>
-
-        <h2>
-            CREATING THE <span>UNSEEN.</span>
-        </h2>
-
-        <div class="detail-grid">
-
-            <div class="detail-card">
-                <span class="number">01 / COMPOSITING</span>
-
-                <h3>Digital Compositing</h3>
-
-                <p>
-                    Combining multiple visual elements,
-                    live-action footage and digital assets
-                    into seamless cinematic compositions.
-                </p>
-            </div>
-
-            <div class="detail-card">
-                <span class="number">02 / CGI INTEGRATION</span>
-
-                <h3>CGI Integration</h3>
-
-                <p>
-                    Integrating computer-generated objects,
-                    characters and environments into
-                    live-action scenes.
-                </p>
-            </div>
-
-            <div class="detail-card">
-                <span class="number">03 / ENVIRONMENTS</span>
-
-                <h3>Digital Environment Creation</h3>
-
-                <p>
-                    Developing digital backgrounds,
-                    virtual locations, landscapes and
-                    environment extensions for cinematic scenes.
-                </p>
-            </div>
-
-            <div class="detail-card">
-                <span class="number">04 / ROTOSCOPING</span>
-
-                <h3>Rotoscoping & Cleanup</h3>
-
-                <p>
-                    Isolating visual elements, removing
-                    unwanted objects and preparing footage
-                    for advanced visual effects workflows.
-                </p>
-            </div>
-
-            <div class="detail-card">
-                <span class="number">05 / FX SIMULATION</span>
-
-                <h3>Visual FX Simulation</h3>
-
-                <p>
-                    Creating digital effects such as smoke,
-                    fire, explosions, particles, destruction
-                    and other simulated visual elements.
-                </p>
-            </div>
-
-            <div class="detail-card">
-                <span class="number">06 / GREEN SCREEN</span>
-
-                <h3>Chroma Key & Screen Replacement</h3>
-
-                <p>
-                    Replacing green screen backgrounds
-                    and integrating subjects into
-                    digitally created environments.
-                </p>
-            </div>
-
+        <div class="service-hero-panel" aria-label="AUTOTUBE CREW STUDIO visual effects capability">
+          <div class="service-panel-top"><span>Cinematic image-making</span><span>VFX / 01</span></div>
+          <img class="service-panel-mark" src="assets/brand/logo.png.png" alt="" aria-hidden="true">
+          <div class="service-panel-bottom"><strong>PLATE</strong><span>→</span><strong>COMPOSITE</strong><span>→</span><strong>FINISH</strong></div>
         </div>
-
+      </div>
     </section>
 
-
-    <!-- VFX WORKFLOW -->
-    <section class="service-detail">
-
-        <p class="intro">OUR CREATIVE WORKFLOW</p>
-
-        <h2>
-            FROM FOOTAGE TO <span>FINAL FRAME.</span>
-        </h2>
-
-        <div class="process-list">
-
-            <div class="process-step">
-
-                <span class="number">STEP 01</span>
-
-                <h3>Project Planning</h3>
-
-                <p>
-                    Understanding the creative brief,
-                    visual requirements and technical
-                    production needs.
-                </p>
-
-            </div>
-
-            <div class="process-step">
-
-                <span class="number">STEP 02</span>
-
-                <h3>Asset Development</h3>
-
-                <p>
-                    Preparing digital assets,
-                    3D elements and visual references
-                    required for the project.
-                </p>
-
-            </div>
-
-            <div class="process-step">
-
-                <span class="number">STEP 03</span>
-
-                <h3>VFX Production</h3>
-
-                <p>
-                    Developing visual effects,
-                    compositing scenes and integrating
-                    digital elements.
-                </p>
-
-            </div>
-
-            <div class="process-step">
-
-                <span class="number">STEP 04</span>
-
-                <h3>Final Composition</h3>
-
-                <p>
-                    Refining, reviewing and preparing
-                    the final cinematic visual output.
-                </p>
-
-            </div>
-
+    <section class="inner-section" aria-labelledby="vfx-overview-title">
+      <div class="inner-container">
+        <div class="section-kicker"><span>01</span><span>Cinematic Visual Effects</span></div>
+        <div class="service-intro-grid">
+          <h2 class="service-statement" id="vfx-overview-title">Visual storytelling through <span>digital craft.</span></h2>
+          <div class="service-intro-copy">
+            <p><strong>Visual effects (VFX)</strong> combine captured footage, computer-generated imagery and digital techniques to create or enhance images for the screen.</p>
+            <p>VFX workflows can support cinematic environments, compositing, CGI integration, cleanup and effects-led sequences for films, advertising, entertainment and other visual productions.</p>
+            <p>Each project is planned around its approved creative direction, source material, technical requirements and final delivery specifications.</p>
+          </div>
         </div>
-
+      </div>
     </section>
 
-
-    <!-- CREATIVE VISION -->
-    <section class="service-detail">
-
-        <p class="intro">OUR CREATIVE VISION</p>
-
-        <h2>
-            MAKING THE <span>IMPOSSIBLE POSSIBLE.</span>
-        </h2>
-
-        <p>
-            From realistic digital environments to spectacular
-            cinematic effects, visual technology creates
-            opportunities to tell stories without limitations.
-
-            We aim to combine creativity and technology
-            to support ambitious visual storytelling
-            and production projects.
-        </p>
-
+    <section class="inner-section" aria-labelledby="vfx-capabilities-title">
+      <div class="inner-container">
+        <div class="section-kicker"><span>02</span><span>VFX Capabilities</span></div>
+        <div class="section-heading">
+          <h2 id="vfx-capabilities-title">Building the image, <span>frame by frame.</span></h2>
+          <p>Visual effects work is shaped to the needs of each production, its footage and the intended visual result.</p>
+        </div>
+        <div class="service-capability-grid">
+          <article class="service-capability-card"><span class="card-index">01 / COMPOSITING</span><h3>Digital Compositing</h3><p>Bringing multiple visual elements together into cohesive shots with attention to integration, depth and continuity.</p></article>
+          <article class="service-capability-card"><span class="card-index">02 / CGI INTEGRATION</span><h3>CGI Integration</h3><p>Integrating computer-generated objects, assets and environments into a planned cinematic image.</p></article>
+          <article class="service-capability-card"><span class="card-index">03 / ENVIRONMENTS</span><h3>Digital Environments</h3><p>Environment creation and extensions for scenes that require designed locations, atmosphere or expanded worlds.</p></article>
+          <article class="service-capability-card"><span class="card-index">04 / CLEANUP</span><h3>Rotoscoping &amp; Cleanup</h3><p>Isolating visual elements and preparing plates through cleanup tasks where required by the production brief.</p></article>
+          <article class="service-capability-card"><span class="card-index">05 / EFFECTS</span><h3>Cinematic Effects</h3><p>Effects-led visual elements developed to support the tone, scale and storytelling needs of a sequence.</p></article>
+          <article class="service-capability-card"><span class="card-index">06 / FINISHING</span><h3>Shot Finishing</h3><p>Final integration reviews and image refinement aligned with the agreed delivery specifications.</p></article>
+        </div>
+      </div>
     </section>
 
-
-    <!-- CTA -->
-    <section class="service-cta">
-
-        <p>HAVE A VISUAL EFFECTS PROJECT?</p>
-
-        <h2>
-            LET'S CREATE <span>THE EXTRAORDINARY.</span>
-        </h2>
-
-        <p>
-            Share your film, commercial or creative concept
-            with AUTOTUBE CREW STUDIO and let's discuss
-            the possibilities.
-        </p>
-
-        <a href="contact.html" class="button-primary">
-            DISCUSS YOUR PROJECT
-        </a>
-
+    <section class="inner-section" id="vfx-gallery" aria-labelledby="vfx-gallery-title">
+      <div class="inner-container">
+        <div class="section-kicker"><span>03</span><span>Selected VFX Visuals</span></div>
+        <div class="section-heading">
+          <h2 id="vfx-gallery-title">Explore the <span>VFX gallery.</span></h2>
+          <p class="service-gallery-intro">A selection of visual effects images supplied for the studio website. Project-specific credits and descriptions can be added when approved information is available.</p>
+        </div>
+        <div class="service-gallery-grid">
+          <figure class="service-gallery-item"><img src="assets/images/portfolio/vfx/vfx-01.png.png" alt="AUTOTUBE CREW STUDIO VFX portfolio visual 01" loading="lazy" decoding="async"><figcaption><span>VFX Visual</span><span>01</span></figcaption></figure>
+          <figure class="service-gallery-item"><img src="assets/images/portfolio/vfx/vfx-02.png.png" alt="AUTOTUBE CREW STUDIO VFX portfolio visual 02" loading="lazy" decoding="async"><figcaption><span>VFX Visual</span><span>02</span></figcaption></figure>
+          <figure class="service-gallery-item"><img src="assets/images/portfolio/vfx/vfx-03.png.png" alt="AUTOTUBE CREW STUDIO VFX portfolio visual 03" loading="lazy" decoding="async"><figcaption><span>VFX Visual</span><span>03</span></figcaption></figure>
+          <figure class="service-gallery-item"><img src="assets/images/portfolio/vfx/vfx-04.png.png" alt="AUTOTUBE CREW STUDIO VFX portfolio visual 04" loading="lazy" decoding="async"><figcaption><span>VFX Visual</span><span>04</span></figcaption></figure>
+          <figure class="service-gallery-item"><img src="assets/images/portfolio/vfx/vfx-05.png.png" alt="AUTOTUBE CREW STUDIO VFX portfolio visual 05" loading="lazy" decoding="async"><figcaption><span>VFX Visual</span><span>05</span></figcaption></figure>
+          <figure class="service-gallery-item"><img src="assets/images/portfolio/vfx/vfx-06.png.png" alt="AUTOTUBE CREW STUDIO VFX portfolio visual 06" loading="lazy" decoding="async"><figcaption><span>VFX Visual</span><span>06</span></figcaption></figure>
+          <figure class="service-gallery-item"><img src="assets/images/portfolio/vfx/vfx-07.png.png" alt="AUTOTUBE CREW STUDIO VFX portfolio visual 07" loading="lazy" decoding="async"><figcaption><span>VFX Visual</span><span>07</span></figcaption></figure>
+          <figure class="service-gallery-item"><img src="assets/images/portfolio/vfx/vfx-08.png.png" alt="AUTOTUBE CREW STUDIO VFX portfolio visual 08" loading="lazy" decoding="async"><figcaption><span>VFX Visual</span><span>08</span></figcaption></figure>
+          <figure class="service-gallery-item"><img src="assets/images/portfolio/vfx/vfx-09.png.png" alt="AUTOTUBE CREW STUDIO VFX portfolio visual 09" loading="lazy" decoding="async"><figcaption><span>VFX Visual</span><span>09</span></figcaption></figure>
+        </div>
+      </div>
     </section>
 
+    <section class="inner-section" aria-labelledby="vfx-process-title">
+      <div class="inner-container">
+        <div class="section-kicker"><span>04</span><span>From Plate to Final Shot</span></div>
+        <div class="section-heading">
+          <h2 id="vfx-process-title">A connected <span>VFX workflow.</span></h2>
+          <p>Production stages are adapted to the approved scope, source materials, creative direction and delivery requirements.</p>
+        </div>
+        <div class="service-process-grid">
+          <article class="service-process-card"><span class="card-index">STEP 01</span><h3>Brief &amp; Breakdown</h3><p>Review the creative objective, footage, references and technical requirements.</p></article>
+          <article class="service-process-card"><span class="card-index">STEP 02</span><h3>Preparation</h3><p>Organise plates and plan the required visual elements and shot approach.</p></article>
+          <article class="service-process-card"><span class="card-index">STEP 03</span><h3>VFX Production</h3><p>Develop, integrate and refine the required effects and composited elements.</p></article>
+          <article class="service-process-card"><span class="card-index">STEP 04</span><h3>Review &amp; Delivery</h3><p>Review completed shots and prepare agreed outputs for final delivery.</p></article>
+        </div>
+        <div class="service-related-links"><a href="cgi.html">Explore CGI <span aria-hidden="true">↗</span></a><a href="3d-animation.html">Explore 3D Animation <span aria-hidden="true">↗</span></a><a href="film-production.html">Film Production <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <section class="inner-cta" aria-labelledby="vfx-cta-title">
+      <div class="inner-container">
+        <p class="eyebrow">HAVE A VFX PROJECT?</p>
+        <h2 id="vfx-cta-title">Let's create the<br><span>image you imagine.</span></h2>
+        <p>Share your concept, source footage or production requirements with the studio to start a conversation.</p>
+        <a class="button-primary" href="contact.html">Discuss your project <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-        <p>© 2026 AUTOTUBE CREW STUDIO. ALL RIGHTS RESERVED.</p>
+  <footer class="site-footer">
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
+    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
+    <div class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html">Contact</a></div>
+    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+  </footer>
 
-        <p>CREATIVITY. TECHNOLOGY. STORYTELLING.</p>
-
-    </footer>
-<script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
