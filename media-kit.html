@@ -1,318 +1,206 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Media Kit | Autotube Crew Studio</title>
-
-    <meta name="description" content="Access official media resources, brand assets and press materials from PT Autotube Crew Studio.">
-
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-    <style>
-        .media-section {
-            min-height: 80vh;
-            padding: 120px 8%;
-            background: #080808;
-            color: #fff;
-        }
-
-        .media-heading {
-            max-width: 750px;
-            margin-bottom: 60px;
-        }
-
-        .media-heading span {
-            color: #e50920;
-            font-size: 12px;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-
-        .media-heading h1 {
-            font-size: clamp(40px, 7vw, 75px);
-            margin: 20px 0;
-            font-weight: 800;
-        }
-
-        .media-heading p {
-            color: #a3a3a3;
-            line-height: 1.8;
-        }
-
-        .media-grid {
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(260px, 1fr));
-            gap: 22px;
-        }
-
-        .media-card {
-            padding: 35px;
-            background: #151515;
-            border: 1px solid #292929;
-            transition: 0.3s ease;
-        }
-
-        .media-card:hover {
-            border-color: #e50920;
-            transform: translateY(-5px);
-        }
-
-        .media-icon {
-            font-size: 42px;
-            color: #e50920;
-            margin-bottom: 25px;
-        }
-
-        .media-card h2 {
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-
-        .media-card p {
-            color: #999;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        .media-tag {
-            display: inline-block;
-            margin-top: 20px;
-            color: #e50920;
-            font-size: 11px;
-            letter-spacing: 2px;
-        }
-
-        .media-contact {
-            margin-top: 60px;
-            padding: 40px;
-            background: #151515;
-            border-left: 3px solid #e50920;
-        }
-
-        .media-contact h2 {
-            margin-bottom: 15px;
-        }
-
-        .media-contact p {
-            color: #999;
-            line-height: 1.8;
-        }
-
-        @media (max-width: 600px) {
-            .media-section {
-                padding: 90px 6%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Access the official AUTOTUBE CREW STUDIO media kit, including the studio logo, brand-use guidance, company information, creative capabilities and media contact resources.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/media-kit.html">
+  <meta property="og:title" content="Media Kit | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Official brand resources and media information from AUTOTUBE CREW STUDIO, Jakarta, Indonesia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/media-kit.html">
+  <meta name="twitter:card" content="summary">
+  <title>Media Kit | AUTOTUBE CREW STUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+  <link rel="stylesheet" href="./assets/css/service-pages.css?v=1">
+  <style>
+    .media-kit-page .media-brand-palette { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:28px; }
+    .media-kit-page .media-brand-swatch { min-height:112px; padding:14px; display:flex; flex-direction:column; justify-content:flex-end; border:1px solid rgba(255,255,255,.16); }
+    .media-kit-page .media-brand-swatch strong { color:#fff; font-size:12px; letter-spacing:.08em; }
+    .media-kit-page .media-brand-swatch span { color:rgba(255,255,255,.72); font-size:11px; margin-top:3px; }
+    .media-kit-page .media-download-card { display:grid; grid-template-columns:minmax(130px,.55fr) 1.45fr; gap:24px; align-items:center; margin-top:36px; padding:28px; border:1px solid var(--inner-line); background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012)); }
+    .media-kit-page .media-download-preview { min-height:145px; display:flex; align-items:center; justify-content:center; padding:20px; background:#090909; border:1px solid rgba(255,255,255,.1); }
+    .media-kit-page .media-download-preview img { max-width:100%; max-height:92px; object-fit:contain; }
+    .media-kit-page .media-download-copy h3 { margin:0 0 8px; color:#fff; font-size:21px; }
+    .media-kit-page .media-download-copy p { margin:0 0 16px; color:#aaa; font-size:13px; line-height:1.85; }
+    .media-kit-page .media-note { padding:24px 26px; border-left:2px solid var(--inner-red); background:#111; color:#bdbdbd; font-size:13px; line-height:1.9; }
+    @media(max-width:650px) {
+      .media-kit-page .media-brand-palette { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .media-kit-page .media-download-card { grid-template-columns:1fr; padding:20px; }
+      .media-kit-page .media-download-preview { min-height:120px; }
+    }
+  </style>
 </head>
+<body class="inner-page service-page media-kit-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<body>
-<header class="header">
-
-    <a href="index.html" class="logo">
-        AUTO<span>TUBE</span> CREW
+  <header class="header site-header">
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
     </a>
-
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html" class="contact-link">Let's Talk ↗</a>
+    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="showreel.html">Showreel</a>
+      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
     </nav>
-
-    <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Toggle navigation"
-        aria-expanded="false">
-        ☰
-    </button>
-
-</header>
-
-    <main>
-
-        <section class="media-section">
-
-            <div class="media-heading">
-
-                <span>Press & Brand Resources</span>
-
-                <h1>
-                    Media Kit<span style="color:#e50920;">.</span>
-                </h1>
-
-                <p>
-                    Welcome to the official media resource
-                    center of PT Autotube Crew Studio.
-                    Access company information, brand assets
-                    and media resources for professional
-                    communication and collaboration.
-                </p>
-
-            </div>
-
-            <div class="media-grid">
-
-                <!-- COMPANY LOGO -->
-
-                <article class="media-card">
-
-                    <div class="media-icon">◈</div>
-
-                    <h2>Company Logo</h2>
-
-                    <p>
-                        Official Autotube Crew Studio
-                        logo and approved brand identity
-                        materials.
-                    </p>
-
-                    <span class="media-tag">
-                        BRAND ASSET
-                    </span>
-
-                </article>
-
-                <!-- BRAND IDENTITY -->
-
-                <article class="media-card">
-
-                    <div class="media-icon">◇</div>
-
-                    <h2>Brand Identity</h2>
-
-                    <p>
-                        Visual identity, brand colors,
-                        typography and official design
-                        guidelines.
-                    </p>
-
-                    <span class="media-tag">
-                        BRAND RESOURCE
-                    </span>
-
-                </article>
-
-                <!-- COMPANY INFORMATION -->
-
-                <article class="media-card">
-
-                    <div class="media-icon">▣</div>
-
-                    <h2>Company Information</h2>
-
-                    <p>
-                        Company overview, business
-                        activities, production capabilities
-                        and corporate information.
-                    </p>
-
-                    <span class="media-tag">
-                        CORPORATE RESOURCE
-                    </span>
-
-                </article>
-
-                <!-- PRODUCTION MEDIA -->
-
-                <article class="media-card">
-
-                    <div class="media-icon">▤</div>
-
-                    <h2>Production Media</h2>
-
-                    <p>
-                        Approved production photographs,
-                        visual materials and creative
-                        project references.
-                    </p>
-
-                    <span class="media-tag">
-                        MEDIA RESOURCE
-                    </span>
-
-                </article>
-
-                <!-- PRESS MATERIALS -->
-
-                <article class="media-card">
-
-                    <div class="media-icon">◉</div>
-
-                    <h2>Press Materials</h2>
-
-                    <p>
-                        Official company information
-                        and approved materials for
-                        press and media communication.
-                    </p>
-
-                    <span class="media-tag">
-                        PRESS RESOURCE
-                    </span>
-
-                </article>
-
-                <!-- CREATIVE PORTFOLIO -->
-
-                <article class="media-card">
-
-                    <div class="media-icon">✦</div>
-
-                    <h2>Creative Portfolio</h2>
-
-                    <p>
-                        Explore approved creative work,
-                        animation, CGI and digital
-                        production showcases.
-                    </p>
-
-                    <span class="media-tag">
-                        CREATIVE RESOURCE
-                    </span>
-
-                </article>
-
-            </div>
-
-            <div class="media-contact">
-
-                <h2>Media & Press Enquiries</h2>
-
-                <p>
-                    For official media enquiries,
-                    brand asset requests and press
-                    collaborations, please contact
-                    PT Autotube Crew Studio through
-                    our official communication channels.
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-
-<footer class="footer">
-
-    <a href="index.html" class="logo">
-        AUTO<span>TUBE</span> CREW
-    </a>
-
-    <p>Creative Production. Without Limits.</p>
-
-    <p>© 2026 AUTOTUBE CREW. All Rights Reserved.</p>
-
-</footer>
-
-    <script src="./assets/js/main.js" defer></script>
-
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+  </header>
+
+  <main id="main-content">
+    <section class="inner-hero service-hero" aria-labelledby="media-kit-title">
+      <div class="inner-container inner-hero-layout service-hero-layout">
+        <div>
+          <p class="eyebrow">OFFICIAL BRAND RESOURCES / MEDIA INFORMATION</p>
+          <h1 id="media-kit-title">Media resources.<br><span>One studio identity.</span></h1>
+          <p class="inner-hero-copy">A central reference for media professionals, production partners and collaborators seeking AUTOTUBE CREW STUDIO company information, brand assets and creative resources.</p>
+          <div class="inner-hero-actions">
+            <a class="button-primary" href="#available-resources">Explore resources <span aria-hidden="true">↓</span></a>
+            <a class="button-secondary" href="contact.html">Request media materials</a>
+          </div>
+        </div>
+        <div class="service-hero-panel" aria-label="AUTOTUBE CREW STUDIO media resource centre">
+          <div class="service-panel-top"><span>Media kit</span><span>Brand / 01</span></div>
+          <img class="service-panel-mark" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO original logo" width="190" height="100">
+          <div class="service-panel-bottom"><span>Official studio identity</span><strong>JAKARTA / INDONESIA</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-section">
+      <div class="inner-container service-intro-grid">
+        <div>
+          <p class="section-kicker">ABOUT THIS RESOURCE CENTRE</p>
+          <h2 class="service-statement">Clear information. <span>Consistent representation.</span></h2>
+        </div>
+        <div class="service-intro-copy">
+          <p>PT AUTOTUBE CREW STUDIO is an Indonesia-based company focused on digital platforms and creative production. The studio's creative capabilities include 3D animation, CGI, VFX, cinematic and video production, and digital content creation.</p>
+          <p>This page brings together the currently available public brand resource and links to company information already published on the studio website. Additional materials can be requested for review and approval.</p>
+          <div class="service-related-links">
+            <a href="press-kit.html">Official press information <span aria-hidden="true">↗</span></a>
+            <a href="about.html">About the studio <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-section" id="available-resources">
+      <div class="inner-container">
+        <p class="section-kicker">AVAILABLE BRAND ASSET</p>
+        <h2 class="section-heading">Official studio logo</h2>
+        <p class="service-gallery-intro">The original logo file currently published in the website repository is available below. Use the supplied artwork without changing its lettering, proportions, colours, emblem or composition.</p>
+        <div class="media-download-card">
+          <div class="media-download-preview">
+            <img src="assets/brand/logo.png.png" alt="Original AUTOTUBE CREW STUDIO logo" width="250" height="100">
+          </div>
+          <div class="media-download-copy">
+            <h3>AUTOTUBE CREW STUDIO — Original Logo</h3>
+            <p>PNG brand asset · Original repository file: <strong>logo.png.png</strong>. For reproduction outside this website, confirm the intended use and obtain approval where required.</p>
+            <a class="button-primary" href="assets/brand/logo.png.png" download="autotube-crew-studio-logo.png">Download original logo <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-section">
+      <div class="inner-container">
+        <p class="section-kicker">VISUAL IDENTITY REFERENCE</p>
+        <h2 class="section-heading">A consistent visual language</h2>
+        <p class="service-gallery-intro">The website's core visual palette is built around dark neutrals, crimson red and white. These swatches are a quick website reference, not a replacement for a formal brand-guidelines document.</p>
+        <div class="media-brand-palette" aria-label="Website colour palette reference">
+          <div class="media-brand-swatch" style="background:#070707"><strong>Black</strong><span>#070707</span></div>
+          <div class="media-brand-swatch" style="background:#e50920"><strong>Crimson</strong><span>#E50920</span></div>
+          <div class="media-brand-swatch" style="background:#f7f7f7"><strong style="color:#111">White</strong><span style="color:#444">#F7F7F7</span></div>
+          <div class="media-brand-swatch" style="background:#242424"><strong>Charcoal</strong><span>#242424</span></div>
+        </div>
+        <div class="media-note" style="margin-top:22px">Do not redraw, recolour, stretch, rotate, crop or add effects to the original logo. Maintain clear space around the artwork and use a background that preserves legibility. Request the current approved brand guidelines before producing materials that require detailed identity specifications.</div>
+      </div>
+    </section>
+
+    <section class="inner-section">
+      <div class="inner-container">
+        <p class="section-kicker">COMPANY & CREATIVE INFORMATION</p>
+        <h2 class="section-heading">Explore published studio resources</h2>
+        <div class="service-capability-grid">
+          <article class="service-capability-card">
+            <span class="card-index">01 / COMPANY</span>
+            <h3>Company profile</h3>
+            <p>Read the studio background, company positioning and business overview published on the About page.</p>
+            <div class="service-related-links"><a href="about.html">View company information <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">02 / CAPABILITIES</span>
+            <h3>Creative production services</h3>
+            <p>Explore 3D animation, CGI, VFX, cinematic production, video production and digital content capabilities.</p>
+            <div class="service-related-links"><a href="services.html">Explore services <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">03 / PORTFOLIO</span>
+            <h3>Selected creative work</h3>
+            <p>Review the visual categories and project material currently presented in the studio portfolio.</p>
+            <div class="service-related-links"><a href="portfolio.html">View portfolio <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">04 / SHOWREEL</span>
+            <h3>Studio showreel</h3>
+            <p>Visit the showreel page for the video material published for the studio's creative work.</p>
+            <div class="service-related-links"><a href="showreel.html">Watch showreel <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">05 / MEDIA</span>
+            <h3>Press information</h3>
+            <p>Find company background, media guidance and information for interview or publication enquiries.</p>
+            <div class="service-related-links"><a href="press-kit.html">Open press kit <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="service-capability-card">
+            <span class="card-index">06 / COLLABORATION</span>
+            <h3>Production partnerships</h3>
+            <p>Learn how the studio approaches project-based collaboration with production and creative partners.</p>
+            <div class="service-related-links"><a href="partners.html">Explore partnerships <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-section">
+      <div class="inner-container">
+        <p class="section-kicker">REQUEST ADDITIONAL MATERIALS</p>
+        <h2 class="section-heading">Need a specific media asset?</h2>
+        <p class="service-gallery-intro">The repository currently provides the original logo file and public website pages. Vector logos, formal brand guidelines, approved leadership portraits, downloadable company profiles and other press documents are not presented here as available downloads. Contact the studio to request the relevant material and confirm permission before publication.</p>
+        <div class="service-process-grid">
+          <article class="service-process-card"><span class="card-index">01 / IDENTIFY</span><h3>Tell us who you are</h3><p>Share your name, publication, company or production organization.</p></article>
+          <article class="service-process-card"><span class="card-index">02 / EXPLAIN</span><h3>Describe the request</h3><p>Specify the asset, interview, company information or media access you need.</p></article>
+          <article class="service-process-card"><span class="card-index">03 / CONTEXT</span><h3>Include intended use</h3><p>Provide publication format, audience, usage context and expected deadline.</p></article>
+          <article class="service-process-card"><span class="card-index">04 / CONFIRM</span><h3>Wait for approval</h3><p>Use supplied materials only after the studio confirms availability and permitted use.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-cta" aria-labelledby="media-cta-title">
+      <div class="inner-container">
+        <p class="eyebrow">MEDIA / BRAND / PRODUCTION ENQUIRIES</p>
+        <h2 id="media-cta-title">Need the right resource?<br><span>Talk to the studio.</span></h2>
+        <p>Contact PT AUTOTUBE CREW STUDIO for media requests, approved brand materials, company information and production-related enquiries.</p>
+        <a class="button-primary" href="contact.html">Contact the studio <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
+    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
+    <div class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html">Contact</a></div>
+    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
