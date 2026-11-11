@@ -1,316 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>News | Autotube Crew Studio</title>
-
-    <meta name="description" content="Explore official news, announcements, company updates and creative production developments from PT Autotube Crew Studio.">
-
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-    <style>
-        .news-section {
-            min-height: 80vh;
-            padding: 120px 8%;
-            background: #080808;
-            color: #ffffff;
-        }
-
-        .news-heading {
-            max-width: 750px;
-            margin-bottom: 60px;
-        }
-
-        .news-heading span {
-            color: #e50920;
-            font-size: 12px;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-
-        .news-heading h1 {
-            font-size: clamp(40px, 7vw, 75px);
-            margin: 20px 0;
-            font-weight: 800;
-        }
-
-        .news-heading p {
-            color: #a3a3a3;
-            line-height: 1.8;
-        }
-
-        .news-grid {
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .news-card {
-            background: #151515;
-            border: 1px solid #292929;
-            overflow: hidden;
-            transition: 0.3s ease;
-        }
-
-        .news-card:hover {
-            transform: translateY(-6px);
-            border-color: #e50920;
-        }
-
-        .news-image {
-            height: 220px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(
-                135deg,
-                #292929,
-                #101010
-            );
-            color: #e50920;
-            font-size: 45px;
-        }
-
-        .news-content {
-            padding: 28px;
-        }
-
-        .news-category {
-            color: #e50920;
-            font-size: 11px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .news-content h2 {
-            font-size: 22px;
-            margin: 15px 0;
-            line-height: 1.4;
-        }
-
-        .news-content p {
-            color: #999;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        .news-date {
-            display: block;
-            margin-top: 20px;
-            color: #777;
-            font-size: 12px;
-        }
-
-        .news-footer {
-            margin-top: 60px;
-            padding: 35px;
-            background: #151515;
-            border-left: 3px solid #e50920;
-        }
-
-        .news-footer h2 {
-            margin-bottom: 12px;
-        }
-
-        .news-footer p {
-            color: #999;
-            line-height: 1.8;
-        }
-
-        @media (max-width: 600px) {
-            .news-section {
-                padding: 90px 6%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Read verified studio announcements, company updates and production developments from PT Autotube Crew Studio in Jakarta, Indonesia.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="PT Autotube Crew Studio">
+  <title>Studio News &amp; Updates | AUTOTUBE CREW STUDIO</title>
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/news.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Studio News &amp; Updates | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Verified studio announcements, company updates and production developments from AUTOTUBE CREW STUDIO.">
+  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/news.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Studio News &amp; Updates | AUTOTUBE CREW STUDIO">
+  <meta name="twitter:description" content="Studio announcements and production updates from AUTOTUBE CREW STUDIO.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+  <style>
+    .news-page .news-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:42px; }
+    .news-page .news-card { min-height:290px; padding:30px; display:flex; flex-direction:column; border:1px solid rgba(255,255,255,.12); background:linear-gradient(145deg,#151515,#0b0b0b); }
+    .news-page .news-card .news-index { color:#ff4658; font-size:10px; font-weight:800; letter-spacing:.17em; text-transform:uppercase; }
+    .news-page .news-card h3 { margin:28px 0 13px; color:#fff; font-size:21px; line-height:1.25; }
+    .news-page .news-card p { margin:0; color:#aaa; font-size:14px; line-height:1.85; }
+    .news-page .news-card a { display:inline-flex; gap:10px; align-items:center; margin-top:auto; padding-top:28px; color:#fff; font-size:11px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+    .news-page .news-card a:hover { color:#ff5262; }
+    .news-page .news-note { margin-top:34px; padding:24px 26px; border-left:2px solid #e50920; background:#111; color:#aaa; font-size:13px; line-height:1.85; }
+    .news-page .news-note strong { color:#fff; }
+    @media (max-width:900px) { .news-page .news-grid { grid-template-columns:1fr 1fr; } }
+    @media (max-width:620px) { .news-page .news-grid { grid-template-columns:1fr; } .news-page .news-card { min-height:245px; } }
+  </style>
 </head>
-
-<body>
-
-    <header class="header">
-
-    <a href="index.html" class="logo">
-        AUTO<span>TUBE</span> CREW
+<body class="inner-page news-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="header site-header">
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
     </a>
-
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html" class="contact-link">Let's Talk ↗</a>
+    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="showreel.html">Showreel</a>
+      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
     </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+  </header>
 
-    <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Toggle navigation"
-        aria-expanded="false">
-        ☰
-    </button>
+  <main id="main-content">
+    <section class="inner-hero" aria-labelledby="news-title">
+      <div class="inner-container inner-hero-layout">
+        <div>
+          <p class="eyebrow">AUTOTUBE CREW / STUDIO NEWS</p>
+          <h1 id="news-title">News, updates<br><span>and studio direction.</span></h1>
+          <p class="inner-hero-copy">A place for verified company announcements, production developments and updates about the creative disciplines that shape AUTOTUBE CREW STUDIO.</p>
+          <div class="inner-hero-actions">
+            <a class="button-primary" href="blog.html">Read the studio journal <span aria-hidden="true">↗</span></a>
+            <a class="button-secondary" href="contact.html">Contact the studio</a>
+          </div>
+        </div>
+        <div class="hero-studio-panel" aria-label="AUTOTUBE CREW STUDIO news and announcements">
+          <div class="panel-topline"><span>Studio Updates</span><span>Jakarta, Indonesia</span></div>
+          <img class="panel-mark" src="assets/brand/logo.png.png" alt="" aria-hidden="true">
+          <div class="panel-bottomline"><strong>CREATIVE</strong><span> / </span><strong>PRODUCTION</strong><span> / </span><strong>TECHNOLOGY</strong></div>
+        </div>
+      </div>
+    </section>
 
-</header>
+    <section class="inner-section" aria-labelledby="news-focus-title">
+      <div class="inner-container">
+        <div class="section-kicker"><span>01</span><span>Company News</span></div>
+        <div class="section-heading">
+          <h2 id="news-focus-title">The studio is shaped by <span>continuous creative development.</span></h2>
+          <p>These focus areas describe the studio's current creative direction. They are not dated press releases or claims of completed projects.</p>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <span class="news-index">01 / Studio Direction</span>
+            <h3>Building our creative future</h3>
+            <p>Our studio direction connects creative development, production planning and finishing across a complete visual production pipeline.</p>
+            <a href="about.html">Discover the studio <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="news-card">
+            <span class="news-index">02 / Animation &amp; CGI</span>
+            <h3>Advancing animation and CGI capabilities</h3>
+            <p>Explore the artistic and technical disciplines behind 3D animation, computer-generated imagery and cinematic visual production.</p>
+            <a href="3d-animation.html">Explore 3D animation <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="news-card">
+            <span class="news-index">03 / Digital Experiences</span>
+            <h3>Creative thinking across digital platforms</h3>
+            <p>We bring visual communication, creative content and digital platform thinking together to address different project requirements.</p>
+            <a href="digital-platforms.html">Explore digital platforms <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <div class="news-note"><strong>Publication note:</strong> Dated announcements, event reports and company milestones will be added when they are approved for publication. No unverified dates, client names or project claims are presented here.</div>
+      </div>
+    </section>
 
-    <main>
+    <section class="inner-section" aria-labelledby="more-updates-title">
+      <div class="inner-container">
+        <div class="section-kicker"><span>02</span><span>Explore More</span></div>
+        <div class="section-heading">
+          <h2 id="more-updates-title">Follow the work. <span>Understand the process.</span></h2>
+          <p>Visit the studio journal for creative perspectives, or review the events page for future industry activities and programme information.</p>
+        </div>
+        <div class="principle-grid">
+          <article class="principle-card"><span class="card-index">STUDIO JOURNAL</span><h3>Ideas and perspectives</h3><p>Read about visual storytelling, animation, CGI, VFX and production craft.</p><p><a class="text-link" href="blog.html">Visit the journal ↗</a></p></article>
+          <article class="principle-card"><span class="card-index">EVENTS</span><h3>Industry connections</h3><p>Find information about creative gatherings, workshops and future event announcements.</p><p><a class="text-link" href="events.html">Explore events ↗</a></p></article>
+          <article class="principle-card"><span class="card-index">MEDIA &amp; PRESS</span><h3>Company resources</h3><p>Access approved studio information and media resources when preparing coverage or collaboration enquiries.</p><p><a class="text-link" href="media-kit.html">View media kit ↗</a></p></article>
+        </div>
+      </div>
+    </section>
 
-        <section class="news-section">
+    <section class="inner-cta" aria-labelledby="news-cta-title">
+      <div class="inner-container">
+        <p class="eyebrow">START A CONVERSATION</p>
+        <h2 id="news-cta-title">Have a question about<br><span>the studio or our work?</span></h2>
+        <p>Contact AUTOTUBE CREW STUDIO for company information, production enquiries or potential collaborations.</p>
+        <a class="button-primary" href="contact.html">Contact the studio <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-            <div class="news-heading">
-
-                <span>Latest Updates & Announcements</span>
-
-                <h1>
-                    Company News<span style="color:#e50920;">.</span>
-                </h1>
-
-                <p>
-                    Stay connected with PT Autotube Crew
-                    Studio. Explore company announcements,
-                    creative developments, production
-                    updates and our journey in the
-                    digital media industry.
-                </p>
-
-            </div>
-
-            <div class="news-grid">
-
-                <!-- NEWS 1 -->
-
-                <article class="news-card">
-
-                    <div class="news-image">
-                        ◈
-                    </div>
-
-                    <div class="news-content">
-
-                        <span class="news-category">
-                            Company Update
-                        </span>
-
-                        <h2>
-                            Building Our Creative Future
-                        </h2>
-
-                        <p>
-                            We continue to develop our
-                            creative capabilities and
-                            strengthen our position in
-                            digital media and production.
-                        </p>
-
-                        <span class="news-date">
-                            Official Announcement
-                        </span>
-
-                    </div>
-
-                </article>
-
-                <!-- NEWS 2 -->
-
-                <article class="news-card">
-
-                    <div class="news-image">
-                        ◇
-                    </div>
-
-                    <div class="news-content">
-
-                        <span class="news-category">
-                            Production
-                        </span>
-
-                        <h2>
-                            Advancing Animation & CGI
-                        </h2>
-
-                        <p>
-                            Our focus remains on developing
-                            high-quality animation, CGI
-                            and cinematic visual production
-                            capabilities.
-                        </p>
-
-                        <span class="news-date">
-                            Production Update
-                        </span>
-
-                    </div>
-
-                </article>
-
-                <!-- NEWS 3 -->
-
-                <article class="news-card">
-
-                    <div class="news-image">
-                        ▣
-                    </div>
-
-                    <div class="news-content">
-
-                        <span class="news-category">
-                            Digital Platform
-                        </span>
-
-                        <h2>
-                            Expanding Digital Experiences
-                        </h2>
-
-                        <p>
-                            We are working towards creating
-                            innovative digital experiences
-                            through technology, creativity
-                            and digital platforms.
-                        </p>
-
-                        <span class="news-date">
-                            Company Development
-                        </span>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-            <div class="news-footer">
-
-                <h2>
-                    More Updates Coming Soon
-                </h2>
-
-                <p>
-                    Follow our journey as we continue
-                    developing new ideas, creative projects
-                    and digital production opportunities.
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-<footer class="footer">
-
-    <a href="index.html" class="logo">
-        AUTO<span>TUBE</span> CREW
-    </a>
-
-    <p>Creative Production. Without Limits.</p>
-
-    <p>© 2026 AUTOTUBE CREW. All Rights Reserved.</p>
-
-</footer>
-
-    <script src="./assets/js/main.js" defer></script>
-
+  <footer class="site-footer">
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
+    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
+    <div class="footer-links"><a href="blog.html">Journal</a><a href="events.html">Events</a><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html">Contact</a></div>
+    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+  </footer>
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
