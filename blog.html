@@ -1,766 +1,186 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#080808">
-
-    <title>Studio Journal | AUTOTUBE CREW</title>
-
-    <meta name="description" content="Explore the AUTOTUBE CREW Studio Journal for creative thinking, animation, CGI, VFX and cinematic production insights.">
-
-    <link rel="canonical" href="https://ptautotubecrewstudio.github.io/blog.html">
-
-    <meta property="og:title" content="Studio Journal | AUTOTUBE CREW">
-    <meta property="og:description" content="Creative thinking, production insights and stories from AUTOTUBE CREW.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ptautotubecrewstudio.github.io/blog.html">
-
-    <meta name="twitter:card" content="summary">
-
-    <link rel="stylesheet" href="./assets/css/style.css?v=3">
-
-    <style>
-
-/* =========================================
-   AUTOTUBE CREW
-   STUDIO JOURNAL
-   ========================================= */
-
-/* 1. BLOG HERO */
-
-.blog-hero {
-    position: relative;
-    min-height: 65vh;
-    display: flex;
-    align-items: center;
-    padding: 160px 5% 100px;
-    overflow: hidden;
-    background:
-        radial-gradient(
-            ellipse at 80% 45%,
-            rgba(229, 9, 32, 0.17),
-            transparent 45%
-        ),
-        linear-gradient(110deg, #080808, #151515);
-}
-
-.blog-hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        90deg,
-        rgba(0,0,0,0.3),
-        transparent
-    );
-    pointer-events: none;
-}
-
-.blog-hero-content {
-    width: 100%;
-    max-width: 1180px;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-}
-
-.blog-hero h1 {
-    font-size: clamp(48px, 8vw, 100px);
-    line-height: 1.05;
-    font-weight: 900;
-    letter-spacing: -4px;
-    margin-bottom: 28px;
-}
-
-.blog-hero h1 span {
-    color: var(--red);
-}
-
-.blog-hero-description {
-    color: #b5b5b5;
-    max-width: 650px;
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-.blog-hero-circle {
-    position: absolute;
-    width: 520px;
-    height: 520px;
-    right: 8%;
-    top: 10%;
-    border: 1px solid rgba(229, 9, 32, 0.22);
-    border-radius: 50%;
-    box-shadow: 0 0 100px rgba(229, 9, 32, 0.1);
-}
-
-/* 2. BLOG INTRO */
-
-.blog-section {
-    padding: 110px 5%;
-    background: var(--black);
-}
-
-.blog-container {
-    width: 100%;
-    max-width: 1180px;
-    margin: auto;
-}
-
-.blog-section-heading {
-    margin-bottom: 50px;
-}
-
-.blog-section-heading h2 {
-    font-size: clamp(34px, 5vw, 58px);
-    font-weight: 900;
-    line-height: 1.15;
-    margin-bottom: 18px;
-}
-
-.blog-section-heading h2 span {
-    color: var(--red);
-}
-
-.blog-section-heading p {
-    color: var(--grey);
-    max-width: 650px;
-    font-size: 15px;
-}
-
-/* 3. FEATURED ARTICLE */
-
-.featured-article {
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    background: #131313;
-    border: 1px solid rgba(255,255,255,0.09);
-    overflow: hidden;
-    transition: 0.35s ease;
-}
-
-.featured-article:hover {
-    border-color: var(--red);
-    transform: translateY(-5px);
-}
-
-.article-visual {
-    min-height: 390px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background:
-        radial-gradient(
-            circle,
-            rgba(229, 9, 32, 0.23),
-            transparent 60%
-        ),
-        linear-gradient(135deg, #202020, #080808);
-}
-
-.article-visual::before,
-.article-visual::after {
-    content: "";
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    border: 1px solid rgba(229,9,32,0.35);
-    border-radius: 50%;
-}
-
-.article-visual::after {
-    width: 190px;
-    height: 190px;
-}
-
-.article-visual span {
-    position: relative;
-    z-index: 2;
-    font-size: 70px;
-    font-weight: 900;
-    color: rgba(255,255,255,0.9);
-    letter-spacing: -5px;
-}
-
-.article-visual small {
-    position: absolute;
-    bottom: 28px;
-    left: 30px;
-    color: #aaa;
-    font-size: 10px;
-    letter-spacing: 4px;
-}
-
-.article-content {
-    padding: 55px 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.article-category {
-    color: var(--red);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
-}
-
-.article-content h3 {
-    font-size: clamp(25px, 3vw, 38px);
-    line-height: 1.25;
-    font-weight: 900;
-    margin-bottom: 22px;
-}
-
-.article-content p {
-    color: var(--grey);
-    font-size: 15px;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-.article-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    color: white;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    transition: 0.3s;
-}
-
-.article-link:hover {
-    color: var(--red);
-    gap: 18px;
-}
-
-/* 4. CREATIVE TOPICS */
-
-.blog-topics {
-    padding: 110px 5%;
-    background: var(--dark);
-}
-
-.blog-topic-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-    margin-top: 45px;
-}
-
-.blog-topic-card {
-    display: block;
-    background: #151515;
-    padding: 32px 24px;
-    min-height: 210px;
-    border: 1px solid rgba(255,255,255,0.08);
-    transition: 0.3s ease;
-}
-
-.blog-topic-card:hover {
-    transform: translateY(-7px);
-    border-color: var(--red);
-    background: #1b1012;
-}
-
-.blog-topic-number {
-    color: var(--red);
-    font-size: 12px;
-    font-weight: 800;
-}
-
-.blog-topic-card h3 {
-    font-size: 18px;
-    margin: 28px 0 12px;
-}
-
-.blog-topic-card p {
-    color: var(--grey);
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-.blog-topic-arrow {
-    display: block;
-    color: var(--red);
-    margin-top: 22px;
-    font-weight: 800;
-    font-size: 12px;
-}
-
-/* 5. JOURNAL NOTE */
-
-.journal-note {
-    padding: 75px 5%;
-    background: #101010;
-    text-align: center;
-}
-
-.journal-note p {
-    color: var(--grey);
-    font-size: 15px;
-    max-width: 650px;
-    margin: auto;
-    line-height: 1.8;
-}
-
-/* 6. CONTACT CTA */
-
-.blog-contact {
-    padding: 110px 5%;
-    background:
-        radial-gradient(
-            ellipse at center,
-            rgba(229,9,32,0.12),
-            transparent 65%
-        ),
-        var(--black);
-    text-align: center;
-}
-
-.blog-contact h2 {
-    font-size: clamp(35px, 6vw, 65px);
-    font-weight: 900;
-    line-height: 1.15;
-    margin-bottom: 25px;
-}
-
-.blog-contact h2 span {
-    color: var(--red);
-}
-
-.blog-contact p {
-    color: var(--grey);
-    margin-bottom: 35px;
-}
-
-/* 7. RESPONSIVE DESIGN */
-
-@media (max-width: 900px) {
-
-    .blog-topic-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .featured-article {
-        grid-template-columns: 1fr;
-    }
-
-    .article-visual {
-        min-height: 320px;
-    }
-
-}
-
-@media (max-width: 650px) {
-
-    .blog-hero {
-        min-height: 75vh;
-        padding: 130px 5% 80px;
-    }
-
-    .blog-hero h1 {
-        font-size: 48px;
-        letter-spacing: -2px;
-    }
-
-    .blog-hero-description {
-        font-size: 15px;
-    }
-
-    .blog-hero-circle {
-        width: 280px;
-        height: 280px;
-        right: -110px;
-        top: 20%;
-    }
-
-    .blog-section,
-    .blog-topics {
-        padding: 75px 5%;
-    }
-
-    .blog-section-heading {
-        margin-bottom: 35px;
-    }
-
-    .article-visual {
-        min-height: 260px;
-    }
-
-    .article-visual span {
-        font-size: 55px;
-    }
-
-    .article-content {
-        padding: 35px 25px;
-    }
-
-    .blog-topic-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .blog-contact {
-        padding: 80px 5%;
-    }
-
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-    .featured-article,
-    .blog-topic-card,
-    .article-link {
-        transition: none;
-    }
-
-    .featured-article:hover,
-    .blog-topic-card:hover {
-        transform: none;
-    }
-
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Explore the AUTOTUBE CREW STUDIO Journal for creative thinking, animation, CGI, VFX and cinematic production insights.">
+  <meta name="robots" content="index, follow">
+  <title>Studio Journal | AUTOTUBE CREW STUDIO</title>
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/blog.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AUTOTUBE CREW STUDIO">
+  <meta property="og:title" content="Studio Journal | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Creative thinking, visual storytelling and ideas behind animation, CGI, visual effects and cinematic production.">
+  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/blog.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Studio Journal | AUTOTUBE CREW STUDIO">
+  <meta name="twitter:description" content="Explore creative perspectives from the world of visual production and cinematic storytelling.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
 </head>
+<body class="inner-page journal-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<body>
-
-<!-- HEADER -->
-
-<header class="header">
-
-    <a href="index.html" class="logo">
-        AUTO<span>TUBE</span> CREW
+  <header class="header site-header">
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
     </a>
-
-    <nav class="navigation" id="navigation">
-
-        <a href="index.html">Home</a>
-
-        <a href="about.html">About</a>
-
-        <a href="services.html">Services</a>
-
-        <a href="portfolio.html">Portfolio</a>
-
-        <a href="contact.html" class="contact-link">
-            Let's Talk ↗
-        </a>
-
+    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="showreel.html">Showreel</a>
+      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
     </nav>
-
-    <button
-        class="menu-toggle"
-        id="menuToggle"
-        type="button"
-        aria-label="Open navigation"
-        aria-expanded="false">
-
-        ☰
-
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
+      <span aria-hidden="true">☰</span>
     </button>
+  </header>
 
-</header>
-
-<main>
-
-    <!-- HERO SECTION -->
-
-    <section class="blog-hero">
-
-        <div class="blog-hero-content">
-
-            <p class="eyebrow">
-                AUTOTUBE CREW JOURNAL
-            </p>
-
-            <h1>
-                IDEAS.<br>
-                STORIES.<br>
-                <span>CREATIVITY.</span>
-            </h1>
-
-            <p class="blog-hero-description">
-                Explore creative thinking, visual storytelling
-                and the ideas behind animation, CGI, visual
-                effects and cinematic production.
-            </p>
-
+  <main id="main-content">
+    <section class="inner-hero" aria-labelledby="journal-title">
+      <div class="inner-container inner-hero-layout">
+        <div>
+          <p class="eyebrow">AUTOTUBE CREW STUDIO / JOURNAL</p>
+          <h1 id="journal-title">Ideas. Stories.<br><span>Creative perspectives.</span></h1>
+          <p class="inner-hero-copy">Explore the thinking, craft and creative disciplines behind animation, CGI, visual effects and cinematic production.</p>
+          <div class="inner-hero-actions">
+            <a class="button-primary" href="#featured-story">Read the featured story <span aria-hidden="true">↘</span></a>
+            <a class="button-secondary" href="services.html">Explore our capabilities</a>
+          </div>
         </div>
-
-        <div class="blog-hero-circle"></div>
-
-    </section>
-
-
-    <!-- FEATURED ARTICLE -->
-
-    <section class="blog-section">
-
-        <div class="blog-container">
-
-            <div class="blog-section-heading">
-
-                <p class="eyebrow">
-                    THE STUDIO JOURNAL
-                </p>
-
-                <h2>
-                    FEATURED <span>STORY.</span>
-                </h2>
-
-                <p>
-                    Explore ideas and creative perspectives
-                    from the world of visual production
-                    and cinematic storytelling.
-                </p>
-
-            </div>
-
-
-            <article class="featured-article">
-
-                <div class="article-visual">
-
-                    <span>3D</span>
-
-                    <small>
-                        CREATIVE PRODUCTION
-                    </small>
-
-                </div>
-
-
-                <div class="article-content">
-
-                    <span class="article-category">
-                        ANIMATION & STORYTELLING
-                    </span>
-
-                    <h3>
-                        The Craft Behind Cinematic 3D Animation
-                    </h3>
-
-                    <p>
-                        Discover the creative and technical
-                        discipline behind cinematic 3D animation
-                        and visual storytelling.
-                    </p>
-
-                    <a
-                        href="blog-post.html"
-                        class="article-link">
-
-                        READ ARTICLE
-
-                        <span>↗</span>
-
-                    </a>
-
-                </div>
-
-            </article>
-
+        <div class="hero-studio-panel" aria-label="Studio journal visual">
+          <div class="panel-topline"><span>Studio Journal</span><span>Creative / Production</span></div>
+          <div style="position:relative;z-index:1;margin:auto;text-align:center;">
+            <p style="margin:0;color:#ff4658;font-size:11px;font-weight:800;letter-spacing:.22em;">IDEAS IN MOTION</p>
+            <p style="margin:12px 0 0;color:#fff;font-size:clamp(58px,9vw,104px);font-weight:900;line-height:.9;letter-spacing:-.09em;">J<span style="color:#e50920;">/</span></p>
+            <p style="margin:15px 0 0;color:#aaa;font-size:11px;font-weight:700;letter-spacing:.16em;">ANIMATION · CGI · VFX · FILM</p>
+          </div>
+          <div class="panel-bottomline"><strong>STORIES</strong><span>→</span><strong>CRAFT</strong><span>→</span><strong>IMAGINATION</strong></div>
         </div>
-
+      </div>
     </section>
 
-
-    <!-- CREATIVE TOPICS -->
-
-    <section class="blog-topics">
-
-        <div class="blog-container">
-
-            <div class="blog-section-heading">
-
-                <p class="eyebrow">
-                    EXPLORE OUR WORLD
-                </p>
-
-                <h2>
-                    CREATIVE <span>DISCIPLINES.</span>
-                </h2>
-
-                <p>
-                    Explore the production disciplines
-                    that shape our creative work.
-                </p>
-
+    <section class="inner-section" id="featured-story" aria-labelledby="featured-title">
+      <div class="inner-container">
+        <div class="section-kicker"><span>01</span><span>Featured Story</span></div>
+        <div class="capability-layout">
+          <div>
+            <div class="section-heading">
+              <h2 id="featured-title">The craft behind <span>cinematic 3D animation.</span></h2>
+              <p>A closer look at the creative and technical discipline behind cinematic 3D animation and visual storytelling.</p>
             </div>
-
-
-            <div class="blog-topic-grid">
-
-                <a
-                    href="3d-animation.html"
-                    class="blog-topic-card">
-
-                    <span class="blog-topic-number">
-                        01
-                    </span>
-
-                    <h3>3D ANIMATION</h3>
-
-                    <p>
-                        Character animation, movement
-                        and cinematic worlds.
-                    </p>
-
-                    <span class="blog-topic-arrow">
-                        EXPLORE ↗
-                    </span>
-
-                </a>
-
-
-                <a
-                    href="cgi.html"
-                    class="blog-topic-card">
-
-                    <span class="blog-topic-number">
-                        02
-                    </span>
-
-                    <h3>CGI</h3>
-
-                    <p>
-                        Computer-generated imagery
-                        and visual creation.
-                    </p>
-
-                    <span class="blog-topic-arrow">
-                        EXPLORE ↗
-                    </span>
-
-                </a>
-
-
-                <a
-                    href="vfx.html"
-                    class="blog-topic-card">
-
-                    <span class="blog-topic-number">
-                        03
-                    </span>
-
-                    <h3>VISUAL EFFECTS</h3>
-
-                    <p>
-                        Digital environments,
-                        compositing and effects.
-                    </p>
-
-                    <span class="blog-topic-arrow">
-                        EXPLORE ↗
-                    </span>
-
-                </a>
-
-
-                <a
-                    href="film-production.html"
-                    class="blog-topic-card">
-
-                    <span class="blog-topic-number">
-                        04
-                    </span>
-
-                    <h3>FILM PRODUCTION</h3>
-
-                    <p>
-                        Cinematic production
-                        and visual storytelling.
-                    </p>
-
-                    <span class="blog-topic-arrow">
-                        EXPLORE ↗
-                    </span>
-
-                </a>
-
+            <div class="partner-types" aria-label="Article topics">
+              <span>Animation &amp; Storytelling</span>
+              <span>Creative Production</span>
             </div>
-
+          </div>
+          <article class="pipeline-card" style="min-height:300px;display:flex;flex-direction:column;justify-content:space-between;border-color:rgba(229,9,32,.45);background:radial-gradient(ellipse at 80% 10%,rgba(229,9,32,.18),transparent 52%),#101010;">
+            <div>
+              <span class="card-index">FEATURED / 3D ANIMATION</span>
+              <p style="margin:34px 0 10px;color:#fff;font-size:clamp(26px,3.2vw,39px);font-weight:850;line-height:1.12;letter-spacing:-.045em;">The Craft Behind Cinematic 3D Animation</p>
+              <p style="margin:0;color:#aaa;font-size:14px;line-height:1.8;">Discover how creative direction, movement, visual development and technical production come together to shape a cinematic experience.</p>
+            </div>
+            <a class="button-primary" href="blog-post.html" style="align-self:flex-start;margin-top:28px;">Read article <span aria-hidden="true">↗</span></a>
+          </article>
         </div>
-
+      </div>
     </section>
 
-
-    <!-- JOURNAL NOTE -->
-
-    <section class="journal-note">
-
-        <p>
-            More studio stories and creative insights
-            will appear here as new articles are approved
-            for publication.
-        </p>
-
+    <section class="inner-section" aria-labelledby="disciplines-title">
+      <div class="inner-container">
+        <div class="section-kicker"><span>02</span><span>Explore Our World</span></div>
+        <div class="section-heading">
+          <h2 id="disciplines-title">Creative disciplines.<br><span>Connected perspectives.</span></h2>
+          <p>Explore the production disciplines that shape our work and provide context for the ideas shared in the studio journal.</p>
+        </div>
+        <div class="principle-grid">
+          <article class="principle-card">
+            <span class="card-index">01 / ANIMATION</span>
+            <h3>3D Animation</h3>
+            <p>Character, movement, environments and cinematic digital worlds.</p>
+            <p style="margin:18px 0 0;"><a class="button-secondary" href="3d-animation.html">Explore discipline ↗</a></p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">02 / IMAGERY</span>
+            <h3>CGI</h3>
+            <p>Computer-generated imagery, visualisation and digital creation.</p>
+            <p style="margin:18px 0 0;"><a class="button-secondary" href="cgi.html">Explore discipline ↗</a></p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">03 / EFFECTS</span>
+            <h3>Visual Effects</h3>
+            <p>Digital environments, compositing and visual effects production.</p>
+            <p style="margin:18px 0 0;"><a class="button-secondary" href="vfx.html">Explore discipline ↗</a></p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">04 / CINEMA</span>
+            <h3>Film Production</h3>
+            <p>Cinematic production and visual storytelling from development to delivery.</p>
+            <p style="margin:18px 0 0;"><a class="button-secondary" href="film-production.html">Explore discipline ↗</a></p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">05 / PRODUCTION</span>
+            <h3>Video Production</h3>
+            <p>Production support for commercial, branded and digital content.</p>
+            <p style="margin:18px 0 0;"><a class="button-secondary" href="video-production.html">Explore discipline ↗</a></p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">06 / CREATIVE</span>
+            <h3>Creative Content</h3>
+            <p>Visual communication and creative content shaped around a brief.</p>
+            <p style="margin:18px 0 0;"><a class="button-secondary" href="creative-content.html">Explore discipline ↗</a></p>
+          </article>
+        </div>
+      </div>
     </section>
 
-
-    <!-- CONTACT SECTION -->
-
-    <section class="blog-contact">
-
-        <p class="eyebrow">
-            HAVE A CREATIVE IDEA?
-        </p>
-
-        <h2>
-            LET'S CREATE<br>
-            <span>SOMETHING GREAT.</span>
-        </h2>
-
-        <p>
-            Have a project or production idea?
-            Connect with the AUTOTUBE CREW team.
-        </p>
-
-        <a
-            href="contact.html"
-            class="button-primary">
-
-            CONTACT OUR TEAM ↗
-
-        </a>
-
+    <section class="inner-section" aria-labelledby="journal-note-title">
+      <div class="inner-container">
+        <div class="story-layout">
+          <h2 class="story-statement" id="journal-note-title">Thoughtful work starts with <span>good questions.</span></h2>
+          <div class="story-copy">
+            <p>The Studio Journal is a place for selected perspectives on creative practice, visual storytelling and the production disciplines that connect an idea to its final form.</p>
+            <p>New articles and studio insights will be added as they are prepared and approved for publication. We do not present unpublished concepts or proposed projects as completed work.</p>
+            <p>For project enquiries, production discussions or creative partnerships, connect directly with the studio.</p>
+            <p><a class="button-secondary" href="contact.html">Contact the studio <span aria-hidden="true">↗</span></a></p>
+          </div>
+        </div>
+      </div>
     </section>
 
-</main>
+    <section class="inner-cta" aria-labelledby="journal-cta-title">
+      <div class="inner-container">
+        <p class="eyebrow">HAVE A CREATIVE IDEA?</p>
+        <h2 id="journal-cta-title">Let's create something<br><span>worth sharing.</span></h2>
+        <p>Tell us about your project, production requirements or creative direction.</p>
+        <a class="button-primary" href="request-a-quote.html">Start a project enquiry <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
+    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="blog.html" aria-current="page">Journal</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms-and-conditions.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+  </footer>
 
-<!-- FOOTER -->
-
-<footer class="footer">
-
-    <a href="index.html" class="logo">
-        AUTO<span>TUBE</span> CREW
-    </a>
-
-    <p>
-        Creative Production. Without Limits.
-    </p>
-
-    <p>
-        © 2026 AUTOTUBE CREW. All Rights Reserved.
-    </p>
-
-</footer>
-
-
-<!-- SHARED JAVASCRIPT -->
-
-<script src="./assets/js/main.js" defer></script>
-
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
