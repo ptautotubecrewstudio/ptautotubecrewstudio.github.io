@@ -1,476 +1,268 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Project Case Study | AUTOTUBE CREW STUDIO</title>
-
-    <meta name="description" content="Explore creative production and digital project case studies by AUTOTUBE CREW STUDIO.">
-
-    <meta name="robots" content="noindex, nofollow">
-
-    <link rel="stylesheet" href="./assets/css/style.css?v=3">
-
-    <style>
-        .project-hero {
-            padding: 160px 8% 75px;
-            background: var(--dark);
-        }
-
-        .project-hero .eyebrow {
-            color: var(--red);
-            letter-spacing: 3px;
-            font-weight: 800;
-            font-size: 12px;
-        }
-
-        .project-hero h1 {
-            font-size: clamp(38px, 7vw, 75px);
-            line-height: 1.1;
-            margin: 20px 0;
-        }
-
-        .project-hero h1 span {
-            color: var(--red);
-        }
-
-        .project-hero p {
-            color: var(--grey);
-            max-width: 700px;
-            line-height: 1.8;
-        }
-
-        .project-meta {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            padding: 35px 8%;
-            background: #151515;
-        }
-
-        .meta-item span {
-            display: block;
-            color: var(--red);
-            font-size: 11px;
-            letter-spacing: 2px;
-            margin-bottom: 8px;
-        }
-
-        .meta-item h3 {
-            font-size: 15px;
-        }
-
-        .project-visual {
-            margin: 65px auto;
-            width: 84%;
-            min-height: 440px;
-            background:
-                radial-gradient(circle at 65% 30%,
-                rgba(229,9,32,.35), transparent 40%),
-                linear-gradient(135deg,#292929,#080808);
-            border: 1px solid #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 30px;
-        }
-
-        .project-visual span {
-            color: #aaa;
-            font-size: 13px;
-            font-weight: 800;
-            letter-spacing: 3px;
-        }
-
-        .project-section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 75px 8%;
-        }
-
-        .project-section .label {
-            color: var(--red);
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
-        }
-
-        .project-section h2 {
-            font-size: clamp(28px,4vw,44px);
-            margin-bottom: 25px;
-        }
-
-        .project-section h2 span {
-            color: var(--red);
-        }
-
-        .project-section > p {
-            color: var(--grey);
-            line-height: 1.9;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .project-card {
-            background: var(--dark-grey);
-            border: 1px solid #333;
-            padding: 30px;
-        }
-
-        .project-card h3 {
-            margin-bottom: 15px;
-        }
-
-        .project-card p {
-            color: var(--grey);
-            line-height: 1.8;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .gallery-item {
-            min-height: 250px;
-            background:
-                linear-gradient(135deg,#252525,#101010);
-            border: 1px solid #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-            color: #999;
-            font-size: 12px;
-            letter-spacing: 2px;
-        }
-
-        .project-cta {
-            text-align: center;
-            background: var(--dark);
-            padding: 85px 8%;
-        }
-
-        .project-cta h2 {
-            font-size: clamp(30px,5vw,46px);
-            margin-bottom: 20px;
-        }
-
-        .project-cta h2 span {
-            color: var(--red);
-        }
-
-        .project-cta p {
-            color: var(--grey);
-            margin-bottom: 28px;
-            line-height: 1.8;
-        }
-
-        @media(max-width:800px) {
-            .project-meta {
-                grid-template-columns: repeat(2,1fr);
-            }
-
-            .project-visual {
-                min-height: 280px;
-            }
-        }
-
-        @media(max-width:550px) {
-            .project-grid,
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-
-            .project-hero {
-                padding: 130px 6% 60px;
-            }
-
-            .project-section {
-                padding: 55px 6%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <title>Project Template | AUTOTUBE CREW STUDIO</title>
+  <meta name="description" content="A project case study template for presenting the creative direction, production process, visual work and verified deliverables of AUTOTUBE CREW STUDIO projects.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/project-template.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Project Case Study | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Explore the creative vision, production approach and approved visual material behind a studio project.">
+  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/project-template.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/brand/logo.png.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+  <style>
+    .project-template-page { --project-red:#e50920; --project-line:rgba(255,255,255,.12); }
+    .project-template-page .project-hero { min-height:520px; }
+    .project-template-page .project-hero .inner-hero-copy { max-width:760px; }
+    .project-template-page .project-meta {
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;
+      margin-top:-1px;border-block:1px solid var(--project-line);background:var(--project-line);
+    }
+    .project-template-page .project-meta-item { min-width:0;padding:25px 22px;background:#101010; }
+    .project-template-page .project-meta-item span {
+      display:block;margin-bottom:9px;color:#ff5966;font-size:10px;font-weight:800;
+      letter-spacing:.16em;text-transform:uppercase;
+    }
+    .project-template-page .project-meta-item strong { color:#fff;font-size:14px;line-height:1.6;overflow-wrap:anywhere; }
+    .project-template-page .project-visual {
+      position:relative;display:grid;min-height:390px;place-items:center;overflow:hidden;
+      border:1px solid var(--project-line);
+      background:radial-gradient(circle at 70% 35%,rgba(229,9,32,.22),transparent 34%),
+                 linear-gradient(135deg,#1b1b1b,#080808 70%);
+    }
+    .project-template-page .project-visual::before,
+    .project-template-page .project-visual::after {
+      position:absolute;content:"";width:260px;height:260px;border:1px solid rgba(229,9,32,.35);
+      border-radius:50%;box-shadow:0 0 80px rgba(229,9,32,.08);
+    }
+    .project-template-page .project-visual::after { width:190px;height:190px;border-color:rgba(255,255,255,.16); }
+    .project-template-page .visual-placeholder {
+      position:relative;z-index:1;padding:20px;color:#bcbcbc;text-align:center;
+      font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+    }
+    .project-template-page .project-intro-grid { display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,6vw,82px);align-items:start; }
+    .project-template-page .project-statement { margin:0;color:#fff;font-size:clamp(28px,4vw,49px);line-height:1.12;letter-spacing:-.045em; }
+    .project-template-page .project-statement span { color:var(--project-red); }
+    .project-template-page .project-copy p { color:#bdbdbd;font-size:15px;line-height:1.9; }
+    .project-template-page .project-note {
+      margin-top:22px;padding:17px 19px;border-left:3px solid var(--project-red);
+      background:#121212;color:#aaa;font-size:13px;line-height:1.8;
+    }
+    .project-template-page .project-detail-grid {
+      display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:35px;
+    }
+    .project-template-page .project-detail-card {
+      min-width:0;padding:25px;border:1px solid var(--project-line);
+      background:linear-gradient(145deg,#151515,#0b0b0b);
+    }
+    .project-template-page .project-detail-card .card-index {
+      color:#ff5966;font-size:10px;font-weight:800;letter-spacing:.16em;
+    }
+    .project-template-page .project-detail-card h3 { margin:16px 0 9px;color:#fff;font-size:19px; }
+    .project-template-page .project-detail-card p { margin:0;color:#aaa;font-size:13px;line-height:1.85; }
+    .project-template-page .project-process {
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:34px;
+    }
+    .project-template-page .project-process-card {
+      min-height:190px;padding:23px;border-top:2px solid var(--project-red);background:#111;
+    }
+    .project-template-page .project-process-card span { color:#ff5966;font-size:10px;font-weight:800;letter-spacing:.15em; }
+    .project-template-page .project-process-card h3 { margin:25px 0 9px;color:#fff;font-size:17px; }
+    .project-template-page .project-process-card p { margin:0;color:#aaa;font-size:12px;line-height:1.8; }
+    .project-template-page .project-gallery {
+      display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:34px;
+    }
+    .project-template-page .project-gallery-item {
+      display:grid;min-height:230px;place-items:center;padding:20px;border:1px solid var(--project-line);
+      background:linear-gradient(145deg,#1b1b1b,#0b0b0b);color:#aaa;text-align:center;
+      font-size:10px;font-weight:800;letter-spacing:.15em;
+    }
+    .project-template-page .project-outcome {
+      padding:25px;border:1px solid var(--project-line);background:#101010;color:#bdbdbd;
+      font-size:14px;line-height:1.9;
+    }
+    .project-template-page .project-related { display:flex;flex-wrap:wrap;gap:10px;margin-top:25px; }
+    .project-template-page .project-related a {
+      display:inline-flex;gap:10px;align-items:center;padding:12px 15px;
+      border:1px solid var(--project-line);color:#ddd;font-size:12px;
+    }
+    .project-template-page .project-related a:hover { border-color:var(--project-red);color:#fff; }
+    .project-template-page .project-related span { color:#ff5966; }
+    @media(max-width:900px) {
+      .project-template-page .project-meta { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .project-template-page .project-process { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .project-template-page .project-intro-grid { grid-template-columns:1fr; }
+    }
+    @media(max-width:650px) {
+      .project-template-page .project-meta,
+      .project-template-page .project-detail-grid,
+      .project-template-page .project-process,
+      .project-template-page .project-gallery { grid-template-columns:1fr; }
+      .project-template-page .project-visual { min-height:250px; }
+      .project-template-page .project-gallery-item { min-height:190px; }
+    }
+    @media(prefers-reduced-motion:reduce) {
+      .project-template-page *, .project-template-page *::before, .project-template-page *::after {
+        scroll-behavior:auto!important;transition-duration:.01ms!important;
+        animation-duration:.01ms!important;animation-iteration-count:1!important;
+      }
+    }
+  </style>
 </head>
+<body class="inner-page service-page project-template-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="header site-header">
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
+    </a>
+    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Our Work</a>
+      <a href="showreel.html">Showreel</a>
+      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
+      <span aria-hidden="true">☰</span>
+    </button>
+  </header>
 
-<body>
-
-    <!-- HEADER -->
-    <header class="header">
-
-        <a href="index.html" class="logo">
-            AUTOTUBE CREW
-        </a>
-
-        <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <button
-    class="menu-toggle"
-    type="button"
-    aria-label="Open navigation"
-    aria-expanded="false">
-    ☰
-</button>
-
-    </header>
-
-
-    <!-- PROJECT HERO -->
-    <section class="project-hero">
-
-        <p class="eyebrow">
-            PROJECT CASE STUDY TEMPLATE
-        </p>
-
-        <h1>
-            PROJECT <span>NAME</span>
-        </h1>
-
-        <p>
-            Replace this introduction with a short,
-            professional description of the actual project,
-            its creative vision and objectives.
-        </p>
-
+  <main id="main-content">
+    <section class="inner-hero project-hero" aria-labelledby="project-title">
+      <div class="inner-container inner-hero-layout">
+        <div>
+          <p class="eyebrow">PROJECT CASE STUDY / STUDIO TEMPLATE</p>
+          <h1 id="project-title">Project <span>Name</span></h1>
+          <p class="inner-hero-copy">A focused look at the creative brief, visual direction, production process and approved deliverables behind this project. Replace the template fields with verified project information before publication.</p>
+          <div class="inner-hero-actions">
+            <a class="button-primary" href="#project-overview">Explore the project <span aria-hidden="true">↓</span></a>
+            <a class="button-secondary" href="request-a-quote.html">Discuss a project</a>
+          </div>
+        </div>
+        <div class="project-visual" role="img" aria-label="Placeholder for an approved project hero image">
+          <span class="visual-placeholder">Approved project hero visual</span>
+        </div>
+      </div>
     </section>
 
-
-    <!-- PROJECT INFORMATION -->
-    <section class="project-meta">
-
-        <div class="meta-item">
-            <span>PROJECT TYPE</span>
-            <h3>[Project Category]</h3>
-        </div>
-
-        <div class="meta-item">
-            <span>YEAR</span>
-            <h3>[Production Year]</h3>
-        </div>
-
-        <div class="meta-item">
-            <span>SERVICES</span>
-            <h3>[Services Delivered]</h3>
-        </div>
-
-        <div class="meta-item">
-            <span>CLIENT</span>
-            <h3>[Approved Client Name]</h3>
-        </div>
-
+    <section class="inner-container project-meta" aria-label="Project information">
+      <div class="project-meta-item"><span>Project category</span><strong>[Verified project type]</strong></div>
+      <div class="project-meta-item"><span>Production year</span><strong>[Approved year]</strong></div>
+      <div class="project-meta-item"><span>Studio services</span><strong>[Confirmed services]</strong></div>
+      <div class="project-meta-item"><span>Client / partner</span><strong>[Publish only with approval]</strong></div>
     </section>
 
+    <section class="inner-section" id="project-overview">
+      <div class="inner-container project-intro-grid">
+        <div>
+          <p class="section-kicker">01 / PROJECT OVERVIEW</p>
+          <h2 class="project-statement">A clear idea. <span>A considered visual direction.</span></h2>
+        </div>
+        <div class="project-copy">
+          <p>[Describe the confirmed project background, creative brief, intended audience and purpose. Explain what the project set out to communicate or achieve without adding unverified claims.]</p>
+          <p>[Summarise the visual concept and the production requirements that shaped the work. Include only details that have been checked and approved for publication.]</p>
+          <div class="project-note">Template publishing note: replace every bracketed field, add only approved project assets, and remove any section that does not apply. Do not publish confidential client information, unapproved credits or unsupported performance claims.</div>
+        </div>
+      </div>
+    </section>
 
-    <!-- MAIN PROJECT IMAGE -->
-    <div class="project-visual">
+    <section class="inner-section">
+      <div class="inner-container">
+        <p class="section-kicker">02 / CREATIVE &amp; PRODUCTION DETAILS</p>
+        <div class="section-heading">
+          <h2>From creative intent to <span>production execution.</span></h2>
+          <p>Use these sections to explain the actual work completed and the decisions that informed the final visual result.</p>
+        </div>
+        <div class="project-detail-grid">
+          <article class="project-detail-card"><span class="card-index">01 / DIRECTION</span><h3>Creative direction</h3><p>[Document the approved visual language, references, storytelling approach, art direction and key creative decisions.]</p></article>
+          <article class="project-detail-card"><span class="card-index">02 / SCOPE</span><h3>Scope of work</h3><p>[List the confirmed services, production tasks, shot or asset requirements and agreed responsibilities.]</p></article>
+          <article class="project-detail-card"><span class="card-index">03 / TECHNICAL</span><h3>Tools &amp; technology</h3><p>[Name only the software, engines, pipelines, equipment or technical methods actually used and approved for disclosure.]</p></article>
+          <article class="project-detail-card"><span class="card-index">04 / CHALLENGES</span><h3>Production considerations</h3><p>[Explain relevant creative or technical challenges and the verified approach used to address them.]</p></article>
+        </div>
+      </div>
+    </section>
 
-        <span>
-            ADD APPROVED PROJECT HERO IMAGE
-        </span>
+    <section class="inner-section">
+      <div class="inner-container">
+        <p class="section-kicker">03 / PRODUCTION JOURNEY</p>
+        <div class="section-heading">
+          <h2>How the work <span>comes together.</span></h2>
+          <p>Adapt this sequence to match the project. Some assignments may use only selected stages or combine several disciplines.</p>
+        </div>
+        <div class="project-process">
+          <article class="project-process-card"><span>01 / PRE-PRODUCTION</span><h3>Plan &amp; prepare</h3><p>[Briefing, research, references, concept development, storyboards, scheduling and approvals, where applicable.]</p></article>
+          <article class="project-process-card"><span>02 / PRODUCTION</span><h3>Create &amp; build</h3><p>[Animation, asset creation, filming, CGI, environment work, simulation or other confirmed production tasks.]</p></article>
+          <article class="project-process-card"><span>03 / POST-PRODUCTION</span><h3>Refine &amp; finish</h3><p>[Editing, compositing, lighting, rendering, sound, colour, visual effects and finishing tasks actually completed.]</p></article>
+          <article class="project-process-card"><span>04 / DELIVERY</span><h3>Review &amp; deliver</h3><p>[Describe the approved review stages, final formats, handover materials and delivery status.]</p></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="inner-section">
+      <div class="inner-container">
+        <p class="section-kicker">04 / PROJECT GALLERY</p>
+        <div class="section-heading">
+          <h2>Selected frames. <span>Production details.</span></h2>
+          <p>Replace the placeholders with approved project stills, renders, concept artwork or behind-the-scenes images. Use accurate alt text for every image.</p>
+        </div>
+        <div class="project-gallery">
+          <div class="project-gallery-item">Approved project image 01</div>
+          <div class="project-gallery-item">Approved project image 02</div>
+          <div class="project-gallery-item">Approved project image 03</div>
+          <div class="project-gallery-item">Approved project image 04</div>
+        </div>
+        <div class="project-note">No stock imagery or invented project visuals should be used as evidence of completed client work. Add real media paths only after checking that each file exists in the repository.</div>
+      </div>
+    </section>
+
+    <section class="inner-section">
+      <div class="inner-container">
+        <p class="section-kicker">05 / FINAL OUTCOME</p>
+        <div class="section-heading">
+          <h2>The final <span>result.</span></h2>
+        </div>
+        <div class="project-outcome">[Describe the confirmed final deliverables and project outcome. Add measurable results only when supported by reliable records and approved for publication. If client details or results are confidential, omit them.]</div>
+        <div class="project-related" aria-label="Related studio pages">
+          <a href="portfolio.html">Explore the portfolio <span aria-hidden="true">↗</span></a>
+          <a href="showreel.html">Watch the showreel <span aria-hidden="true">↗</span></a>
+          <a href="case-studies.html">View case studies <span aria-hidden="true">↗</span></a>
+          <a href="our-workflow.html">Our production workflow <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-cta" aria-labelledby="project-cta-title">
+      <div class="inner-container">
+        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+        <h2 id="project-cta-title">Let's shape your next<br><span>visual experience.</span></h2>
+        <p>Share your creative brief, production goals or technical requirements with AUTOTUBE CREW STUDIO.</p>
+        <a class="button-primary" href="request-a-quote.html">Request a project quotation <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58">
+    </a>
+    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms-and-conditions.html">Terms</a>
+      <a href="contact.html">Contact</a>
     </div>
-
-
-    <!-- PROJECT OVERVIEW -->
-    <section class="project-section">
-
-        <p class="label">01 / PROJECT OVERVIEW</p>
-
-        <h2>
-            THE STORY BEHIND
-            <span>THE PROJECT.</span>
-        </h2>
-
-        <p>
-            Add the actual project background, objectives,
-            creative vision and the requirements that
-            shaped the production.
-
-            Explain what the project was designed
-            to achieve and its intended audience.
-        </p>
-
-    </section>
-
-
-    <!-- CREATIVE APPROACH -->
-    <section class="project-section">
-
-        <p class="label">02 / CREATIVE APPROACH</p>
-
-        <h2>
-            TURNING IDEAS INTO
-            <span>VISUAL EXPERIENCES.</span>
-        </h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-
-                <h3>Creative Direction</h3>
-
-                <p>
-                    Describe the actual creative direction,
-                    visual references, artistic approach
-                    and storytelling decisions.
-                </p>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3>Production Techniques</h3>
-
-                <p>
-                    Describe the production methods,
-                    tools, technologies and techniques
-                    actually used in the project.
-                </p>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3>Production Challenges</h3>
-
-                <p>
-                    Explain the important technical
-                    or creative challenges and
-                    how they were addressed.
-                </p>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3>Final Outcome</h3>
-
-                <p>
-                    Describe the actual final deliverables,
-                    project completion status and
-                    approved outcomes.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECT GALLERY -->
-    <section class="project-section">
-
-        <p class="label">03 / PROJECT GALLERY</p>
-
-        <h2>
-            BEHIND THE
-            <span>SCENES.</span>
-        </h2>
-
-        <p>
-            Add approved production stills,
-            final renders, concept art,
-            storyboards or other project images.
-        </p>
-
-        <div class="gallery">
-
-            <div class="gallery-item">
-                ADD PROJECT IMAGE 01
-            </div>
-
-            <div class="gallery-item">
-                ADD PROJECT IMAGE 02
-            </div>
-
-            <div class="gallery-item">
-                ADD PROJECT IMAGE 03
-            </div>
-
-            <div class="gallery-item">
-                ADD PROJECT IMAGE 04
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FINAL RESULT -->
-    <section class="project-section">
-
-        <p class="label">04 / PROJECT OUTCOME</p>
-
-        <h2>
-            THE FINAL
-            <span>RESULT.</span>
-        </h2>
-
-        <p>
-            Document the real project results,
-            approved deliverables, completion
-            details and any measurable outcomes.
-
-            Only publish verified information
-            and approved client material.
-        </p>
-
-    </section>
-
-
-    <!-- CTA -->
-    <section class="project-cta">
-
-        <p>HAVE A SIMILAR CREATIVE PROJECT?</p>
-
-        <h2>
-            LET'S CREATE
-            <span>SOMETHING GREAT.</span>
-        </h2>
-
-        <p>
-            Talk to AUTOTUBE CREW STUDIO
-            about your next production.
-        </p>
-
-        <a href="contact.html" class="button-primary">
-            START A CONVERSATION
-        </a>
-
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <p>
-            © 2026 AUTOTUBE CREW STUDIO.
-            ALL RIGHTS RESERVED.
-        </p>
-
-        <p>
-            CREATIVITY. TECHNOLOGY. STORYTELLING.
-        </p>
-
-    </footer>
-<script src="./assets/js/main.js" defer></script>
+    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+  </footer>
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
