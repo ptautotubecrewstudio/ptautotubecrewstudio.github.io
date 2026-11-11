@@ -4,88 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#070707">
-  <title>Request a Quote | AUTOTUBE CREW STUDIO</title>
-  <meta name="description" content="Share your animation, CGI, VFX, film, video production or digital platform requirements with AUTOTUBE CREW STUDIO to discuss a project-specific quotation.">
+  <title>Request a Project Quote | AUTOTUBE CREW STUDIO</title>
+  <meta name="description" content="Share your animation, CGI, VFX, film, video production, advertising or digital platform requirements with AUTOTUBE CREW STUDIO to discuss a project-specific proposal.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ptautotubecrewstudio.github.io/request-a-quote.html">
-  <meta property="og:title" content="Request a Quote | AUTOTUBE CREW STUDIO">
-  <meta property="og:description" content="Tell us about your creative or digital project and its production requirements.">
+  <meta property="og:title" content="Request a Project Quote | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Tell us about your creative production or digital platform project, objectives, scope and expected deliverables.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ptautotubecrewstudio.github.io/request-a-quote.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/brand/logo.png.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
-  <link rel="stylesheet" href="assets/css/inner-pages.css?v=1">
-  <link rel="stylesheet" href="assets/css/service-pages.css?v=1">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+  <link rel="stylesheet" href="./assets/css/service-pages.css?v=1">
   <style>
-    .quote-page .quote-hero { min-height: 510px; }
-    .quote-page .quote-hero-layout { grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr); }
-    .quote-page .quote-hero-panel { min-height:290px; padding:30px; border:1px solid var(--inner-line); background:radial-gradient(circle at 50% 50%,rgba(229,9,32,.16),transparent 55%),linear-gradient(145deg,#191919,#090909); display:flex; flex-direction:column; justify-content:space-between; }
-    .quote-page .quote-hero-panel .panel-topline,.quote-page .quote-hero-panel .panel-bottomline { display:flex; justify-content:space-between; gap:12px; color:#aaa; font-size:10px; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
-    .quote-page .quote-hero-panel img { width:190px; max-height:100px; object-fit:contain; margin:auto; }
-    .quote-page .quote-hero-panel strong { color:#fff; }
-    .quote-page .quote-intro { max-width:760px; margin-bottom:36px; color:#bdbdbd; line-height:1.9; }
-    .quote-page .quote-layout { display:grid; grid-template-columns:minmax(250px,.72fr) minmax(0,1.6fr); gap:26px; align-items:start; }
-    .quote-page .quote-sidebar,.quote-page .quote-form-wrapper { border:1px solid var(--inner-line); background:#101010; }
-    .quote-page .quote-sidebar { padding:28px; position:sticky; top:112px; }
-    .quote-page .quote-sidebar h2 { margin:0 0 18px; font-size:19px; }
-    .quote-page .quote-sidebar p { margin:0 0 20px; color:#aaa; font-size:13px; line-height:1.85; }
-    .quote-page .quote-sidebar a { color:#ff5968; text-decoration:underline; text-underline-offset:3px; }
-    .quote-page .quote-sidebar-list { display:grid; gap:13px; margin:22px 0 0; padding:0; list-style:none; }
-    .quote-page .quote-sidebar-list li { display:flex; gap:12px; color:#ccc; font-size:12px; line-height:1.6; }
-    .quote-page .quote-sidebar-list span { color:#ff4658; font-weight:800; }
-    .quote-page .quote-form-wrapper { padding:clamp(22px,4vw,42px); }
-    .quote-page .quote-form-intro { margin:0 0 30px; color:#aaa; font-size:13px; line-height:1.8; }
-    .quote-page .quote-form-section { padding:28px 0; border-top:1px solid rgba(255,255,255,.1); }
-    .quote-page .quote-form-section:first-of-type { border-top:0; padding-top:0; }
-    .quote-page .quote-form-section h2 { margin:0 0 22px; color:#fff; font-size:19px; letter-spacing:-.02em; }
-    .quote-page .quote-form-section h2 span { margin-right:10px; color:#ff4658; font-size:11px; letter-spacing:.12em; }
-    .quote-page .quote-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:19px; }
-    .quote-page .quote-field { min-width:0; display:flex; flex-direction:column; gap:8px; }
+    .quote-page { --quote-red:#e50920; --quote-line:rgba(255,255,255,.12); }
+    .quote-page .quote-hero { min-height:540px; }
+    .quote-page .quote-hero-layout { grid-template-columns:minmax(0,1.15fr) minmax(270px,.85fr); }
+    .quote-page .quote-hero-panel { min-height:330px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;border:1px solid var(--quote-line);background:radial-gradient(circle at 50% 48%,rgba(229,9,32,.19),transparent 48%),linear-gradient(145deg,#191919,#080808); }
+    .quote-page .quote-hero-panel::before,.quote-page .quote-hero-panel::after { content:"";position:absolute;top:50%;left:50%;width:220px;height:220px;border:1px solid rgba(229,9,32,.42);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 70px rgba(229,9,32,.1); }
+    .quote-page .quote-hero-panel::after { width:290px;height:290px;border-color:rgba(255,255,255,.13); }
+    .quote-page .quote-panel-top,.quote-page .quote-panel-bottom { position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#aaa;font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase; }
+    .quote-page .quote-panel-logo { position:relative;z-index:1;width:min(100%,190px);max-height:100px;margin:auto;object-fit:contain; }
+    .quote-page .quote-panel-bottom strong { color:#fff; }
+    .quote-page .quote-process-strip { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:36px;border:1px solid var(--quote-line);background:var(--quote-line); }
+    .quote-page .quote-process-step { min-height:125px;padding:20px;background:#101010; }
+    .quote-page .quote-process-step span { display:block;margin-bottom:18px;color:#ff5968;font-size:10px;font-weight:800;letter-spacing:.16em; }
+    .quote-page .quote-process-step strong { display:block;color:#fff;font-size:14px; }
+    .quote-page .quote-process-step p { margin:7px 0 0;color:#999;font-size:11px;line-height:1.7; }
+    .quote-page .quote-layout { display:grid;grid-template-columns:minmax(245px,.72fr) minmax(0,1.55fr);gap:24px;align-items:start;margin-top:38px; }
+    .quote-page .quote-sidebar,.quote-page .quote-form-wrapper { min-width:0;border:1px solid var(--quote-line);background:#101010; }
+    .quote-page .quote-sidebar { position:sticky;top:112px;padding:27px; }
+    .quote-page .quote-sidebar h3 { margin:0 0 13px;color:#fff;font-size:21px;line-height:1.25;letter-spacing:-.03em; }
+    .quote-page .quote-sidebar > p:not(.eyebrow) { margin:0;color:#aaa;font-size:13px;line-height:1.85; }
+    .quote-page .quote-sidebar-list { display:grid;gap:15px;margin:24px 0 0;padding:0;list-style:none; }
+    .quote-page .quote-sidebar-list li { display:grid;grid-template-columns:28px 1fr;gap:10px;color:#c5c5c5;font-size:12px;line-height:1.7; }
+    .quote-page .quote-sidebar-list li span:first-child { color:#ff5968;font-size:10px;font-weight:800;letter-spacing:.1em; }
+    .quote-page .quote-sidebar-links { display:grid;gap:11px;margin-top:25px;padding-top:21px;border-top:1px solid var(--quote-line); }
+    .quote-page .quote-sidebar-links a { display:flex;justify-content:space-between;gap:12px;color:#ddd;font-size:12px; }
+    .quote-page .quote-sidebar-links a span { color:#ff5968; }
+    .quote-page .quote-form-wrapper { padding:clamp(21px,4vw,40px); }
+    .quote-page .quote-form-heading { margin:0 0 9px;color:#fff;font-size:25px;letter-spacing:-.04em; }
+    .quote-page .quote-form-intro { margin:0 0 30px;color:#aaa;font-size:13px;line-height:1.85; }
+    .quote-page .quote-form-section { padding:29px 0;border-top:1px solid rgba(255,255,255,.1); }
+    .quote-page .quote-form-section:first-of-type { padding-top:0;border-top:0; }
+    .quote-page .quote-form-section h3 { margin:0 0 21px;color:#fff;font-size:19px;letter-spacing:-.025em; }
+    .quote-page .quote-form-section h3 span { display:block;margin-bottom:7px;color:#ff5968;font-size:10px;font-weight:800;letter-spacing:.16em; }
+    .quote-page .quote-form-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px; }
+    .quote-page .quote-field { min-width:0;display:flex;flex-direction:column;gap:8px; }
     .quote-page .quote-field.full-width { grid-column:1/-1; }
-    .quote-page .quote-field label,.quote-page .quote-field-label { color:#ddd; font-size:12px; font-weight:700; }
-    .quote-page .quote-field label small { color:#858585; font-weight:400; }
-    .quote-page .quote-field input,.quote-page .quote-field select,.quote-page .quote-field textarea { width:100%; min-height:48px; padding:13px 14px; border:1px solid #383838; border-radius:0; background:#080808; color:#f4f4f4; font:inherit; font-size:13px; }
-    .quote-page .quote-field textarea { min-height:135px; resize:vertical; line-height:1.7; }
+    .quote-page .quote-field label,.quote-page .quote-field-label { color:#ddd;font-size:12px;font-weight:700; }
+    .quote-page .quote-field label small { color:#888;font-weight:400; }
+    .quote-page .quote-field input,.quote-page .quote-field select,.quote-page .quote-field textarea { width:100%;min-height:49px;padding:13px 14px;border:1px solid #383838;border-radius:0;background:#080808;color:#f4f4f4;font:inherit;font-size:13px; }
+    .quote-page .quote-field textarea { min-height:136px;resize:vertical;line-height:1.75; }
     .quote-page .quote-field input::placeholder,.quote-page .quote-field textarea::placeholder { color:#777; }
-    .quote-page .quote-field input:focus,.quote-page .quote-field select:focus,.quote-page .quote-field textarea:focus { outline:2px solid rgba(229,9,32,.55); outline-offset:1px; border-color:#e50920; }
-    .quote-page .quote-services-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
-    .quote-page .quote-check-item { min-height:48px; display:flex; align-items:flex-start; gap:10px; padding:12px; border:1px solid #333; background:#080808; color:#ccc; font-size:12px; cursor:pointer; }
-    .quote-page .quote-check-item input,.quote-page .quote-consent input { width:17px; height:17px; flex:0 0 auto; margin:2px 0 0; accent-color:#e50920; }
-    .quote-page .quote-agreement-notice { margin:28px 0; padding:21px; border-left:3px solid #e50920; background:#171010; }
-    .quote-page .quote-agreement-notice h3 { margin:0 0 9px; font-size:15px; }
-    .quote-page .quote-agreement-notice p { margin:0; color:#bbb; font-size:12px; line-height:1.85; }
-    .quote-page .quote-agreement-notice a,.quote-page .quote-consent a { color:#ff5968; text-decoration:underline; text-underline-offset:3px; }
-    .quote-page .quote-consent { display:flex; align-items:flex-start; gap:12px; margin:23px 0; color:#aaa; font-size:12px; line-height:1.8; }
-    .quote-page .quote-submit-btn { min-height:50px; padding:14px 24px; border:1px solid #e50920; background:#e50920; color:#fff; font:inherit; font-size:11px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; cursor:pointer; }
+    .quote-page .quote-field input:focus,.quote-page .quote-field select:focus,.quote-page .quote-field textarea:focus { outline:2px solid rgba(229,9,32,.55);outline-offset:2px;border-color:var(--quote-red); }
+    .quote-page .quote-services-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px; }
+    .quote-page .quote-check-item { min-height:49px;display:flex;align-items:flex-start;gap:10px;padding:12px;border:1px solid #333;background:#080808;color:#ccc;font-size:12px;line-height:1.55;cursor:pointer;transition:border-color .2s ease,background .2s ease; }
+    .quote-page .quote-check-item:hover { border-color:rgba(229,9,32,.7);background:#100b0c; }
+    .quote-page .quote-check-item input,.quote-page .quote-consent input { width:17px;height:17px;flex:0 0 auto;margin:1px 0 0;accent-color:var(--quote-red); }
+    .quote-page .quote-field-help { margin:0;color:#888;font-size:11px;line-height:1.7; }
+    .quote-page .quote-agreement-notice { margin:25px 0;padding:20px 21px;border-left:3px solid var(--quote-red);background:#171010; }
+    .quote-page .quote-agreement-notice h3 { margin:0 0 8px;color:#fff;font-size:15px; }
+    .quote-page .quote-agreement-notice p { margin:0;color:#bbb;font-size:12px;line-height:1.85; }
+    .quote-page .quote-agreement-notice a,.quote-page .quote-consent a { color:#ff6976;text-decoration:underline;text-underline-offset:3px; }
+    .quote-page .quote-consent { display:flex;align-items:flex-start;gap:12px;margin:23px 0;color:#aaa;font-size:12px;line-height:1.8; }
+    .quote-page .quote-submit-btn { min-height:51px;display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 23px;border:1px solid var(--quote-red);background:var(--quote-red);color:#fff;font:inherit;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .2s ease,border-color .2s ease; }
     .quote-page .quote-submit-btn:hover { background:transparent; }
-    .quote-page .quote-submit-btn:focus-visible { outline:2px solid #fff; outline-offset:4px; }
-    .quote-page .quote-form-status { display:none; margin-top:18px; padding:16px; border-left:3px solid #e50920; background:#171010; color:#eee; font-size:13px; line-height:1.8; }
+    .quote-page .quote-submit-btn:focus-visible { outline:2px solid #fff;outline-offset:4px; }
+    .quote-page .quote-form-status { display:none;margin-top:18px;padding:16px;border-left:3px solid var(--quote-red);background:#171010;color:#eee;font-size:13px;line-height:1.8; }
     .quote-page .quote-form-status.visible { display:block; }
-    .quote-page .quote-form-note { margin:14px 0 0; color:#888; font-size:11px; line-height:1.8; }
-    .quote-page .quote-related-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:32px; }
-    .quote-page .quote-related-card { padding:24px; border:1px solid var(--inner-line); background:#101010; }
-    .quote-page .quote-related-card h3 { margin:0 0 9px; color:#fff; font-size:16px; }
-    .quote-page .quote-related-card p { margin:0; color:#aaa; font-size:12px; line-height:1.8; }
-    .quote-page .quote-related-card a { display:inline-block; margin-top:14px; color:#ff5968; font-size:11px; font-weight:800; text-transform:uppercase; }
-    @media(max-width:900px) { .quote-page .quote-layout { grid-template-columns:1fr; } .quote-page .quote-sidebar { position:static; } .quote-page .quote-hero-layout { grid-template-columns:1fr; } .quote-page .quote-hero-panel { min-height:220px; } }
-    @media(max-width:650px) { .quote-page .quote-form-grid,.quote-page .quote-services-grid,.quote-page .quote-related-grid { grid-template-columns:1fr; } .quote-page .quote-field.full-width { grid-column:auto; } .quote-page .quote-submit-btn { width:100%; } }
+    .quote-page .quote-form-note { margin:14px 0 0;color:#888;font-size:11px;line-height:1.8; }
+    .quote-page .quote-related-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:35px; }
+    .quote-page .quote-related-card { min-height:175px;padding:24px;border:1px solid var(--quote-line);background:#101010; }
+    .quote-page .quote-related-card span { color:#ff5968;font-size:10px;font-weight:800;letter-spacing:.15em; }
+    .quote-page .quote-related-card h3 { margin:16px 0 8px;color:#fff;font-size:17px; }
+    .quote-page .quote-related-card p { margin:0;color:#aaa;font-size:12px;line-height:1.8; }
+    .quote-page .quote-related-card a { display:inline-block;margin-top:14px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase; }
+    .quote-page .quote-related-card a:hover { color:#ff6976; }
+    @media(max-width:900px) { .quote-page .quote-hero-layout{grid-template-columns:1fr}.quote-page .quote-hero-panel{min-height:235px}.quote-page .quote-layout{grid-template-columns:1fr}.quote-page .quote-sidebar{position:static}.quote-page .quote-process-strip{grid-template-columns:repeat(2,minmax(0,1fr))} }
+    @media(max-width:650px) { .quote-page .quote-form-grid,.quote-page .quote-services-grid,.quote-page .quote-related-grid,.quote-page .quote-process-strip{grid-template-columns:1fr}.quote-page .quote-field.full-width{grid-column:auto}.quote-page .quote-submit-btn{width:100%}.quote-page .quote-hero-panel{min-height:210px;padding:22px}.quote-page .quote-sidebar{padding:22px} }
+    @media(prefers-reduced-motion:reduce) { .quote-page *, .quote-page *::before, .quote-page *::after { scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important; } }
   </style>
 </head>
 <body class="inner-page service-page quote-page">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="header site-header">
-    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
-      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
-    </a>
+    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64"></a>
     <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Our Work</a>
-      <a href="showreel.html">Showreel</a>
-      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html">Our Work</a><a href="showreel.html">Showreel</a><a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
     </nav>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
   </header>
@@ -96,63 +106,68 @@
         <div>
           <p class="eyebrow">PROJECT ENQUIRY / CREATIVE PRODUCTION / DIGITAL PLATFORMS</p>
           <h1 id="quote-title">Let's create<br><span>something exceptional.</span></h1>
-          <p class="inner-hero-copy">Tell us about your project, objectives and expected deliverables. The information helps us understand the brief and discuss an appropriate production approach and project-specific quotation.</p>
-          <div class="inner-hero-actions">
-            <a class="button-primary" href="#quote-form">Start your project enquiry <span aria-hidden="true">↓</span></a>
-            <a class="button-secondary" href="pricing.html">Explore pricing approach</a>
-          </div>
+          <p class="inner-hero-copy">Tell us about your project, objectives and expected deliverables. A clear brief helps us understand the work, identify production requirements and discuss a project-specific proposal.</p>
+          <div class="inner-hero-actions"><a class="button-primary" href="#quote-form">Start your project enquiry <span aria-hidden="true">↓</span></a><a class="button-secondary" href="pricing.html">Explore pricing approach</a></div>
         </div>
-        <div class="quote-hero-panel" aria-label="Project enquiry information">
-          <div class="panel-topline"><span>Project quotation</span><span>ENQUIRY / 01</span></div>
-          <img src="assets/brand/logo.png.png" alt="" width="190" height="100">
-          <div class="panel-bottomline"><span>Brief</span><strong>Scope / Proposal / Delivery</strong></div>
+        <div class="quote-hero-panel" aria-label="Project enquiry framework">
+          <div class="quote-panel-top"><span>Project quotation</span><span>ENQUIRY / 01</span></div>
+          <img class="quote-panel-logo" src="assets/brand/logo.png.png" alt="" aria-hidden="true" width="190" height="100">
+          <div class="quote-panel-bottom"><span>Brief</span><strong>Scope / Proposal / Delivery</strong></div>
         </div>
       </div>
     </section>
 
     <section class="inner-section" aria-labelledby="quote-intro-title">
       <div class="inner-container">
-        <div class="section-kicker"><span>01</span><span>Tell Us About Your Project</span></div>
-        <h2 id="quote-intro-title" class="section-heading" style="max-width:850px;font-size:clamp(32px,5vw,58px);line-height:1.1;letter-spacing:-.05em;">A clear brief is the starting point for <span style="color:var(--inner-red);">a considered proposal.</span></h2>
-        <p class="quote-intro">Complete the relevant fields below. Required fields are marked with an asterisk. You can provide as much detail as is available at this stage; final pricing and delivery arrangements are subject to a reviewed and mutually agreed project scope.</p>
+        <p class="section-kicker"><span>01</span><span>From Enquiry to Proposal</span></p>
+        <div class="section-heading"><h2 id="quote-intro-title">A clear brief creates <span>a stronger starting point.</span></h2><p>Complete the relevant fields below. Required information is marked with an asterisk. Share the details currently available; the final scope, quotation and delivery arrangements are subject to review and mutual agreement.</p></div>
+        <div class="quote-process-strip" aria-label="Quotation process">
+          <article class="quote-process-step"><span>01 / BRIEF</span><strong>Understand the vision</strong><p>Project objectives, audience and creative requirements.</p></article>
+          <article class="quote-process-step"><span>02 / SCOPE</span><strong>Define the work</strong><p>Services, resources, responsibilities and deliverables.</p></article>
+          <article class="quote-process-step"><span>03 / PROPOSAL</span><strong>Review the approach</strong><p>Schedule, assumptions and commercial terms.</p></article>
+          <article class="quote-process-step"><span>04 / AGREEMENT</span><strong>Confirm the plan</strong><p>Approve the documented scope before work begins.</p></article>
+        </div>
+
         <div class="quote-layout">
-          <aside class="quote-sidebar" aria-label="Quotation process guidance">
-            <p class="eyebrow">HOW IT WORKS</p>
-            <h2>From enquiry to proposal</h2>
-            <p>The information in this form is intended to help scope your request. It is not a quotation, contract or confirmation that a project has been accepted.</p>
+          <aside class="quote-sidebar" aria-label="Quotation guidance">
+            <p class="eyebrow">BEFORE YOU BEGIN</p><h3>Give the project a clear direction.</h3>
+            <p>This form collects initial project information. It is not a quotation, contract, booking or confirmation that a project has been accepted.</p>
             <ol class="quote-sidebar-list">
-              <li><span>01</span> Share your objectives and project requirements.</li>
-              <li><span>02</span> Review the project scope, resources and deliverables.</li>
-              <li><span>03</span> Discuss the proposal, schedule and commercial terms.</li>
-              <li><span>04</span> Confirm the agreed scope and terms before work begins.</li>
+              <li><span>01</span><span>Share your objectives, references and project stage.</span></li>
+              <li><span>02</span><span>Identify the services and expected outputs.</span></li>
+              <li><span>03</span><span>Outline the preferred timeline and available budget, if known.</span></li>
+              <li><span>04</span><span>Review the final scope and terms before authorising production.</span></li>
             </ol>
-            <p style="margin-top:24px;">Need general information? Visit the <a href="contact.html">Contact page</a> or review our <a href="our-workflow.html">project workflow</a>.</p>
+            <div class="quote-sidebar-links" aria-label="Related information">
+              <a href="project-details.html">Project details guide <span>↗</span></a><a href="our-workflow.html">Our production workflow <span>↗</span></a><a href="pricing.html">Pricing approach <span>↗</span></a><a href="contact.html">General contact <span>↗</span></a>
+            </div>
           </aside>
 
           <div class="quote-form-wrapper">
-            <h2 style="margin:0 0 10px;font-size:24px;">Request a project quotation</h2>
-            <p class="quote-form-intro">Please provide accurate contact and project information. Do not include passwords, sensitive personal data or confidential material that is not necessary for an initial enquiry.</p>
+            <h2 class="quote-form-heading">Request a project quotation</h2>
+            <p class="quote-form-intro">Please provide accurate contact and project information. Do not include passwords, payment details, sensitive personal information or confidential materials that are not necessary for an initial enquiry.</p>
             <form id="quote-form" novalidate>
-              <div class="quote-form-section">
-                <h2><span>01 / CLIENT</span> Client Information</h2>
+              <section class="quote-form-section" aria-labelledby="client-section-title">
+                <h3 id="client-section-title"><span>01 / CLIENT</span>Client information</h3>
                 <div class="quote-form-grid">
-                  <div class="quote-field"><label for="client-name">Full Name *</label><input type="text" id="client-name" name="client_name" autocomplete="name" placeholder="Your full name" required></div>
-                  <div class="quote-field"><label for="client-email">Business Email *</label><input type="email" id="client-email" name="client_email" autocomplete="email" placeholder="name@company.com" required></div>
-                  <div class="quote-field"><label for="company-name">Company / Studio Name *</label><input type="text" id="company-name" name="company_name" autocomplete="organization" placeholder="Company name" required></div>
+                  <div class="quote-field"><label for="client-name">Full name *</label><input type="text" id="client-name" name="client_name" autocomplete="name" placeholder="Your full name" required></div>
+                  <div class="quote-field"><label for="client-email">Business email *</label><input type="email" id="client-email" name="client_email" autocomplete="email" placeholder="name@company.com" required></div>
+                  <div class="quote-field"><label for="company-name">Company / studio name *</label><input type="text" id="company-name" name="company_name" autocomplete="organization" placeholder="Company or studio name" required></div>
                   <div class="quote-field"><label for="client-country">Country *</label><input type="text" id="client-country" name="country" autocomplete="country-name" placeholder="Your country" required></div>
-                  <div class="quote-field"><label for="client-role">Your Position <small>(Optional)</small></label><input type="text" id="client-role" name="position" placeholder="Director, Producer, Manager"></div>
+                  <div class="quote-field"><label for="client-role">Your position <small>(Optional)</small></label><input type="text" id="client-role" name="position" placeholder="Director, Producer, Manager"></div>
                   <div class="quote-field"><label for="client-phone">Phone / WhatsApp <small>(Optional)</small></label><input type="tel" id="client-phone" name="phone" autocomplete="tel" placeholder="Country code + phone number"></div>
                 </div>
-              </div>
+              </section>
 
-              <div class="quote-form-section">
-                <h2><span>02 / PROJECT</span> Project Information</h2>
+              <section class="quote-form-section" aria-labelledby="project-section-title">
+                <h3 id="project-section-title"><span>02 / PROJECT</span>Project information</h3>
                 <div class="quote-form-grid">
-                  <div class="quote-field full-width"><label for="project-title">Project Title *</label><input type="text" id="project-title" name="project_title" placeholder="Enter your project name" required></div>
-                  <div class="quote-field"><label for="project-type">Project Type *</label><select id="project-type" name="project_type" required><option value="">Select project type</option><option value="Feature Film">Feature Film</option><option value="Animation">Animation Project</option><option value="Commercial">Commercial Production</option><option value="Advertising">Advertising Campaign</option><option value="Gaming">Gaming / Game Cinematic</option><option value="Streaming">Streaming / Broadcast</option><option value="Corporate">Corporate Production</option><option value="Other">Other</option></select></div>
-                  <div class="quote-field"><label for="project-stage">Current Project Stage *</label><select id="project-stage" name="project_stage" required><option value="">Select current stage</option><option value="Concept">Concept Development</option><option value="Pre-production">Pre-Production</option><option value="Production">Production</option><option value="Post-production">Post-Production</option><option value="Existing project">Existing Project</option><option value="Not started">Not Started</option></select></div>
-                  <div class="quote-field full-width"><span class="quote-field-label">Required Services *</span>
-                    <div class="quote-services-grid" id="services-group">
+                  <div class="quote-field full-width"><label for="project-title">Project title *</label><input type="text" id="project-title" name="project_title" placeholder="Enter your project name" required></div>
+                  <div class="quote-field"><label for="project-type">Project type *</label><select id="project-type" name="project_type" required><option value="">Select project type</option><option value="Feature Film">Feature Film</option><option value="Animation">Animation Project</option><option value="Commercial">Commercial Production</option><option value="Advertising">Advertising Campaign</option><option value="Gaming">Gaming / Game Cinematic</option><option value="Streaming">Streaming / Broadcast</option><option value="Corporate">Corporate Production</option><option value="Digital Platform">Digital Platform</option><option value="Other">Other</option></select></div>
+                  <div class="quote-field"><label for="project-stage">Current project stage *</label><select id="project-stage" name="project_stage" required><option value="">Select current stage</option><option value="Concept">Concept Development</option><option value="Pre-production">Pre-Production</option><option value="Production">Production</option><option value="Post-production">Post-Production</option><option value="Existing project">Existing Project</option><option value="Not started">Not Started</option></select></div>
+                  <div class="quote-field full-width">
+                    <span class="quote-field-label" id="services-label">Required services *</span><p class="quote-field-help" id="services-help">Select at least one area. You may choose more than one.</p>
+                    <div class="quote-services-grid" id="services-group" role="group" aria-labelledby="services-label" aria-describedby="services-help">
                       <label class="quote-check-item"><input type="checkbox" name="services" value="3D Animation"><span>3D Animation</span></label>
                       <label class="quote-check-item"><input type="checkbox" name="services" value="CGI"><span>CGI Production</span></label>
                       <label class="quote-check-item"><input type="checkbox" name="services" value="VFX"><span>Visual Effects (VFX)</span></label>
@@ -165,78 +180,61 @@
                       <label class="quote-check-item"><input type="checkbox" name="services" value="Post-production"><span>Post-Production</span></label>
                     </div>
                   </div>
-                  <div class="quote-field full-width"><label for="project-description">Project Description *</label><textarea id="project-description" name="project_description" placeholder="Describe your creative vision, production requirements, expected deliverables and project objectives..." required></textarea></div>
+                  <div class="quote-field full-width"><label for="project-description">Project description *</label><textarea id="project-description" name="project_description" placeholder="Describe your creative vision, project objectives, audience, production requirements and important background..." required></textarea></div>
                 </div>
-              </div>
+              </section>
 
-              <div class="quote-form-section">
-                <h2><span>03 / COMMERCIALS</span> Budget &amp; Timeline</h2>
+              <section class="quote-form-section" aria-labelledby="commercial-section-title">
+                <h3 id="commercial-section-title"><span>03 / COMMERCIALS</span>Budget &amp; timeline</h3>
                 <div class="quote-form-grid">
-                  <div class="quote-field"><label for="project-budget">Estimated Project Budget <small>(Optional)</small></label><input type="text" id="project-budget" name="budget" placeholder="e.g. 10,000 or To be discussed"></div>
-                  <div class="quote-field"><label for="budget-currency">Budget Currency <small>(Optional)</small></label><select id="budget-currency" name="budget_currency"><option value="">Select currency</option><option value="USD">USD</option><option value="IDR">IDR</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="AUD">AUD</option><option value="Other">Other / To be discussed</option></select></div>
-                  <div class="quote-field"><label for="project-timeline">Expected Timeline *</label><select id="project-timeline" name="timeline" required><option value="">Select timeline</option><option value="Less than one month">Less than one month</option><option value="1-3 months">1–3 Months</option><option value="3-6 months">3–6 Months</option><option value="6-12 months">6–12 Months</option><option value="More than 12 months">More than 12 Months</option><option value="Flexible">Flexible</option></select></div>
-                  <div class="quote-field"><label for="start-date">Preferred Start Date <small>(Optional)</small></label><input type="date" id="start-date" name="start_date"></div>
-                  <div class="quote-field full-width"><label for="reference-links">Reference Links / Portfolio <small>(Optional)</small></label><input type="url" id="reference-links" name="reference_links" placeholder="https://example.com"></div>
+                  <div class="quote-field"><label for="project-budget">Estimated project budget <small>(Optional)</small></label><input type="text" id="project-budget" name="budget" placeholder="Amount or to be discussed"></div>
+                  <div class="quote-field"><label for="budget-currency">Budget currency <small>(Optional)</small></label><select id="budget-currency" name="budget_currency"><option value="">Select currency</option><option value="USD">USD</option><option value="IDR">IDR</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="AUD">AUD</option><option value="Other">Other / To be discussed</option></select></div>
+                  <div class="quote-field"><label for="project-timeline">Expected timeline *</label><select id="project-timeline" name="timeline" required><option value="">Select timeline</option><option value="Less than one month">Less than one month</option><option value="1-3 months">1–3 Months</option><option value="3-6 months">3–6 Months</option><option value="6-12 months">6–12 Months</option><option value="More than 12 months">More than 12 Months</option><option value="Flexible">Flexible</option></select></div>
+                  <div class="quote-field"><label for="start-date">Preferred start date <small>(Optional)</small></label><input type="date" id="start-date" name="start_date"></div>
+                  <div class="quote-field full-width"><label for="reference-links">Reference links / portfolio <small>(Optional)</small></label><input type="url" id="reference-links" name="reference_links" placeholder="https://example.com"></div>
                 </div>
-              </div>
+              </section>
 
-              <div class="quote-form-section">
-                <h2><span>04 / DELIVERABLES</span> Deliverables &amp; Requirements</h2>
+              <section class="quote-form-section" aria-labelledby="deliverables-section-title">
+                <h3 id="deliverables-section-title"><span>04 / DELIVERABLES</span>Deliverables &amp; requirements</h3>
                 <div class="quote-form-grid">
-                  <div class="quote-field full-width"><label for="deliverables">Expected Deliverables <small>(Optional)</small></label><textarea id="deliverables" name="deliverables" placeholder="Describe expected video formats, animation sequences, resolutions, source files, production assets or other deliverables..."></textarea></div>
-                  <div class="quote-field"><label for="approval-process">Approval Process</label><select id="approval-process" name="approval_process"><option value="">Select preference</option><option value="Milestone approvals">Milestone-Based Approvals</option><option value="Single final approval">Final Approval</option><option value="Client review team">Client Review Team</option><option value="To be discussed">To Be Discussed</option></select></div>
-                  <div class="quote-field"><label for="source-file">Source File Requirements</label><select id="source-file" name="source_file"><option value="">Select preference</option><option value="Final outputs only">Final Outputs Only</option><option value="Editable source files">Editable Source Files</option><option value="Project assets">Project Assets</option><option value="To be discussed">To Be Discussed</option></select></div>
-                  <div class="quote-field"><label for="revision-requirements">Revision Requirements</label><select id="revision-requirements" name="revision_requirements"><option value="">Select preference</option><option value="Standard revisions">Standard Revision Process</option><option value="Defined revision rounds">Defined Revision Rounds</option><option value="To be discussed">To Be Discussed</option></select></div>
+                  <div class="quote-field full-width"><label for="deliverables">Expected deliverables <small>(Optional)</small></label><textarea id="deliverables" name="deliverables" placeholder="Video formats, animation sequences, resolutions, aspect ratios, source files, production assets or other expected outputs..."></textarea></div>
+                  <div class="quote-field"><label for="approval-process">Approval process</label><select id="approval-process" name="approval_process"><option value="">Select preference</option><option value="Milestone approvals">Milestone-Based Approvals</option><option value="Single final approval">Final Approval</option><option value="Client review team">Client Review Team</option><option value="To be discussed">To Be Discussed</option></select></div>
+                  <div class="quote-field"><label for="source-file">Source file requirements</label><select id="source-file" name="source_file"><option value="">Select preference</option><option value="Final outputs only">Final Outputs Only</option><option value="Editable source files">Editable Source Files</option><option value="Project assets">Project Assets</option><option value="To be discussed">To Be Discussed</option></select></div>
+                  <div class="quote-field"><label for="revision-requirements">Revision requirements</label><select id="revision-requirements" name="revision_requirements"><option value="">Select preference</option><option value="Standard revisions">Standard Revision Process</option><option value="Defined revision rounds">Defined Revision Rounds</option><option value="To be discussed">To Be Discussed</option></select></div>
                   <div class="quote-field"><label for="nda-requirement">Confidentiality / NDA</label><select id="nda-requirement" name="nda_requirement"><option value="">Select preference</option><option value="NDA required">NDA Required</option><option value="NDA preferred">NDA Preferred</option><option value="Not required">Not Required</option><option value="To be discussed">To Be Discussed</option></select></div>
                 </div>
-              </div>
+              </section>
 
-              <div class="quote-form-section">
-                <h2><span>05 / ADDITIONAL</span> Additional Information</h2>
-                <div class="quote-form-grid">
-                  <div class="quote-field full-width"><label for="additional-info">Additional Requirements <small>(Optional)</small></label><textarea id="additional-info" name="additional_information" placeholder="Share any other relevant information, special requirements, expectations or questions..."></textarea></div>
-                </div>
-              </div>
+              <section class="quote-form-section" aria-labelledby="additional-section-title">
+                <h3 id="additional-section-title"><span>05 / ADDITIONAL</span>Additional information</h3>
+                <div class="quote-form-grid"><div class="quote-field full-width"><label for="additional-info">Additional requirements <small>(Optional)</small></label><textarea id="additional-info" name="additional_information" placeholder="Share other relevant information, special requirements, expectations or questions..."></textarea></div></div>
+              </section>
 
-              <div class="quote-agreement-notice">
-                <h3>Project Scope &amp; Agreement</h3>
-                <p>Final quotations and production arrangements will be based on the mutually agreed project scope, deliverables, budget and timeline. Client approvals, revision limits, source-file ownership, usage rights, payment terms and scope changes will be documented in the applicable formal project agreement. <a href="partners.html">Learn about our partnership framework.</a></p>
-              </div>
-
-              <label class="quote-consent" for="privacy-consent">
-                <input type="checkbox" id="privacy-consent" name="privacy_consent" value="accepted" required>
-                <span>I have read and agree to the <a href="privacy-policy.html">Privacy Policy</a>. I consent to the use of the information provided for handling this project enquiry.</span>
-              </label>
-
-              <button type="submit" class="quote-submit-btn">Validate Project Enquiry</button>
+              <div class="quote-agreement-notice"><h3>Project scope &amp; agreement</h3><p>Any final quotation and production arrangement will be based on the mutually agreed scope, deliverables, schedule and commercial terms. Client approvals, revision limits, source-file ownership, usage rights, payment terms and scope changes will be documented in the applicable formal project agreement. <a href="project-details.html">Review the project details guide</a> and <a href="partners.html">partnership framework</a>.</p></div>
+              <label class="quote-consent" for="privacy-consent"><input type="checkbox" id="privacy-consent" name="privacy_consent" value="accepted" required><span>I have read and agree to the <a href="privacy-policy.html">Privacy Policy</a>. I consent to the use of the information provided for handling this project enquiry.</span></label>
+              <button type="submit" class="quote-submit-btn">Validate project enquiry <span aria-hidden="true">↗</span></button>
               <div id="quote-form-status" class="quote-form-status" role="status" aria-live="polite" tabindex="-1"></div>
-              <p class="quote-form-note">* Required fields. This enquiry form is currently a front-end form only and has no connected submission service. Your information will not be transmitted or saved when you submit it. Do not enter confidential or sensitive information.</p>
+              <p class="quote-form-note">* Required fields. This is currently a front-end enquiry form with no connected submission service. Submitting it only performs on-page validation; your information is not transmitted or saved. Do not enter confidential or sensitive information.</p>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="inner-section" aria-labelledby="next-steps-title">
+    <section class="inner-section" aria-labelledby="quote-related-title">
       <div class="inner-container">
-        <div class="section-kicker"><span>02</span><span>Continue Exploring</span></div>
-        <h2 id="next-steps-title" class="section-heading" style="max-width:760px;font-size:clamp(30px,4.5vw,48px);line-height:1.12;letter-spacing:-.045em;">Learn more about the studio before you <span style="color:var(--inner-red);">send your brief.</span></h2>
+        <p class="section-kicker"><span>02</span><span>Plan with More Context</span></p>
+        <div class="section-heading"><h2 id="quote-related-title">Explore the studio before <span>you send your brief.</span></h2><p>These pages provide additional information about the services, production approach and project planning framework.</p></div>
         <div class="quote-related-grid">
-          <article class="quote-related-card"><h3>Pricing Approach</h3><p>Understand how project scope, production complexity, resources and deliverables inform a quotation.</p><a href="pricing.html">View pricing <span aria-hidden="true">↗</span></a></article>
-          <article class="quote-related-card"><h3>Our Workflow</h3><p>Explore the stages that can take a project from discovery and planning through production and delivery.</p><a href="our-workflow.html">Explore workflow <span aria-hidden="true">↗</span></a></article>
-          <article class="quote-related-card"><h3>Production Capabilities</h3><p>Review the studio's creative production and digital service areas.</p><a href="services.html">Explore services <span aria-hidden="true">↗</span></a></article>
+          <article class="quote-related-card"><span>01 / COMMERCIALS</span><h3>Pricing approach</h3><p>Understand the factors that can influence a project-specific estimate.</p><a href="pricing.html">Explore pricing ↗</a></article>
+          <article class="quote-related-card"><span>02 / PRODUCTION</span><h3>Our workflow</h3><p>Review the stages from creative preparation through production and delivery.</p><a href="our-workflow.html">View workflow ↗</a></article>
+          <article class="quote-related-card"><span>03 / CAPABILITIES</span><h3>Studio services</h3><p>Explore animation, CGI, VFX, film, video and digital production capabilities.</p><a href="services.html">Explore services ↗</a></article>
         </div>
       </div>
     </section>
 
-    <section class="inner-cta" aria-labelledby="quote-cta-title">
-      <div class="inner-container">
-        <p class="eyebrow">HAVE A GENERAL QUESTION?</p>
-        <h2 id="quote-cta-title">Let's start a <span>conversation.</span></h2>
-        <p>For general company, production or collaboration enquiries, use the studio's contact page.</p>
-        <a class="button-primary" href="contact.html">Contact the studio <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
+    <section class="inner-cta" aria-labelledby="quote-cta-title"><div class="inner-container"><p class="eyebrow">READY TO DISCUSS YOUR IDEA?</p><h2 id="quote-cta-title">Start with the brief.<br><span>Build with clarity.</span></h2><p>For general questions or partnership discussions, contact AUTOTUBE CREW STUDIO in Jakarta, Indonesia.</p><a class="button-primary" href="contact.html">Contact the studio <span aria-hidden="true">↗</span></a></div></section>
   </main>
 
   <footer class="site-footer">
@@ -246,7 +244,7 @@
     <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
   <script>
     (() => {
       "use strict";
@@ -254,28 +252,17 @@
       const status = document.getElementById("quote-form-status");
       const serviceChecks = Array.from(document.querySelectorAll('input[name="services"]'));
       if (!form || !status) return;
-
-      const showStatus = (message) => {
-        status.textContent = message;
-        status.classList.add("visible");
-        status.focus();
-      };
-
+      const showStatus = (message) => { status.textContent = message; status.classList.add("visible"); status.focus(); };
       form.addEventListener("submit", (event) => {
         event.preventDefault();
         status.classList.remove("visible");
-
         if (!form.reportValidity()) return;
-
-        const hasService = serviceChecks.some((item) => item.checked);
-        if (!hasService) {
+        if (!serviceChecks.some((item) => item.checked)) {
           showStatus("Please select at least one required service before continuing.");
-          const firstService = serviceChecks[0];
-          if (firstService) firstService.focus();
+          if (serviceChecks[0]) serviceChecks[0].focus();
           return;
         }
-
-        showStatus("Your project details have passed the on-page validation checks. They have NOT been sent or saved because this form does not yet have an approved submission service connected. Please use the Contact page for a general enquiry. Do not assume this project request has been received.");
+        showStatus("Your project details have passed the on-page validation checks. They have NOT been sent or saved because this website does not yet have an approved submission service connected. Please use the Contact page for a general enquiry. Do not assume this project request has been received.");
       });
     })();
   </script>
