@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ptautotubecrewstudio.github.io/sitemap.xml
