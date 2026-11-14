@@ -1,91 +1,374 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#070707">
-  <title>Leadership &amp; Team | AUTOTUBE CREW STUDIO</title>
-  <meta name="description" content="Meet the leadership and creative production structure behind AUTOTUBE CREW STUDIO, a pre-to-post visual production studio based in Jakarta, Indonesia.">
+
+  <title>Leadership and Team | AUTOTUBE CREW STUDIO</title>
+  <meta name="description" content="Meet the leadership team and creative production specialists behind AUTOTUBE CREW STUDIO, a pre-to-post production studio based in Jakarta, Indonesia.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ptautotubecrewstudio.github.io/team.html">
-  <meta property="og:title" content="Leadership &amp; Team | AUTOTUBE CREW STUDIO">
-  <meta property="og:description" content="Meet the leadership and explore the creative and technical functions that support AUTOTUBE CREW STUDIO production work.">
+
+  <meta property="og:title" content="Leadership and Team | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Meet the leadership and explore the creative and technical production capabilities of AUTOTUBE CREW STUDIO.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ptautotubecrewstudio.github.io/team.html">
+
   <meta name="author" content="PT Autotube Crew Studio">
   <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leadership &amp; Team | AUTOTUBE CREW STUDIO">
-<meta name="twitter:description" content="Meet the leadership and creative production structure behind AUTOTUBE CREW STUDIO, a pre-to-post visual production studio based in Jakarta, Indonesia.">
+  <meta name="twitter:title" content="Leadership and Team | AUTOTUBE CREW STUDIO">
+  <meta name="twitter:description" content="Meet the leadership and creative production team behind AUTOTUBE CREW STUDIO in Jakarta, Indonesia.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/css/style.css?v=4">
   <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+
   <style>
-    .team-page .team-hero { min-height: 570px; }
-    .team-page .team-hero-panel { position:relative; min-height:330px; padding:30px; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; border:1px solid rgba(255,255,255,.16); background:radial-gradient(circle at 50% 48%,rgba(229,9,32,.18),transparent 48%),linear-gradient(145deg,#191919,#090909); }
-    .team-page .team-hero-panel::before,.team-page .team-hero-panel::after { content:""; position:absolute; left:50%; top:50%; width:230px; height:230px; border:1px solid rgba(229,9,32,.5); border-radius:50%; transform:translate(-50%,-50%); box-shadow:0 0 75px rgba(229,9,32,.12),inset 0 0 55px rgba(229,9,32,.08); }
-    .team-page .team-hero-panel::after { width:285px; height:285px; border-color:rgba(255,255,255,.15); }
-    .team-page .team-panel-top,.team-page .team-panel-bottom { position:relative; z-index:1; display:flex; justify-content:space-between; gap:12px; color:#aaa; font-size:10px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
-    .team-page .team-panel-logo { position:relative; z-index:1; width:100%; max-width:190px; max-height:100px; margin:auto; object-fit:contain; }
-    .team-page .team-panel-bottom strong { color:#fff; }
-    .team-page .team-intro-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:clamp(35px,8vw,100px); align-items:start; }
-    .team-page .team-statement { margin:0; color:#fff; font-size:clamp(27px,3.7vw,46px); line-height:1.15; letter-spacing:-.045em; }
-    .team-page .team-statement span { color:var(--inner-red); }
-    .team-page .team-intro-copy p { margin:0 0 20px; color:#bdbdbd; font-size:15px; line-height:1.95; }
-    .team-page .team-related-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; }
-    .team-page .team-related-links a { display:inline-flex; align-items:center; gap:14px; padding:12px 15px; border:1px solid var(--inner-line); color:#ccc; font-size:12px; transition:border-color .2s ease,color .2s ease; }
-    .team-page .team-related-links a:hover { border-color:var(--inner-red); color:#fff; }
-    .team-page .team-related-links span { color:#ff4658; }
-    .team-page .team-gallery-intro { max-width:720px; margin:18px 0 0; color:#aaa; font-size:14px; line-height:1.9; }
-    .team-page .team-leadership-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:38px; }
-    .team-page .team-leader-card { min-width:0; border:1px solid var(--inner-line); background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012)); }
-    .team-page .team-leader-visual { min-height:220px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; border-bottom:1px solid rgba(255,255,255,.12); background:radial-gradient(circle at 50% 52%,rgba(229,9,32,.19),transparent 48%),#111; }
-    .team-page .team-leader-visual::before,.team-page .team-leader-visual::after { content:""; position:absolute; width:148px; height:148px; border:1px solid rgba(229,9,32,.38); border-radius:50%; }
-    .team-page .team-leader-visual::after { width:112px; height:112px; border-color:rgba(255,255,255,.18); }
-    .team-page .team-initials { position:relative; z-index:1; color:#fff; font-size:48px; font-weight:850; letter-spacing:-.06em; }
-    .team-page .team-leader-content { padding:25px; }
-    .team-page .team-role { color:#ff4658; font-size:10px; font-weight:800; letter-spacing:.17em; text-transform:uppercase; }
-    .team-page .team-leader-content h3 { margin:13px 0 10px; color:#fff; font-size:22px; line-height:1.2; }
-    .team-page .team-leader-content p { margin:0; color:#aaa; font-size:13px; line-height:1.85; }
-    .team-page .team-accuracy-note { margin-top:18px; color:#858585; font-size:12px; line-height:1.8; }
-    .team-page .team-department-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:38px; }
-    .team-page .team-department-card { min-height:185px; padding:25px; border:1px solid var(--inner-line); background:#101010; }
-    .team-page .team-department-card .card-index { color:#ff4658; font-size:10px; font-weight:800; letter-spacing:.16em; }
-    .team-page .team-department-card h3 { margin:25px 0 9px; color:#fff; font-size:18px; }
-    .team-page .team-department-card p { margin:0; color:#aaa; font-size:13px; line-height:1.8; }
-    .team-page .team-principle-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:38px; }
-    .team-page .team-principle-card { min-height:160px; padding:22px; border-top:2px solid var(--inner-red); background:#111; }
-    .team-page .team-principle-card h3 { margin:20px 0 8px; color:#fff; font-size:17px; }
-    .team-page .team-principle-card p { margin:0; color:#aaa; font-size:12px; line-height:1.8; }
-    .team-page .team-join-panel { display:grid; grid-template-columns:1fr auto; gap:25px; align-items:center; padding:30px; border:1px solid var(--inner-line); background:linear-gradient(120deg,#171717,#0c0c0c); }
-    .team-page .team-join-panel h3 { margin:0 0 10px; color:#fff; font-size:clamp(22px,3vw,32px); }
-    .team-page .team-join-panel p { max-width:650px; margin:0; color:#aaa; font-size:14px; line-height:1.85; }
-    @media (max-width:900px) {
-      .team-page .team-hero-layout { grid-template-columns:1fr; }
-      .team-page .team-hero-panel { min-height:260px; }
-      .team-page .team-department-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
-      .team-page .team-principle-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .team-page .team-hero {
+      min-height: 570px;
     }
-    @media (max-width:650px) {
-      .team-page .team-intro-grid { grid-template-columns:1fr; gap:24px; }
-      .team-page .team-leadership-grid,.team-page .team-department-grid,.team-page .team-principle-grid { grid-template-columns:1fr; }
-      .team-page .team-leader-visual { min-height:190px; }
-      .team-page .team-join-panel { grid-template-columns:1fr; }
-      .team-page .team-hero-panel { min-height:230px; padding:22px; }
+
+    .team-page .team-hero-panel {
+      position: relative;
+      min-height: 330px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.16);
+      background:
+        radial-gradient(circle at 50% 48%,rgba(229,9,32,.18),transparent 48%),
+        linear-gradient(145deg,#191919,#090909);
     }
-    @media (prefers-reduced-motion:reduce) {
-      .team-page *, .team-page *::before, .team-page *::after { scroll-behavior:auto !important; transition-duration:.01ms !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; }
+
+    .team-page .team-hero-panel::before,
+    .team-page .team-hero-panel::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 230px;
+      height: 230px;
+      border: 1px solid rgba(229,9,32,.5);
+      border-radius: 50%;
+      transform: translate(-50%,-50%);
+      box-shadow: 0 0 75px rgba(229,9,32,.12),
+                  inset 0 0 55px rgba(229,9,32,.08);
+    }
+
+    .team-page .team-hero-panel::after {
+      width: 285px;
+      height: 285px;
+      border-color: rgba(255,255,255,.15);
+    }
+
+    .team-page .team-panel-top,
+    .team-page .team-panel-bottom {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: #aaa;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .team-page .team-panel-logo {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 190px;
+      max-height: 100px;
+      margin: auto;
+      object-fit: contain;
+    }
+
+    .team-page .team-panel-bottom strong {
+      color: #fff;
+    }
+
+    .team-page .team-intro-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: clamp(35px,8vw,100px);
+      align-items: start;
+    }
+
+    .team-page .team-statement {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(27px,3.7vw,46px);
+      line-height: 1.15;
+      letter-spacing: -.045em;
+    }
+
+    .team-page .team-statement span {
+      color: var(--inner-red);
+    }
+
+    .team-page .team-intro-copy p {
+      margin: 0 0 20px;
+      color: #bdbdbd;
+      font-size: 15px;
+      line-height: 1.95;
+    }
+
+    .team-page .team-related-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .team-page .team-related-links a {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 15px;
+      border: 1px solid var(--inner-line);
+      color: #ccc;
+      font-size: 12px;
+      transition: border-color .2s ease,color .2s ease;
+    }
+
+    .team-page .team-related-links a:hover {
+      border-color: var(--inner-red);
+      color: #fff;
+    }
+
+    .team-page .team-gallery-intro {
+      max-width: 720px;
+      margin: 18px 0 0;
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .team-page .team-leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 16px;
+      margin-top: 38px;
+    }
+
+    .team-page .team-leader-card {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--inner-line);
+      background: linear-gradient(
+        145deg,
+        rgba(255,255,255,.055),
+        rgba(255,255,255,.012)
+      );
+    }
+
+    .team-page .team-leader-visual {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      background: #111;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .team-page .team-leader-photo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center 25%;
+      transition: transform .45s ease;
+    }
+
+    .team-page .team-leader-card:hover .team-leader-photo {
+      transform: scale(1.035);
+    }
+
+    .team-page .team-leader-content {
+      padding: 25px;
+    }
+
+    .team-page .team-role {
+      color: #ff4658;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+
+    .team-page .team-leader-content h3 {
+      margin: 13px 0 10px;
+      color: #fff;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .team-page .team-leader-content p {
+      margin: 0;
+      color: #aaa;
+      font-size: 13px;
+      line-height: 1.85;
+    }
+
+    .team-page .team-department-grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 14px;
+      margin-top: 38px;
+    }
+
+    .team-page .team-department-card {
+      min-height: 185px;
+      padding: 25px;
+      border: 1px solid var(--inner-line);
+      background: #101010;
+    }
+
+    .team-page .team-department-card h3 {
+      margin: 12px 0 9px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .team-page .team-department-card p {
+      margin: 0;
+      color: #aaa;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .team-page .team-principle-grid {
+      display: grid;
+      grid-template-columns: repeat(4,minmax(0,1fr));
+      gap: 12px;
+      margin-top: 38px;
+    }
+
+    .team-page .team-principle-card {
+      min-height: 160px;
+      padding: 22px;
+      border-top: 2px solid var(--inner-red);
+      background: #111;
+    }
+
+    .team-page .team-principle-card h3 {
+      margin: 12px 0 8px;
+      color: #fff;
+      font-size: 17px;
+    }
+
+    .team-page .team-principle-card p {
+      margin: 0;
+      color: #aaa;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .team-page .team-join-panel {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 25px;
+      align-items: center;
+      padding: 30px;
+      border: 1px solid var(--inner-line);
+      background: linear-gradient(120deg,#171717,#0c0c0c);
+    }
+
+    .team-page .team-join-panel h3 {
+      margin: 0 0 10px;
+      color: #fff;
+      font-size: clamp(22px,3vw,32px);
+    }
+
+    .team-page .team-join-panel p {
+      max-width: 650px;
+      margin: 0;
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    @media (max-width: 900px) {
+      .team-page .team-hero-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .team-page .team-hero-panel {
+        min-height: 260px;
+      }
+
+      .team-page .team-department-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+
+      .team-page .team-principle-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+    }
+
+    @media (max-width: 650px) {
+      .team-page .team-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .team-page .team-leadership-grid,
+      .team-page .team-department-grid,
+      .team-page .team-principle-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-page .team-leader-visual {
+        aspect-ratio: 4 / 4.5;
+      }
+
+      .team-page .team-join-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .team-page .team-hero-panel {
+        min-height: 230px;
+        padding: 22px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .team-page *,
+      .team-page *::before,
+      .team-page *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
     }
   </style>
 </head>
+
 <body class="inner-page team-page">
+
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="header site-header">
+
     <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
-      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
+      <img
+        class="brand-logo"
+        src="assets/brand/logo.png.png"
+        alt="AUTOTUBE CREW STUDIO"
+        width="190"
+        height="64">
     </a>
+
     <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -93,143 +376,394 @@
       <a href="team.html" aria-current="page">Team</a>
       <a href="portfolio.html">Our Work</a>
       <a href="showreel.html">Showreel</a>
-      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+      <a class="contact-link" href="contact.html">Let's Talk</a>
     </nav>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-controls="primary-navigation"
+      aria-expanded="false">
+      <span aria-hidden="true">Menu</span>
+    </button>
+
   </header>
 
   <main id="main-content">
+
     <section class="inner-hero team-hero" aria-labelledby="team-title">
+
       <div class="inner-container inner-hero-layout team-hero-layout">
+
         <div>
-          <p class="eyebrow">LEADERSHIP / CREATIVE / TECHNICAL</p>
-          <h1 id="team-title">Creative minds.<br><span>Collective excellence.</span></h1>
-          <p class="inner-hero-copy">Meet the leadership behind AUTOTUBE CREW STUDIO and explore the creative and technical functions that support our visual production work. Our approach brings planning, artistic craft and production coordination together across each project.</p>
+          <p class="eyebrow">LEADERSHIP, CREATIVE AND TECHNICAL</p>
+
+          <h1 id="team-title">
+            Creative minds
+            <br>
+            <span>Collective excellence</span>
+          </h1>
+
+          <p class="inner-hero-copy">
+            Meet the leadership behind AUTOTUBE CREW STUDIO and explore the creative and technical functions that support our visual production work. Our approach brings planning, artistic craft and production coordination together across each project.
+          </p>
+
           <div class="inner-hero-actions">
-            <a class="button-primary" href="#leadership">Meet the leadership <span aria-hidden="true">↓</span></a>
-            <a class="button-secondary" href="careers.html">Explore careers</a>
+            <a class="button-primary" href="#leadership">
+              Meet the leadership
+            </a>
+
+            <a class="button-secondary" href="careers.html">
+              Explore careers
+            </a>
           </div>
         </div>
+
         <div class="team-hero-panel" aria-label="AUTOTUBE CREW STUDIO leadership and production">
-          <div class="team-panel-top"><span>Studio leadership</span><span>TEAM / 01</span></div>
-          <img class="team-panel-logo" src="assets/brand/logo.png.png" alt="" aria-hidden="true" width="190" height="100">
-          <div class="team-panel-bottom"><span>Creative direction</span><strong>JAKARTA / GLOBAL</strong></div>
+
+          <div class="team-panel-top">
+            <span>Studio leadership</span>
+            <span>Our team</span>
+          </div>
+
+          <img
+            class="team-panel-logo"
+            src="assets/brand/logo.png.png"
+            alt="AUTOTUBE CREW STUDIO"
+            width="190"
+            height="100">
+
+          <div class="team-panel-bottom">
+            <span>Creative direction</span>
+            <strong>Jakarta and Global</strong>
+          </div>
+
         </div>
+
       </div>
     </section>
 
     <section class="inner-section">
+
       <div class="inner-container team-intro-grid">
+
         <div>
           <p class="section-kicker">PEOPLE BEHIND THE PROCESS</p>
-          <h2 class="team-statement">One studio.<br><span>Connected expertise.</span></h2>
+
+          <h2 class="team-statement">
+            One studio
+            <br>
+            <span>Connected expertise</span>
+          </h2>
         </div>
+
         <div class="team-intro-copy">
-          <p>A complete production environment depends on clear leadership, coordinated creative disciplines and reliable technical execution. AUTOTUBE CREW STUDIO brings these functions together to support projects from early development through production and final delivery.</p>
-          <p>Our leadership structure provides company direction and management, while specialist production functions are coordinated around the scope, scale and requirements of each assignment.</p>
+
+          <p>
+            A complete production environment depends on clear leadership, coordinated creative disciplines and reliable technical execution. AUTOTUBE CREW STUDIO brings these functions together to support projects from early development through production and final delivery.
+          </p>
+
+          <p>
+            Our leadership structure provides company direction and management, while specialist production functions are coordinated around the scope, scale and requirements of each assignment.
+          </p>
+
           <div class="team-related-links">
-            <a href="our-workflow.html">Explore our workflow <span aria-hidden="true">↗</span></a>
-            <a href="services.html">Explore studio services <span aria-hidden="true">↗</span></a>
+            <a href="our-workflow.html">Explore our workflow</a>
+            <a href="services.html">Explore studio services</a>
           </div>
+
         </div>
+
       </div>
     </section>
 
     <section class="inner-section" id="leadership" aria-labelledby="leadership-title">
+
       <div class="inner-container">
-        <p class="section-kicker">LEADERSHIP &amp; MANAGEMENT</p>
-        <h2 class="section-heading" id="leadership-title">The people guiding <span>the studio.</span></h2>
+
+        <p class="section-kicker">LEADERSHIP AND MANAGEMENT</p>
+
+        <h2 class="section-heading" id="leadership-title">
+          The people guiding
+          <span>the studio</span>
+        </h2>
+
         <div class="team-leadership-grid">
+
           <article class="team-leader-card">
-            <div class="team-leader-visual" aria-hidden="true"><span class="team-initials">SS</span></div>
+
+            <div class="team-leader-visual">
+              <img
+                class="team-leader-photo"
+                src="/assets/images/team/ceoshameersarfraz.jpg.jpeg"
+                alt="Shameer Sarfraz, Founder of AUTOTUBE CREW STUDIO"
+                width="700"
+                height="875"
+                decoding="async">
+            </div>
+
             <div class="team-leader-content">
+
               <span class="team-role">Founder</span>
+
               <h3>Shameer Sarfraz</h3>
-              <p>Founder of AUTOTUBE CREW STUDIO, contributing to the company's founding vision and organizational development.</p>
+
+              <p>
+                Founder of AUTOTUBE CREW STUDIO, contributing to the company's founding vision and organizational development.
+              </p>
+
             </div>
           </article>
+
           <article class="team-leader-card">
-            <div class="team-leader-visual" aria-hidden="true"><span class="team-initials">AS</span></div>
+
+            <div class="team-leader-visual">
+              <img
+                class="team-leader-photo"
+                src="/assets/images/team/managingdirectorabdulsattar.jpg.jpeg"
+                alt="Abdul Sattar, Chief Executive Officer of AUTOTUBE CREW STUDIO"
+                width="700"
+                height="875"
+                decoding="async">
+            </div>
+
             <div class="team-leader-content">
+
               <span class="team-role">Chief Executive Officer</span>
+
               <h3>Abdul Sattar</h3>
-              <p>CEO of AUTOTUBE CREW STUDIO, responsible for executive leadership and company-level management.</p>
+
+              <p>
+                CEO of AUTOTUBE CREW STUDIO, responsible for executive leadership and company-level management.
+              </p>
+
             </div>
           </article>
+
           <article class="team-leader-card">
-            <div class="team-leader-visual" aria-hidden="true"><span class="team-initials">HAS</span></div>
+
+            <div class="team-leader-visual">
+              <img
+                class="team-leader-photo"
+                src="/assets/images/team/directorhasnainalishah.jpg.jpeg"
+                alt="Hasnain Ali Shah, Director of AUTOTUBE CREW STUDIO"
+                width="700"
+                height="875"
+                decoding="async">
+            </div>
+
             <div class="team-leader-content">
+
               <span class="team-role">Director</span>
+
               <h3>Hasnain Ali Shah</h3>
-              <p>Director of AUTOTUBE CREW STUDIO, contributing to company direction, organizational planning and business development.</p>
+
+              <p>
+                Director of AUTOTUBE CREW STUDIO, contributing to company direction, organizational planning and business development.
+              </p>
+
             </div>
           </article>
+
         </div>
-        <p class="team-accuracy-note">Portrait photographs are not currently available at the image paths in this repository, so this page uses typographic initials rather than broken image links or substitute portraits.</p>
+
       </div>
     </section>
 
     <section class="inner-section">
+
       <div class="inner-container">
-        <p class="section-kicker">CREATIVE &amp; TECHNICAL DEPARTMENTS</p>
-        <h2 class="section-heading">Specialist functions. <span>One production pipeline.</span></h2>
-        <p class="team-gallery-intro">The following are functional production areas that can work together according to each project's needs. They are not a published employee directory.</p>
+
+        <p class="section-kicker">CREATIVE AND TECHNICAL DEPARTMENTS</p>
+
+        <h2 class="section-heading">
+          Specialist functions
+          <span>One production pipeline</span>
+        </h2>
+
+        <p class="team-gallery-intro">
+          Our specialist production areas work together according to each project's needs. These functions support the complete production process from creative development to final delivery.
+        </p>
+
         <div class="team-department-grid">
-          <article class="team-department-card"><span class="card-index">01 / CREATIVE</span><h3>Creative Development</h3><p>Concept development, creative direction, visual storytelling and project planning.</p></article>
-          <article class="team-department-card"><span class="card-index">02 / ANIMATION</span><h3>3D Animation</h3><p>Character animation, environment animation and 3D visual storytelling.</p></article>
-          <article class="team-department-card"><span class="card-index">03 / CGI</span><h3>CGI Production</h3><p>Digital assets, computer-generated imagery and visual environment creation.</p></article>
-          <article class="team-department-card"><span class="card-index">04 / VFX</span><h3>Visual Effects</h3><p>VFX development, compositing, digital effects and visual enhancement.</p></article>
-          <article class="team-department-card"><span class="card-index">05 / PRODUCTION</span><h3>Video &amp; Cinematic Production</h3><p>Video production, cinematic content, commercial production and filmmaking.</p></article>
-          <article class="team-department-card"><span class="card-index">06 / FINISHING</span><h3>Post-Production</h3><p>Editing, compositing, finishing and final media preparation.</p></article>
+
+          <article class="team-department-card">
+            <h3>Creative Development</h3>
+            <p>
+              Concept development, creative direction, visual storytelling and project planning.
+            </p>
+          </article>
+
+          <article class="team-department-card">
+            <h3>3D Animation</h3>
+            <p>
+              Character animation, environment animation and 3D visual storytelling.
+            </p>
+          </article>
+
+          <article class="team-department-card">
+            <h3>CGI Production</h3>
+            <p>
+              Digital assets, computer-generated imagery and visual environment creation.
+            </p>
+          </article>
+
+          <article class="team-department-card">
+            <h3>Visual Effects</h3>
+            <p>
+              VFX development, compositing, digital effects and visual enhancement.
+            </p>
+          </article>
+
+          <article class="team-department-card">
+            <h3>Video and Cinematic Production</h3>
+            <p>
+              Video production, cinematic content, commercial production and filmmaking.
+            </p>
+          </article>
+
+          <article class="team-department-card">
+            <h3>Post-Production</h3>
+            <p>
+              Editing, compositing, finishing and final media preparation.
+            </p>
+          </article>
+
         </div>
+
       </div>
     </section>
 
     <section class="inner-section">
+
       <div class="inner-container">
+
         <p class="section-kicker">HOW WE WORK TOGETHER</p>
-        <h2 class="section-heading">A connected production <span>environment.</span></h2>
+
+        <h2 class="section-heading">
+          A connected production
+          <span>environment</span>
+        </h2>
+
         <div class="team-principle-grid">
-          <article class="team-principle-card"><span class="card-index">01 / COMMUNICATION</span><h3>Clear communication</h3><p>Structured updates and clear discussions throughout project execution.</p></article>
-          <article class="team-principle-card"><span class="card-index">02 / RESPONSIBILITY</span><h3>Shared accountability</h3><p>Defined responsibilities and ownership of agreed tasks and deliverables.</p></article>
-          <article class="team-principle-card"><span class="card-index">03 / COLLABORATION</span><h3>Creative teamwork</h3><p>Coordination between creative and technical disciplines around the project brief.</p></article>
-          <article class="team-principle-card"><span class="card-index">04 / QUALITY</span><h3>Production quality</h3><p>Consistent attention to production standards and final presentation.</p></article>
+
+          <article class="team-principle-card">
+            <h3>Clear communication</h3>
+            <p>
+              Structured updates and clear discussions throughout project execution.
+            </p>
+          </article>
+
+          <article class="team-principle-card">
+            <h3>Shared accountability</h3>
+            <p>
+              Defined responsibilities and ownership of agreed tasks and deliverables.
+            </p>
+          </article>
+
+          <article class="team-principle-card">
+            <h3>Creative teamwork</h3>
+            <p>
+              Coordination between creative and technical disciplines around the project brief.
+            </p>
+          </article>
+
+          <article class="team-principle-card">
+            <h3>Production quality</h3>
+            <p>
+              Consistent attention to production standards and final presentation.
+            </p>
+          </article>
+
         </div>
+
         <div class="team-related-links">
-          <a href="our-workflow.html">See the project lifecycle <span aria-hidden="true">↗</span></a>
-          <a href="portfolio.html">View selected work <span aria-hidden="true">↗</span></a>
+          <a href="our-workflow.html">See the project lifecycle</a>
+          <a href="portfolio.html">View selected work</a>
         </div>
+
       </div>
     </section>
 
     <section class="inner-section">
+
       <div class="inner-container team-join-panel">
+
         <div>
+
           <p class="section-kicker">GROW WITH THE STUDIO</p>
-          <h3>Bring your skills to the next creative challenge.</h3>
-          <p>We welcome professional talent and creative specialists interested in animation, CGI, VFX, cinematic production and digital visual experiences. Explore current opportunities through our careers page.</p>
+
+          <h3>Bring your skills to the next creative challenge</h3>
+
+          <p>
+            We welcome professional talent and creative specialists interested in animation, CGI, VFX, cinematic production and digital visual experiences. Explore current opportunities through our careers page.
+          </p>
+
         </div>
-        <a class="button-primary" href="careers.html">Explore career opportunities <span aria-hidden="true">↗</span></a>
+
+        <a class="button-primary" href="careers.html">
+          Explore career opportunities
+        </a>
+
       </div>
     </section>
 
     <section class="inner-cta" aria-labelledby="team-cta-title">
+
       <div class="inner-container">
+
         <p class="eyebrow">LET'S WORK TOGETHER</p>
-        <h2 id="team-cta-title">Strong teams build<br><span>strong visual stories.</span></h2>
-        <p>Have a production requirement, a collaboration idea or a question for the studio? Start a conversation with AUTOTUBE CREW STUDIO.</p>
-        <a class="button-primary" href="contact.html">Contact the studio <span aria-hidden="true">↗</span></a>
+
+        <h2 id="team-cta-title">
+          Strong teams build
+          <br>
+          <span>strong visual stories</span>
+        </h2>
+
+        <p>
+          Have a production requirement, a collaboration idea or a question for the studio? Start a conversation with AUTOTUBE CREW STUDIO.
+        </p>
+
+        <a class="button-primary" href="contact.html">
+          Contact the studio
+        </a>
+
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
-    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
-    <div class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html">Contact</a></div>
-    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+      <img
+        class="brand-logo"
+        src="assets/brand/logo.png.png"
+        alt="AUTOTUBE CREW STUDIO"
+        width="175"
+        height="58">
+    </a>
+
+    <p class="footer-note">
+      PRE TO POST PRODUCTION STUDIO
+      <br>
+      Jakarta, Indonesia
+    </p>
+
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms-and-conditions.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="copyright">
+      Copyright 2026 AUTOTUBE CREW STUDIO. All rights reserved.
+    </p>
+
   </footer>
 
   <script src="./assets/js/main.js" defer></script>
+
 </body>
 </html>
