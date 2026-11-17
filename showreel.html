@@ -4,249 +4,1047 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#070707">
-  <meta name="description" content="Watch the AUTOTUBE CREW STUDIO showreel and explore six visual presentations across cinematic environments, 3D animation, CGI and production craft.">
+
+  <title>Studio Showreel and Selected Films | AUTOTUBE CREW STUDIO</title>
+
+  <meta name="description" content="Watch the AUTOTUBE CREW STUDIO showreel and selected production work across 3D animation, CGI, VFX, cinematic environments and video production.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="PT Autotube Crew Studio">
-  <title>Studio Showreel &amp; Visual Presentations | AUTOTUBE CREW STUDIO</title>
+
   <link rel="canonical" href="https://ptautotubecrewstudio.github.io/showreel.html">
+
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Studio Showreel &amp; Visual Presentations | AUTOTUBE CREW STUDIO">
-  <meta property="og:description" content="Explore the AUTOTUBE CREW STUDIO showreel and six visual presentations across animation, CGI, cinematic environments and production.">
+  <meta property="og:site_name" content="AUTOTUBE CREW STUDIO">
+  <meta property="og:title" content="Studio Showreel and Selected Films | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="Explore the studio showreel and selected production work across 3D animation, CGI, VFX and cinematic environments.">
   <meta property="og:url" content="https://ptautotubecrewstudio.github.io/showreel.html">
   <meta property="og:image" content="https://ptautotubecrewstudio.github.io/assets/images/homepage/darkfantasy.jpg.jpg">
+
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Studio Showreel | AUTOTUBE CREW STUDIO">
-  <meta name="twitter:description" content="A visual introduction to AUTOTUBE CREW STUDIO creative and production capabilities.">
+  <meta name="twitter:description" content="Selected studio production work across animation, CGI, VFX and cinematic production.">
   <meta name="twitter:image" content="https://ptautotubecrewstudio.github.io/assets/images/homepage/darkfantasy.jpg.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/css/style.css?v=4">
   <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
+
   <style>
     .showreel-page .inner-hero { min-height: 650px; }
-    .showreel-page .showreel-main-panel { min-width:0; padding:20px; border:1px solid rgba(255,255,255,.14); background:linear-gradient(145deg,#191919,#080808); }
-    .showreel-page .showreel-main-panel .panel-topline { margin-bottom:15px; }
-    .showreel-page .showreel-main-video { display:block; width:100%; aspect-ratio:16/9; object-fit:contain; background:#000; border:1px solid rgba(255,255,255,.12); }
-    .showreel-page .showreel-video-note { margin:12px 0 0; color:#888; font-size:11px; line-height:1.7; }
-    .showreel-page .showreel-caption { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:14px; }
-    .showreel-page .showreel-caption strong { color:#fff; font-size:12px; letter-spacing:.08em; }
-    .showreel-page .showreel-caption span { color:#ff5968; font-size:10px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
-    .showreel-page .showreel-intro { display:grid; grid-template-columns:.8fr 1.2fr; gap:clamp(30px,7vw,90px); align-items:start; }
-    .showreel-page .showreel-statement { margin:0; color:#fff; font-size:clamp(30px,4.3vw,52px); line-height:1.12; letter-spacing:-.045em; }
-    .showreel-page .showreel-statement span { color:var(--inner-red); }
-    .showreel-page .showreel-copy p { margin:0 0 17px; color:#bdbdbd; font-size:15px; line-height:1.9; }
-    .showreel-page .showreel-project-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; margin-top:42px; }
-    .showreel-page .showreel-project-card { min-width:0; border:1px solid rgba(255,255,255,.12); background:#101010; }
-    .showreel-page .showreel-project-media { position:relative; overflow:hidden; aspect-ratio:16/9; background:#050505; }
-    .showreel-page .project-video { display:block; width:100%; height:100%; object-fit:contain; background:#000; }
-    .showreel-page .project-video:focus-visible { outline:2px solid #fff; outline-offset:-4px; }
-    .showreel-page .showreel-project-content { padding:21px 22px 23px; }
-    .showreel-page .showreel-project-index { color:#ff5968; font-size:10px; font-weight:800; letter-spacing:.16em; }
-    .showreel-page .showreel-project-content h3 { margin:11px 0 8px; color:#fff; font-size:clamp(17px,2vw,22px); line-height:1.3; }
-    .showreel-page .showreel-project-content p { margin:0; color:#aaa; font-size:13px; line-height:1.8; }
-    .showreel-page .showreel-format { display:inline-block; margin-top:15px; color:#d2d2d2; font-size:10px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
-    .showreel-page .showreel-capability-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:13px; margin-top:38px; }
-    .showreel-page .showreel-capability { min-height:175px; padding:23px; border:1px solid var(--inner-line); background:linear-gradient(145deg,#151515,#0b0b0b); }
-    .showreel-page .showreel-capability span { color:#ff5968; font-size:10px; font-weight:800; letter-spacing:.16em; }
-    .showreel-page .showreel-capability h3 { margin:22px 0 8px; color:#fff; font-size:17px; }
-    .showreel-page .showreel-capability p { margin:0; color:#aaa; font-size:12px; line-height:1.8; }
-    .showreel-page .showreel-note { margin-top:28px; padding:22px 24px; border-left:2px solid var(--inner-red); background:#111; color:#aaa; font-size:12px; line-height:1.85; }
-    .showreel-page .showreel-note strong { color:#fff; }
-    @media(max-width:1000px) { .showreel-page .showreel-capability-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-    @media(max-width:900px) { .showreel-page .inner-hero-layout,.showreel-page .showreel-intro { grid-template-columns:1fr; gap:32px; } .showreel-page .showreel-main-panel { max-width:700px; } }
-    @media(max-width:600px) { .showreel-page .inner-hero { min-height:auto; } .showreel-page .showreel-project-grid,.showreel-page .showreel-capability-grid { grid-template-columns:1fr; } .showreel-page .showreel-main-panel { padding:13px; } .showreel-page .showreel-project-content { padding:18px; } }
-    @media(prefers-reduced-motion:reduce) { .showreel-page *, .showreel-page *::before, .showreel-page *::after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; animation-iteration-count:1!important; } }
+
+    .showreel-page .showreel-main-panel {
+      min-width: 0;
+      padding: 20px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: linear-gradient(145deg,#191919,#080808);
+    }
+
+    .showreel-page .showreel-main-panel .panel-topline {
+      margin-bottom: 15px;
+    }
+
+    .showreel-page .showreel-main-video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: contain;
+      background: #000;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+
+    .showreel-page .showreel-video-note {
+      margin: 12px 0 0;
+      color: #888;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+
+    .showreel-page .showreel-caption {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .showreel-page .showreel-caption strong {
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: .08em;
+    }
+
+    .showreel-page .showreel-caption span {
+      color: #ff5968;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .showreel-page .showreel-intro {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: clamp(30px,7vw,90px);
+      align-items: start;
+    }
+
+    .showreel-page .showreel-statement {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(30px,4.3vw,52px);
+      line-height: 1.12;
+      letter-spacing: -.045em;
+    }
+
+    .showreel-page .showreel-statement span {
+      color: var(--inner-red);
+    }
+
+    .showreel-page .showreel-copy p {
+      margin: 0 0 17px;
+      color: #bdbdbd;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .showreel-page .showreel-project-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 22px 16px;
+      margin-top: 42px;
+    }
+
+    .showreel-page .showreel-project-card {
+      min-width: 0;
+      border: 1px solid rgba(255,255,255,.12);
+      background: #101010;
+    }
+
+    .showreel-page .showreel-project-media {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      background: #050505;
+    }
+
+    .showreel-page .project-video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #000;
+    }
+
+    .showreel-page .project-video:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: -4px;
+    }
+
+    .showreel-page .showreel-project-content {
+      padding: 21px 22px 23px;
+    }
+
+    .showreel-page .showreel-project-index {
+      color: #ff5968;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .16em;
+    }
+
+    .showreel-page .showreel-project-content h3 {
+      margin: 11px 0 8px;
+      color: #fff;
+      font-size: clamp(17px,2vw,22px);
+      line-height: 1.3;
+    }
+
+    .showreel-page .showreel-project-content p {
+      margin: 0;
+      color: #aaa;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .showreel-page .showreel-format {
+      display: inline-block;
+      margin-top: 15px;
+      color: #d2d2d2;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .showreel-page .showreel-capability-grid {
+      display: grid;
+      grid-template-columns: repeat(4,minmax(0,1fr));
+      gap: 13px;
+      margin-top: 38px;
+    }
+
+    .showreel-page .showreel-capability {
+      min-height: 175px;
+      padding: 23px;
+      border: 1px solid var(--inner-line);
+      background: linear-gradient(145deg,#151515,#0b0b0b);
+    }
+
+    .showreel-page .showreel-capability span {
+      color: #ff5968;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .16em;
+    }
+
+    .showreel-page .showreel-capability h3 {
+      margin: 22px 0 8px;
+      color: #fff;
+      font-size: 17px;
+    }
+
+    .showreel-page .showreel-capability p {
+      margin: 0;
+      color: #aaa;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .showreel-page .showreel-note {
+      margin-top: 28px;
+      padding: 22px 24px;
+      border-left: 2px solid var(--inner-red);
+      background: #111;
+      color: #aaa;
+      font-size: 12px;
+      line-height: 1.85;
+    }
+
+    .showreel-page .showreel-note strong {
+      color: #fff;
+    }
+
+    @media(max-width:1000px) {
+      .showreel-page .showreel-capability-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+    }
+
+    @media(max-width:900px) {
+      .showreel-page .inner-hero-layout,
+      .showreel-page .showreel-intro {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .showreel-page .showreel-main-panel {
+        max-width: 700px;
+      }
+    }
+
+    @media(max-width:600px) {
+      .showreel-page .inner-hero {
+        min-height: auto;
+      }
+
+      .showreel-page .showreel-project-grid,
+      .showreel-page .showreel-capability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .showreel-page .showreel-main-panel {
+        padding: 13px;
+      }
+
+      .showreel-page .showreel-project-content {
+        padding: 18px;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      .showreel-page *,
+      .showreel-page *::before,
+      .showreel-page *::after {
+        scroll-behavior: auto!important;
+        transition-duration: .01ms!important;
+        animation-duration: .01ms!important;
+        animation-iteration-count: 1!important;
+      }
+    }
   </style>
 </head>
+
 <body class="inner-page showreel-page">
+
   <a class="skip-link" href="#main-content">Skip to content</a>
 
+  <!-- Main Header -->
+
   <header class="header site-header">
+
     <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
-      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
+      <img
+        class="brand-logo"
+        src="assets/brand/logo.png.png"
+        alt="AUTOTUBE CREW STUDIO"
+        width="190"
+        height="64">
     </a>
+
     <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="portfolio.html">Our Work</a>
       <a href="showreel.html" aria-current="page">Showreel</a>
       <a href="blog.html">Journal</a>
-      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+      <a class="contact-link" href="contact.html">Let's Talk</a>
+
     </nav>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-controls="primary-navigation"
+      aria-expanded="false">
+      <span aria-hidden="true">Menu</span>
+    </button>
+
   </header>
 
+
   <main id="main-content">
+
+    <!-- Showreel Hero -->
+
     <section class="inner-hero" aria-labelledby="showreel-title">
+
       <div class="inner-container inner-hero-layout">
+
         <div>
-          <p class="eyebrow">AUTOTUBE CREW / VISUAL PRESENTATION</p>
-          <h1 id="showreel-title">Visual stories.<br><span>Cinematic experiences.</span></h1>
-          <p class="inner-hero-copy">Explore a visual introduction to AUTOTUBE CREW STUDIO and selected presentations across 3D animation, CGI, cinematic environments and production craft.</p>
+
+          <p class="eyebrow">STUDIO SHOWREEL</p>
+
+          <h1 id="showreel-title">
+            Studio Showreel.
+            <br>
+            <span>Selected Production Work.</span>
+          </h1>
+
+          <p class="inner-hero-copy">
+            A selection of AUTOTUBE CREW STUDIO production work across 3D animation, CGI, VFX and cinematic environments.
+          </p>
+
           <div class="inner-hero-actions">
-            <a class="button-primary" href="#studio-showreel">Watch the studio showreel <span aria-hidden="true">↓</span></a>
-            <a class="button-secondary" href="portfolio.html">Explore the portfolio</a>
+
+            <a class="button-primary" href="#studio-showreel">
+              Watch the Showreel
+            </a>
+
+            <a class="button-secondary" href="portfolio.html">
+              View Portfolio
+            </a>
+
           </div>
+
         </div>
-        <div class="showreel-main-panel" id="studio-showreel" aria-label="AUTOTUBE CREW STUDIO main showreel video">
-          <div class="panel-topline"><span>Studio Presentation</span><span>JAKARTA / INDONESIA</span></div>
-          <video class="showreel-main-video project-video" controls playsinline preload="metadata" poster="assets/images/homepage/darkfantasy.jpg.jpg" aria-label="AUTOTUBE CREW STUDIO main showreel">
-            <source src="assets/videos/hero/hero-video.mp4" type="video/mp4">
+
+
+        <div
+          class="showreel-main-panel"
+          id="studio-showreel"
+          aria-label="AUTOTUBE CREW STUDIO showreel player">
+
+          <div class="panel-topline">
+            <span>Studio Showreel</span>
+            <span>JAKARTA / INDONESIA</span>
+          </div>
+
+          <video
+            class="showreel-main-video project-video"
+            controls
+            playsinline
+            preload="metadata"
+            poster="assets/images/homepage/darkfantasy.jpg.jpg"
+            aria-label="AUTOTUBE CREW STUDIO main showreel">
+
+            <source
+              src="assets/videos/hero/hero-video.mp4"
+              type="video/mp4">
+
             Your browser does not support HTML5 video.
+
           </video>
-          <div class="showreel-caption"><strong>AUTOTUBE CREW STUDIO</strong><span>Pre to post production</span></div>
-          <p class="showreel-video-note">Use the player controls to watch. Playback starts only when selected.</p>
+
+          <div class="showreel-caption">
+            <strong>AUTOTUBE CREW STUDIO</strong>
+            <span>Pre to Post Production</span>
+          </div>
+
+          <p class="showreel-video-note">
+            Select play to start video playback.
+          </p>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Showreel Introduction -->
 
     <section class="inner-section" aria-labelledby="showreel-intro-title">
+
       <div class="inner-container showreel-intro">
+
         <div>
-          <p class="section-kicker"><span>01</span><span>Selected Visual Presentations</span></p>
-          <h2 class="showreel-statement" id="showreel-intro-title">Different creative worlds.<br><span>One production mindset.</span></h2>
+
+          <p class="section-kicker">
+            <span>Selected Production Work</span>
+          </p>
+
+          <h2 class="showreel-statement" id="showreel-intro-title">
+            Production Across
+            <br>
+            <span>Visual Disciplines.</span>
+          </h2>
+
         </div>
+
+
         <div class="showreel-copy">
-          <p>Explore six selected visual presentations from the studio's current website collection. Each video is provided as its own player so you can choose what to watch.</p>
-          <p>The presentations are grouped by their supplied titles and creative categories. This page does not imply third-party clients, commissioned credits, release dates or project histories that have not been separately verified.</p>
+
+          <p>
+            This collection brings together six video presentations covering cinematic environments, 3D animation, CGI and action sequences.
+          </p>
+
+          <p>
+            Each presentation has its own video player, allowing viewers to select and watch individual films. The original supplied project titles and media files have been retained.
+          </p>
+
+          <p>
+            The presentations are displayed as studio portfolio material. No unverified client relationships, production credits, release dates or project histories are claimed.
+          </p>
+
           <div class="inner-hero-actions">
-            <a class="button-secondary" href="portfolio.html">Browse all portfolio visuals</a>
-            <a class="button-secondary" href="our-workflow.html">Explore our workflow</a>
+
+            <a class="button-secondary" href="portfolio.html">
+              Browse Portfolio
+            </a>
+
+            <a class="button-secondary" href="our-workflow.html">
+              Production Workflow
+            </a>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Selected Video Presentations -->
 
     <section class="inner-section" aria-labelledby="featured-presentations-title">
+
       <div class="inner-container">
-        <div class="section-kicker"><span>02</span><span>Featured Presentations</span></div>
+
+        <div class="section-kicker">
+          <span>Selected Video Work</span>
+        </div>
+
         <div class="section-heading">
-          <h2 id="featured-presentations-title">Six visual presentations.<br><span>Selected for the studio experience.</span></h2>
-          <p>Select a video to play it. Only the video you start will play; starting another player pauses the previously playing presentation.</p>
+
+          <h2 id="featured-presentations-title">
+            Cinematic Environments,
+            <br>
+            <span>Animation and CGI.</span>
+          </h2>
+
+          <p>
+            Select a video to play it. Starting another presentation automatically pauses the previously playing video.
+          </p>
+
         </div>
+
+
         <div class="showreel-project-grid">
-          <article class="showreel-project-card">
-            <div class="showreel-project-media">
-              <video class="project-video" controls playsinline preload="none" poster="assets/images/homepage/darkfantasy.jpg.jpg" aria-label="Dark Fantasy Environment UE5 video">
-                <source src="assets/videos/homepage/darkfantasy/darkfantasy..mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-              </video>
-            </div>
-            <div class="showreel-project-content"><span class="showreel-project-index">PRESENTATION 01 / 06</span><h3>Dark Fantasy Environment UE5</h3><p>A cinematic environment presentation focused on atmosphere, visual depth and world-building.</p><span class="showreel-format">Unreal Engine 5 / Environment</span></div>
-          </article>
+
+
+          <!-- Dark Fantasy -->
 
           <article class="showreel-project-card">
+
             <div class="showreel-project-media">
-              <video class="project-video" controls playsinline preload="none" poster="assets/images/homepage/kingforest.jpg.jpg" aria-label="The King of Forest and Mountain video">
-                <source src="assets/videos/homepage/kingforest/kingforest.mp4.mp4" type="video/mp4">
+
+              <video
+                class="project-video"
+                controls
+                playsinline
+                preload="none"
+                poster="assets/images/homepage/darkfantasy.jpg.jpg"
+                aria-label="Dark Fantasy Environment Unreal Engine 5 video">
+
+                <source
+                  src="assets/videos/homepage/darkfantasy/darkfantasy..mp4"
+                  type="video/mp4">
+
                 Your browser does not support HTML5 video.
+
               </video>
+
             </div>
-            <div class="showreel-project-content"><span class="showreel-project-index">PRESENTATION 02 / 06</span><h3>The King of Forest &amp; Mountain</h3><p>A visual presentation built around natural environments, cinematic composition and atmosphere.</p><span class="showreel-format">Cinematic Environment</span></div>
+
+            <div class="showreel-project-content">
+
+              <span class="showreel-project-index">CINEMATIC ENVIRONMENT</span>
+
+              <h3>Dark Fantasy Environment UE5</h3>
+
+              <p>
+                A cinematic environment presentation focused on atmosphere, scene composition, lighting and environmental detail.
+              </p>
+
+              <span class="showreel-format">
+                Unreal Engine 5 / Environment
+              </span>
+
+            </div>
+
           </article>
 
-          <article class="showreel-project-card">
-            <div class="showreel-project-media">
-              <video class="project-video" controls playsinline preload="none" poster="assets/images/homepage/destroyearth.jpg.jpg" aria-label="Destroy Earth video">
-                <source src="assets/videos/homepage/destroyearth/destroyearth.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-              </video>
-            </div>
-            <div class="showreel-project-content"><span class="showreel-project-index">PRESENTATION 03 / 06</span><h3>Destroy Earth</h3><p>A large-scale visual concept exploring digital spectacle, scale and visual effects.</p><span class="showreel-format">CGI / Visual Effects</span></div>
-          </article>
+
+          <!-- King of Forest and Mountain -->
 
           <article class="showreel-project-card">
+
             <div class="showreel-project-media">
-              <video class="project-video" controls playsinline preload="none" poster="assets/images/homepage/matrixcity.jpg.jpg" aria-label="The Matrix City video">
-                <source src="assets/videos/homepage/matrixcity/matrixcity.mp4.MOV" type="video/quicktime">
+
+              <video
+                class="project-video"
+                controls
+                playsinline
+                preload="none"
+                poster="assets/images/homepage/kingforest.jpg.jpg"
+                aria-label="The King of Forest and Mountain video">
+
+                <source
+                  src="assets/videos/homepage/kingforest/kingforest.mp4.mp4"
+                  type="video/mp4">
+
                 Your browser does not support HTML5 video.
+
               </video>
+
             </div>
-            <div class="showreel-project-content"><span class="showreel-project-index">PRESENTATION 04 / 06</span><h3>The Matrix City</h3><p>A digital city presentation built around cinematic architecture, depth and immersive visual design.</p><span class="showreel-format">3D Environment</span></div>
+
+            <div class="showreel-project-content">
+
+              <span class="showreel-project-index">3D ENVIRONMENT</span>
+
+              <h3>The King of Forest and Mountain</h3>
+
+              <p>
+                A cinematic presentation featuring forest and mountain environments, visual scale and natural landscape composition.
+              </p>
+
+              <span class="showreel-format">
+                Cinematic Environment
+              </span>
+
+            </div>
+
           </article>
 
-          <article class="showreel-project-card">
-            <div class="showreel-project-media">
-              <video class="project-video" controls playsinline preload="none" poster="assets/images/homepage/sniper.jpg.jpg" aria-label="Sniper Animated Cinematic UE5 video">
-                <source src="assets/videos/homepage/sniper/sniper.mp4.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-              </video>
-            </div>
-            <div class="showreel-project-content"><span class="showreel-project-index">PRESENTATION 05 / 06</span><h3>Sniper Animated Cinematic UE5</h3><p>An animated cinematic presentation combining character-driven storytelling and virtual production.</p><span class="showreel-format">Animation / Cinematics</span></div>
-          </article>
+
+          <!-- Destroy Earth -->
 
           <article class="showreel-project-card">
+
             <div class="showreel-project-media">
-              <video class="project-video" controls playsinline preload="none" poster="assets/images/homepage/carchase.jpg.jpg" aria-label="Car Chase Cinematic video">
-                <source src="assets/videos/homepage/carchase/carchase.mp4.mp4" type="video/mp4">
+
+              <video
+                class="project-video"
+                controls
+                playsinline
+                preload="none"
+                poster="assets/images/homepage/destroyearth.jpg.jpg"
+                aria-label="Destroy Earth CGI video">
+
+                <source
+                  src="assets/videos/homepage/destroyearth/destroyearth.mp4"
+                  type="video/mp4">
+
                 Your browser does not support HTML5 video.
+
               </video>
+
             </div>
-            <div class="showreel-project-content"><span class="showreel-project-index">PRESENTATION 06 / 06</span><h3>Car Chase Cinematic</h3><p>A high-energy cinematic presentation built around motion, camera composition and visual action.</p><span class="showreel-format">Cinematic Production</span></div>
+
+            <div class="showreel-project-content">
+
+              <span class="showreel-project-index">CGI AND VFX</span>
+
+              <h3>Destroy Earth</h3>
+
+              <p>
+                A large-scale CGI presentation built around environmental destruction, cinematic scale and visual effects.
+              </p>
+
+              <span class="showreel-format">
+                CGI / VFX
+              </span>
+
+            </div>
+
           </article>
+
+
+          <!-- Matrix City -->
+
+          <article class="showreel-project-card">
+
+            <div class="showreel-project-media">
+
+              <video
+                class="project-video"
+                controls
+                playsinline
+                preload="none"
+                poster="assets/images/homepage/matrixcity.jpg.jpg"
+                aria-label="The Matrix City digital environment video">
+
+                <source
+                  src="assets/videos/homepage/matrixcity/matrixcity.mp4.MOV"
+                  type="video/quicktime">
+
+                Your browser does not support HTML5 video.
+
+              </video>
+
+            </div>
+
+            <div class="showreel-project-content">
+
+              <span class="showreel-project-index">DIGITAL ENVIRONMENT</span>
+
+              <h3>The Matrix City</h3>
+
+              <p>
+                A digital city presentation featuring architectural structures, spatial depth and cinematic visual composition.
+              </p>
+
+              <span class="showreel-format">
+                3D Environment
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Sniper Cinematic -->
+
+          <article class="showreel-project-card">
+
+            <div class="showreel-project-media">
+
+              <video
+                class="project-video"
+                controls
+                playsinline
+                preload="none"
+                poster="assets/images/homepage/sniper.jpg.jpg"
+                aria-label="Sniper Animated Cinematic Unreal Engine 5 video">
+
+                <source
+                  src="assets/videos/homepage/sniper/sniper.mp4.mp4"
+                  type="video/mp4">
+
+                Your browser does not support HTML5 video.
+
+              </video>
+
+            </div>
+
+            <div class="showreel-project-content">
+
+              <span class="showreel-project-index">ANIMATED CINEMATIC</span>
+
+              <h3>Sniper Animated Cinematic UE5</h3>
+
+              <p>
+                An animated cinematic sequence combining character movement, staged action and cinematic camera work.
+              </p>
+
+              <span class="showreel-format">
+                Animation / Cinematics
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Car Chase -->
+
+          <article class="showreel-project-card">
+
+            <div class="showreel-project-media">
+
+              <video
+                class="project-video"
+                controls
+                playsinline
+                preload="none"
+                poster="assets/images/homepage/carchase.jpg.jpg"
+                aria-label="Car Chase Cinematic video">
+
+                <source
+                  src="assets/videos/homepage/carchase/carchase.mp4.mp4"
+                  type="video/mp4">
+
+                Your browser does not support HTML5 video.
+
+              </video>
+
+            </div>
+
+            <div class="showreel-project-content">
+
+              <span class="showreel-project-index">CINEMATIC ACTION</span>
+
+              <h3>Car Chase Cinematic</h3>
+
+              <p>
+                A vehicle action sequence focused on movement, camera framing and cinematic pacing.
+              </p>
+
+              <span class="showreel-format">
+                Cinematic Production
+              </span>
+
+            </div>
+
+          </article>
+
+
         </div>
-        <p class="showreel-note"><strong>Playback note:</strong> Video playback depends on browser codec support and network conditions. The Matrix City source is stored with a .MOV extension; some browsers may not support its encoding. The matching image remains available as its video poster.</p>
+
+
+        <p class="showreel-note">
+          <strong>Video compatibility:</strong>
+          Playback depends on browser and device codec support. The Matrix City source is stored in MOV format, which may not play in every browser. The supplied video poster remains available as the visual preview.
+        </p>
+
       </div>
+
     </section>
+
+
+    <!-- Production Capabilities -->
 
     <section class="inner-section" aria-labelledby="showreel-capabilities-title">
+
       <div class="inner-container">
-        <div class="section-kicker"><span>03</span><span>Creative Capabilities</span></div>
+
+        <div class="section-kicker">
+          <span>Production Capabilities</span>
+        </div>
+
         <div class="section-heading">
-          <h2 id="showreel-capabilities-title">Creative and technical disciplines.<br><span>Connected from pre to post.</span></h2>
-          <p>Project requirements determine which creative and production disciplines are involved. The following areas describe the studio's published capability focus.</p>
+
+          <h2 id="showreel-capabilities-title">
+            Creative and Technical
+            <br>
+            <span>Production Disciplines.</span>
+          </h2>
+
+          <p>
+            The studio's production capabilities cover the following disciplines. Their involvement depends on the approved project scope, creative brief and required deliverables.
+          </p>
+
         </div>
+
+
         <div class="showreel-capability-grid">
-          <article class="showreel-capability"><span>01 / ANIMATION</span><h3>3D Animation</h3><p>Character, environment and cinematic animation for visual storytelling.</p></article>
-          <article class="showreel-capability"><span>02 / CGI</span><h3>CGI Production</h3><p>Computer-generated imagery, digital environments and visual compositions.</p></article>
-          <article class="showreel-capability"><span>03 / VFX</span><h3>Visual Effects</h3><p>Compositing, effects workflows and visual enhancement.</p></article>
-          <article class="showreel-capability"><span>04 / MOTION</span><h3>Motion Graphics</h3><p>Graphic animation, title design and motion-based communication.</p></article>
-          <article class="showreel-capability"><span>05 / VIDEO</span><h3>Video Production</h3><p>Cinematic video creation and visual content production.</p></article>
-          <article class="showreel-capability"><span>06 / COMMERCIAL</span><h3>Commercial Production</h3><p>Production for advertising, campaigns and commercial content.</p></article>
-          <article class="showreel-capability"><span>07 / FILM</span><h3>Feature Film Projects</h3><p>Visual development and production collaboration for film projects.</p></article>
-          <article class="showreel-capability"><span>08 / FINISHING</span><h3>Post-Production</h3><p>Editing, compositing, refinement and final visual workflows.</p></article>
+
+
+          <article class="showreel-capability">
+
+            <span>ANIMATION</span>
+
+            <h3>3D Animation</h3>
+
+            <p>
+              Character animation, digital environments and cinematic sequences.
+            </p>
+
+          </article>
+
+
+          <article class="showreel-capability">
+
+            <span>CGI</span>
+
+            <h3>CGI Production</h3>
+
+            <p>
+              Computer-generated imagery, digital assets and environment creation.
+            </p>
+
+          </article>
+
+
+          <article class="showreel-capability">
+
+            <span>VFX</span>
+
+            <h3>VFX Production</h3>
+
+            <p>
+              Compositing, digital effects and visual integration for screen production.
+            </p>
+
+          </article>
+
+
+          <article class="showreel-capability">
+
+            <span>MOTION DESIGN</span>
+
+            <h3>Motion Graphics</h3>
+
+            <p>
+              Graphic animation, title sequences and motion-based visual communication.
+            </p>
+
+          </article>
+
+
+          <article class="showreel-capability">
+
+            <span>VIDEO</span>
+
+            <h3>Video Production</h3>
+
+            <p>
+              Cinematic video production and digital content creation.
+            </p>
+
+          </article>
+
+
+          <article class="showreel-capability">
+
+            <span>ADVERTISING</span>
+
+            <h3>Commercial Production</h3>
+
+            <p>
+              Commercial films, product visuals and advertising campaign content.
+            </p>
+
+          </article>
+
+
+          <article class="showreel-capability">
+
+            <span>FILM</span>
+
+            <h3>Feature Film Production</h3>
+
+            <p>
+              Visual development and production collaboration for feature film projects.
+            </p>
+
+          </article>
+
+
+          <article class="showreel-capability">
+
+            <span>POST-PRODUCTION</span>
+
+            <h3>Post-Production</h3>
+
+            <p>
+              Editing, compositing, finishing and final delivery preparation.
+            </p>
+
+          </article>
+
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Production Workflow -->
 
     <section class="inner-section" aria-labelledby="showreel-process-title">
+
       <div class="inner-container">
-        <div class="section-kicker"><span>04</span><span>Production Approach</span></div>
+
+        <div class="section-kicker">
+          <span>Production Workflow</span>
+        </div>
+
         <div class="section-heading">
-          <h2 id="showreel-process-title">From creative vision <span>to final delivery.</span></h2>
-          <p>Our production approach connects planning, execution and finishing around clearly defined project requirements.</p>
+
+          <h2 id="showreel-process-title">
+            Pre-Production to
+            <span>Final Delivery.</span>
+          </h2>
+
+          <p>
+            Production activities are coordinated across planning, execution and finishing according to the project brief, approved scope and delivery requirements.
+          </p>
+
         </div>
+
+
         <div class="pipeline-grid">
-          <article class="pipeline-card"><span class="card-index">01 / PRE-PRODUCTION</span><h3>Plan the vision</h3><p>Creative development, project briefing, visual direction and production preparation.</p></article>
-          <article class="pipeline-card"><span class="card-index">02 / PRODUCTION</span><h3>Create the work</h3><p>Animation, CGI, VFX and cinematic content creation according to the agreed scope.</p></article>
-          <article class="pipeline-card"><span class="card-index">03 / POST-PRODUCTION</span><h3>Refine &amp; deliver</h3><p>Editing, compositing, review, quality checks and final visual delivery.</p></article>
+
+
+          <article class="pipeline-card">
+
+            <span class="card-index">PRE-PRODUCTION</span>
+
+            <h3>Project Planning</h3>
+
+            <p>
+              Creative development, project briefing, visual direction, storyboarding where required and production scheduling.
+            </p>
+
+          </article>
+
+
+          <article class="pipeline-card">
+
+            <span class="card-index">PRODUCTION</span>
+
+            <h3>Production Execution</h3>
+
+            <p>
+              Animation, CGI, VFX, filming and execution of the approved production requirements.
+            </p>
+
+          </article>
+
+
+          <article class="pipeline-card">
+
+            <span class="card-index">POST-PRODUCTION</span>
+
+            <h3>Finishing and Delivery</h3>
+
+            <p>
+              Editing, compositing, visual refinement, quality review and preparation of final deliverables.
+            </p>
+
+          </article>
+
+
         </div>
+
+
         <div class="inner-hero-actions">
-          <a class="button-secondary" href="our-workflow.html">Explore our workflow <span aria-hidden="true">↗</span></a>
-          <a class="button-secondary" href="services.html">Explore services <span aria-hidden="true">↗</span></a>
+
+          <a class="button-secondary" href="our-workflow.html">
+            View Production Workflow
+          </a>
+
+          <a class="button-secondary" href="services.html">
+            View Production Services
+          </a>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Project Enquiries -->
 
     <section class="inner-cta" aria-labelledby="showreel-cta-title">
+
       <div class="inner-container">
-        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
-        <h2 id="showreel-cta-title">Let's create something <span>worth watching.</span></h2>
-        <p>Share your creative concept, production needs or collaboration proposal with AUTOTUBE CREW STUDIO.</p>
-        <a class="button-primary" href="request-a-quote.html">Request a project quotation <span aria-hidden="true">↗</span></a>
+
+        <p class="eyebrow">PROJECT ENQUIRIES</p>
+
+        <h2 id="showreel-cta-title">
+          Discuss Your Production
+          <span>Requirements.</span>
+        </h2>
+
+        <p>
+          Share your creative brief, production requirements and target schedule. Our studio welcomes enquiries from production companies, advertising agencies and creative partners.
+        </p>
+
+        <a class="button-primary" href="request-a-quote.html">
+          Request a Project Quotation
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- Footer -->
+
   <footer class="site-footer">
-    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
-    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
-    <div class="footer-links"><a href="portfolio.html">Portfolio</a><a href="blog.html">Journal</a><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html">Contact</a></div>
-    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+
+      <img
+        class="brand-logo"
+        src="assets/brand/logo.png.png"
+        alt="AUTOTUBE CREW STUDIO"
+        width="175"
+        height="58">
+
+    </a>
+
+    <p class="footer-note">
+      PRE TO POST PRODUCTION STUDIO
+      <br>
+      Jakarta, Indonesia
+    </p>
+
+    <div class="footer-links">
+
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Journal</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms-and-conditions.html">Terms</a>
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    <p class="copyright">
+      Copyright 2026 AUTOTUBE CREW STUDIO. All rights reserved.
+    </p>
+
   </footer>
 
-  <script src="./assets/js/main.js" defer></script>
+
+  <!-- Global Navigation -->
+
+  <script src="./assets/js/main.js?v=2" defer></script>
+
 </body>
 </html>
