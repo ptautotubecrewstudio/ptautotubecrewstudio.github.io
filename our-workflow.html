@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#070707">
-  <meta name="description" content="Explore the AUTOTUBE CREW STUDIO project workflow, from discovery and scope definition to planning, creative production, quality control and final delivery.">
+
+  <title>Production Workflow | AUTOTUBE CREW STUDIO</title>
+
+  <meta name="description" content="Explore the AUTOTUBE CREW STUDIO production workflow, covering project discovery, creative planning, pre-production, execution, quality control and final delivery.">
+
   <meta name="robots" content="index, follow">
+  <meta name="author" content="PT Autotube Crew Studio">
+
   <link rel="canonical" href="https://ptautotubecrewstudio.github.io/our-workflow.html">
-  <meta property="og:title" content="Our Workflow | AUTOTUBE CREW STUDIO">
-  <meta property="og:description" content="A clear, collaborative process for digital platform development and creative production, from first brief to final delivery.">
+
+  <meta property="og:title" content="Production Workflow | AUTOTUBE CREW STUDIO">
+  <meta property="og:description" content="A structured workflow for film, animation, CGI, VFX, advertising and digital platform projects, from initial brief to final delivery.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ptautotubecrewstudio.github.io/our-workflow.html">
+
   <meta name="twitter:card" content="summary">
-  <meta name="author" content="PT Autotube Crew Studio">
-<meta name="twitter:title" content="Our Workflow | AUTOTUBE CREW STUDIO">
-<meta name="twitter:description" content="Explore the AUTOTUBE CREW STUDIO workflow, from project discovery and planning to creative production, quality control and final delivery.">
-  <title>Our Workflow | AUTOTUBE CREW STUDIO</title>
+  <meta name="twitter:title" content="Production Workflow | AUTOTUBE CREW STUDIO">
+  <meta name="twitter:description" content="Understand how AUTOTUBE CREW STUDIO approaches project planning, production, review and final delivery.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+
   <link rel="stylesheet" href="./assets/css/style.css?v=4">
   <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
   <link rel="stylesheet" href="./assets/css/service-pages.css?v=1">
+
   <style>
+
     .workflow-page .workflow-stage-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -30,6 +42,7 @@
       margin-top: 38px;
       counter-reset: workflow-stage;
     }
+
     .workflow-page .workflow-stage-card {
       position: relative;
       min-height: 225px;
@@ -38,6 +51,7 @@
       background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.012));
       counter-increment: workflow-stage;
     }
+
     .workflow-page .workflow-stage-card::before {
       content: "0" counter(workflow-stage);
       display: block;
@@ -46,18 +60,21 @@
       font-weight: 800;
       letter-spacing: .16em;
     }
+
     .workflow-page .workflow-stage-card h3 {
       margin: 26px 0 10px;
       color: #fff;
       font-size: 19px;
       line-height: 1.3;
     }
+
     .workflow-page .workflow-stage-card p {
       margin: 0;
       color: #aaa;
       font-size: 13px;
       line-height: 1.85;
     }
+
     .workflow-page .workflow-stage-card .stage-output {
       display: block;
       margin-top: 16px;
@@ -69,34 +86,40 @@
       letter-spacing: .1em;
       text-transform: uppercase;
     }
+
     .workflow-page .workflow-track-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
       margin-top: 38px;
     }
+
     .workflow-page .workflow-track {
       padding: 30px;
       border: 1px solid var(--inner-line);
       background: #101010;
     }
+
     .workflow-page .workflow-track h3 {
       margin: 0 0 12px;
       color: #fff;
       font-size: 22px;
     }
+
     .workflow-page .workflow-track > p {
       margin: 0 0 22px;
       color: #aaa;
       font-size: 13px;
       line-height: 1.85;
     }
+
     .workflow-page .workflow-track ol {
       margin: 0;
       padding: 0;
       list-style: none;
       counter-reset: track-step;
     }
+
     .workflow-page .workflow-track li {
       position: relative;
       padding: 13px 0 13px 38px;
@@ -106,6 +129,7 @@
       line-height: 1.7;
       counter-increment: track-step;
     }
+
     .workflow-page .workflow-track li::before {
       content: counter(track-step, decimal-leading-zero);
       position: absolute;
@@ -116,6 +140,7 @@
       font-weight: 800;
       letter-spacing: .08em;
     }
+
     .workflow-page .workflow-quality-grid,
     .workflow-page .workflow-responsibility-grid {
       display: grid;
@@ -123,29 +148,35 @@
       gap: 14px;
       margin-top: 36px;
     }
+
     .workflow-page .workflow-info-card {
       padding: 25px;
       border: 1px solid var(--inner-line);
       background: #101010;
     }
+
     .workflow-page .workflow-info-card h3 {
       margin: 0 0 11px;
       color: #fff;
       font-size: 18px;
     }
+
     .workflow-page .workflow-info-card p {
       margin: 0;
       color: #aaa;
       font-size: 13px;
       line-height: 1.85;
     }
+
     .workflow-page .workflow-accordion {
       margin-top: 35px;
       border-top: 1px solid var(--inner-line);
     }
+
     .workflow-page .workflow-accordion details {
       border-bottom: 1px solid var(--inner-line);
     }
+
     .workflow-page .workflow-accordion summary {
       position: relative;
       padding: 20px 42px 20px 0;
@@ -155,7 +186,11 @@
       cursor: pointer;
       list-style: none;
     }
-    .workflow-page .workflow-accordion summary::-webkit-details-marker { display: none; }
+
+    .workflow-page .workflow-accordion summary::-webkit-details-marker {
+      display: none;
+    }
+
     .workflow-page .workflow-accordion summary::after {
       content: "+";
       position: absolute;
@@ -165,7 +200,11 @@
       font-size: 24px;
       font-weight: 400;
     }
-    .workflow-page .workflow-accordion details[open] summary::after { content: "−"; }
+
+    .workflow-page .workflow-accordion details[open] summary::after {
+      content: "−";
+    }
+
     .workflow-page .workflow-accordion details p {
       max-width: 850px;
       margin: 0;
@@ -174,6 +213,7 @@
       font-size: 13px;
       line-height: 1.9;
     }
+
     .workflow-page .workflow-note {
       margin-top: 26px;
       padding: 18px 20px;
@@ -183,271 +223,749 @@
       font-size: 12px;
       line-height: 1.8;
     }
+
     @media (max-width: 900px) {
-      .workflow-page .workflow-stage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .workflow-page .workflow-stage-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
+
     @media (max-width: 650px) {
       .workflow-page .workflow-stage-grid,
       .workflow-page .workflow-track-grid,
       .workflow-page .workflow-quality-grid,
-      .workflow-page .workflow-responsibility-grid { grid-template-columns: 1fr; }
-      .workflow-page .workflow-stage-card { min-height: 0; }
-      .workflow-page .workflow-track { padding: 23px; }
+      .workflow-page .workflow-responsibility-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .workflow-page .workflow-stage-card {
+        min-height: 0;
+      }
+
+      .workflow-page .workflow-track {
+        padding: 23px;
+      }
     }
+
     @media (prefers-reduced-motion: reduce) {
-      .workflow-page *, .workflow-page *::before, .workflow-page *::after {
+      .workflow-page *,
+      .workflow-page *::before,
+      .workflow-page *::after {
         scroll-behavior: auto !important;
         transition-duration: .01ms !important;
         animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
       }
     }
+
   </style>
+
 </head>
+
 <body class="inner-page service-page workflow-page">
+
   <a class="skip-link" href="#main-content">Skip to content</a>
 
+
+  <!-- Main Header -->
+
   <header class="header site-header">
+
     <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
-      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
+
+      <img
+        class="brand-logo"
+        src="assets/brand/logo.png.png"
+        alt="AUTOTUBE CREW STUDIO"
+        width="190"
+        height="64">
+
     </a>
+
     <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="portfolio.html">Our Work</a>
       <a href="showreel.html">Showreel</a>
-      <a class="contact-link" href="contact.html">Let's Talk <span aria-hidden="true">↗</span></a>
+      <a class="contact-link" href="contact.html">Let's Talk</a>
+
     </nav>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-controls="primary-navigation"
+      aria-expanded="false">
+
+      <span aria-hidden="true">Menu</span>
+
+    </button>
+
   </header>
 
+
   <main id="main-content">
+
+
+    <!-- Workflow Hero -->
+
     <section class="inner-hero service-hero" aria-labelledby="workflow-title">
+
       <div class="inner-container inner-hero-layout service-hero-layout">
+
         <div>
-          <p class="eyebrow">OUR PROCESS / PROJECT DELIVERY / COLLABORATION</p>
-          <h1 id="workflow-title">From first idea.<br><span>To final delivery.</span></h1>
-          <p class="inner-hero-copy">A clear, collaborative workflow connects project objectives with the right creative, technical and production steps. From digital platforms to animation, CGI, VFX and film, the process is shaped around the brief and agreed deliverables.</p>
+
+          <p class="eyebrow">PROJECT WORKFLOW</p>
+
+          <h1 id="workflow-title">
+            From Project Brief
+            <br>
+            <span>To Final Delivery.</span>
+          </h1>
+
+          <p class="inner-hero-copy">
+            A defined workflow connects project objectives with the creative, technical and production activities required to complete the work. The process is adapted to film, animation, CGI, VFX, advertising and digital platform projects.
+          </p>
+
           <div class="inner-hero-actions">
-            <a class="button-primary" href="#project-lifecycle">Explore our process <span aria-hidden="true">↓</span></a>
-            <a class="button-secondary" href="contact.html">Discuss a project</a>
+
+            <a class="button-primary" href="#project-lifecycle">
+              Explore the Workflow
+            </a>
+
+            <a class="button-secondary" href="contact.html">
+              Discuss a Project
+            </a>
+
           </div>
+
         </div>
+
+
         <div class="service-hero-panel" aria-label="AUTOTUBE CREW STUDIO project workflow">
-          <div class="service-panel-top"><span>Project workflow</span><span>PROCESS / 01</span></div>
-          <img class="service-panel-mark" src="assets/brand/logo.png.png" alt="" width="190" height="100">
-          <div class="service-panel-bottom"><span>Brief to delivery</span><strong>JAKARTA / GLOBAL</strong></div>
+
+          <div class="service-panel-top">
+            <span>Project Workflow</span>
+            <span>JAKARTA / INDONESIA</span>
+          </div>
+
+          <img
+            class="service-panel-mark"
+            src="assets/brand/logo.png.png"
+            alt=""
+            width="190"
+            height="100">
+
+          <div class="service-panel-bottom">
+            <span>Brief to Delivery</span>
+            <strong>PRE TO POST PRODUCTION</strong>
+          </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Workflow Introduction -->
 
     <section class="inner-section" aria-labelledby="workflow-intro-title">
+
       <div class="inner-container service-intro-grid">
+
         <div>
-          <p class="section-kicker">CLARITY AT EVERY STAGE</p>
-          <h2 class="service-statement" id="workflow-intro-title">A considered process. <span>One shared direction.</span></h2>
+
+          <p class="section-kicker">PROJECT COORDINATION</p>
+
+          <h2 class="service-statement" id="workflow-intro-title">
+            A Clear Brief.
+            <span>A Defined Production Plan.</span>
+          </h2>
+
         </div>
+
         <div class="service-intro-copy">
-          <p>Every project begins with an idea, a business objective or a creative challenge. Before production or development begins, the team needs a shared understanding of what the work must achieve, who it is for and what the final deliverables need to include.</p>
-          <p>Our project framework establishes that foundation, then adapts to the requirements of each assignment. Digital platform development and creative production follow different technical paths, while sharing the same emphasis on planning, communication, review and delivery.</p>
+
+          <p>
+            Every assignment begins with a clear understanding of its objectives, intended audience, technical requirements and expected outcomes. These details provide the basis for defining the work before production or development starts.
+          </p>
+
+          <p>
+            Our project framework establishes responsibilities, schedules, review stages and delivery requirements. The production plan is then adapted to the discipline involved, whether the assignment concerns digital platforms, animation, CGI, VFX or film production.
+          </p>
+
           <div class="service-related-links">
-            <a href="services.html">Explore studio services <span aria-hidden="true">↗</span></a>
-            <a href="digital-platforms.html">Digital platforms <span aria-hidden="true">↗</span></a>
-            <a href="portfolio.html">View selected work <span aria-hidden="true">↗</span></a>
+
+            <a href="services.html">Production Services</a>
+
+            <a href="digital-platforms.html">Digital Platform Services</a>
+
+            <a href="portfolio.html">Portfolio</a>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Project Lifecycle -->
 
     <section class="inner-section" id="project-lifecycle" aria-labelledby="lifecycle-title">
+
       <div class="inner-container">
-        <p class="section-kicker">THE PROJECT LIFECYCLE</p>
+
+        <p class="section-kicker">PROJECT LIFECYCLE</p>
+
         <div class="section-heading">
-          <h2 id="lifecycle-title">Seven stages. <span>One clear process.</span></h2>
-          <p>A practical framework that can be adjusted to the scale, complexity, production type and agreed scope of each project.</p>
+
+          <h2 id="lifecycle-title">
+            A Structured Project
+            <span>From Brief to Handover.</span>
+          </h2>
+
+          <p>
+            Seven stages provide a framework for project planning, execution, review and delivery. Their application depends on the assignment, production requirements and approved scope.
+          </p>
+
         </div>
+
+
         <div class="workflow-stage-grid">
+
+
           <article class="workflow-stage-card">
-            <h3>Discovery &amp; Brief</h3>
-            <p>Understand the objectives, audience, creative direction, technical needs and intended outcome. Identify the questions that need to be resolved before planning.</p>
-            <span class="stage-output">Output: Shared project understanding</span>
+
+            <h3>Project Discovery</h3>
+
+            <p>
+              Establish the project objectives, intended audience, creative direction, technical requirements and expected outcome. Review available references and identify outstanding requirements.
+            </p>
+
+            <span class="stage-output">
+              Output: Project Brief
+            </span>
+
           </article>
+
+
           <article class="workflow-stage-card">
-            <h3>Scope &amp; Proposal</h3>
-            <p>Define the work, deliverables, responsibilities, dependencies, assumptions, review points and commercial considerations for the proposed assignment.</p>
-            <span class="stage-output">Output: Agreed project scope</span>
+
+            <h3>Scope and Proposal</h3>
+
+            <p>
+              Define the required work, deliverables, responsibilities, dependencies, assumptions, review arrangements, schedule and commercial considerations.
+            </p>
+
+            <span class="stage-output">
+              Output: Defined Project Scope
+            </span>
+
           </article>
+
+
           <article class="workflow-stage-card">
-            <h3>Planning &amp; Pre-Production</h3>
-            <p>Develop the schedule, creative approach, resources, production plan, platform architecture or other preparation needed for execution.</p>
-            <span class="stage-output">Output: Approved plan and direction</span>
+
+            <h3>Planning and Pre-Production</h3>
+
+            <p>
+              Establish the production schedule, creative approach, required resources and technical preparation. Develop the platform architecture or production plan where applicable.
+            </p>
+
+            <span class="stage-output">
+              Output: Approved Production Plan
+            </span>
+
           </article>
+
+
           <article class="workflow-stage-card">
-            <h3>Production &amp; Development</h3>
-            <p>Carry out the agreed creative, production or development work, with progress coordinated against the approved direction and milestones.</p>
-            <span class="stage-output">Output: Work in progress</span>
+
+            <h3>Production and Development</h3>
+
+            <p>
+              Execute the approved creative, production or development activities. Coordinate the work against the project schedule, requirements and agreed milestones.
+            </p>
+
+            <span class="stage-output">
+              Output: Work in Progress
+            </span>
+
           </article>
+
+
           <article class="workflow-stage-card">
-            <h3>Review &amp; Refinement</h3>
-            <p>Present work at agreed review points, collect consolidated feedback and make refinements in line with the approved brief and change process.</p>
-            <span class="stage-output">Output: Reviewed project work</span>
+
+            <h3>Review and Refinement</h3>
+
+            <p>
+              Present project work at scheduled review points, consolidate feedback and complete revisions according to the approved brief and agreed change arrangements.
+            </p>
+
+            <span class="stage-output">
+              Output: Reviewed Project Work
+            </span>
+
           </article>
+
+
           <article class="workflow-stage-card">
-            <h3>Quality Control &amp; Delivery</h3>
-            <p>Check the work against agreed creative, technical and delivery requirements, then prepare the approved outputs in the required formats.</p>
-            <span class="stage-output">Output: Approved deliverables</span>
+
+            <h3>Quality Control and Delivery</h3>
+
+            <p>
+              Review the completed work against the agreed creative, technical and delivery specifications. Prepare the approved outputs in the required formats.
+            </p>
+
+            <span class="stage-output">
+              Output: Final Deliverables
+            </span>
+
           </article>
+
+
           <article class="workflow-stage-card">
-            <h3>Handover &amp; Next Steps</h3>
-            <p>Provide the agreed handover materials, document any relevant completion details and identify follow-up support or future opportunities where applicable.</p>
-            <span class="stage-output">Output: Project handover</span>
+
+            <h3>Handover and Support</h3>
+
+            <p>
+              Transfer the agreed deliverables and supporting documentation. Confirm completion requirements and discuss any additional support or follow-up arrangements.
+            </p>
+
+            <span class="stage-output">
+              Output: Project Handover
+            </span>
+
           </article>
+
+
         </div>
-        <p class="workflow-note">The lifecycle is a flexible project framework, not a fixed promise that every assignment uses identical stages or timelines. The applicable process is confirmed as part of the project scope.</p>
+
+
+        <p class="workflow-note">
+          The lifecycle is adapted to each assignment. Not every project requires identical stages, review arrangements or timelines. The applicable workflow is established during project planning and scope definition.
+        </p>
+
       </div>
+
     </section>
+
+
+    <!-- Project Workstreams -->
 
     <section class="inner-section" aria-labelledby="workstreams-title">
+
       <div class="inner-container">
-        <p class="section-kicker">TWO CORE WORKSTREAMS</p>
+
+        <p class="section-kicker">PROJECT WORKSTREAMS</p>
+
         <div class="section-heading">
-          <h2 id="workstreams-title">Different disciplines. <span>Connected thinking.</span></h2>
-          <p>The process is tailored to the nature of the work. These two workstreams describe the typical areas of focus for the studio's digital and creative projects.</p>
+
+          <h2 id="workstreams-title">
+            Different Production
+            <span>And Development Requirements.</span>
+          </h2>
+
+          <p>
+            The workflow follows the technical and creative requirements of the assignment. These two workstreams describe the main areas of project activity.
+          </p>
+
         </div>
+
+
         <div class="workflow-track-grid">
+
+
+          <!-- Digital Platform Development -->
+
           <article class="workflow-track">
+
             <h3>Digital Platform Development</h3>
-            <p>A structured path from business requirements to a tested digital experience.</p>
+
+            <p>
+              From business requirements and user needs to platform development, testing and deployment.
+            </p>
+
             <ol>
+
               <li>Requirements discovery and user needs</li>
-              <li>Information architecture and project planning</li>
-              <li>UX flows, wireframes and interface design</li>
-              <li>Platform development and integration</li>
+
+              <li>Information architecture and user journeys</li>
+
+              <li>UX design, wireframes and interface approval</li>
+
+              <li>Platform development and system integration</li>
+
               <li>Functional, responsive and performance testing</li>
-              <li>Deployment preparation and agreed handover</li>
+
+              <li>Deployment preparation and project handover</li>
+
             </ol>
-            <div class="service-related-links"><a href="digital-platforms.html">Explore digital platforms <span aria-hidden="true">↗</span></a></div>
+
+            <div class="service-related-links">
+
+              <a href="digital-platforms.html">
+                Explore Digital Platforms
+              </a>
+
+            </div>
+
           </article>
+
+
+          <!-- Creative Production -->
+
           <article class="workflow-track">
-            <h3>Creative Production Studio</h3>
-            <p>A production pipeline shaped around the story, visual approach and final screen requirements.</p>
+
+            <h3>Film and Creative Production</h3>
+
+            <p>
+              A production pipeline shaped around the creative brief, visual direction and final screen requirements.
+            </p>
+
             <ol>
-              <li>Story, concept and visual direction</li>
-              <li>Pre-production and production planning</li>
-              <li>Asset, character, environment or scene creation</li>
-              <li>Animation, filming, CGI or VFX execution</li>
-              <li>Lighting, rendering, editing and post-production</li>
+
+              <li>Creative brief and visual direction</li>
+
+              <li>Concept development and pre-production</li>
+
+              <li>Asset, character, environment and scene creation</li>
+
+              <li>Animation, filming, CGI and VFX execution</li>
+
+              <li>Lighting, rendering, editing and compositing</li>
+
               <li>Review, finishing and final delivery</li>
+
             </ol>
-            <div class="service-related-links"><a href="services.html">Explore creative services <span aria-hidden="true">↗</span></a></div>
+
+            <div class="service-related-links">
+
+              <a href="services.html">
+                Explore Production Services
+              </a>
+
+            </div>
+
           </article>
+
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Quality Control -->
 
     <section class="inner-section" aria-labelledby="quality-title">
+
       <div class="inner-container">
-        <p class="section-kicker">QUALITY &amp; ACCOUNTABILITY</p>
+
+        <p class="section-kicker">QUALITY CONTROL</p>
+
         <div class="section-heading">
-          <h2 id="quality-title">Quality is considered <span>throughout the process.</span></h2>
-          <p>Quality checks are connected to the brief and agreed acceptance requirements, rather than being left only to the final delivery stage.</p>
+
+          <h2 id="quality-title">
+            Quality Checks
+            <span>Throughout Production.</span>
+          </h2>
+
+          <p>
+            Quality reviews are based on the approved brief, technical specifications and acceptance requirements. Checks take place at relevant production milestones and before final handover.
+          </p>
+
         </div>
+
+
         <div class="workflow-quality-grid">
+
+
           <article class="workflow-info-card">
-            <h3>Creative Quality</h3>
-            <p>Review the visual direction, storytelling, design, composition and creative consistency against the approved brief and references.</p>
+
+            <h3>Creative Review</h3>
+
+            <p>
+              Assess visual direction, storytelling, design, composition and creative consistency against the approved brief and reference materials.
+            </p>
+
           </article>
+
+
           <article class="workflow-info-card">
-            <h3>Technical Quality</h3>
-            <p>Check functionality, compatibility, rendering, file integrity, output specifications or other technical requirements relevant to the project.</p>
+
+            <h3>Technical Review</h3>
+
+            <p>
+              Check functionality, compatibility, rendering, file integrity, output specifications and other technical requirements relevant to the assignment.
+            </p>
+
           </article>
+
+
           <article class="workflow-info-card">
-            <h3>Scope &amp; Deliverables</h3>
-            <p>Confirm that the work being reviewed aligns with the agreed scope, included outputs, formats and documented project requirements.</p>
+
+            <h3>Scope and Deliverables</h3>
+
+            <p>
+              Verify that the completed work corresponds to the agreed scope, specified outputs, file formats and documented project requirements.
+            </p>
+
           </article>
+
+
           <article class="workflow-info-card">
-            <h3>Final Review</h3>
-            <p>Resolve agreed review points and prepare the approved deliverables for handover in the formats and channels defined for the assignment.</p>
+
+            <h3>Final Approval</h3>
+
+            <p>
+              Resolve outstanding review points, confirm the approved outputs and prepare the final deliverables for handover.
+            </p>
+
           </article>
+
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Roles and Responsibilities -->
 
     <section class="inner-section" aria-labelledby="collaboration-title">
+
       <div class="inner-container">
-        <p class="section-kicker">WORKING TOGETHER</p>
+
+        <p class="section-kicker">ROLES AND RESPONSIBILITIES</p>
+
         <div class="section-heading">
-          <h2 id="collaboration-title">A successful project requires <span>shared responsibility.</span></h2>
-          <p>Clear communication helps teams make decisions, manage review points and keep work aligned with the intended outcome.</p>
+
+          <h2 id="collaboration-title">
+            Clear Responsibilities.
+            <span>Coordinated Project Delivery.</span>
+          </h2>
+
+          <p>
+            Project execution depends on timely communication, clear decisions and defined responsibilities between the studio and the client.
+          </p>
+
         </div>
+
+
         <div class="workflow-responsibility-grid">
+
+
           <article class="workflow-info-card">
-            <h3>Our Responsibilities</h3>
-            <p>Understand the brief, clarify requirements, plan the agreed work, coordinate the relevant production or development activities, communicate progress and prepare the agreed deliverables.</p>
+
+            <h3>Studio Responsibilities</h3>
+
+            <p>
+              Review the brief, clarify requirements, prepare the project plan, coordinate production or development activities, communicate progress and prepare the deliverables included in the agreement.
+            </p>
+
           </article>
+
+
           <article class="workflow-info-card">
+
             <h3>Client Responsibilities</h3>
-            <p>Provide the required project information and materials, identify decision-makers, review submissions at agreed points, consolidate feedback and confirm approvals or changes in a timely manner.</p>
+
+            <p>
+              Provide accurate project information and required materials, identify authorised decision-makers, review submissions, consolidate feedback and provide approvals within the agreed schedule.
+            </p>
+
           </article>
+
+
         </div>
-        <p class="workflow-note">Project scope, responsibilities, approval requirements, timelines and commercial terms should be documented before execution begins. A request that changes the agreed scope may require a review of resources, costs and delivery dates before the additional work proceeds.</p>
+
+
+        <p class="workflow-note">
+          Project scope, responsibilities, approval requirements, schedules and commercial terms should be documented before execution begins. Changes to the original requirements may affect resources, costs and delivery dates. Revised work should be agreed before implementation.
+        </p>
+
       </div>
+
     </section>
+
+
+    <!-- Workflow Questions -->
 
     <section class="inner-section" aria-labelledby="faq-title">
+
       <div class="inner-container">
-        <p class="section-kicker">PROCESS INFORMATION</p>
+
+        <p class="section-kicker">PROJECT INFORMATION</p>
+
         <div class="section-heading">
-          <h2 id="faq-title">Workflow <span>questions.</span></h2>
-          <p>Some practical points about project planning, feedback and delivery.</p>
+
+          <h2 id="faq-title">
+            Frequently Asked
+            <span>Workflow Questions.</span>
+          </h2>
+
+          <p>
+            Information about project planning, client reviews, revisions and final delivery.
+          </p>
+
         </div>
+
+
         <div class="workflow-accordion">
+
+
           <details>
+
             <summary>Does every project follow the same workflow?</summary>
-            <p>The overall framework is consistent, but the actual stages depend on project type, scope, complexity, technical needs and agreed deliverables. A digital platform and an animated production, for example, require different specialist steps.</p>
+
+            <p>
+              The overall framework remains consistent, but individual stages depend on the project type, scope, complexity and technical requirements. Digital platform development and animated production, for example, involve different specialist activities.
+            </p>
+
           </details>
+
+
           <details>
+
             <summary>Can clients provide feedback during production?</summary>
-            <p>Yes. Client reviews and approvals are planned at agreed milestones. The number and timing of review rounds, feedback format and approval responsibilities should be defined in the project scope.</p>
+
+            <p>
+              Yes. Client reviews and approvals take place at agreed milestones. The number of review rounds, feedback format and approval responsibilities are defined during project planning.
+            </p>
+
           </details>
+
+
           <details>
+
             <summary>How is the project timeline determined?</summary>
-            <p>Timing is evaluated against the deliverables, project complexity, production dependencies, required resources, review cycles and approval schedule. A project timeline should be confirmed as part of the agreed plan.</p>
+
+            <p>
+              The schedule is based on the required deliverables, project complexity, available resources, production dependencies, review cycles and approval requirements. The proposed timeline is confirmed as part of the project agreement.
+            </p>
+
           </details>
+
+
           <details>
-            <summary>What happens when the project requirements change?</summary>
-            <p>Changes are reviewed to understand their impact on scope, resources, schedule and cost. Any additional work or revised deliverables should be agreed before the changed scope is implemented.</p>
+
+            <summary>What happens when project requirements change?</summary>
+
+            <p>
+              Requested changes are reviewed to assess their impact on the scope, resources, schedule and cost. Additional work or revised deliverables must be agreed before the updated requirements are implemented.
+            </p>
+
           </details>
+
+
           <details>
+
             <summary>Are source files and working project files included?</summary>
-            <p>Source files, editable project files and additional working materials are provided only where they are specifically included in the applicable project agreement. Final delivery formats should be agreed in advance.</p>
+
+            <p>
+              Source files, editable project files and additional working materials are provided only where they are specifically included in the relevant project agreement. Final delivery formats should be established before production begins.
+            </p>
+
           </details>
+
+
           <details>
-            <summary>How do I start a project discussion?</summary>
-            <p>Use the <a href="contact.html">Contact page</a> to share your project concept, objectives, expected deliverables and any initial references. The studio can then review the information and discuss an appropriate next step.</p>
+
+            <summary>How can I start a project discussion?</summary>
+
+            <p>
+              Use the <a href="contact.html">Contact page</a> to share your project concept, objectives, expected deliverables and initial references. The studio can review the information and discuss the appropriate next steps.
+            </p>
+
           </details>
+
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Project Enquiries -->
 
     <section class="inner-cta" aria-labelledby="workflow-cta-title">
+
       <div class="inner-container">
-        <p class="eyebrow">START YOUR NEXT PROJECT</p>
-        <h2 id="workflow-cta-title">Your idea.<br><span>Our process.</span></h2>
-        <p>Have a creative production brief or a digital platform concept? Share your objectives and requirements with AUTOTUBE CREW STUDIO to begin a project conversation.</p>
-        <a class="button-primary" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+
+        <p class="eyebrow">PROJECT ENQUIRIES</p>
+
+        <h2 id="workflow-cta-title">
+          Discuss Your Project.
+          <br>
+          <span>Define the Next Steps.</span>
+        </h2>
+
+        <p>
+          Share your production brief, digital platform requirements or creative concept with AUTOTUBE CREW STUDIO. Include your objectives, expected deliverables and target schedule.
+        </p>
+
+        <a class="button-primary" href="contact.html">
+          Contact the Studio
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- Footer -->
+
   <footer class="site-footer">
-    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
-    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
-    <div class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html">Contact</a></div>
-    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
+
+    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
+
+      <img
+        class="brand-logo"
+        src="assets/brand/logo.png.png"
+        alt="AUTOTUBE CREW STUDIO"
+        width="175"
+        height="58">
+
+    </a>
+
+    <p class="footer-note">
+      PRE TO POST PRODUCTION STUDIO
+      <br>
+      Jakarta, Indonesia
+    </p>
+
+    <div class="footer-links">
+
+      <a href="privacy-policy.html">Privacy</a>
+
+      <a href="terms-and-conditions.html">Terms</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    <p class="copyright">
+      Copyright 2026 AUTOTUBE CREW STUDIO. All rights reserved.
+    </p>
+
   </footer>
 
-  <script src="./assets/js/main.js" defer></script>
+
+  <!-- Global Navigation -->
+
+  <script src="./assets/js/main.js?v=2" defer></script>
+
 </body>
 </html>
