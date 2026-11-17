@@ -55,8 +55,13 @@
 .home-page .hero-media,
 .home-page .hero-video-shade,
 .home-page .hero-background { position: absolute; inset: 0; }
-.home-page .hero-media { z-index: -2; overflow: hidden; background: #080808 url("../images/homepage/darkfantasy.jpg.jpg") center/cover no-repeat; }
-.home-page .hero-video { width: 100%; height: 100%; display: block; object-fit: cover; opacity: .58; }
+
+/* HERO VIDEO: no still-image background */
+.home-page .hero-media { z-index: -2; overflow: hidden; background: #080808; }
+
+/* Show the actual video at full opacity */
+.home-page .hero-video { width: 100%; height: 100%; display: block; object-fit: cover; opacity: 1; }
+
 .home-page .hero-video-shade { background: linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.68) 43%,rgba(0,0,0,.18) 100%),linear-gradient(0deg,rgba(0,0,0,.68),transparent 42%,rgba(0,0,0,.25)); }
 .home-page .hero-background { z-index: -1; pointer-events: none; }
 .home-page .hero-background .hero-3d-canvas { opacity: .52; }
@@ -177,7 +182,7 @@
     .home-page .navigation .contact-link { margin-top: 12px; padding: 14px 16px; text-align: center; }
     .home-page .hero { min-height: 700px; min-height: max(680px,calc(100svh - 74px)); padding: 120px 0 110px; }
     .home-page .hero h1 { font-size: clamp(43px,9vw,70px); }
-    .home-page .hero-video { opacity: .38; }
+    .home-page .hero-video { opacity: 1; }
     .home-page .hero-orbit { width: 90vw; right: -35vw; opacity: .6; }
     .home-page .hero-caption { display: none; }
     .home-page .intro-layout,
@@ -217,7 +222,6 @@
     .home-page *::before,
     .home-page *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
-
 
 .home-page .video-error-note { margin: 10px 0 0; color: #ff9aa4; font-size: 12px; line-height: 1.6; }
 
