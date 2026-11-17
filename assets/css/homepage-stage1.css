@@ -1343,3 +1343,144 @@ body.home-page {
   }
 
 }
+
+/* =========================================================
+   AUTOTUBE CREW STUDIO — BRAND TEXT COLOUR UPGRADE
+   Official palette: Black / Crimson Red / White / Silver
+   Homepage only. Internal pages remain unchanged.
+   ========================================================= */
+
+/* Main hero heading */
+.home-page .hero h1 {
+  color: #ffffff;
+}
+
+.home-page .hero h1 span {
+  color: var(--acs-red-light);
+}
+
+/* All homepage section headings */
+.home-page .section h2 {
+  color: #f7f7f7;
+}
+
+.home-page .section h2 span {
+  color: var(--acs-red-light);
+}
+
+/* Section labels */
+.home-page .section-kicker,
+.home-page .hero-eyebrow {
+  color: var(--acs-red-light);
+}
+
+/* Supporting descriptions */
+.home-page .hero-description,
+.home-page .intro-copy p:not(.intro-lead),
+.home-page .section-heading-copy p,
+.home-page .work-footer p,
+.home-page .service-card p,
+.home-page .pipeline-heading > p,
+.home-page .pipeline-steps p,
+.home-page .audiences-description,
+.home-page .contact-description {
+  color: #b8b8b8;
+}
+
+/* Studio introduction highlight */
+.home-page .intro-copy .intro-lead {
+  color: #eeeeee;
+}
+
+/* Project categories */
+.home-page .project-category {
+  color: var(--acs-red-light);
+}
+
+/* Project titles */
+.home-page .project-meta h3 {
+  color: #f5f5f5;
+}
+
+.home-page .project-card:hover .project-meta h3 {
+  color: var(--acs-red-light);
+  transition: color .25s ease;
+}
+
+/* Service titles and links */
+.home-page .service-card h3 {
+  color: #f5f5f5;
+}
+
+.home-page .service-card:hover h3 {
+  color: var(--acs-red-light);
+}
+
+.home-page .service-link {
+  color: var(--acs-red-light);
+}
+
+/* Production process */
+.home-page .pipeline-steps h3 {
+  color: #f5f5f5;
+}
+
+.home-page .pipeline-steps article:hover h3 {
+  color: var(--acs-red-light);
+}
+
+/* Industry and partner list */
+.home-page .audience-list span {
+  color: #d0d0d0;
+}
+
+/* Studio links */
+.home-page .text-link {
+  color: #f5f5f5;
+}
+
+.home-page .text-link:hover {
+  color: var(--acs-red-light);
+}
+
+/* Navigation hover */
+.home-page .navigation a:hover {
+  color: var(--acs-red-light);
+}
+
+/* Secondary buttons */
+.home-page .button-secondary:hover {
+  color: var(--acs-red-light);
+  border-color: var(--acs-red-light);
+}
+
+/* Video controls */
+.home-page .hero-video-toggle:hover {
+  color: var(--acs-red-light);
+}
+
+/* Contact section */
+.home-page .contact-section h2 span {
+  color: var(--acs-red-light);
+}
+
+.home-page .contact-description {
+  color: #b8b8b8;
+}
+
+/* Footer */
+.home-page .footer-description {
+  color: #b0b0b0;
+}
+
+.home-page .footer-links a {
+  color: #a8a8a8;
+}
+
+.home-page .footer-links a:hover {
+  color: var(--acs-red-light);
+}
+
+.home-page .copyright {
+  color: #858585;
+}
