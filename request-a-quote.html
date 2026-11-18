@@ -80,6 +80,8 @@
     .quote-page .quote-submit-btn:focus-visible { outline:2px solid #fff;outline-offset:4px; }
     .quote-page .quote-form-status { display:none;margin-top:18px;padding:16px;border-left:3px solid var(--quote-red);background:#171010;color:#eee;font-size:13px;line-height:1.8; }
     .quote-page .quote-form-status.visible { display:block; }
+    .quote-page .quote-form-honeypot { position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important; }
+    .quote-page .quote-submit-btn:disabled { opacity:.6;cursor:wait; }
     .quote-page .quote-form-note { margin:14px 0 0;color:#888;font-size:11px;line-height:1.8; }
     .quote-page .quote-related-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:35px; }
     .quote-page .quote-related-card { min-height:175px;padding:24px;border:1px solid var(--quote-line);background:#101010; }
@@ -149,7 +151,14 @@
           <div class="quote-form-wrapper">
             <h2 class="quote-form-heading">Request a project quotation</h2>
             <p class="quote-form-intro">Please provide accurate contact and project information. Do not include passwords, payment details, sensitive personal information or confidential materials that are not necessary for an initial enquiry.</p>
-            <form id="quote-form" novalidate>
+            <form id="quote-form" action="https://formsubmit.co/autotubecrewstudio@gmail.com" method="POST" accept-charset="UTF-8" novalidate>
+              <input type="hidden" name="_subject" value="New Project Quote Request — AUTOTUBE CREW STUDIO">
+              <input type="hidden" name="_next" value="https://ptautotubecrewstudio.github.io/request-a-quote.html?quote=received#quote-form">
+              <input type="hidden" name="_replyto" id="quote-reply-to" value="">
+              <div class="quote-form-honeypot" aria-hidden="true">
+                <label for="quote-website">Leave this field empty</label>
+                <input id="quote-website" type="text" name="_honey" value="" tabindex="-1" autocomplete="off">
+              </div>
               <section class="quote-form-section" aria-labelledby="client-section-title">
                 <h3 id="client-section-title"><span>01 / CLIENT</span>Client information</h3>
                 <div class="quote-form-grid">
@@ -216,9 +225,9 @@
 
               <div class="quote-agreement-notice"><h3>Project scope &amp; agreement</h3><p>Any final quotation and production arrangement will be based on the mutually agreed scope, deliverables, schedule and commercial terms. Client approvals, revision limits, source-file ownership, usage rights, payment terms and scope changes will be documented in the applicable formal project agreement. <a href="project-details.html">Review the project details guide</a> and <a href="partners.html">partnership framework</a>.</p></div>
               <label class="quote-consent" for="privacy-consent"><input type="checkbox" id="privacy-consent" name="privacy_consent" value="accepted" required><span>I have read and agree to the <a href="privacy-policy.html">Privacy Policy</a>. I consent to the use of the information provided for handling this project enquiry.</span></label>
-              <button type="submit" class="quote-submit-btn">Validate project enquiry <span aria-hidden="true">↗</span></button>
+              <button type="submit" class="quote-submit-btn">Send Project Enquiry <span aria-hidden="true">↗</span></button>
               <div id="quote-form-status" class="quote-form-status" role="status" aria-live="polite" tabindex="-1"></div>
-              <p class="quote-form-note">* Required fields. This is currently a front-end enquiry form with no connected submission service. Submitting it only performs on-page validation; your information is not transmitted or saved. Do not enter confidential or sensitive information.</p>
+              <p class="quote-form-note">* Required fields. Project requests are sent to FormSubmit for processing and forwarding to AUTOTUBE CREW STUDIO. On first use, FormSubmit may require recipient-email activation. Returning to this page confirms the service response, not delivery to the studio inbox. For urgent enquiries or submission errors, email <a href="mailto:autotubecrewstudio@gmail.com">autotubecrewstudio@gmail.com</a> directly. Do not include passwords, payment details, confidential files or sensitive information.</p>
             </form>
           </div>
         </div>
@@ -254,18 +263,55 @@
       const form = document.getElementById("quote-form");
       const status = document.getElementById("quote-form-status");
       const serviceChecks = Array.from(document.querySelectorAll('input[name="services"]'));
-      if (!form || !status) return;
-      const showStatus = (message) => { status.textContent = message; status.classList.add("visible"); status.focus(); };
+      const submitButton = form ? form.querySelector('button[type="submit"]') : null;
+      const replyToField = document.getElementById("quote-reply-to");
+      if (!form || !status || !submitButton || !replyToField) return;
+
+      const showStatus = (message) => {
+        status.textContent = message;
+        status.classList.add("visible");
+        status.focus();
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("quote") === "received") {
+        showStatus("FormSubmit has returned you to this page after processing the project request. This confirms the service response, but does not confirm that the email has reached the studio inbox. For urgent matters, contact autotubecrewstudio@gmail.com directly.");
+        const cleanUrl = new URL(window.location.href);
+        cleanUrl.searchParams.delete("quote");
+        window.history.replaceState(null, document.title, cleanUrl.pathname + cleanUrl.search + cleanUrl.hash);
+      }
+
+      let isSubmitting = false;
       form.addEventListener("submit", (event) => {
         event.preventDefault();
+        if (isSubmitting) return;
         status.classList.remove("visible");
+
         if (!form.reportValidity()) return;
         if (!serviceChecks.some((item) => item.checked)) {
           showStatus("Please select at least one required service before continuing.");
           if (serviceChecks[0]) serviceChecks[0].focus();
           return;
         }
-        showStatus("Your project details have passed the on-page validation checks. They have NOT been sent or saved because this website does not yet have an approved submission service connected. Please use the Contact page for a general enquiry. Do not assume this project request has been received.");
+
+        const emailField = form.elements.namedItem("client_email");
+        replyToField.value = emailField ? emailField.value.trim() : "";
+        isSubmitting = true;
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+        showStatus("Submitting your project request to FormSubmit. If the service displays an error or does not return a confirmation, email autotubecrewstudio@gmail.com directly.");
+
+        // Send the validated form using its configured FormSubmit POST endpoint.
+        form.submit();
+      });
+
+      window.addEventListener("pageshow", (event) => {
+        if (event.persisted && isSubmitting) {
+          isSubmitting = false;
+          submitButton.disabled = false;
+          submitButton.textContent = "Send Project Enquiry";
+          showStatus("The previous submission did not return a confirmation page. Check your email before trying again, or contact autotubecrewstudio@gmail.com directly.");
+        }
       });
     })();
   </script>
