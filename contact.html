@@ -1,343 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#070707">
-  <title>Contact AUTOTUBE CREW STUDIO | Jakarta, Indonesia</title>
-  <meta name="description" content="Contact AUTOTUBE CREW STUDIO in Jakarta, Indonesia to discuss animation, CGI, VFX, film and video production, digital platforms and creative collaborations.">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="PT Autotube Crew Studio">
+--- a/contact.html
++++ b/contact.html
+@@ -95,6 +95,11 @@
+     .contact-page .contact-summary-panel label { display:block; margin-bottom:9px; color:#fff; font-size:12px; font-weight:800; }
+     .contact-page .contact-summary-panel textarea { width:100%; min-height:190px; padding:13px; resize:vertical; border:1px solid #383838; background:#050505; color:#ddd; font:13px/1.7 monospace; }
+     .contact-page .contact-form-status { margin:15px 0 0; color:#ddd; font-size:13px; line-height:1.8; }
++    .contact-page .contact-consent { display:flex; align-items:flex-start; gap:11px; margin-top:20px; color:#bdbdbd; font-size:12px; line-height:1.8; }
++    .contact-page .contact-consent input { flex:0 0 18px; width:18px; min-width:18px; min-height:18px; margin:2px 0 0; accent-color:var(--inner-red); }
++    .contact-page .contact-consent a, .contact-page .contact-privacy-note a { color:#fff; text-decoration:underline; text-underline-offset:3px; }
++    .contact-page .contact-form-button:disabled { opacity:.6; cursor:wait; }
++    .contact-page .contact-form-honeypot { position:absolute!important; left:-10000px!important; top:auto!important; width:1px!important; height:1px!important; overflow:hidden!important; }
+     .contact-page .contact-related-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:25px; }
+     .contact-page .contact-related-links a { padding:11px 14px; border:1px solid var(--inner-line); color:#ccc; font-size:12px; }
+     .contact-page .contact-related-links a:hover { border-color:var(--inner-red); color:#fff; }
+@@ -214,12 +219,21 @@
+         <div class="contact-form-aside">
+           <p class="section-kicker"><span>03</span><span>Prepare Your Message</span></p>
+           <h2 id="contact-form-title">Tell us a little about your enquiry.</h2>
+-          <p>Complete the short form to create a formatted enquiry summary. You can copy it and send it using your preferred communication channel.</p>
+-          <p><strong>Important:</strong> This website does not currently have a connected contact-form delivery service. Your details will not be sent to or stored by AUTOTUBE CREW STUDIO when you use this tool.</p>
++          <p>Complete this form to send your enquiry to AUTOTUBE CREW STUDIO. You can also prepare and copy a separate enquiry summary before sending.</p>
++          <p><strong>Direct email:</strong> <a href="mailto:autotubecrewstudio@gmail.com">autotubecrewstudio@gmail.com</a>. Form submissions are processed by FormSubmit and forwarded to our configured studio email address.</p>
+         </div>
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Contact AUTOTUBE CREW STUDIO | Jakarta, Indonesia">
-<meta name="twitter:description" content="Contact AUTOTUBE CREW STUDIO in Jakarta, Indonesia to discuss animation, CGI, VFX, film and video production, digital platforms and creative collaborations.">
-  <link rel="canonical" href="https://ptautotubecrewstudio.github.io/contact.html">
-  <meta property="og:title" content="Contact AUTOTUBE CREW STUDIO">
-  <meta property="og:description" content="Start a conversation about your creative production or digital platform project.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ptautotubecrewstudio.github.io/contact.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=4">
-  <link rel="stylesheet" href="./assets/css/inner-pages.css?v=1">
-  <style>
-    .contact-page .contact-hero-panel {
-      min-height: 330px;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,.15);
-      background: radial-gradient(circle at 50% 50%,rgba(229,9,32,.2),transparent 48%),linear-gradient(145deg,#191919,#090909);
-    }
-    .contact-page .contact-hero-panel::before,
-    .contact-page .contact-hero-panel::after {
-      content: "";
-      position: absolute;
-      top: 50%; left: 50%;
-      width: 220px; height: 220px;
-      border: 1px solid rgba(229,9,32,.48);
-      border-radius: 50%;
-      transform: translate(-50%,-50%);
-      box-shadow: 0 0 65px rgba(229,9,32,.13);
-    }
-    .contact-page .contact-hero-panel::after { width: 285px; height: 285px; border-color: rgba(255,255,255,.16); }
-    .contact-page .contact-panel-top,
-    .contact-page .contact-panel-bottom {
-      position: relative; z-index: 1;
-      display: flex; justify-content: space-between; gap: 12px;
-      color: #aaa; font-size: 10px; font-weight: 800;
-      letter-spacing: .16em; text-transform: uppercase;
-    }
-    .contact-page .contact-panel-logo { position: relative; z-index: 1; display: block; width: min(100%,190px); max-height: 100px; margin: auto; object-fit: contain; }
-    .contact-page .contact-panel-bottom strong { color: #fff; }
-    .contact-page .contact-intro-grid { display: grid; grid-template-columns:.8fr 1.2fr; gap: clamp(35px,8vw,100px); align-items:start; }
-    .contact-page .contact-statement { margin:0; color:#fff; font-size:clamp(28px,3.8vw,46px); line-height:1.14; letter-spacing:-.045em; }
-    .contact-page .contact-statement span { color:var(--inner-red); }
-    .contact-page .contact-intro-copy p { margin:0 0 18px; color:#bdbdbd; font-size:15px; line-height:1.9; }
-    .contact-page .contact-info-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:36px; }
-    .contact-page .contact-info-card { min-height:190px; padding:25px; border:1px solid var(--inner-line); background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.012)); }
-    .contact-page .contact-info-card .card-index { color:#ff4658; font-size:10px; font-weight:800; letter-spacing:.16em; }
-    .contact-page .contact-info-card h3 { margin:24px 0 9px; color:#fff; font-size:18px; }
-    .contact-page .contact-info-card p { margin:0; color:#aaa; font-size:13px; line-height:1.85; }
-    .contact-page .contact-info-card a { color:#fff; border-bottom:1px solid rgba(229,9,32,.7); }
-    .contact-page .contact-service-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); border-top:1px solid var(--inner-line); }
-    .contact-page .contact-service-list a { display:flex; justify-content:space-between; gap:14px; padding:17px 4px; border-bottom:1px solid var(--inner-line); color:#ddd; font-size:14px; transition:color .2s ease; }
-    .contact-page .contact-service-list a:hover { color:#ff5262; }
-    .contact-page .contact-service-list a span { color:#ff4658; }
-    .contact-page .contact-form-layout { display:grid; grid-template-columns:.72fr 1.28fr; gap:clamp(30px,6vw,76px); align-items:start; }
-    .contact-page .contact-form-aside h2 { margin:0 0 18px; color:#fff; font-size:clamp(28px,3.8vw,43px); line-height:1.15; letter-spacing:-.04em; }
-    .contact-page .contact-form-aside p { color:#aaa; font-size:14px; line-height:1.9; }
-    .contact-page .contact-form-card { padding:clamp(22px,4vw,38px); border:1px solid var(--inner-line); background:#101010; }
-    .contact-page .contact-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:19px; }
-    .contact-page .contact-field { min-width:0; }
-    .contact-page .contact-field.full-width { grid-column:1/-1; }
-    .contact-page .contact-field label { display:block; margin-bottom:8px; color:#ddd; font-size:12px; font-weight:700; }
-    .contact-page .contact-field input,
-    .contact-page .contact-field select,
-    .contact-page .contact-field textarea { width:100%; min-height:48px; padding:13px 14px; border:1px solid #383838; border-radius:0; outline:none; background:#080808; color:#fff; font:inherit; font-size:13px; }
-    .contact-page .contact-field textarea { min-height:145px; resize:vertical; }
-    .contact-page .contact-field input::placeholder,
-    .contact-page .contact-field textarea::placeholder { color:#777; }
-    .contact-page .contact-field input:focus,
-    .contact-page .contact-field select:focus,
-    .contact-page .contact-field textarea:focus { border-color:var(--inner-red); }
-    .contact-page .contact-form-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:22px; }
-    .contact-page .contact-form-button { min-height:48px; padding:13px 19px; border:1px solid var(--inner-red); background:var(--inner-red); color:#fff; cursor:pointer; font:inherit; font-size:11px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
-    .contact-page .contact-form-button:hover { background:transparent; }
-    .contact-page .contact-privacy-note { margin:17px 0 0; color:#888; font-size:11px; line-height:1.8; }
-    .contact-page .contact-summary-panel { margin-top:24px; padding:20px; border:1px solid rgba(229,9,32,.55); background:#0b0b0b; }
-    .contact-page .contact-summary-panel[hidden] { display:none; }
-    .contact-page .contact-summary-panel label { display:block; margin-bottom:9px; color:#fff; font-size:12px; font-weight:800; }
-    .contact-page .contact-summary-panel textarea { width:100%; min-height:190px; padding:13px; resize:vertical; border:1px solid #383838; background:#050505; color:#ddd; font:13px/1.7 monospace; }
-    .contact-page .contact-form-status { margin:15px 0 0; color:#ddd; font-size:13px; line-height:1.8; }
-    .contact-page .contact-related-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:25px; }
-    .contact-page .contact-related-links a { padding:11px 14px; border:1px solid var(--inner-line); color:#ccc; font-size:12px; }
-    .contact-page .contact-related-links a:hover { border-color:var(--inner-red); color:#fff; }
-    @media(max-width:900px) {
-      .contact-page .contact-intro-grid,.contact-page .contact-form-layout { grid-template-columns:1fr; gap:28px; }
-      .contact-page .contact-info-grid { grid-template-columns:1fr 1fr; }
-      .contact-page .contact-hero-panel { min-height:250px; }
-    }
-    @media(max-width:650px) {
-      .contact-page .contact-info-grid,.contact-page .contact-service-list,.contact-page .contact-form-grid { grid-template-columns:1fr; }
-      .contact-page .contact-field.full-width { grid-column:auto; }
-      .contact-page .contact-form-actions { flex-direction:column; }
-      .contact-page .contact-form-button { width:100%; }
-      .contact-page .contact-hero-panel { min-height:220px; padding:22px; }
-    }
-    @media(prefers-reduced-motion:reduce) {
-      .contact-page *, .contact-page *::before, .contact-page *::after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; animation-iteration-count:1!important; }
-    }
-  </style>
-</head>
-<body class="inner-page contact-page">
-  <a class="skip-link" href="#main-content">Skip to content</a>
+         <div class="contact-form-card">
+-          <form id="contact-enquiry-form">
++          <form id="contact-enquiry-form"
++                action="https://formsubmit.co/autotubecrewstudio@gmail.com"
++                method="POST"
++                accept-charset="UTF-8">
++            <input type="hidden" name="_subject" value="New Website Enquiry — AUTOTUBE CREW STUDIO">
++            <input type="hidden" name="_next" value="https://ptautotubecrewstudio.github.io/contact.html?enquiry=received#contact-form">
++            <div class="contact-form-honeypot" aria-hidden="true">
++              <label for="contact-website">Leave this field empty</label>
++              <input id="contact-website" type="text" name="_honey" value="" tabindex="-1" autocomplete="off">
++            </div>
+             <div class="contact-form-grid">
+               <div class="contact-field">
+                 <label for="contact-name">Full Name *</label>
+@@ -237,16 +251,16 @@
+                 <label for="contact-topic">Enquiry Type *</label>
+                 <select id="contact-topic" name="topic" required>
+                   <option value="">Select an enquiry type</option>
+-                  <option>3D Animation</option>
+-                  <option>CGI Production</option>
+-                  <option>Visual Effects (VFX)</option>
+-                  <option>Film Production</option>
+-                  <option>Video / Advertising Production</option>
+-                  <option>Creative Content</option>
+-                  <option>Digital Platforms</option>
+-                  <option>Partnership / Co-production</option>
+-                  <option>Careers</option>
+-                  <option>General Enquiry</option>
++                  <option value="3D Animation">3D Animation</option>
++                  <option value="CGI Production">CGI Production</option>
++                  <option value="Visual Effects (VFX)">Visual Effects (VFX)</option>
++                  <option value="Film Production">Film Production</option>
++                  <option value="Video / Advertising Production">Video / Advertising Production</option>
++                  <option value="Creative Content">Creative Content</option>
++                  <option value="Digital Platforms">Digital Platforms</option>
++                  <option value="Partnership / Co-production">Partnership / Co-production</option>
++                  <option value="Careers">Careers</option>
++                  <option value="General Enquiry">General Enquiry</option>
+                 </select>
+               </div>
+               <div class="contact-field full-width">
+@@ -254,11 +268,16 @@
+                 <textarea id="contact-message" name="message" placeholder="Tell us about your idea, project stage, objectives and the support you are looking for..." required></textarea>
+               </div>
+             </div>
++            <label class="contact-consent" for="contact-privacy-consent">
++              <input id="contact-privacy-consent" type="checkbox" name="privacy_consent" value="accepted" required>
++              <span>I have read the <a href="privacy-policy.html">Privacy Policy</a> and consent to the use of the information provided to handle this enquiry.</span>
++            </label>
+             <div class="contact-form-actions">
+               <button class="contact-form-button" id="prepare-contact-summary" type="button">Prepare Enquiry Summary</button>
++              <button class="contact-form-button" id="send-contact-enquiry" type="submit">Send Enquiry</button>
+               <a class="button-secondary" href="request-a-quote.html">Detailed Project Quote</a>
+             </div>
+-            <p class="contact-privacy-note">Do not include passwords, payment details, confidential files or sensitive information in this form. The website does not transmit or store the information entered here.</p>
++            <p class="contact-privacy-note">Your name, email, company, enquiry type, message and consent are sent to FormSubmit for processing and forwarding to AUTOTUBE CREW STUDIO. On first use, FormSubmit may hold submissions pending until the recipient email activation is completed. FormSubmit states that submissions remain in its archive for 30 days. Do not include passwords, payment details, confidential files or sensitive information. If FormSubmit displays an error or you do not receive its confirmation, use our <a href="mailto:autotubecrewstudio@gmail.com">direct email fallback</a>.</p>
+           </form>
 
-  <header class="header site-header">
-    <a class="brand-link" href="index.html" aria-label="AUTOTUBE CREW STUDIO home">
-      <img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="190" height="64">
-    </a>
-    <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Our Work</a>
-      <a href="showreel.html">Showreel</a>
-      <a class="contact-link" href="contact.html" aria-current="page">Let's Talk <span aria-hidden="true">↗</span></a>
-    </nav>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
-  </header>
+           <div class="contact-summary-panel" id="contact-summary-panel" hidden>
+@@ -268,7 +287,7 @@
+               <button class="contact-form-button" id="copy-contact-summary" type="button">Copy Summary</button>
+             </div>
+           </div>
+-          <p class="contact-form-status" id="contact-form-status" role="status" aria-live="polite"></p>
++          <p class="contact-form-status" id="contact-form-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></p>
+         </div>
+       </div>
+     </section>
+@@ -299,12 +318,48 @@
+       const summaryPanel = document.getElementById("contact-summary-panel");
+       const summaryField = document.getElementById("contact-summary");
+       const copyButton = document.getElementById("copy-contact-summary");
++      const sendButton = document.getElementById("send-contact-enquiry");
++      const consentField = form ? form.elements.namedItem("privacy_consent") : null;
+       const status = document.getElementById("contact-form-status");
 
-  <main id="main-content">
-    <section class="inner-hero" aria-labelledby="contact-title">
-      <div class="inner-container inner-hero-layout">
-        <div>
-          <p class="eyebrow">LET'S CONNECT / JAKARTA, INDONESIA</p>
-          <h1 id="contact-title">Let's start a <span>conversation.</span></h1>
-          <p class="inner-hero-copy">Have a creative idea, production brief or digital platform requirement? Share what you are planning and identify the right starting point with AUTOTUBE CREW STUDIO.</p>
-          <div class="inner-hero-actions">
-            <a class="button-primary" href="#contact-form">Prepare an enquiry <span aria-hidden="true">↓</span></a>
-            <a class="button-secondary" href="request-a-quote.html">Request a project quote</a>
-          </div>
-        </div>
-        <div class="contact-hero-panel" aria-label="AUTOTUBE CREW STUDIO contact information">
-          <div class="contact-panel-top"><span>Studio contact</span><span>Jakarta / Indonesia</span></div>
-          <img class="contact-panel-logo" src="assets/brand/logo.png.png" alt="" aria-hidden="true" width="190" height="100">
-          <div class="contact-panel-bottom"><span>Creative production</span><strong>PRE TO POST</strong></div>
-        </div>
-      </div>
-    </section>
+-      if (!form || !prepareButton || !summaryPanel || !summaryField || !copyButton || !status) return;
++      if (!form || !prepareButton || !summaryPanel || !summaryField || !copyButton || !sendButton || !consentField || !status) return;
 
-    <section class="inner-section">
-      <div class="inner-container">
-        <div class="contact-intro-grid">
-          <div>
-            <p class="section-kicker"><span>01</span><span>Start Here</span></p>
-            <h2 class="contact-statement">The right conversation begins with <span>a clear brief.</span></h2>
-          </div>
-          <div class="contact-intro-copy">
-            <p>We work across digital platforms and creative production, including 3D animation, CGI, VFX, film and video production and digital content creation.</p>
-            <p>Tell us what you are looking to create, what stage the project has reached and which capabilities you need. For a detailed scope, budget and timeline review, use the project quotation page.</p>
-            <div class="contact-related-links">
-              <a href="request-a-quote.html">Request a Quote ↗</a>
-              <a href="partners.html">Partnership Enquiries ↗</a>
-            </div>
-          </div>
-        </div>
-        <div class="contact-info-grid">
-          <article class="contact-info-card">
-            <span class="card-index">01 / GENERAL</span>
-            <h3>General Enquiries</h3>
-            <p>For company information, website enquiries and initial conversations. Use the enquiry summary tool below to prepare your message.</p>
-          </article>
-          <article class="contact-info-card">
-            <span class="card-index">02 / PRODUCTION</span>
-            <h3>Production &amp; Projects</h3>
-            <p>For animation, CGI, VFX, film, video, advertising and digital content requirements. <a href="request-a-quote.html">Prepare a project quote request</a>.</p>
-          </article>
-          <article class="contact-info-card">
-            <span class="card-index">03 / LOCATION</span>
-            <h3>Jakarta, Indonesia</h3>
-            <p>PT AUTOTUBE CREW STUDIO is based in Jakarta, Indonesia. Project discussions and collaboration enquiries can be initiated online.</p>
-          </article>
-        </div>
-      </div>
-    </section>
++      const params = new URLSearchParams(window.location.search);
++      if (params.get("enquiry") === "received") {
++        status.textContent = "FormSubmit has returned you to this page after processing the submission. This confirms the service response, but does not confirm that the email has reached the studio inbox. For urgent matters, contact autotubecrewstudio@gmail.com directly.";
++        status.focus();
++        const cleanUrl = new URL(window.location.href);
++        cleanUrl.searchParams.delete("enquiry");
++        window.history.replaceState(null, document.title, cleanUrl.pathname + cleanUrl.search + cleanUrl.hash);
++      }
++
++      let isSubmitting = false;
++      form.addEventListener("submit", (event) => {
++        if (isSubmitting) {
++          event.preventDefault();
++          return;
++        }
++        isSubmitting = true;
++        sendButton.disabled = true;
++        sendButton.textContent = "Sending...";
++        status.textContent = "Submitting your enquiry to FormSubmit. If the service does not confirm the submission or displays an error, use the direct email fallback above.";
++      });
++
++      window.addEventListener("pageshow", (event) => {
++        if (event.persisted && isSubmitting) {
++          isSubmitting = false;
++          sendButton.disabled = false;
++          sendButton.textContent = "Send Enquiry";
++          status.textContent = "The previous submission did not return a confirmation page. Check your email before trying again, or contact the studio directly.";
++        }
++      });
++
+       prepareButton.addEventListener("click", () => {
+-        if (!form.reportValidity()) return;
++        const wasConsentRequired = consentField.required;
++        consentField.required = false;
++        const summaryIsValid = form.reportValidity();
++        consentField.required = wasConsentRequired;
++        if (!summaryIsValid) return;
+         const data = new FormData(form);
+         const text = [
+           "AUTOTUBE CREW STUDIO — ENQUIRY SUMMARY",
+@@ -317,11 +372,11 @@
+           "Message:",
+           data.get("message"),
+           "",
+-          "Note: This summary was prepared locally by the website visitor. It has not been sent to or stored by AUTOTUBE CREW STUDIO."
++          "Note: Preparing or copying this summary does not submit it. Use the Send Enquiry button to transmit the form to AUTOTUBE CREW STUDIO."
+         ].join("\n");
+         summaryField.value = text;
+         summaryPanel.hidden = false;
+-        status.textContent = "Enquiry summary prepared. Nothing has been sent or stored. Copy the text and send it through your preferred communication channel.";
++        status.textContent = "Enquiry summary prepared. It has not been submitted. Use Send Enquiry to transmit your form, or Copy Summary to send it separately.";
+         summaryPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+       });
 
-    <section class="inner-section" aria-labelledby="contact-services-title">
-      <div class="inner-container">
-        <p class="section-kicker"><span>02</span><span>Studio Capabilities</span></p>
-        <div class="section-heading">
-          <h2 id="contact-services-title">What would you like to <span>create?</span></h2>
-          <p>Choose a service area to learn more about the studio's capabilities before preparing your enquiry.</p>
-        </div>
-        <div class="contact-service-list">
-          <a href="3d-animation.html">3D Animation <span>↗</span></a>
-          <a href="cgi.html">CGI &amp; Visualization <span>↗</span></a>
-          <a href="vfx.html">Visual Effects (VFX) <span>↗</span></a>
-          <a href="film-production.html">Film &amp; Cinematic Production <span>↗</span></a>
-          <a href="video-production.html">Video &amp; Advertising Production <span>↗</span></a>
-          <a href="creative-content.html">Creative Content <span>↗</span></a>
-          <a href="digital-platforms.html">Digital Platforms <span>↗</span></a>
-          <a href="portfolio.html">Portfolio &amp; Selected Work <span>↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="inner-section" id="contact-form" aria-labelledby="contact-form-title">
-      <div class="inner-container contact-form-layout">
-        <div class="contact-form-aside">
-          <p class="section-kicker"><span>03</span><span>Prepare Your Message</span></p>
-          <h2 id="contact-form-title">Tell us a little about your enquiry.</h2>
-          <p>Complete the short form to create a formatted enquiry summary. You can copy it and send it using your preferred communication channel.</p>
-          <p><strong>Important:</strong> This website does not currently have a connected contact-form delivery service. Your details will not be sent to or stored by AUTOTUBE CREW STUDIO when you use this tool.</p>
-        </div>
-
-        <div class="contact-form-card">
-          <form id="contact-enquiry-form">
-            <div class="contact-form-grid">
-              <div class="contact-field">
-                <label for="contact-name">Full Name *</label>
-                <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
-              </div>
-              <div class="contact-field">
-                <label for="contact-email">Email Address *</label>
-                <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="name@company.com" required>
-              </div>
-              <div class="contact-field">
-                <label for="contact-company">Company / Studio <span>(Optional)</span></label>
-                <input id="contact-company" name="company" type="text" autocomplete="organization" placeholder="Company or studio name">
-              </div>
-              <div class="contact-field">
-                <label for="contact-topic">Enquiry Type *</label>
-                <select id="contact-topic" name="topic" required>
-                  <option value="">Select an enquiry type</option>
-                  <option>3D Animation</option>
-                  <option>CGI Production</option>
-                  <option>Visual Effects (VFX)</option>
-                  <option>Film Production</option>
-                  <option>Video / Advertising Production</option>
-                  <option>Creative Content</option>
-                  <option>Digital Platforms</option>
-                  <option>Partnership / Co-production</option>
-                  <option>Careers</option>
-                  <option>General Enquiry</option>
-                </select>
-              </div>
-              <div class="contact-field full-width">
-                <label for="contact-message">Your Message *</label>
-                <textarea id="contact-message" name="message" placeholder="Tell us about your idea, project stage, objectives and the support you are looking for..." required></textarea>
-              </div>
-            </div>
-            <div class="contact-form-actions">
-              <button class="contact-form-button" id="prepare-contact-summary" type="button">Prepare Enquiry Summary</button>
-              <a class="button-secondary" href="request-a-quote.html">Detailed Project Quote</a>
-            </div>
-            <p class="contact-privacy-note">Do not include passwords, payment details, confidential files or sensitive information in this form. The website does not transmit or store the information entered here.</p>
-          </form>
-
-          <div class="contact-summary-panel" id="contact-summary-panel" hidden>
-            <label for="contact-summary">Your enquiry summary (ready to copy)</label>
-            <textarea id="contact-summary" readonly></textarea>
-            <div class="contact-form-actions">
-              <button class="contact-form-button" id="copy-contact-summary" type="button">Copy Summary</button>
-            </div>
-          </div>
-          <p class="contact-form-status" id="contact-form-status" role="status" aria-live="polite"></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="inner-cta" aria-labelledby="contact-cta-title">
-      <div class="inner-container">
-        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
-        <h2 id="contact-cta-title">Your next idea starts<br><span>with a conversation.</span></h2>
-        <p>Explore our work, review the studio workflow or prepare a detailed project quotation request.</p>
-        <a class="button-primary" href="portfolio.html">Explore Our Work <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <a class="brand-link footer-brand" href="index.html" aria-label="AUTOTUBE CREW STUDIO home"><img class="brand-logo" src="assets/brand/logo.png.png" alt="AUTOTUBE CREW STUDIO" width="175" height="58"></a>
-    <p class="footer-note">PRE TO POST PRODUCTION STUDIO<br>Jakarta, Indonesia</p>
-    <div class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="contact.html" aria-current="page">Contact</a></div>
-    <p class="copyright">© 2026 AUTOTUBE CREW STUDIO. All rights reserved.</p>
-  </footer>
-
-  <script src="./assets/js/main.js" defer></script>
-  <script>
-    (() => {
-      "use strict";
-      const form = document.getElementById("contact-enquiry-form");
-      const prepareButton = document.getElementById("prepare-contact-summary");
-      const summaryPanel = document.getElementById("contact-summary-panel");
-      const summaryField = document.getElementById("contact-summary");
-      const copyButton = document.getElementById("copy-contact-summary");
-      const status = document.getElementById("contact-form-status");
-
-      if (!form || !prepareButton || !summaryPanel || !summaryField || !copyButton || !status) return;
-
-      prepareButton.addEventListener("click", () => {
-        if (!form.reportValidity()) return;
-        const data = new FormData(form);
-        const text = [
-          "AUTOTUBE CREW STUDIO — ENQUIRY SUMMARY",
-          "",
-          `Name: ${data.get("name")}`,
-          `Email: ${data.get("email")}`,
-          `Company / Studio: ${data.get("company") || "Not provided"}`,
-          `Enquiry Type: ${data.get("topic")}`,
-          "",
-          "Message:",
-          data.get("message"),
-          "",
-          "Note: This summary was prepared locally by the website visitor. It has not been sent to or stored by AUTOTUBE CREW STUDIO."
-        ].join("\n");
-        summaryField.value = text;
-        summaryPanel.hidden = false;
-        status.textContent = "Enquiry summary prepared. Nothing has been sent or stored. Copy the text and send it through your preferred communication channel.";
-        summaryPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      });
-
-      copyButton.addEventListener("click", async () => {
-        if (!summaryField.value) return;
-        try {
-          if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error("Clipboard access is unavailable");
-          await navigator.clipboard.writeText(summaryField.value);
-          status.textContent = "Enquiry summary copied. It has not been sent or stored.";
-        } catch (error) {
-          summaryField.focus();
-          summaryField.select();
-          status.textContent = "Automatic copying is unavailable. The summary is selected; press Ctrl+C to copy it. Nothing has been sent.";
-        }
-      });
-    })();
-  </script>
-</body>
-</html>
+@@ -330,11 +385,11 @@
+         try {
+           if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error("Clipboard access is unavailable");
+           await navigator.clipboard.writeText(summaryField.value);
+-          status.textContent = "Enquiry summary copied. It has not been sent or stored.";
++          status.textContent = "Enquiry summary copied. Copying does not submit the form; use Send Enquiry to send it to the studio.";
+         } catch (error) {
+           summaryField.focus();
+           summaryField.select();
+-          status.textContent = "Automatic copying is unavailable. The summary is selected; press Ctrl+C to copy it. Nothing has been sent.";
++          status.textContent = "Automatic copying is unavailable. The summary is selected; press Ctrl+C to copy it. Copying does not submit the form.";
+         }
+       });
