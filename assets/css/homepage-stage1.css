@@ -151,8 +151,8 @@ body.home-page {
 
 .home-page .brand-logo {
   display: block;
-  width: 195px;
-  max-height: 62px;
+ width: 235px;
+max-height: 76px;
   object-fit: contain;
   object-position: left center;
 }
