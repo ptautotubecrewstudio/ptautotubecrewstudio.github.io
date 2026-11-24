@@ -18,7 +18,7 @@
   --acs-muted: #ffffff;
   --acs-line: rgba(255,255,255,.13);
   --acs-width: 1240px;
-  --acs-header-height: 78px;
+  --acs-header-height: 150px;
 }
 
 html {
@@ -151,8 +151,9 @@ body.home-page {
 
 .home-page .brand-logo {
   display: block;
- width: 235px;
-max-height: 76px;
+  width: 140px;
+  height: 140px;
+  max-height: none;
   object-fit: contain;
   object-position: left center;
 }
@@ -962,6 +963,10 @@ max-height: 76px;
 
 @media (max-width: 1050px) {
 
+  :root {
+    --acs-header-height: 126px;
+  }
+
   .home-page header.header.site-header {
     gap: 16px;
     padding-right: 4%;
@@ -969,7 +974,9 @@ max-height: 76px;
   }
 
   .home-page .brand-logo {
-    width: 160px;
+    width: 116px;
+    height: 116px;
+    max-height: none;
   }
 
   .home-page header.header.site-header nav.navigation {
@@ -1006,7 +1013,7 @@ max-height: 76px;
 @media (max-width: 760px) {
 
   :root {
-    --acs-header-height: 70px;
+    --acs-header-height: 112px;
   }
 
   .home-page header.header.site-header {
@@ -1015,8 +1022,9 @@ max-height: 76px;
   }
 
   .home-page .brand-logo {
-    width: 145px;
-    max-height: 48px;
+    width: 104px;
+    height: 104px;
+    max-height: none;
   }
 
   .home-page .menu-toggle {
@@ -1326,7 +1334,9 @@ max-height: 76px;
 @media (max-width: 360px) {
 
   .home-page .brand-logo {
-    width: 135px;
+    width: 94px;
+    height: 94px;
+    max-height: none;
   }
 
   .home-page .hero h1 {
